@@ -3,14 +3,14 @@
     <div class="container">
       <div class="row">          
         <div class="col-lg-5">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12320.929796762879!2d-77.96843678638841!3d39.46407708915767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ca024e806b12b9%3A0xe1961506369c5b40!2s605%20Baltimore%20St%2C%20Martinsburg%2C%20WV%2025401!5e0!3m2!1sen!2sus!4v1632936540598!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <iframe src="" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
         </div>
         <div class="col-lg-4  pt-3">
-          <h2>Baltimore St Location</h2>
+          <h2>location heading1</h2>
           <!-- <p> -->
             <div *ngFor="let contact of contactsBrookside" class="contact-label">
                 <div><h3><strong>{{contact.label}}</strong></h3></div>&nbsp;&nbsp;
-              <div class="contact-links" *ngIf="contact.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' || contact?.label === 'Billing Phone: ' else other_content">
+              <div class="contact-links" *ngIf="contact.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
                 <a [href]="contact?.redirect" target="_blank" rel="noopener">&nbsp;
                   <h3>{{contact.data}}</h3>
                 </a>
@@ -18,8 +18,8 @@
               <ng-template #other_content>&nbsp;<h3>{{contact.data}}</h3></ng-template><br>
             </div>
           <!-- </p> -->
-          <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/new-york/marquis-ave/storage-units']" role="button">View Rates</a>                
-          <a class="btn btn-primary p-2 ml-0" [routerLink]="['/new-york/marquis-ave/reserve-unit']" role="button"> Reserve Unit</a>                                  
+          <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/alabama/silverhill/storage-units']" role="button">View Rates</a>                
+          <a class="btn btn-primary p-2 ml-0" [routerLink]="['/alabama/silverhill/reserve-unit']" role="button"> Reserve Unit</a>                                  
         </div>
         <div class="col-lg-3 partition-border contact-hours pt-3">
             <h3>Office Hours:</h3>
@@ -36,25 +36,25 @@
   <!--Contact Brookside  -  Ends Here-->
 
     <!--Contact chester-andrews-lane  Ends Here-->
-    <!-- <div class="pb-5 pt-5 ">    
+    <div class="pb-5 pt-5 ">    
       <div class="container">
         <div class="row">          
           <div class="col-lg-5">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8530.755031510304!2d-97.59460845205045!3d40.892117780442526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87974fc18e9f72bf%3A0x43f8e97ac2503e35!2s115%20Marquis%20Ave%2C%20York%2C%20NE%2068467!5e0!3m2!1sen!2sus!4v1616947392716!5m2!1sen!2sus" title="Facility Google Map" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+            <iframe src="" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
           </div>
           <div class="col-lg-4 pt-3">
-            <h2>Marquis Ave</h2>
+            <h2>location heading2</h2>
             <div *ngFor="let contact of contactsAndrews" class="contact-label pt-2">
               <div><h3><strong>{{contact.label}}</strong></h3></div>&nbsp;&nbsp;
-            <div class="contact-links" *ngIf="contact.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' || contact?.label === 'Billing Phone: ' else other_content">
+            <div class="contact-links" *ngIf="contact.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
               <a [href]="contact?.redirect" target="_blank" rel="noopener">&nbsp;
                 <h3>{{contact.data}}</h3>
               </a>
             </div>
             <ng-template #other_content>&nbsp;<h3>{{contact.data}}</h3></ng-template><br>
           </div>
-            <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/new-york/baltimore/storage-units']" role="button">View Rates</a>                
-            <a class="btn btn-primary p-2 ml-0" [routerLink]="['/new-york/baltimore/reserve-unit']" role="button"> Reserve Unit</a>                                  
+            <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/alabama/baltimore/storage-units']" role="button">View Rates</a>                
+            <a class="btn btn-primary p-2 ml-0" [routerLink]="['/alabama/baltimore/reserve-unit']" role="button"> Reserve Unit</a>                                  
           </div>
           <div class="col-lg-3 partition-border contact-hours pt-3">
               <h3>Office Hours:</h3>
@@ -66,29 +66,29 @@
           </div>
         </div>
       </div>      
-    </div> -->
+    </div>
     <!--Contact chester-andrews-lane  -  Ends Here-->
 
       <!--Contact Montgomery Start Here-->
-  <!-- <div class="pb-5 pt-5 bg-light">    
+  <div class="pb-5 pt-5 bg-light">    
     <div class="container">
       <div class="row">          
         <div class="col-lg-5">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d386072.7603299949!2d-97.59290154672549!3d40.88957143952419!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87974fea7bc76fa9%3A0x1b56d35d2b393c84!2s2700%20N%20Lincoln%20Ave%2C%20York%2C%20NE%2068467!5e0!3m2!1sen!2sus!4v1616948468111!5m2!1sen!2sus" title="Facility Google Map" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+            <iframe src="" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
         </div>
         <div class="col-lg-4 pt-3">
-          <h2>Lincoln Ave</h2>
+          <h2>location heading3</h2>
           <div *ngFor="let contact of contactsMontgomery" class="contact-label">
             <div><h3><strong>{{contact.label}}</strong></h3></div>&nbsp;&nbsp;
-          <div class="contact-links" *ngIf="contact.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' || contact?.label === 'Billing Phone: ' else other_content">
+          <div class="contact-links" *ngIf="contact.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
             <a [href]="contact?.redirect" target="_blank" rel="noopener">&nbsp;
               <h3>{{contact.data}}</h3>
             </a>
           </div>
           <ng-template #other_content>&nbsp;<h3>{{contact.data}}</h3></ng-template><br>
         </div>
-          <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/new-york/lincoln-ave/storage-units']" role="button">View Rates</a>                
-          <a class="btn btn-primary p-2 ml-0" [routerLink]="['/new-york/lincoln-ave/reserve-unit']" role="button"> Reserve Unit</a>                                  
+          <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/alabama/barnwell/storage-units']" role="button">View Rates</a>                
+          <a class="btn btn-primary p-2 ml-0" [routerLink]="['/alabama/barnwell/reserve-unit']" role="button"> Reserve Unit</a>                                  
         </div>
         <div class="col-lg-3 partition-border contact-hours pt-3">
             <h3>Office Hours:</h3>
@@ -100,11 +100,11 @@
         </div>
       </div>
     </div>      
-  </div> -->
+  </div>
   <!--Contact Montgomery -  Ends Here-->
 
     <!--Contact Middletown Ends Here-->
-    <!-- <div class="pb-5 pt-5 ">    
+    <div class="pb-5 pt-5 ">    
       <div class="container">
         <div class="row">          
           <div class="col-lg-5">
@@ -121,8 +121,8 @@
             </div>
             <ng-template #other_content>&nbsp;<h3>{{contact.data}}</h3></ng-template><br>
           </div>
-            <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/new-york/belforest/storage-units']" role="button">View Rates</a>                
-            <a class="btn btn-primary p-2 ml-0" [routerLink]="['/new-york/belforest/reserve-unit']" role="button"> Reserve Unit</a>                                  
+            <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/alabama/belforest/storage-units']" role="button">View Rates</a>                
+            <a class="btn btn-primary p-2 ml-0" [routerLink]="['/alabama/belforest/reserve-unit']" role="button"> Reserve Unit</a>                                  
           </div>
           <div class="col-lg-3 partition-border contact-hours pt-3">
               <h3>Office Hours:</h3>
@@ -134,6 +134,6 @@
           </div>
         </div>
       </div>      
-    </div> -->
+    </div>
     <!--Contact Middletown -  Ends Here-->
   

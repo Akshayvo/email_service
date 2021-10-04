@@ -3,9 +3,9 @@
 Welcome to the project documentation!
 
 ## Changing the project name
-Replace Self Storage of York with your project name(Hyphen Case)
+Replace Storage Plus of Baldwin County with your project name(Hyphen Case)
 
-Replace Self Storage of York with your project name(camelCase)
+Replace Storage Plus of Baldwin County with your project name(camelCase)
 
 Find and Replace across project
 

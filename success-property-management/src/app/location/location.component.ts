@@ -9,9 +9,9 @@ import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { DataSharingService } from '../api-bundle/services/data-sharing.service';
 import { CanonicalService } from '../services/canonical.service';
-import { Location1Script, Location2Script, Location3Script, 
-  ogLocation1, ogLocation2, ogLocation3,  twitterLocation1,
-  twitterLocation2, twitterLocation3,  } from '../data/script';
+import { Location1Script, Location2Script, Location3Script, Location4Script, Location5Script, Location6Script,
+  ogLocation1, ogLocation2, ogLocation3, ogLocation4, ogLocation5, ogLocation6, twitterLocation1,
+  twitterLocation2, twitterLocation3, twitterLocation4, twitterLocation5, twitterLocation6 } from '../data/script';
 import { featuresHead, featuresList, location1FeaturesHead, location2FeaturesHead,
   location3FeaturesHead, location4FeaturesHead,location5FeaturesHead,location6FeaturesHead } from '../data/home';
 import { UaParserService } from '../services/ua-parser.service';
@@ -102,7 +102,7 @@ export class LocationComponent implements OnInit {
               content: `${this.location1PageContent}`
     });
     this.titleService.setTitle(`${this.location1PageTitle}`);
-            this.locationName = `Self Storage of York - Platte Ave`;
+            this.locationName = `Storage Plus of Baldwin County - Baltimore`;
             this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
             this.dataSharingService.locationName = this.locationName;
             this.script = Location1Script;
@@ -120,13 +120,13 @@ export class LocationComponent implements OnInit {
                 content: element.content
               })
             });
-    } else if (this.router.url.includes(`${environment.locationName}/marquis-ave`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/silverhill`)) {
            this.meta.addTag({
              name: 'description',
              content: `${this.location2PageContent}`
     });
     this.titleService.setTitle(`${this.location2PageTitle}`);
-           this.locationName = `Self Storage of York - Marquis Ave`;
+           this.locationName = `Storage Plus of Baldwin County - Silverhill`;
            this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
            this.dataSharingService.locationName = this.locationName;
            this.script = Location2Script;
@@ -144,13 +144,13 @@ export class LocationComponent implements OnInit {
               content: element.content
             })
           });
-      } else if (this.router.url.includes(`${environment.locationName}/lincoln-ave`)) {
+      } else if (this.router.url.includes(`${environment.locationName}/barnwell`)) {
         this.meta.addTag({
           name: 'description',
           content: `${this.location3PageContent}`
     });
     this.titleService.setTitle(`${this.location3PageTitle}`);
-        this.locationName = `Self Storage of York - Lincoln Ave`;
+        this.locationName = `Storage Plus of Baldwin County - Barnwell Location`;
         this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
         this.dataSharingService.locationName = this.locationName;
         this.script = Location3Script;
@@ -168,7 +168,79 @@ export class LocationComponent implements OnInit {
             content: element.content
           })
         });
-   }
+   } else if (this.router.url.includes(`${environment.locationName}/belforest`)) {
+    this.meta.addTag({
+      name: 'description',
+      content: `${this.location4PageContent}`
+    });
+    this.titleService.setTitle(`${this.location4PageTitle}`);
+    this.locationName = `Storage Plus of Baldwin County - Belforest Location`;
+    this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc4;
+    this.dataSharingService.locationName = this.locationName;
+    this.script = Location4Script;
+    this.loadScript();
+    this.og.forEach(element => {
+      this.meta.addTag({
+        property: element.property,
+        content: element.content
+      })
+    });
+
+    this.twitter.forEach(element => {
+      this.meta.addTag({
+        name: element.name,
+        content: element.content
+      })
+    });
+  } else if (this.router.url.includes(`${environment.locationName}/fairhope`)) {
+    this.meta.addTag({
+      name: 'description',
+      content: `${this.location5PageContent}`
+});
+this.titleService.setTitle(`${this.location5PageTitle}`);
+    this.locationName = `Storage Plus of Baldwin County - Fairhope`;
+    this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc5;
+    this.dataSharingService.locationName = this.locationName;
+    this.script = Location5Script;
+    this.loadScript();
+    this.og.forEach(element => {
+     this.meta.addTag({
+       property: element.property,
+       content: element.content
+     })
+   });
+
+   this.twitter.forEach(element => {
+     this.meta.addTag({
+       name: element.name,
+       content: element.content
+     })
+   });
+} else if (this.router.url.includes(`${environment.locationName}/robertsdale`)) {
+  this.meta.addTag({
+    name: 'description',
+    content: `${this.location6PageContent}`
+});
+this.titleService.setTitle(`${this.location6PageTitle}`);
+  this.locationName = `Storage Plus of Baldwin County - Robertsdale`;
+  this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc6;
+  this.dataSharingService.locationName = this.locationName;
+  this.script = Location6Script;
+  this.loadScript();
+  this.og.forEach(element => {
+   this.meta.addTag({
+     property: element.property,
+     content: element.content
+   })
+ });
+
+ this.twitter.forEach(element => {
+   this.meta.addTag({
+     name: element.name,
+     content: element.content
+   })
+ });
+}
 }
 
   ngOnInit() {
@@ -215,51 +287,49 @@ export class LocationComponent implements OnInit {
   public fetchOg() {
     if (this.router.url.includes(`${environment.locationName}/baltimore`)) {
       this.og = ogLocation1;
-  } else if (this.router.url.includes(`${environment.locationName}/marquis-ave`)) {
+  } else if (this.router.url.includes(`${environment.locationName}/silverhill`)) {
     this.og = ogLocation2;
-  } else if (this.router.url.includes(`${environment.locationName}/lincoln-ave`)) {
-    this.og = ogLocation3;}
-  // } else if (this.router.url.includes(`${environment.locationName}/belforest`)) {
-  //   this.og = ogLocation4;
-  // } else if (this.router.url.includes(`${environment.locationName}/fairhope`)) {
-  //   this.og = ogLocation5;
-  // } else if (this.router.url.includes(`${environment.locationName}/robertsdale`)) {
-  //   this.og = ogLocation6;
-  // }
-  // }
+  } else if (this.router.url.includes(`${environment.locationName}/barnwell`)) {
+    this.og = ogLocation3;
+  } else if (this.router.url.includes(`${environment.locationName}/belforest`)) {
+    this.og = ogLocation4;
+  } else if (this.router.url.includes(`${environment.locationName}/fairhope`)) {
+    this.og = ogLocation5;
+  } else if (this.router.url.includes(`${environment.locationName}/robertsdale`)) {
+    this.og = ogLocation6;
+  }
   }
 
   public fetchTwitter() {
     if (this.router.url.includes(`${environment.locationName}/baltimore`)) {
       this.twitter = twitterLocation1;
-  } else if (this.router.url.includes(`${environment.locationName}/marquis-ave`)) {
+  } else if (this.router.url.includes(`${environment.locationName}/silverhill`)) {
     this.twitter = twitterLocation2;
-  } else if (this.router.url.includes(`${environment.locationName}/lincoln-ave`)) {
-    this.twitter = twitterLocation3;}
-  // } else if (this.router.url.includes(`${environment.locationName}/belforest`)) {
-  //   this.twitter = twitterLocation4;
-  // } else if (this.router.url.includes(`${environment.locationName}/fairhope`)) {
-  //   this.twitter = twitterLocation5;
-  // } else if (this.router.url.includes(`${environment.locationName}/robertsdale`)) {
-  //   this.twitter = twitterLocation6;
-  // }
-  // }
+  } else if (this.router.url.includes(`${environment.locationName}/barnwell`)) {
+    this.twitter = twitterLocation3;
+  } else if (this.router.url.includes(`${environment.locationName}/belforest`)) {
+    this.twitter = twitterLocation4;
+  } else if (this.router.url.includes(`${environment.locationName}/fairhope`)) {
+    this.twitter = twitterLocation5;
+  } else if (this.router.url.includes(`${environment.locationName}/robertsdale`)) {
+    this.twitter = twitterLocation6;
+  }
   }
 
   public isSomePage() {
     if (this.router.url.includes(`${environment.locationName}/baltimore`)) {
         this.fetchDetailsLocation1();
-    } else if (this.router.url.includes(`${environment.locationName}/marquis-ave`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/silverhill`)) {
       this.fetchDetailsLocation2();
-    } else if (this.router.url.includes(`${environment.locationName}/lincoln-ave`)) {
-      this.fetchDetailsLocation3();}
-    // } else if (this.router.url.includes(`${environment.locationName}/belforest`)) {
-    //   this.fetchDetailsLocation4();
-    // } else if (this.router.url.includes(`${environment.locationName}/fairhope`)) {
-    //   this.fetchDetailsLocation5();
-    // } else if (this.router.url.includes(`${environment.locationName}/robertsdale`)) {
-    //   this.fetchDetailsLocation6();
-    // }
+    } else if (this.router.url.includes(`${environment.locationName}/barnwell`)) {
+      this.fetchDetailsLocation3();
+    } else if (this.router.url.includes(`${environment.locationName}/belforest`)) {
+      this.fetchDetailsLocation4();
+    } else if (this.router.url.includes(`${environment.locationName}/fairhope`)) {
+      this.fetchDetailsLocation5();
+    } else if (this.router.url.includes(`${environment.locationName}/robertsdale`)) {
+      this.fetchDetailsLocation6();
+    }
  }
 
  public navigateToReserve() {
@@ -267,21 +337,21 @@ export class LocationComponent implements OnInit {
     this.router.navigate([`${environment.locationName}/baltimore/reserve-unit`],
           );
   } else if ( this.locationId === 2 ) {
-    this.router.navigate([`${environment.locationName}/marquis-ave/reserve-unit`],
+    this.router.navigate([`${environment.locationName}/silverhill/reserve-unit`],
           );
   }  else if ( this.locationId === 3 ) {
-    this.router.navigate([`${environment.locationName}/lincoln-ave/reserve-unit`],
-         );}
-  // }  else if ( this.locationId === 4 ) {
-  //   this.router.navigate([`${environment.locationName}/belforest/reserve-unit`],
-  //         );
-  // } else if ( this.locationId === 5 ) {
-  //   this.router.navigate([`${environment.locationName}/fairhope/reserve-unit`],
-  //         );
-  // } else if ( this.locationId === 6 ) {
-  //   this.router.navigate([`${environment.locationName}/robertsdale/reserve-unit`],
-  //         );
-  // }
+    this.router.navigate([`${environment.locationName}/barnwell/reserve-unit`],
+         );
+  }  else if ( this.locationId === 4 ) {
+    this.router.navigate([`${environment.locationName}/belforest/reserve-unit`],
+          );
+  } else if ( this.locationId === 5 ) {
+    this.router.navigate([`${environment.locationName}/fairhope/reserve-unit`],
+          );
+  } else if ( this.locationId === 6 ) {
+    this.router.navigate([`${environment.locationName}/robertsdale/reserve-unit`],
+          );
+  }
  }
 
   public fetchDetailsLocation1() {
@@ -299,7 +369,6 @@ export class LocationComponent implements OnInit {
      this.locationId = 2;
      this.contacts = contactsLocation2;
      this.hours = hoursLocation2;
-     this.access = hoursLocation1AcessHours;
      this.tabs = tabs;
      this.features = location2FeaturesHead;
    }
@@ -309,35 +378,34 @@ export class LocationComponent implements OnInit {
     this.locationId = 3;
     this.contacts = contactsLocation3;
     this.hours = hoursLocation3;
-    this.access = hoursLocation1AcessHours;  
     this.tabs = tabs;
     this.features = location3FeaturesHead;
   }
 
-  // public fetchDetailsLocation4() {
-  //   this.name = heading4;
-  //   this.locationId = 4;
-  //   this.contacts = contactsLocation4;
-  //   this.hours = hoursLocation4;
-  //   this.tabs = tabs;
-  //   this.features = location4FeaturesHead;
-  // }
+  public fetchDetailsLocation4() {
+    this.name = heading4;
+    this.locationId = 4;
+    this.contacts = contactsLocation4;
+    this.hours = hoursLocation4;
+    this.tabs = tabs;
+    this.features = location4FeaturesHead;
+  }
 
-  // public fetchDetailsLocation5() {
-  //   this.name = heading5;
-  //   this.locationId = 5;
-  //   this.contacts = contactsLocation5;
-  //   this.hours = hoursLocation5;
-  //   this.tabs = tabs;
-  //   this.features = location5FeaturesHead;
-  // }
+  public fetchDetailsLocation5() {
+    this.name = heading5;
+    this.locationId = 5;
+    this.contacts = contactsLocation5;
+    this.hours = hoursLocation5;
+    this.tabs = tabs;
+    this.features = location5FeaturesHead;
+  }
 
-  // public fetchDetailsLocation6() {
-  //   this.name = heading6;
-  //   this.locationId = 6;
-  //   this.contacts = contactsLocation6;
-  //   this.hours = hoursLocation6;
-  //   this.tabs = tabs;
-  //   this.features = location6FeaturesHead;
-  // }
+  public fetchDetailsLocation6() {
+    this.name = heading6;
+    this.locationId = 6;
+    this.contacts = contactsLocation6;
+    this.hours = hoursLocation6;
+    this.tabs = tabs;
+    this.features = location6FeaturesHead;
+  }
 }

@@ -26,7 +26,7 @@ export class PrivacyPolicyComponent implements OnInit {
       name: 'description',
       content: `This page contains this website's privacy policy. For more information, please contact the business directly.`
     });
-    this.titleService.setTitle('Privacy Policy | Self Storage of York');
+    this.titleService.setTitle('Privacy Policy | Storage Plus of Baldwin County');
   }
 
   ngOnInit() {

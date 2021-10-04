@@ -31,7 +31,6 @@
 }
 
 .jumbotorn-skew-style {
-  display: none;
   width: 75%;
   float: left;
   left: -25%;
@@ -45,7 +44,6 @@
 }
 
 .jumbotorn-skew-text {
-  
   transform: skew(0deg);
   width: 500px;
   position: absolute;
@@ -77,9 +75,8 @@
 
     h2 {
       line-height: 1.5rem;
+    
     }
-
-
     img {
       height: 60px;
     }
@@ -92,11 +89,6 @@
   }
 }
 
-.my-4{
-      font-weight: 600;
-      font-size: 2rem;
-    }
-
 .jumbotron-background-jpg {
   background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Success_Property_Management/jpg/success-property-jumbotron.jpg");
   background-position: center;
@@ -104,6 +96,7 @@
   background-size: cover;
   height: 80vh;
 }
+
 
 .jumbotron-background-webp {
   background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Success_Property_Management/webp/success-property-jumbotron.webp");
@@ -120,7 +113,6 @@
   background-size: cover;
   height:80vh;
 }
-
 
 // .jumbotron-top1 {
 //   background: url("");
@@ -148,6 +140,7 @@
 .contact-links {
   a {
     color: black !important;
+    margin-bottom: 28px;
   }
 }
 

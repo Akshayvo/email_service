@@ -13,20 +13,34 @@ export const navLinks = [
         sublinks: [
             {
                 id: '1',
-                label: 'Baltimore St',
+                label: 'Baltimore',
                 path: `${environment.locationName}/baltimore`,
               },
             // {
             //     id: '2',
-            //     label: 'Marquis Ave',
-            //     path: `${environment.locationName}/marquis-ave`,
+            //     label: 'Silverhill',
+            //     path: `${environment.locationName}/silverhill`,
             // },
             //   {
             //     id: '3',
-            //     label: 'Lincoln Ave',
-            //     path: `${environment.locationName}/lincoln-ave`,
+            //     label: 'Barnwell',
+            //     path: `${environment.locationName}/barnwell`,
             // },
-           
+            // {
+            //     id: '4',
+            //     label: 'Belforest',
+            //     path: `${environment.locationName}/belforest`,
+            // },
+            // {
+            //     id: '5',
+            //     label: 'Fairhope',
+            //     path: `${environment.locationName}/fairhope`,
+            // },
+            // {
+            //     id: '6',
+            //     label: 'Robertsdale',
+            //     path: `${environment.locationName}/robertsdale`,
+            // },
         ]
     },
     {

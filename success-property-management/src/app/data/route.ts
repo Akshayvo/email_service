@@ -49,48 +49,46 @@ const withoutTab = [
         {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
         { path: 'verifyCode', component: VerifyCodeComponent },
         { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]},
-        { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  },
-        
+        { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
         // canActivate: [VerifictionCodeGuard]
 ];
 
 const withTab = [
-  { path: '', redirectTo: 'rent-sub', pathMatch: 'full'},
-      { path: 'rent-sub', component: RentSubComponent,
-        children: [
-          {path: '', redirectTo: 'login', pathMatch: 'full'},
-          {path: 'login', component: LoginComponent },
-          {path: 'forgotPassword', component: ForgotPasswordComponent },
-          {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
-          {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
-          { path: 'verifyCode', component: VerifyCodeComponent },
-          { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]},
-          { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
-          // canActivate: [VerifictionCodeGuard]
-        ]
-      },
-      { path: 'sign-up', component: SignUpComponent,
-        children: [
-          {path: '', redirectTo: 'login', pathMatch: 'full'},
-          {path: 'login', component: LoginComponent },
-          {path: 'forgotPassword', component: ForgotPasswordComponent },
-          {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
-          {path: 'auto-pay', component: AutoPayComponent, canActivate: [AuthGuard]},
-          { path: 'verifyCode', component: VerifyCodeComponent },
-          { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
-          // canActivate: [VerifictionCodeGuard]
-        ]
-      }
+  { path: '', redirectTo: ' ', pathMatch: 'full'},
+  { path: 'rent-sub', component: RentSubComponent,
+    children: [
+      {path: '', redirectTo: 'login', pathMatch: 'full'},
+      {path: 'login', component: LoginComponent },
+      {path: 'forgotPassword', component: ForgotPasswordComponent },
+      {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+      {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
+      { path: 'verifyCode', component: VerifyCodeComponent },
+      { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]},
+      { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
+      // canActivate: [VerifictionCodeGuard]
+    ]
+  },
+  { path: 'sign-up', component: SignUpComponent,
+    children: [
+      {path: '', redirectTo: 'login', pathMatch: 'full'},
+      {path: 'login', component: LoginComponent },
+      {path: 'forgotPassword', component: ForgotPasswordComponent },
+      {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+      {path: 'auto-pay', component: AutoPayComponent, canActivate: [AuthGuard]},
+      { path: 'verifyCode', component: VerifyCodeComponent },
+      { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
+      // canActivate: [VerifictionCodeGuard]
+    ]
+  }
 ];
 
 // const reservationForm = environment
 const childroute = environment.signUpForAuotoPay ? withTab : withoutTab;
-const reviewURL = ``
+
 export const apiRoutes = [
     { path: '', component: HomeComponent  },
     { path: 'privacy-policy', component: PrivacyPolicyComponent },
     { path: 'frequently-asked-questions', component: FaqComponent},
-    { path: 'contact-us', component: ContactUsComponent },
     { path: `${environment.locationName}/baltimore`,
       component: LocationComponent,
       children: [
@@ -99,7 +97,7 @@ export const apiRoutes = [
         { path: 'unit-sizer', component: UnitSizerComponent },
         { path: 'reserve-unit', component: ReserveComponent,
           children: [
-            { path: '', component: ReserveUnitFormComponent },
+            // { path: '', component: ReserveUnitFormComponent },
             // { path: 'reserve', component: ReserveUnitFormComponent },
             // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
             { path: 'confirmation', component: ConfirmationDataComponent },
@@ -110,7 +108,7 @@ export const apiRoutes = [
         },
         { path: 'move-in', component: ReserveComponent,
           children: [
-            { path: '', component: ReserveUnitFormComponent },
+            // { path: '', component: ReserveUnitFormComponent },
             // { path: 'move-in', component: ReserveUnitFormComponent },
             // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
             { path: 'confirmation', component: ConfirmationDataComponent },
@@ -126,7 +124,7 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-    { path: `${environment.locationName}/marquis-ave`,
+    { path: `${environment.locationName}/silverhill`,
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -134,7 +132,7 @@ export const apiRoutes = [
         { path: 'unit-sizer', component: UnitSizerComponent },
         { path: 'reserve-unit', component: ReserveComponent,
           children: [
-            { path: '', component: ReserveUnitFormComponent },
+            // { path: '', component: ReserveUnitFormComponent },
             // { path: 'reserve', component: ReserveUnitFormComponent },
             // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
             { path: 'confirmation', component: ConfirmationDataComponent },
@@ -145,10 +143,10 @@ export const apiRoutes = [
         },
         { path: 'move-in', component: ReserveComponent,
           children: [
-            { path: '', component: ReserveUnitFormComponent },
+            // { path: '', component: ReserveUnitFormComponent },
             // { path: 'move-in', component: ReserveUnitFormComponent },
             // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
-            // { path: 'confirmation', component: ConfirmationDataComponent },
+            { path: 'confirmation', component: ConfirmationDataComponent },
             { path: 'payReservationCharges', component: PayRentFormComponent },
             { path: 'payMoveInCharges', component: PayRentFormComponent },
             { path: 'thank-you', component: ThankYouComponent,  canActivate: [ThankYouGuard] }
@@ -161,7 +159,7 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-    { path: `${environment.locationName}/lincoln-ave`,
+    { path: `${environment.locationName}/barnwell`,
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -169,7 +167,7 @@ export const apiRoutes = [
         { path: 'unit-sizer', component: UnitSizerComponent },
         { path: 'reserve-unit', component: ReserveComponent,
           children: [
-            { path: '', component: ReserveUnitFormComponent },
+            // { path: '', component: ReserveUnitFormComponent },
             // { path: 'reserve', component: ReserveUnitFormComponent },
             // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
             { path: 'confirmation', component: ConfirmationDataComponent },
@@ -181,7 +179,7 @@ export const apiRoutes = [
         },
         { path: 'move-in', component: ReserveComponent,
           children: [
-            { path: '', component: ReserveUnitFormComponent },
+            // { path: '', component: ReserveUnitFormComponent },
             // { path: 'move-in', component: ReserveUnitFormComponent },
             // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
             { path: 'confirmation', component: ConfirmationDataComponent },
@@ -204,7 +202,7 @@ export const apiRoutes = [
         { path: 'unit-sizer', component: UnitSizerComponent },
         { path: 'reserve-unit', component: ReserveComponent,
           children: [
-            { path: '', component: ReserveUnitFormComponent },
+            // { path: '', component: ReserveUnitFormComponent },
             // { path: 'reserve', component: ReserveUnitFormComponent },
             // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
             { path: 'confirmation', component: ConfirmationDataComponent },
@@ -216,7 +214,7 @@ export const apiRoutes = [
         { path: 'move-in', component: ReserveComponent,
           children: [
             // { path: '', component: ViewRatesPageComponent },
-            { path: '', component: ReserveUnitFormComponent },
+            // { path: '', component: ReserveUnitFormComponent },
             // { path: 'move-in', component: ReserveUnitFormComponent },
             // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
             { path: 'confirmation', component: ConfirmationDataComponent },
@@ -240,8 +238,8 @@ export const apiRoutes = [
         { path: 'unit-sizer', component: UnitSizerComponent },
         { path: 'reserve-unit', component: ReserveComponent,
           children: [
-            { path: '', component: ReserveUnitFormComponent },
-            { path: 'reserve', component: ReserveUnitFormComponent },
+            // { path: '', component: ReserveUnitFormComponent },
+            // { path: 'reserve', component: ReserveUnitFormComponent },
             // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
             { path: 'confirmation', component: ConfirmationDataComponent },
             { path: 'payReservationCharges', component: PayRentFormComponent },
@@ -253,7 +251,7 @@ export const apiRoutes = [
           children: [
             // { path: '', component: ViewRatesPageComponent },
             // { path: '', component: ReserveUnitFormComponent },
-            { path: 'move-in', component: ReserveUnitFormComponent },
+            // { path: 'move-in', component: ReserveUnitFormComponent },
             // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
             { path: 'confirmation', component: ConfirmationDataComponent },
             { path: 'payReservationCharges', component: PayRentFormComponent },
@@ -276,7 +274,7 @@ export const apiRoutes = [
         { path: 'unit-sizer', component: UnitSizerComponent },
         { path: 'reserve-unit', component: ReserveComponent,
           children: [
-            { path: '', component: ReserveUnitFormComponent },
+            // { path: '', component: ReserveUnitFormComponent },
             // { path: 'reserve', component: ReserveUnitFormComponent },
             // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
             { path: 'confirmation', component: ConfirmationDataComponent },
@@ -288,8 +286,8 @@ export const apiRoutes = [
         { path: 'move-in', component: ReserveComponent,
           children: [
             // { path: '', component: ViewRatesPageComponent },
-            { path: '', component: ReserveUnitFormComponent },
-            { path: 'move-in', component: ReserveUnitFormComponent },
+            // { path: '', component: ReserveUnitFormComponent },
+            // { path: 'move-in', component: ReserveUnitFormComponent },
             // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
             { path: 'confirmation', component: ConfirmationDataComponent },
             { path: 'payReservationCharges', component: PayRentFormComponent },
@@ -304,7 +302,7 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-    { path: 'review/platt-ave', component: HomeComponent,
+    { path: 'review/baltimore', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -312,7 +310,7 @@ export const apiRoutes = [
         externalUrl: ''
     }
   },
-  { path: 'review/marquis-ave', component: HomeComponent,
+  { path: 'review/silverhill', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -320,7 +318,7 @@ export const apiRoutes = [
         externalUrl: ''
     }
   },
-  { path: 'review/lincoln-ave', component: HomeComponent,
+  { path: 'review/barnwell', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -352,55 +350,40 @@ export const apiRoutes = [
         externalUrl: ''
     }
   },
-  // { path: 'error', component: ErrorHandlerComponent },
-  // { path: 'pay-rent', component: PayRentComponent },
-  // {
-  //   path: 'pay-rent/platt-ave', component: PayRentComponent,
-  //   children: childroute
-  // },
-  // {
-  //   path: 'pay-rent/marquis-ave', component: PayRentComponent,
-  //   children: childroute
-  // },
-  // {
-  //   path: 'pay-rent/lincoln-ave', component: PayRentComponent,
-  //   children: childroute
-  // },
-  // {
-  //   path: 'pay-rent/belforest', component: PayRentComponent,
-  //   children: childroute
-  // },
-  // {
-  //   path: 'pay-rent/fairhope', component: PayRentComponent,
-  //   children: childroute
-  // },
-  // {
-  //   path: 'pay-rent/robertsdale', component: PayRentComponent,
-  //   children: childroute
-  // }
-
+  { path: 'error', component: ErrorHandlerComponent },
+  { path: 'pay-rent', component: PaymentComponent },
   {
-    path: 'pay-rent', component: PayRentComponent,
+    path: 'pay-rent/baltimore', component: PayRentComponent,
     children: childroute
   },
-  { path: 'forgot-password', component: ForgotPasswordComponent },
-  { path: 'review', component: HomeComponent,
-    resolve: {
-        url: 'externalUrlRedirectResolver'
-    },
-    data: {
-        externalUrl: `${reviewURL}`
-    }
-  }
-  ,
+  {
+    path: 'pay-rent/silverhill', component: PayRentComponent,
+    children: childroute
+  },
+  {
+    path: 'pay-rent/barnwell', component: PayRentComponent,
+    children: childroute
+  },
+  {
+    path: 'pay-rent/belforest', component: PayRentComponent,
+    children: childroute
+  },
+  {
+    path: 'pay-rent/fairhope', component: PayRentComponent,
+    children: childroute
+  },
+  {
+    path: 'pay-rent/robertsdale', component: PayRentComponent,
+    children: childroute
+  },
   { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
-  // { path: 'contact-us', component: ContactComponent },
-  // { path: 'contact-platt-ave', component: ContactUsComponent},
-  // { path: 'contact-marquis-ave', component: ContactUsComponent},
-  // { path: 'contact-lincoln-ave', component: ContactUsComponent},
-  // { path: 'contact-belforest', component: ContactUsComponent},
-  // { path: 'contact-fairhope', component: ContactUsComponent},
-  // { path: 'contact-robertsdale', component: ContactUsComponent},
+  { path: 'contact-us', component: ContactComponent },
+  { path: 'contact-baltimore', component: ContactUsComponent},
+  { path: 'contact-silverhill', component: ContactUsComponent},
+  { path: 'contact-barnwell', component: ContactUsComponent},
+  { path: 'contact-belforest', component: ContactUsComponent},
+  { path: 'contact-fairhope', component: ContactUsComponent},
+  { path: 'contact-robertsdale', component: ContactUsComponent},
   { path: '**', component: ErrorComponent },
   { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
 ];
@@ -409,7 +392,7 @@ export const apiRoutes = [
 export const iFrameRoutes = [
   { path: '', component: HomeComponent },
   { path: 'privacy-policy', component: PrivacyPolicyComponent },
-  { path: `${environment.locationName}/platt-ave`,
+  { path: `${environment.locationName}/baltimore`,
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -420,7 +403,7 @@ export const iFrameRoutes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: `${environment.locationName}/marquis-ave`,
+  { path: `${environment.locationName}/silverhill`,
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -431,7 +414,7 @@ export const iFrameRoutes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: `${environment.locationName}/lincoln-ave`,
+  { path: `${environment.locationName}/barnwell`,
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -475,7 +458,7 @@ export const iFrameRoutes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: 'review/platt-ave', component: HomeComponent,
+  { path: 'review/baltimore', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -483,7 +466,7 @@ export const iFrameRoutes = [
         externalUrl: ''
     }
   },
-  { path: 'review/marquis-ave', component: HomeComponent,
+  { path: 'review/silverhill', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -491,7 +474,7 @@ export const iFrameRoutes = [
         externalUrl: ''
     }
   },
-  { path: 'review/lincoln-ave', component: HomeComponent,
+  { path: 'review/barnwell', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -525,9 +508,9 @@ export const iFrameRoutes = [
   },
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentIframeComponent },
-  { path: 'pay-rent-platt-ave', component: PayRentFloridaComponent },
-  { path: 'pay-rent-marquis-ave', component: PayRentChesterComponent},
-  { path: 'pay-rent-lincoln-ave', component: PayRentMontgomeryComponent},
+  { path: 'pay-rent-baltimore', component: PayRentFloridaComponent },
+  { path: 'pay-rent-silverhill', component: PayRentChesterComponent},
+  { path: 'pay-rent-barnwell', component: PayRentMontgomeryComponent},
   { path: 'pay-rent-belforest', component: PayRentMiddletownComponent},
   { path: 'pay-rent-fairhope', component: PayRentMontgomeryComponent},
   { path: 'pay-rent-robertsdale', component: PayRentMiddletownComponent},

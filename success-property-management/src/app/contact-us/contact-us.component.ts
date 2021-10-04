@@ -6,12 +6,14 @@ import { contactsLocation1, hoursLocation1,
           contactsLocation2, hoursLocation2, contactsLocation3,
           hoursLocation3, hoursLocation4, contactsLocation4,
           hoursLocation5, contactsLocation5,
-          hoursLocation6, contactsLocation6, contactsHomePage  } from '../data/contact';
+          hoursLocation6, contactsLocation6,  } from '../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { LocationService } from '../services/location.service';
-import { contactPageLocation1Script, ogContactPage, ogContactPageLocation1, ogContactPageLocation2, ogContactPageLocation3,
-  twitterContactPage, twitterContactPageLocation1, twitterContactPageLocation2, twitterContactPageLocation3,  } from '../data/script';
+import { contactPageLocation1Script, ogContactPage, ogContactPageLocation1, ogContactPageLocation2, ogContactPageLocation3, ogContactPageLocation4,
+  ogContactPageLocation5, ogContactPageLocation6,
+  twitterContactPage, twitterContactPageLocation1, twitterContactPageLocation2, twitterContactPageLocation3, twitterContactPageLocation4,
+  twitterContactPageLocation5, twitterContactPageLocation6 } from '../data/script';
 import { CanonicalService } from '../services/canonical.service';
 import { contactPageTitle, contactPageContent } from '../data/title';
 @Component({
@@ -42,13 +44,6 @@ export class ContactUsComponent implements OnInit {
   twitter: any;
   contactPageContent: string;
   contactPageTitle: string;
-  heading1: string;
-  heading2: string;
-  heading3: string;
-  contactDetails1: any;
-  contactDetails2: any;
-  contactDetails3: any;
-  contactHomePage:any;
   
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -95,12 +90,10 @@ export class ContactUsComponent implements OnInit {
   }
 
   ngOnInit() {
-    // this.fetchLocationDetails();
+    this.fetchLocationDetails();
     window.scrollTo(0, 0);
     this.fetchScript();
     this.loadScript();
-    this.dataupdate();
-    this.contactHomePage = contactsHomePage;
 }
 
   get f() { return this.contactForm.controls; }
@@ -110,7 +103,19 @@ export class ContactUsComponent implements OnInit {
   }
 
   public fetchOg() {
-    this.og = ogContactPage;
+    if (this.router.url.includes('baltimore')) {
+      this.og = ogContactPageLocation1;
+    } else if (this.router.url.includes('silverhill')) {
+      this.og = ogContactPageLocation2;
+    } else if (this.router.url.includes('barnwell')) {
+      this.og = ogContactPageLocation3;
+    } else if (this.router.url.includes('belforest')) {
+      this.og = ogContactPageLocation4;
+    } else if (this.router.url.includes('fairhope')) {
+      this.og = ogContactPageLocation5;
+    } else if (this.router.url.includes('robertsdale')) {
+      this.og = ogContactPageLocation6;
+    }
 }
 
 public fetchMetaData() {
@@ -119,7 +124,19 @@ public fetchMetaData() {
 }
 
 public fetchTwitter() {
-  this.twitter = twitterContactPage;
+  if (this.router.url.includes('baltimore')) {
+    this.twitter = twitterContactPageLocation2;
+  } else if (this.router.url.includes('silverhill')) {
+    this.twitter = twitterContactPageLocation1;
+  } else if (this.router.url.includes('barnwell')) {
+    this.twitter = twitterContactPageLocation3;
+  } else if (this.router.url.includes('belforest')) {
+    this.twitter = twitterContactPageLocation4;
+  } else if (this.router.url.includes('fairhope')) {
+    this.twitter = twitterContactPageLocation5;
+  } else if (this.router.url.includes('robertsdale')) {
+    this.twitter = twitterContactPageLocation6;
+  }
 }
 
   public loadScript() {
@@ -139,71 +156,73 @@ public fetchTwitter() {
   //   });
   // }
 
-  public dataupdate() {
-      this.fetchContactDetailsLocation1();
-      this.fetchContactDetailsLocation2();
-      this.fetchContactDetailsLocation3();
-      this.fetchContactDetailsLocation4();
-  
-  }
-
-  // public fetchLocationDetails() {
-  //   if (this.router.url.includes('baltimore')) {
+  // public dataupdate() {
+  //   if ( this.locationId === '1' || this.locationId === 1 ) {
   //     this.fetchContactDetailsLocation1();
-  //   } else if (this.router.url.includes('marquis-ave')) {
+  //     this.mailSent = false;
+  //   } else if ( this.locationId === '2' ) {
   //     this.fetchContactDetailsLocation2();
-  //   } else if (this.router.url.includes('lincoln-ave')) {
+  //     this.mailSent = false;
+  //   } else if ( this.locationId === '3' ) {
   //     this.fetchContactDetailsLocation3();
-  //   } else if (this.router.url.includes('belforest')) {
+  //   } else if ( this.locationId === '4' ) {
   //     this.fetchContactDetailsLocation4();
-  //   } else if (this.router.url.includes('fairhope')) {
-  //     this.fetchContactDetailsLocation5();
-  //   } else if (this.router.url.includes('robertsdale')) {
-  //     this.fetchContactDetailsLocation6();
   //   }
   // }
 
+  public fetchLocationDetails() {
+    if (this.router.url.includes('baltimore')) {
+      this.fetchContactDetailsLocation1();
+    } else if (this.router.url.includes('silverhill')) {
+      this.fetchContactDetailsLocation2();
+    } else if (this.router.url.includes('barnwell')) {
+      this.fetchContactDetailsLocation3();
+    } else if (this.router.url.includes('belforest')) {
+      this.fetchContactDetailsLocation4();
+    } else if (this.router.url.includes('fairhope')) {
+      this.fetchContactDetailsLocation5();
+    } else if (this.router.url.includes('robertsdale')) {
+      this.fetchContactDetailsLocation6();
+    }
+  }
+
   public fetchContactDetailsLocation1() {
-    this.heading1 = `Platte Ave`;
+    this.heading = `Storage Plus of Baldwin County - Baltimore`;
     this.locationId = '1'
-    this.contactDetails1 = contactsLocation1;
+    this.contactDetails = contactsLocation1;
     this.hoursDetails = hoursLocation1;
-    console.log(this.heading1 ,this.contactDetails1 )
-    
   }
   
   public fetchContactDetailsLocation2() {
     this.locationId = '2'
-    this.heading2 = `Marquis Ave`;
-    this.contactDetails2 = contactsLocation2;
+    this.heading = `Storage Plus of Baldwin County - Silverhill`;
+    this.contactDetails = contactsLocation2;
     this.hoursDetails = hoursLocation2;
-    console.log(this.heading2 ,this.contactDetails2 )
   }
 
   public fetchContactDetailsLocation3() {
-    this.heading3 = `Lincoln Ave`;
+    this.heading = `Storage Plus of Baldwin County - Barnwell`;
     this.locationId = '3'
-    this.contactDetails3 = contactsLocation3;
+    this.contactDetails = contactsLocation3;
     this.hoursDetails = hoursLocation3;
-    console.log(this.heading3 ,this.contactDetails3 )
   }
 
   public fetchContactDetailsLocation4() {
-    this.heading = `Self Storage of York - Belforest`;
+    this.heading = `Storage Plus of Baldwin County - Belforest`;
     this.locationId = '4'
     this.contactDetails = contactsLocation4;
     this.hoursDetails = hoursLocation4;
   } 
 
   public fetchContactDetailsLocation5() {
-    this.heading = `Self Storage of York - Fairhope`;
+    this.heading = `Storage Plus of Baldwin County - Fairhope`;
     this.locationId = '5'
     this.contactDetails = contactsLocation5;
     this.hoursDetails = hoursLocation5;
   } 
 
   public fetchContactDetailsLocation6() {
-    this.heading = `Self Storage of York - Robertsdale`;
+    this.heading = `Storage Plus of Baldwin County - Robertsdale`;
     this.locationId = '6'
     this.contactDetails = contactsLocation6;
     this.hoursDetails = hoursLocation6;
@@ -231,7 +250,7 @@ onSubmit() {
     this.contactForm.value.subject = 'Website Form Submission';
   }
 
-  this.receiveremail = this.contactDetails1[1].data;
+  this.receiveremail = this.contactDetails[1].email;
   this.completeMessage = `<strong>Phone:</strong> ${this.contactForm.value.phone}, <br/>
                           <strong>Message:</strong> ${this.contactForm.value.message}`;
 

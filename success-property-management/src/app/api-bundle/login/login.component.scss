@@ -1,35 +1,33 @@
 
 @import "../../../styles.scss";
 
-.vertical-line {
-  border-left: 1px solid black;
-  padding-left: 50px;
-}
-
-
-.display-none {
-  display: none;
-  visibility: hidden;
-}
-
-.contact-links {
-  a {
-    color: black;
-  }
-}
-
-.modal-open {
-  .modal-backdrop {
-    background: none;
-  }
-}
-
 .forgot-link {
   a {
     color: $primary;
     text-decoration: underline;
     cursor: pointer;
   }
+}
+
+.coming-soon {
+  font-size: 3rem;
+  display: flex;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+}
+
+.rent-example {
+  border-left: 1px solid black;
+  padding-left: 50px;
+
+  a {
+    color: black;
+  }
+}
+
+.display-none {
+  display: none;
 }
 
 .loader {
@@ -56,10 +54,14 @@
   align-items: end;
 }
 
-@media only screen and (max-width: 767px) {
-  .vertical-line {
-    border-left: 0 solid black;
-    padding-left: 20px;
-    padding-top: 20px;
+@media only screen and (max-width: 991px) {
+  .rent-example {
+    border-left: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .coming-soon {
+    font-size: 2rem;
   }
 }

@@ -44,12 +44,12 @@ export const tabs = [
         path: './unit-sizer',
         active: false,
     },
-    {
-        id: '3',
-        name: 'Reserve Unit',
-        path: './reserve-unit',
-        active: false,
-    },
+    // {
+    //     id: '3',
+    //     name: 'Reserve Unit',
+    //     path: './reserve-unit',
+    //     active: false,
+    // },
     // {
     //     id: '4',
     //     name: 'About Us',
@@ -129,7 +129,7 @@ export const tabs3 = [
     // },
 ];
 
-export const headingLocation1 = `Baltimore St Location`;
+export const headingLocation1 = ``;
 
 export const headingLocation2 = ``;
 
@@ -143,11 +143,11 @@ export const headingLocation6 = ``;
 
 
 
-export const headingReservePageLocation1 = `Take a moment to check out our extremely affordable rates on both regular and climate-controlled self storage units. Don't forget, we also offer vehicle parking!`;
+export const headingReservePageLocation1 = `Ready to Reserve a Self Storage Unit in Baltimore`;
 
-export const headingReservePageLocation2 = `Ready to Reserve a Self Storage Unit in Marquis Ave`;
+export const headingReservePageLocation2 = `Ready to Reserve a Self Storage Unit in Silverhill`;
 
-export const headingReservePageLocation3 = `Ready to Reserve a Self Storage Unit in Lincoln Ave`;
+export const headingReservePageLocation3 = `Ready to Reserve a Self Storage Unit in Barnwell`;
 
 export const headingReservePageLocation4 = ``;
 
@@ -155,33 +155,20 @@ export const headingReservePageLocation5 = `Ready to Reserve a Self Storage Unit
 
 export const headingReservePageLocation6 = `Ready to Reserve a Self Storage Unit in Robertsdale`;
 
-export const heading1 = `Self Storage of York - Platte Ave`;
+export const heading1 = `Success Property Management - Baltimore`;
 
-export const heading2 = `Self Storage of York - Marquis Ave`;
+export const heading2 = `Storage Plus of Baldwin County - Silverhill`;
 
-export const heading3 = `Self Storage of York - Lincoln Ave`;
+export const heading3 = `Storage Plus of Baldwin County - Barnwell`;
 
-export const heading4 = `Self Storage of York - Belforest`;
+export const heading4 = `Storage Plus of Baldwin County - Belforest`;
 
-export const heading5 = `Self Storage of York - Fairhope`;
+export const heading5 = `Storage Plus of Baldwin County - Fairhope`;
 
-export const heading6 = `Self Storage of York - Robertsdale`;
+export const heading6 = `Storage Plus of Baldwin County - Robertsdale`;
 
 
 export const unitSizerLocation1 = [
-    {
-        text: '5\' x 5\' Storage Unit',
-        alt: '5\' x 5\' Storage Unit Graphic ',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x5.png',
-        data: `This unit is approximately 25 sq feet of space that can hold the contents of one small closet, such as:`,
-        amenities: [
-        { content: 'Chairs', },
-        { content: 'Small Bookcases', },
-        { content: 'Suitcases', },
-        { content: 'Lamps', },
-        { content: 'Kitchenware' },
-        ],
-    },
     {
         text: '5\' x 10\' Storage Unit',
         alt: '5\' x 10\' Storage Unit Graphic ',
@@ -213,7 +200,20 @@ export const unitSizerLocation1 = [
             { content: 'Kitchen Appliances' },
         ],
     },
-   
+    {
+        text: '10\' x 15\' Storage Unit',
+        alt: '10\' x 15\' Storage Unit Graphic ',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x15.png',
+        data: `This unit is approximately 150 sq feet of space that can hold the contents of three to four rooms.`,
+        amenities: [
+            { content: 'Chairs', },
+            { content: 'Small Desks', },
+            { content: 'Bookcases', },
+            { content: 'Furniture', },
+            { content: 'Suitcases', },
+            { content: 'Kitchen Appliances' },
+          ],
+    },
     {
         text: '10\' x 20\' Storage Unit',
         alt: '10\' x 20\' Storage Unit Graphic ',
@@ -224,21 +224,6 @@ export const unitSizerLocation1 = [
             { content: 'Appliances', },
             { content: 'Car or Small Boat', },
             { content: 'Furniture', },
-            { content: 'Bookcases', },
-            { content: 'Tow Trailer', },
-            ],
-    },
-    {
-        text: '10\' x 25\' Storage Unit',
-        alt: '10\' x 25\' Storage Unit Graphic ',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x25.png',
-        data: `This unit is approximately 250 sq feet of space that can hold the contents of about five rooms.
-        `,
-        amenities: [
-            { content: 'Appliances', },
-            { content: 'Car or Small Boat', },
-            { content: 'Furniture', },
-            { content: 'Mattresses' },
             { content: 'Bookcases', },
             { content: 'Tow Trailer', },
             ],
@@ -262,19 +247,6 @@ export const unitSizerLocation1 = [
 
 export const unitSizerLocation2 = [
     {
-        text: '5\' x 5\' Storage Unit',
-        alt: '5\' x 5\' Storage Unit Graphic ',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x5.png',
-        data: `This unit is approximately 25 sq feet of space that can hold the contents of one small closet, such as:`,
-        amenities: [
-        { content: 'Chairs', },
-        { content: 'Small Bookcases', },
-        { content: 'Suitcases', },
-        { content: 'Lamps', },
-        { content: 'Kitchenware' },
-        ],
-    },
-    {
         text: '5\' x 10\' Storage Unit',
         alt: '5\' x 10\' Storage Unit Graphic ',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x10.png',
@@ -305,7 +277,20 @@ export const unitSizerLocation2 = [
             { content: 'Kitchen Appliances' },
         ],
     },
-   
+    {
+        text: '10\' x 15\' Storage Unit',
+        alt: '10\' x 15\' Storage Unit Graphic ',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x15.png',
+        data: `This unit is approximately 150 sq feet of space that can hold the contents of three to four rooms.`,
+        amenities: [
+            { content: 'Chairs', },
+            { content: 'Small Desks', },
+            { content: 'Bookcases', },
+            { content: 'Furniture', },
+            { content: 'Suitcases', },
+            { content: 'Kitchen Appliances' },
+          ],
+    },
     {
         text: '10\' x 20\' Storage Unit',
         alt: '10\' x 20\' Storage Unit Graphic ',
@@ -316,21 +301,6 @@ export const unitSizerLocation2 = [
             { content: 'Appliances', },
             { content: 'Car or Small Boat', },
             { content: 'Furniture', },
-            { content: 'Bookcases', },
-            { content: 'Tow Trailer', },
-            ],
-    },
-    {
-        text: '10\' x 25\' Storage Unit',
-        alt: '10\' x 25\' Storage Unit Graphic ',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x25.png',
-        data: `This unit is approximately 250 sq feet of space that can hold the contents of about five rooms.
-        `,
-        amenities: [
-            { content: 'Appliances', },
-            { content: 'Car or Small Boat', },
-            { content: 'Furniture', },
-            { content: 'Mattresses' },
             { content: 'Bookcases', },
             { content: 'Tow Trailer', },
             ],
@@ -365,6 +335,7 @@ export const unitSizerLocation3 = [
         { content: 'Kitchenware' },
         ],
     },
+
     {
         text: '5\' x 10\' Storage Unit',
         alt: '5\' x 10\' Storage Unit Graphic ',
@@ -396,7 +367,20 @@ export const unitSizerLocation3 = [
             { content: 'Kitchen Appliances' },
         ],
     },
-   
+    {
+        text: '10\' x 15\' Storage Unit',
+        alt: '10\' x 15\' Storage Unit Graphic ',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x15.png',
+        data: `This unit is approximately 150 sq feet of space that can hold the contents of three to four rooms.`,
+        amenities: [
+            { content: 'Chairs', },
+            { content: 'Small Desks', },
+            { content: 'Bookcases', },
+            { content: 'Furniture', },
+            { content: 'Suitcases', },
+            { content: 'Kitchen Appliances' },
+          ],
+    },
     {
         text: '10\' x 20\' Storage Unit',
         alt: '10\' x 20\' Storage Unit Graphic ',
@@ -407,21 +391,6 @@ export const unitSizerLocation3 = [
             { content: 'Appliances', },
             { content: 'Car or Small Boat', },
             { content: 'Furniture', },
-            { content: 'Bookcases', },
-            { content: 'Tow Trailer', },
-            ],
-    },
-    {
-        text: '10\' x 25\' Storage Unit',
-        alt: '10\' x 25\' Storage Unit Graphic ',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x25.png',
-        data: `This unit is approximately 250 sq feet of space that can hold the contents of about five rooms.
-        `,
-        amenities: [
-            { content: 'Appliances', },
-            { content: 'Car or Small Boat', },
-            { content: 'Furniture', },
-            { content: 'Mattresses' },
             { content: 'Bookcases', },
             { content: 'Tow Trailer', },
             ],
@@ -442,6 +411,7 @@ export const unitSizerLocation3 = [
             ],
     }
 ];
+
 export const unitSizerLocation4 = [
     {
         text: '5\' x 5\' Storage Unit',
@@ -690,7 +660,7 @@ export const unitSizerLocation6 = [
 ];
 
 
-export const aboutUsHeadingLocation1 = `24-Hour Access Self Storage in York, N.E.`;
+export const aboutUsHeadingLocation1 = `About Us`;
 
 export const aboutUsHeadingLocation2 = `About Us`;
 
@@ -724,20 +694,7 @@ export const aboutUsImageLocation6 = ``;
 
 export const aboutUsLocation1 = [
     {
-        p: `Self Storage of York and our 3 convenient locations are York, Nebraska’s premier self storage and vehicle storage solution! We have proudly served the community with clean, well-maintained self storage and outdoor parking services for over 40 years. As a locally owned & operated facility, rest assured we know a thing or two about taking care of our valued customers! You’ll find all of the modern amenities you need to make that move, remodel, or reclaiming that garage a breeze!`,
-
-    },
-    {
-        p: `Our 3 conveniently located facilities are equipped with online reservations to make finding an appropriate unit for you a fast and easy experience. Once you’ve reserved your unit, one of our friendly managers will reach out to assist you in completing your rental application. As a tenant at Self Storage of York, you’ll have access to your account 24-hours a day, 7 days a week with our tenant portal. Pay your bill or sign up for automatic payments at your convenience!`,
-        
-    },
-    {
-        p: `We know that there is more to managing a top-notch self storage operation than just the conveniences. That’s why our facilities are clean, well maintained, and our management team performs regular lot inspections.`,
-        
-    },
-    {
-        p: `So whether you’re a residential storage user looking to clear up some room around the house, or you’re a business owner that understands the savings self storage offers over commercial real estate for inventory storage Self Storage of York has a unit for you! Take a moment to review our current inventory and pricing, then give us a call!`,
-        
+        p: ``,
     },
     
 ];

@@ -30,9 +30,9 @@ export class UnitSizerComponent implements OnInit {
   public isSomePage() {
     if (this.router.url.includes(`${environment.locationName}/baltimore`)) {
       this.fetchDetailsLocation1();
-  } else if (this.router.url.includes(`${environment.locationName}/marquis-ave`)) {
+  } else if (this.router.url.includes(`${environment.locationName}/silverhill`)) {
     this.fetchDetailsLocation2();
-  } else if (this.router.url.includes(`${environment.locationName}/lincoln-ave`)) {
+  } else if (this.router.url.includes(`${environment.locationName}/barnwell`)) {
     this.fetchDetailsLocation3();
   } else if (this.router.url.includes(`${environment.locationName}/belforest`)) {
     this.fetchDetailsLocation4();
@@ -46,18 +46,21 @@ export class UnitSizerComponent implements OnInit {
   public fetchDetailsLocation1() {
     this.unitSizer = unitSizerLocation1;
     this.h2tag = 'Unit Sizer';
-    this.description = `Not sure what will fit in a particular sized unit? Our unit sizer will help you estimate what will fit into each of our unit types.`;
+    this.description = `Not sure what size unit you need for your belongings? Use our handy unit sizing guide to figure that
+    out! Still have questions? Call (251) 970-3168`;
   }
 
   public fetchDetailsLocation2() {
     this.h2tag = 'Unit Sizer';
-    this.description = `Not sure what will fit in a particular sized unit? Our unit sizer will help you estimate what will fit into each of our unit types.`;
+    this.description = `Check out our unit sizing chart to make sure the unit you're looking at will hold the belongings you need to
+    store. Once you decide on the right unit for you, check our availability, then give our offices a call for more information!`;
     this.unitSizer = unitSizerLocation2;
   }
 
   public fetchDetailsLocation3() {
     this.h2tag = 'Unit Sizer ';
-    this.description = `Not sure what will fit in a particular sized unit? Our unit sizer will help you estimate what will fit into each of our unit types.`;
+    this.description = `Not sure what size unit you need for your belongings? Use our handy unit sizing guide to figure that
+    out! Still have questions? Call (251) 970-3168`;
     this.unitSizer = unitSizerLocation3;
   }
 

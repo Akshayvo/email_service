@@ -1,14 +1,14 @@
-export const homePageTitle = `24-Hour Access Self Storage Units in York, NE`;
-export const homePageContent = `Self Storage of York serves York, NE, and the surrounding communities with a variety of well-maintained and affordable self storage units`;
+export const homePageTitle = `Affordable Self Storage & Vehicle Parking in Baldwin County`;
+export const homePageContent = `Storage Plus of Baldwin County has 6 conveniently located self storage facilities with a variety of affordable self storage unit types and vehicle parking options.`;
 
-export const location1PageTitle = `Platte Ave Location | Self Storage of York`;
-export const location1PageContent = `Take a moment to review our rates at Self Storage of York, then reserve your unit, and start saving space today!`;
+export const location1PageTitle = `Baltimore | Storage Plus of Baldwin County`;
+export const location1PageContent = `We offer a number of affordable self storage options in Baltimore, Alabama. Check out our prices, then give us a call to start clearing up your home, office, or garage!`;
 
-export const location2PageTitle = `Maquis Ave Location | Self Storage of York`;
-export const location2PageContent = `Take a moment to review our rates at Self Storage of York, then reserve your unit, and start saving space today!`;
+export const location2PageTitle = `Silverhill | Storage Plus of Baldwin County`;
+export const location2PageContent = `Our Silverhill location offers a large variety of regular and climate controlled storage units in a number of sizes, and all of our units are priced competitively!`;
 
-export const location3PageTitle = `Lincoln Ave Location | Self Storage of York`;
-export const location3PageContent = `Take a moment to review our rates at Self Storage of York, then reserve your unit, and start saving space today!`;
+export const location3PageTitle = `Barnwell | Storage Plus of Baldwin County`;
+export const location3PageContent = `Our Barnwell location offers a number of regular and climate controlled self storage units, and all of our units are economically priced!`;
 
 export const location4PageTitle = `Belforest | Storage Plus of Baldwin County`;
 export const location4PageContent = `Our Belforest location offers a number of affordable regular and climate controlled self storage units, perfect for any self storage project!`;
@@ -25,17 +25,17 @@ export const viewRatesPageContent = ``;
 export const reservePageTitle = ``;
 export const reservePageContent = ``;
 
-export const payRentPageTitle = `Pay Rent | Self Storage of York`;
-export const payRentPageContent = `Simply follow the on-page instructions for your location, and you can pay online 24-hours a day`;
+export const payRentPageTitle = `Pay Rent | Storage Plus of Baldwin County`;
+export const payRentPageContent = `Pay your bill online 24 hours a day, 7 days a week with our easy tenant portal! Just follow these instructions, or you can call our offices to learn more!`;
 
-export const storageTipsTitle = `Storage Tips | Self Storage of York`;
-export const storageTipsContent = `Follow these easy self storage tips to make your stay with Self Storage of York a breeze! Have questions? Call today!`;
+export const storageTipsTitle = `Storage Tips | Storage Plus of Baldwin`;
+export const storageTipsContent = `Take advantage of our decades of self storage experience and follow these easy storage tips! You'll be glad you did!`;
 
 export const unitSizerPageTitle = ``;
 export const unitSizerPageContent = ``;
 
-export const contactPageTitle = `Contact Us | Self Storage of York`;
-export const contactPageContent = `Do you have a question about your account, or our self storage, boat, and recreational vehicle storage? Use our contact form, or call us today!`;
+export const contactPageTitle = `Contact Us | Storage Plus of Baldwin County`;
+export const contactPageContent = `Have questions about any of our 6 locations or your account with Storage Plus of Baldwin County? Use our contact form or the information on this page to reach out!`;
 
 export const thankYouPageTitle = `Thank You For Reserving Your Unit at Storage Plus of Baldwin County!`;
 export const thankYouPageContent = `We've received your reservation! One of our friendly staff will be in touch!`;
@@ -48,14 +48,14 @@ export const faqPagecontent = `Have some questions about the services at Storage
 
 
 
-export const location1PayrentPageTitle = `Pay Rent | Self Storage of York`;
-export const location1PayrentPageContent = `Simply follow the on-page instructions, or call one of our friendly management professionals to learn how to access your account, today!`;
+export const location1PayrentPageTitle = `Pay Rent | Storage Plus of Baldwin County`;
+export const location1PayrentPageContent = `Follow the simple instructions on this page and you'll have access to our tenant portal 24 hours a day!`;
 
-export const location2PayrentPageTitle = `Pay Rent | Self Storage of York`;
-export const location2PayrentPageContent = `Simply follow the on-page instructions, or call one of our friendly management professionals to learn how to access your account, today!`;
+export const location2PayrentPageTitle = `Pay Rent | Storage Plus of Baldwin County`;
+export const location2PayrentPageContent = `Follow the instructions on this page to log into your account with us, and pay your bill online 24/7! Call our office for more information!`;
 
-export const location3PayrentPageTitle = `Pay Rent | Self Storage of York`;
-export const location3PayrentPageContent = `Simply follow the on-page instructions, or call one of our friendly management professionals to learn how to access your account, today!`;
+export const location3PayrentPageTitle = `Pay Rent | Storage Plus of Baldwin County`;
+export const location3PayrentPageContent = `Follow the instructions on this page to log into your account with us, and pay your bill online 24/7! Call our office for more information!`;
 
 export const location4PayrentPageTitle = `Belfast Location Pay Rent | Storage Plus of Baldwin County`;
 export const location4PayrentPageContent = `Follow the instructions on this page to log into your account with us, and pay your bill online 24/7! Call our office for more information!`;
@@ -68,14 +68,14 @@ export const location6PayrentPageContent = `Follow the instructions on this page
 
 
 
-export const location1ContactPageTitle = `Contact Us | Self Storage of York`;
-export const location1ContactPageContent = `Do you have a question about your account, or our self storage, boat, and recreational vehicle storage? Use our contact form, or call us today!`;
+export const location1ContactPageTitle = `Contact Us | Storage Plus of Baldwin County`;
+export const location1ContactPageContent = `Have questions about your account with Storage Plus of Baldwin County? Use our contact form or the information on this page to contact our friendly team!`;
 
-export const location2ContactPageTitle = `Contact Us | Self Storage of York`;
-export const location2ContactPageContent = `Do you have a question about your account, or our self storage, boat, and recreational vehicle storage? Use our contact form, or call us today!`;
+export const location2ContactPageTitle = `Contact Us | Storage Plus of Baldwin County`;
+export const location2ContactPageContent = `Have questions about your account with us? Use our quick form or call our main office today to learn more!`;
 
-export const location3ContactPageTitle = `Contact Us | Self Storage of York`;
-export const location3ContactPageContent = `Do you have a question about your account, or our self storage, boat, and recreational vehicle storage? Use our contact form, or call us today!`;
+export const location3ContactPageTitle = `Contact Us | Storage Plus of Baldwin County`;
+export const location3ContactPageContent = `Have questions about your account with us? Use our quick form or call our main office today to learn more!`;
 
 export const location4ContactPageTitle = `Contact Us | Storage Plus of Baldwin County`;
 export const location4ContactPageContent = `Have questions about your account with us? Use our quick form or call our main office today to learn more!`;

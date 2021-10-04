@@ -29,6 +29,14 @@
     }
   }
 
+  .display-contact {
+    display: flex;
+  }
+
+  h5 {
+    line-height: 1.5rem;
+  }
+
   .contact-links {
     a {
       color: #212529;
@@ -114,4 +122,7 @@
   .contentHolder {
     padding-top: 200px;
   } 
+  .contact-data {
+    padding: 1rem !important;
+  }
 }

@@ -1,4 +1,4 @@
 export const messages = {
     routeChangePrevent: 'You have unsaved changes! If you leave, your data will be lost.',
-    title: 'Self Storage of York',
+    title: 'Storage Plus of Baldwin County',
 };

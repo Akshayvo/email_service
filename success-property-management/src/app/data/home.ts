@@ -1,5 +1,4 @@
 /* tslint:disable:max-line-length */
-
 export const featuresHead = [
     {
         label: ' Boat and Vehicle Storage',
@@ -47,7 +46,7 @@ export const location1FeaturesHead = [
 ];
 export const location2FeaturesHead = [
     {
-        label: '3 Convenient Locations',
+        label: '6 Convenient Locations',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
         alt: 'Icon art displaying a location pin'
     },
@@ -57,23 +56,21 @@ export const location2FeaturesHead = [
         alt: 'Icon art displaying clock hands and the number 24'
     },
     {
-        label: 'Friendly Customer Service',
+        label: 'Stellar Customer Service',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg',
-        alt: 'Icon of a customer service agent'
+        alt: 'Customer Service Representative Icon'
     },
-   
-    
+    {
+        label: 'Well-Lit Facility',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/light-bulb.svg',
+        alt: 'Icon of an illuminated light'
+    },
 ];
 export const location3FeaturesHead = [
     {
-        label: '3 Convenient Locations',
+        label: '6 Convenient Locations',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
         alt: 'Icon art displaying a location pin'
-    },
-    {
-        label: 'Online Reservation & Bill Pay',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/online.svg',
-        alt: 'Icon art displaying a screen with cursor'
     },
     {
         label: '24 Hour Facility Access',
@@ -81,15 +78,20 @@ export const location3FeaturesHead = [
         alt: 'Icon art displaying clock hands and the number 24'
     },
     {
-        label: 'Locally Owned and Operated',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/team.svg',
-        alt: 'Icon of people standing together'
+        label: 'Well-Lit Facility',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/light-bulb.svg',
+        alt: 'Icon of an illuminated light'
+    },
+    {
+        label: 'Fully-Fenced Facility',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/fence.svg',
+        alt: 'Icon of a section of fencing'
     },
 ];
 
 export const location4FeaturesHead = [
     {
-        label: '3 Convenient Locations',
+        label: '6 Convenient Locations',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
         alt: 'Icon art displaying a location pin'
     },
@@ -112,7 +114,7 @@ export const location4FeaturesHead = [
 
 export const location5FeaturesHead = [
     {
-        label: '3 Convenient Locations',
+        label: '6 Convenient Locations',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
         alt: 'Icon art displaying a location pin'
     },
@@ -135,7 +137,7 @@ export const location5FeaturesHead = [
 
 export const location6FeaturesHead = [
     {
-        label: '3 Convenient Locations',
+        label: '6 Convenient Locations',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
         alt: 'Icon art displaying a location pin'
     },

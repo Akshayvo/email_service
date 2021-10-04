@@ -58,13 +58,13 @@
         </div> -->
     </div>
     </div>
-    <div class="col-lg-4 vertical-line" >
+    <div class="col-lg-4 rent-example p-4" >
         <h3>How to Login</h3>
         <div *ngFor="let loginDetail of loginDetail">
           <p><b>Username: </b>&nbsp;{{loginDetail.userName}}<br>
           <b>Password: </b>&nbsp;{{loginDetail.password}}</p>
-          <!-- <p>Note #1: If you have multiple units, your password is the first unit you rented.<br></p>
-            <p>Note #2: Unit numbers are 4 digits long in our system. The password for a tenant in unit 123 is 0123.</p> -->
+          <p>Note #1: If you have multiple units, your password is the first unit you rented.<br></p>
+            <p>Note #2: Unit numbers are 4 digits long in our system. The password for a tenant in unit 123 is 0123.</p>
             <p><b>Example:</b></p>
             <p>John Smith's {{loginDetail.example.code}}</p>
             <p>John's Username: {{loginDetail.example.userName}}<br>
@@ -83,19 +83,7 @@
     </div> 
 </div>
  </div>
-<!-- <div class="coming-soon" >
+<div class="coming-soon" *ngIf="acceptedValuesComingSoon.includes(id) && id > 0">
     <b>Coming Soon !</b>
 </div>    
  
-<div class="coming-soon" >
-    <b>Coming Soon !</b>
-</div>    
- 
-<div class="coming-soon" >
-    <b>Coming Soon !</b>
-</div>    
- 
-<div class="coming-soon" >
-    <b>Coming Soon !</b>
-</div>    
-  -->
