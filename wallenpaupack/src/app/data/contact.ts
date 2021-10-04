@@ -26,7 +26,7 @@ export const contactsHomePage = [
         label: 'Phone: ',
         data: '(570) 676-0851',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:2519703168'
+        redirect: 'tel:5706760851'
     },
 ];
 
