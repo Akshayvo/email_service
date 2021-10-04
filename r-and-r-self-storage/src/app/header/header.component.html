@@ -2,7 +2,7 @@
   <div class="container">
     <div class="contact-header">
       <div class="row">
-        <div class="col-md-10">
+        <div class="col-md-12 testing">
           <span class="contact-details pr-4" *ngFor="let contact of contactDetails">
             <i [class]="contact?.class"></i>
             <span class="contact-links" *ngIf="contact?.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">

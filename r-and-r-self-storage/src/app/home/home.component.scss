@@ -89,22 +89,22 @@
   }
 }
 
-.jumbotron-background-jpg {
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/jpg/storage-plus-jumbotron.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 80vh;
-}
+// .jumbotron-background-jpg {
+//   background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/jpg/storage-plus-jumbotron.jpg");
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   height: 80vh;
+// }
 
 
-.jumbotron-background-webp {
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/webp/storage-plus-jumbotron.webp");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 80vh;
-}
+// .jumbotron-background-webp {
+//   background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/webp/storage-plus-jumbotron.webp");
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   height: 80vh;
+// }
 
 
 .jumbotron-top {
@@ -112,7 +112,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: calc(80vh - 64px);
+  height: 80vh
 }
 
 .jumbotron-top1 {
@@ -120,14 +120,14 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: calc(80vh - 64px);}
+  height: 80vh}
 
 .jumbotron-top2 {
   background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/R_%26_R_Self_Storage/jpg/IMG_4798.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: calc(80vh - 64px);
+  height:80vh;
 }
 
 .jumbotron-top3 {
@@ -135,21 +135,21 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: calc(80vh - 64px);
+  height:80vh;
 }
 .jumbotron-top4 {
   background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/R_%26_R_Self_Storage/jpg/F45AF2E54C4D95F2FDBEA24D55B251AF.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: calc(80vh - 64px);
+  height:80vh;
 }
 .jumbotron-top5 {
   background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/R_%26_R_Self_Storage/jpg/E9855916F69846B94C63F71634BD8C16.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: calc(80vh - 64px);
+  height:80vh;
 }
 .contact-links {
   a {
@@ -696,6 +696,9 @@
 @media only screen and (max-width: 600px) {
   .jumbotorn-skew-style {
     display: none !important;
+  }
+  .jumbotron-top,.jumbotron-top1,.jumbotron-top2,.jumbotron-top3, .jumbotron-top4,.jumbotron-top5{
+    height: 100vh;
   }
 }
 
