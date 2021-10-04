@@ -30,7 +30,8 @@ $AffordableSecureStorage-theme: mat-light-theme($AffordableSecureStorage-primary
 @include angular-material-theme($AffordableSecureStorage-theme);
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto,sans-serif; }
 //Basic color and font styles
 $primary: #f54e27;
 $primaryDark:#f53409;
@@ -170,5 +171,5 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }

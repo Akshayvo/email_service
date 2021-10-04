@@ -71,7 +71,7 @@ export const contactsLocation1 = [
         label: 'Address: ',
         data: '6199 Heber Springs Rd W, Quitman, AR 72131',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/p5ZYDnwqJyKjdigf8'
+        redirect: 'https://www.google.com/maps?ll=35.38085,-92.222112&z=15&t=m&hl=en&gl=US&mapclient=embed&cid=11552048265385284856'
     },
     {
         id: 3,
@@ -86,7 +86,7 @@ export const contactsLocation1 = [
         label: 'Mailing Address: ',
         data: 'P.O. Box 477 Quitman, Arkansas, 72131',
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/Aey9AuYbspcu5HgC9'
+        redirect: 'https://www.google.com/maps?ll=35.38085,-92.222112&z=15&t=m&hl=en&gl=US&mapclient=embed&cid=11552048265385284856'
     },
 ];
 
@@ -128,7 +128,7 @@ export const contactsLocation2 = [
         label: 'Address: ',
         data: '75 Hwy 25 B Heber Springs AR  72543',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/V9mQLpHMRbH1CtK4A'
+        redirect: 'https://www.google.com/maps?ll=35.506734,-92.042835&z=12&t=m&hl=en&gl=US&mapclient=embed&q=Heber+Springs+Arkansas+72543'
     },
     {
         id: 3,
@@ -143,7 +143,7 @@ export const contactsLocation2 = [
         label: 'Mailing Address: ',
         data: 'P.O. Box 477 Heber Springs, Arkansas, 72543',
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/V9mQLpHMRbH1CtK4A'
+        redirect: 'https://www.google.com/maps?ll=35.506734,-92.042835&z=12&t=m&hl=en&gl=US&mapclient=embed&q=Heber+Springs+Arkansas+72543'
     },
 ];
 
