@@ -9,9 +9,9 @@ export const contact = [
     {
         id: 1,
         label: 'Email:',
-        data: 'info@rockwallstorage.com',
+        data: 'ridingclubroadstorage@gmail.com',
         class: 'fas fa-envelope mx-2 iconColor',
-        redirect: 'mailto:info@rockwallstorage.com'
+        redirect: 'mailto:ridingclubroadstorage@gmail.com'
     },
     {
         id: 2,

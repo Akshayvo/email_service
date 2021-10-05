@@ -45,14 +45,14 @@
             <button (click)="navigate('/view-rates/move-in', lstUnitType)"> Move In</button>
             <link *ngIf="lstUnitType.IsUnitsAvailable" itemprop="availability" href="https://schema.org/InStock" />
           </td>
-          <td  colspan="2" class="px-4 border text-center" *ngIf="lstUnitType.IsClimateControlled && showClimateControl; else other_climate">
+          <!-- <td  colspan="2" class="px-4 border text-center" *ngIf="lstUnitType.IsClimateControlled && showClimateControl; else other_climate">
             <strong> Yes</strong>
           </td>
           <ng-template #other_climate >
             <td  colspan="2"  class="px-4 border text-center" *ngIf="showClimateControl">
               <div>{{defaultClimateString}}</div>
-            </td>
-          </ng-template>
+            </td> -->
+          <!-- </ng-template> -->
           <ng-template #other_reserve >
             <td   id="reserve" colspan="2" class="py-2 px-4 border" *ngIf="showReserve">
               <div class="text-center">Please call the facility to reserve a unit.</div>
