@@ -13,16 +13,6 @@ export const tableHeader = [
 
 export const tableData = [
   {
-    facility: ' Greentown',
-    address: '116 Ehrgood Rd, Greentown, PA 18426',
-    url: 'greentown/login'
-  },
-  {
-    facility: 'Lake Ariel',
-    address: '80 Miller Rd, Lake Ariel, PA 18436',
-    url: 'lake-ariel/login'
-  },
-  {
     facility: 'Hawley',
     address: '54 Texas Palmyra Hwy, Hawley, PA 18428',
     url: 'hawley/login'
@@ -32,20 +22,23 @@ export const tableData = [
     address: '204 Purdytown Turnpike, Lakeville, PA 18438',
     url: 'lakeville/login'
   },
+  {
+    facility: 'Lake Ariel',
+    address: '80 Miller Rd, Lake Ariel, PA 18436',
+    url: 'lake-ariel/login'
+  },
+  {
+    facility: ' Greentown',
+    address: '116 Ehrgood Rd, Greentown, PA 18426',
+    url: 'greentown/login'
+  },
+  
+  
+ 
   
 ];
 
 export const tableDataContactPage = [
-  {
-    facility: ' Greentown',
-    address: '116 Ehrgood Rd, Greentown, PA 18426',
-    url: 'greentown'
-  },
-  {
-    facility: 'Lake Ariel',
-    address: '80 Miller Rd, Lake Ariel, PA 18436',
-    url: 'lake-ariel'
-  },
   {
     facility: 'Hawley',
     address: '54 Texas Palmyra Hwy, Hawley, PA 18428',
@@ -56,6 +49,19 @@ export const tableDataContactPage = [
     address: '204 Purdytown Turnpike, Lakeville, PA 18438',
     url: 'lakeville'
   },
+  
+  {
+    facility: 'Lake Ariel',
+    address: '80 Miller Rd, Lake Ariel, PA 18436',
+    url: 'lake-ariel'
+  },
+  {
+    facility: ' Greentown',
+    address: '116 Ehrgood Rd, Greentown, PA 18426',
+    url: 'greentown'
+  },
+  
+ 
  
 ];
 

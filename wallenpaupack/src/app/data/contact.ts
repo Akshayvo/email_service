@@ -244,7 +244,7 @@ export const hoursLocation3 = [
 export const contactsLocation4 = [
     {
         id: 1,
-        label: 'Facility Address: ',
+        label: 'Address: ',
         data: '204 Purdytown Turnpike, Lakeville, PA 18438',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: 'https://www.google.com/maps/place/Wallenpaupack+Self+Storage,+204+Purdytown+Turnpike,+Lakeville,+PA+18438,+United+States/@41.427774,-75.281754,15z/data=!4m2!3m1!1s0x89c4b9c615c3a081:0x4ab43978c9491515'

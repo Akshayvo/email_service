@@ -42,6 +42,16 @@
   height: 50vh;
 }
 
+
+.imagesize{
+  display: block;
+  max-width:500px;
+  max-height:1540x;
+  width: auto;
+  height: auto;
+
+}
+
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
   .storage-tip-holder {
     padding-top: 160px;
