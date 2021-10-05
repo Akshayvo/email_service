@@ -133,37 +133,37 @@ export class LoginComponent implements OnInit, OnDestroy {
 
     if (this.router.url.includes('baltimore')) {
       this.id = 1;
-      this.name = 'Storage Plus of Baldwin County - Baltimore';
+      this.name = 'Success Property Management - Baltimore';
       this.contact = contactsLocation1;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc1);
     } else  if (this.router.url.includes('silverhill')) {
       this.id = 2;
-      this.name = 'Storage Plus of Baldwin County - Silverhill';
+      this.name = 'Success Property Management - Silverhill';
       this.contact = contactsLocation2;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc2);
     } else  if (this.router.url.includes('barnwell')) {
       this.id = 3;
-      this.name = 'Storage Plus of Baldwin County - Barnwell';
+      this.name = 'Success Property Management - Barnwell';
       this.contact = contactsLocation3;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc3);
     } else  if (this.router.url.includes('belforest')) {
       this.id = 4;
-      this.name = 'Storage Plus of Baldwin County - Belforest';
+      this.name = 'Success Property Management - Belforest';
       this.contact = contactsLocation4;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc4;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc4);
     } else  if (this.router.url.includes('fairhope')) {
       this.id = 5;
-      this.name = 'Storage Plus of Baldwin County - Fairhope';
+      this.name = 'Success Property Management - Fairhope';
       this.contact = contactsLocation5;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc5;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc5);
     } else  if (this.router.url.includes('robertsdale')) {
       this.id = 6;
-      this.name = 'Storage Plus of Baldwin County - Robertsdale';
+      this.name = 'Success Property Management - Robertsdale';
       this.contact = contactsLocation6;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc6;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc6);

@@ -157,15 +157,15 @@ export const headingReservePageLocation6 = `Ready to Reserve a Self Storage Unit
 
 export const heading1 = `Success Property Management - Baltimore`;
 
-export const heading2 = `Storage Plus of Baldwin County - Silverhill`;
+export const heading2 = `Success Property Management - Silverhill`;
 
-export const heading3 = `Storage Plus of Baldwin County - Barnwell`;
+export const heading3 = `Success Property Management - Barnwell`;
 
-export const heading4 = `Storage Plus of Baldwin County - Belforest`;
+export const heading4 = `Success Property Management - Belforest`;
 
-export const heading5 = `Storage Plus of Baldwin County - Fairhope`;
+export const heading5 = `Success Property Management - Fairhope`;
 
-export const heading6 = `Storage Plus of Baldwin County - Robertsdale`;
+export const heading6 = `Success Property Management - Robertsdale`;
 
 
 export const unitSizerLocation1 = [

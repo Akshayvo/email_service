@@ -74,12 +74,12 @@ const emailIndex4 = contactsLocation4.findIndex(x => x.label === 'Email: ');
 const emailIndex5 = contactsLocation5.findIndex(x => x.label === 'Email: ');
 const emailIndex6 = contactsLocation6.findIndex(x => x.label === 'Email: ');
   
-export const nameLocation1 = `Storage Plus of Baldwin County - Baltimore`;
-export const nameLocation2 = `Storage Plus of Baldwin County - Silverhill`;
-export const nameLocation3 = `Storage Plus of Baldwin County - Barnwell`;
-export const nameLocation4 = `Storage Plus of Baldwin County - Belforest`;
-export const nameLocation5 = `Storage Plus of Baldwin County - Fairhope`;
-export const nameLocation6 = `Storage Plus of Baldwin County - Robertsdale`;
+export const nameLocation1 = `Success Property Management - Baltimore`;
+export const nameLocation2 = `Success Property Management - Silverhill`;
+export const nameLocation3 = `Success Property Management - Barnwell`;
+export const nameLocation4 = `Success Property Management - Belforest`;
+export const nameLocation5 = `Success Property Management - Fairhope`;
+export const nameLocation6 = `Success Property Management - Robertsdale`;
 
 
 export const location1 = `baltimore`;

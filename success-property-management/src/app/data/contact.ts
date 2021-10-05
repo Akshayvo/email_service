@@ -50,7 +50,7 @@ export const contactsLocation1 = [
         label: 'Phone: ',
         data: '(304) 263-3535',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:4023624494'
+        redirect: 'tel:3042633535'
     },
     {
         id: 4,
@@ -71,7 +71,7 @@ export const hoursLocation1 = [
 
 export const hoursLocation1AcessHours = [
     {
-        data: '24 Hours a Day 7 Days a Week'
+        data: '7 Days a Week 8:00AM to 4:00PM'
     },
 ];
 
@@ -81,11 +81,11 @@ export const socialLinks = [
     //     path: '',
     //     class: 'fab fa-twitter-square',
     // },
-    {
-        label: 'facebook',
-        path: 'https://www.facebook.com/storageplusbaldwin/',
-        class: 'fab fa-facebook-square',
-    },
+    // {
+    //     label: 'facebook',
+    //     path: '',
+    //     class: 'fab fa-facebook-square',
+    // },
 ];
 
 
@@ -93,24 +93,24 @@ export const contactsLocation2 = [
     {
         id: 1,
         label: 'Address: ',
-        data: '15410 AL-104, Silverhill, AL 36576',
+        data: '605 Baltimore St, Martinsburg, WV 25401',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: 'https://g.page/r/CT1A0QzwMwCHEBA'
     },
     {
         id: 2,
         label: 'Email: ',
-        data: 'accounts@storageplusbaldwin.com',
-        email: `accounts@storageplusbaldwin.com`,
+        data: 'ldfproperties@gmail.com',
+        email: `ldfproperties@gmail.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:accounts@storageplusbaldwin.com'
+        redirect: 'mailto:ldfproperties@gmail.com'
     },
     {
         id: 3,
         label: 'Phone: ',
-        data: '(251) 970-3168',
+        data: '(304) 263-3535',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:2519703168'
+        redirect: 'tel:3042633535'
     },
 ];
 
@@ -139,17 +139,17 @@ export const contactsLocation3 = [
     {
         id: 2,
         label: 'Email: ',
-        data: 'accounts@storageplusbaldwin.com',
-        email: `accounts@storageplusbaldwin.com`,
+        data: 'ldfproperties@gmail.com',
+        email: `ldfproperties@gmail.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:accounts@storageplusbaldwin.com'
+        redirect: 'mailto:ldfproperties@gmail.com'
     },
     {
         id: 3,
         label: 'Phone: ',
-        data: '(251) 970-3168',
+        data: '(304) 263-3535',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:2519703168'
+        redirect: 'tel:3042633535'
     },
 ];
 
@@ -178,17 +178,17 @@ export const contactsLocation4 = [
     {
         id: 2,
         label: 'Email: ',
-        data: 'accounts@storageplusbaldwin.com',
-        email: `accounts@storageplusbaldwin.com`,
+        data: 'ldfproperties@gmail.com',
+        email: `ldfproperties@gmail.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:accounts@storageplusbaldwin.com'
+        redirect: 'mailto:ldfproperties@gmail.com'
     },
     {
         id: 3,
         label: 'Phone: ',
-        data: '(251) 970-3168',
+        data: '(304) 263-3535',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:2519703168'
+        redirect: 'tel:3042633535'
     },
 ];
 
@@ -217,17 +217,17 @@ export const contactsLocation5 = [
     {
         id: 2,
         label: 'Email: ',
-        data: 'accounts@storageplusbaldwin.com',
-        email: `accounts@storageplusbaldwin.com`,
+        data: 'ldfproperties@gmail.com',
+        email: `ldfproperties@gmail.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:accounts@storageplusbaldwin.com'
+        redirect: 'mailto:ldfproperties@gmail.com'
     },
     {
         id: 3,
         label: 'Phone: ',
-        data: '(251) 970-3168',
+        data: '(304) 263-3535',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:2519703168'
+        redirect: 'tel:3042633535'
     },
 ];
 
@@ -256,17 +256,17 @@ export const contactsLocation6 = [
     {
         id: 2,
         label: 'Email: ',
-        data: 'accounts@storageplusbaldwin.com',
-        email: `accounts@storageplusbaldwin.com`,
+        data: 'ldfproperties@gmail.com',
+        email: `ldfproperties@gmail.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:accounts@storageplusbaldwin.com'
+        redirect: 'mailto:ldfproperties@gmail.com'
     },
     {
         id: 3,
         label: 'Phone: ',
-        data: '(251) 970-3168',
+        data: '(304) 263-3535',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:2519703168'
+        redirect: 'tel:3042633535'
     },
 ];
 

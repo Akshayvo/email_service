@@ -19,7 +19,7 @@ export const tableData = [
   },
 //   {
 //     facility: 'Silverhill',
-//     address: '15410 AL-104, Silverhill, AL 36576',
+//     address: '605 Baltimore St, Martinsburg, WV 25401',
 //     url: 'silverhill/rent-sub/login'
 //   },
 //   {
@@ -52,7 +52,7 @@ export const tableDataContactPage = [
   },
 //   {
 //     facility: 'Silverhill',
-//     address: '15410 AL-104, Silverhill, AL 36576',
+//     address: '605 Baltimore St, Martinsburg, WV 25401',
 //     url: 'silverhill'
 //   },
 //   {

@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 export class DataSharingService {
 
   locationAPIKey = {
-    loc1: 'dzF0NFcwSjAqNU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 14005 baltimore
+    loc1: 'dzJ0MFc0SjYqNE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 20464 baltimore
     loc2: 'dzJ0MFc3SjYqN046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 20767 silverhill
     loc3: 'dzJ0MFc3SjYqNk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 20766 barnwell
     loc4: 'dzJ0N1c0SjUqNk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 27456 belforest
@@ -15,7 +15,7 @@ export class DataSharingService {
   };
 
 //  locationAPIKey = {                                                     // demo north
-//     loc1: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',   // 28463
+//     loc1: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',   // 28464
 //     loc2: 'UDIoOEQ0YzZ2NDw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28464
 //     loc3: 'XjJ7OEY0VzZHNUk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28465
 //     loc4: 'aDJLOGk0KzZBNng6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28466

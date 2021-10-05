@@ -14,10 +14,10 @@ export const environment = {
   senderEmail: 'errors@codeparva.in',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
   appId: 'Success Property Mangement',
-  facilityName: 'Storage Plus of Baldwin County',
+  facilityName: 'Success Property Management',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: `https://storageplusbaldwin.com`
+  websiteUrl: `https://success-management-staging.netlify.app`
 };
 
 /*
