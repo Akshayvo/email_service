@@ -126,9 +126,9 @@ export const contactsLocation2 = [
     {
         id: 1,
         label: 'Address: ',
-        data: '75 Hwy 25 B Heber Springs AR  72543',
+        data: '74 Heber Springs Rd S, Heber Springs, AR 72543',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://www.google.com/maps?ll=35.506734,-92.042835&z=12&t=m&hl=en&gl=US&mapclient=embed&q=Heber+Springs+Arkansas+72543'
+        redirect: 'https://www.google.com/maps/place/Pinnacle+Propane/@35.4768776,-92.0324409,17z/data=!4m5!3m4!1s0x87d2468dd6500001:0x1aa1a61196217d80!8m2!3d35.477664!4d-92.0350197'
     },
     {
         id: 3,

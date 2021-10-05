@@ -36,23 +36,23 @@ export const description2 = `Heber Springs Xtra Storage is your one stop storage
 
 
 export const maplocation1 = 'https://goo.gl/maps/2K2UTk1s62AbuJPt5';
-export const maplocation2 = ``;
+export const maplocation2 = `https://goo.gl/maps/XdYX9FFcTbUaE4Wz8`;
 
 export const addressLoaction1 = {
   '@type': 'PostalAddress',
-      'streetAddress': '4300 Evanston Ave',
-      'addressLocality': 'Muskegon',
-      'addressRegion': 'MI',
-      'postalCode': '49442',
+      'streetAddress': '6199 Heber Springs Rd W',
+      'addressLocality': 'Quitman',
+      'addressRegion': 'AR',
+      'postalCode': '72131',
       'addressCountry': 'United state'
 };
 
 export const addressLoaction2 = {
   '@type': 'PostalAddress',
-  'streetAddress': '5607 Henkel Rd',
-  'addressLocality': 'Howard City',
-  'addressRegion': 'MI',
-  'postalCode': '49329',
+  'streetAddress': '74 Heber Springs Rd S',
+  'addressLocality': 'Heber Springs',
+  'addressRegion': 'AR',
+  'postalCode': '72543',
   'addressCountry': 'United state'
 }
 

@@ -19,7 +19,7 @@ export const tableData = [
   },  
   {
     facility: 'Heber Springs Xtra Storage',
-    address: '75 Hwy 25 B Heber Springs AR  72543',
+    address: '74 Heber Springs Rd S, Heber Springs, AR 72543',
     url: 'heber-springs/rent-sub/login'
   }    
 ];
@@ -32,7 +32,7 @@ export const tableDataContactPage = [
   },
     {
     facility: 'Heber Springs Xtra Storage',
-    address: '75 Hwy 25 B Heber Springs AR  72543',
+    address: '74 Heber Springs Rd S, Heber Springs, AR 72543',
     url: 'heber-springs'
   }
 ];
