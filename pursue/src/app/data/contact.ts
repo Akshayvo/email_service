@@ -8,10 +8,10 @@ export const contact = [
     {
         id: 1,
         label: 'Email:',
-        data: 'service@pursuegroup.com',
+        data: 'pursuestorage@gmail.com',
         class: 'fas fa-envelope mx-2 iconColor',
-        email: 'service@pursuegroup.com',
-        redirect: 'mailto:`service@pursuegroup.com`'
+        email: 'pursuestorage@gmail.com',
+        redirect: 'mailto:`pursuestorage@gmail.com`'
     },
     {
         id: 2,
