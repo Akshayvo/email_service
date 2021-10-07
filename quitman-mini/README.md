@@ -3,9 +3,9 @@
 Welcome to the project documentation!
 
 ## Changing the project name
-Replace best-wenatchee Rental Spaces with your project name(Hyphen Case)
+Replace quitman-mini Rental Spaces with your project name(Hyphen Case)
 
-Replace best-wenatchee Rental Spaces with your project name(camelCase)
+Replace quitman-mini Rental Spaces with your project name(camelCase)
 
 Find and Replace across project
 
