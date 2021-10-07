@@ -46,15 +46,15 @@ export class PayRentComponent implements OnInit {
     });
     this.canonical.create();
     if (this.router.url.includes('confederate')) {
-      this.name = ' confederate';
-  } else if (this.router.url.includes('silverhill')) {
-    this.name = ' Silverhill';
-  } else if (this.router.url.includes('barnwell')) {
-    this.name = 'Barnwell';
-  } else if (this.router.url.includes('belforest')) {
-    this.name = 'Belforest';
-  } else if (this.router.url.includes('fairhope')) {
-    this.name = 'Fairhope';
+      this.name = ' Confederate Way Location';
+  } else if (this.router.url.includes('refuge')) {
+    this.name = ' Refuge Road Location';
+  } else if (this.router.url.includes('talking-rock')) {
+    this.name = 'Talking Rock Road Location';
+  } else if (this.router.url.includes('northside')) {
+    this.name = 'Northside Drive Location';
+  } else if (this.router.url.includes('north-main')) {
+    this.name = 'North Main Street Location';
   } else if (this.router.url.includes('robertsdale')) {
     this.name = 'Robertsdale';
   }
@@ -73,13 +73,13 @@ export class PayRentComponent implements OnInit {
   public fetchOg() {
     if (this.router.url.includes('confederate')) {
       this.og = ogPayRentPageLocation1;
-    } else if (this.router.url.includes('silverhill')) {
+    } else if (this.router.url.includes('refuge')) {
       this.og = ogPayRentPageLocation2;
-    } else if (this.router.url.includes('barnwell')) {
+    } else if (this.router.url.includes('talking-rock')) {
       this.og = ogPayRentPageLocation3;
-    } else if (this.router.url.includes('belforest')) {
+    } else if (this.router.url.includes('northside')) {
       this.og = ogPayRentPageLocation4;
-    } else if (this.router.url.includes('fairhope')) {
+    } else if (this.router.url.includes('north-main')) {
       this.og = ogPayRentPageLocation5;
     } else if (this.router.url.includes('robertsdale')) {
       this.og = ogPayRentPageLocation6;
@@ -89,13 +89,13 @@ export class PayRentComponent implements OnInit {
 public fetchTwitter() {
   if (this.router.url.includes('confederate')) {
     this.twitter = twitterPayRentPageLocation1;
-  } else if (this.router.url.includes('silverhill')) {
+  } else if (this.router.url.includes('refuge')) {
     this.twitter = twitterPayRentPageLocation2;
-  } else if (this.router.url.includes('barnwell')) {
+  } else if (this.router.url.includes('talking-rock')) {
     this.twitter = twitterPayRentPageLocation3;
-  } else if (this.router.url.includes('belforest')) {
+  } else if (this.router.url.includes('northside')) {
     this.twitter = twitterPayRentPageLocation4;
-  } else if (this.router.url.includes('fairhope')) {
+  } else if (this.router.url.includes('north-main')) {
     this.twitter = twitterPayRentPageLocation5;
   } else if (this.router.url.includes('robertsdale')) {
     this.twitter = twitterPayRentPageLocation6;

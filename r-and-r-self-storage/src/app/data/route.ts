@@ -124,7 +124,7 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-    { path: `${environment.locationName}/silverhill`,
+    { path: `${environment.locationName}/refuge`,
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -159,7 +159,7 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-    { path: `${environment.locationName}/barnwell`,
+    { path: `${environment.locationName}/talking-rock`,
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -194,7 +194,7 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-    { path: `${environment.locationName}/belforest`,
+    { path: `${environment.locationName}/northside`,
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -230,7 +230,7 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-    { path: `${environment.locationName}/fairhope`,
+    { path: `${environment.locationName}/north-main`,
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -310,7 +310,7 @@ export const apiRoutes = [
         externalUrl: ''
     }
   },
-  { path: 'review/silverhill', component: HomeComponent,
+  { path: 'review/refuge', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -318,7 +318,7 @@ export const apiRoutes = [
         externalUrl: ''
     }
   },
-  { path: 'review/barnwell', component: HomeComponent,
+  { path: 'review/talking-rock', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -326,7 +326,7 @@ export const apiRoutes = [
         externalUrl: ''
     }
   },
-  { path: 'review/belforest', component: HomeComponent,
+  { path: 'review/northside', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -334,7 +334,7 @@ export const apiRoutes = [
         externalUrl: ''
     }
   },
-  { path: 'review/fairhope', component: HomeComponent,
+  { path: 'review/north-main', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -357,19 +357,19 @@ export const apiRoutes = [
     children: childroute
   },
   {
-    path: 'pay-rent/silverhill', component: PayRentComponent,
+    path: 'pay-rent/refuge', component: PayRentComponent,
     children: childroute
   },
   {
-    path: 'pay-rent/barnwell', component: PayRentComponent,
+    path: 'pay-rent/talking-rock', component: PayRentComponent,
     children: childroute
   },
   {
-    path: 'pay-rent/belforest', component: PayRentComponent,
+    path: 'pay-rent/northside', component: PayRentComponent,
     children: childroute
   },
   {
-    path: 'pay-rent/fairhope', component: PayRentComponent,
+    path: 'pay-rent/north-main', component: PayRentComponent,
     children: childroute
   },
   {
@@ -380,9 +380,9 @@ export const apiRoutes = [
   { path: 'contact-us', component: ContactComponent },
   { path: 'contact-confederate', component: ContactUsComponent},
   { path: 'contact-silverhill', component: ContactUsComponent},
-  { path: 'contact-barnwell', component: ContactUsComponent},
-  { path: 'contact-belforest', component: ContactUsComponent},
-  { path: 'contact-fairhope', component: ContactUsComponent},
+  { path: 'contact-talking-rock', component: ContactUsComponent},
+  { path: 'contact-northside', component: ContactUsComponent},
+  { path: 'contact-north-main', component: ContactUsComponent},
   { path: 'contact-robertsdale', component: ContactUsComponent},
   { path: '**', component: ErrorComponent },
   { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
@@ -403,7 +403,7 @@ export const iFrameRoutes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: `${environment.locationName}/silverhill`,
+  { path: `${environment.locationName}/refuge`,
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -414,7 +414,7 @@ export const iFrameRoutes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: `${environment.locationName}/barnwell`,
+  { path: `${environment.locationName}/talking-rock`,
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -425,7 +425,7 @@ export const iFrameRoutes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: `${environment.locationName}/belforest`,
+  { path: `${environment.locationName}/northside`,
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -436,7 +436,7 @@ export const iFrameRoutes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: `${environment.locationName}/fairhope`,
+  { path: `${environment.locationName}/north-main`,
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -474,7 +474,7 @@ export const iFrameRoutes = [
         externalUrl: ''
     }
   },
-  { path: 'review/barnwell', component: HomeComponent,
+  { path: 'review/talking-rock', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -482,7 +482,7 @@ export const iFrameRoutes = [
         externalUrl: ''
     }
   },
-  { path: 'review/belforest', component: HomeComponent,
+  { path: 'review/northside', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -490,7 +490,7 @@ export const iFrameRoutes = [
         externalUrl: ''
     }
   },
-  { path: 'review/fairhope', component: HomeComponent,
+  { path: 'review/north-main', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -509,10 +509,10 @@ export const iFrameRoutes = [
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentIframeComponent },
   { path: 'pay-rent-confederate', component: PayRentFloridaComponent },
-  { path: 'pay-rent-silverhill', component: PayRentChesterComponent},
-  { path: 'pay-rent-barnwell', component: PayRentMontgomeryComponent},
-  { path: 'pay-rent-belforest', component: PayRentMiddletownComponent},
-  { path: 'pay-rent-fairhope', component: PayRentMontgomeryComponent},
+  { path: 'pay-rent-refuge', component: PayRentChesterComponent},
+  { path: 'pay-rent-talking-rock', component: PayRentMontgomeryComponent},
+  { path: 'pay-rent-northside', component: PayRentMiddletownComponent},
+  { path: 'pay-rent-north-main', component: PayRentMontgomeryComponent},
   { path: 'pay-rent-robertsdale', component: PayRentMiddletownComponent},
   { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },

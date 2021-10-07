@@ -112,17 +112,17 @@ export const contactsLocation2 = [
     {
         id: 2,
         label: 'Email: ',
-        data: 'accounts@storageplusbaldwin.com',
-        email: `accounts@storageplusbaldwin.com`,
+        data: 'Joyce@randrstorage.com',
+        email: `Joyce@randrstorage.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:accounts@storageplusbaldwin.com'
+        redirect: 'mailto:Joyce@randrstorage.com'
     },
     {
         id: 3,
         label: 'Phone: ',
-        data: '(251) 970-3168',
+        data: '(706) 253-STOR(7867)',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:2519703168'
+        redirect: 'tel:7062537867'
     },
 ];
 
@@ -151,17 +151,17 @@ export const contactsLocation3 = [
     {
         id: 2,
         label: 'Email: ',
-        data: 'accounts@storageplusbaldwin.com',
-        email: `accounts@storageplusbaldwin.com`,
+        data: 'Joyce@randrstorage.com',
+        email: `Joyce@randrstorage.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:accounts@storageplusbaldwin.com'
+        redirect: 'mailto:Joyce@randrstorage.com'
     },
     {
         id: 3,
         label: 'Phone: ',
-        data: '(251) 970-3168',
+        data: '(706) 253-STOR(7867)',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:2519703168'
+        redirect: 'tel:7062537867'
     },
 ];
 
@@ -190,17 +190,17 @@ export const contactsLocation4 = [
     {
         id: 2,
         label: 'Email: ',
-        data: 'accounts@storageplusbaldwin.com',
-        email: `accounts@storageplusbaldwin.com`,
+        data: 'Joyce@randrstorage.com',
+        email: `Joyce@randrstorage.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:accounts@storageplusbaldwin.com'
+        redirect: 'mailto:Joyce@randrstorage.com'
     },
     {
         id: 3,
         label: 'Phone: ',
-        data: '(251) 970-3168',
+        data: '(706) 253-STOR(7867)',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:2519703168'
+        redirect: 'tel:7062537867'
     },
 ];
 
@@ -229,17 +229,17 @@ export const contactsLocation5 = [
     {
         id: 2,
         label: 'Email: ',
-        data: 'accounts@storageplusbaldwin.com',
-        email: `accounts@storageplusbaldwin.com`,
+        data: 'Joyce@randrstorage.com',
+        email: `Joyce@randrstorage.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:accounts@storageplusbaldwin.com'
+        redirect: 'mailto:Joyce@randrstorage.com'
     },
     {
         id: 3,
         label: 'Phone: ',
-        data: '(251) 970-3168',
+        data: '(706) 253-STOR(7867)',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:2519703168'
+        redirect: 'tel:7062537867'
     },
 ];
 

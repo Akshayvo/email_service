@@ -17,26 +17,26 @@ export const tableData = [
     address: '68 Confederate Way, Jasper, GA 30143', //location facillity address location office address is alos there
     url: 'confederate/rent-sub/login'
   },
-  // {
-  //   facility: 'Silverhill',
-  //   address: '15410 AL-104, Silverhill, AL 36576',
-  //   url: 'silverhill/rent-sub/login'
-  // },
-  // {
-  //   facility: 'Barnwell',
-  //   address: '8089A US-98, Fairhope, AL 36532',
-  //   url: 'barnwell/rent-sub/login'
-  // },
-  // {
-  //   facility: 'Belforest',
-  //   address: '11455 Co Rd 64, Daphne, AL 36526',
-  //   url: 'belforest/rent-sub/login'
-  // },
-  // {
-  //   facility: 'Fairhope',
-  //   address: '21193 AL-181, Fairhope, AL 36532',
-  //   url: 'fairhope/rent-sub/login'
-  // },
+  {
+    facility: ' Refuge Road Location',
+    address: '3225 Refuge Rd, Jasper, GA 30143',
+    url: 'refuge/rent-sub/login'
+  },
+  {
+    facility: 'Talking Rock Road Location',
+    address: '1422 Talking Rock Rd, Jasper, GA 30143',
+    url: 'talking-rock/rent-sub/login'
+  },
+  {
+    facility: 'Northside Drive Location',
+    address: '365 Northside Dr, Jasper, GA 30143',
+    url: 'northside/rent-sub/login'
+  },
+  {
+    facility: 'North Main Street Location',
+    address: '463 N Main St, Jasper, GA 30143',
+    url: 'north-main/rent-sub/login'
+  },
   // {
   //   facility: 'Robertsdale',
   //   address: '20218 US-90, Robertsdale, AL 36567',

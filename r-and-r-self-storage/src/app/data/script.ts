@@ -75,7 +75,7 @@ const emailIndex5 = contactsLocation5.findIndex(x => x.label === 'Email: ');
 const emailIndex6 = contactsLocation6.findIndex(x => x.label === 'Email: ');
   
 export const nameLocation1 = `Confederate Way Location`;
-export const nameLocation2 = `Storage Plus of Baldwin County - Silverhill`;
+export const nameLocation2 = `Refuge Road Location`;
 export const nameLocation3 = `Storage Plus of Baldwin County - Barnwell`;
 export const nameLocation4 = `Storage Plus of Baldwin County - Belforest`;
 export const nameLocation5 = `Storage Plus of Baldwin County - Fairhope`;
@@ -83,18 +83,18 @@ export const nameLocation6 = `Storage Plus of Baldwin County - Robertsdale`;
 
 
 export const location1 = `confederate`;
-export const location2 = `silverhill`;
-export const location3 = `barnwell`;
-export const location4 = `belforest`;
-export const location5 = `barnwell`;
+export const location2 = `refuge`;
+export const location3 = `talking-rock`;
+export const location4 = `northside`;
+export const location5 = `talking-rock`;
 export const location6 = `robertsdale`;
 
 
 export const urlLocation1 = `${environment.websiteUrl}/${environment.locationName}/confederate/storage-units`;
-export const urlLocation2 = `${environment.websiteUrl}/${environment.locationName}/silverhill/storage-units`;
-export const urlLocation3 = `${environment.websiteUrl}/${environment.locationName}/barnwell/storage-units`;
-export const urlLocation4 = `${environment.websiteUrl}/${environment.locationName}/belforest/storage-units`;
-export const urlLocation5 = `${environment.websiteUrl}/${environment.locationName}/fairhope/storage-units`;
+export const urlLocation2 = `${environment.websiteUrl}/${environment.locationName}/refuge/storage-units`;
+export const urlLocation3 = `${environment.websiteUrl}/${environment.locationName}/talking-rock/storage-units`;
+export const urlLocation4 = `${environment.websiteUrl}/${environment.locationName}/northside/storage-units`;
+export const urlLocation5 = `${environment.websiteUrl}/${environment.locationName}/north-main/storage-units`;
 export const urlLocation6 = `${environment.websiteUrl}/${environment.locationName}/robertsdale/storage-units`;
 
 

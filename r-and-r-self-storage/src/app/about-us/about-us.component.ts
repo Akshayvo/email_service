@@ -33,13 +33,13 @@ export class AboutUsComponent implements OnInit {
   public isSomePage() {
     if (this.router.url.includes(`${environment.locationName}/confederate`)) {
       this.fetchDetailsLocation1();
-  } else if (this.router.url.includes(`${environment.locationName}/silverhill`)) {
+  } else if (this.router.url.includes(`${environment.locationName}/refuge`)) {
     this.fetchDetailsLocation2();
-  } else if (this.router.url.includes(`${environment.locationName}/barnwell`)) {
+  } else if (this.router.url.includes(`${environment.locationName}/talking-rock`)) {
     this.fetchDetailsLocation3();
-  } else if (this.router.url.includes(`${environment.locationName}/belforest`)) {
+  } else if (this.router.url.includes(`${environment.locationName}/northside`)) {
     this.fetchDetailsLocation4();
-  } else if (this.router.url.includes(`${environment.locationName}/fairhope`)) {
+  } else if (this.router.url.includes(`${environment.locationName}/north-main`)) {
     this.fetchDetailsLocation5();
   } else if (this.router.url.includes(`${environment.locationName}/robertsdale`)) {
     this.fetchDetailsLocation6();

@@ -4,8 +4,8 @@ export const homePageContent = `Check out our 6 facilities conveniently located 
 export const location1PageTitle = `Confederate Way Location | R & R Self Storage`;
 export const location1PageContent = `Review our current rates and availability, then rent or reserve your unit in minutes with our easy online reservation form!`;
 
-export const location2PageTitle = `Silverhill | Storage Plus of Baldwin County`;
-export const location2PageContent = `Our Silverhill location offers a large variety of regular and climate controlled storage units in a number of sizes, and all of our units are priced competitively!`;
+export const location2PageTitle = ``;
+export const location2PageContent = ``;
 
 export const location3PageTitle = `Barnwell | Storage Plus of Baldwin County`;
 export const location3PageContent = `Our Barnwell location offers a number of regular and climate controlled self storage units, and all of our units are economically priced!`;
@@ -51,17 +51,17 @@ export const faqPagecontent = `Have some questions about the services at Storage
 export const location1PayrentPageTitle = `Pay Rent | R & R Self Storage`;
 export const location1PayrentPageContent = `Take a moment to review our easy login instructions, or call our friendly management team and start paying your rent online 24 hours a day!`;
 
-export const location2PayrentPageTitle = `Pay Rent | Storage Plus of Baldwin County`;
-export const location2PayrentPageContent = `Follow the instructions on this page to log into your account with us, and pay your bill online 24/7! Call our office for more information!`;
+export const location2PayrentPageTitle = `Pay Rent | R & R Self Storage`;
+export const location2PayrentPageContent = `Follow the instructions on this page, then log into your account to pay your rent 24-hours a day, 7 days a week. Have questions? Call our office, and we'll be glad to help!`;
 
-export const location3PayrentPageTitle = `Pay Rent | Storage Plus of Baldwin County`;
-export const location3PayrentPageContent = `Follow the instructions on this page to log into your account with us, and pay your bill online 24/7! Call our office for more information!`;
+export const location3PayrentPageTitle = `Pay Rent | R & R Self Storage`;
+export const location3PayrentPageContent = `Follow the instructions on this page, then log into your account to pay your rent 24-hours a day, 7 days a week. Have questions? Call our office, and we'll be glad to help!`;
 
-export const location4PayrentPageTitle = `Belfast Location Pay Rent | Storage Plus of Baldwin County`;
-export const location4PayrentPageContent = `Follow the instructions on this page to log into your account with us, and pay your bill online 24/7! Call our office for more information!`;
+export const location4PayrentPageTitle = `Pay Rent | R & R Self Storage`;
+export const location4PayrentPageContent = `Follow the instructions on this page, then log into your account to pay your rent 24-hours a day, 7 days a week. Have questions? Call our office, and we'll be glad to help!`;
 
-export const location5PayrentPageTitle = `Pay Rent | Storage Plus of Baldwin County`;
-export const location5PayrentPageContent = `Follow the instructions on this page to log into your account with us, and pay your bill online 24/7! Call our office for more information!`;
+export const location5PayrentPageTitle = `Pay Rent | R & R Self Storage`;
+export const location5PayrentPageContent = `Follow the instructions on this page, then log into your account to pay your rent 24-hours a day, 7 days a week. Have questions? Call our office, and we'll be glad to help!`;
 
 export const location6PayrentPageTitle = `Pay Rent | Storage Plus of Baldwin County`;
 export const location6PayrentPageContent = `Follow the instructions on this page to log into your account with us, and pay your bill online 24/7! Call our office for more information!`;

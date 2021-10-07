@@ -35,16 +35,16 @@ export class ReserveComponent implements OnInit {
     if (this.router.url.includes(`${environment.locationName}/confederate`)) {
       this.id = 1;
       this.heading = headingReservePageLocation1;
-    } else if (this.router.url.includes(`${environment.locationName}/silverhill`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/refuge`)) {
       this.id = 2;
       this.heading = headingReservePageLocation2;
-    } else if (this.router.url.includes(`${environment.locationName}/barnwell`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/talking-rock`)) {
       this.id = 3;
       this.heading = headingReservePageLocation3;
-    } else if (this.router.url.includes(`${environment.locationName}/belforest`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/northside`)) {
       this.id = 4;
       this.heading = headingReservePageLocation4;
-    } else if (this.router.url.includes(`${environment.locationName}/fairhope`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/north-main`)) {
       this.id = 5;
       this.heading = headingReservePageLocation5;
     } else if (this.router.url.includes(`${environment.locationName}/robertsdale`)) {

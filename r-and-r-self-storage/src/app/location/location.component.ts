@@ -120,7 +120,7 @@ export class LocationComponent implements OnInit {
                 content: element.content
               })
             });
-    } else if (this.router.url.includes(`${environment.locationName}/silverhill`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/refuge`)) {
            this.meta.addTag({
              name: 'description',
              content: `${this.location2PageContent}`
@@ -144,7 +144,7 @@ export class LocationComponent implements OnInit {
               content: element.content
             })
           });
-      } else if (this.router.url.includes(`${environment.locationName}/barnwell`)) {
+      } else if (this.router.url.includes(`${environment.locationName}/talking-rock`)) {
         this.meta.addTag({
           name: 'description',
           content: `${this.location3PageContent}`
@@ -168,7 +168,7 @@ export class LocationComponent implements OnInit {
             content: element.content
           })
         });
-   } else if (this.router.url.includes(`${environment.locationName}/belforest`)) {
+   } else if (this.router.url.includes(`${environment.locationName}/northside`)) {
     this.meta.addTag({
       name: 'description',
       content: `${this.location4PageContent}`
@@ -192,7 +192,7 @@ export class LocationComponent implements OnInit {
         content: element.content
       })
     });
-  } else if (this.router.url.includes(`${environment.locationName}/fairhope`)) {
+  } else if (this.router.url.includes(`${environment.locationName}/north-main`)) {
     this.meta.addTag({
       name: 'description',
       content: `${this.location5PageContent}`
@@ -287,13 +287,13 @@ this.titleService.setTitle(`${this.location6PageTitle}`);
   public fetchOg() {
     if (this.router.url.includes(`${environment.locationName}/confederate`)) {
       this.og = ogLocation1;
-  } else if (this.router.url.includes(`${environment.locationName}/silverhill`)) {
+  } else if (this.router.url.includes(`${environment.locationName}/refuge`)) {
     this.og = ogLocation2;
-  } else if (this.router.url.includes(`${environment.locationName}/barnwell`)) {
+  } else if (this.router.url.includes(`${environment.locationName}/talking-rock`)) {
     this.og = ogLocation3;
-  } else if (this.router.url.includes(`${environment.locationName}/belforest`)) {
+  } else if (this.router.url.includes(`${environment.locationName}/northside`)) {
     this.og = ogLocation4;
-  } else if (this.router.url.includes(`${environment.locationName}/fairhope`)) {
+  } else if (this.router.url.includes(`${environment.locationName}/north-main`)) {
     this.og = ogLocation5;
   } else if (this.router.url.includes(`${environment.locationName}/robertsdale`)) {
     this.og = ogLocation6;
@@ -303,13 +303,13 @@ this.titleService.setTitle(`${this.location6PageTitle}`);
   public fetchTwitter() {
     if (this.router.url.includes(`${environment.locationName}/confederate`)) {
       this.twitter = twitterLocation1;
-  } else if (this.router.url.includes(`${environment.locationName}/silverhill`)) {
+  } else if (this.router.url.includes(`${environment.locationName}/refuge`)) {
     this.twitter = twitterLocation2;
-  } else if (this.router.url.includes(`${environment.locationName}/barnwell`)) {
+  } else if (this.router.url.includes(`${environment.locationName}/talking-rock`)) {
     this.twitter = twitterLocation3;
-  } else if (this.router.url.includes(`${environment.locationName}/belforest`)) {
+  } else if (this.router.url.includes(`${environment.locationName}/northside`)) {
     this.twitter = twitterLocation4;
-  } else if (this.router.url.includes(`${environment.locationName}/fairhope`)) {
+  } else if (this.router.url.includes(`${environment.locationName}/north-main`)) {
     this.twitter = twitterLocation5;
   } else if (this.router.url.includes(`${environment.locationName}/robertsdale`)) {
     this.twitter = twitterLocation6;
@@ -319,13 +319,13 @@ this.titleService.setTitle(`${this.location6PageTitle}`);
   public isSomePage() {
     if (this.router.url.includes(`${environment.locationName}/confederate`)) {
         this.fetchDetailsLocation1();
-    } else if (this.router.url.includes(`${environment.locationName}/silverhill`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/refuge`)) {
       this.fetchDetailsLocation2();
-    } else if (this.router.url.includes(`${environment.locationName}/barnwell`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/talking-rock`)) {
       this.fetchDetailsLocation3();
-    } else if (this.router.url.includes(`${environment.locationName}/belforest`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/northside`)) {
       this.fetchDetailsLocation4();
-    } else if (this.router.url.includes(`${environment.locationName}/fairhope`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/north-main`)) {
       this.fetchDetailsLocation5();
     } else if (this.router.url.includes(`${environment.locationName}/robertsdale`)) {
       this.fetchDetailsLocation6();
@@ -337,16 +337,16 @@ this.titleService.setTitle(`${this.location6PageTitle}`);
     this.router.navigate([`${environment.locationName}/confederate/reserve-unit`],
           );
   } else if ( this.locationId === 2 ) {
-    this.router.navigate([`${environment.locationName}/silverhill/reserve-unit`],
+    this.router.navigate([`${environment.locationName}/refuge/reserve-unit`],
           );
   }  else if ( this.locationId === 3 ) {
-    this.router.navigate([`${environment.locationName}/barnwell/reserve-unit`],
+    this.router.navigate([`${environment.locationName}/talking-rock/reserve-unit`],
          );
   }  else if ( this.locationId === 4 ) {
-    this.router.navigate([`${environment.locationName}/belforest/reserve-unit`],
+    this.router.navigate([`${environment.locationName}/northside/reserve-unit`],
           );
   } else if ( this.locationId === 5 ) {
-    this.router.navigate([`${environment.locationName}/fairhope/reserve-unit`],
+    this.router.navigate([`${environment.locationName}/north-main/reserve-unit`],
           );
   } else if ( this.locationId === 6 ) {
     this.router.navigate([`${environment.locationName}/robertsdale/reserve-unit`],
