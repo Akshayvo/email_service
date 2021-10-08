@@ -2,17 +2,17 @@ export const contactsHomePage = [
     {
         id: 1,
         label: 'Address: ',
-        data: '291 Burnt Mountain Rd, Jasper, GA 30143',
+        data: '461 N Main St, Jasper, GA 30143',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/Ba5xUm1ZPZrJjt717'
+        redirect: 'https://goo.gl/maps/dVAajXtPfpqwz1k77'
     },
     {
         id: 2,
         label: 'Email: ',
-        email: 'Joyce@randrstorage.com',
-        data: `Joyce@randrstorage.com`,
+        email: 'info@rrstorageofjasper.com',
+        data: `info@rrstorageofjasper.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:Joyce@randrstorage.com'
+        redirect: 'mailto:info@rrstorageofjasper.com'
     },
     {
         id: 3,
@@ -56,10 +56,10 @@ export const contactsLocation1 = [
     {
         id: 3,
         label: 'Email: ',
-        email: 'Joyce@randrstorage.com',
-        data: `Joyce@randrstorage.com`,
+        email: 'info@rrstorageofjasper.com',
+        data: `info@rrstorageofjasper.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:Joyce@randrstorage.com'
+        redirect: 'mailto:info@rrstorageofjasper.com'
     },
     {
         id: 4,
@@ -112,10 +112,10 @@ export const contactsLocation2 = [
     {
         id: 2,
         label: 'Email: ',
-        data: 'Joyce@randrstorage.com',
-        email: `Joyce@randrstorage.com`,
+        data: 'info@rrstorageofjasper.com',
+        email: `info@rrstorageofjasper.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:Joyce@randrstorage.com'
+        redirect: 'mailto:info@rrstorageofjasper.com'
     },
     {
         id: 3,
@@ -151,10 +151,10 @@ export const contactsLocation3 = [
     {
         id: 2,
         label: 'Email: ',
-        data: 'Joyce@randrstorage.com',
-        email: `Joyce@randrstorage.com`,
+        data: 'info@rrstorageofjasper.com',
+        email: `info@rrstorageofjasper.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:Joyce@randrstorage.com'
+        redirect: 'mailto:info@rrstorageofjasper.com'
     },
     {
         id: 3,
@@ -190,10 +190,10 @@ export const contactsLocation4 = [
     {
         id: 2,
         label: 'Email: ',
-        data: 'Joyce@randrstorage.com',
-        email: `Joyce@randrstorage.com`,
+        data: 'info@rrstorageofjasper.com',
+        email: `info@rrstorageofjasper.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:Joyce@randrstorage.com'
+        redirect: 'mailto:info@rrstorageofjasper.com'
     },
     {
         id: 3,
@@ -229,10 +229,10 @@ export const contactsLocation5 = [
     {
         id: 2,
         label: 'Email: ',
-        data: 'Joyce@randrstorage.com',
-        email: `Joyce@randrstorage.com`,
+        data: 'info@rrstorageofjasper.com',
+        email: `info@rrstorageofjasper.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:Joyce@randrstorage.com'
+        redirect: 'mailto:info@rrstorageofjasper.com'
     },
     {
         id: 3,
@@ -268,10 +268,10 @@ export const contactsLocation6 = [
     {
         id: 2,
         label: 'Email: ',
-        data: 'Joyce@randrstorage.com',
-        email: `Joyce@randrstorage.com`,
+        data: 'info@rrstorageofjasper.com',
+        email: `info@rrstorageofjasper.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:Joyce@randrstorage.com'
+        redirect: 'mailto:info@rrstorageofjasper.com'
     },
     {
         id: 3,
