@@ -83,6 +83,11 @@ const withTab = [
         component: ResetPasswordComponent,
         canActivate: [VerifictionCodeGuard],
       },
+      {
+        path: "thank-you",
+        component: ThankYouComponent,
+        canActivate: [ThankYouGuard],
+      },
       // canActivate: [VerifictionCodeGuard]
     ],
   },
