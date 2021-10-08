@@ -18,7 +18,7 @@ export const tableData = [
     url: 'confederate/rent-sub/login'
   },
   {
-    facility: ' Burnt Mountain Road',
+    facility: ' Refuge Road',
     address: '3225 Refuge Rd, Jasper, GA 30143',
     url: 'refuge/rent-sub/login'
   },

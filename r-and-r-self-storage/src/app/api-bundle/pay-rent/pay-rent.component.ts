@@ -48,7 +48,7 @@ export class PayRentComponent implements OnInit {
     if (this.router.url.includes('confederate')) {
       this.name = ' Confederate Way Location';
   } else if (this.router.url.includes('refuge')) {
-    this.name = ' Burnt Mountain Road';
+    this.name = ' Refuge Road';
   } else if (this.router.url.includes('talking-rock')) {
     this.name = ' Talking Rock Road';
   } else if (this.router.url.includes('northside')) {

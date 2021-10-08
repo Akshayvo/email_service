@@ -137,7 +137,7 @@ export const addressLoaction1 = {
 export const addressLoaction2 = {
   '@type': 'PostalAddress',
   'streetAddress': '3225 Refuge Rd',
-  'addressLocality': 'Burnt Mountain Road',
+  'addressLocality': 'Refuge Road',
   'addressRegion': 'GA',
   'postalCode': '30143',
   'addressCountry': 'United state'
