@@ -19,6 +19,9 @@ a {
 .contact-header {
   display: inline;
 
+  .officeAddress{
+    font-size:0.90em;
+  }
   .contact-details {
     color: $white !important;
     font-size: 0.750em; //0.82em
