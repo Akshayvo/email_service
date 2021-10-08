@@ -113,7 +113,7 @@ export class ContactUsComponent implements OnInit {
       this.og = ogContactPageLocation4;
     } else if (this.router.url.includes('north-main')) {
       this.og = ogContactPageLocation5;
-    } else if (this.router.url.includes('robertsdale')) {
+    } else if (this.router.url.includes('campus-drive')) {
       this.og = ogContactPageLocation6;
     }
 }
@@ -134,7 +134,7 @@ public fetchTwitter() {
     this.twitter = twitterContactPageLocation4;
   } else if (this.router.url.includes('north-main')) {
     this.twitter = twitterContactPageLocation5;
-  } else if (this.router.url.includes('robertsdale')) {
+  } else if (this.router.url.includes('campus-drive')) {
     this.twitter = twitterContactPageLocation6;
   }
 }
@@ -181,7 +181,7 @@ public fetchTwitter() {
       this.fetchContactDetailsLocation4();
     } else if (this.router.url.includes('north-main')) {
       this.fetchContactDetailsLocation5();
-    } else if (this.router.url.includes('robertsdale')) {
+    } else if (this.router.url.includes('campus-drive')) {
       this.fetchContactDetailsLocation6();
     }
   }

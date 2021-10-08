@@ -87,7 +87,7 @@ export const location2 = `refuge`;
 export const location3 = `talking-rock`;
 export const location4 = `northside`;
 export const location5 = `talking-rock`;
-export const location6 = `robertsdale`;
+export const location6 = `campus-drive`;
 
 
 export const urlLocation1 = `${environment.websiteUrl}/${environment.locationName}/confederate/storage-units`;
@@ -95,7 +95,7 @@ export const urlLocation2 = `${environment.websiteUrl}/${environment.locationNam
 export const urlLocation3 = `${environment.websiteUrl}/${environment.locationName}/talking-rock/storage-units`;
 export const urlLocation4 = `${environment.websiteUrl}/${environment.locationName}/northside/storage-units`;
 export const urlLocation5 = `${environment.websiteUrl}/${environment.locationName}/north-main/storage-units`;
-export const urlLocation6 = `${environment.websiteUrl}/${environment.locationName}/robertsdale/storage-units`;
+export const urlLocation6 = `${environment.websiteUrl}/${environment.locationName}/campus-drive/storage-units`;
 
 
 export const description1 = `R & R Self Storage is a locally owned and operated self storage company providing clean, well-maintained self storage units and hometown customer service at extremely competitive rates! Our 6 locations serving local homeowners, renters, and businesses are conveniently located in and around Jasper, Georgia. `;
@@ -136,46 +136,46 @@ export const addressLoaction1 = {
 
 export const addressLoaction2 = {
   '@type': 'PostalAddress',
-  'streetAddress': '15410 AL-104',
-  'addressLocality': 'Silverhill',
-  'addressRegion': 'AL',
-  'postalCode': '36576',
+  'streetAddress': '3225 Refuge Rd',
+  'addressLocality': 'Burnt Mountain Road',
+  'addressRegion': 'GA',
+  'postalCode': '30143',
   'addressCountry': 'United state'
 }
 
 export const addressLoaction3 = {
   '@type': 'PostalAddress',
-  'streetAddress': '8089A US-98',
-  'addressLocality': 'Fairhope',
-  'addressRegion': 'AL',
-  'postalCode': '36532',
+  'streetAddress': '1422 Talking Rock Rd',
+  'addressLocality': 'Talking Rock Road',
+  'addressRegion': 'GA',
+  'postalCode': '30143',
   'addressCountry': 'United state'
 } 
 
 export const addressLoaction4 = {
   '@type': 'PostalAddress',
-  'streetAddress': '11455 Co Rd 64',
-  'addressLocality': 'Daphne',
-  'addressRegion': 'AL',
-  'postalCode': '36526',
+  'streetAddress': '365 Northside Dr',
+  'addressLocality': 'Northside Drive',
+  'addressRegion': 'GA',
+  'postalCode': '30143',
   'addressCountry': 'United state'
 }
 
 export const addressLoaction5 = {
   '@type': 'PostalAddress',
-  'streetAddress': '21193 AL-181',
-  'addressLocality': 'Fairhope',
-  'addressRegion': 'AL',
+  'streetAddress': '463 N Main St',
+  'addressLocality': 'North Main Street',
+  'addressRegion': 'GA',
   'postalCode': '36532',
   'addressCountry': 'United state'
 }
 
 export const addressLoaction6 = {
   '@type': 'PostalAddress',
-  'streetAddress': '20218 US-90',
-  'addressLocality': 'Robertsdale',
-  'addressRegion': 'AL',
-  'postalCode': '36567',
+  'streetAddress': '351 Campus Dr',
+  'addressLocality': 'Campus Drive',
+  'addressRegion': 'GA',
+  'postalCode': '30143',
   'addressCountry': 'United state'
 }
 

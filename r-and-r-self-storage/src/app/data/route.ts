@@ -266,7 +266,7 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-    { path: `${environment.locationName}/robertsdale`,
+    { path: `${environment.locationName}/campus-drive`,
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -342,7 +342,7 @@ export const apiRoutes = [
         externalUrl: ''
     }
   },
-  { path: 'review/robertsdale', component: HomeComponent,
+  { path: 'review/campus-drive', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -373,7 +373,7 @@ export const apiRoutes = [
     children: childroute
   },
   {
-    path: 'pay-rent/robertsdale', component: PayRentComponent,
+    path: 'pay-rent/campus-drive', component: PayRentComponent,
     children: childroute
   },
   { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
@@ -383,7 +383,7 @@ export const apiRoutes = [
   { path: 'contact-talking-rock', component: ContactUsComponent},
   { path: 'contact-northside', component: ContactUsComponent},
   { path: 'contact-north-main', component: ContactUsComponent},
-  { path: 'contact-robertsdale', component: ContactUsComponent},
+  { path: 'contact-campus-drive', component: ContactUsComponent},
   { path: '**', component: ErrorComponent },
   { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
 ];
@@ -447,7 +447,7 @@ export const iFrameRoutes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: `${environment.locationName}/robertsdale`,
+  { path: `${environment.locationName}/campus-drive`,
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -498,7 +498,7 @@ export const iFrameRoutes = [
         externalUrl: ''
     }
   },
-  { path: 'review/robertsdale', component: HomeComponent,
+  { path: 'review/campus-drive', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -513,7 +513,7 @@ export const iFrameRoutes = [
   { path: 'pay-rent-talking-rock', component: PayRentMontgomeryComponent},
   { path: 'pay-rent-northside', component: PayRentMiddletownComponent},
   { path: 'pay-rent-north-main', component: PayRentMontgomeryComponent},
-  { path: 'pay-rent-robertsdale', component: PayRentMiddletownComponent},
+  { path: 'pay-rent-campus-drive', component: PayRentMiddletownComponent},
   { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
   { path: '**', component: ErrorComponent },

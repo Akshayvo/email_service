@@ -48,15 +48,15 @@ export class PayRentComponent implements OnInit {
     if (this.router.url.includes('confederate')) {
       this.name = ' Confederate Way Location';
   } else if (this.router.url.includes('refuge')) {
-    this.name = ' Refuge Road Location';
+    this.name = ' Burnt Mountain Road';
   } else if (this.router.url.includes('talking-rock')) {
-    this.name = 'Talking Rock Road Location';
+    this.name = ' Talking Rock Road';
   } else if (this.router.url.includes('northside')) {
-    this.name = 'Northside Drive Location';
+    this.name = ' Northside Drive';
   } else if (this.router.url.includes('north-main')) {
-    this.name = 'North Main Street Location';
-  } else if (this.router.url.includes('robertsdale')) {
-    this.name = 'Robertsdale';
+    this.name = ' North Main Street';
+  } else if (this.router.url.includes('campus-drive')) {
+    this.name = ' Campus Drive';
   }
     if (!!localStorage.getItem('APIKey')) {
       this.dataSharingService.apiKey = localStorage.getItem('APIKey');
@@ -81,7 +81,7 @@ export class PayRentComponent implements OnInit {
       this.og = ogPayRentPageLocation4;
     } else if (this.router.url.includes('north-main')) {
       this.og = ogPayRentPageLocation5;
-    } else if (this.router.url.includes('robertsdale')) {
+    } else if (this.router.url.includes('campus-drive')) {
       this.og = ogPayRentPageLocation6;
     }
 }
@@ -97,7 +97,7 @@ public fetchTwitter() {
     this.twitter = twitterPayRentPageLocation4;
   } else if (this.router.url.includes('north-main')) {
     this.twitter = twitterPayRentPageLocation5;
-  } else if (this.router.url.includes('robertsdale')) {
+  } else if (this.router.url.includes('campus-drive')) {
     this.twitter = twitterPayRentPageLocation6;
   }
 }

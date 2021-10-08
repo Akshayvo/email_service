@@ -161,7 +161,7 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.contact = contactsLocation5;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc5;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc5);
-    } else  if (this.router.url.includes('robertsdale')) {
+    } else  if (this.router.url.includes('campus-drive')) {
       this.id = 6;
       this.name = 'Storage Plus of Baldwin County - Robertsdale';
       this.contact = contactsLocation6;
@@ -189,7 +189,7 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.og = ogPayRentPageLocation4;
     } else if (this.router.url.includes('north-main')) {
       this.og = ogPayRentPageLocation5;
-    } else if (this.router.url.includes('robertsdale')) {
+    } else if (this.router.url.includes('campus-drive')) {
       this.og = ogPayRentPageLocation6;
     }
     }
@@ -205,7 +205,7 @@ public fetchTwitter() {
         this.twitter = twitterPayRentPageLocation4;
   } else if (this.router.url.includes('north-main')) {
     this.twitter = twitterPayRentPageLocation5;
-  } else if (this.router.url.includes('robertsdale')) {
+  } else if (this.router.url.includes('campus-drive')) {
     this.twitter = twitterPayRentPageLocation6;
   }
 }

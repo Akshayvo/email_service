@@ -36,7 +36,7 @@ export class DirectionsComponent implements OnInit {
       this.fetchDetailsLocation4();
     } else  if (this.router.url.includes(`${environment.locationName}/north-main`))  {
       this.fetchDetailsLocation5();
-    } else  if (this.router.url.includes(`${environment.locationName}/robertsdale`))  {
+    } else  if (this.router.url.includes(`${environment.locationName}/campus-drive`))  {
       this.fetchDetailsLocation6();
     }
  }

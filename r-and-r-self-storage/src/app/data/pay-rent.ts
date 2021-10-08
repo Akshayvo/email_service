@@ -18,30 +18,30 @@ export const tableData = [
     url: 'confederate/rent-sub/login'
   },
   {
-    facility: ' Refuge Road Location',
+    facility: ' Burnt Mountain Road',
     address: '3225 Refuge Rd, Jasper, GA 30143',
     url: 'refuge/rent-sub/login'
   },
   {
-    facility: 'Talking Rock Road Location',
+    facility: 'Talking Rock Road',
     address: '1422 Talking Rock Rd, Jasper, GA 30143',
     url: 'talking-rock/rent-sub/login'
   },
   {
-    facility: 'Northside Drive Location',
+    facility: 'Northside Drive',
     address: '365 Northside Dr, Jasper, GA 30143',
     url: 'northside/rent-sub/login'
   },
   {
-    facility: 'North Main Street Location',
+    facility: 'North Main Street',
     address: '463 N Main St, Jasper, GA 30143',
     url: 'north-main/rent-sub/login'
   },
-  // {
-  //   facility: 'Robertsdale',
-  //   address: '20218 US-90, Robertsdale, AL 36567',
-  //   url: 'robertsdale/rent-sub/login'
-  // },
+  {
+    facility: 'Campus Drive',
+    address: '351 Campus Dr, Jasper, GA 30143',
+    url: 'campus-drive/rent-sub/login'
+  },
 ];
 
 export const tableDataContactPage = [

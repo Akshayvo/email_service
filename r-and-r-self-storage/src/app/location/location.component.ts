@@ -216,7 +216,7 @@ this.titleService.setTitle(`${this.location5PageTitle}`);
        content: element.content
      })
    });
-} else if (this.router.url.includes(`${environment.locationName}/robertsdale`)) {
+} else if (this.router.url.includes(`${environment.locationName}/campus-drive`)) {
   this.meta.addTag({
     name: 'description',
     content: `${this.location6PageContent}`
@@ -295,7 +295,7 @@ this.titleService.setTitle(`${this.location6PageTitle}`);
     this.og = ogLocation4;
   } else if (this.router.url.includes(`${environment.locationName}/north-main`)) {
     this.og = ogLocation5;
-  } else if (this.router.url.includes(`${environment.locationName}/robertsdale`)) {
+  } else if (this.router.url.includes(`${environment.locationName}/campus-drive`)) {
     this.og = ogLocation6;
   }
   }
@@ -311,7 +311,7 @@ this.titleService.setTitle(`${this.location6PageTitle}`);
     this.twitter = twitterLocation4;
   } else if (this.router.url.includes(`${environment.locationName}/north-main`)) {
     this.twitter = twitterLocation5;
-  } else if (this.router.url.includes(`${environment.locationName}/robertsdale`)) {
+  } else if (this.router.url.includes(`${environment.locationName}/campus-drive`)) {
     this.twitter = twitterLocation6;
   }
   }
@@ -327,7 +327,7 @@ this.titleService.setTitle(`${this.location6PageTitle}`);
       this.fetchDetailsLocation4();
     } else if (this.router.url.includes(`${environment.locationName}/north-main`)) {
       this.fetchDetailsLocation5();
-    } else if (this.router.url.includes(`${environment.locationName}/robertsdale`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/campus-drive`)) {
       this.fetchDetailsLocation6();
     }
  }
@@ -349,7 +349,7 @@ this.titleService.setTitle(`${this.location6PageTitle}`);
     this.router.navigate([`${environment.locationName}/north-main/reserve-unit`],
           );
   } else if ( this.locationId === 6 ) {
-    this.router.navigate([`${environment.locationName}/robertsdale/reserve-unit`],
+    this.router.navigate([`${environment.locationName}/campus-drive/reserve-unit`],
           );
   }
  }

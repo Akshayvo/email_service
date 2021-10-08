@@ -6,13 +6,14 @@ import { Injectable } from '@angular/core';
 export class DataSharingService {
 
   locationAPIKey = {
-    loc1: 'dzJ0OVc1SjIqN046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29527
+    loc1: 'dzJ0OVc1SjIqOU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29529
     loc2: 'bTF+M243eTI6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 1372 
     loc3: 'dzJ0OVc1SjMqME46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29530 
     loc4: 'dzJ0OVc1SjMqMU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29531 
     loc5: 'dzJ0OVc1SjIqOE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29528 
-    loc6: 'dzJ0OVc1SjIqOU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29529 
+    loc6: 'dzJ0OVc1SjIqN046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29527
   };
+  
 
 //  locationAPIKey = {                                                     // demo north
 //     loc1: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',   // 28463
@@ -24,12 +25,7 @@ export class DataSharingService {
 //   };
 
 
-// dzJ0OVc1SjIqN046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O 29527
-// bTF+M243eTI6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O refuge-road-location 1372
-// dzJ0OVc1SjMqME46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O talking-rock 29530
-// dzJ0OVc1SjMqMU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O northside 29531
-// dzJ0OVc1SjIqOE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O north main 29528
-// dzJ0OVc1SjIqOU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O 29529
+
   locationName: string;
   strConfirmation: string;
   strAccessCode: string;
