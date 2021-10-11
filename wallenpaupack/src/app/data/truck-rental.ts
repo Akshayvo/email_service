@@ -1,9 +1,8 @@
 export const truckPoints = [
     
     { data: 'Our truck is used only for local moves within a 20 mile radius of the rental facility.' },
-    { data: 'The person who will be driving the truck needs to provide a current driver’s license.' },
-    { data: 'The person who will be driving the truck needs to provide current proof of insurance in their name. We cannot accept an insurance card in someone else’s name.' },
-    { data: 'We need to run a pre-authorization for $500.00 on a visa or Mastercard. This is not actually charged to your card, it is pre-authorization to charge the card in the event that you damage our truck. (The card must have $500.00 available at the time of the pre-authorization.)' },
+    { data: 'Current driver’s license and proof of insurance are required.' },
+    { data: 'We require a $500.00 pre-authorization for the use of the truck. This is not actually charged to your card, it just places a hold on it. It is pre-authorization to charge the card in the event that you damage our truck. Once the truck is empty, returned, and verified to be in the same condition as it was when it left the property, the hold will be taken off of the pre-authorization charge. We accept all major credit cards, also bank debit cards. The card must have a minimum of $500.00 available or it will be declined and use of the truck will not be allowed.' },
     { data: 'You must replace whatever gas you use before returning the truck, or pay a refueling charge.' },
 
 ];

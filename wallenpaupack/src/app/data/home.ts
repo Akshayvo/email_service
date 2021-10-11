@@ -174,7 +174,7 @@ export const location6FeaturesHead = [
 
 export const serviceOffered = [
     {
-        p: `Wallenpaupack Self Storage provides quality self storage and vehicle storage in the Wallenpaupack Lake region with our 4 well maintained self storage facilities. Our facilities have a wide range of self storage unit sizes, including climate controlled units. Check out our current availability, then rent your unit online, or give our friendly team a call!`,
+        p: `Wallenpaupack Self Storage provides quality self storage and vehicle storage in the Lake Wallenpaupack region with our 4 well maintained self storage facilities. Our facilities have a wide range of self storage unit sizes, including climate controlled units. Check out our current availability, then rent your unit online, or give our friendly team a call!`,
     },
     // {
     //     p: `Each of our 4 locations is conveniently located and comes with all of the modern amenities to make your next storage project a convenient and affordable one. Start by checking out our availability and rates at the location nearest you. Once you find that perfect unit for your home, business, or worksite, just fill out our form, pay your first month’s charges, and sign your lease. That’s it! You now access to your self storage unit or parking space, and your account has been created for 24-hour payments.`,

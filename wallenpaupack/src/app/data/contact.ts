@@ -24,9 +24,9 @@ export const contactsHomePage = [
     {
         id: 3,
         label: 'Phone: ',
-        data: '(570) 676-0851',
+        data: '(570) 226-1901',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:5706760851'
+        redirect: 'tel:5702261901'
     },
 ];
 
@@ -166,9 +166,9 @@ export const contactsLocation2 = [
     {
         id: 4,
         label: 'Phone: ',
-        data: '(570) 676-0851',
+        data: '(570) 698-7867',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:5706760851'
+        redirect: 'tel:5706987867'
     },
 ];
 
@@ -220,9 +220,9 @@ export const contactsLocation3 = [
     {
         id: 4,
         label: 'Phone: ',
-        data: '(570) 676-0851',
+        data: '(570) 226-4481',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:5706760851'
+        redirect: 'tel:5702264481'
     },
 ];
 
