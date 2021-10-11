@@ -597,7 +597,7 @@ public navigateToPrevious() {
           }
         } else {
           this.makePaymentForUnit = false;
-
+          this.showloaderForPayment = false;
           this.invalidPayment = 'Unable to make the payment. Please check your card detail.';
         }
 
