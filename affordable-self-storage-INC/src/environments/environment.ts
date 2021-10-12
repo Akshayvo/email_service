@@ -17,8 +17,8 @@ export const environment = {
   // baseUrl: `https://simapi.syrasoft.com/1/api/`,
   // AnotherLocationAPIKey: `MTEyOTE6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`,
   // DemoNorthAPIKey: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
-  APIKey: `UDIoOEQ0YzZ2NTw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28463
-  // APIKey: `dzF0NVcxSjJOOjIyfCU4Nzg3NyQoOD1iVzBzaGRkOWtlb2NeTg==` // Affordable self storage INC 1512
+  // APIKey: `UDIoOEQ0YzZ2NTw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28463
+  APIKey: `dzF0NVcxSjJOOjIyfCU4Nzg3NyQoOD1iVzBzaGRkOWtlb2NeTg==` // Affordable self storage INC 1512
   // APIKey: `dzJ0OFc0SjYqNE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28464 (For 0 reservetion charges)
   // baseUrl: `http://localhost:60444/api/`,
 };

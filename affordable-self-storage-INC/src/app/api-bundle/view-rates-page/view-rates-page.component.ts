@@ -19,6 +19,8 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   showTable = false;
   unitTypes: UnitTypes;
   LstUnitTypes: LstUnitTypes[];
+  RegularUnitTypes: LstUnitTypes[];
+  ClimateUnitTypes: LstUnitTypes[];
 
   descriptionVR: string;
   monthlyRateVR: number;
@@ -119,6 +121,8 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     .subscribe(unitTypesResponse => {
       this.showTable =  true;
       this.LstUnitTypes = unitTypesResponse.lstUnitTypes;
+      this.RegularUnitTypes = unitTypesResponse.lstUnitTypes.filter(x => x.IsClimateControlled !== true);
+      this.ClimateUnitTypes = unitTypesResponse.lstUnitTypes.filter(x => x.IsClimateControlled === true);
     });
   }
 

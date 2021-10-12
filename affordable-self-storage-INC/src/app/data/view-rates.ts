@@ -36,10 +36,10 @@ export const th = [
   //   data: `Move In`,
   //   state: objSIMSetting.objActionSetting.blnAllowMoveIn
   // },
-  {
-    data: `Climate Control`,
-    state: objSIMSetting.objUnitSizesSetting.blnClimateControl
-  },
+  // {
+  //   data: `Climate Control`,
+  //   state: objSIMSetting.objUnitSizesSetting.blnClimateControl
+  // },
 ];
 
 
