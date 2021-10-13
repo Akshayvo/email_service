@@ -291,7 +291,7 @@
                </div>
            <div *ngIf="monthlyRate">
                <label>Rate:</label>&nbsp;
-               ${{monthlyRate}}
+               ${{monthlyRate | number : '1.2-2'}}
                <span *ngIf="rateTax > 0">
                    + ${{rateTax}} (Tax)
                </span>
@@ -308,14 +308,14 @@
                <label>Prorate Amount:</label>&nbsp;
                ${{proRateAmount}} 
                <span *ngIf="prorateAmtTax > 0">
-                       + ${{prorateAmtTax}} (Tax)
+                       + ${{prorateAmtTax | number : '1.2-2'}} (Tax)
                    </span>
            </div>
            <div  *ngIf=" navigateToMoveIn && deposit > 0">
                <label>Deposit Amount:</label>&nbsp;
                ${{deposit}}
                <span *ngIf="depositTax > 0.0">
-                       + ${{depositTax}} (Tax)
+                       + ${{depositTax | number : '1.2-2'}} (Tax)
                    </span>
            </div>
            <div  *ngIf="navigateToMoveIn && othDeposit > 0">

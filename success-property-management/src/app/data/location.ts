@@ -143,7 +143,7 @@ export const headingLocation6 = ``;
 
 
 
-export const headingReservePageLocation1 = `Ready to Reserve a Self Storage Unit in Baltimore`;
+export const headingReservePageLocation1 = `To rent your unit at our PSI Mini Storage location, please enter your information below.`;
 
 export const headingReservePageLocation2 = `Ready to Reserve a Self Storage Unit in Silverhill`;
 
@@ -155,7 +155,7 @@ export const headingReservePageLocation5 = `Ready to Reserve a Self Storage Unit
 
 export const headingReservePageLocation6 = `Ready to Reserve a Self Storage Unit in Robertsdale`;
 
-export const heading1 = `Success Property Management - Baltimore`;
+export const heading1 = `Success Property Management - PSI Mini Storage`;
 
 export const heading2 = `Success Property Management - Silverhill`;
 

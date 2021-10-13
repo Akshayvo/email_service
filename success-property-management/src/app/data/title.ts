@@ -1,8 +1,8 @@
 export const homePageTitle = `Affordable Self Storage & Vehicle Parking in Baldwin County`;
 export const homePageContent = `Success Property Management has 6 conveniently located self storage facilities with a variety of affordable self storage unit types and vehicle parking options.`;
 
-export const location1PageTitle = `Baltimore | Success Property Management`;
-export const location1PageContent = `We offer a number of affordable self storage options in Baltimore, Alabama. Check out our prices, then give us a call to start clearing up your home, office, or garage!`;
+export const location1PageTitle = `PSI Mini Storage | Success Property Management`;
+export const location1PageContent = `We offer a number of affordable self storage options in PSI Mini Storage, Alabama. Check out our prices, then give us a call to start clearing up your home, office, or garage!`;
 
 export const location2PageTitle = `Silverhill | Success Property Management`;
 export const location2PageContent = `Our Silverhill location offers a large variety of regular and climate controlled storage units in a number of sizes, and all of our units are priced competitively!`;

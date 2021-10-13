@@ -74,7 +74,7 @@ const emailIndex4 = contactsLocation4.findIndex(x => x.label === 'Email: ');
 const emailIndex5 = contactsLocation5.findIndex(x => x.label === 'Email: ');
 const emailIndex6 = contactsLocation6.findIndex(x => x.label === 'Email: ');
   
-export const nameLocation1 = `Success Property Management - Baltimore`;
+export const nameLocation1 = `Success Property Management - PSI Mini Storage`;
 export const nameLocation2 = `Success Property Management - Silverhill`;
 export const nameLocation3 = `Success Property Management - Barnwell`;
 export const nameLocation4 = `Success Property Management - Belforest`;
@@ -129,7 +129,7 @@ export const maplocation6 = 'https://goo.gl/maps/kt1bhA6aHeRmjXsN7';
 export const addressLoaction1 = {
   '@type': 'PostalAddress',
       'streetAddress': '17860 US-98',
-      'addressLocality': 'Baltimore',
+      'addressLocality': 'PSI Mini Storage',
       'addressRegion': 'AL',
       'postalCode': '36535',
       'addressCountry': 'United state'

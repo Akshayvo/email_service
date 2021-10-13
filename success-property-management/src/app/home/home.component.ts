@@ -169,7 +169,7 @@ export class HomeComponent implements OnInit {
 
 
     public fetchContactDetailsLocation1() {
-      this.heading = `Success Property Management - Baltimore`;
+      this.heading = `Success Property Management - PSI Mini Storage`;
       this.contactDetails = contactsLocation1;
       this.hoursDetails = hoursLocation1;
     }

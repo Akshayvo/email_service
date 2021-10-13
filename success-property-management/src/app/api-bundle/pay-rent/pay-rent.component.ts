@@ -46,7 +46,7 @@ export class PayRentComponent implements OnInit {
     });
     this.canonical.create();
     if (this.router.url.includes('baltimore')) {
-      this.name = ' Baltimore';
+      this.name = ' PSI Mini Storage';
   } else if (this.router.url.includes('silverhill')) {
     this.name = ' Silverhill';
   } else if (this.router.url.includes('barnwell')) {

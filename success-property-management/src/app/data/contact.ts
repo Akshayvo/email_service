@@ -33,9 +33,9 @@ export const contactsLocation1 = [
     {
         id: 1,
         label: 'Address: ',
-        data: '605 Baltimore St, Martinsburg, WV 25401',
+        data: '854 Hedgesville Rd, Martinsburg, WV 25403',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://www.google.com/maps/place/605+Baltimore+St,+Martinsburg,+WV+25401/@39.465704,-77.96802,13z/data=!4m5!3m4!1s0x89ca024e806b12b9:0xe1961506369c5b40!8m2!3d39.4657036!4d-77.9680203?hl=en'
+        redirect: 'https://goo.gl/maps/WW2wGLPD6ZcwffcE9'
     },
     {
         id: 2,
@@ -93,9 +93,9 @@ export const contactsLocation2 = [
     {
         id: 1,
         label: 'Address: ',
-        data: '605 Baltimore St, Martinsburg, WV 25401',
+        data: '854 Hedgesville Rd, Martinsburg, WV 25403',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://g.page/r/CT1A0QzwMwCHEBA'
+        redirect: 'https://goo.gl/maps/WW2wGLPD6ZcwffcE9'
     },
     {
         id: 2,

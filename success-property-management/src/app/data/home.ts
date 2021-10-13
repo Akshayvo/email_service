@@ -160,7 +160,7 @@ export const location6FeaturesHead = [
 
 export const serviceOffered = [
     {
-        p: `Success Property Management is your one-stop self storage stop conveniently located on Baltimore St in Martinsburg, West Virginia. We are a locally owned and operated storage facility that proudly serves our friends and neighbors with clean, well-maintained self storage units and parking spaces at affordable rates. With Success Property Management, we go the extra mile to make sure you receive the top quality customer service you can only get from a local business.`,
+        p: `Success Property Management is your one-stop self storage stop. We are a locally owned and operated storage facility that proudly serves our friends and neighbors with clean, well-maintained self storage units and parking spaces at affordable rates. With Success Property Management, we go the extra mile to make sure you receive the top quality customer service you can only get from a local business.`,
     },
     {
         p: `Our facility is built with all of the modern conveniences that make your move in, stay, and move out quick and easy. Start by taking a moment to review our current availability and unit rates. Once you’ve found the unit that fits your needs, be they planning a residential move, or storing commercial equipment and documents, you can fill out our online application and rent your unit in minutes! Once your digital lease is signed, you’ll receive a gate code and unit number. You now have access to your new storage unit! Use your unique pin-code to enter our fully-fenced and well-lit facility at your convenience, then pay your rent or sign up for autopay on our website 24-hours a day.`,
@@ -201,7 +201,7 @@ export const featuresList = [
 
 export const jumbotron = [
     {
-        h2: `Affordable Self Storage Units & Vehicle Parking in Martinsburg, WV`,
+        h2: `Affordable Self Storage Units & Vehicle Parking`,
         blurb: `Success Property Management is a locally owned and operated self storage unit and vehicle parking facility serving Berkley, Jefferson, and Morgan counties with clean, well-maintained self storage units and parking at reasonable rates. Take a moment to review our availability, 
         then rent your unit online, or give one of our friendly managers a call!`,
     }

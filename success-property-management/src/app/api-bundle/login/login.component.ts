@@ -133,7 +133,7 @@ export class LoginComponent implements OnInit, OnDestroy {
 
     if (this.router.url.includes('baltimore')) {
       this.id = 1;
-      this.name = 'Success Property Management - Baltimore';
+      this.name = 'Success Property Management - PSI Mini Storage';
       this.contact = contactsLocation1;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc1);

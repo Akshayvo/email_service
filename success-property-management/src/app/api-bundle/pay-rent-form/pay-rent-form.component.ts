@@ -481,7 +481,12 @@ public navigateToPrevious() {
   }
 
   public navigateToConfirmation(location: any) {
-    this.router.navigate([`${environment.locationName}/${this.facilityLocation}/reserve-unit/${location}`]);
+    if(this.router.url.includes('move-in')){
+      this.router.navigate([`${environment.locationName}/${this.facilityLocation}/move-in/${location}`]);
+    }
+    else{
+      this.router.navigate([`${environment.locationName}/${this.facilityLocation}/reserve-unit/${location}`]);
+    }
   }
 
   getPayMethods() {

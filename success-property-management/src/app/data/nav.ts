@@ -13,7 +13,7 @@ export const navLinks = [
         sublinks: [
             {
                 id: '1',
-                label: 'Baltimore',
+                label: 'PSI Mini Storage',
                 path: `${environment.locationName}/baltimore`,
               },
             // {

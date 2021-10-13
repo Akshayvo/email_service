@@ -102,7 +102,7 @@ export class LocationComponent implements OnInit {
               content: `${this.location1PageContent}`
     });
     this.titleService.setTitle(`${this.location1PageTitle}`);
-            this.locationName = `Success Property Management - Baltimore`;
+            this.locationName = `Success Property Management - PSI Mini Storage`;
             this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
             this.dataSharingService.locationName = this.locationName;
             this.script = Location1Script;

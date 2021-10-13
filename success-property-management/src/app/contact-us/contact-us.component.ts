@@ -187,7 +187,7 @@ public fetchTwitter() {
   }
 
   public fetchContactDetailsLocation1() {
-    this.heading = `Success Property Management - Baltimore`;
+    this.heading = `Success Property Management - PSI Mini Storage`;
     this.locationId = '1'
     this.contactDetails = contactsLocation1;
     this.hoursDetails = hoursLocation1;
