@@ -9,6 +9,9 @@
         <div class="loader" *ngIf="gettingTenantData"></div>
 
         <form [formGroup]="reserveUnitForm" (ngSubmit)="onSubmit()" >
+            <h2 class="text-center">Ready to reserve your unit at South Wenatchee Self Storage?</h2>
+        <h3 class="text-center">Enter Your information and pick Your Move in date below.</h3>
+        
          <div  class="row justify-content">
              <div formGroupName="objTenant" class="col-lg-7 p-4 ">
                  <h2 class="pb-3">Tenant Information</h2>
