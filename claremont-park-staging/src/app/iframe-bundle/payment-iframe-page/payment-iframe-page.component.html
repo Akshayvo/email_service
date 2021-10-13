@@ -1,0 +1,31 @@
+<div class="contentHolder">
+  <div class="container my-3 pb-5 ">
+    <h1 class="py-5 text-center">{{payRentHeading}}</h1>
+    <div class="row bg-light background-padding">
+      <div class="col-lg-8 col-md-7 scroll-wrapper small-screen-padding">
+          <div class="iframe-container">
+          <iframe id="advanced_iframe" name="advanced_iframe" src="" width="100%"
+            height="400" scrolling="yes" frameborder="0" border="0" allowtransparency="true" onload=";aiResizeIframe(this, 'true','1');"></iframe>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-5 vertical-line">
+        <h3>How to Login</h3>
+        <div *ngFor="let loginDetail of loginDetail">
+          <p><b>Username</b>&nbsp;{{loginDetail.userName}}<br>
+          <b>Password:</b>&nbsp;{{loginDetail.password}}</p>
+            <p><b>Example:</b></p>
+            <p>John Smith's {{loginDetail.example.code}}</p>
+            <p>John's Username: {{loginDetail.example.userName}}<br>
+              John's Password: {{loginDetail.example.password}}</p>
+            <p><strong>Have questions about your account?</strong><br>
+            <span *ngFor="let contact of contact" class="contact-links" [class.display-none]="contact?.id == 0">
+              <a  *ngIf="contact?.id == 1 || contact?.id == 2" [href]="contact?.redirect">
+                {{contact.data}}
+              </a>
+            <br>
+          </span>
+          </p>
+        </div>
+    </div>
+  </div>
+</div>
