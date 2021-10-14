@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import "../../styles.scss";
+
+a {
+  cursor: pointer;
+}
+
+.iconColor {
+  // color: $white;
+  color: $secondary;
+}
+
+.contact-header {
+  display: inline;
+
+  .contact-details {
+    color: $primary;
+    font-size: 0.82em;
+    font-weight: 500;
+    width: 100%;
+    a {
+      color: $primary;
+    }
+  }
+}
+
+.social {
+  a {
+    color: $primary;
+    text-decoration: none;
+  }
+
+  i {
+    font-size: 1.2rem;
+  }
+}
+
+.social :hover {
+  color: $primary;
+}
+
+.navbar {
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.09);  
+
+  ul {
+    text-align: center;
+    text-align: -webkit-center;
+  }
+
+  li {
+    width: fit-content;
+  }
+
+  .nav-link {
+    color: $primary;
+    font-weight: 600;
+    // padding: 21px;
+  }
+ 
+  .nav-link-active {
+    border-bottom: 5px solid $secondary;
+  }
+
+  button {
+    border-color: $white;
+
+    .iconColor {
+      color: $white;
+    }
+  }
+
+  button:focus {
+    outline: 5px auto $secondary;
+  }
+}
+
+.display {
+  display: block;
+}
+
+
+@media screen and (max-width: 991px) {
+  .display {
+    display: none;
+  }
+
+  .navbar {
+    .nav-link {
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) and (max-height: 480px) {
+  .navbar-nav-scroll {
+    height: 200px;
+    overflow-y: scroll;
+  } 
+}
