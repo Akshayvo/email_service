@@ -20,9 +20,10 @@
               <option *ngFor="let lstPayType of lstPayTypes"
               [value]="lstPayType?.PayTypeDescription"
               >
-                {{lstPayType.PayTypeDescription}}
+                {{lstPayType.PayTypeDescription}} 
               </option>
             </select>
+            
             <div *ngIf="submitted && f.objPayment['controls'].PayType['controls'].PayTypeDescription.errors" class="invalid-feedback">
                 <small class="form-text text-muted" *ngIf="f.objPayment['controls'].PayType['controls'].PayTypeDescription.errors.required">
                   Please fill out this field

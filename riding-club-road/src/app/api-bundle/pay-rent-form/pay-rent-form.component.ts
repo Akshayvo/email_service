@@ -232,6 +232,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
 
   public fetchCards() {
     this.cards = environment.cards;
+    
   }
 
   ngOnInit() {
@@ -274,6 +275,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   autoCardType(number: any) {
    this.cardType = this.getCardType(number.target.value);
    const index = this.lstPayTypes.findIndex(x => x.PayTypeDescription === this.cardType);
+   console.log(index);
    // tslint:disable-next-line: max-line-length
    const cardTypeId = ((index > -1 ) ? this.lstPayTypes[index].PayTypeID : this.lstPayTypes[0].PayTypeID);
    this.paytypeid =  cardTypeId;
@@ -295,6 +297,8 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         return 'Visa';
     }
 
+    
+
     // Mastercard
     // Updated for Mastercard 2017 BINs expansion
      // tslint:disable-next-line: max-line-length
@@ -314,11 +318,14 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         return 'Discover';
     }
 
+   
+
     return '';
 }
 
   selectChangeHandler(event: any) {
     this.selectedDescription = JSON.stringify(event.target.value);
+    console.log(this.selectedDescription);
     const indexValue = event.target.value;
     const index = this.lstPayTypes.findIndex(x => x.PayTypeDescription === indexValue);
     if (this.lstPayTypes && this.lstPayTypes.length > 0) {
