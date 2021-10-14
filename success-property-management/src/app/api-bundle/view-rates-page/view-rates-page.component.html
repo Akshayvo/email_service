@@ -33,11 +33,11 @@
         <div class="">
           <div class=" text-center ">
               <p >Rate</p>
-              <div class="custom-font"><strong><span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate}}</strong></div>
+              <div class="custom-font"><strong><span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate | number : '1.2-2'}}</strong></div>
           </div>
           <div class="text-center" *ngIf="lstUnitType.DepositAmount != null">
             <p>Deposit</p>
-            <div class="custom-font"><strong><span>$</span>{{lstUnitType.DepositAmount}}</strong></div>
+            <div class="custom-font"><strong><span>$</span>{{lstUnitType.DepositAmount | number : '1.2-2'}}</strong></div>
           </div>
         </div>
       </div>
