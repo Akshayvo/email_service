@@ -12,16 +12,16 @@ export const featuresList = [
         td2: 'Above Flood Elevation',
     },
     {
-        td1: 'Air-conditioned Access',
-        td2: 'Air Ventilated 24/7, Access Drive-up Units, (AV units, Air Ventilated)',
+        td1: 'Air conditioned, Access-Controlled Interior Units (CC Units, Climate Controlled)',
+        td2: 'Air Ventilated Drive-up Units *(AV Units) Access: 24/7',
     },
     {
         td1: 'Controlled Interior Units, Controlled Interior Units, (CC units, Climate Controlled)',
         td2: 'All our drive-up units are equipped with roof-mounted fans for ventilation and air circulation.',
     },
-    {
-        td1: 'You can do it all online, or call, or come in: Online Reservation without obligation, Online Rental and Move-in, Online Bill Pay,Online Set Up Autopay',
-    }
+    // {
+    //     td1: 'You can do it all online, or call, or come in: Online Reservation without obligation, Online Rental and Move-in, Online Bill Pay,Online Set Up Autopay',
+    // }
     
 ];
 
@@ -37,7 +37,7 @@ export const aboutUs = [
         p: `As a locally owned business, we go above and beyond to offer our customers every amenity to make their stay with Goodlette Self Storage easier. Check out our live inventory and rates on this website, then reserve your unit in minutes. You can even perform a contactless rental right through our website. Once you arrive at the facility, you’ll find all of our units are located on a single level. All of our regular outdoor units are drive-up for easy loading and unloading.`,
     },
     {
-        p: `Goodlette Self Storage is well-lit, covered by plenty of security cameras, and is designed to ensure a sense of security at all times. Our on-site manager is there to accept payments, assist in the move- answer questions, and keep an eye on the facility with regular lot checks.`,
+        p: `Goodlette Self Storage is well-lit, covered by plenty of security cameras, and is designed to ensure a sense of security at all times. Our on-site manager is there to accept payments, assist in the move, answer questions, and keep an eye on the facility with regular lot checks.`,
     },
     {
         p: `Whether you’re a residential storage user looking for some extra elbow room around the house, or if you’re a growing business that needs 24-hour access to your drive-up units, we’ve got a large number of unit sizes at affordable rates. Check out our current availability and pricing, then reserve or rent your unit in minutes. Still have questions? Give us a call! We can’t wait to meet you!`,

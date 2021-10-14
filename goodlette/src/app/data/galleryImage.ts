@@ -1,18 +1,19 @@
 export const galleryHome = [
   {
     // tslint:disable-next-line: max-line-length
-    url: `goodlette-storage`,
-    // tslint:disable-next-line:max-line-length
-    thumb: `goodlette-storage-thumb`,
-    alt: `single story self storage building with a row of roll up metal door and parking spaces in the foreground`
-  },
-  {
-    // tslint:disable-next-line: max-line-length
     url: `goodlette-self-storage-1`,
     // tslint:disable-next-line:max-line-length
     thumb: `goodlette-self-storage-1-thumb`,
     alt: ` two rows of self storage buildings on either side of a parking lane`
   },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `goodlette-storage`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `goodlette-storage-thumb`,
+    alt: `single story self storage building with a row of roll up metal door and parking spaces in the foreground`
+  },
+  
   {
     // tslint:disable-next-line: max-line-length
     url: `goodlette-self-storage-3`,
