@@ -77,8 +77,10 @@ table {
 }
 
 .contentHolder {
+  display: flex;
   h1 {
     margin-block-end: 0;
+    color: $white;
   }
 }
 

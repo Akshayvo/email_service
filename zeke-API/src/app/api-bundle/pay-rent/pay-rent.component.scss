@@ -8,7 +8,13 @@
 a {
   color: black;
 }
-
+.contentHolder {
+  display: flex;
+  h1 {
+    margin-block-end: 0;
+    color: $white;
+  }
+}
 .padding-top {
   padding-top: 110px;
 }
