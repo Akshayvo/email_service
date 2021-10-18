@@ -4,6 +4,7 @@
 .vertical-line {
   border-left: 1px solid black;
   padding-left: 50px;
+  color:$white;
 }
 
 
@@ -14,7 +15,7 @@
 
 .contact-links {
   a {
-    color: black;
+    color: $white;
   }
 }
 

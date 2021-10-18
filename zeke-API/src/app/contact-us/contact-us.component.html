@@ -1,10 +1,10 @@
 
 <div class="contentHolder bg-custom">
     <div class="container pb-5 my-3 padding-top">
-      <h1 class="py-5 text-center">Contact Us</h1>
+      <h1 class="py-5 text-center bg-danger">Contact Us</h1>
       <div class="row background-padding">
         <div class="col-lg-7 col-md-6 col-12 px-4 contact-form">
-          <h3 class="heading py-3">Contact Form</h3>
+          <h3 class="heading py-3 ">Contact Form</h3>
           <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
               <div class="form-group m-0">
                   <div [hidden]="" *ngIf="submitted && !this.contactForm.valid" class="alert alert-danger alert-dismissible fade show">
