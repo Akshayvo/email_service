@@ -28,7 +28,7 @@ export const hours = [
     },
     {
         label: 'Saturday: ',
-        data: '9:00AM to 2:00PM'
+        data: '9:00AM to 1:00PM'
     },
     {
         label: 'Sunday: ',
@@ -39,6 +39,8 @@ export const hours = [
         data: '7 Days a Week - 7:00AM to 7:00PM'
     }
 ];
+
+export const note = 'The office will be closed Saturdays during the winter months of Dec., Jan. & Feb. as weather conditions change.'
 
 export const socialLinks = [
     // {

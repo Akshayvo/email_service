@@ -17,6 +17,7 @@ export class ContactComponent implements OnInit {
 
   contactDetails: any;
   hours: any;
+  note
   name: string;
   email: any;
   message: string;
@@ -30,7 +31,7 @@ export class ContactComponent implements OnInit {
   phone: any;
   contactPageTitle: string;
   contactPageContent: string;
-  contactHeading: string;
+  contactHeading: string
 
   constructor(
     private router: Router,
