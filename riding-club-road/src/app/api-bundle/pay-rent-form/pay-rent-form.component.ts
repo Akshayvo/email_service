@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators, FormArray, AbstractControl, ValidatorFn, FormGroupName } from '@angular/forms';
 import { TenantInfoService } from '../services/tenant-info.service';
 import { FetchDataService } from '../services/fetch-data.service';
 import { PaymentService } from '../services/payment.service';
@@ -32,6 +32,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   showPaymentForMoveIn: boolean;
   balance: number;
   payRentForm: FormGroup;
+  payRentFormACH: FormGroup;
   payTypes: PayTypes;
   lstPayTypes = [];
   payTypeForResult: PayTypeForResult;
@@ -71,7 +72,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   signUp = {};
   logOut = {};
   defaultCardType: string;
-
+  achPayment =  false;
   otherValue = 0;
   id: string;
 
@@ -132,23 +133,80 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     private moveInService: MoveInService,
     private addTenantService: AddTenantService,
   ) {
+    
+    this.achpayment()
+    console.log(this.achPayment)
     this.payRentForm = this.formBuilder.group({
       objPayment: this.formBuilder.group({
-        CCAccountNumber: ['', Validators.required],
-        CCAccountName: ['', Validators.required],
-        CCExpirationMonth: ['', Validators.required],
-        CCExpirationYear: ['', Validators.required],
+        CCAccountNumber: ['',
+        conditionalValidator(
+          (() => this.achPayment === false ),
+          Validators.required
+        )
+      ],
+        CCAccountName: ['',
+        conditionalValidator(
+          (() => this.achPayment === false ),
+          Validators.required
+        )
+      ],
+        CCExpirationMonth: ['',
+        conditionalValidator(
+          (() => this.achPayment === false ),
+          Validators.required
+        )
+      ],
+        CCExpirationYear: ['',
+        conditionalValidator(
+          (() => this.achPayment === false ),
+          Validators.required
+        )
+      ],
         CCAccountCVV2: [''],
-        CCAccountBillingAddress: ['', Validators.required],
-        CCAccountZIP: ['', Validators.required],
+        CCAccountBillingAddress: ['',
+        conditionalValidator(
+          (() => this.achPayment === false ),
+          Validators.required
+        )
+      ],
+        CCAccountZIP: ['',
+        conditionalValidator(
+          (() => this.achPayment === false ),
+          Validators.required
+        )
+      ],
         SignUpForAutoPay:  [],
-        PaymentAmount: ['', Validators.required],
+        PaymentAmount: ['', Validators.required
+      ],
+        ACHBankRoutingNumber: ['',
+        conditionalValidator(
+          (() => this.achPayment === true ),
+          Validators.required
+        )
+      ],
+        ACHBankAccountNumber: ['',
+        conditionalValidator(
+          (() => this.achPayment === true ),
+          Validators.required
+        )
+      ],
         PayType: this.formBuilder.group({
           PayTypeDescription: ['', Validators.required],
           PayTypeID: [''],
         })
       }),
+      
     });
+
+    function conditionalValidator(condition: (() => boolean), validator: ValidatorFn): ValidatorFn {
+      return (control: AbstractControl): {[key: string]: any} => {
+        if (condition()) {
+          return null;
+        }
+        return validator(control);
+      };
+    }
+   
 
     let newYear = new Date().getFullYear();
     for (let i = 1; i < 15; i++) {
@@ -270,6 +328,12 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
 
   public fetchMonth() {
     this.month = month;
+  }
+
+  public achpayment(){
+    if (this.PayTypeIDValue === -8){
+      this.achPayment = true;
+    }
   }
 
   autoCardType(number: any) {
@@ -455,6 +519,8 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
               CCAccountBillingAddress: Tenant.CCBillingAddress,
               CCAccountZIP: Tenant.CCBillingZIP,
               SignUpForAutoPay: Tenant.IsAutoPaymentsEnabled,
+              // ACHBankAccountNumber: Tenant.ACHBankAccountNumber,
+              // ACHBankRoutingNumber: Tenant.ACHBankRoutingNumber,
               // tslint:disable-next-line: max-line-length
               PaymentAmount: (this.navigateToMoveInPayment ? this.balance : (this.navigateToReserve ? this.TotalReserveAmount : this.totalMoveInAmount)),
             }
@@ -755,7 +821,11 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
 
      onSubmit() {
       this.submitted = true;
+      console.log(this.paytypeid)
+      
       if (this.payRentForm.invalid) {
+        console.log(this.payRentForm)
+        console.log("1")
         return;
       } else {
         this.showloaderForPayment = true;

@@ -16,6 +16,8 @@ export class Payment {
   CCExpirationYear: string;
   SignUpForAutoPay: boolean;
   PaymentAmount: number;
+  ACHBankAccountNumber: string;
+  ACHBankRoutingNumber: string
 
   constructor(
     CCAccountNumber: string,
@@ -27,6 +29,8 @@ export class Payment {
     CCExpirationYear: string,
     SignUpForAutoPay: boolean,
     PaymentAmount: number,
+    ACHBankRoutingNumber: string,
+    ACHBankAccountNumber: string,
   ) {
     this.CCAccountNumber = CCAccountNumber;
     this.CCAccountName = CCAccountName;
@@ -37,6 +41,8 @@ export class Payment {
     this.CCExpirationYear = CCExpirationYear;
     this.SignUpForAutoPay = SignUpForAutoPay;
     this.PaymentAmount = PaymentAmount;
+    this.ACHBankRoutingNumber = ACHBankRoutingNumber;
+    this.ACHBankAccountNumber = ACHBankAccountNumber;
   }
  }
 

@@ -10,7 +10,7 @@ export const environment = {
   alternateType: { moveIn: true, reserve: true }, // { moveIn: true, reserve: true },
   military: true, // set true for Military and Driver's Details 
   template: 'darkTheme', // { darkTheme, lightTheme, withoutJumbotron}
-  cards: ['Visa', 'Master Card', 'Amex', 'Discover', 'test','ACH Payment'],
+  cards: ['Visa', 'Master Card', 'Amex', 'Discover', 'test','ACH - PPD'],
   errorsMails: [ 'sanghmitra.v@codeparva.in' ],
   senderEmail: 'errors@codeparva.in',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',

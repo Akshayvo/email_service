@@ -159,7 +159,7 @@
               <span>${{amountToPay | number : '1.2-2'}}</span>
             </div>
           </div>
-        
+          <ng-container *ngIf=" PayTypeIDValue != -8">
           <div class="form-group row">
             <div class="col-lg-12">
                 <label>Cardholder's Name*</label>&nbsp;
@@ -225,9 +225,41 @@
                 </div>
               </div>
             </div>
+          </ng-container>
+          <ng-container *ngIf=" PayTypeIDValue == -8">
+            <div class="form-group row">
+              <div class="col-lg-12">
+                  <label>ACH Bank Routing Number*</label>&nbsp;
+                  <input type="text" class="form-control" formControlName="ACHBankRoutingNumber"
+                  [ngClass]="{ 'is-invalid': submitted && f.objPayment['controls'].ACHBankRoutingNumber.errors }"
+                />
+                <div *ngIf="submitted && f.objPayment['controls'].ACHBankRoutingNumber.errors" class="invalid-feedback">
+                  <small class="form-text text-muted" *ngIf="f.objPayment['controls'].ACHBankRoutingNumber.errors.required">
+                    Please fill out this field
+                  </small>
+                </div>
+              </div>
+            </div>       
+          
+            <div class="row">
+              <div class="form-group col-lg-6">
+                <label>ACH Bank Account Number*</label>&nbsp;
+                <input  class="form-control" type="text" formControlName="ACHBankAccountNumber" 
+                [ngClass]="{ 'is-invalid': submitted && f.objPayment['controls'].ACHBankAccountNumber.errors }"
+                />
+                <div *ngIf="submitted && f.objPayment['controls'].ACHBankAccountNumber.errors" class="invalid-feedback">
+                    <small class="form-text text-muted" *ngIf="f.objPayment['controls'].ACHBankAccountNumber.errors.required">
+                      Please fill out this field
+                    </small>
+                </div>
+              </div>
+              
+              </div>
+            </ng-container>
           </div>
+          
 
-          <div class="col-md-6">
+          <div class="col-md-6" *ngIf=" PayTypeIDValue != -8">
             <div class="row">
               <div class="form-group col-lg-12">
                 <label>CVV2</label>&nbsp;
