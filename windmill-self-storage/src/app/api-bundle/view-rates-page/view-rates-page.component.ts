@@ -12,6 +12,7 @@ import { objSIMSetting } from '../../data/configuration';
 import { script } from '../../data/script';
 import { contact } from 'src/app/data/contact';
 
+
 @Component({
   selector: 'app-view-rates-page',
   templateUrl: './view-rates-page.component.html',
