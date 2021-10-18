@@ -58,7 +58,7 @@ export const contactsLocation1 = [
         email: 'jnstelter@gmail.com',
         data: `jnstelter@gmail.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`jnstelter@gmail.com`'
+        redirect: 'mailto:jnstelter@gmail.com'
     },
     {
         id: 4,
@@ -117,7 +117,7 @@ export const contactsLocation2 = [
         email: 'jnstelter@gmail.com',
         data: `jnstelter@gmail.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`jnstelter@gmail.com`'
+        redirect: 'mailto:jnstelter@gmail.com'
     },
     {
         id: 4,
@@ -155,7 +155,7 @@ export const contactsLocation3 = [
         data: 'jnstelter@gmail.com',
         email: `jnstelter@gmail.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`jnstelter@gmail.com`'
+        redirect: 'mailto:jnstelter@gmail.com'
     },
     {
         id: 3,
@@ -194,7 +194,7 @@ export const contactsLocation4 = [
         data: 'jnstelter@gmail.com',
         email: `jnstelter@gmail.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`jnstelter@gmail.com`'
+        redirect: 'mailto:jnstelter@gmail.com'
     },
     {
         id: 3,
@@ -233,7 +233,7 @@ export const contactsLocation5 = [
         data: 'jnstelter@gmail.com',
         email: `jnstelter@gmail.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`jnstelter@gmail.com`'
+        redirect: 'mailto:jnstelter@gmail.com'
     },
     {
         id: 3,
@@ -272,7 +272,7 @@ export const contactsLocation6 = [
         data: 'jnstelter@gmail.com',
         email: `jnstelter@gmail.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`jnstelter@gmail.com`'
+        redirect: 'mailto:jnstelter@gmail.com'
     },
     {
         id: 3,
