@@ -68,7 +68,7 @@ export const location2FeaturesHead = [
         // label: 'Affordable Self Storage Rates',
         // data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/hand.svg',
         // alt: 'Icon of a hand holding money'
-        label: 'Boat and RV Storage',
+        label: 'Vehicle Storage',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/garage.svg',
         alt: 'Icon art displaying boat and motorcycle'
     },
