@@ -6,7 +6,7 @@
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12314.364853772282!2d-77.9635588!3d39.5011443!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa16750bb94b6b0e7!2sPsi%20Mini%20Storage!5e0!3m2!1sen!2sus!4v1633989312944!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
         </div>
         <div class="col-lg-4  pt-3">
-          <h2>PSI Mini Storage St Location</h2>
+          <h2>PSI Mini Storage Location</h2>
           <!-- <p> -->
             <div *ngFor="let contact of contactsBrookside" class="contact-label">
                 <div><h3><strong>{{contact.label}}</strong></h3></div>&nbsp;&nbsp;
@@ -18,11 +18,11 @@
               <ng-template #other_content>&nbsp;<h3>{{contact.data}}</h3></ng-template><br>
             </div>
           <!-- </p> -->
-          <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/alabama/silverhill/storage-units']" role="button">View Rates</a>                
-          <a class="btn btn-primary p-2 ml-0" [routerLink]="['/alabama/silverhill/reserve-unit']" role="button"> Reserve Unit</a>                                  
+          <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/west-virginia/baltimore/storage-units']" role="button">View Rates</a>                
+          <a class="btn btn-primary p-2 ml-0" [routerLink]="['/west-virginia/baltimore/reserve-unit']" role="button"> Reserve Unit</a>                                  
         </div>
         <div class="col-lg-3 partition-border contact-hours pt-3">
-            <h3>Office Hours:</h3>
+            <h3>Access Hours</h3>
             <p>
               <span *ngFor="let hour of hoursBrookside">
                 <b>{{hour.label}}</b>{{hour.data}}<br>

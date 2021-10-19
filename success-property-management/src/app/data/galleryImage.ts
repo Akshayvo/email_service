@@ -1,9 +1,9 @@
 export const galleryHome = [
   {
     // tslint:disable-next-line: max-line-length
-    url: `row-of-self-storage-units`,
+    url: ``,
     // tslint:disable-next-line:max-line-length
-    thumb: `row-of-self-storage-units`,
+    thumb: ``,
     alt: `a row of self storage units with one roll up door open to reveal`
   },
   // {

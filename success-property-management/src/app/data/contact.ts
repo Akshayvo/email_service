@@ -1,47 +1,15 @@
 export const contactsHomePage = [
     {
-        id: 2,
-        label: 'Email: ',
-        data: `ldfproperties@gmail.com`,
-        class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:ldfproperties@gmail.com'
-    },
-    {
-        id: 4,
-        label: 'Phone: ',
-        data: '(304) 263-3535 Office',
-        class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:3042633535'
-    },
-    {
-        id: 5,
-        label: 'Billing Phone: ',
-        data: '(304) 261-0929 Cell',
-        class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:3042610929'
-    },
-];
-
-export const hoursHomePage = [
-    {
-        label: '7 Days a Week: ',
-        data: '8:00AM to 6:00PM',
-    },
-];
-
-export const contactsLocation1 = [
-    {
         id: 1,
-        label: 'Address: ',
-        data: '854 Hedgesville Rd, Martinsburg, WV 25403',
+        label: 'Office Address: ',
+        data: '605 Baltimore St, Martinsburg, WV 25401',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/WW2wGLPD6ZcwffcE9'
+        redirect: 'https://goo.gl/maps/ZGensJTvKYhCiG9C8'
     },
     {
         id: 2,
         label: 'Email: ',
         data: `ldfproperties@gmail.com`,
-        // data: `pragathi.n@codeparva.in`,
         class: 'fas fa-envelope-open mr-2 iconColor',
         redirect: 'mailto:ldfproperties@gmail.com'
     },
@@ -61,17 +29,64 @@ export const contactsLocation1 = [
     },
 ];
 
-export const hoursLocation1 = [
+export const hoursHomePage = [
     {
         label: '7 Days a Week: ',
-        data: '8:00AM to 4:00PM',
+        data: '8:00AM to 6:00PM',
+    },
+];
+
+export const contactsLocation1 = [
+    {
+        id: 1,
+        label: 'Facility Address: ',
+        data: '854 Hedgesville Rd, Martinsburg, WV 25403',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/pLNEnYJN3RFWqNMD9'
+    },
+    {
+        id: 2,
+        label: 'Office Address: ',
+        data: '605 Baltimore St, Martinsburg, WV 25401',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/ZGensJTvKYhCiG9C8'
+    },
+    {
+        id: 3,
+        label: 'Email: ',
+        data: `ldfproperties@gmail.com`,
+        email: `ldfproperties@gmail.com`,
+        // data: `pragathi.n@codeparva.in`,
+        class: 'fas fa-envelope-open mr-2 iconColor',
+        redirect: 'mailto:ldfproperties@gmail.com'
+    },
+    {
+        id: 4,
+        label: 'Phone: ',
+        data: '(304) 263-3535',
+        class: 'fas fa-phone mr-2 iconColor',
+        redirect: 'tel:3042633535'
+    },
+    {
+        id: 5,
+        label: 'Billing Phone: ',
+        data: '(304) 261-0929',
+        class: 'fas fa-phone mr-2 iconColor',
+        redirect: 'tel:3042610929'
+    },
+];
+
+export const hoursLocation1 = [
+    {
+        label: 'Access Hours: ',
+        data: '24-Hours a Day, 7 Days a Week',
     },
     
 ];
 
 export const hoursLocation1AcessHours = [
     {
-        data: '7 Days a Week 8:00AM to 4:00PM'
+        data: '24-Hours a Day, 7 Days a Week'
     },
 ];
 
@@ -92,7 +107,7 @@ export const socialLinks = [
 export const contactsLocation2 = [
     {
         id: 1,
-        label: 'Address: ',
+        label: 'Facility Address: ',
         data: '854 Hedgesville Rd, Martinsburg, WV 25403',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: 'https://goo.gl/maps/WW2wGLPD6ZcwffcE9'
@@ -124,7 +139,7 @@ export const hoursLocation2 = [
     //     data: 'CLOSED',
     // },
     {
-        data: '24-Hours a Day 7 Days a Week',
+        data: '24-Hours a Day, 7 Days a Week',
     },
 ];
 

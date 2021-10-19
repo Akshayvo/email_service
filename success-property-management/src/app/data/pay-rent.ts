@@ -13,7 +13,7 @@ export const tableHeader = [
 
 export const tableData = [
   {
-    facility: 'PSI Mini Storage St',
+    facility: 'PSI Mini Storage Location',
     address: '854 Hedgesville Rd, Martinsburg, WV 25403',
     url: 'baltimore/rent-sub/login'
   },
@@ -46,7 +46,7 @@ export const tableData = [
 
 export const tableDataContactPage = [
   {
-    facility: 'PSI Mini Storage St',
+    facility: 'PSI Mini Storage Location',
     address: '854 Hedgesville Rd, Martinsburg, WV 25403',
     url: 'baltimore'
   },
