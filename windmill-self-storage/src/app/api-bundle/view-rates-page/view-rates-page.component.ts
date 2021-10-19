@@ -10,7 +10,7 @@ import { DataSharingService } from '../services/data-sharing.service';
 import { environment } from '../../../environments/environment';
 import { objSIMSetting } from '../../data/configuration';
 import { script } from '../../data/script';
-import { contact } from 'src/app/data/contact';
+import { contact } from '../../data/contact';
 
 
 @Component({
