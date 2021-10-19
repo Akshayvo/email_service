@@ -75,17 +75,27 @@
                       >{{ contact.data }}</a
                     >
                   </h4>
+                  
+
                 </div>
                 <!-- <ng-template #other_content>&nbsp;<h4>{{contact.data}}</h4></ng-template><br> -->
               </div>
-              <!-- <h4><b>Facility Hours:</b></h4> -->
+              <h4><b>Office Hours:</b></h4>
               <div class="display-contact" *ngFor="let hour of hours">
-                <h4 *ngIf="hour.label">
+                <h4 *ngIf="hour.label != 'Storage Access Hours: '">
                   <b>{{ hour.label }}</b
                   >&nbsp;
                 </h4>
-                <h4>{{ hour.data }}</h4>
+                <h4  *ngIf="hour.label != 'Storage Access Hours: '">{{ hour.data }}</h4>
+                <div class="display-contact-hour" *ngIf="hour.label === 'Storage Access Hours: '">
+                <h4  *ngIf="hour.label === 'Storage Access Hours: '">
+                  <b>{{ hour.label }}</b
+                  >&nbsp;
+                </h4>
                 
+                <h4 >{{ hour.data }}</h4>
+                <h4 >{{ hour.data1 }}</h4>
+                </div>
               </div>
             </div>
             
@@ -94,7 +104,9 @@
               <div >
                 
                 <div
-                  ><h5  class="mb-0">
+                  >
+                  <li class = "pt-2 pb-2">All our drive-up units are equipped with roof mounted fans for ventilation and air circulation</li>
+                  <h5  class="mb-0">
                     <strong>You can do it all online, or call, or come in: &nbsp;</strong>
                   </h5></div
                 >

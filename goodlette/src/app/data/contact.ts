@@ -33,7 +33,8 @@ export const hours = [
     },
     {
         label: 'Storage Access Hours: ',
-        data: 'ACCESS TO INTERIOR UNITS SAME AS OFFICE HOURS ACESS TO DRIVE-UP UNITS AND OPEN STORAGE 24/7'
+        data: 'ACCESS TO INTERIOR UNITS SAME AS OFFICE HOURS' ,
+        data1: 'ACESS TO DRIVE-UP UNITS AND OPEN STORAGE 24/7'
     }
 ];
 
