@@ -143,7 +143,7 @@ export const headingLocation6 = ``;
 
 
 
-export const headingReservePageLocation1 = `To rent your unit at our PSI Mini Storage location, please enter your information below.`;
+export const headingReservePageLocation1 = `To reserve your unit at our PSI Mini Storage location, please enter your information below.`;
 
 export const headingReservePageLocation2 = `Ready to Reserve a Self Storage Unit in Silverhill`;
 
