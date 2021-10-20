@@ -206,34 +206,34 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
           (() => this.showMilitaryDetails === false),
           Validators.required
         )],
-        MilitaryBranch: ['', conditionalValidator(
-          (() => this.showMilitaryDetails === false),
-          Validators.required
-        )],
-        MilitaryDivision: ['', conditionalValidator(
-          (() => this.showMilitaryDetails === false),
-          Validators.required
-        )],
-        MilitaryType: ['', conditionalValidator(
-          (() => this.showMilitaryDetails === false),
-          Validators.required
-        )],
-        MilitaryID: ['', conditionalValidator(
-          (() => this.showMilitaryDetails === false),
-          Validators.required
-        )],
-        DeployedUntil: ['', conditionalValidator(
-          (() => this.showMilitaryDetails === false),
-          Validators.required
-        )],
-        CommandingOfficer: ['', conditionalValidator(
-          (() => this.showMilitaryDetails === false),
-          Validators.required
-        )],
-        CommandingOfficerPhone: ['', conditionalValidator(
-          (() => this.showMilitaryDetails === false),
-          Validators.required
-        ),],
+        // MilitaryBranch: ['', conditionalValidator(
+        //   (() => this.showMilitaryDetails === false),
+        //   Validators.required
+        // )],
+        // MilitaryDivision: ['', conditionalValidator(
+        //   (() => this.showMilitaryDetails === false),
+        //   Validators.required
+        // )],
+        // MilitaryType: ['', conditionalValidator(
+        //   (() => this.showMilitaryDetails === false),
+        //   Validators.required
+        // )],
+        // MilitaryID: ['', conditionalValidator(
+        //   (() => this.showMilitaryDetails === false),
+        //   Validators.required
+        // )],
+        // DeployedUntil: ['', conditionalValidator(
+        //   (() => this.showMilitaryDetails === false),
+        //   Validators.required
+        // )],
+        // CommandingOfficer: ['', conditionalValidator(
+        //   (() => this.showMilitaryDetails === false),
+        //   Validators.required
+        // )],
+        // CommandingOfficerPhone: ['', conditionalValidator(
+        //   (() => this.showMilitaryDetails === false),
+        //   Validators.required
+        // ),],
         AlternateName: ['', conditionalValidator(
           (() => this.showAltDetails === false),
           Validators.required
