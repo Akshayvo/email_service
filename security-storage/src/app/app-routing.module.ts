@@ -16,6 +16,7 @@ const routes: Routes = [
   { path: 'storageTips', component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
   { path: 'view-rates', component: ViewRatesComponent },
+  { path: 'viewRates', component: ViewRatesComponent },
   { path: 'pay-rent', component: PaymentComponent },
   { path: 'review', component: HomeComponent,
   resolve: {

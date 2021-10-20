@@ -19,4 +19,8 @@ export const navLinks = [
         label: 'CONTACT US',
         path: 'contact-us'
     },
+    {
+        label: 'RESERVE NOW',
+        path: '/viewRates'
+    },
 ];
