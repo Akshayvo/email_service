@@ -4,7 +4,7 @@ export const faq = [
     label: "How does self storage work?",
     contents: [
       {
-        data: "Renting a unit to store your belongings is easy.  If you have any questions or concerns,please call our offices and one of our experienced staff will help you with a storage solution that fits your needs.",
+        data: "Renting a unit to store your belongings is easy.  If you have any questions or concerns, please call our offices and one of our experienced staff will help you with a storage solution that fits your needs.",
       },
       //   { data: "" },
     ],
@@ -40,7 +40,7 @@ export const faq = [
     label: "Can I pro-rate? ",
     contents: [
       {
-        data: `Yes. After your first month, if you inform us before you've paid for the next month, we can pro-rate your rental charge for the portion of the month you will need`,
+        data: `Yes. After your first month, if you inform us before you've paid for the next month, we can pro-rate your rental charge for the portion of the month you will need.`,
       },
       //   {
       //     data: "we can pro-rate your rental charge for the portion of the month you will need",
@@ -89,7 +89,7 @@ export const faq1 = [
         data: "You pay monthly, 12 payments per year.  This can be done in person during office hours when you are visiting your unit using cash, cheque, VISA, Mastercard, and debit/Interac.",
       },
       {
-        data: "You can also arrange automatic payments using a credit card or post-dated cheques, or you can arrange payment by Etransfer (EFT – electronic funds transfer); just ask our helpful office staff.",
+        data: "You can also arrange automatic payments using a credit card or post-dated cheques, or you can arrange payment by E-transfer (EFT – electronic funds transfer); just ask our helpful office staff.",
       },
     ],
   },

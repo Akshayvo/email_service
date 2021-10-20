@@ -84,7 +84,7 @@ export const storageTips = [
       {
         data: "Wrap in bubble wrap and stack in a large box with bubble wrap or large styrofoam packing peanuts.",
       },
-      { data: "Remove light bulbs, harps, and lamp shades off lamp." },
+      { data: "Furniture and Appliances Remove light bulbs, harps, and lampshades from lamps." },
       {
         data: "Artwork & mirrors should be wrapped in paper, covered with cardboard.",
       },

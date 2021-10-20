@@ -12,15 +12,16 @@
         <div class="jumbotorn-skew-text">
           <div class="jumbotorn-button">
             <a class="btn btn-lg btn-primary JumbotronGuardianButton" (click)="navigateToStorageUnits1()" role="button">Check units at Guardian Storage!</a>
-            <a class="btn btn-lg btn-primary JumbotronAccessMiniButton" (click)="navigateToStorageUnits2()" role="button">Check units at Access Mini Storage!</a>
+            <a class="btn btn-lg btn-primary JumbotronAccessMiniButton" (click)="navigateToStorageUnits2()" role="button" style="margin-left: 40px;">Check units at Access Mini Storage!</a>
           </div>
+          <div class="adv-style">
           <div class="disp text-center" *ngFor="let jumbotron of jumbotron">
-            <h2  class="my-4">
+            <p  class="">
               {{jumbotron.h2}}
-            </h2>
+            </p>
           <p class="text-justify text-center">{{jumbotron.blurb}}</p>
           </div>
-          
+        </div>
           </div>
         </div>
       </div>

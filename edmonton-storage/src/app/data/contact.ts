@@ -6,14 +6,14 @@ export const contactsHomePage = [
     class: "fas fa-map-marker-alt mr-2 iconColor",
     redirect: "",
   },
-  {
-    id: 2,
-    label: "Email: ",
-    email: "",
-    data: ``,
-    class: "fas fa-envelope-open mr-2 iconColor",
-    redirect: "mailto:",
-  },
+  // {
+  //   id: 2,
+  //   label: "Email: ",
+  //   email: "",
+  //   data: ``,
+  //   class: "fas fa-envelope-open mr-2 iconColor",
+  //   redirect: "mailto:",
+  // },
   {
     id: 3,
     label: "Phone: ",
@@ -62,15 +62,15 @@ export const contactsLocation1 = [
 export const hoursLocation1 = [
   {
     label: "Tues-Sat: ",
-    data: "10:00 am - 4:00 pm",
+    data: " 10:00 am - 4:00 pm",
   },
   {
     label: "Sun-Mon: ",
-    data: "CLOSED",
+    data: " CLOSED",
   },
   {
     label: "Statutory Holidays:  ",
-    data: "CLOSED",
+    data: " CLOSED",
   },
 ];
 
@@ -122,15 +122,15 @@ export const contactsLocation2 = [
 export const hoursLocation2 = [
   {
     label: "Tues-Sat:",
-    data: "10:00 am - 4:00 pm",
+    data: " 10:00 am - 4:00 pm",
   },
   {
     label: "Sun-Mon: ",
-    data: "CLOSED",
+    data: " CLOSED",
   },
   {
     label: "Statutory Holidays:  ",
-    data: "CLOSED",
+    data: " CLOSED",
   },
   // {
   //     label: 'Statutory Holidays:',

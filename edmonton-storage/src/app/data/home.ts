@@ -49,9 +49,9 @@ export const location1FeaturesHead = [
     alt: "Icon of a section of fencing",
   },
   {
-    label: "Affordable Self Storage Monthly Rates",
-    data: "https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/hand.svg",
-    alt: "Icon of a hand holding money",
+    label: "Friendly Customer Service",
+    data: "https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg",
+    alt: "Customer Service Representative Icon",
   },
 ];
 export const location2FeaturesHead = [
@@ -71,9 +71,9 @@ export const location2FeaturesHead = [
     alt: "Icon of a section of fencing",
   },
   {
-    label: "Affordable Self Storage Monthly Rates",
-    data: "https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/hand.svg",
-    alt: "Icon of a hand holding money",
+    label: "Friendly Customer Service",
+    data: "https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg",
+    alt: "Customer Service Representative Icon",
   },
 ];
 
@@ -112,6 +112,6 @@ export const featuresList = [
 export const jumbotron = [
   {
     h2: `Affordable Self Storage in West Edmonton`,
-    blurb: `Locally owned and operated providing hight-quality, well-maintained self storage service since 2005!`,
+    blurb: `Locally owned and operated providing high-quality, well-maintained self storage service since 2005!`,
   },
 ];
