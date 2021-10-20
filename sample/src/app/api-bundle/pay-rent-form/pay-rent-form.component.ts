@@ -596,7 +596,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
 
       }, (err: any) => {
         this.makePaymentForUnit = false;
-
+        this.showloaderForPayment = false;
         if (err instanceof HttpErrorResponse) {
           if (err.status === 400) {
             this.showloaderForPayment = false;
