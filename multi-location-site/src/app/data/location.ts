@@ -51,17 +51,17 @@ export const headingLocation6 = ``;
 
 
 
-export const headingReservePageLocation1 = `Ready to Reserve a Self Storage Unit in Foley`;
+export const headingReservePageLocation1 = `Are you ready to rent a unit at Foley`;
 
-export const headingReservePageLocation2 = `Ready to Reserve a Self Storage Unit in Silverhill`;
+export const headingReservePageLocation2 = `Are you ready to rent a unit at Silverhill`;
 
-export const headingReservePageLocation3 = `Ready to Reserve a Self Storage Unit in Barnwell`;
+export const headingReservePageLocation3 = `Are you ready to rent a unit at Barnwell`;
 
 export const headingReservePageLocation4 = ``;
 
-export const headingReservePageLocation5 = `Ready to Reserve a Self Storage Unit in Fairhope`;
+export const headingReservePageLocation5 = `Are you ready to rent a unit at Fairhope`;
 
-export const headingReservePageLocation6 = `Ready to Reserve a Self Storage Unit in Robertsdale`;
+export const headingReservePageLocation6 = `Are you ready to rent a unit at Robertsdale`;
 
 export const heading1 = `Storage Plus of Baldwin County - Foley`;
 
