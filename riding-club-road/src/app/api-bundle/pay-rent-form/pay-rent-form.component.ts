@@ -139,10 +139,11 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     private moveInService: MoveInService,
     private addTenantService: AddTenantService
   ) {
-    this.achpayment();
+    
     console.log(this.achPayment);
     this.payRentForm = this.formBuilder.group({
       objPayment: this.formBuilder.group({
+        
         CCAccountNumber: [
           "",
           conditionalValidator(
@@ -353,11 +354,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     this.month = month;
   }
 
-  public achpayment() {
-    if (this.PayTypeIDValue === -8) {
-      this.achPayment = true;
-    }
-  }
+  
 
   autoCardType(number: any) {
     this.cardType = this.getCardType(number.target.value);
@@ -418,6 +415,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   }
 
   selectChangeHandler(event: any) {
+    
     this.selectedDescription = JSON.stringify(event.target.value);
     console.log(this.selectedDescription);
     const indexValue = event.target.value;
@@ -435,6 +433,15 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         },
       });
     }
+
+    console.log(this.PayTypeIDValue)
+    if (this.PayTypeIDValue === -8) {
+      this.achPayment = true;
+    }
+    else{
+      this.achPayment = false;
+    }
+    console.log(this.achPayment)
 
     if (this.router.url.includes("payReservationCharges")) {
       this.surchargeService.setAmt(this.TotalReserveAmount);
@@ -910,25 +917,37 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   }
 
   onSubmit() {
-    if (this.PayTypeIDValue === -8) {
-      console.log("ACH payment");
-      this.payRentForm.removeControl("CCAccountNumber");
-      this.payRentForm.removeControl("CCAccountName");
-      this.payRentForm.removeControl("CCExpirationMonth");
-      this.payRentForm.removeControl("CCExpirationYear");
-      this.payRentForm.removeControl("CCAccountCVV2");
-      this.payRentForm.removeControl("CCAccountBillingAddress");
-      this.payRentForm.removeControl("CCAccountZIP");
-    } else {
-      console.log("other payment");
-      this.payRentForm.removeControl('ACHBankRoutingNumber');
-      this.payRentForm.removeControl('ACHBankAccountNumber');
-    }
+    
     this.submitted = true;
     if (this.payRentForm.invalid) {
       console.log(this.payRentForm.value);
       return;
     } else {
+
+      console.log(this.payRentForm.value,"else");
+      // if (this.PayTypeIDValue === -8) {
+      //   console.log("ACH payment");
+      //   delete this.payRentForm.value.CCAccountNumber;
+      //   delete this.payRentForm.value.CCAccountName;
+      //   delete this.payRentForm.value.CCExpirationMonth;
+      //   delete this.payRentForm.value.CCExpirationYear;
+      //   delete this.payRentForm.value.CCAccountCVV2;
+      //   delete this.payRentForm.value.CCAccountBillingAddress;
+      //   delete this.payRentForm.value.CCAccountZIP;
+      //   this.payRentForm.removeControl("CCAccountNumber");
+      //   this.payRentForm.removeControl("CCAccountName");
+      //   this.payRentForm.removeControl("CCExpirationMonth");
+      //   this.payRentForm.removeControl("CCExpirationYear");
+      //   this.payRentForm.removeControl("CCAccountCVV2");
+      //   this.payRentForm.removeControl("CCAccountBillingAddress");
+      //   this.payRentForm.removeControl("CCAccountZIP");
+      // } else {
+      //   console.log("other payment");
+      //   delete this.payRentForm.value.ACHBankRoutingNumber;
+      //   delete this.payRentForm.value.ACHBankAccountNumber;
+      //   this.payRentForm.removeControl('ACHBankRoutingNumber');
+      //   this.payRentForm.removeControl('ACHBankAccountNumber');
+      // }
       this.showloaderForPayment = true;
       // if ( this.navigateToMoveIn === false && this.navigateToReserve === false) {
       if (this.amountToPay > 0) {
