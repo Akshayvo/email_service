@@ -3,16 +3,14 @@ import {
   FormGroup,
   FormBuilder,
   Validators,
-  FormArray,
   AbstractControl,
   ValidatorFn,
-  FormGroupName,
 } from "@angular/forms";
 import { TenantInfoService } from "../services/tenant-info.service";
 import { FetchDataService } from "../services/fetch-data.service";
 import { PaymentService } from "../services/payment.service";
 import { SignOutService } from "../services/sign-out.service";
-import { LstPayTypes, PayTypes, PayTypeForResult } from "../models/payment";
+import { PayTypes, PayTypeForResult } from "../models/payment";
 import { UnpaidAR } from "../models/tenant";
 import { month } from "../../data/date";
 import { Router } from "@angular/router";
@@ -143,62 +141,60 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     console.log(this.achPayment);
     this.payRentForm = this.formBuilder.group({
       objPayment: this.formBuilder.group({
-        CCAccountNumber: [
-          "",
-          conditionalValidator(
-            () => this.achPayment === false,
-            Validators.required
-          ),
-        ],
-        CCAccountName: [
-          "",
-          conditionalValidator(
-            () => this.achPayment === false,
-            Validators.required
-          ),
-        ],
-        CCExpirationMonth: [
-          "",
-          conditionalValidator(
-            () => this.achPayment === false,
-            Validators.required
-          ),
-        ],
-        CCExpirationYear: [
-          "",
-          conditionalValidator(
-            () => this.achPayment === false,
-            Validators.required
-          ),
-        ],
-        CCAccountCVV2: [""],
-        CCAccountBillingAddress: [
-          "",
-          conditionalValidator(
-            () => this.achPayment === false,
-            Validators.required
-          ),
-        ],
-        CCAccountZIP: [
-          "",
-          conditionalValidator(
-            () => this.achPayment === false,
-            Validators.required
-          ),
-        ],
-        SignUpForAutoPay: [],
-        PaymentAmount: ["", Validators.required],
+        // CCAccountNumber: [
+        //   "",
+        //   conditionalValidator(
+        //     () => this.achPayment === true,
+        //     Validators.required
+        //   ),
+        // ],
+        // CCAccountName: [
+        //   "",
+        //   conditionalValidator(
+        //     () => this.achPayment === true,
+        //     Validators.required
+        //   ),
+        // ],
+        // CCExpirationMonth: [
+        //   "",
+        //   conditionalValidator(
+        //     () => this.achPayment === true,
+        //     Validators.required
+        //   ),
+        // ],
+        // CCExpirationYear: [
+        //   "",
+        //   conditionalValidator(
+        //     () => this.achPayment === true,
+        //     Validators.required
+        //   ),
+        // ],
+        // CCAccountCVV2: [""],
+        // CCAccountBillingAddress: [
+        //   "",
+        //   conditionalValidator(
+        //     () => this.achPayment === true,
+        //     Validators.required
+        //   ),
+        // ],
+        // CCAccountZIP: [
+        //   "",
+        //   conditionalValidator(
+        //     () => this.achPayment === true,
+        //     Validators.required
+        //   ),
+        // ],
         ACHBankRoutingNumber: [
           "",
           conditionalValidator(
-            () => this.achPayment === true,
+            () => this.achPayment === false,
             Validators.required
           ),
         ],
         ACHBankAccountNumber: [
           "",
           conditionalValidator(
-            () => this.achPayment === true,
+            () => this.achPayment === false,
             Validators.required
           ),
         ],
@@ -206,6 +202,8 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
           PayTypeDescription: ["", Validators.required],
           PayTypeID: [""],
         }),
+        PaymentAmount: ["", Validators.required],
+        // SignUpForAutoPay: [],
       }),
     });
 
@@ -356,6 +354,8 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   public achpayment() {
     if (this.PayTypeIDValue === -8) {
       this.achPayment = true;
+    } else {
+      this.achPayment = false;
     }
   }
 
@@ -470,6 +470,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   }
 
   onKeyUp(e: any) {
+    console.log(this.payRentForm.value);
     this.customOtherValue = e.target.value;
     this.surchargeService.setAmt(e.target.value);
     setTimeout(() => {
@@ -535,21 +536,27 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
             }
 
             // tslint:disable-next-line: max-line-length
-            this.defaultCardType = Tenant.CCNumber
-              ? this.getCardType(Tenant.CCNumber)
-              : this.lstPayTypes[0].PayTypeDescription;
+            this.defaultCardType =
+              // Tenant.CCNumber
+              // ? this.getCardType(Tenant.CCNumber):
+              this.lstPayTypes[0].PayTypeDescription;
             const index = this.lstPayTypes.findIndex(
               (x) => x.PayTypeDescription === this.defaultCardType
             );
             // tslint:disable-next-line: max-line-length
             const defaultCardPayTypeId =
-              index > -1
-                ? this.lstPayTypes[index].PayTypeID
-                : this.lstPayTypes[0].PayTypeID;
+              // index > -1
+              //   ? this.lstPayTypes[index].PayTypeID
+              this.lstPayTypes[0].PayTypeID;
 
             if (localStorage.getItem("strTenantToken")) {
               this.paytypeid = defaultCardPayTypeId;
               this.surchargeService.getIdPaytype(this.paytypeid);
+              console.log(
+                " this.defaultCardType",
+                this.defaultCardType,
+                defaultCardPayTypeId
+              );
               this.payRentForm.patchValue({
                 objPayment: {
                   PayType: {
@@ -562,15 +569,15 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
 
             this.payRentForm.patchValue({
               objPayment: {
-                CCAccountNumber: Tenant.CCNumber,
-                CCAccountName: Tenant.CCBillingAccountName,
-                CCExpirationMonth: Tenant.CCExpirationMonth,
-                CCExpirationYear: Tenant.CCExpirationYear,
-                CCAccountBillingAddress: Tenant.CCBillingAddress,
-                CCAccountZIP: Tenant.CCBillingZIP,
-                SignUpForAutoPay: Tenant.IsAutoPaymentsEnabled,
-                // ACHBankAccountNumber: Tenant.ACHBankAccountNumber,
-                // ACHBankRoutingNumber: Tenant.ACHBankRoutingNumber,
+                // CCAccountNumber: Tenant.CCNumber,
+                // CCAccountName: Tenant.CCBillingAccountName,
+                // CCExpirationMonth: Tenant.CCExpirationMonth,
+                // CCExpirationYear: Tenant.CCExpirationYear,
+                // CCAccountBillingAddress: Tenant.CCBillingAddress,
+                // CCAccountZIP: Tenant.CCBillingZIP,
+                // SignUpForAutoPay: Tenant.IsAutoPaymentsEnabled,
+                ACHBankAccountNumber: Tenant.ACHBankAccountNumber,
+                ACHBankRoutingNumber: Tenant.ACHBankRoutingNumber,
                 // tslint:disable-next-line: max-line-length
                 PaymentAmount: this.navigateToMoveInPayment
                   ? this.balance
@@ -609,13 +616,16 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       .getPayMethods()
       .subscribe((payTypesResponse) => {
         this.cards.forEach((element) => {
+          console.log("elemet", element);
           const index = payTypesResponse.lstPayTypes.findIndex(
             (x) => x.PayTypeDescription === element
           );
-          if (index > -1) {
+          if (index > -1 && element === "ACH - PPD") {
             this.lstPayTypes.push(payTypesResponse.lstPayTypes[index]);
           }
         });
+
+        console.log("this.lstPayTypes", this.lstPayTypes);
 
         if (!!localStorage.getItem("strTenantToken")) {
           this.tenantTokenExist = true;
@@ -625,12 +635,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
           const defaultDescription = this.lstPayTypes[0].PayTypeDescription;
           const defaultPayTypeID = this.lstPayTypes[0].PayTypeID;
           this.paytypeid = this.lstPayTypes[0].PayTypeID;
-          console.log("lstPayTypes", this.lstPayTypes, this.paytypeid);
           this.surchargeService.getIdPaytype(this.paytypeid);
-          console.log(
-            "this.surchargeService.getIdPaytype(this.paytypeid);",
-            this.surchargeService.getIdPaytype(this.paytypeid)
-          );
           this.getSurCharge();
           this.payRentForm.patchValue({
             objPayment: {
@@ -640,6 +645,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
               },
             },
           });
+          console.log("default value", defaultPayTypeID);
         }
       });
   }
@@ -910,20 +916,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   }
 
   onSubmit() {
-    if (this.PayTypeIDValue === -8) {
-      console.log("ACH payment");
-      this.payRentForm.removeControl("CCAccountNumber");
-      this.payRentForm.removeControl("CCAccountName");
-      this.payRentForm.removeControl("CCExpirationMonth");
-      this.payRentForm.removeControl("CCExpirationYear");
-      this.payRentForm.removeControl("CCAccountCVV2");
-      this.payRentForm.removeControl("CCAccountBillingAddress");
-      this.payRentForm.removeControl("CCAccountZIP");
-    } else {
-      console.log("other payment");
-      this.payRentForm.removeControl('ACHBankRoutingNumber');
-      this.payRentForm.removeControl('ACHBankAccountNumber');
-    }
     this.submitted = true;
     if (this.payRentForm.invalid) {
       console.log(this.payRentForm.value);
