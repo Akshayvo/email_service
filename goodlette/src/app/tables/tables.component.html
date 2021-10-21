@@ -6,8 +6,8 @@
       </tr>
     </tHead>
     <tbody>
-      <tr *ngFor="let td of tds">
-        <td *ngFor="let key of objectKeys;">
+      <tr *ngFor="let td of tds; let i = index" [attr.data-index]="i">
+        <td *ngFor="let key of objectKeys; " [attr.colspan]="i==4 ? '2' : ''">
           <p *ngIf="(key === 'label')">
             <b>{{td[key]}}</b>
           </p>
@@ -16,6 +16,7 @@
           <ul *ngIf="(key === 'td1' || key === 'td2' && td[key] !== undefined)"><li><h5 class="mb-0">{{td[key]}}</h5></li></ul>
           
         </td>
+
       </tr>
     </tbody>
   </table>

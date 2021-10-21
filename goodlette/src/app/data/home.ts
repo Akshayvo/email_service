@@ -16,7 +16,6 @@ export const featuresList = [
         td2: 'Air Ventilated Drive-up Units *(AV Units) Access: 24/7',
     },
     {
-        // td1: 'Controlled Interior Units, Controlled Interior Units, (CC units, Climate Controlled)',
         td1: 'All our drive-up units are equipped with roof-mounted fans for ventilation and air circulation.',
     },
     // {
