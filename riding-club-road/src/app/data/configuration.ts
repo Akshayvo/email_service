@@ -14,10 +14,10 @@ export const objSIMSetting = {
         blnHideGateAccessCode: true,
     },
     objUnitSizesSetting: {
-        blnClimateControl: true,
-        blnShowDeposit: true,
+        blnClimateControl: false,
+        blnShowDeposit: false,
         blnShowRate: true,
         blnShowUnavailableUnitTypes: true,
-        blnShowUnitAvailability: true
+        blnShowUnitAvailability: false
     },
 };
