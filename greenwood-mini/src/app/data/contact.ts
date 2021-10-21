@@ -12,7 +12,7 @@ export const contactMainOffice = [
         email: 'angiemax@yahoo.com',
         data: `angiemax@yahoo.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`angiemax@yahoo.com`'
+        redirect: 'mailto:angiemax@yahoo.com'
     },
     {
         id: 3,
@@ -53,7 +53,7 @@ export const socialLinks = [
 
 export const contactsLocation1 = [
     {
-        id: 4,
+        id: 0,
         label: 'Phone: ',
         data: '(662) 453-3314',
         class: 'fas fa-phone mr-2 iconColor',
@@ -61,21 +61,22 @@ export const contactsLocation1 = [
     },
     {
         id: 1,
+        label: 'Email: ',
+        email: 'angiemax@yahoo.com',
+        data: `angiemax@yahoo.com`,
+        class: 'fas fa-envelope mr-2 iconColor',
+        redirect: 'mailto:angiemax@yahoo.com'
+    },
+    {
+        id: 2,
         label: 'Address: ',
         data: '704 Tallahatchie St, Greenwood, MS 38930',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: 'https://goo.gl/maps/p5ZYDnwqJyKjdigf8'
     },
+    
     {
         id: 3,
-        label: 'Email: ',
-        email: 'angiemax@yahoo.com',
-        data: `angiemax@yahoo.com`,
-        class: 'fas fa-envelope mr-2 iconColor',
-        redirect: 'mailto:`angiemax@yahoo.com`'
-    },
-    {
-        id: 2,
         label: 'Mailing Address: ',
         data: '3609 32nd St SE, Kentwood, MI 49512',
         class: 'fas fa-envelope-open mr-2 iconColor',
@@ -119,7 +120,7 @@ export const accessHoursLocation3 = [
 
 export const contactsLocation2 = [
       {
-        id: 4,
+        id: 0,
         label: 'Phone: ',
         data: '(662) 453-3314',
         class: 'fas fa-phone mr-2 iconColor',
@@ -127,21 +128,22 @@ export const contactsLocation2 = [
     },
     {
         id: 1,
+        label: 'Email: ',
+        email: 'angiemax@yahoo.com',
+        data: `angiemax@yahoo.com`,
+        class: 'fas fa-envelope mr-2 iconColor',
+        redirect: 'mailto:angiemax@yahoo.com'
+    },
+    {
+        id: 2,
         label: 'Address: ',
         data: '707 US-82, Greenwood, MS 38930',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: 'https://goo.gl/maps/V9mQLpHMRbH1CtK4A'
     },
+    
     {
         id: 3,
-        label: 'Email: ',
-        email: 'angiemax@yahoo.com',
-        data: `angiemax@yahoo.com`,
-        class: 'fas fa-envelope mr-2 iconColor',
-        redirect: 'mailto:`angiemax@yahoo.com`'
-    },
-    {
-        id: 2,
         label: 'Mailing Address: ',
         data: '3609 32nd St SE, Kentwood, MI 49512',
         class: 'fas fa-envelope-open mr-2 iconColor',
@@ -162,7 +164,7 @@ export const hoursLocation2 = [
 
 export const contactsLocation3 = [
       {
-        id: 4,
+        id: 0,
         label: 'Phone: ',
         data: '(662) 453-3314',
         class: 'fas fa-phone mr-2 iconColor',
@@ -170,21 +172,22 @@ export const contactsLocation3 = [
     },
     {
         id: 1,
+        label: 'Email: ',
+        email: 'angiemax@yahoo.com',
+        data: `angiemax@yahoo.com`,
+        class: 'fas fa-envelope mr-2 iconColor',
+        redirect: 'mailto:angiemax@yahoo.com'
+    },
+    {
+        id: 2,
         label: 'Address: ',
         data: '1604 Chickasaw St Greenwood, MS 38930',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: 'https://goo.gl/maps/SLhfo6WxuVcRxioU8'
     },
+    
     {
         id: 3,
-        label: 'Email: ',
-        email: 'angiemax@yahoo.com',
-        data: `angiemax@yahoo.com`,
-        class: 'fas fa-envelope mr-2 iconColor',
-        redirect: 'mailto:`angiemax@yahoo.com`'
-    },
-    {
-        id: 2,
         label: 'Mailing Address: ',
         data: '3609 32nd St SE, Kentwood, MI 49512',
         class: 'fas fa-envelope-open mr-2 iconColor',
