@@ -1,0 +1,30 @@
+<div class="containHolder">
+  <div class="container">
+    <h1 class="text-center py-5">Pay Rent for {{name}}</h1>
+    <div class="pay-rent-holder p-5 mb-3">
+      <div class="row">
+          <div class="col-md-8 mx-0">
+              <router-outlet></router-outlet>
+          </div>
+          <div class="col-md-4 rent-example" >
+            <h2> How to Login </h2>
+            <p class="mb-0"> <b>Username:</b> Tenant's First Initial + Last Name  </p>
+            <p >  <b>Password:</b> Gate Access Code   </p>
+       
+            <p class="mb-0"> <b>Example</b> </p>
+            <p class="mb-0">John Smith's gate access code is 1234 </p>
+       
+            <p class="mb-0"> <b>John's Username:</b> jsmith  </p>
+            <p > <b>John's Password:</b> 1234</p>
+       
+            <p class="mb-0"> <b>Have question about your account?</b> </p>
+              <span *ngFor="let contact of contact" [class.display-none]="contact?.id == 0 && contact?.id == 1">
+                <span class="contact-links" *ngIf="contact?.label == 'Email: ' || contact?.label == 'Phone: '">
+                  <a [href]="contact?.redirect">{{contact.data}}</a>
+                </span><br>
+              </span>
+         </div>
+      </div>
+    </div>
+  </div>
+</div>

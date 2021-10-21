@@ -1,0 +1,115 @@
+<section class="contact-details">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-lg-8 py-0 px-0">
+        <div class="social-content px-3 py-4">
+          <div class="display">
+            <h1>{{name}}</h1>
+            <span class="disp-for-small-device" *ngFor="let social of socialLinks">
+              <a href="" target="_blank"><i [class]="social?.class"></i></a> 
+            </span>
+          </div>
+          <div class="row">
+            <div class="col-lg-11 px-0">
+              <span *ngFor="let contact of contacts" class="py-2 each-contact" >
+
+                <span class="pl-3" *ngIf="contact?.label !== 'Office Address: '"><i class="{{contact.class}}" ></i></span><span class="contact-links" *ngIf="contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+                <ng-template #other_content >&nbsp;<span *ngIf="contact?.label !== 'Office Address: '">{{contact.data}}</span></ng-template>
+              </span>
+            </div>
+            <div class="col-lg-1">
+              <span class="disp" *ngFor="let social of socialLinks">
+               <a href="" target="_blank"><i [class]="social?.class"></i></a> 
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-img">
+            <span *ngIf="id == 0"> 
+              <div class="img-box-0" [ngStyle]="{'background-image': 'url('+ photo +')'}">
+              </div>
+            </span>
+            <span *ngIf="id == 1"> 
+              <div class="img-box-1" [ngStyle]="{'background-image': 'url('+ photo +')'}">
+              </div>
+            </span>
+            <span *ngIf="id == 2"> 
+              <div class="img-box-2" [ngStyle]="{'background-image': 'url('+ photo +')'}">
+              </div>  
+            </span>
+            <span *ngIf="id == 3"> 
+              <div class="img-box-3" [ngStyle]="{'background-image': 'url('+ photo +')'}">
+              </div>  
+            </span>
+            <span *ngIf="id == 4"> 
+              <div class="img-box-4" [ngStyle]="{'background-image': 'url('+ photo +')'}">
+              </div>  
+            </span>
+            <span *ngIf="id == 5"> 
+              <div class="img-box-5"[ngStyle]="{'background-image': 'url('+ photo +')'}">
+              </div>  
+            </span>
+            <span *ngIf="id == 6"> 
+              <!-- <div class="img-box-6"[ngStyle]="{'background-image': 'url('+ photo +')'}"> -->
+                <div class="img-box-6">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3481.880344973877!2d-99.76018694873483!3d29.227073863585193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865efadcc2f97857%3A0x85799a11bf01c2b!2s2633%20E%20Main%20St%2C%20Uvalde%2C%20TX%2078801!5e0!3m2!1sen!2sus!4v1583734857583!5m2!1sen!2sus" width="100%" height="370" frameborder="0" allowfullscreen></iframe>
+              </div>  
+            </span>
+            <span *ngIf="id == 7"> 
+              <!-- <div class="img-box-6"[ngStyle]="{'background-image': 'url('+ photo +')'}"> -->
+                <div class="img-box-7">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3482.4691378781304!2d-99.79699608490426!3d29.20975228219366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865efb6df1df56a7%3A0xa50cf698843f63e5!2s244%20N%20Grove%20St%2C%20Uvalde%2C%20TX%2078801!5e0!3m2!1sen!2sus!4v1611184987896!5m2!1sen!2sus" width="100%" height="370" frameborder="0" allowfullscreen></iframe>
+              </div>  
+            </span>
+        </div>
+      </div>
+      <div class="col-lg-4 pt-3 background-white">
+        <div class="map-responsive">
+          <span *ngIf="id == 0">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3482.4346177237453!2d-99.79753108506262!3d29.21076808219322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865efb6ddc0d5d55%3A0xf6286f71da42509c!2s260%20N%20Grove%20St%2C%20Uvalde%2C%20TX%2078801!5e0!3m2!1sen!2sus!4v1582390579387!5m2!1sen!2sus" width="100%" height="230" frameborder="0" allowfullscreen></iframe>
+          </span>
+          <span *ngIf="id == 1">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13930.074212858513!2d-99.7944077008908!3d29.20829811621769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865efb721054e1d1%3A0xf498be5da3af6625!2s201%20N%20Grove%20St%2C%20Uvalde%2C%20TX%2078801!5e0!3m2!1sen!2sus!4v1582396688442!5m2!1sen!2sus" width="100%" height="200" frameborder="0" allowfullscreen></iframe>
+          </span>
+          <span *ngIf="id == 2"> 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3482.525160283981!2d-99.79111128506261!3d29.20810368219427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865efb0d3fc68eaf%3A0x44365955c53d80c9!2s246%20W%20South%20Ln%2C%20Uvalde%2C%20TX%2078801!5e0!3m2!1sen!2sus!4v1582397388523!5m2!1sen!2sus" width="100%" height="230" frameborder="0" allowfullscreen></iframe>
+          </span>
+          <span *ngIf="id == 3"> 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3482.902137204824!2d-99.78940468506295!3d29.19700798219848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s817%20S%20Getty%20St%2C%20Uvalde%2C%20TX%2078801!5e0!3m2!1sen!2sus!4v1582398800702!5m2!1sen!2sus" width="100%" height="230" frameborder="0" allowfullscreen></iframe>
+          </span>
+          <span *ngIf="id == 4"> 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3482.902137204824!2d-99.78940468506295!3d29.19700798219848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865efba089802177%3A0x4c3de965a0b709c9!2s430%20US-83%2C%20Uvalde%2C%20TX%2078801!5e0!3m2!1sen!2sus!4v1582398753547!5m2!1sen!2sus" width="100%" height="230" frameborder="0" allowfullscreen></iframe>
+          </span>
+          <span *ngIf="id == 5"> 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3482.422835490982!2d-99.7783532850626!3d29.21111478219319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865efb1ad76aeb4d%3A0x4d19114acd22f729!2s500%20E%20Garden%20St%2C%20Uvalde%2C%20TX%2078801!5e0!3m2!1sen!2sus!4v1582399024568!5m2!1sen!2sus" width="100%" height="230" frameborder="0" allowfullscreen></iframe>
+          </span>
+          <span *ngIf="id == 6"> 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3481.880344973877!2d-99.76018694873483!3d29.227073863585193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865efadcc2f97857%3A0x85799a11bf01c2b!2s2633%20E%20Main%20St%2C%20Uvalde%2C%20TX%2078801!5e0!3m2!1sen!2sus!4v1583734857583!5m2!1sen!2sus" width="100%" height="230" frameborder="0" allowfullscreen></iframe>
+          </span>
+          <span *ngIf="id == 7"> 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3482.4691378781304!2d-99.79699608490426!3d29.20975228219366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865efb6df1df56a7%3A0xa50cf698843f63e5!2s244%20N%20Grove%20St%2C%20Uvalde%2C%20TX%2078801!5e0!3m2!1sen!2sus!4v1611184987896!5m2!1sen!2sus" width="100%" height="230" frameborder="0" allowfullscreen></iframe>
+          </span>
+        </div>
+        <div class="hours-data w-100">
+          <h2 class="pt-3">Hours</h2>
+          <div class="row">
+            <div class="col-lg-8">
+              <app-tables [tBody]="hours" ></app-tables> 
+            </div>
+            <div class="col-lg-4 btn-area text-center">
+              <a class="btn btn-outline-primary p-2" (click)='navigateToContact()' role="button">Contact Us</a> 
+              <a class="btn btn-primary-light p-2" (click)='navigateToPayment()' role="button">Pay Rent</a>                    
+              <a class="btn btn-primary p-2" (click)='navigateToReserve()' role="button">Reserve Unit</a>                                       
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{data.message}}
+<section class="sub-components">
+  <div  class="container px-0 pt-2 mt-5">
+      <app-tabs [tabs]='tabs' [name]='name' class="tab-background"  ></app-tabs>
+  </div>
+</section>
