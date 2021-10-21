@@ -40,7 +40,8 @@ export const contactsLocation1 = [
     label: "Address: ",
     data: "14350 111 Ave NW, Edmonton, AB T5M 2P4, Canada",
     class: "fas fa-map-marker-alt mr-2 iconColor",
-    redirect: "https://goo.gl/maps/s79NutC6MxvRi19b6",
+    // redirect: "https://goo.gl/maps/s79NutC6MxvRi19b6",
+    redirect: "https://www.google.com/maps/d/u/0/edit?mid=1UgtXINA6sn0iWyUV8956dpEiG9VjfyI-&usp=sharing",
   },
   // {
   //     id: 2,
@@ -100,7 +101,8 @@ export const contactsLocation2 = [
     label: "Address: ",
     data: "21211 100 Ave NW, Edmonton, AB T5T 5X8, Canada",
     class: "fas fa-map-marker-alt mr-2 iconColor",
-    redirect: "https://goo.gl/maps/GGA5CAmXnVxGGtmQ9",
+    // redirect: "https://goo.gl/maps/GGA5CAmXnVxGGtmQ9",
+    redirect: "https://www.google.com/maps/d/u/0/edit?mid=1PgzIqCiVnwxzYEGmPkGJ8VbL0u07Bg69&usp=sharing",
   },
   // {
   //     id: 2,

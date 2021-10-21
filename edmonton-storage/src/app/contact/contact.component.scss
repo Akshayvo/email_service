@@ -151,9 +151,9 @@ table {
       border-left: 0 $border solid;
     }
   }
-  .desktop-view {
-    display: none;
-  }
+  // .desktop-view {
+  //   display: none;
+  // }
 }
 
 @media only screen and (max-width: 767px) and (min-width: 601px) {

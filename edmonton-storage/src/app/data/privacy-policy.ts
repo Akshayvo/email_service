@@ -133,7 +133,7 @@ export const privacyPolicy = [
     abiding by this privacy policy, 
     you should contact us 
     immediately via telephone at  <a href="tel:7807325000" style="color: #000;">(780) 732-5000 </a> or via email at <a href="mailto:guardian.info@edmstorage.ca" style="color:#000;">guardian.info@edmstorage.ca </a>for Guardian Storage or by 
-    telephone at <a href="tel:7807325000" style="color: #000;">(780) 732-5000 </a> or via email at <a href="mailto:access.info@edmstorage.ca" style="color:#000;">guardian.info@edmstorage.ca </a> for Access Mini Storage.`,
+    telephone at <a href="tel:7804522508" style="color: #000;">(780) 452-2508 </a> or via email at <a href="mailto:access.info@edmstorage.ca" style="color:#000;">guardian.info@edmstorage.ca </a> for Access Mini Storage.`,
     // sharing: [
     //   {
     //     heading: `Sharing`
