@@ -5,7 +5,7 @@
         <p class="px-2 my-2" *ngIf="navigateToMoveIn"><b>Confirming your Move in, please wait...</b></p>
     </div>
 <div class="pb-4" *ngIf="strConfirmation || strAccessCode; else other_content">
-    <div *ngIf="ReservationFee === undefined">
+    <div *ngIf="ReservationFee === payReservationCharges">
         Your reservation was successful.
         <div class="py-4">
             <table>
@@ -20,7 +20,7 @@
                     </tr>
                     <tr>
                         <td class="td-1">Rate</td>
-                        <td> <span *ngIf="monthlyRate > 0 || monthlyRate !== undefined">$</span>{{monthlyRate}}</td>
+                        <td> <span *ngIf="monthlyRate > 0 || monthlyRate !== payReservationCharges">$</span>{{monthlyRate}}</td>
                     </tr> 
                     <tr *ngIf="!navigateToMoveIn">
                         <td> Move In Date</td>
