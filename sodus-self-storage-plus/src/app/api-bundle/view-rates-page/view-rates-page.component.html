@@ -9,7 +9,7 @@
   </div>
   <div [class.loader]="showLoader" class="loader-position"> 
   </div>
-  <table  class="viewrates-desktop w-auto" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+  <table  class="viewrates-desktop" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
       <tHead [class.display]="!showTable">
           <tr>
             <th colspan="2"  class="px-4 py-1 text-center" *ngFor="let th of th" id={{th.id}}>
@@ -23,7 +23,7 @@
 
       <tbody itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
         <tr itemprop="itemOffered" itemscope itemtype="https://schema.org/SelfStorage" *ngFor="let lstUnitType of LstUnitTypes" >
-          <td  colspan="2" style="width: 15%;" class="px-4 border text-center">
+          <td  colspan="2" class="px-4 border text-center">
             <span hidden itemprop="name">{{lstUnitType.Description}} unit Type </span>
               {{lstUnitType.Description}}
               <meta itemprop="description" 
