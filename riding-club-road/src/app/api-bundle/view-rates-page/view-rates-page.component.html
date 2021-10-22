@@ -45,7 +45,7 @@
             <button (click)="navigate('/view-rates/move-in', lstUnitType)"> Move In</button>
             <link *ngIf="lstUnitType.IsUnitsAvailable" itemprop="availability" href="https://schema.org/InStock" />
           </td>
-          <td  id="call" colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable && showMovein; else other_call" >
+          <td  id="call" colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable ; else other_call" >
                       <button class="btn btn-primary contactbutton" onclick="window.location.href = 'tel:9727220717';"> Contact Us</button>
           </td>
           <!-- <td  colspan="2" class="px-4 border text-center" *ngIf="lstUnitType.IsClimateControlled && showClimateControl; else other_climate">
@@ -67,7 +67,7 @@
           </td>
           </ng-template>
           <ng-template #other_call >
-            <td  id="move-in"  colspan="2" class="py-2 px-4 border" *ngIf="showMovein">
+            <td  id="move-in"  colspan="2" class="py-2 px-4 border">
             <div  class="text-center">Currently Unavailable.</div>
           </td>
           </ng-template>
@@ -97,13 +97,13 @@
           <div id="move-in"   class="py-1 buttons" *ngIf="showMovein"> 
               <button class=" btn btn-outline-primary" (click)="navigate('/view-rates/move-in', lstUnitType)"> Move In</button>
           </div>
-          <div id="move-in"   class="py-1 buttons" *ngIf="showMovein"> 
+          <div id="move-in"   class="py-1 buttons" *ngIf="lstUnitType.IsUnitsAvailable"> 
             <button class=" btn btn-primary" onclick="window.location.href = 'tel:9727220717';"> Contact Us</button>
         </div>
         </div>
         
         <ng-template #other> 
-          <div  class="text-right" *ngIf="showMovein || showReserve" ><p class="card-text ">Please call the facility to reserve a unit or move in.</p></div>
+          <div  class="text-right"  ><p class="card-text ">Please call the facility to reserve a unit or move in.</p></div>
         </ng-template>
     </div>
   </div>

@@ -96,7 +96,7 @@ export const th = [
  {
     id: 'call',
     data: `Call For More Information`,
-    state: objSIMSetting.objActionSetting.blnAllowMoveIn
+    state: true
   },
 ];
 
