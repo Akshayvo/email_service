@@ -12,7 +12,7 @@
   display: block;
 }
 
-.row-margin{
+.row-margin {
   text-align: center;
   display: flex;
 }
@@ -43,7 +43,6 @@ table {
     }
     tr {
       td {
-
         button {
           font-size: 0.8rem;
           min-width: 120px;
@@ -64,11 +63,10 @@ table {
   }
 }
 
-.othercasebutton{
-  color: $primary!important;
+.othercasebutton {
+  color: $primary !important;
   margin-right: auto;
   min-width: 40px;
-  
 }
 
 .loader {
@@ -82,8 +80,12 @@ table {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 // try to use div
@@ -102,13 +104,13 @@ p {
   font-weight: 700;
 }
 
-.button-align{
+.button-align {
   display: flex;
   justify-content: center;
 }
 
 .buttons {
-  display: flex;
+  // display: flex;
   justify-content: center;
 }
 
@@ -137,24 +139,17 @@ p {
   
 }
 
-@media only screen and (max-width: 767px)  and (min-width: 381px) {
+@media only screen and (max-width: 767px) and (min-width: 381px) {
   .buttons {
     .btn {
       min-width: 150px;
     }
-
-     }
-
-    .othercasebutton{
-      font-size: .7rem;
-      
-    }
   }
-  
 
- 
-  
-
+  .othercasebutton {
+    font-size: 0.7rem;
+  }
+}
 
 @media only screen and (max-width: 380px) {
   .buttons {
@@ -162,9 +157,7 @@ p {
       min-width: auto;
     }
   }
-  .othercasebutton{
-    font-size: .7rem;
-    
+  .othercasebutton {
+    font-size: 0.7rem;
   }
-
-  }
+}

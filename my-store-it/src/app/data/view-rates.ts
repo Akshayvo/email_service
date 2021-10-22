@@ -38,6 +38,10 @@ export const staticViewRates = [
   {
     size:'10 x 30',
     price:189
+  },
+  {
+    size:`Uncovered Parking - Up to 45'`,
+    price:50
   }
 ]
 export const th = [
@@ -49,6 +53,10 @@ export const th = [
     data: `Rate`,
     state: objSIMSetting.objUnitSizesSetting.blnShowRate
   },
+  {
+    data: `Waiting List`,
+    state:true,
+  }
   // {
   //   data: 'deposit',
   //   state: objSIMSetting.objUnitSizesSetting.blnShowDeposit
