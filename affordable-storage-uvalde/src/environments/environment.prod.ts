@@ -3,7 +3,7 @@ export const environment = {
   type: 0,  // { API: 0, iframe: 1 }
   locationName: 'texas', // state/city  **Remeber to update locationName in sitemap.xml as well
   signUpForAuotoPay: 0, // { Yes: 1, No: 0 }
-  alternateType: { moveIn: true, reserve: true }, // { moveIn: true, reserve: true },
+  alternateType: { moveIn: true, reserve: false }, // { moveIn: true, reserve: true },
   military: true, // set true for Military and Driver's Details 
   cards: ['Visa', 'Master Card', 'Amex', 'Discover'],
   errorsMails: ['website.dev@codeparva.in'],
@@ -13,7 +13,7 @@ export const environment = {
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
   facilityName: 'Uvalde Affordable Storage - Testing',
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: `https://boxerstorage.com`
+  websiteUrl: `https://affordable-storage-uvalde-staging.netlify.app`
   // APIKey: `dzJ0OVcySjMqNE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O` // 29234
   // APIKey: `dzJ0OVcySjMqNE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29234
 
