@@ -33,7 +33,7 @@ export class UaParserService {
     if (this.typeOfImages === 'WEBP') {
       this.baseUrl = `https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Dakota_self_storage/webp`;
     } else {
-      this.baseUrl = 'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Dakota_self_storage/jpg';
+      this.baseUrl = 'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Dakota_self_storage/jpeg';
     }
   }
 }
