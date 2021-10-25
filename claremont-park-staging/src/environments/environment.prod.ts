@@ -2,9 +2,9 @@ export const environment = {
   production: true,
   type: 0,  // { API: 0, iframe: 1 }
   locationName: 'colorado/colorado-springs',  // state/city   **Remeber to update locationName in sitemap.xml as well
-  signUpForAuotoPay: 0, // { Yes: 1, No: 0 }
-  alternateType: { moveIn: true, reserve: true }, // { moveIn: true, reserve: true },
-  military: true, // set true for Military and Driver's Details 
+  signUpForAuotoPay: 1, // { Yes: 1, No: 0 }
+  alternateType: { moveIn: false, reserve: true }, // { moveIn: true, reserve: true },
+  military: false, // set true for Military and Driver's Details 
   template: 'darkTheme', // { darkTheme, lightTheme, withoutJumbotron}
   cards: ['Visa', 'Master Card', 'Amex', 'Discover', 'test'],
   errorsMails: ['website.dev@codeparva.in'],
