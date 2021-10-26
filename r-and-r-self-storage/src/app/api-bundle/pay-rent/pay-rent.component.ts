@@ -49,12 +49,12 @@ export class PayRentComponent implements OnInit {
       this.name = ' Confederate Way Location';
   } else if (this.router.url.includes('refuge')) {
     this.name = ' Refuge Road';
+  } else if (this.router.url.includes('old-philadelphia')) {
+    this.name = ' Old Philadelphia';
+  } else if (this.router.url.includes('n-main')) {
+    this.name = ' N Main';
   } else if (this.router.url.includes('talking-rock')) {
-    this.name = ' Talking Rock Road';
-  } else if (this.router.url.includes('northside')) {
-    this.name = ' Northside Drive';
-  } else if (this.router.url.includes('north-main')) {
-    this.name = ' North Main Street';
+    this.name = ' Talking Rock';
   } else if (this.router.url.includes('campus-drive')) {
     this.name = ' Campus Drive';
   }
@@ -75,11 +75,11 @@ export class PayRentComponent implements OnInit {
       this.og = ogPayRentPageLocation1;
     } else if (this.router.url.includes('refuge')) {
       this.og = ogPayRentPageLocation2;
-    } else if (this.router.url.includes('talking-rock')) {
+    } else if (this.router.url.includes('old-philadelphia')) {
       this.og = ogPayRentPageLocation3;
-    } else if (this.router.url.includes('northside')) {
+    } else if (this.router.url.includes('n-main')) {
       this.og = ogPayRentPageLocation4;
-    } else if (this.router.url.includes('north-main')) {
+    } else if (this.router.url.includes('talking-rock')) {
       this.og = ogPayRentPageLocation5;
     } else if (this.router.url.includes('campus-drive')) {
       this.og = ogPayRentPageLocation6;
@@ -91,11 +91,11 @@ public fetchTwitter() {
     this.twitter = twitterPayRentPageLocation1;
   } else if (this.router.url.includes('refuge')) {
     this.twitter = twitterPayRentPageLocation2;
-  } else if (this.router.url.includes('talking-rock')) {
+  } else if (this.router.url.includes('old-philadelphia')) {
     this.twitter = twitterPayRentPageLocation3;
-  } else if (this.router.url.includes('northside')) {
+  } else if (this.router.url.includes('n-main')) {
     this.twitter = twitterPayRentPageLocation4;
-  } else if (this.router.url.includes('north-main')) {
+  } else if (this.router.url.includes('talking-rock')) {
     this.twitter = twitterPayRentPageLocation5;
   } else if (this.router.url.includes('campus-drive')) {
     this.twitter = twitterPayRentPageLocation6;

@@ -12,7 +12,7 @@ import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { LocationService } from '../services/location.service';
 import { CanonicalService } from '../services/canonical.service';
 import { ogContactPage, twitterContactPage } from '../data/script';
-import { tableDataContactPage, tableHeader } from '../data/pay-rent';
+import { tableDataContactPage, tableHeaderContactUs } from '../data/pay-rent';
 import { contactPageTitle, contactPageContent } from '../data/title';
 
 @Component({
@@ -42,7 +42,7 @@ export class ContactComponent implements OnInit {
   og: any;
   twitter: any;
   tableData: any;
-  tableHeader: any;
+  tableHeaderContactUs: any;
   contactPageTitle: string;
   contactPageContent: string;
 
@@ -93,7 +93,7 @@ export class ContactComponent implements OnInit {
   ngOnInit() {
     window.scrollTo(0, 0);
     this.receiveMessage();
-    this.fetchTableHeader();
+    this.fetchtableHeaderContactUs();
     this.fetchTableData();
 
 }
@@ -142,8 +142,8 @@ public fetchMetaData() {
     this.tableData = tableDataContactPage;
   }
   
-  public fetchTableHeader() {
-    this.tableHeader = tableHeader;
+  public fetchtableHeaderContactUs() {
+    this.tableHeaderContactUs = tableHeaderContactUs;
   }
   
   public fetchContactDetailsLocation1() {

@@ -11,7 +11,7 @@
             <table class="col-md-12">
               <thead >
                 <tr>
-                  <th  *ngFor="let tableHeader of tableHeader">{{tableHeader.data}}</th>
+                  <th  *ngFor="let tableHeaderPayRent of tableHeaderPayRent">{{tableHeaderPayRent.data}}</th>
                 </tr>
               </thead>
               <tbody>
@@ -30,8 +30,8 @@
               </tbody>
              </table>
              <!-- <div class="row" >
-              <div class="col-6 text-center" *ngFor="let tableHeader of tableHeader"  >
-                  <b>{{tableHeader.data}}</b>  
+              <div class="col-6 text-center" *ngFor="let tableHeaderPayRent of tableHeaderPayRent"  >
+                  <b>{{tableHeaderPayRent.data}}</b>  
               </div>
               </div>
               <div *ngFor="let tableData of tableData">
@@ -55,8 +55,8 @@
         <div class="container mobile-view ">
         <div class="px-3">
         <div class=" row py-3  mobile-header" >
-          <div class="col-6 text-center  " *ngFor="let tableHeader of tableHeader"  >
-              <b>{{tableHeader.data}}</b>  
+          <div class="col-6 text-center  " *ngFor="let tableHeaderPayRent of tableHeaderPayRent"  >
+              <b>{{tableHeaderPayRent.data}}</b>  
           </div>
           </div>
           <div class="border" *ngFor="let tableData of tableData">

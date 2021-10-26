@@ -107,11 +107,11 @@ export class ContactUsComponent implements OnInit {
       this.og = ogContactPageLocation1;
     } else if (this.router.url.includes('refuge')) {
       this.og = ogContactPageLocation2;
-    } else if (this.router.url.includes('talking-rock')) {
+    } else if (this.router.url.includes('old-philadelphia')) {
       this.og = ogContactPageLocation3;
-    } else if (this.router.url.includes('northside')) {
+    } else if (this.router.url.includes('n-main')) {
       this.og = ogContactPageLocation4;
-    } else if (this.router.url.includes('north-main')) {
+    } else if (this.router.url.includes('talking-rock')) {
       this.og = ogContactPageLocation5;
     } else if (this.router.url.includes('campus-drive')) {
       this.og = ogContactPageLocation6;
@@ -128,11 +128,11 @@ public fetchTwitter() {
     this.twitter = twitterContactPageLocation2;
   } else if (this.router.url.includes('refuge')) {
     this.twitter = twitterContactPageLocation1;
-  } else if (this.router.url.includes('talking-rock')) {
+  } else if (this.router.url.includes('old-philadelphia')) {
     this.twitter = twitterContactPageLocation3;
-  } else if (this.router.url.includes('northside')) {
+  } else if (this.router.url.includes('n-main')) {
     this.twitter = twitterContactPageLocation4;
-  } else if (this.router.url.includes('north-main')) {
+  } else if (this.router.url.includes('talking-rock')) {
     this.twitter = twitterContactPageLocation5;
   } else if (this.router.url.includes('campus-drive')) {
     this.twitter = twitterContactPageLocation6;
@@ -175,11 +175,11 @@ public fetchTwitter() {
       this.fetchContactDetailsLocation1();
     } else if (this.router.url.includes('refuge')) {
       this.fetchContactDetailsLocation2();
-    } else if (this.router.url.includes('talking-rock')) {
+    } else if (this.router.url.includes('old-philadelphia')) {
       this.fetchContactDetailsLocation3();
-    } else if (this.router.url.includes('northside')) {
+    } else if (this.router.url.includes('n-main')) {
       this.fetchContactDetailsLocation4();
-    } else if (this.router.url.includes('north-main')) {
+    } else if (this.router.url.includes('talking-rock')) {
       this.fetchContactDetailsLocation5();
     } else if (this.router.url.includes('campus-drive')) {
       this.fetchContactDetailsLocation6();

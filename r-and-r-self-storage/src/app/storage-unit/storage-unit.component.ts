@@ -34,13 +34,13 @@ export class StorageUnitComponent implements OnInit {
     } else if (this.router.url.includes(`${environment.locationName}/refuge`)) {
       this.id = 2;
       this.heading = headingLocation2;
-    } else if (this.router.url.includes(`${environment.locationName}/talking-rock`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/old-philadelphia`)) {
       this.id = 3;
       this.heading = headingLocation3;
-    } else if (this.router.url.includes(`${environment.locationName}/northside`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/n-main`)) {
       this.id = 4;
       this.heading = headingLocation4;
-    } else if (this.router.url.includes(`${environment.locationName}/north-main`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/talking-rock`)) {
       this.id = 5;
       this.heading = headingLocation5;
     } else if (this.router.url.includes(`${environment.locationName}/campus-drive`)) {

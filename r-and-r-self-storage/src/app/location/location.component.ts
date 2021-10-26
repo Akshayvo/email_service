@@ -144,7 +144,7 @@ export class LocationComponent implements OnInit {
               content: element.content
             })
           });
-      } else if (this.router.url.includes(`${environment.locationName}/talking-rock`)) {
+      } else if (this.router.url.includes(`${environment.locationName}/old-philadelphia`)) {
         this.meta.addTag({
           name: 'description',
           content: `${this.location3PageContent}`
@@ -168,7 +168,7 @@ export class LocationComponent implements OnInit {
             content: element.content
           })
         });
-   } else if (this.router.url.includes(`${environment.locationName}/northside`)) {
+   } else if (this.router.url.includes(`${environment.locationName}/n-main`)) {
     this.meta.addTag({
       name: 'description',
       content: `${this.location4PageContent}`
@@ -192,7 +192,7 @@ export class LocationComponent implements OnInit {
         content: element.content
       })
     });
-  } else if (this.router.url.includes(`${environment.locationName}/north-main`)) {
+  } else if (this.router.url.includes(`${environment.locationName}/talking-rock`)) {
     this.meta.addTag({
       name: 'description',
       content: `${this.location5PageContent}`
@@ -289,11 +289,11 @@ this.titleService.setTitle(`${this.location6PageTitle}`);
       this.og = ogLocation1;
   } else if (this.router.url.includes(`${environment.locationName}/refuge`)) {
     this.og = ogLocation2;
-  } else if (this.router.url.includes(`${environment.locationName}/talking-rock`)) {
+  } else if (this.router.url.includes(`${environment.locationName}/old-philadelphia`)) {
     this.og = ogLocation3;
-  } else if (this.router.url.includes(`${environment.locationName}/northside`)) {
+  } else if (this.router.url.includes(`${environment.locationName}/n-main`)) {
     this.og = ogLocation4;
-  } else if (this.router.url.includes(`${environment.locationName}/north-main`)) {
+  } else if (this.router.url.includes(`${environment.locationName}/talking-rock`)) {
     this.og = ogLocation5;
   } else if (this.router.url.includes(`${environment.locationName}/campus-drive`)) {
     this.og = ogLocation6;
@@ -305,11 +305,11 @@ this.titleService.setTitle(`${this.location6PageTitle}`);
       this.twitter = twitterLocation1;
   } else if (this.router.url.includes(`${environment.locationName}/refuge`)) {
     this.twitter = twitterLocation2;
-  } else if (this.router.url.includes(`${environment.locationName}/talking-rock`)) {
+  } else if (this.router.url.includes(`${environment.locationName}/old-philadelphia`)) {
     this.twitter = twitterLocation3;
-  } else if (this.router.url.includes(`${environment.locationName}/northside`)) {
+  } else if (this.router.url.includes(`${environment.locationName}/n-main`)) {
     this.twitter = twitterLocation4;
-  } else if (this.router.url.includes(`${environment.locationName}/north-main`)) {
+  } else if (this.router.url.includes(`${environment.locationName}/talking-rock`)) {
     this.twitter = twitterLocation5;
   } else if (this.router.url.includes(`${environment.locationName}/campus-drive`)) {
     this.twitter = twitterLocation6;
@@ -321,11 +321,11 @@ this.titleService.setTitle(`${this.location6PageTitle}`);
         this.fetchDetailsLocation1();
     } else if (this.router.url.includes(`${environment.locationName}/refuge`)) {
       this.fetchDetailsLocation2();
-    } else if (this.router.url.includes(`${environment.locationName}/talking-rock`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/old-philadelphia`)) {
       this.fetchDetailsLocation3();
-    } else if (this.router.url.includes(`${environment.locationName}/northside`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/n-main`)) {
       this.fetchDetailsLocation4();
-    } else if (this.router.url.includes(`${environment.locationName}/north-main`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/talking-rock`)) {
       this.fetchDetailsLocation5();
     } else if (this.router.url.includes(`${environment.locationName}/campus-drive`)) {
       this.fetchDetailsLocation6();
@@ -340,13 +340,13 @@ this.titleService.setTitle(`${this.location6PageTitle}`);
     this.router.navigate([`${environment.locationName}/refuge/reserve-unit`],
           );
   }  else if ( this.locationId === 3 ) {
-    this.router.navigate([`${environment.locationName}/talking-rock/reserve-unit`],
+    this.router.navigate([`${environment.locationName}/old-philadelphia/reserve-unit`],
          );
   }  else if ( this.locationId === 4 ) {
-    this.router.navigate([`${environment.locationName}/northside/reserve-unit`],
+    this.router.navigate([`${environment.locationName}/n-main/reserve-unit`],
           );
   } else if ( this.locationId === 5 ) {
-    this.router.navigate([`${environment.locationName}/north-main/reserve-unit`],
+    this.router.navigate([`${environment.locationName}/talking-rock/reserve-unit`],
           );
   } else if ( this.locationId === 6 ) {
     this.router.navigate([`${environment.locationName}/campus-drive/reserve-unit`],

@@ -35,11 +35,11 @@ export class AboutUsComponent implements OnInit {
       this.fetchDetailsLocation1();
   } else if (this.router.url.includes(`${environment.locationName}/refuge`)) {
     this.fetchDetailsLocation2();
-  } else if (this.router.url.includes(`${environment.locationName}/talking-rock`)) {
+  } else if (this.router.url.includes(`${environment.locationName}/old-philadelphia`)) {
     this.fetchDetailsLocation3();
-  } else if (this.router.url.includes(`${environment.locationName}/northside`)) {
+  } else if (this.router.url.includes(`${environment.locationName}/n-main`)) {
     this.fetchDetailsLocation4();
-  } else if (this.router.url.includes(`${environment.locationName}/north-main`)) {
+  } else if (this.router.url.includes(`${environment.locationName}/talking-rock`)) {
     this.fetchDetailsLocation5();
   } else if (this.router.url.includes(`${environment.locationName}/campus-drive`)) {
     this.fetchDetailsLocation6();

@@ -3,7 +3,7 @@ import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { LocationService } from '../services/location.service';
 import { contactsLocation1 } from '../../data/contact';
-import { tableHeader, tableData } from '../../data/pay-rent';
+import { tableHeaderPayRent,tableHeaderContactUs , tableData } from '../../data/pay-rent';
 import { Router } from '@angular/router';
 import { DataSharingService } from '../services/data-sharing.service';
 import { CanonicalService } from '../../services/canonical.service';
@@ -21,7 +21,8 @@ export class PaymentComponent implements OnInit {
   locationId: any;
   contact: any;
   tableData: any;
-  tableHeader = [];
+  tableHeaderPayRent = [];
+  tableHeaderContactUs = [];
   paymentTab: string;
   twitter: any;
   og: any;
@@ -64,7 +65,8 @@ export class PaymentComponent implements OnInit {
   ngOnInit() {
     window.scrollTo(0, 0);
     this.receiveMessage();
-    this.fetchTableHeader();
+    this.fetchTableHeaderPayRent();
+    this.fetchTableHeaderContactUs();
     this.fetchTableData();
 
     // if (!!localStorage.getItem('paymentTab')) {
@@ -110,8 +112,12 @@ export class PaymentComponent implements OnInit {
       this.twitter = twitterPayRentPage;
   }
 
-  public fetchTableHeader() {
-    this.tableHeader = tableHeader;
+  public fetchTableHeaderPayRent() {
+    this.tableHeaderPayRent = tableHeaderPayRent;
+  }
+
+  public fetchTableHeaderContactUs() {
+    this.tableHeaderContactUs = tableHeaderContactUs;
   }
 
   public fetchTableData() {

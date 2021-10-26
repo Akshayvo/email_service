@@ -84,17 +84,17 @@ export const nameLocation6 = `Storage Plus of Baldwin County - Robertsdale`;
 
 export const location1 = `confederate`;
 export const location2 = `refuge`;
-export const location3 = `talking-rock`;
-export const location4 = `northside`;
-export const location5 = `talking-rock`;
+export const location3 = `old-philadelphia`;
+export const location4 = `n-main`;
+export const location5 = `old-philadelphia`;
 export const location6 = `campus-drive`;
 
 
 export const urlLocation1 = `${environment.websiteUrl}/${environment.locationName}/confederate/storage-units`;
 export const urlLocation2 = `${environment.websiteUrl}/${environment.locationName}/refuge/storage-units`;
-export const urlLocation3 = `${environment.websiteUrl}/${environment.locationName}/talking-rock/storage-units`;
-export const urlLocation4 = `${environment.websiteUrl}/${environment.locationName}/northside/storage-units`;
-export const urlLocation5 = `${environment.websiteUrl}/${environment.locationName}/north-main/storage-units`;
+export const urlLocation3 = `${environment.websiteUrl}/${environment.locationName}/old-philadelphia/storage-units`;
+export const urlLocation4 = `${environment.websiteUrl}/${environment.locationName}/n-main/storage-units`;
+export const urlLocation5 = `${environment.websiteUrl}/${environment.locationName}/talking-rock/storage-units`;
 export const urlLocation6 = `${environment.websiteUrl}/${environment.locationName}/campus-drive/storage-units`;
 
 
@@ -146,7 +146,7 @@ export const addressLoaction2 = {
 export const addressLoaction3 = {
   '@type': 'PostalAddress',
   'streetAddress': '1422 Talking Rock Rd',
-  'addressLocality': 'Talking Rock Road',
+  'addressLocality': 'Old Philadelphia',
   'addressRegion': 'GA',
   'postalCode': '30143',
   'addressCountry': 'United state'
@@ -155,7 +155,7 @@ export const addressLoaction3 = {
 export const addressLoaction4 = {
   '@type': 'PostalAddress',
   'streetAddress': '365 Northside Dr',
-  'addressLocality': 'Northside Drive',
+  'addressLocality': 'N Main',
   'addressRegion': 'GA',
   'postalCode': '30143',
   'addressCountry': 'United state'
@@ -164,7 +164,7 @@ export const addressLoaction4 = {
 export const addressLoaction5 = {
   '@type': 'PostalAddress',
   'streetAddress': '463 N Main St',
-  'addressLocality': 'North Main Street',
+  'addressLocality': 'Talking Rock',
   'addressRegion': 'GA',
   'postalCode': '36532',
   'addressCountry': 'United state'

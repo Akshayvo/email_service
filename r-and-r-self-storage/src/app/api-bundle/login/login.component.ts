@@ -143,19 +143,19 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.contact = contactsLocation2;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc2);
-    } else  if (this.router.url.includes('talking-rock')) {
+    } else  if (this.router.url.includes('old-philadelphia')) {
       this.id = 3;
       this.name = 'Storage Plus of Baldwin County - Barnwell';
       this.contact = contactsLocation3;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc3);
-    } else  if (this.router.url.includes('northside')) {
+    } else  if (this.router.url.includes('n-main')) {
       this.id = 4;
       this.name = 'Storage Plus of Baldwin County - Belforest';
       this.contact = contactsLocation4;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc4;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc4);
-    } else  if (this.router.url.includes('north-main')) {
+    } else  if (this.router.url.includes('talking-rock')) {
       this.id = 5;
       this.name = 'Storage Plus of Baldwin County - Fairhope';
       this.contact = contactsLocation5;
@@ -183,11 +183,11 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.og = ogPayRentPageLocation1;
     } else  if (this.router.url.includes('refuge')) {
       this.og = ogPayRentPageLocation2;
-    } else if (this.router.url.includes('talking-rock')) {
+    } else if (this.router.url.includes('old-philadelphia')) {
       this.og = ogPayRentPageLocation3;
-    } else if (this.router.url.includes('northside')) {
+    } else if (this.router.url.includes('n-main')) {
       this.og = ogPayRentPageLocation4;
-    } else if (this.router.url.includes('north-main')) {
+    } else if (this.router.url.includes('talking-rock')) {
       this.og = ogPayRentPageLocation5;
     } else if (this.router.url.includes('campus-drive')) {
       this.og = ogPayRentPageLocation6;
@@ -199,11 +199,11 @@ public fetchTwitter() {
     this.twitter = twitterPayRentPageLocation1;
   } else if (this.router.url.includes('refuge')) {
       this.twitter = twitterPayRentPageLocation2;
-  } else if (this.router.url.includes('talking-rock')) {
+  } else if (this.router.url.includes('old-philadelphia')) {
         this.twitter = twitterPayRentPageLocation3;
-  } else if (this.router.url.includes('northside')) {
+  } else if (this.router.url.includes('n-main')) {
         this.twitter = twitterPayRentPageLocation4;
-  } else if (this.router.url.includes('north-main')) {
+  } else if (this.router.url.includes('talking-rock')) {
     this.twitter = twitterPayRentPageLocation5;
   } else if (this.router.url.includes('campus-drive')) {
     this.twitter = twitterPayRentPageLocation6;

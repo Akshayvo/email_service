@@ -159,7 +159,7 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-    { path: `${environment.locationName}/talking-rock`,
+    { path: `${environment.locationName}/old-philadelphia`,
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -194,7 +194,7 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-    { path: `${environment.locationName}/northside`,
+    { path: `${environment.locationName}/n-main`,
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -230,7 +230,7 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-    { path: `${environment.locationName}/north-main`,
+    { path: `${environment.locationName}/talking-rock`,
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -318,23 +318,23 @@ export const apiRoutes = [
         externalUrl: ''
     }
   },
+  { path: 'review/old-philadelphia', component: HomeComponent,
+    resolve: {
+        url: 'externalUrlRedirectResolver'
+    },
+    data: {
+        externalUrl: ''
+    }
+  },
+  { path: 'review/n-main', component: HomeComponent,
+    resolve: {
+        url: 'externalUrlRedirectResolver'
+    },
+    data: {
+        externalUrl: ''
+    }
+  },
   { path: 'review/talking-rock', component: HomeComponent,
-    resolve: {
-        url: 'externalUrlRedirectResolver'
-    },
-    data: {
-        externalUrl: ''
-    }
-  },
-  { path: 'review/northside', component: HomeComponent,
-    resolve: {
-        url: 'externalUrlRedirectResolver'
-    },
-    data: {
-        externalUrl: ''
-    }
-  },
-  { path: 'review/north-main', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -361,15 +361,15 @@ export const apiRoutes = [
     children: childroute
   },
   {
+    path: 'pay-rent/old-philadelphia', component: PayRentComponent,
+    children: childroute
+  },
+  {
+    path: 'pay-rent/n-main', component: PayRentComponent,
+    children: childroute
+  },
+  {
     path: 'pay-rent/talking-rock', component: PayRentComponent,
-    children: childroute
-  },
-  {
-    path: 'pay-rent/northside', component: PayRentComponent,
-    children: childroute
-  },
-  {
-    path: 'pay-rent/north-main', component: PayRentComponent,
     children: childroute
   },
   {
@@ -380,9 +380,9 @@ export const apiRoutes = [
   { path: 'contact-us', component: ContactComponent },
   { path: 'contact-confederate', component: ContactUsComponent},
   { path: 'contact-silverhill', component: ContactUsComponent},
+  { path: 'contact-old-philadelphia', component: ContactUsComponent},
+  { path: 'contact-n-main', component: ContactUsComponent},
   { path: 'contact-talking-rock', component: ContactUsComponent},
-  { path: 'contact-northside', component: ContactUsComponent},
-  { path: 'contact-north-main', component: ContactUsComponent},
   { path: 'contact-campus-drive', component: ContactUsComponent},
   { path: '**', component: ErrorComponent },
   { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
@@ -414,29 +414,29 @@ export const iFrameRoutes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
+  { path: `${environment.locationName}/old-philadelphia`,
+    component: LocationComponent,
+    children: [
+      {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
+      { path: 'storage-units', component: StorageUnitComponent },
+      { path: 'unit-sizer', component: UnitSizerComponent },
+      { path: 'reserve-unit', component: ReserveUnitComponent },
+      { path: 'about', component: AboutUsComponent },
+      { path: 'directions', component: DirectionsComponent },
+    ]
+  },
+  { path: `${environment.locationName}/n-main`,
+    component: LocationComponent,
+    children: [
+      {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
+      { path: 'storage-units', component: StorageUnitComponent },
+      { path: 'unit-sizer', component: UnitSizerComponent },
+      { path: 'reserve-unit', component: ReserveUnitComponent },
+      { path: 'about', component: AboutUsComponent },
+      { path: 'directions', component: DirectionsComponent },
+    ]
+  },
   { path: `${environment.locationName}/talking-rock`,
-    component: LocationComponent,
-    children: [
-      {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
-      { path: 'storage-units', component: StorageUnitComponent },
-      { path: 'unit-sizer', component: UnitSizerComponent },
-      { path: 'reserve-unit', component: ReserveUnitComponent },
-      { path: 'about', component: AboutUsComponent },
-      { path: 'directions', component: DirectionsComponent },
-    ]
-  },
-  { path: `${environment.locationName}/northside`,
-    component: LocationComponent,
-    children: [
-      {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
-      { path: 'storage-units', component: StorageUnitComponent },
-      { path: 'unit-sizer', component: UnitSizerComponent },
-      { path: 'reserve-unit', component: ReserveUnitComponent },
-      { path: 'about', component: AboutUsComponent },
-      { path: 'directions', component: DirectionsComponent },
-    ]
-  },
-  { path: `${environment.locationName}/north-main`,
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -474,23 +474,23 @@ export const iFrameRoutes = [
         externalUrl: ''
     }
   },
+  { path: 'review/old-philadelphia', component: HomeComponent,
+    resolve: {
+        url: 'externalUrlRedirectResolver'
+    },
+    data: {
+        externalUrl: ''
+    }
+  },
+  { path: 'review/n-main', component: HomeComponent,
+    resolve: {
+        url: 'externalUrlRedirectResolver'
+    },
+    data: {
+        externalUrl: ''
+    }
+  },
   { path: 'review/talking-rock', component: HomeComponent,
-    resolve: {
-        url: 'externalUrlRedirectResolver'
-    },
-    data: {
-        externalUrl: ''
-    }
-  },
-  { path: 'review/northside', component: HomeComponent,
-    resolve: {
-        url: 'externalUrlRedirectResolver'
-    },
-    data: {
-        externalUrl: ''
-    }
-  },
-  { path: 'review/north-main', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -510,9 +510,9 @@ export const iFrameRoutes = [
   { path: 'pay-rent', component: PaymentIframeComponent },
   { path: 'pay-rent-confederate', component: PayRentFloridaComponent },
   { path: 'pay-rent-refuge', component: PayRentChesterComponent},
+  { path: 'pay-rent-old-philadelphia', component: PayRentMontgomeryComponent},
+  { path: 'pay-rent-n-main', component: PayRentMiddletownComponent},
   { path: 'pay-rent-talking-rock', component: PayRentMontgomeryComponent},
-  { path: 'pay-rent-northside', component: PayRentMiddletownComponent},
-  { path: 'pay-rent-north-main', component: PayRentMontgomeryComponent},
   { path: 'pay-rent-campus-drive', component: PayRentMiddletownComponent},
   { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },

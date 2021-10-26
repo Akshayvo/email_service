@@ -10,7 +10,7 @@
             <table class="col-md-12">
               <thead >
                 <tr>
-                  <th  *ngFor="let tableHeader of tableHeader">{{tableHeader.data}}</th>
+                  <th  *ngFor="let tableHeaderContactUs of tableHeaderContactUs">{{tableHeaderContactUs.data}}</th>
                 </tr>
               </thead>
               <tbody>
@@ -35,8 +35,8 @@
     <div class="container mobile-view ">
       <div class="px-3">
       <div class=" row py-3  mobile-header" >
-        <div class="col-6 text-center  " *ngFor="let tableHeader of tableHeader"  >
-            <b>{{tableHeader.data}}</b>  
+        <div class="col-6 text-center  " *ngFor="let tableHeaderContactUs of tableHeaderContactUs"  >
+            <b>{{tableHeaderContactUs.data}}</b>  
         </div>
         </div>
         <div class="border" *ngFor="let tableData of tableData">
