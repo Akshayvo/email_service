@@ -27,11 +27,11 @@ export const featuresList = [
 
 export const aboutUsAlt = `indoor climate controlled storage units with roll-up doors inside of a clean, well-lit building`;
 
-export const aboutUsHeading = `Affordable Self Storage in Baldwinsville`;
+export const aboutUsHeading = `Affordable Self Storage in Arcanum, Ohio`;
 
 export const aboutUs = [
     {
-        p: `Hoke’s Store-N-Lock is proud to be Arcarnum’s newest self storage facility serving Arcnum, 
+        p1: `Hoke’s Store-N-Lock is proud to be Arcarnum’s newest self storage facility serving Arcnum, 
         Greenville, and Castine with affordable self storage units and the kind of customer service only 
         a locally owned and operated facility can offer. Our units are conveniently located on South Main 
         Street in Arcanum, right next to the Post Office, making us an ideal location for local 
@@ -40,19 +40,19 @@ export const aboutUs = [
         just waiting to free up that spot in your lawn.`,
     },
     {
-        p: `Convenience`,
+        sh1: `Convenience`,
     },
     {
-        p: `Our facility was built from the ground up with the modern conveniences required to make your 
+        p2: `Our facility was built from the ground up with the modern conveniences required to make your 
         stay an easy one. We understand the stress involved with moving, downsizing, or even renovating. 
         That’s why we’ve gone the extra mile to provide you with amenities such as 24-hour online rentals, 
         brand new drive-up units, and easy automatic payments.`,
     },
     {
-        p: `Security`,
+        sh2: `Security`,
     },
     {
-        p: `At Hoke’s Store-N-Lock, we understand that convenience isn’t the only consideration when 
+        p3: `At Hoke’s Store-N-Lock, we understand that convenience isn’t the only consideration when 
         selecting a self storage facility. We are located in a quiet neighborhood in the center of the village, 
         and we have placed a number of security cameras around the grounds. The facility is regularly 
         patrolled by our management team to help ensure a sense of safety and security.`,

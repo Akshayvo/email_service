@@ -1,8 +1,8 @@
-export const homePageTitle = `Affordable Self Storage Units in Baldwinsville, New York, 13027`;
-export const homePageContent = `Our regular and climate controlled self storage units are clean, well-lit, accessible 24 hours a day, and affordable! Reserve today!`;
+export const homePageTitle = `Affordable Self Storage & Vehicle Parking in Arcanum`;
+export const homePageContent = `Hoke's Store-N-Lock offers affordable storage units and parking spaces to make your self storage experience a hassle free one!`;
 
-export const viewRatesPageTitle = `Storage Units in Baldwinsville | Hoke's Store-N-Lock - North`;
-export const viewRatesPageContent = `Hoke's Store-N-Lock - North serves Baldwinsville and the surrounding communities with a variety of well-maintained and affordable self storage units!`;
+export const viewRatesPageTitle = `View Rates  | Hoke's Store-N-Lock`;
+export const viewRatesPageContent = `Review our current rates and availability, then rent your unit in minutes with our easy online rental form!`;
 
 export const reservePageTitle = `Reserve a Unit | Hoke's Store-N-Lock - North`;
 export const reservePageContent = `Simply fill out our easy reservation form and one of our friendly self storage associates will be ready and waiting for your arrival!`;
