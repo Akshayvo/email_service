@@ -1,13 +1,13 @@
 import { contact } from './contact';
 import { environment } from '../../environments/environment';
 
-const indexEmail = contact.findIndex(x => x.label === 'Email:');
+const indexEmail = contact.findIndex(x => x.label === 'Email: ');
 
 const email = contact[indexEmail].data;
 
 const redirectEmail = contact[indexEmail].redirect;
 
-const indexPhone = contact.findIndex(x => x.label === 'Phone:');
+const indexPhone = contact.findIndex(x => x.label === 'Phone: ');
 
 const phone = contact[indexPhone].data;
 
