@@ -44,13 +44,13 @@ export const contactsLocation1 = [
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: 'https://goo.gl/maps/pLNEnYJN3RFWqNMD9'
     },
-    {
-        id: 2,
-        label: 'Office Address: ',
-        data: 'Office: 605 Baltimore St, Martinsburg, WV 25401',
-        class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/ZGensJTvKYhCiG9C8'
-    },
+    // {
+    //     id: 2,
+    //     label: 'Office Address: ',
+    //     data: 'Office: 605 Baltimore St, Martinsburg, WV 25401',
+    //     class: 'fas fa-map-marker-alt mr-2 iconColor',
+    //     redirect: 'https://goo.gl/maps/ZGensJTvKYhCiG9C8'
+    // },
     {
         id: 3,
         label: 'Email: ',
