@@ -30,3 +30,7 @@
   from = "/*"
   to = "/index.html"
   status = 200
+[[redirects]]
+  from = "https://rr-self-storage.netlify.app/pay-rent/north-main/rent-sub/payment"
+  to = "https://rr-self-storage.netlify.app/pay-rent/n-main/rent-sub/payment"
+  status = 200

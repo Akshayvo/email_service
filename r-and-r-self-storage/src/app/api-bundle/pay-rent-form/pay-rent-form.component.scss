@@ -16,7 +16,7 @@
 
 .modal-position {
   position: absolute;
-  left: 225px;
+  left: 300px;
 }
 
 table {
@@ -127,21 +127,38 @@ table {
   .modal-position {
     left: 240px;
   }
+
+ 
 }
 
-@media only screen and (min-width: 576px) {
+
+
+@media only screen and (max-width: 600px) {
+
   .rent-holder {
     padding-top: 100px;
   }
-}
-
-@media only screen and (min-width: 576px) {
   .modal {
     td, th {
       font-size: 0.8rem;
     }
   }
 
+  .modal-position {
+    position: absolute;
+    top: 117px;
+    left: 100px;
+}
+
+.btn-link{
+  font-size: .8rem;
+}
+
+label{
+  margin-top: 7px;
+}
+
+ 
   .modal-dialog {
     max-width: 650px;
     margin: 1.75rem auto;
