@@ -2,7 +2,7 @@ export const contactsHomePage = [
     {
         id: 1,
         label: 'Office Address: ',
-        data: '605 Baltimore St, Martinsburg, WV 25401',
+        data: 'Office: 605 Baltimore St, Martinsburg, WV 25401',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: 'https://goo.gl/maps/ZGensJTvKYhCiG9C8'
     },
@@ -40,14 +40,14 @@ export const contactsLocation1 = [
     {
         id: 1,
         label: 'Facility Address: ',
-        data: '854 Hedgesville Rd, Martinsburg, WV 25403',
+        data: 'Facility: 854 Hedgesville Rd, Martinsburg, WV 25403',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: 'https://goo.gl/maps/pLNEnYJN3RFWqNMD9'
     },
     {
         id: 2,
         label: 'Office Address: ',
-        data: '605 Baltimore St, Martinsburg, WV 25401',
+        data: 'Office: 605 Baltimore St, Martinsburg, WV 25401',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: 'https://goo.gl/maps/ZGensJTvKYhCiG9C8'
     },
