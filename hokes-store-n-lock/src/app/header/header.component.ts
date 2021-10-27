@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { navLinks } from '../data/nav';
-import { contact, socialLinks } from '../data/contact';
+import { contact, contacts,socialLinks } from '../data/contact';
 import { UaParserService } from '../services/ua-parser.service';
 
 
@@ -33,7 +33,7 @@ export class HeaderComponent implements OnInit {
   }
 
   public fetchContactDetails() {
-    this.contactDetails = contact;
+    this.contactDetails = contacts;
   }
 
   public fetchSocialLinks() {

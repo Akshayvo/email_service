@@ -29,6 +29,33 @@ export const contact = [
     }
 ];
 
+export const contacts = [
+    {
+        id: 0,
+        label: 'Facility Address:',
+        data: '10 South Main Street Arcanum, Ohio 45304',
+        class: 'fas fa-map-marker-alt mx-2 iconColor',
+        redirect: ''
+    },
+   
+    {
+        id: 1,
+        label: 'Email:',
+        data: 'Hokestorenlock@gmail.com',
+        class: 'fas fa-envelope mx-2 iconColor',
+        redirect: 'mailto:Hokestorenlock@gmail.com'
+    },
+    {
+        id: 2,
+        label: 'Phone:',
+        data: '(937) 733-4215',
+        class: 'fas fa-phone mx-2 iconColor',
+        redirect: 'tel:9377334215',
+    }
+];
+
+
+
 export const hours = [
     {
         label: 'Monday - Friday: ',
@@ -47,6 +74,7 @@ export const hours = [
         data: '24 Hours a Day, 7 Days a Week'
     }
 ];
+
 
 export const socialLinks = [
     {
