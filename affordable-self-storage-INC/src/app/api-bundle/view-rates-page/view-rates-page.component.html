@@ -3,10 +3,11 @@
     </div>
     <div [class.loader]="showLoader" class="loader-position"> 
     </div>
-    <p>Units of identical size with different pricing are priced based on convenience of their location. Carts are available for customers' use. </p><br>
-        <p>A reservation deposit is required to secure a unit. The reservation deposit will serve as the security deposit for the duration of the rental. It is refundable upon vacating in accordance with the terms in the rental agreement.</p><br>
+    <p>See below for our sizes and rates. Units of identical sizes with different rates are priced based on their convenience of location. Carts are available for customers' use inside the climate controlled buildings.</p><br>
+        <p>A reservation deposit is required to secure a unit. The reservation deposit will serve as the security deposit for the duration of the unit rental. The deposit is refundable upon vacating in accordance with the terms within the rental agreement. The minimum rental term is for one month.</p><br>
+        <p>Upon reserving a unit, we will contact you to discuss your storage unit rental.</p><br/>
         <div [class.display]="!showTable">
-        <h2 class="mt-4 mb-2 ">Regular Units</h2>
+        <h2 class="mt-4 mb-2 ">Standard Units</h2>
         <table  class="viewrates-desktop">
       <tHead [class.display]="!showTable">
           <tr>
@@ -42,7 +43,7 @@
           </ng-template>
           <ng-template #other_reserve>
             <td colspan="2" class="py-2 px-4 border">
-            <div class="text-center">Please call the facility to reserve a unit.</div>
+            <div class="text-center">please contact the facility to be added to the waiting list</div>
           </td>
           </ng-template>
           <ng-template #other_moveIn>
@@ -120,7 +121,7 @@
     </ng-template>
     <ng-template #other_reserve>
       <td colspan="2" class="py-2 px-4 border">
-      <div class="text-center">Please call the facility to reserve a unit.</div>
+      <div class="text-center">please contact the facility to be added to the waiting list</div>
     </td>
     </ng-template>
     <ng-template #other_moveIn>
