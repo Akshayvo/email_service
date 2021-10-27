@@ -2,7 +2,7 @@ import { objSIMSetting } from './configuration';
 
 export const dataViewRates = [
     {
-      p: `Dakota Self Storage is Rapid City's newest storage facility. We proudly serve Rapid City, Rapid Valley, Green Valley, and the surrounding communities with clean, affordable self storage units and vehicle parking spaces. As a locally owned business, we understand the value of customer service. That's why we go the extra mile every day to make your experience with us easy and enjoyable!`,
+      p: `Dakota Self Storage is Rapid City's newest storage facility. We are located on Valley Drive, just north of Menards. We proudly serve Rapid City, Rapid Valley, and the surrounding communities with clean, affordable self storage units and vehicle parking spaces. As a locally owned business, we understand the value of customer service. That's why we go the extra mile every day to make your experience with us easy and enjoyable!`,
     },
     {
       p: `Take a moment to review our available units and pricing, then rent your unit through our easy online application. Still have questions about our services? Give our friendly management team a call! We'll be happy to help!`
