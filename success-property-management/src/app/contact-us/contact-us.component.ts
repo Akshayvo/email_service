@@ -2,7 +2,7 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { EmailService } from '../services/email.service';
-import { contactsLocation1, hoursLocation1,
+import { contactsLocation1,contactsLocations1, hoursLocation1,
           contactsLocation2, hoursLocation2, contactsLocation3,
           hoursLocation3, hoursLocation4, contactsLocation4,
           hoursLocation5, contactsLocation5,
@@ -189,7 +189,7 @@ public fetchTwitter() {
   public fetchContactDetailsLocation1() {
     this.heading = `Success Property Management - PSI Mini Storage`;
     this.locationId = '1'
-    this.contactDetails = contactsLocation1;
+    this.contactDetails = contactsLocations1;
     this.hoursDetails = hoursLocation1AcessHours;
   }
   

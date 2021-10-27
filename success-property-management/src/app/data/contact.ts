@@ -76,6 +76,46 @@ export const contactsLocation1 = [
     },
 ];
 
+export const contactsLocations1 = [
+    {
+        id: 1,
+        label: 'Facility Address: ',
+        data: ' 854 Hedgesville Rd, Martinsburg, WV 25403',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/pLNEnYJN3RFWqNMD9'
+    },
+    {
+        id: 2,
+        label: 'Office Address: ',
+        data: ' 605 Baltimore St, Martinsburg, WV 25401',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/ZGensJTvKYhCiG9C8'
+    },
+    {
+        id: 3,
+        label: 'Email: ',
+        data: `ldfproperties@gmail.com`,
+        email: `ldfproperties@gmail.com`,
+        // data: `pragathi.n@codeparva.in`,
+        class: 'fas fa-envelope-open mr-2 iconColor',
+        redirect: 'mailto:ldfproperties@gmail.com'
+    },
+    {
+        id: 4,
+        label: 'Phone: ',
+        data: '(304) 263-3535',
+        class: 'fas fa-phone mr-2 iconColor',
+        redirect: 'tel:3042633535'
+    },
+    {
+        id: 5,
+        label: 'Billing Phone: ',
+        data: '(304) 261-0929',
+        class: 'fas fa-phone mr-2 iconColor',
+        redirect: 'tel:3042610929'
+    },
+];
+
 export const hoursLocation1 = [
     {
         label: 'Monday - Friday: ',
