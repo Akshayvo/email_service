@@ -28,32 +28,32 @@ export const tableHeaderContactUs = [
 export const tableData = [
   {
     facility: ' Confederate Way Location',
-    // address: '68 Confederate Way, Jasper, GA 30143', //location facillity address location office address is alos there
+    address: '68 Confederate Way, Jasper, GA 30143', //location facillity address location office address is alos there
     url: 'confederate/rent-sub/login'
   },
   {
-    facility: ' Refuge Road',
-    // address: '3225 Refuge Rd, Jasper, GA 30143',
+    facility: 'Refuge Road',
+    address: '225 Refuge Rd, Jasper, GA 30143',
     url: 'refuge/rent-sub/login'
   },
   {
     facility: 'Old Philadelphia',
-    // address: '1422 Talking Rock Rd, Jasper, GA 30143',
+    address: '365 Northside Drive Jasper, GA  30143',
     url: 'old-philadelphia/rent-sub/login'
   },
   {
     facility: 'N Main',
-    // address: '365 Northside Dr, Jasper, GA 30143',
+    address: '461 North Main Street  Jasper, GA  30143',
     url: 'n-main/rent-sub/login'
   },
   {
     facility: 'Talking Rock',
-    // address: '463 N Main St, Jasper, GA 30143',
+    address: '1422 Talking Rock Road  Jasper, GA 30143',
     url: 'talking-rock/rent-sub/login'
   },
   {
     facility: 'Campus Drive',
-    // address: '351 Campus Dr, Jasper, GA 30143',
+    address: '351 Campus Dr, Jasper, GA 30143',
     url: 'campus-drive/rent-sub/login'
   },
 ];

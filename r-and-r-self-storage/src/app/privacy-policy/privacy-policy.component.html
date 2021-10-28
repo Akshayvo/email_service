@@ -2,8 +2,9 @@
   <div class="container">
     <h1 class="py-5 text-center">Storage Plus of Baldwin County Privacy Policy</h1>
     <div class="bg-light">
-        <div *ngFor="let privacy of privacyPolicy">
-          {{privacy.content}}
+        <div *ngFor="let privacy of privacyPolicy" >
+          <p [innerHTML]= privacy.content></p>
+          <!-- {{privacy.content}} -->
           <ol>
             <li *ngFor="let list of privacy.list">{{list.li}}</li>
           </ol>
