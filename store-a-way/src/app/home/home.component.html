@@ -54,7 +54,7 @@
                   <ng-template #other_content>&nbsp;<h4>{{contact.data}}</h4></ng-template><br>
                 </span>
               </p>
-              <h4><b>Facility Hours:</b></h4>
+              <h4><b>Office Hours:</b></h4>
               <p>
                 <span class="display-contact" *ngFor="let hour of hours">
                   <h4><b>{{hour.label}}</b></h4>&nbsp;<h4>{{hour.data}}</h4><br>
@@ -78,7 +78,10 @@
         </div>
         <div class="col-lg-6 py-3">
           <h1 class="heading pb-4">{{aboutUsHeading}}</h1>
-          <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p>
+         <div class="justify" *ngFor="let data of aboutUs">
+          <p *ngIf="data.p"> {{data.p}} </p>
+          <h2 *ngIf="data.sh">{{data.sh}} </h2>
+          </div>
         </div>
       </div>
     </div>

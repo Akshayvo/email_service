@@ -24,8 +24,8 @@ export const contact = [
 
 export const hours = [
     {
-        label: 'No Office, ',
-        data: 'By Appointment Only'
+        label: 'No Office, By Appointment Only',
+        data: ''
     },
     // {
     //     label: 'Saturday: ',
@@ -36,7 +36,7 @@ export const hours = [
     //     data: 'CLOSED'
     // },
     {
-        label: 'Storage Access Hours: ',
+        label: 'Access Hours: ',
         data: '24 hours a day, 7 days a week'
     }
 ];

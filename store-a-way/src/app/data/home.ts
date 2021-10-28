@@ -36,7 +36,7 @@ export const aboutUs = [
         searching for a little extra elbow room around the home, office, or dorm.`,
     },
     {
-        p: `Location`,
+        sh: `Location`,
     },
     {
         p: `Our state of the art facility is conveniently located in the Madison Marketplace with easy access to 12B. 
@@ -45,7 +45,7 @@ export const aboutUs = [
         and the surrounding communities with both residential and commercial climate controlled storage.`,
     },
     {
-        p: `Convenience`,
+        sh: `Convenience`,
     },
     {
         p: `Store-A-Way was built with your convenience in mind. Start by checking out our live inventory and pricing, 
@@ -94,7 +94,7 @@ export const feature = [
 
 export const jumbotron = [
     {
-        h2: `Affordable Climate Controlled Self Storage & Parking in Hamilton`,
+        h2: `Affordable Climate Controlled Storage & Vehicle Parking in Hamilton`,
         blurb: `Store-A-Way is Hamilton's newest locally owned and operated self storage facility. We offer a 
         variety of climate controlled self storage unit sizes and outdoor vehicle parking. Our 24/7 facility access,
          reasonable rates, and easy online tenant portal make us Hamilton's premiere self storage facility.`,
