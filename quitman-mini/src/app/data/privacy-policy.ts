@@ -1,6 +1,6 @@
 export const privacyPolicy = [
   {
-    content: `This privacy notice discloses the privacy practices for "https://www.boxerstorage.com/".
+    content: `This privacy notice discloses the privacy practices for "https://quitmanministorage.com/".
     This privacy notice applies solely to information collected by this website. It will notify you of the following:`,
     list: [
         {
@@ -124,7 +124,7 @@ export const privacyPolicy = [
       }
     ],
     note: `If you feel that we are not abiding by this privacy policy, you should contact us immediately via telephone
-    at  <a href="tel:2316527853" style="color: #000;">(231) 652-7853</a> or via email at <a href="mailto:store@boxerstorage.com" style="color:#000;">store@boxerstorage.com</a>.`,
+    at  <a href="tel:5015893000" style="color: #000;">(501) 589-3000</a> or via email at <a href="mailto: rent@quitmanministorage.com" style="color:#000;"> rent@quitmanministorage.com</a>.`,
     // sharing: [
     //   {
     //     heading: `Sharing`
