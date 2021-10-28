@@ -55,9 +55,8 @@ export class PayRentComponent implements OnInit {
     this.name = 'Clifford South';
   } else if (this.router.url.includes('location5')) {
     this.name = 'Location5';
-  } else if (this.router.url.includes('robertsdale')) {
-    this.name = 'Robertsdale';
-  }
+  } 
+  
     if (!!localStorage.getItem('APIKey')) {
       this.dataSharingService.apiKey = localStorage.getItem('APIKey');
     }
@@ -81,9 +80,8 @@ export class PayRentComponent implements OnInit {
       this.og = ogPayRentPageLocation4;
     } else if (this.router.url.includes('location5')) {
       this.og = ogPayRentPageLocation5;
-    } else if (this.router.url.includes('robertsdale')) {
-      this.og = ogPayRentPageLocation6;
-    }
+    } 
+   
 }
 
 public fetchTwitter() {
@@ -97,9 +95,8 @@ public fetchTwitter() {
     this.twitter = twitterPayRentPageLocation4;
   } else if (this.router.url.includes('location5')) {
     this.twitter = twitterPayRentPageLocation5;
-  } else if (this.router.url.includes('robertsdale')) {
-    this.twitter = twitterPayRentPageLocation6;
-  }
+  } 
+ 
 }
 
   public fetchContactDetails() {

@@ -155,7 +155,7 @@ export const headingMoveInPageLocation4 = `Rent Your Unit at Clifford South`;
 
 export const headingReservePageLocation5 = `Ready to Reserve a Self Storage Unit in Woodland`;
 
-export const headingReservePageLocation6 = `Ready to Reserve a Self Storage Unit in Robertsdale`;
+export const headingReservePageLocation6 = ``;
 
 export const heading1 = `In-N-Out Storage - Commerce St`;
 
@@ -167,7 +167,7 @@ export const heading4 = `In-N-Out Storage - Clifford South`;
 
 export const heading5 = `In-N-Out Storage - Woodland`;
 
-export const heading6 = `In-N-Out Storage - Robertsdale`;
+export const heading6 = ``;
 
 export const unitSizerLocation1 = [
   {

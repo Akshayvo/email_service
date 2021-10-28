@@ -16,8 +16,8 @@ export const location4PageContent = `Check out the rates and availability at our
 export const location5PageTitle = `Woodland | In-N-Out Storage`;
 export const location5PageContent = `Check out the rates and availability at our Woodland location, then reserve or rent your unit online in minutes with our easy tenant portal.`;
 
-export const location6PageTitle = `Robertsdale | In-N-Out Storage`;
-export const location6PageContent = `Our Robertsdale location offers a number of regular and climate controlled self storage units, and all of our units are economically priced!`;
+export const location6PageTitle = ``;
+export const location6PageContent = ``;
 
 export const viewRatesPageTitle = ``;
 export const viewRatesPageContent = ``;

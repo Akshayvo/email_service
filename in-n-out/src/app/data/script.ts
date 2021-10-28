@@ -116,7 +116,7 @@ export const nameLocation2 = `In-N-Out Storage - Pleasantview`;
 export const nameLocation3 = `In-N-Out Storage - Clifford North`;
 export const nameLocation4 = `In-N-Out Storage - Clifford South`;
 export const nameLocation5 = `In-N-Out Storage - Woodland`;
-export const nameLocation6 = `In-N-Out Storage - Robertsdale`;
+export const nameLocation6 = `In-N-Out Storage - Robertsdale`; 
 
 export const location1 = `commerce-st`;
 export const location2 = `pleasantview`;
@@ -157,7 +157,7 @@ export const maplocation2 = "https://g.page/r/CT1A0QzwMwCHEBA";
 export const maplocation3 = "https://goo.gl/maps/j7GCwA4RkQYLnSLt5";
 export const maplocation4 = "https://g.page/r/CYgxbl0IyGw9EBA";
 export const maplocation5 = "https://goo.gl/maps/94N2FoaiiRfMWkC19";
-export const maplocation6 = "https://goo.gl/maps/kt1bhA6aHeRmjXsN7";
+export const maplocation6 = "https://goo.gl/maps/kt1bhA6aHeRmjXsN7"; 
 
 export const addressLoaction1 = {
   "@type": "PostalAddress",
@@ -214,33 +214,33 @@ export const addressLoaction6 = {
 };
 
 export const imageLocation1 = [
-  // 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-foley11.jpg',
-  // 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-foley196.jpg',
-  // 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-foley43.jpg'
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/IN_N_OUT/jpg/in-n-out-commerce-11.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/IN_N_OUT/jpg/in-n-out-commerce-169.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/IN_N_OUT/jpg/in-n-out-commerce-43.jpg'
 ];
 
 export const imageLocation2 = [
-  // 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-pleasantview-11.jpg',
-  // 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-pleasantview-169.jpg',
-  // 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-pleasantview-43.jpg'
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/IN_N_OUT/jpg/in-n-out-pleasantviewmain-11.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/IN_N_OUT/jpg/in-n-out-pleasantviewmain-169.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/IN_N_OUT/jpg/in-n-out-pleasantviewmain-43.jpg'
 ];
 
 export const imageLocation3 = [
-  // 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-11.jpg',
-  // 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-169.jpg',
-  // 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-43.jpg'
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/IN_N_OUT/jpg/in-n-out-storage-clifford-north-11.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/IN_N_OUT/jpg/in-n-out-storage-clifford-north-169.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/IN_N_OUT/jpg/in-n-out-storage-clifford-north-43.jpg'
 ];
 
 export const imageLocation4 = [
-  // 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-clifford-south-11.jpg',
-  // 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-clifford-south-169.jpg',
-  // 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-clifford-south-43.jpg'
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/IN_N_OUT/jpg/in-n-out-storage-clifford-north-11.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/IN_N_OUT/jpg/in-n-out-storage-clifford-north-169.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/IN_N_OUT/jpg/in-n-out-storage-clifford-north-43.jpg'
 ];
 
 export const imageLocation5 = [
-  // 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-clifford-south-11.jpg',
-  // 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-clifford-south-169.jpg',
-  // 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-clifford-south-43.jpg'
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/IN_N_OUT/jpg/in-n-out-woodland-11.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/IN_N_OUT/jpg/in-n-out-woodland-169.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/IN_N_OUT/jpg/in-n-out-woodland-43.jpg'
 ];
 
 export const imageLocation6 = [
@@ -310,18 +310,18 @@ export const homePageScript = [
     openingHours: [],
     url: urlLocation5,
   },
-  {
-    "@context": "http://schema.org",
-    "@type": ["LocalBusiness", "SelfStorage"],
-    name: nameLocation6,
-    image: imageLocation6,
-    telephone: contactsLocation6[contactIndex6].data,
-    email: contactsLocation6[emailIndex6].data,
-    address: addressLoaction6,
-    priceRange: "$40 - $110",
-    openingHours: [],
-    url: urlLocation6,
-  },
+  // {
+  //   "@context": "http://schema.org",
+  //   "@type": ["LocalBusiness", "SelfStorage"],
+  //   name: nameLocation6,
+  //   image: imageLocation6,
+  //   telephone: contactsLocation6[contactIndex6].data,
+  //   email: contactsLocation6[emailIndex6].data,
+  //   address: addressLoaction6,
+  //   priceRange: "$40 - $110",
+  //   openingHours: [],
+  //   url: urlLocation6,
+  // },
 ];
 
 export const Location1Script = {
@@ -332,12 +332,12 @@ export const Location1Script = {
   name: nameLocation1,
   description: description1 || location1PageContent,
   address: addressLoaction1,
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.7",
-    bestRating: "5",
-    reviewCount: "3",
-  },
+  // aggregateRating: {
+  //   "@type": "AggregateRating",
+  //   ratingValue: "4.7",
+  //   bestRating: "5",
+  //   reviewCount: "3",
+  // },
   geo: {
     "@type": "GeoCoordinates",
     latitude: 30.4089297,
@@ -368,12 +368,12 @@ export const Location2Script = {
   name: nameLocation2,
   description: description2 || location2PageContent,
   address: addressLoaction2,
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.7",
-    bestRating: "5",
-    reviewCount: "12",
-  },
+  // aggregateRating: {
+  //   "@type": "AggregateRating",
+  //   ratingValue: "4.7",
+  //   bestRating: "5",
+  //   reviewCount: "12",
+  // },
   geo: {
     "@type": "GeoCoordinates",
     latitude: 30.5445247,
@@ -404,12 +404,12 @@ export const Location3Script = {
   name: nameLocation3,
   description: description3 || location3PageContent,
   address: addressLoaction3,
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "5",
-    bestRating: "5",
-    reviewCount: "",
-  },
+  // aggregateRating: {
+  //   "@type": "AggregateRating",
+  //   ratingValue: "5",
+  //   bestRating: "5",
+  //   reviewCount: "",
+  // },
   geo: {
     "@type": "GeoCoordinates",
     latitude: 30.4222526,
@@ -439,12 +439,12 @@ export const Location4Script = {
   name: nameLocation4,
   description: description4 || location4PageContent,
   address: addressLoaction4,
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "5",
-    bestRating: "5",
-    reviewCount: "",
-  },
+  // aggregateRating: {
+  //   "@type": "AggregateRating",
+  //   ratingValue: "5",
+  //   bestRating: "5",
+  //   reviewCount: "",
+  // },
   geo: {
     "@type": "GeoCoordinates",
     latitude: 30.607304,
@@ -475,12 +475,12 @@ export const Location5Script = {
   name: nameLocation5,
   description: description5 || location5PageContent,
   address: addressLoaction5,
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4",
-    bestRating: "5",
-    reviewCount: "9",
-  },
+  // aggregateRating: {
+  //   "@type": "AggregateRating",
+  //   ratingValue: "4",
+  //   bestRating: "5",
+  //   reviewCount: "9",
+  // },
   geo: {
     "@type": "GeoCoordinates",
     latitude: 30.5345495,
@@ -502,40 +502,40 @@ export const Location5Script = {
   acceptsReservations: "True",
 };
 
-export const Location6Script = {
-  "@context": "https://schema.org",
-  "@type": "SelfStorage",
-  image: imageLocation6,
-  "@id": environment.websiteUrl,
-  name: nameLocation6,
-  description: description6 || location6PageContent,
-  address: addressLoaction6,
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.6",
-    bestRating: "5",
-    reviewCount: "10",
-  },
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: 30.5639016,
-    longitude: -87.6814587,
-  },
-  url: urlLocation6,
-  telephone: contactsLocation6[contactIndex6].data,
+// export const Location6Script = {
+//   "@context": "https://schema.org",
+//   "@type": "SelfStorage",
+//   image: imageLocation6,
+//   "@id": environment.websiteUrl,
+//   name: nameLocation6,
+//   description: description6 || location6PageContent,
+//   address: addressLoaction6,
+//   aggregateRating: {
+//     "@type": "AggregateRating",
+//     ratingValue: "4.6",
+//     bestRating: "5",
+//     reviewCount: "10",
+//   },
+//   geo: {
+//     "@type": "GeoCoordinates",
+//     latitude: 30.5639016,
+//     longitude: -87.6814587,
+//   },
+//   url: urlLocation6,
+//   telephone: contactsLocation6[contactIndex6].data,
 
-  priceRange: "$40 - $115",
-  openingHours: [],
-  currenciesAccepted: "USD",
-  paymentAccepted: "Cash, Check, Credit Card, Debit Card",
-  areaServed: {
-    "@type": "State",
-    name: "New York",
-  },
-  hasMap: maplocation6,
+//   priceRange: "$40 - $115",
+//   openingHours: [],
+//   currenciesAccepted: "USD",
+//   paymentAccepted: "Cash, Check, Credit Card, Debit Card",
+//   areaServed: {
+//     "@type": "State",
+//     name: "New York",
+//   },
+//   hasMap: maplocation6,
 
-  acceptsReservations: "True",
-};
+//   acceptsReservations: "True",
+// };
 
 export const contactPageLocation1Script = {
   "@context": "http://schema.org",
@@ -652,28 +652,28 @@ export const contactPageLocation5Script = {
   sameAs: ["", "", ""],
 };
 
-export const contactPageLocation6Script = {
-  "@context": "http://schema.org",
-  "@type": "Selfstorage",
-  name: nameLocation6,
-  address: addressLoaction6,
-  url: urlLocation6,
-  image: imageLocation6,
-  contactPoint: [
-    {
-      "@type": "ContactPoint",
-      telephone: contactsLocation6[contactIndex6].data,
-      contactType: "reservations",
-    },
-    {
-      "@type": "ContactPoint",
-      telephone: contactsLocation6[contactIndex6].data,
-      contactType: "customer service",
-    },
-  ],
-  email: contactsLocation6[emailIndex6].data,
-  sameAs: ["", "", ""],
-};
+// export const contactPageLocation6Script = {
+//   "@context": "http://schema.org",
+//   "@type": "Selfstorage",
+//   name: nameLocation6,
+//   address: addressLoaction6,
+//   url: urlLocation6,
+//   image: imageLocation6,
+//   contactPoint: [
+//     {
+//       "@type": "ContactPoint",
+//       telephone: contactsLocation6[contactIndex6].data,
+//       contactType: "reservations",
+//     },
+//     {
+//       "@type": "ContactPoint",
+//       telephone: contactsLocation6[contactIndex6].data,
+//       contactType: "customer service",
+//     },
+//   ],
+//   email: contactsLocation6[emailIndex6].data,
+//   sameAs: ["", "", ""],
+// };
 
 export const ogHomePage = [
   {

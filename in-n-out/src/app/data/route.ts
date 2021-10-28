@@ -386,54 +386,7 @@ export const apiRoutes = [
     resolve: { data: AppResolver },
   },
 
-  {
-    path: `${environment.locationName}/robertsdale`,
-    component: LocationComponent,
-    children: [
-      { path: "", redirectTo: "storage-units", pathMatch: "full" },
-      { path: "storage-units", component: ViewRatesComponent },
-      { path: "unit-sizer", component: UnitSizerComponent },
-      {
-        path: "reserve-unit",
-        component: ReserveComponent,
-        children: [
-          { path: "", component: ReserveUnitFormComponent },
-          // { path: 'reserve', component: ReserveUnitFormComponent },
-          // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
-          { path: "confirmation", component: ConfirmationDataComponent },
-          { path: "payReservationCharges", component: PayRentFormComponent },
-          { path: "payMoveInCharges", component: PayRentFormComponent },
-          {
-            path: "thank-you",
-            component: ThankYouComponent,
-            canActivate: [ThankYouGuard],
-          },
-        ],
-      },
-      {
-        path: "move-in",
-        component: ReserveComponent,
-        children: [
-          { path: "", component: ViewRatesPageComponent },
-          // { path: '', component: ReserveUnitFormComponent },
-          // { path: 'move-in', component: ReserveUnitFormComponent },
-          // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
-          { path: "confirmation", component: ConfirmationDataComponent },
-          { path: "payReservationCharges", component: PayRentFormComponent },
-          { path: "payMoveInCharges", component: PayRentFormComponent },
-          {
-            path: "thank-you",
-            component: ThankYouComponent,
-            canActivate: [ThankYouGuard],
-          },
-        ],
-      },
-      // { path: 'photos', component: PhotosComponent },
-      { path: "about", component: AboutUsComponent },
-      { path: "directions", component: DirectionsComponent },
-    ],
-    resolve: { data: AppResolver },
-  },
+  
   {
     path: "review/commerce-st",
     component: HomeComponent,
@@ -484,16 +437,7 @@ export const apiRoutes = [
       externalUrl: "",
     },
   },
-  {
-    path: "review/robertsdale",
-    component: HomeComponent,
-    resolve: {
-      url: "externalUrlRedirectResolver",
-    },
-    data: {
-      externalUrl: "",
-    },
-  },
+  
   { path: "error", component: ErrorHandlerComponent },
   { path: "pay-rent", component: PaymentComponent },
   {
@@ -521,11 +465,7 @@ export const apiRoutes = [
     component: PayRentComponent,
     children: childroute,
   },
-  {
-    path: "pay-rent/robertsdale",
-    component: PayRentComponent,
-    children: childroute,
-  },
+  
   {
     path: `${environment.locationName}/trailer-rental`,
     component: StorageTipsComponent,
@@ -546,7 +486,7 @@ export const apiRoutes = [
   { path: "contact-clifford-north", component: ContactUsComponent },
   { path: "contact-clifford-south", component: ContactUsComponent },
   { path: "contact-woodland", component: ContactUsComponent },
-  { path: "contact-robertsdale", component: ContactUsComponent },
+  
   { path: "**", component: ErrorComponent },
   {
     path: `${environment.locationName}/trailer-rental`,
@@ -627,18 +567,7 @@ export const iFrameRoutes = [
       { path: "directions", component: DirectionsComponent },
     ],
   },
-  {
-    path: `${environment.locationName}/robertsdale`,
-    component: LocationComponent,
-    children: [
-      { path: "", redirectTo: "storage-units", pathMatch: "full" },
-      { path: "storage-units", component: StorageUnitComponent },
-      { path: "unit-sizer", component: UnitSizerComponent },
-      { path: "reserve-unit", component: ReserveUnitComponent },
-      { path: "about", component: AboutUsComponent },
-      { path: "directions", component: DirectionsComponent },
-    ],
-  },
+  
   {
     path: "review/commerce-st",
     component: HomeComponent,
@@ -689,16 +618,7 @@ export const iFrameRoutes = [
       externalUrl: "",
     },
   },
-  {
-    path: "review/robertsdale",
-    component: HomeComponent,
-    resolve: {
-      url: "externalUrlRedirectResolver",
-    },
-    data: {
-      externalUrl: "",
-    },
-  },
+ 
   { path: "error", component: ErrorHandlerComponent },
   { path: "pay-rent", component: PaymentIframeComponent },
   { path: "pay-rent-commerce-st", component: PayRentFloridaComponent },
@@ -706,7 +626,7 @@ export const iFrameRoutes = [
   { path: "pay-rent-clifford-north", component: PayRentMontgomeryComponent },
   { path: "pay-rent-clifford-south", component: PayRentMiddletownComponent },
   { path: "pay-rent-location5", component: PayRentMontgomeryComponent },
-  { path: "pay-rent-robertsdale", component: PayRentMiddletownComponent },
+
   {
     path: `${environment.locationName}/trailer-rental`,
     component: StorageTipsComponent,

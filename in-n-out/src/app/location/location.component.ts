@@ -37,7 +37,7 @@ import {
   Location3Script,
   Location4Script,
   Location5Script,
-  Location6Script,
+  // Location6Script,
   ogLocation1,
   ogLocation2,
   ogLocation3,
@@ -281,34 +281,8 @@ export class LocationComponent implements OnInit {
           content: element.content,
         });
       });
-    } else if (
-      this.router.url.includes(`${environment.locationName}/robertsdale`)
-    ) {
-      this.meta.addTag({
-        name: "description",
-        content: `${this.location6PageContent}`,
-      });
-      this.titleService.setTitle(`${this.location6PageTitle}`);
-      this.locationName = `In-N-Out Storage - Robertsdale`;
-      this.dataSharingService.apiKey =
-        this.dataSharingService.locationAPIKey.loc6;
-      this.dataSharingService.locationName = this.locationName;
-      this.script = Location6Script;
-      this.loadScript();
-      this.og.forEach((element) => {
-        this.meta.addTag({
-          property: element.property,
-          content: element.content,
-        });
-      });
-
-      this.twitter.forEach((element) => {
-        this.meta.addTag({
-          name: element.name,
-          content: element.content,
-        });
-      });
-    }
+    } 
+   
   }
 
   ngOnInit() {
@@ -370,11 +344,8 @@ export class LocationComponent implements OnInit {
       this.router.url.includes(`${environment.locationName}/woodland`)
     ) {
       this.og = ogLocation5;
-    } else if (
-      this.router.url.includes(`${environment.locationName}/robertsdale`)
-    ) {
-      this.og = ogLocation6;
-    }
+    } 
+  
   }
 
   public fetchTwitter() {
@@ -396,11 +367,8 @@ export class LocationComponent implements OnInit {
       this.router.url.includes(`${environment.locationName}/woodland`)
     ) {
       this.twitter = twitterLocation5;
-    } else if (
-      this.router.url.includes(`${environment.locationName}/robertsdale`)
-    ) {
-      this.twitter = twitterLocation6;
-    }
+    } 
+    
   }
 
   public isSomePage() {
@@ -422,11 +390,8 @@ export class LocationComponent implements OnInit {
       this.router.url.includes(`${environment.locationName}/woodland`)
     ) {
       this.fetchDetailsLocation5();
-    } else if (
-      this.router.url.includes(`${environment.locationName}/robertsdale`)
-    ) {
-      this.fetchDetailsLocation6();
-    }
+    } 
+   
   }
 
   public navigateToReserve() {
@@ -450,11 +415,8 @@ export class LocationComponent implements OnInit {
       this.router.navigate([
         `${environment.locationName}/woodland/reserve-unit`,
       ]);
-    } else if (this.locationId === 6) {
-      this.router.navigate([
-        `${environment.locationName}/robertsdale/reserve-unit`,
-      ]);
-    }
+    } 
+    
   }
 
   public fetchDetailsLocation1() {

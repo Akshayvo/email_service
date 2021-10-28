@@ -148,9 +148,10 @@ export class ContactComponent implements OnInit {
       this.fetchContactDetailsLocation4();
     } else if (this.locationId === "5") {
       this.fetchContactDetailsLocation5();
-    } else if (this.locationId === "6") {
-      this.fetchContactDetailsLocation6();
-    }
+    } 
+    // else if (this.locationId === "6") {
+    //   this.fetchContactDetailsLocation6();
+    // }
   }
 
   public fetchTableData() {
@@ -191,11 +192,7 @@ export class ContactComponent implements OnInit {
     this.hoursDetails = hoursLocation5;
   }
 
-  public fetchContactDetailsLocation6() {
-    this.heading = `In-N-Out Storage - Robertsdale`;
-    this.contactDetails = contactsLocation6;
-    this.hoursDetails = hoursLocation6;
-  }
+ 
 
   onSubmit() {
     this.submitted = true;

@@ -201,17 +201,8 @@ export class LoginComponent implements OnInit, OnDestroy {
         "APIKey",
         this.dataSharingService.locationAPIKey.loc5
       );
-    } else if (this.router.url.includes("robertsdale")) {
-      this.id = 6;
-      this.name = "In-N-Out Storage - Robertsdale";
-      this.contact = contactsLocation6;
-      this.dataSharingService.apiKey =
-        this.dataSharingService.locationAPIKey.loc6;
-      localStorage.setItem(
-        "APIKey",
-        this.dataSharingService.locationAPIKey.loc6
-      );
-    }
+    } 
+   
   }
 
   public navigate(location: any) {
@@ -235,9 +226,8 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.og = ogPayRentPageLocation4;
     } else if (this.router.url.includes("location5")) {
       this.og = ogPayRentPageLocation5;
-    } else if (this.router.url.includes("robertsdale")) {
-      this.og = ogPayRentPageLocation6;
-    }
+    } 
+    
   }
 
   public fetchTwitter() {
@@ -251,9 +241,8 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.twitter = twitterPayRentPageLocation4;
     } else if (this.router.url.includes("location5")) {
       this.twitter = twitterPayRentPageLocation5;
-    } else if (this.router.url.includes("robertsdale")) {
-      this.twitter = twitterPayRentPageLocation6;
-    }
+    } 
+   
   }
 
   handleForgotPassword() {

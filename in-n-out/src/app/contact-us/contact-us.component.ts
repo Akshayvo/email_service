@@ -143,9 +143,8 @@ export class ContactUsComponent implements OnInit {
       this.og = ogContactPageLocation4;
     } else if (this.router.url.includes("woodland")) {
       this.og = ogContactPageLocation5;
-    } else if (this.router.url.includes("robertsdale")) {
-      this.og = ogContactPageLocation6;
-    }
+    } 
+   
   }
 
   public fetchMetaData() {
@@ -164,9 +163,8 @@ export class ContactUsComponent implements OnInit {
       this.twitter = twitterContactPageLocation4;
     } else if (this.router.url.includes("woodland")) {
       this.twitter = twitterContactPageLocation5;
-    } else if (this.router.url.includes("robertsdale")) {
-      this.twitter = twitterContactPageLocation6;
-    }
+    } 
+   
   }
 
   public loadScript() {
@@ -211,9 +209,8 @@ export class ContactUsComponent implements OnInit {
       this.fetchContactDetailsLocation4();
     } else if (this.router.url.includes("woodland")) {
       this.fetchContactDetailsLocation5();
-    } else if (this.router.url.includes("robertsdale")) {
-      this.fetchContactDetailsLocation6();
-    }
+    } 
+    
   }
 
   public fetchContactDetailsLocation1() {
@@ -251,12 +248,7 @@ export class ContactUsComponent implements OnInit {
     this.hoursDetails = hoursLocation5;
   }
 
-  public fetchContactDetailsLocation6() {
-    this.heading = `In-N-Out Storage - Robertsdale`;
-    this.locationId = "6";
-    this.contactDetails = contactsLocation6;
-    this.hoursDetails = hoursLocation6;
-  }
+  
 
   onSubmit() {
     this.submitted = true;

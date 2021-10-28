@@ -36,11 +36,7 @@ export const navLinks = [
         label: "Woodland",
         path: `${environment.locationName}/woodland`,
       },
-      // {
-      //     id: '6',
-      //     label: 'Robertsdale',
-      //     path: `${environment.locationName}/robertsdale`,
-      // },
+      
     ],
   },
   {
