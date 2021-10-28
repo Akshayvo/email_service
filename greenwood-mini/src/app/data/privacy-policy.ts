@@ -1,6 +1,6 @@
 export const privacyPolicy = [
   {
-    content: `This privacy notice discloses the privacy practices for "https://www.boxerstorage.com/".
+    content: `This privacy notice discloses the privacy practices for "https://gwoodstorage.com".
     This privacy notice applies solely to information collected by this website. It will notify you of the following:`,
     list: [
         {
@@ -124,7 +124,7 @@ export const privacyPolicy = [
       }
     ],
     note: `If you feel that we are not abiding by this privacy policy, you should contact us immediately via telephone
-    at  <a href="tel:2316527853" style="color: #000;">(231) 652-7853</a> or via email at <a href="mailto:store@boxerstorage.com" style="color:#000;">store@boxerstorage.com</a>.`,
+    at  <a href="tel:6624533314" style="color: #000;">(662) 453-3314</a> or via email at <a href="mailto:angiemax@yahoo.com" style="color:#000;">angiemax@yahoo.com</a>.`,
     // sharing: [
     //   {
     //     heading: `Sharing`
