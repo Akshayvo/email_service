@@ -124,7 +124,7 @@ export const privacyPolicy = [
       }
     ],
     note: `If you feel that we are not abiding by this privacy policy, you should contact us immediately via telephone
-    at  <a href="tel:2519703168" style="color: #000;">(251) 970-3168</a> or via email at <a href="mailto:admin@pznh.net" style="color:#000;">admin@pznh.net</a>.`,
+    at  <a href="tel:6035695818" style="color: #000;">(603) 569-5818</a> or via email at <a href="mailto:admin@pznh.net" style="color:#000;">admin@pznh.net</a>.`,
     // sharing: [
     //   {
     //     heading: `Sharing`
