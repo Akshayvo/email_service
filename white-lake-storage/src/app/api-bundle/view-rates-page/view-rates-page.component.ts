@@ -10,7 +10,7 @@ import { MoveInService } from "../services/moveIn.service";
 import { ObjCharges } from "../models/movein";
 import { UnitTypes, LstUnitTypes } from "../models/unittypes";
 import { FetchDataService } from "../services/fetch-data.service";
-import { th } from "../../data/view-rates";
+import { th ,th1} from "../../data/view-rates";
 import { Router } from "@angular/router";
 import { DataSharingService } from "../services/data-sharing.service";
 import { environment } from "../../../environments/environment";
@@ -64,6 +64,9 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   state: string;
 
   private getDataSubscribe$: Subscription;
+  availableLstUnitTypes: LstUnitTypes[];
+  regularUnitTypes: LstUnitTypes[];
+  th1: { id: string; data: string; state: boolean; }[];
   constructor(
     private getMoveinChargesService: MoveInService,
     private fetchDataService: FetchDataService,
@@ -82,6 +85,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
 
   public fetchThData() {
     this.th = th.filter((x) => x.state === true);
+    this.th1 = th1.filter((x) => x.state === true);
     this.showRate = objSIMSetting.objUnitSizesSetting.blnShowRate;
     this.showDeposit = objSIMSetting.objUnitSizesSetting.blnShowDeposit;
     this.showSetUpFee = objSIMSetting.objUnitSizesSetting.blnShowSetupFee;
@@ -149,6 +153,8 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
         console.log(unitTypesResponse.lstUnitTypes);
         this.showTable = true;
         this.LstUnitTypes = unitTypesResponse.lstUnitTypes;
+        this.regularUnitTypes = this.LstUnitTypes.filter(x => x.IsOutdoor === false);
+        this.availableLstUnitTypes = this.LstUnitTypes.filter(x => x.IsOutdoor === true);
       });
   }
 
