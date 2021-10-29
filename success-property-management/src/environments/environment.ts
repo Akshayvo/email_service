@@ -17,7 +17,7 @@ export const environment = {
   facilityName: 'Success Property Management',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: `https://success-management-staging.netlify.app`
+  websiteUrl: `https://spmstorageunits.com`
 };
 
 /*

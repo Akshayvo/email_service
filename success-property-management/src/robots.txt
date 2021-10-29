@@ -1,5 +1,5 @@
 # www.robotstxt.org/
 # Allow crawling of all content
-Sitemap: https://success-management-staging.netlify.app/sitemap.xml
+Sitemap: https://spmstorageunits.com/sitemap.xml
 User-agent: *
 Disallow:/privacy-policy
