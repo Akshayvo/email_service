@@ -110,7 +110,7 @@
   transform: skew(0deg);
   width: 500px;
   position: absolute;
-  top: 30%;
+  top: 18%; //30%
 
   .btn-outline-primary {
     margin-right: 10px;
@@ -130,6 +130,7 @@
   }
 
   .jumbotorn-skew-text {
+   
     a {
       font-size: 1rem;
     }
@@ -228,8 +229,9 @@
 
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
   .jumbotorn-skew-text {
+    left:14px;
     width: 444px;
-
+    
     a {
       font-size: 1rem;
     }
@@ -258,8 +260,8 @@
   }
 
   .jumbotorn-skew-text {
-    top: 25%;
-
+    
+    top: 17%;
     .disp {
       h2 {
         font-size: 2rem;
@@ -364,6 +366,7 @@
   }
 
   .jumbotorn-skew-text {
+    left:14px;
     width: 410px;
 
     a {

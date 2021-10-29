@@ -13,8 +13,9 @@ export const featuresList = [
   },
   {
     td1: "Affordable Rates",
-    td2: "Security Cameras Coming Soon!",
+    td2: "Security Cameras",
   },
+  
 ];
 
 export const aboutUsAlt = `indoor climate controlled storage units with roll-up doors inside of a clean, well-lit building`;
