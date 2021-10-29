@@ -9,10 +9,10 @@ export const contactsHomePage = [
     {
         id: 2,
         label: 'Email: ',
-        email: 'akshay.o@codeparva.in',
-        data: `akshay.o@codeparva.in`,
+        email: 'andy@wallenpaupackselfstorage.com',
+        data: `andy@wallenpaupackselfstorage.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:akshay.o@codeparva.in'
+        redirect: 'mailto:andy@wallenpaupackselfstorage.com'
     },
     // {
     //     id: 3,
@@ -68,18 +68,18 @@ export const contactsLocation1 = [
     },
     {
         id: 2,
+        label: 'Email: ',
+        email: 'andy@wallenpaupackselfstorage.com',
+        data: `andy@wallenpaupackselfstorage.com`,
+        class: 'fas fa-envelope-open mr-2 iconColor',
+        redirect: 'mailto:andy@wallenpaupackselfstorage.com'
+    },
+    {
+        id: 3,
         label: 'Facility Address: ',
         data: '116 Ehrgood Rd, Greentown, PA 18426',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: 'https://goo.gl/maps/qQ3uAvaGjHbfer5J9'
-    },
-    {
-        id: 3,
-        label: 'Email: ',
-        email: 'akshay.o@codeparva.in',
-        data: `akshay.o@codeparva.in`,
-        class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:akshay.o@codeparva.in'
     },
     {
         id: 4,
@@ -150,19 +150,20 @@ export const contactsLocation2 = [
     },
     {
         id: 2,
+        label: 'Email: ',
+        data: 'andy@wallenpaupackselfstorage.com',
+        email: `andy@wallenpaupackselfstorage.com`,
+        class: 'fas fa-envelope-open mr-2 iconColor',
+        redirect: 'mailto:andy@wallenpaupackselfstorage.com'
+    },
+    {
+        id: 3,
         label: 'Facility Address: ',
         data: '80 Miller Rd, Lake Ariel, PA 18436',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: 'https://goo.gl/maps/Sk3d1U3orZAmZjcQ7'
     },
-    {
-        id: 3,
-        label: 'Email: ',
-        data: 'akshay.o@codeparva.in',
-        email: `akshay.o@codeparva.in`,
-        class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:akshay.o@codeparva.in'
-    },
+    
     {
         id: 4,
         label: 'Phone: ',
@@ -204,18 +205,18 @@ export const contactsLocation3 = [
     },
     {
         id: 2,
+        label: 'Email: ',
+        data: 'andy@wallenpaupackselfstorage.com',
+        email: `andy@wallenpaupackselfstorage.com`,
+        class: 'fas fa-envelope-open mr-2 iconColor',
+        redirect: 'mailto:andy@wallenpaupackselfstorage.com'
+    },
+    {
+        id: 3,
         label: 'Facility Address: ',
         data: '54 Texas Palmyra Hwy, Hawley, PA 18428',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: 'https://goo.gl/maps/jnSFyA6ivmkt1LEE6'
-    },
-    {
-        id: 3,
-        label: 'Email: ',
-        data: 'akshay.o@codeparva.in',
-        email: `akshay.o@codeparva.in`,
-        class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:akshay.o@codeparva.in'
     },
     {
         id: 4,
@@ -252,10 +253,10 @@ export const contactsLocation4 = [
     {
         id: 2,
         label: 'Email: ',
-        data: 'akshay.o@codeparva.in',
-        email: `akshay.o@codeparva.in`,
+        data: 'andy@wallenpaupackselfstorage.com',
+        email: `andy@wallenpaupackselfstorage.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:akshay.o@codeparva.in'
+        redirect: 'mailto:andy@wallenpaupackselfstorage.com'
     },
     {
         id: 3,
