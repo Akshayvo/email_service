@@ -9,10 +9,10 @@ export const contactsHomePage = [
     {
         id: 2,
         label: 'Email: ',
-        email: 'andy@wallenpaupackselfstorage.com',
-        data: `andy@wallenpaupackselfstorage.com`,
+        email: 'akshay.o@codeparva.in',
+        data: `akshay.o@codeparva.in`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:andy@wallenpaupackselfstorage.com'
+        redirect: 'mailto:akshay.o@codeparva.in'
     },
     // {
     //     id: 3,
@@ -76,10 +76,10 @@ export const contactsLocation1 = [
     {
         id: 3,
         label: 'Email: ',
-        email: 'andy@wallenpaupackselfstorage.com',
-        data: `andy@wallenpaupackselfstorage.com`,
+        email: 'akshay.o@codeparva.in',
+        data: `akshay.o@codeparva.in`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:andy@wallenpaupackselfstorage.com'
+        redirect: 'mailto:akshay.o@codeparva.in'
     },
     {
         id: 4,
@@ -158,10 +158,10 @@ export const contactsLocation2 = [
     {
         id: 3,
         label: 'Email: ',
-        data: 'andy@wallenpaupackselfstorage.com',
-        email: `andy@wallenpaupackselfstorage.com`,
+        data: 'akshay.o@codeparva.in',
+        email: `akshay.o@codeparva.in`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:andy@wallenpaupackselfstorage.com'
+        redirect: 'mailto:akshay.o@codeparva.in'
     },
     {
         id: 4,
@@ -212,10 +212,10 @@ export const contactsLocation3 = [
     {
         id: 3,
         label: 'Email: ',
-        data: 'andy@wallenpaupackselfstorage.com',
-        email: `andy@wallenpaupackselfstorage.com`,
+        data: 'akshay.o@codeparva.in',
+        email: `akshay.o@codeparva.in`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:andy@wallenpaupackselfstorage.com'
+        redirect: 'mailto:akshay.o@codeparva.in'
     },
     {
         id: 4,
@@ -252,10 +252,10 @@ export const contactsLocation4 = [
     {
         id: 2,
         label: 'Email: ',
-        data: 'andy@wallenpaupackselfstorage.com',
-        email: `andy@wallenpaupackselfstorage.com`,
+        data: 'akshay.o@codeparva.in',
+        email: `akshay.o@codeparva.in`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:andy@wallenpaupackselfstorage.com'
+        redirect: 'mailto:akshay.o@codeparva.in'
     },
     {
         id: 3,

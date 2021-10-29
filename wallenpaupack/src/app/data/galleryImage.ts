@@ -37,10 +37,10 @@ export const galleryHome = [
   {
     // tslint:disable-next-line: max-line-length
     // url: `100_9816`,
-    url: `wallenpaupack-self-storage-jumbotron`,
+    url: `wallenpaupack-self-storage-homepage`,
     // tslint:disable-next-line:max-line-length
     // thumb: `100_9816-thumb`,
-    thumb: `wallenpaupack-self-storage-jumbotron-thumb`,
+    thumb: `wallenpaupack-self-storage-homepage-thumb`,
     alt: `three row of metal self storage units with windows across the front of the building `
   },
   {
@@ -132,10 +132,10 @@ export const  galleryLakeVille = [
   {
     // tslint:disable-next-line: max-line-length
     // url: `100_9816`,
-    url: `wallenpaupack-self-storage-jumbotron`,
+    url: `wallenpaupack-self-storage-homepage`,
     // tslint:disable-next-line:max-line-length
     // thumb: `100_9816-thumb`,
-    thumb: `wallenpaupack-self-storage-jumbotron-thumb`,
+    thumb: `wallenpaupack-self-storage-homepage-thumb`,
     alt: `three row of metal self storage units with windows across the front of the building `
   },
   {
