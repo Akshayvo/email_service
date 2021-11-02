@@ -14,6 +14,8 @@
   }
 }
 
+
+
 .jumbotron-top {
   background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/AllSpace_Images/all-space-indoor-units.jpg");
   background-position: center;
@@ -22,6 +24,13 @@
   height: 80vh;
 }
 
+.info-bar{
+  background-color: red;
+  width: 100%;
+  padding: 15px;
+  font-size: 20px;
+  color: white;
+}
 .service {
   color: $dark;
   text-align: left;
