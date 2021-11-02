@@ -17,7 +17,8 @@ export const environment = {
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   cards: ['Visa', 'Master Card', 'Amex', 'Discover', 'test'],
   websiteUrl: '',
-  APIKey: `dzJ0OVc0SjYqMk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29462
+  // APIKey: `dzJ0OVc0SjYqMk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29462
+  APIKey: `dzJ0OFc4SjIqN046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O` // 28827
 };
 /*
  * For easier debugging in development mode, you can import the following file
