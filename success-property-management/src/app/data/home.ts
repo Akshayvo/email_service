@@ -201,7 +201,7 @@ export const featuresList = [
 
 export const jumbotron = [
     {
-        h2: `Affordable Self Storage Units & Vehicle Parking`,
+        h2: `Affordable Self Storage Units & Vehicle Parking in Martinsburg, WV`,
         blurb: `Success Property Management is a locally owned and operated self storage unit and vehicle parking facility serving Berkley, Jefferson, and Morgan counties with clean, well-maintained self storage units and parking at reasonable rates. Take a moment to review our availability, 
         then rent your unit online, or give one of our friendly managers a call!`,
     }

@@ -1,5 +1,5 @@
-export const homePageTitle = `Affordable Self Storage & Vehicle Parking in Baldwin County`;
-export const homePageContent = `Success Property Management has 6 conveniently located self storage facilities with a variety of affordable self storage unit types and vehicle parking options.`;
+export const homePageTitle = `Affordable Self Storage & Vehicle Parking in Martinsburg`;
+export const homePageContent = `Take a moment to view our affordable self storage units and vehicle parking, then rent your unit in minutes with our easy online application!`;
 
 export const location1PageTitle = `PSI Mini Storage | Success Property Management`;
 export const location1PageContent = `We offer a number of affordable self storage options in PSI Mini Storage, Alabama. Check out our prices, then give us a call to start clearing up your home, office, or garage!`;
@@ -26,16 +26,16 @@ export const reservePageTitle = ``;
 export const reservePageContent = ``;
 
 export const payRentPageTitle = `Pay Rent | Success Property Management`;
-export const payRentPageContent = `Pay your bill online 24 hours a day, 7 days a week with our easy tenant portal! Just follow these instructions, or you can call our offices to learn more!`;
+export const payRentPageContent = `Simply follow the on-page instructions, or call one of our friendly management professionals to learn how to access your account, today!`;
 
 export const storageTipsTitle = `Storage Tips | Success Property Management`;
-export const storageTipsContent = `Take advantage of our decades of self storage experience and follow these easy storage tips! You'll be glad you did!`;
+export const storageTipsContent = `Follow these easy self storage tips to make your stay with Success Property Management a breeze! Have questions? Call today!`;
 
 export const unitSizerPageTitle = ``;
 export const unitSizerPageContent = ``;
 
-export const contactPageTitle = `Contact Us | Success Property Management`;
-export const contactPageContent = `Have questions about any of our 6 locations or your account with Success Property Management? Use our contact form or the information on this page to reach out!`;
+export const contactPageTitle = `Contact Us  | Success Property Management`;
+export const contactPageContent = `If you have questions about your account or the services we offer, take a moment to fill our out form, or use the contact information to speak with us!`;
 
 export const thankYouPageTitle = `Thank You For Reserving Your Unit at Success Property Management!`;
 export const thankYouPageContent = `We've received your reservation! One of our friendly staff will be in touch!`;
