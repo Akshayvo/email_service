@@ -1,4 +1,4 @@
-export const homePageTitle = `Affordable Self Storage & Vehicle Parking in Martinsburg`;
+export const homePageTitle = `Affordable Self Storage & Vehicle Parking`;
 export const homePageContent = `Take a moment to view our affordable self storage units and vehicle parking, then rent your unit in minutes with our easy online application!`;
 
 export const location1PageTitle = `PSI Mini Storage | Success Property Management`;
