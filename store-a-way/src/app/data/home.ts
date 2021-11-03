@@ -27,7 +27,7 @@ export const featuresList = [
 
 export const aboutUsAlt = `indoor climate controlled storage units with roll-up doors inside of a clean, well-lit building`;
 
-export const aboutUsHeading = `Affordable Self Storage in Baldwinsville`;
+export const aboutUsHeading = `Affordable Self Storage in Hamilton`;
 
 export const aboutUs = [
     {
@@ -67,9 +67,9 @@ accessible 24 hours a day!`;
 export const feature = [
     {
         // tslint:disable-next-line:max-line-length
-        label: 'Boat and Vehicle Storage',
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/garage.svg`,
-        alt: 'Icon art displaying boat and motorcycle'
+        label: 'Climate Controlled',
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/thermometer.svg`,
+        alt: 'Icon of thermometer indicating climate-controlled units'
     },
     {
         // tslint:disable-next-line:max-line-length
