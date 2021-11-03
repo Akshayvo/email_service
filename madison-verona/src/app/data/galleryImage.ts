@@ -123,5 +123,29 @@ export const galleryHome = [
     alt: `corner of a single story self storage building`,
     caption: '',
   },
+  {
+    url: `madison-verona-self-storage-30`,
+    thumb: `madison-verona-self-storage-30-thumb`,
+    alt: `rows of self storage units`,
+    caption: '',
+  },
+  {
+    url: `madison-verona-self-storage-31`,
+    thumb: `madison-verona-self-storage-31-thumb`,
+    alt: `top view of self storage building`,
+    caption: '',
+  },
+  {
+    url: `madison-verona-self-storage-32`,
+    thumb: `madison-verona-self-storage-32-thumb`,
+    alt: `vehicle filling the goods`,
+    caption: '',
+  },
+  {
+    url: `madison-verona-self-storage-38`,
+    thumb: `madison-verona-self-storage-38-thumb`,
+    alt: `side top entrance view of self storage building`,
+    caption: '',
+  },
 
 ];

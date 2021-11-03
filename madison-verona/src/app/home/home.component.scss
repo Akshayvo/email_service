@@ -7,11 +7,11 @@
 }
 
 .jumbotron-background-webp {
-  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Madison_Verona/webp/madison-verona-self-storage-jumbo.webp");
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Madison_Verona/webp/madison-verona-self-storage-home.webp");
 }
 
 .jumbotron-background-jpg {
-  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Madison_Verona/jpg/madison-verona-self-storage-jumbo.jpg");
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Madison_Verona/jpg/madison-verona-self-storage-home.JPG");
 }
 
 .display-contact {
@@ -27,6 +27,12 @@
   color: $white;
   overflow: hidden;
   border-radius: 0;
+}
+
+.info-text{
+  margin-left: 8vh;
+  padding: 5px;
+  font-size: 18px;
 }
 
 .home-map {
@@ -108,7 +114,7 @@
   transform: skew(0deg);
   width: 500px;
   position: absolute;
-  top: 23%;
+  top: 22%;
 
   .btn-outline-primary {
     margin-right: 10px;
@@ -255,7 +261,7 @@
   }
 
   .jumbotorn-skew-text {
-    top: 25%;
+    top: 22%;
 
     .disp {
       h2 {
@@ -589,6 +595,12 @@
     background-attachment: unset;
     background-position: center left;
     height: 100vh;
+  }
+
+  .info-text{
+    margin-right: 8vh;
+    padding: 5px;
+    font-size: 18px;
   }
 
   .feature {

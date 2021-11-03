@@ -103,7 +103,7 @@ export const feature = [
 export const jumbotron = [
     {
         h2: `24-Hour Access Self Storage Units in Verona, WI`,
-        h6: `Easiest access facility in Madison and Verona, WI.`,
+        h6: `No Elevators or Stairs - All Units Ground-Level`,
         blurb: `Madison Verona Self Storage is Verona's newest self storage facility! We offer a wide range of unit sizes in both regular and climate controlled types. We also offer vehicle parking for your boat, trailer, or recreational vehicle! We are well-lit with ample security camera coverage, and our 24-hour access policy is controlled by an electronic gate. All of this plus awesome customer service at competitive rates!`,
     }
 ];
