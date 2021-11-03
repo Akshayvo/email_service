@@ -1,54 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
   <url>
-    <loc> https://wallenpaupack-self-storage-staging.netlify.app/</loc>
+    <loc> https://wallenpaupackselfstorage.com/</loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
-    <loc> https://wallenpaupack-self-storage-staging.netlify.app/location/greentown/reserve-unit </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  
-  
-  <url>
-    <loc> https://wallenpaupack-self-storage-staging.netlify.app/storage-tips </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://wallenpaupack-self-storage-staging.netlify.app/location/lake-ariel/storage-units
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://wallenpaupack-self-storage-staging.netlify.app/contact-us
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://wallenpaupack-self-storage-staging.netlify.app/location/lake-ariel
-    </loc>
+    <loc> https://wallenpaupackselfstorage.com/location/greentown/reserve-unit </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   
   
   <url>
+    <loc> https://wallenpaupackselfstorage.com/storage-tips </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
     <loc> 
-      https://wallenpaupack-self-storage-staging.netlify.app/location/hawley/storage-units
+      https://wallenpaupackselfstorage.com/location/lake-ariel/storage-units
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://wallenpaupack-self-storage-staging.netlify.app/location/lakeville/storage-units
+      https://wallenpaupackselfstorage.com/contact-us
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://wallenpaupack-self-storage-staging.netlify.app/location/greentown
+      https://wallenpaupackselfstorage.com/location/lake-ariel
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
@@ -56,29 +36,49 @@
   
   <url>
     <loc> 
-      https://wallenpaupack-self-storage-staging.netlify.app/location/hawley/reserve-unit
+      https://wallenpaupackselfstorage.com/location/hawley/storage-units
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> 
+      https://wallenpaupackselfstorage.com/location/lakeville/storage-units
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> 
+      https://wallenpaupackselfstorage.com/location/greentown
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  
+  
+  <url>
+    <loc> 
+      https://wallenpaupackselfstorage.com/location/hawley/reserve-unit
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc>
-      https://wallenpaupack-self-storage-staging.netlify.app/location/lakeville
+      https://wallenpaupackselfstorage.com/location/lakeville
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
-    <loc> https://wallenpaupack-self-storage-staging.netlify.app/location/hawley </loc>
+    <loc> https://wallenpaupackselfstorage.com/location/hawley </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://wallenpaupack-self-storage-staging.netlify.app/pay-rent
+      https://wallenpaupackselfstorage.com/pay-rent
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://wallenpaupack-self-storage-staging.netlify.app/location/greentown/storage-units
+      https://wallenpaupackselfstorage.com/location/greentown/storage-units
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
@@ -86,37 +86,37 @@
   
   <url>
     <loc> 
-      https://wallenpaupack-self-storage-staging.netlify.app/location/lakeville/reserve-unit
+      https://wallenpaupackselfstorage.com/location/lakeville/reserve-unit
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://wallenpaupack-self-storage-staging.netlify.app/location/lake-ariel/reserve-unit
+      https://wallenpaupackselfstorage.com/location/lake-ariel/reserve-unit
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://wallenpaupack-self-storage-staging.netlify.app/contact-hawley
+      https://wallenpaupackselfstorage.com/contact-hawley
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://wallenpaupack-self-storage-staging.netlify.app/contact-lake-ariel
+      https://wallenpaupackselfstorage.com/contact-lake-ariel
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://wallenpaupack-self-storage-staging.netlify.app/pay-rent/lakeville
+      https://wallenpaupackselfstorage.com/pay-rent/lakeville
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc>
-      https://wallenpaupack-self-storage-staging.netlify.app/contact-greentown
+      https://wallenpaupackselfstorage.com/contact-greentown
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
@@ -124,37 +124,37 @@
   
   <url>
     <loc>
-      https://wallenpaupack-self-storage-staging.netlify.app/pay-rent/lake-ariel
+      https://wallenpaupackselfstorage.com/pay-rent/lake-ariel
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://wallenpaupack-self-storage-staging.netlify.app/contact-lake-ariel
+      https://wallenpaupackselfstorage.com/contact-lake-ariel
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://wallenpaupack-self-storage-staging.netlify.app/pay-rent/hawley
+      https://wallenpaupackselfstorage.com/pay-rent/hawley
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc>
-      https://wallenpaupack-self-storage-staging.netlify.app/pay-rent/lakeville/rent-sub/login
+      https://wallenpaupackselfstorage.com/pay-rent/lakeville/rent-sub/login
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://wallenpaupack-self-storage-staging.netlify.app/pay-rent/lake-ariel/rent-sub/login
+      https://wallenpaupackselfstorage.com/pay-rent/lake-ariel/rent-sub/login
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc>
-      https://wallenpaupack-self-storage-staging.netlify.app/pay-rent/hawley/rent-sub/login
+      https://wallenpaupackselfstorage.com/pay-rent/hawley/rent-sub/login
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
