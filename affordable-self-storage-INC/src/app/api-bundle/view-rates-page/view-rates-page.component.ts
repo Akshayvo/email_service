@@ -21,6 +21,9 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   LstUnitTypes: LstUnitTypes[];
   RegularUnitTypes: LstUnitTypes[];
   ClimateUnitTypes: LstUnitTypes[];
+  ClimateUnitTypesEntryDoor: LstUnitTypes[];
+  ClimateUnitTypesMiddlebuilding: LstUnitTypes[];
+  ClimateUnitTypesRear: LstUnitTypes[];
 
   descriptionVR: string;
   monthlyRateVR: number;
@@ -122,7 +125,10 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
       this.showTable =  true;
       this.LstUnitTypes = unitTypesResponse.lstUnitTypes;
       this.RegularUnitTypes = unitTypesResponse.lstUnitTypes.filter(x => x.IsClimateControlled !== true);
-      this.ClimateUnitTypes = unitTypesResponse.lstUnitTypes.filter(x => x.IsClimateControlled === true);
+      this.ClimateUnitTypes = unitTypesResponse.lstUnitTypes.filter(x => x.IsClimateControlled === true && x.IsAutomobile === false && x.IsMobile === false && x.IsOutdoor === false);
+      this.ClimateUnitTypesEntryDoor = unitTypesResponse.lstUnitTypes.filter(x => x.IsClimateControlled === true && x.IsAutomobile === false && x.IsMobile === false && x.IsOutdoor === true);
+      this.ClimateUnitTypesMiddlebuilding = unitTypesResponse.lstUnitTypes.filter(x => x.IsClimateControlled === true && x.IsAutomobile === false && x.IsMobile === true && x.IsOutdoor === false);
+      this.ClimateUnitTypesRear = unitTypesResponse.lstUnitTypes.filter(x => x.IsClimateControlled === true && x.IsAutomobile === true && x.IsMobile === false && x.IsOutdoor === false);
     });
   }
 
