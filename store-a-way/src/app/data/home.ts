@@ -22,6 +22,9 @@ export const featuresList = [
     {
         td1: 'Affordable Rates',
         td2: 'Climate-Controlled Units Available',
+    },
+    {
+        td1: 'Tenant Protection Plans Available',
     }
 ];
 
@@ -94,9 +97,9 @@ export const feature = [
 
 export const jumbotron = [
     {
-        h2: `Affordable Climate Controlled Storage & Vehicle Parking in Hamilton`,
-        blurb: `Store-A-Way is Hamilton's newest locally owned and operated self storage facility. We offer a 
-        variety of climate controlled self storage unit sizes and outdoor vehicle parking. Our 24/7 facility access,
-         reasonable rates, and easy online tenant portal make us Hamilton's premiere self storage facility.`,
+        h2: `Affordable Climate Controlled Storage`,
+        blurb: `Store-A-Way is Hamilton's newest locally owned and operated self storage facility. We offer a variety 
+        of climate controlled self storage unit sizes to fit any self storage need. Our 24/7 facility access, 
+        reasonable rates, and easy online tenant portal make us Hamilton's premiere self storage facility.`,
     }
 ];
