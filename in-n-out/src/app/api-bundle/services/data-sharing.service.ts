@@ -1,16 +1,16 @@
-import { Injectable } from "@angular/core";
+import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: "root",
+  providedIn: 'root',
 })
 export class DataSharingService {
   locationAPIKey = {
-    loc1: "dzJ0OVc1SjAqNU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O",
-    loc2: "dzJ0OVc1SjAqNE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O",
-    loc3: "dzJ0OVc1SjAqMk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O",
-    loc4: "dzJ0OVc1SjAqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O",
-    loc5: "dzJ0OVc1SjAqNk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O",
-    loc6: "UDIoMUQyYzV2Nzw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O",
+    loc1: 'dzJ0OVc1SjAqNU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
+    loc2: 'dzJ0OVc1SjAqNE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
+    loc3: 'dzJ0OVc1SjAqMk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
+    loc4: 'dzJ0OVc1SjAqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
+    loc5: 'dzJ0OVc1SjEqOU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29519
+    loc6: 'UDIoMUQyYzV2Nzw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
   };
 
   //  locationAPIKey = {                                                     // demo north
@@ -18,7 +18,7 @@ export class DataSharingService {
   //     loc2: 'dzJ0OVc0SjYqMk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28464
   //     loc3: 'dzJ0OVc0SjYqMk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28465
   //     loc4: 'dzJ0OVc0SjYqMk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28466
-  //     loc5: 'dzJ0OVc0SjYqMk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',   // 28463
+  //     loc5: 'dzJ0OFc0SjYqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',   // 28463
   //     loc6: 'dzJ0OVc0SjYqMk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28464
   //   };
 
@@ -46,10 +46,10 @@ export class DataSharingService {
   showAltDetails: boolean;
   showMilitaryDetails: boolean;
 
-  apiKey = "";
+  apiKey = '';
 
   MoveInData = {
-    Description: "",
+    Description: '',
     MonthlyRate: 0,
     TwentyEightDayRate: 0,
     UnitTypeID: 0,
@@ -66,16 +66,16 @@ export class DataSharingService {
   };
 
   ReservationData = {
-    Description: "",
+    Description: '',
     TwentyEightDayRate: 0,
     MonthlyRate: 0,
     UnitTypeID: 0,
     RateTax: 0,
-    formattedMoveInDate: "",
+    formattedMoveInDate: '',
   };
 
   LstUnitTypes = {
-    Description: "",
+    Description: '',
     ReservationFee: 0,
     ReservationFeeTax: 0,
     UnitTypeID: 0,
@@ -87,55 +87,55 @@ export class DataSharingService {
   };
 
   objTenant = {
-    FirstName: "",
-    LastName: "",
-    Phone: "",
-    EmailAddress: "",
-    AddressLine1: "",
-    AddressLine2: "",
-    City: "",
-    State: "",
-    ZIP: "",
-    DriversLicense: " ",
-    DriversLicenseExpDate: " ",
-    DateOfBirth: " ",
+    FirstName: '',
+    LastName: '',
+    Phone: '',
+    EmailAddress: '',
+    AddressLine1: '',
+    AddressLine2: '',
+    City: '',
+    State: '',
+    ZIP: '',
+    DriversLicense: ' ',
+    DriversLicenseExpDate: ' ',
+    DateOfBirth: ' ',
     MilitaryType: 0,
     MilitaryBranch: 0,
-    MilitaryID: " ",
-    DeployedUntil: " ",
-    MilitaryDivision: " ",
-    CommandingOfficer: " ",
-    CommandingOfficerPhone: " ",
-    AlternateName: "",
-    AlternatePhone: "",
-    AlternateAddressLine1: "",
-    AlternateAddressLine2: "",
-    AlternateCity: "",
-    AlternateState: "",
-    AlternateZIP: "",
+    MilitaryID: ' ',
+    DeployedUntil: ' ',
+    MilitaryDivision: ' ',
+    CommandingOfficer: ' ',
+    CommandingOfficerPhone: ' ',
+    AlternateName: '',
+    AlternatePhone: '',
+    AlternateAddressLine1: '',
+    AlternateAddressLine2: '',
+    AlternateCity: '',
+    AlternateState: '',
+    AlternateZIP: '',
   };
 
   navLinksForComponent = {
     reservationForm: {
-      next: "",
-      prev: "",
+      next: '',
+      prev: '',
     },
     confirmationData: {
-      next: "",
-      prev: "",
+      next: '',
+      prev: '',
     },
     payRentForm: {
-      next: "",
-      prev: "",
+      next: '',
+      prev: '',
     },
     viewRates: {
-      next: "",
-      prev: "",
+      next: '',
+      prev: '',
     },
   };
 
   MoveIn = {
-    dteMoveIn: "",
+    dteMoveIn: '',
     intUnitTypeID: 0,
   };
 

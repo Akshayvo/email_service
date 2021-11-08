@@ -6,6 +6,7 @@ import {
   headingMoveInPageLocation2,
   headingMoveInPageLocation3,
   headingMoveInPageLocation4,
+  headingMoveInPageLocation5,
   headingReservePageLocation1,
   headingReservePageLocation2,
   headingReservePageLocation3,
@@ -77,10 +78,14 @@ export class ReserveComponent implements OnInit {
         this.heading = headingReservePageLocation4;
       }
     } else if (
-      this.router.url.includes(`${environment.locationName}/location5`)
+      this.router.url.includes(`${environment.locationName}/woodland`)
     ) {
       this.id = 5;
-      this.heading = headingReservePageLocation5;
+      if (this.router.url.includes("/woodland/move-in")) {
+        this.heading = headingMoveInPageLocation5;
+      } else {
+        this.heading = headingReservePageLocation5;
+      }
     } 
     // else if (
     //   this.router.url.includes(`${environment.locationName}/robertsdale`)

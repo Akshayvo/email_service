@@ -1,23 +1,19 @@
 <div>
-  <div
+  <!-- <div
     *ngIf="
       currentRoute === '/wisconsin/woodland/storage-units';
       else diffRoutes
     "
-  ></div>
-  <ng-template #diffRoutes>
+  ></div> -->
+  <!-- <ng-template #diffRoutes> -->
     <div [class.loader]="!showTable"></div>
-  </ng-template>
+  <!-- </ng-template> -->
 
   <div [class.loader]="showLoader" class="loader-position"></div>
 
   <div
     class="viewRates"
     [class.display]="!showTable"
-    *ngIf="
-      currentRoute !== '/wisconsin/woodland/storage-units';
-      else diffViewRates
-    "
   >
     <h3 class="text-center">
       <strong>Unit Sizes & Prices</strong>
@@ -89,12 +85,12 @@
       </div>
     </div>
   </div>
-  <ng-template #diffViewRates>
+  <!-- <ng-template #diffViewRates>
     <div class="viewRates">
       <h3 class="text-center">
         <strong>Unit Sizes & Prices</strong>
       </h3>
       <h5 class="text-center">(COMING SOON)</h5>
     </div>
-  </ng-template>
+  </ng-template> -->
 </div>

@@ -349,7 +349,7 @@ export const apiRoutes = [
         component: ReserveComponent,
         children: [
           { path: "", component: ReserveUnitFormComponent },
-          // { path: 'reserve', component: ReserveUnitFormComponent },
+          { path: 'reserve', component: ReserveUnitFormComponent },
           // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
           { path: "confirmation", component: ConfirmationDataComponent },
           { path: "payReservationCharges", component: PayRentFormComponent },
@@ -365,8 +365,7 @@ export const apiRoutes = [
         path: "move-in",
         component: ReserveComponent,
         children: [
-          { path: "", component: ViewRatesPageComponent },
-          // { path: '', component: ReserveUnitFormComponent },
+          { path: "", component: ReserveUnitFormComponent },
           // { path: 'move-in', component: ReserveUnitFormComponent },
           // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
           { path: "confirmation", component: ConfirmationDataComponent },
@@ -428,7 +427,7 @@ export const apiRoutes = [
     },
   },
   {
-    path: "review/location5",
+    path: "review/woodland",
     component: HomeComponent,
     resolve: {
       url: "externalUrlRedirectResolver",
@@ -461,7 +460,7 @@ export const apiRoutes = [
     children: childroute,
   },
   {
-    path: "pay-rent/location5",
+    path: "pay-rent/woodland",
     component: PayRentComponent,
     children: childroute,
   },
@@ -556,7 +555,7 @@ export const iFrameRoutes = [
     ],
   },
   {
-    path: `${environment.locationName}/location5`,
+    path: `${environment.locationName}/woodland`,
     component: LocationComponent,
     children: [
       { path: "", redirectTo: "storage-units", pathMatch: "full" },
@@ -609,7 +608,7 @@ export const iFrameRoutes = [
     },
   },
   {
-    path: "review/location5",
+    path: "review/woodland",
     component: HomeComponent,
     resolve: {
       url: "externalUrlRedirectResolver",
@@ -625,7 +624,7 @@ export const iFrameRoutes = [
   { path: "pay-rent-pleasantview", component: PayRentChesterComponent },
   { path: "pay-rent-clifford-north", component: PayRentMontgomeryComponent },
   { path: "pay-rent-clifford-south", component: PayRentMiddletownComponent },
-  { path: "pay-rent-location5", component: PayRentMontgomeryComponent },
+  { path: "pay-rent-woodland", component: PayRentMontgomeryComponent },
 
   {
     path: `${environment.locationName}/trailer-rental`,

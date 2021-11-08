@@ -63,17 +63,17 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-    console.log(this.router.url);
-    if (this.router.url === "/wisconsin/woodland/storage-units") {
-      this.showLoader = false;
-      this.currentRoute = this.router.url;
-      this.showTable = false;
-    } else {
+    // console.log(this.router.url);
+    // if (this.router.url === "/wisconsin/woodland/storage-units") {
+    //   this.showLoader = false;
+    //   this.currentRoute = this.router.url;
+    //   this.showTable = false;
+    // } else {
       this.getData();
       this.fetchThData();
       this.dataSharingService.initMyNavLinks("viewRates", this.router.url);
       this.facilityLocation = this.dataSharingService.facilityLocation;
-    }
+    // }
   }
 
   public fetchThData() {

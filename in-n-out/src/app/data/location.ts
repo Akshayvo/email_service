@@ -154,6 +154,7 @@ export const headingReservePageLocation4 = `Ready to Reserve a Self Storage Unit
 export const headingMoveInPageLocation4 = `Rent Your Unit at Clifford South`;
 
 export const headingReservePageLocation5 = `Ready to Reserve a Self Storage Unit in Woodland`;
+export const headingMoveInPageLocation5 = `Rent Your Unit at Woodland`;
 
 export const headingReservePageLocation6 = ``;
 

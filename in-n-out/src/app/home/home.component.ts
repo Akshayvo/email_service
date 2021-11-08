@@ -204,7 +204,7 @@ export class HomeComponent implements OnInit {
     } 
 
     public fetchContactDetailsLocation5() {
-      this.heading = `In-N-Out Storage - Location5`;
+      this.heading = `In-N-Out Storage - Woodland`;
       this.contactDetails = contactsLocation5;
       this.hoursDetails = hoursLocation5;
     }

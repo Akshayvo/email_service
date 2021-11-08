@@ -224,7 +224,7 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.og = ogPayRentPageLocation3;
     } else if (this.router.url.includes("clifford-south")) {
       this.og = ogPayRentPageLocation4;
-    } else if (this.router.url.includes("location5")) {
+    } else if (this.router.url.includes("woodland")) {
       this.og = ogPayRentPageLocation5;
     } 
     
@@ -239,7 +239,7 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.twitter = twitterPayRentPageLocation3;
     } else if (this.router.url.includes("clifford-south")) {
       this.twitter = twitterPayRentPageLocation4;
-    } else if (this.router.url.includes("location5")) {
+    } else if (this.router.url.includes("woodland")) {
       this.twitter = twitterPayRentPageLocation5;
     } 
    
