@@ -166,6 +166,14 @@ const childroute = environment.signUpForAuotoPay ? withTab : withoutTab;
 export const apiRoutes = [
   { path: "", component: HomeComponent },
   { path: "privacy-policy", component: PrivacyPolicyComponent },
+  { path: "storage-tips", redirectTo: "/" },
+  { path: "capacity-estimator", redirectTo: "/" },
+  { path: "rental-policies", redirectTo: "/" },
+  { path: "locations", redirectTo: "/" },
+  { path: "rental-options", redirectTo: "/" },
+  { path: "locks-sale", redirectTo: "/" },
+  { path: "rent-unit", redirectTo: "/" },
+  { path: "requirements-for-using-our-truck", redirectTo: "/" },
   { path: "frequently-asked-questions", component: FaqComponent },
   {
     path: `${environment.locationName}/greentown`,
