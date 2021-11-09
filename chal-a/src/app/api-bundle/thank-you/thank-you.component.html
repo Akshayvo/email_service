@@ -1,0 +1,58 @@
+<div class="text-center">
+    <div class="go-to-home py-4">
+        <div *ngIf="paymentSuccess">
+            <h1>Thank You </h1>
+            Your payment of <strong>${{PaymentAmount | number : '1.2-2'}}</strong> was successful. 
+            <div *ngIf="CCApprovalCode && CCApprovalCode !== 'SMS_NONE'"> 
+                Your confirmation number is: <strong>{{CCApprovalCode}}</strong> .
+            </div>
+        </div>
+
+        <div *ngIf="navigateToReserve && strConfirmation">
+            <h1> You've successfully reserved Your Unit!</h1>
+            <p>Thank You For Choosing {{facilityName}}! One of our friendly and knowledgable staff will get in touch shortly to confirm your details! <br />
+              We look forward to meeting you!
+            </p>
+          
+            <div *ngIf="CCApprovalCode && PaymentAmount">  
+                Your payment of <strong>${{PaymentAmount | number : '1.2-2'}}</strong> was successful. Your confirmation number is: <strong>{{CCApprovalCode}}</strong>
+            </div>
+        </div>
+
+        <div *ngIf="navigateToMoveIn">
+            <h1>Thank You </h1>
+            <div *ngIf="PaymentAmount > 0" >Your payment of <strong>${{PaymentAmount | number : '1.2-2'}}</strong> was successful. </div> 
+            <div *ngIf="CCApprovalCode && CCApprovalCode !== 'SMS_NONE'">  Your confirmation number is: <strong>{{CCApprovalCode}}</strong>.
+            </div>Please check your email to sign your digital lease agreement. Your move-in is not complete without a signed lease agreement.
+        </div>
+    </div>
+  
+    <div class="py-4" *ngIf="strConfirmation || strAccessCode">
+          <div class="py-4">
+              <table>
+                  <tbody>
+                      <tr>
+                          <td class="td-1">Confirmation Number </td>
+                          <td>{{strConfirmation || strAccessCode}}</td>
+                      </tr>
+                      <tr>
+                          <td class="td-1">Unit Type</td>
+                          <td>{{description}} </td>
+                      </tr>
+                      <tr>
+                          <td class="td-1">Rate</td>
+                          <td> <span *ngIf="monthlyRate">$</span>{{monthlyRate | number : '1.2-2'}}</td>
+                      </tr> 
+                      <tr *ngIf="!navigateToMoveIn">
+                          <td> Move In Date</td>
+                          <td>{{MoveIn.dteMoveIn}}</td>
+                      </tr>
+                      </tbody>
+              </table>
+          </div>
+    </div>
+    <div>
+      <button *ngIf="tokenExit" (click)="signOut(logOut)" class="btn btn-primary">LogOff</button>
+      <div class="py-3 home-link"><a (click)="navigate('/')">Go to Home</a></div>
+    </div>
+  </div>
