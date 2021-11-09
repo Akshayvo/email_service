@@ -10,8 +10,15 @@ export const dataViewRates = [
     {
       p: `Need more information before reserving? Give us a call today, and let us wow you with our awesome
       customer service! We look forward to making your storage experience a convenient one! `
-    }
+    },
 ];
+
+export const extrainfo = [
+  {
+    p: `We have 4 climate controlled buildings at our facility. Units shown directly below are located 
+    throughout those buildings. Please continue to scroll for climate controlled units with specific locations.`
+  }
+]
 
 export const viewRatesAltText = `photograph of several self storage unit buildings with square red doors`;
 

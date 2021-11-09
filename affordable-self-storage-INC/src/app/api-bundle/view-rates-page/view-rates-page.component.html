@@ -86,7 +86,8 @@
 
 <br>
 <div [class.display]="!showTable">
-  <h2 class="mt-4 mb-2 ">Climate Controlled</h2>
+  <h2 class="mt-4 mb-2 ">Climate Controlled</h2><br>
+  <p *ngFor="let details of extrainfo">{{details.p}}</p><br>
   <table  class="viewrates-desktop">
 <tHead [class.display]="!showTable">
     <tr>
