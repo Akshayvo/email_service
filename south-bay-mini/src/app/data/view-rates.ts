@@ -2,26 +2,11 @@ import { objSIMSetting } from './configuration';
 
 export const dataViewRates = [
     {
-      p: `Sample Self Storage - North has been serving Baldwinsville, and the surrounding communities
-      with quality regular and climate controlled self storage units for nearly two decades. We have
-      the experience and commitment to modern conveniences you need to make your next storage project an easy one`,
+      p: `Take a moment to check out the available inventory and unit rates at South Bay Mini-Storage. Once you’ve found a unit that suits your needs, reserve it online through our tenant portal, or you can call our friendly management team, and we’ll help you complete your rental application.`,
     },
     {
-      p: `At Sample Self Storage - North, you'll have access to our services with an online tenant portal
-      for contactless rentals, and online payments. If you're here after hours and want to make a payment,
-      stop into the office's foyer and use our 24-hour kiosk!`
+      p: `As soon as you receive your unique access code, you’ll have access to your unit from 7:00AM to 7:00PM 7 days a week. You can log online and pay your bill 24-Hours a day through our easy tenant portal. Still have questions about our self storage units and conveniences? Give us a call today!`
     },
-    {
-      p: `Our residential storage users love our convenient location and affordable rates that take the stress
-      out of their move, renovation, or seasonal de-cluttering projects. An extra closet to an extra garage's
-      worth of space makes the most out of your home's space!
-      `
-    },
-    {
-      p: `Many local businesses in use our climate controlled storage units to save money by storing in a climate
-      controlled storage unit instead of expensive commercial real estate. We are the ideal space for your extra
-    inventory, or documents. Our 24-hour access policy is the ideal solution for your local business.`
-    }
 ];
 
 export const viewRatesAltText = `two rows of roll-up metal self storage unit doors inside a climate controlled self storage building`;

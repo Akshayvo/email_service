@@ -75,7 +75,7 @@ const withTab = [
 const childroute = environment.signUpForAuotoPay ? withTab : withoutTab;
 
 
-const reviewURL = ``
+const reviewURL = `http://search.google.com/local/writereview?placeid=ChIJiQueagMB1FQRbR-pPjLp6OE`
 
  export const apiRoutes = [
     // Fallback when no prior route is matched
@@ -91,26 +91,26 @@ const reviewURL = ``
       children: [
         { path: '', component: ViewRatesPageComponent },
         { path: 'reserve', component: ReserveUnitFormComponent },
-        { path: 'move-in', component: ReserveUnitFormComponent },
+        // { path: 'move-in', component: ReserveUnitFormComponent },
         { path: 'confirmation', component: ConfirmationDataComponent },
         { path: 'payReservationCharges', component: PayRentFormComponent },
         { path: 'payMoveInCharges', component: PayRentFormComponent },
         { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
       ]
      },
-     {
-      path: `${environment.locationName}/rent-now`,
-      component: ViewRatesComponent,
-      children: [
-        { path: '', component: ViewRatesPageComponent },
-        { path: 'reserve', component: ReserveUnitFormComponent },
-        { path: 'move-in', component: ReserveUnitFormComponent },
-        { path: 'confirmation', component: ConfirmationDataComponent },
-        { path: 'payReservationCharges', component: PayRentFormComponent },
-        { path: 'payMoveInCharges', component: PayRentFormComponent },
-        { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
-      ]
-     },
+    //  {
+    //   path: `${environment.locationName}/rent-now`,
+    //   component: ViewRatesComponent,
+    //   children: [
+    //     { path: '', component: ViewRatesPageComponent },
+    //     { path: 'reserve', component: ReserveUnitFormComponent },
+    //     { path: 'move-in', component: ReserveUnitFormComponent },
+    //     { path: 'confirmation', component: ConfirmationDataComponent },
+    //     { path: 'payReservationCharges', component: PayRentFormComponent },
+    //     { path: 'payMoveInCharges', component: PayRentFormComponent },
+    //     { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
+    //   ]
+    //  },
     {
       path: 'pay-rent', component: PayRentComponent,
       children: childroute
