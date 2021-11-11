@@ -34,6 +34,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   LstUnitTypes: LstUnitTypes[];
   regularLstUnitTypes: LstUnitTypes[];
   TemperatureLstUnitTypes: LstUnitTypes[];
+  OutdoorClimate: LstUnitTypes[];
   OverSizedLstUnitTypes: LstUnitTypes[];
 
   descriptionVR: string;
@@ -169,6 +170,9 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
 
         this.TemperatureLstUnitTypes = this.LstUnitTypes.filter(
           (x) => x.IsClimateControlled === true
+        );
+        this.OutdoorClimate = this.LstUnitTypes.filter(
+          (x) => x.IsOutdoor === true
         );
         this.OverSizedLstUnitTypes = this.LstUnitTypes.filter(
           (x) => x.IsOutdoor === true //"Outdoor/Parking"
