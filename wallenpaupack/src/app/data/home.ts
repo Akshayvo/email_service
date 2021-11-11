@@ -6,7 +6,7 @@ export const featuresHead = [
         alt: 'Icon art displaying a location pin'
     },
     {
-        label: 'Online Reservation & Bill Pay',
+        label: 'Online Rental & Bill Pay',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/online.svg',
         alt: 'Icon art displaying a screen with cursor'
     },
@@ -29,7 +29,7 @@ export const location1FeaturesHead = [
         alt: 'Icon art displaying a location pin'
     },
     {
-        label: 'Online Reservation & Bill Pay',
+        label: 'Online Rental & Bill Pay',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/online.svg',
         alt: 'Icon art displaying a screen with cursor'
     },
@@ -55,7 +55,7 @@ export const location2FeaturesHead = [
         alt: 'Icon art displaying a location pin'
     },
     {
-        label: 'Online Reservation & Bill Pay',
+        label: 'Online Rental & Bill Pay',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/online.svg',
         alt: 'Icon art displaying a screen with cursor'
     },
@@ -81,7 +81,7 @@ export const location3FeaturesHead = [
         alt: 'Icon art displaying a location pin'
     },
     {
-        label: 'Online Reservation & Bill Pay',
+        label: 'Online Rental & Bill Pay',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/online.svg',
         alt: 'Icon art displaying a screen with cursor'
     },
@@ -107,7 +107,7 @@ export const location4FeaturesHead = [
         alt: 'Icon art displaying a location pin'
     },
     {
-        label: 'Online Reservation & Bill Pay',
+        label: 'Online Rental & Bill Pay',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/online.svg',
         alt: 'Icon art displaying a screen with cursor'
     },
