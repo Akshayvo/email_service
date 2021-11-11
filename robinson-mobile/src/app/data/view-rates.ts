@@ -57,7 +57,7 @@ export const rates = [
   },
   {
       td1: `8'x20' Portable Storage Unit'`,
-      td2: `$6 per day plus travel`
+      td2: `$8 per day plus travel`
   },
   
 ];
