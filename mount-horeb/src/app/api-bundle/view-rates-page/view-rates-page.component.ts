@@ -172,7 +172,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
           (x) => x.IsClimateControlled === true
         );
         this.OutdoorClimate = this.LstUnitTypes.filter(
-          (x) => x.IsOutdoor === true
+          (x) => x.IsMobile === true
         );
         this.OverSizedLstUnitTypes = this.LstUnitTypes.filter(
           (x) => x.IsOutdoor === true //"Outdoor/Parking"
