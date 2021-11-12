@@ -24,8 +24,12 @@ export const contact = [
 
 export const hours = [
     {
-        label: 'Tuesday - Saturday: ',
-        data: '9:00AM to 5:00PM'
+        label: 'Tuesday - Friday: ',
+        data: '10:00AM to 5:00PM'
+    },
+    {
+        label: 'Saturday: ',
+        data: '10:00AM to 2:00PM'
     },
     {
         label: 'Sunday - Monday: ',

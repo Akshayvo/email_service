@@ -21,7 +21,7 @@ export const featuresList = [
     },
     {
         td1: 'Affordable Rates',
-        td2: 'Fully-Fenced Facility (Coming Soon) ',
+        td2: 'Fully-Fenced Facility',
     }
 ];
 
