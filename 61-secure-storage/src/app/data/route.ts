@@ -104,6 +104,11 @@ const withTab = [
         canActivate: [AuthGuard],
       },
       {
+        path: "payment",
+        component: PayRentFormComponent,
+        canActivate: [AuthGuard],
+      },
+      {
         path: "auto-pay",
         component: AutoPayComponent,
         canActivate: [AuthGuard],
