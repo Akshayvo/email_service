@@ -64,7 +64,7 @@ export const aboutUs = [
 ];
 
 export const gettingStarted = `Are you ready to stop putting off cleaning out your attic, garage, or shed?
-Clear up some room around the house with Sample Self Storage - North and one of our affordable storage units,
+Clear up some room around the house with Store-A-Way and one of our affordable storage units,
 accessible 24 hours a day!`;
 
 export const feature = [
