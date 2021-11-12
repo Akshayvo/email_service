@@ -7,8 +7,8 @@ export const environment = {
   type: 0, // { API: 0, iframe: 1 }
   template: "darkTheme", // { darkTheme, lightTheme, withoutJumbotron}
   cards: ["Visa", "Master Card", "Amex", "Discover", "test"],
-  errorsMails: [""],
-  senderEmail: "",
+  errorsMails: ["sanghmitra.v@codeparva.in"],
+  senderEmail: "errors@codeparva.in",
   emailBaseUrl: "https://emailsvc-ext.syrasoft.com/v1/email",
   appId: "Store QC",
   facilityName: "Store QC",

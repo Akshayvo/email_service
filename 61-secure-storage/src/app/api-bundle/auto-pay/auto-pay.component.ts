@@ -141,7 +141,7 @@ export class AutoPayComponent implements OnInit, OnDestroy {
       newYear = newYear + 1;
     }
 
-    if (this.router.url === "/pay-rent/rent-sub/payment") {
+    if (this.router.url === "/pay-rent/pay-rent/payment") {
       this.navigateToMoveInPayment = true;
     }
 
