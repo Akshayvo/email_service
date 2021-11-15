@@ -189,11 +189,11 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     if (this.router.url.includes("/payReservationCharges")) {
       this.navigateToReserve = true;
       this.navigateToMoveIn = false;
-      // this.payRentForm.patchValue({
-      //   objPayment: {
-      //    PaymentAmount: this.TotalReserveAmount
-      //   }
-      // });
+      this.payRentForm.patchValue({
+        objPayment: {
+         PaymentAmount: this.TotalReserveAmount
+        }
+      });
     } else {
       if (this.router.url.includes("/payMoveInCharges")) {
         this.navigateToReserve = false;
@@ -519,9 +519,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   }
 
   public navigateToConfirmation(location: any) {
-    this.router.navigate([
-      `location/${this.facilityLocation}/reserve-unit/${location}`,
-    ]);
+    this.router.navigate([`/${location}`]);
   }
 
   getPayMethods() {
@@ -659,7 +657,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
               }
             } else {
               this.makePaymentForUnit = false;
-
+              this.showloaderForPayment = false;
               this.invalidPayment =
                 "Unable to make the payment. Please check your card detail.";
             }
