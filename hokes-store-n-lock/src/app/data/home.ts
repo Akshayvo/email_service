@@ -21,7 +21,7 @@ export const featuresList = [
     },
     {
         td1: 'Affordable Rates',
-        td2: 'Recreational Vehicle Storage',
+        td2: 'ATV/Boat Storage',
     }
 ];
 
@@ -31,9 +31,7 @@ export const aboutUsHeading = `Affordable Self Storage in Arcanum, Ohio`;
 
 export const aboutUs = [
     {
-        p1: `Hoke’s Store-N-Lock is proud to be Arcarnum’s newest self storage facility serving Arcnum, 
-        Greenville, and Castine with affordable self storage units and the kind of customer service only 
-        a locally owned and operated facility can offer. Our units are conveniently located on South Main 
+        p1: `Hoke’s Store-N-Lock is proud to be Arcanum’s newest self storage facility providing Arcanum and the surrounding communities with affordable self storage units and the kind of customer service only a locally owned and operated facility can offer. Our units are conveniently located on South Main 
         Street in Arcanum, right next to the Post Office, making us an ideal location for local 
         residential and business storage users. Searching for a place to park your boat, trailer, or 
         recreational vehicle? Look no further! Hoke’s Store-N-Lock offers a number of parking spaces 

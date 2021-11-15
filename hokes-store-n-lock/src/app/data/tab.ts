@@ -11,4 +11,10 @@ export const tabs = [
       path: './sign-up',
       active: false,
     },
+    {
+      id: '3',
+      name: 'Update Tenant Information',
+      path: './update/login',
+      active: false,
+    },
   ];
