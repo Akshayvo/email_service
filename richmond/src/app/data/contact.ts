@@ -13,16 +13,16 @@ export const contact = [
     },
     {
         id: 2,
-        redirect: 'mailto:richmondvtselfstorage@gmail.com',
-        data: 'richmondvtselfstorage@gmail.com',
+        redirect: 'mailto:SpillaneCurleyProperties@gmail.com',
+        data: 'SpillaneCurleyProperties@gmail.com',
         label: 'Email:',
         class: 'fas fa-envelope mx-2 iconColor',
     },
     {
         id: 3,
-        redirect: 'tel:8025572619',
+        redirect: 'tel:8023773775',
         label: 'Phone:',
-        data: '(802) 557-2619',
+        data: '(802) 377-3775',
         class: 'fas fa-phone mx-2 iconColor',
     }
 ];
