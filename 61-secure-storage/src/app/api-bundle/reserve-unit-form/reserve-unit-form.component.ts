@@ -346,7 +346,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     const index = this.lstUnitTypes.findIndex(
       (x) => x.Description === indexValue
     );
-    if (!!index) {
+    if (index >= 0) {
       this.UnitTypeRate = this.lstUnitTypes[index].MonthlyRate;
       this.monthlyRate = this.lstUnitTypes[index].MonthlyRate;
       this.annualRate = this.lstUnitTypes[index].AnnualRate;
@@ -507,7 +507,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
        const index = unitTypesResponse.lstUnitTypes.findIndex(x => x.UnitTypeID === this.dataSharingService.LstUnitTypes.UnitTypeID);
        this.lstUnitTypes = unitTypesResponse.lstUnitTypes;
        this.getFilterLstUnitTypes(unitTypesResponse);
-       if (index && index >= 0 ) {
+       if (index >= 0 ) {
          const defaultMonthlyValue = unitTypesResponse.lstUnitTypes[index].MonthlyRate;
          this.Description = unitTypesResponse.lstUnitTypes[index].Description;
          this.ReservationFeeTax = unitTypesResponse.lstUnitTypes[index].ReservationFeeTax;
