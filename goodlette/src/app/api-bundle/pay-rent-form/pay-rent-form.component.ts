@@ -19,6 +19,10 @@ import { AddTenantService } from "../services/add-tenant.service";
 import { environment } from "../../../environments/environment";
 import { objSIMSetting } from "../../data/configuration";
 import { CommonService } from "../services/common.service";
+import {
+  dataConfirmationMoveIn,
+  dataConfirmationReserve,
+} from "../../data/view-rates";
 
 @Component({
   selector: "app-pay-rent-form",
@@ -27,6 +31,7 @@ import { CommonService } from "../services/common.service";
   providers: [DatePipe],
 })
 export class PayRentFormComponent implements OnInit, OnDestroy {
+  [x: string]: any;
   showPaymentForReserve: boolean;
   showPaymentForMoveIn: boolean;
   balance: number;
@@ -244,15 +249,30 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
 
   newData() {
     if (!!this.dataSharingService.navigateToMoveIn) {
-      this.service.changeData("Payment", "", "");
+      this.dynamicImage = "goodlette-self-storage-8";
+      this.viewRatesContent = dataConfirmationMoveIn;
+      this.service.changeData(
+        "payment",
+        this.dynamicImage,
+        this.viewRatesContent
+      ); //invoke new Data
+     
     } else {
-      this.service.changeData("Payment", "", "");
+     
+      this.dynamicImage = "goodlette-self-storage-5";
+      this.viewRatesContent = dataConfirmationReserve;
+      this.service.changeData(
+        "payment",
+        this.dynamicImage,
+        this.viewRatesContent
+      ); //invoke new Data
+      
     }
   }
 
   ngOnInit() {
     this.newData();
-
+    this.service.data$.subscribe((res) => (this.data = res));
     if (!!localStorage.getItem("paymentTab")) {
       this.paymentTab = localStorage.getItem("paymentTab");
     }
@@ -662,6 +682,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
             this.showSuccessPayment = true;
           } else {
             this.makePaymentForUnit = false;
+            this.showloaderForPayment = false;
             this.invalidPayment =
               "Unable to make the payment. Please check your card detail.";
           }

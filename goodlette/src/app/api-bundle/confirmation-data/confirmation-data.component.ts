@@ -144,7 +144,9 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
         this.dynamicImage,
         this.viewRatesContent
       ); //invoke new Data
+      console.log("1")
     } else {
+      console.log("2")
       this.dynamicImage = "goodlette-self-storage-5";
       this.viewRatesContent = dataConfirmationReserve;
       this.service.changeData(
@@ -152,6 +154,7 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
         this.dynamicImage,
         this.viewRatesContent
       ); //invoke new Data
+      console.log("3")
     }
   }
 

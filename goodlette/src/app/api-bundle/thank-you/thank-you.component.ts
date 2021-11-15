@@ -7,7 +7,10 @@ import { SignOutService } from '../services/sign-out.service';
 import { thankYouPageContent, thankYouPageTitle } from '../../data/title';
 import { environment } from '../../../environments/environment';
 import { CommonService } from '../services/common.service';
-
+import {
+  dataConfirmationMoveIn,
+  dataConfirmationReserve,
+} from "../../data/view-rates";
 @Component({
   selector: 'app-thank-you',
   templateUrl: './thank-you.component.html',
@@ -16,7 +19,7 @@ import { CommonService } from '../services/common.service';
 
 
 export class ThankYouComponent implements OnInit, OnDestroy {
-
+  [x: string]: any;
   script: any;
   strConfirmation: string;
   strAccessCode: string;
@@ -60,15 +63,31 @@ export class ThankYouComponent implements OnInit, OnDestroy {
   }
 
   newData() {
+    if (!!this.dataSharingService.navigateToMoveIn) {
+      this.dynamicImage = "goodlette-self-storage-8";
+      this.viewRatesContent = dataConfirmationMoveIn;
       this.service.changeData(
-        "SUCCESS",
-        '',
-        ''
-      ); 
+        "payment",
+        this.dynamicImage,
+        this.viewRatesContent
+      ); //invoke new Data
+     
+    } else {
+     
+      this.dynamicImage = "goodlette-self-storage-5";
+      this.viewRatesContent = dataConfirmationReserve;
+      this.service.changeData(
+        "payment",
+        this.dynamicImage,
+        this.viewRatesContent
+      ); //invoke new Data
+      
+    }
   }
 
   ngOnInit() {
     this.newData();
+    this.service.data$.subscribe((res) => (this.data = res));
     this.strConfirmation = this.dataSharingService.strConfirmation;
     this.strAccessCode = this.dataSharingService.strAccessCode;
     this.navigateToMoveIn = this.dataSharingService.navigateToMoveIn;
