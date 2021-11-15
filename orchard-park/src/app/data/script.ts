@@ -145,7 +145,7 @@ export const ogHomePage = [
   },
   {
     property: `og:image`,
-    content: script.imagesHomePage[1]
+    content: script.imagesHomePage[0]
   },
 ];
 
