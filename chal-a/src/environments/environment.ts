@@ -18,7 +18,7 @@ export const environment = {
   facilityName: 'Sample Self Storage - North',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: 'https://chal-a-staging.netlify.app',
+  websiteUrl: 'https://chal-a.com',
   APIKey: `dzJ0OVczSjQqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29343
   // APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28463
   
