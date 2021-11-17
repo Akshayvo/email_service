@@ -16,6 +16,7 @@ export const environment = {
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   websiteUrl: 'https://village-warehouse-staging.netlify.app',
   // APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north
-  APIKey: `Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 28464
+  APIKey: `Mjk1NDg6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29548
+
 
 };
