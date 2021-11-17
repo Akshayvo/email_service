@@ -31,11 +31,11 @@ export const aboutUsHeading = `Affordable Self Storage in Arcanum, Ohio`;
 
 export const aboutUs = [
     {
-        p1: `Hoke’s Store-N-Lock is proud to be Arcanum’s newest self storage facility providing Arcanum and the surrounding communities with affordable self storage units and the kind of customer service only a locally owned and operated facility can offer. Our units are conveniently located on South Main 
-        Street in Arcanum, right next to the Post Office, making us an ideal location for local 
-        residential and business storage users. Searching for a place to park your boat, trailer, or 
-        recreational vehicle? Look no further! Hoke’s Store-N-Lock offers a number of parking spaces 
-        just waiting to free up that spot in your lawn.`,
+        p1: `Hoke’s Store-N-Lock is proud to be Arcanum’s newest self storage facility providing 
+        Arcanum and the surrounding communities with affordable self storage units and the kind of 
+        customer service only a locally owned and operated facility can offer. Our units are conveniently 
+        located on South Main Street in Arcanum, right next to the Post Office, making us an ideal 
+        location for local residential and business storage users.`,
     },
     {
         sh1: `Convenience`,
@@ -58,8 +58,8 @@ export const aboutUs = [
     
 ];
 
-export const gettingStarted = `Are you ready to stop putting off cleaning out your attic, garage, or shed?
-Clear up some room around the house with Hoke's Store-N-Lock - North and one of our affordable storage units,
+export const gettingStarted = `Are you ready to stop putting off cleaning out your attic, garage, or shed? 
+Clear up some room around the house with Hoke's Store-N-Lock and one of our affordable storage units, 
 accessible 24 hours a day!`;
 
 export const feature = [
