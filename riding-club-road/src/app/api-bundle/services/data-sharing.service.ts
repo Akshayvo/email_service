@@ -39,6 +39,8 @@ export class DataSharingService {
     CCExpirationYear: '',
     CCBillingAddress: '',
     CCBillingZIP: '',
+    ACHBankRoutingNumber : '',
+    ACHBankAccountNumber: ''
   };
 
 
