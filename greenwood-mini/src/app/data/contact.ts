@@ -9,10 +9,10 @@ export const contactMainOffice = [
     {
         id: 2,
         label: 'Email: ',
-        email: 'angiemax@yahoo.com',
-        data: `angiemax@yahoo.com`,
+        email: 'angie@gwoodstorage.com',
+        data: `angie@gwoodstorage.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:angiemax@yahoo.com'
+        redirect: 'mailto:angie@gwoodstorage.com'
     },
     {
         id: 3,
@@ -62,10 +62,10 @@ export const contactsLocation1 = [
     {
         id: 1,
         label: 'Email: ',
-        email: 'angiemax@yahoo.com',
-        data: `angiemax@yahoo.com`,
+        email: 'angie@gwoodstorage.com',
+        data: `angie@gwoodstorage.com`,
         class: 'fas fa-envelope mr-2 iconColor',
-        redirect: 'mailto:angiemax@yahoo.com'
+        redirect: 'mailto:angie@gwoodstorage.com'
     },
     {
         id: 2,
@@ -129,10 +129,10 @@ export const contactsLocation2 = [
     {
         id: 1,
         label: 'Email: ',
-        email: 'angiemax@yahoo.com',
-        data: `angiemax@yahoo.com`,
+        email: 'angie@gwoodstorage.com',
+        data: `angie@gwoodstorage.com`,
         class: 'fas fa-envelope mr-2 iconColor',
-        redirect: 'mailto:angiemax@yahoo.com'
+        redirect: 'mailto:angie@gwoodstorage.com'
     },
     {
         id: 2,
@@ -173,10 +173,10 @@ export const contactsLocation3 = [
     {
         id: 1,
         label: 'Email: ',
-        email: 'angiemax@yahoo.com',
-        data: `angiemax@yahoo.com`,
+        email: 'angie@gwoodstorage.com',
+        data: `angie@gwoodstorage.com`,
         class: 'fas fa-envelope mr-2 iconColor',
-        redirect: 'mailto:angiemax@yahoo.com'
+        redirect: 'mailto:angie@gwoodstorage.com'
     },
     {
         id: 2,

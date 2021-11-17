@@ -124,7 +124,7 @@ export const privacyPolicy = [
       }
     ],
     note: `If you feel that we are not abiding by this privacy policy, you should contact us immediately via telephone
-    at  <a href="tel:6624533314" style="color: #000;">(662) 453-3314</a> or via email at <a href="mailto:angiemax@yahoo.com" style="color:#000;">angiemax@yahoo.com</a>.`,
+    at  <a href="tel:6624533314" style="color: #000;">(662) 453-3314</a> or via email at <a href="mailto:angie@gwoodstorage.com" style="color:#000;">angie@gwoodstorage.com</a>.`,
     // sharing: [
     //   {
     //     heading: `Sharing`
