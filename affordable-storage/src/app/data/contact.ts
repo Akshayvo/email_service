@@ -23,8 +23,12 @@ export const contact = [
 
 export const hours = [
     {
+        label: 'Winter Hours: ',
+        data: ''
+    },
+    {
         label: 'Monday to Friday: ',
-        data: '1:00PM - 5:00PM'
+        data: '12:00PM-4:00PM'
     },
     {
         label: 'Saturday: ',
@@ -35,8 +39,7 @@ export const hours = [
         data: 'CLOSED'
     },
     {
-        label: 'Access Hours: ',
-        data: '7 Days a Week 7:00AM - 7:00PM'
+        label: 'Access Hours 7 Days a Week 7:00AM - 7:00PM'
     }
 ];
 
