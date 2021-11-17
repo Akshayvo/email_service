@@ -163,15 +163,15 @@ export const headingReservePageLocation6 = `Ready to Reserve a Self Storage Unit
 
 export const heading1 = `Confederate Way Location`;
 
-export const heading2 = `Storage Plus of Baldwin County - Silverhill`;
+export const heading2 = `R & R Self Storage - Silverhill`;
 
-export const heading3 = `Storage Plus of Baldwin County - Barnwell`;
+export const heading3 = `R & R Self Storage - Barnwell`;
 
-export const heading4 = `Storage Plus of Baldwin County - Belforest`;
+export const heading4 = `R & R Self Storage - Belforest`;
 
-export const heading5 = `Storage Plus of Baldwin County - Fairhope`;
+export const heading5 = `R & R Self Storage - Fairhope`;
 
-export const heading6 = `Storage Plus of Baldwin County - Robertsdale`;
+export const heading6 = `R & R Self Storage - Robertsdale`;
 
 
 export const unitSizerLocation1 = [

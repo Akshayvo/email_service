@@ -169,37 +169,37 @@ export class HomeComponent implements OnInit {
 
 
     public fetchContactDetailsLocation1() {
-      this.heading = `Storage Plus of Baldwin County - confederate`;
+      this.heading = `R & R Self Storage - confederate`;
       this.contactDetails = contactsLocation1;
       this.hoursDetails = hoursLocation1;
     }
 
     public fetchContactDetailsLocation2() {
-      this.heading = `Storage Plus of Baldwin County - Silverhill`;
+      this.heading = `R & R Self Storage - Silverhill`;
       this.contactDetails = contactsLocation2;
       this.hoursDetails = hoursLocation2;
     }
 
     public fetchContactDetailsLocation3() {
-      this.heading = `Storage Plus of Baldwin County - Barnwell`;
+      this.heading = `R & R Self Storage - Barnwell`;
       this.contactDetails = contactsLocation3;
       this.hoursDetails = hoursLocation3;
     }
 
     public fetchContactDetailsLocation4() {
-      this.heading = `Storage Plus of Baldwin County - Belforest`;
+      this.heading = `R & R Self Storage - Belforest`;
       this.contactDetails = contactsLocation4;
       this.hoursDetails = hoursLocation4;
     } 
 
     public fetchContactDetailsLocation5() {
-      this.heading = `Storage Plus of Baldwin County - Fairhope`;
+      this.heading = `R & R Self Storage - Fairhope`;
       this.contactDetails = contactsLocation5;
       this.hoursDetails = hoursLocation5;
     }
 
     public fetchContactDetailsLocation6() {
-      this.heading = `Storage Plus of Baldwin County - Robertsdale`;
+      this.heading = `R & R Self Storage - Robertsdale`;
       this.contactDetails = contactsLocation6;
       this.hoursDetails = hoursLocation6;
     }

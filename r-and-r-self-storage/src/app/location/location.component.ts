@@ -126,7 +126,7 @@ export class LocationComponent implements OnInit {
              content: `${this.location2PageContent}`
     });
     this.titleService.setTitle(`${this.location2PageTitle}`);
-           this.locationName = `Storage Plus of Baldwin County - Silverhill`;
+           this.locationName = `R & R Self Storage - Silverhill`;
            this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
            this.dataSharingService.locationName = this.locationName;
            this.script = Location2Script;
@@ -150,7 +150,7 @@ export class LocationComponent implements OnInit {
           content: `${this.location3PageContent}`
     });
     this.titleService.setTitle(`${this.location3PageTitle}`);
-        this.locationName = `Storage Plus of Baldwin County - Barnwell Location`;
+        this.locationName = `R & R Self Storage - Barnwell Location`;
         this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
         this.dataSharingService.locationName = this.locationName;
         this.script = Location3Script;
@@ -174,7 +174,7 @@ export class LocationComponent implements OnInit {
       content: `${this.location4PageContent}`
     });
     this.titleService.setTitle(`${this.location4PageTitle}`);
-    this.locationName = `Storage Plus of Baldwin County - Belforest Location`;
+    this.locationName = `R & R Self Storage - Belforest Location`;
     this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc4;
     this.dataSharingService.locationName = this.locationName;
     this.script = Location4Script;
@@ -198,7 +198,7 @@ export class LocationComponent implements OnInit {
       content: `${this.location5PageContent}`
 });
 this.titleService.setTitle(`${this.location5PageTitle}`);
-    this.locationName = `Storage Plus of Baldwin County - Fairhope`;
+    this.locationName = `R & R Self Storage - Fairhope`;
     this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc5;
     this.dataSharingService.locationName = this.locationName;
     this.script = Location5Script;
@@ -222,7 +222,7 @@ this.titleService.setTitle(`${this.location5PageTitle}`);
     content: `${this.location6PageContent}`
 });
 this.titleService.setTitle(`${this.location6PageTitle}`);
-  this.locationName = `Storage Plus of Baldwin County - Robertsdale`;
+  this.locationName = `R & R Self Storage - Robertsdale`;
   this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc6;
   this.dataSharingService.locationName = this.locationName;
   this.script = Location6Script;

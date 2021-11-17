@@ -89,6 +89,8 @@ export const apiRoutes = [
     { path: '', component: HomeComponent  },
     { path: 'privacy-policy', component: PrivacyPolicyComponent },
     { path: 'frequently-asked-questions', component: FaqComponent},
+    { path:'faq',component: HomeComponent},
+    { path:'test',component: HomeComponent},
     { path: `${environment.locationName}/confederate`,
       component: LocationComponent,
       children: [

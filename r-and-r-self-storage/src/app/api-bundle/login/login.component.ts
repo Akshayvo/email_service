@@ -133,37 +133,37 @@ export class LoginComponent implements OnInit, OnDestroy {
 
     if (this.router.url.includes('confederate')) {
       this.id = 1;
-      this.name = 'Storage Plus of Baldwin County - confederate';
+      this.name = 'R & R Self Storage - confederate';
       this.contact = contactsLocation1;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc1);
     } else  if (this.router.url.includes('refuge')) {
       this.id = 2;
-      this.name = 'Storage Plus of Baldwin County - Silverhill';
+      this.name = 'R & R Self Storage - Silverhill';
       this.contact = contactsLocation2;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc2);
     } else  if (this.router.url.includes('old-philadelphia')) {
       this.id = 3;
-      this.name = 'Storage Plus of Baldwin County - Barnwell';
+      this.name = 'R & R Self Storage - Barnwell';
       this.contact = contactsLocation3;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc3);
     } else  if (this.router.url.includes('n-main')) {
       this.id = 4;
-      this.name = 'Storage Plus of Baldwin County - Belforest';
+      this.name = 'R & R Self Storage - Belforest';
       this.contact = contactsLocation4;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc4;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc4);
     } else  if (this.router.url.includes('talking-rock')) {
       this.id = 5;
-      this.name = 'Storage Plus of Baldwin County - Fairhope';
+      this.name = 'R & R Self Storage - Fairhope';
       this.contact = contactsLocation5;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc5;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc5);
     } else  if (this.router.url.includes('campus-drive')) {
       this.id = 6;
-      this.name = 'Storage Plus of Baldwin County - Robertsdale';
+      this.name = 'R & R Self Storage - Robertsdale';
       this.contact = contactsLocation6;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc6;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc6);

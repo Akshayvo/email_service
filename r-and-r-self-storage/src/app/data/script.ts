@@ -76,10 +76,10 @@ const emailIndex6 = contactsLocation6.findIndex(x => x.label === 'Email: ');
   
 export const nameLocation1 = `Confederate Way Location`;
 export const nameLocation2 = `Refuge Road Location`;
-export const nameLocation3 = `Storage Plus of Baldwin County - Barnwell`;
-export const nameLocation4 = `Storage Plus of Baldwin County - Belforest`;
-export const nameLocation5 = `Storage Plus of Baldwin County - Fairhope`;
-export const nameLocation6 = `Storage Plus of Baldwin County - Robertsdale`;
+export const nameLocation3 = `R & R Self Storage - Barnwell`;
+export const nameLocation4 = `R & R Self Storage - Belforest`;
+export const nameLocation5 = `R & R Self Storage - Fairhope`;
+export const nameLocation6 = `R & R Self Storage - Robertsdale`;
 
 
 export const location1 = `confederate`;
