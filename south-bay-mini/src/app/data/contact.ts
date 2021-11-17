@@ -25,7 +25,7 @@ export const contact = [
 export const hours = [
     {
         label: 'Monday - Friday: ',
-        data: '8:30AM to 11:30AM Then 12:00PM to 3:30PM'
+        data: '8:30AM to 3:30AM Closed For Lunch, 11:30AM to Noon.'
     },
     {
         label: 'Saturday and Sunday: ',
@@ -35,10 +35,10 @@ export const hours = [
     //     label: 'Sunday: ',
     //     data: 'CLOSED'
     // },
-    // {
-    //     label: 'Storage Access Hours: ',
-    //     data: '24 hours a day, 7 days a week'
-    // }
+    {
+        label: 'Gate Hours: ',
+        data: '7AM to 7PM, 7 DAYS A WEEK'
+    }
 ];
 
 export const socialLinks = [

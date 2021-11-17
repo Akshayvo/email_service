@@ -2,12 +2,31 @@ import { objSIMSetting } from './configuration';
 
 export const dataViewRates = [
     {
-      p: `Take a moment to check out the available inventory and unit rates at South Bay Mini-Storage. Once you’ve found a unit that suits your needs, reserve it online through our tenant portal, or you can call our friendly management team, and we’ll help you complete your rental application.`,
+      p: `Take a moment to check out the available inventory and unit rates at South Bay Mini-Storage. Once you've found a unit that suits your needs reserve it online through our tenant portal, or you can call our friendly management team during office hours and we'll help you complete your rental application.`,
     },
     {
       p: `As soon as you receive your unique access code, you’ll have access to your unit from 7:00AM to 7:00PM 7 days a week. You can log online and pay your bill 24-Hours a day through our easy tenant portal. Still have questions about our self storage units and conveniences? Give us a call today!`
     },
+
 ];
+
+export const viewRatesDisclaimer = [
+  {
+    p:`All units are are priced based on square footage.`
+  },
+  {
+    p:`Not all units may be square.`
+  },
+  {
+    p:`A current photo Id is required to rent.`
+  },
+  {
+    p:`1 Month rental fee plus deposit required at time of rental.`
+  },
+  {
+    p:`Tenant must provide their own lock.`
+  }
+]
 
 export const viewRatesAltText = `two rows of roll-up metal self storage unit doors inside a climate controlled self storage building`;
 

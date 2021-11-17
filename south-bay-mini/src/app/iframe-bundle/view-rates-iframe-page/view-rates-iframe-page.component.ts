@@ -57,5 +57,6 @@ export class ViewRatesIframePageComponent implements OnInit {
   public fetchViewRates() {
     this.viewRates = dataViewRates;
     this.viewRatesAltText = viewRatesAltText;
+    
   }
 }
