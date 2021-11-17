@@ -36,7 +36,7 @@ export const script = {               // Please fill this script according to fa
      state: "wisconsin",
      addressLocality: "Sturgeon Bay",
      addressRegion: "WI",
-     postalCode: "10019",
+     postalCode: "54235",
      addressCountry: "US",
      id: environment.websiteUrl || "",
      paymentAccepted:  "Cash, Check, Credit Card, Debit Card",

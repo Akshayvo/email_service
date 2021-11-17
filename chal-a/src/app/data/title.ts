@@ -4,7 +4,7 @@ export const homePageContent = `Chal-A Apartments and Climate Controlled Storage
 export const viewRatesPageTitle = `View Rates  | Chal-A Apartments and Climate Controlled Storage`;
 export const viewRatesPageContent = `Take a moment to view our affordable self storage unit rates, then complete your rental by filling out our form or calling our office today!`;
 
-export const reservePageTitle = `Reserve a Unit | Sample Self Storage - North`;
+export const reservePageTitle = `Reserve a Unit | Chal-A Apartments and Climate Controlled Storage`;
 export const reservePageContent = `Simply fill out our easy reservation form and one of our friendly self storage associates will be ready and waiting for your arrival!`;
 
 export const payRentPageTitle = `Pay Rent  | Chal-A Apartments and Climate Controlled Storage`;
@@ -19,8 +19,8 @@ export const unitSizerPageContent = `If you're having trouble visualizing what w
 export const contactPageTitle = `Contact Us  | Chal-A Apartments and Climate Controlled Storage`;
 export const contactPageContent = `Do you have a question about our services, or would you like help with your account? Use our form or contact information to reach out, today!`;
 
-export const thankYouPageTitle = `Thank You For Reserving Your Unit at Sample Self Storage!`;
+export const thankYouPageTitle = `Thank You For Reserving Your Unit at Chal-A Apartments and Climate Controlled Storage`;
 export const thankYouPageContent = `We've received your reservation! One of our friendly staff will be in touch!`;
 
-export const privacyPolicyPageTitle = `Privacy Policy | Sample Self Storage - North`;
+export const privacyPolicyPageTitle = `Privacy Policy | Chal-A Apartments and Climate Controlled Storage`;
 export const privacyPolicyPageContent = `This page contains this website's privacy policy. For more information, please contact the business directly.`;

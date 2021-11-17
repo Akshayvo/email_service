@@ -5,7 +5,7 @@
 export const environment = {
   production: true,
   type: 0,  // { API: 0, iframe: 1 }
-  locationName: 'new-york/baldwinsville', // state/city  **Remeber to update locationName in sitemap.xml as well
+  locationName: 'wisconsin/sturgeon', // state/city  **Remeber to update locationName in sitemap.xml as well
   signUpForAuotoPay: 1, // { Yes: 1, No: 0 }
   alternateType: { moveIn: true, reserve: true }, // { moveIn: true, reserve: true },
   military: true, // set true for Military and Driver's Details 
@@ -14,8 +14,8 @@ export const environment = {
   errorsMails: [ 'sanghmitra.v@codeparva.in' ],
   senderEmail: 'errors@codeparva.in',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
-  appId: 'Sample Self Storage - North',
-  facilityName: 'Sample Self Storage - North',
+  appId: 'Chal-A Apartments and Climate Controlled Storage',
+  facilityName: 'Chal-A Apartments and Climate Controlled Storage',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   websiteUrl: 'https://chal-a.com',
