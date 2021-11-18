@@ -2,7 +2,7 @@ import { objSIMSetting } from './configuration';
 
 export const dataViewRates = [
     {
-      p: `Our locally owned and operated self storage and vehicle parking facility serves Arcanum, and the surrounding communities in Darke County with affordable storage. `,
+      p: `Our locally owned and operated self storage facility serves Arcanum, and the surrounding communities in Darke County with affordable storage. `,
     },
     {
       p: `Take a moment to review our pricing and availability, then rent your unit online in 

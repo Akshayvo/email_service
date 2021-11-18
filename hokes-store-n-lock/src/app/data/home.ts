@@ -21,7 +21,7 @@ export const featuresList = [
     },
     {
         td1: 'Affordable Rates',
-        td2: 'ATV/Boat Storage',
+       
     }
 ];
 
@@ -65,9 +65,9 @@ accessible 24 hours a day!`;
 export const feature = [
     {
         // tslint:disable-next-line:max-line-length
-        label: 'Boat and Vehicle Storage',
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/garage.svg`,
-        alt: 'Icon art displaying boat and motorcycle'
+        label: 'Affordable Self Storage Rates',
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/hand.svg`,
+        alt: 'Icon of a hand holding money'
     },
     {
         // tslint:disable-next-line:max-line-length
