@@ -389,7 +389,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   selectInsuranceChoice(event: any) {
     const indexValue = event.target.value;
     const index = this.LstInsuranceChoices.findIndex(x => x.CoverageDescription === indexValue);
-    if (!!index) {
+    if (index!=null && index>=0) {
       this.dataSharingService.insuranceChoiceId = this.LstInsuranceChoices[index].InsuranceChoiceID;
       this.premium = this.LstInsuranceChoices[index].Premium;
     }
@@ -407,7 +407,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   selectChangeHandler (event: any) {
     const indexValue  = event.target.value;
     const index = this.lstUnitTypes.findIndex(x => x.Description === indexValue);
-    if (!!index) {
+    if (index!=null && index>=0) {
       this.monthlyRate = this.lstUnitTypes[index].MonthlyRate;
       this.annualRate = this.lstUnitTypes[index].AnnualRate;
       this.biAnnualRate = this.lstUnitTypes[index].BiAnnualRate;
@@ -579,7 +579,7 @@ getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number
        const index = unitTypesResponse.lstUnitTypes.findIndex(x => x.UnitTypeID === this.dataSharingService.LstUnitTypes.UnitTypeID);
        this.lstUnitTypes = unitTypesResponse.lstUnitTypes;
        this.getFilterLstUnitTypes(unitTypesResponse);
-       if (index && index >= 0 ) {
+       if (index!=null && index >= 0 ) {
          const defaultMonthlyValue = unitTypesResponse.lstUnitTypes[index].MonthlyRate;
          this.description = unitTypesResponse.lstUnitTypes[index].Description;
          this.reservationFeeTax = unitTypesResponse.lstUnitTypes[index].ReservationFeeTax;

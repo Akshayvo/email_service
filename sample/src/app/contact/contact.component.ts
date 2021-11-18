@@ -171,7 +171,7 @@ export class ContactComponent implements OnInit {
 
       const index = contact.findIndex((x) => x.label === "Email:");
 
-      if (!!index) {
+      if (index!=null && index>=0) {
         this.receiveremail = this.contactDetails[index].data;
       }
 
