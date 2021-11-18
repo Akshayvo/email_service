@@ -34,7 +34,7 @@ export const aboutUsHeading = `Self Storage Units Available in Eureka, CA`;
 
 export const aboutUs = [
     {
-        p: `South Bay Mini-Storage is Eureka’s one stop self storage solution. We are conveniently located just off the 101 south of Eureka on Humboldt Hill. As a locally owned and operated self storage facility, we go the extra mile every day to bring our customers the highest level of customer service at very competitive rates.We are proud to serve both residential and commercial storage unit users in the Humboldt or Humboldt County area. `,
+        p: `South Bay Mini-Storage is Eureka’s one stop self storage solution. We are conveniently located just off the 101 south of Eureka on Humboldt Hill. As a locally owned and operated self storage facility, we go the extra mile every day to bring our customers the highest level of customer service at very competitive rates. We are proud to serve both residential and commercial storage unit users in the Humboldt or Humboldt County area. `,
     },
     {
         p: `<h2>Convenience</h2>We understand that self storage is often required at the most stressful times, that's why South Bay Mini-Storage provides every effort to make your stay with us a simple and easy one. Start by checking out our available inventory and pricing on our website, then reserve your unit online in minutes, or you can call our friendly management team. Once you've completed the rental application in person, you"ll receive a personal access code to the facility. You now have easy access to your units from 7:00 am to 7 pm 7 Days a week! `,

@@ -17,9 +17,11 @@
             {{viewRates.p}}
           </p>
           <h2>Disclaimer</h2>
-          <p class='view-disclaimer'*ngFor="let viewDisclaimer of viewRatesDisclaimer">
-            {{viewDisclaimer.p}}
-          </p>
+          <ul>
+            <li class='view-disclaimer'*ngFor="let viewDisclaimer of viewRatesDisclaimer">
+              {{viewDisclaimer.p}}
+            </li>
+          </ul>
           <a class="btn btn-lg btn-primary mt-2" (click)="navigate('/storage-tips')" role="button">Storage tips</a>
         </div>
     </div>

@@ -36,7 +36,7 @@ export const hours = [
     //     data: 'CLOSED'
     // },
     {
-        label: 'Gate Hours: ',
+        label: 'GATE HOURS: ',
         data: '7AM to 7PM, 7 DAYS A WEEK'
     }
 ];
