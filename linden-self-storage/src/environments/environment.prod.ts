@@ -15,6 +15,7 @@ export const environment = {
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   websiteUrl: 'https://linden-storage-staging.netlify.app',
-  APIKey: `dzF0NFcySjYqOE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`,//14268
+  APIKey: `dzF0NFcySjgqNk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`,//14286
+  // APIKey: `Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`,// 28464 
 
 };
