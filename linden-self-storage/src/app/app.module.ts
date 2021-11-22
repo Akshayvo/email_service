@@ -61,7 +61,7 @@ import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.componen
 import { AlternateDetailsComponent } from './alternate-details/alternate-details.component'; //added
 import { ReserveUnitComponent } from './reserve-unit/reserve-unit.component';
 import { ContactUsComponent } from './contact-us/contact-us.component'; //added
-
+import { ContactButtonComponent } from './contact-button/contact-button.component';
 
 @NgModule({
   declarations: [
@@ -77,7 +77,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component'; //added
     StorageTipsComponent,
     AccordionComponent,
     ReserveComponent,
-    ViewRatesComponent,
+    ContactButtonComponent,
     ViewRatesIframePageComponent,
     ViewRatesPageComponent,
     ReserveUnitFormComponent,
