@@ -33,7 +33,7 @@ export const script = {  // Please fill this script according to facility's info
      ],
      telephone: contact[contactIndex].data,
      map: "https://www.google.com/maps?ie=UTF8&hq&ll=44.264137,-88.3540592",
-     description: "A superb collection of fine gifts and clothing to accent your stay in Mexico Beach.",
+     description: "",
      streetAddress: "870 Linden Ave",
      state: "New York",
      addressLocality: "Rochester",
