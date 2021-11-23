@@ -10,7 +10,7 @@ export const dataViewRates = [
  
 ];
 
-export const viewRatesAltText = `two rows of roll-up metal self storage unit doors inside a climate controlled self storage building`;
+export const viewRatesAltText = `a row of boats on trailers in a parking area`;
 
 export const MilitaryTypes = [
   {

@@ -25,7 +25,7 @@ export const featuresList = [
     }
 ];
 
-export const aboutUsAlt = `a row of large camper and recreational vehicles under a blue sky`;
+export const aboutUsAlt = `a row of recreational vehicles under a roof`;
 
 export const aboutUsHeading = `Affordable Recreational, Boat, and Trailer Parking in Cedar Lake`;
 
@@ -50,7 +50,7 @@ export const gettingStarted = ``;
 export const feature = [
     {
         // tslint:disable-next-line:max-line-length
-        label: 'Boat and Vehicle Storage',
+        label: 'Vehicle/Boat/Trailer/RV ',
         path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/garage.svg`,
         alt: 'Icon art displaying boat and motorcycle'
     },
@@ -70,7 +70,7 @@ export const feature = [
     {
         // tslint:disable-next-line:max-line-length
         path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/thermometer.svg`,
-        label: 'Climate Controlled',
+        label: 'Temperature Controlled',
         alt: 'Icon of thermometer indicating climate-controlled units'
     },
 ];
