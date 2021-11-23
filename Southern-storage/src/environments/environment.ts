@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   type: 0,  // { API: 0, iframe: 1 }
-  locationName: 'location',
+  locationName: 'Mississippi',
   paymentPageType: 0, // { withoutTab: 0, withTab: 1}
   cards: ['Visa', 'Master Card', 'Amex', 'Discover'],
   alternateType: { moveIn: true, reserve: false }, // { moveIn: true, reserve: true },
