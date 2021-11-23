@@ -42,7 +42,7 @@
           <div class="row">
             <div class="form-group col-lg-12 " *ngIf="navigateToMoveIn">    
               <label>Total Move In Fee</label>&nbsp;
-              <input type="text" class="form-control" formControlName="PaymentAmount" readonly  [value]="totalMoveInAmount"/>
+              <input type="number" class="form-control" formControlName="PaymentAmount" readonly  [value]="totalMoveInAmount"/>
             </div>
           </div>
           <div *ngIf="!navigateToReserve && !navigateToMoveIn"> 
@@ -226,7 +226,7 @@
               <div class="row">
                 <div class="form-group col-lg-12">
                   <label>CVV2</label>&nbsp;
-                  <input type="text" class="form-control" formControlName="CCAccountCVV2" />
+                  <input type="number" class="form-control" formControlName="CCAccountCVV2" />
                 </div>
               </div>
         
@@ -247,7 +247,7 @@
               <div class="row">
                 <div class="form-group col-lg-12">
                   <label>Zip Code*</label>&nbsp;
-                  <input type="text" class="form-control" formControlName="CCAccountZIP"
+                  <input type="number" class="form-control" formControlName="CCAccountZIP"
                   [ngClass]="{ 'is-invalid': submitted && f.objPayment['controls'].CCAccountZIP.errors }"
                   />
                   <div *ngIf="submitted && f.objPayment['controls'].CCAccountZIP.errors" class="invalid-feedback">

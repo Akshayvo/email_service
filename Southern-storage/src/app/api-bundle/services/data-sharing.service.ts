@@ -5,6 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class DataSharingService {
 
+  paymentSuccess: boolean;
   locationName: string;
   strConfirmation: string;
   strAccessCode: string;
@@ -26,8 +27,8 @@ export class DataSharingService {
   CCApprovalCode: string;
   showAltDetails: boolean;
   showMilitaryDetails: boolean;
-
   paymentTab: string;
+  amountToPayThankYou: number;
 
 locationAPIKey = {
   loc1: 'dzJ0OFc4SjYqN046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // Agricola - 28867
