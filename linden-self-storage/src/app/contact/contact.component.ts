@@ -78,8 +78,8 @@ export class ContactComponent implements OnInit {
         this.contactForm.value.subject = 'Website Form Submission';
       }
 
-      this.receiveremail = this.contactInfo[1].data;
-
+      this.receiveremail = this.contactInfo[1].email;
+      
           this.completeMessage = `phone: ${this.contactForm.value.phone}, <br/>
                                  message: ${this.contactForm.value.message}`;
 
@@ -101,6 +101,7 @@ export class ContactComponent implements OnInit {
             });
           this.submitted = false;
           // MailService(body);
+          this.mailSent = false;
           this.contactForm.reset();
     }
   }

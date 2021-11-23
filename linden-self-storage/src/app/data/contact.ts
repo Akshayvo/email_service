@@ -9,7 +9,8 @@ export const contact = [
         id: 1,
         redirect: 'mailto:support@lindenstorage.com',
         label: 'Email:',
-        data: 'support@lindenstorage.com',
+        email: 'akshay.o@codeparva.in',
+        data: `support@lindenstorage.com`,
         class: 'fas fa-envelope mr-2 iconColor',
     },
     {
