@@ -2,7 +2,7 @@ import { WINDOW } from '@ng-toolkit/universal';
 import { Component, OnInit , Inject} from '@angular/core';
 import { Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
-import { homeScript } from '../data/script';
+import { homePageScript } from '../data/script';
 import { contact, hours } from '../data/contact';
 import { featuresList, aboutUs, gettingStarted, feature, blurb} from '../data/home';
 import { CanonicalService } from '../services/canonical.service';
@@ -69,7 +69,7 @@ export class HomeComponent implements OnInit {
   }
 
   public fetchScript() {
-    this.script = homeScript;
+    this.script = homePageScript;
   }
 
   public fetchHours() {

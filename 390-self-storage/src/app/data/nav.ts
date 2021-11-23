@@ -1,4 +1,4 @@
-export const navLinks = [
+import { environment } from '../../environments/environment';export const navLinks = [
     {
         label: 'HOME',
         path: '/',
@@ -23,7 +23,7 @@ export const navLinks = [
     },
     {
         label: 'VIEW RATES',
-        path: '/view-rates',
+        path: `${environment.locationName}/view-rates`,
         type: 'link',
     },
     {
@@ -38,7 +38,7 @@ export const navLinks = [
     },
     {
         label: 'STORAGE TIPS',
-        path: 'storage-tips',
+        path: `${environment.locationName}/storage-tips`,
         type: 'link',
     },
     {

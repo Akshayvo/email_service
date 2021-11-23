@@ -201,6 +201,9 @@ export const testimonials = [
     }
 ];
 
+export const aboutUsAlt = `indoor climate controlled storage units with roll-up doors inside of a clean, well-lit building`;
+
+export const aboutUsHeading = ``;
 
 export const gettingStarted = `If you're ready to reclaim that space around the house, or expand your business
 without taking on more expensive commercial real estate space just to store supplies, give 390 Self Storage a Call!`;
@@ -209,5 +212,18 @@ export const blurb = [
     {
         h1: ``,
         p: ``,
+    }
+];
+
+
+
+export const jumbotron = [
+    {
+        h2: `Affordable Climate Controlled Units in Baldwinsville`,
+        blurb: `Sample Self Storage - North was the first self storage facility we built nearly 20 years ago.
+        We recently renovated our entire operation to make sure our valued customers have another 20 years of
+        clean, affordable regular and climate controlled self storage options in Baldwinsville! Let Sample Self
+        Storage - North help you today. Our well-lit and personalized pin-code secured facility awaits your next
+        storage project!`,
     }
 ];
