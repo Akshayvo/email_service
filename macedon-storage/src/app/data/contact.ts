@@ -11,7 +11,7 @@ export const contact = [
         label: 'Office Address:',
         data: '870 Linden Ave, Rochester, NY 14625',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
-        redirect: ''
+        redirect: 'https://goo.gl/maps/hZzERABPtYJ5MthP8'
     },
     {
         id: 1,
@@ -49,16 +49,16 @@ export const hours = [
 ];
 
 export const socialLinks = [
-    {
-        label: 'twitter',
-        path: '',
-        class: 'fab fa-twitter-square',
-    },
-    {
-        label: 'facebook',
-        path: '',
-        class: 'fab fa-facebook-square',
-    },
+    // {
+    //     label: 'twitter',
+    //     path: '',
+    //     class: 'fab fa-twitter-square',
+    // },
+    // {
+    //     label: 'facebook',
+    //     path: '',
+    //     class: 'fab fa-facebook-square',
+    // },
 ];
 
 

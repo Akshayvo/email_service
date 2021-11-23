@@ -9,6 +9,8 @@ a {
 //   width: 200px;
 // }
 
+
+
 .dropdown-menu {
   border-radius: 0;
   border: none;
@@ -29,8 +31,15 @@ a {
     }
   }
 }
-.dropdown-item:active{
-  background-color:transparent;
+
+.dropdown:hover {
+  .dropdown-menu {
+    display: block;
+  }
+}
+
+.dropdown-item:active {
+  background-color: transparent;
   color: $white;
 }
 
@@ -42,11 +51,23 @@ a {
   display: inline;
 
   .contact-details {
+    // display: block;
     color: $white;
     font-size: 0.82em;
     font-weight: 500;
     width: 100%;
   }
+}
+
+.btn-payment {
+  background-color: #ffffff;
+  color: $primary;
+}
+
+.payment-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .social {
@@ -119,9 +140,19 @@ a {
   }
 }
 
-@media screen and (max-width: 991px) {
-  .display {
+@media screen and (min-width: 768px) {
+  .payment-button {
     display: none;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  // .display {
+  //   display: none;
+  // }
+
+  .contact-details {
+    display: block;
   }
 
   .nav-link {

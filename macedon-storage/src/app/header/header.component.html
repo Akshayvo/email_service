@@ -1,13 +1,15 @@
-<!-- <div class="col-md-12 display bg-secondary py-2">
+<div class="col-md-12 display bg-primary py-2">
   <div class="container">
     <div class="contact-header">
       <div class="row">
         <div class="col-md-10">
           <span class="contact-details pr-4" *ngFor="let contact of contactDetails">
-            <i [class]="contact?.class"></i>
-            <span class="contact-links" *ngIf="contact?.label === 'Address:' || contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
-              <a [href]="contact?.redirect" target="{{(contact?.label === 'Address:') ? '_blank' : '_self'}}">&nbsp;{{contact.data}}</a></span>
-            <ng-template #other_content>&nbsp;{{contact.data}}</ng-template>
+            <span *ngIf="contact?.label !== 'Phone:'">
+              <i [class]="contact?.class"></i>
+              <span class="contact-links" *ngIf="contact?.label === 'Facility Address:' || contact?.label === 'Email:' || contact?.label === 'Office Address:' else other_content">
+                <a [href]="contact?.redirect" target="{{(contact?.label === 'Address:') ? '_blank' : '_self'}}">&nbsp;{{contact.data}}</a></span>
+              <ng-template #other_content>&nbsp;{{contact.data}}</ng-template>
+            </span>
           </span>
         </div>
         <div class="col-md-2 ml-auto text-right">
@@ -18,9 +20,12 @@
           </span>
         </div>
       </div>
+      <div class="payment-button">
+        <a class="btn btn-payment p-2" [routerLink]="['/pay-rent']" role="button">Pay Rent</a>
+       </div> 
     </div>
   </div>
-</div> -->
+</div>
 
 
 <nav class="navbar navbar-expand-lg navbar-light bg-navbg py-0 bg-white">
