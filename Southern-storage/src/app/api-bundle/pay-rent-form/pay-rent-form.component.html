@@ -172,7 +172,7 @@
             <div class="row">
               <div class="form-group col-lg-6">
                 <label>Credit Card Number*</label>&nbsp;
-                <input  class="form-control" type="text" formControlName="CCAccountNumber"  (keyup)="autoCardType($event)"
+                <input class="form-control" type="number" formControlName="CCAccountNumber"  (keyup)="autoCardType($event)"
                 [ngClass]="{ 'is-invalid': submitted && f.objPayment['controls'].CCAccountNumber.errors }"
                 />
                 <div *ngIf="submitted && f.objPayment['controls'].CCAccountNumber.errors" class="invalid-feedback">
