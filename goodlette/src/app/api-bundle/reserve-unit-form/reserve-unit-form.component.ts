@@ -378,7 +378,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     const index = this.LstInsuranceChoices.findIndex(
       (x) => x.CoverageDescription === indexValue
     );
-    if (!!index) {
+    if (index!=null && index>=0) {
       this.dataSharingService.insuranceChoiceId =
         this.LstInsuranceChoices[index].InsuranceChoiceID;
       this.premium = this.LstInsuranceChoices[index].Premium;
@@ -408,7 +408,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     const index = this.lstUnitTypes.findIndex(
       (x) => x.Description === indexValue
     );
-    if (!!index) {
+    if (index !=null && index>=0) {
       this.monthlyRate = this.lstUnitTypes[index].MonthlyRate;
       this.annualRate = this.lstUnitTypes[index].AnnualRate;
       this.biAnnualRate = this.lstUnitTypes[index].BiAnnualRate;

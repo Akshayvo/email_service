@@ -167,8 +167,7 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
     this.MoveIn.intUnitTypeID = this.dataSharingService.LstUnitTypes.UnitTypeID;
     this.isValueUpdated = this.dataSharingService.isValueUpdated;
     this.totalTaxAmount = this.dataSharingService.MoveInData.TotalTaxAmount;
-    this.totalChargesAmount =
-      this.dataSharingService.MoveInData.TotalChargesAmount;
+    this.totalChargesAmount = this.dataSharingService.MoveInData.TotalChargesAmount;
     this.period = this.dataSharingService.period;
   }
 
