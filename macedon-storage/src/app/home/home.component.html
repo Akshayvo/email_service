@@ -4,7 +4,7 @@
     <div class="jumbotron px-0 m-0" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
       <!-- <div class=" jumbotorn-skew-style" [ngClass]="template === 'darkTheme' ? 'bg-translucent-dark' : 'bg-translucent-light'">
       </div> -->
-      <!-- <div class="container">
+      <div class="container">
         <div class="jumbotorn-skew-text">
           <div class="disp" *ngFor="let jumbotron of jumbotron">
             <h2  class="my-4">
@@ -13,11 +13,11 @@
           <p class="text-justify">{{jumbotron.blurb}}</p>
           </div>
           <div class="jumbotorn-button">
-            <a class="btn btn-lg btn-outline-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>
+            <a class="btn btn-lg btn-outline-primary" (click)="navigate('/view-rates')" role="button">Rent Now</a>
             <a class="btn btn-lg btn-primary" (click)="navigate('/contact-us')" role="button">Contact Us</a>
           </div>
           </div>
-        </div> -->
+        </div>
       </div>
       </div>
     <div class="jumbotron-bottom">
@@ -75,7 +75,8 @@
     <div class="section py-5 m-0">
       <div class="row">
         <div class="col-lg-6 py-3">
-          <img src="{{imageBaseUrl}}/macedon-front-gate.{{imagetype}}" width="100%" alt="{{aboutUsAlt}}" class="sectionImage">
+          <app-photos></app-photos>
+          <!-- <img src="{{imageBaseUrl}}/macedon-front-gate.{{imagetype}}" width="100%" alt="{{aboutUsAlt}}" class="sectionImage"> -->
         </div>
         <div class="col-lg-6 py-3">
           <!-- <h1 class="heading pb-4">{{aboutUsHeading}}</h1>

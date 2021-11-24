@@ -20,11 +20,11 @@
 
 
 .jumbotron-background-webp {
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Macedon/webp/macedon-front-gate-jumbotron.webp");
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Macedon/webp/macedon-storage-169.webp");
 }
 
 .jumbotron-background-jpg {
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Macedon/jpg/macedon-front-gate-jumbotron.jpg");
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Macedon/jpg/macedon-storage-169.jpg");
 }
 
 .display-contact {
@@ -641,6 +641,13 @@
 
     .jumbotorn-button {
       padding: 15px;
+      background-color: white;
     }
+  }
+}
+
+@media only screen and (min-width: 500px){
+  .jumbotorn-skew-text{
+    display: none;
   }
 }

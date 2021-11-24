@@ -38,7 +38,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   selectedDescription: string;
   result: any;
   month: any;
-  PaymentAmount: number;
+  PaymentAmount: any;
   CCApprovalCode: string;
   year = [];
   textBox: any;
