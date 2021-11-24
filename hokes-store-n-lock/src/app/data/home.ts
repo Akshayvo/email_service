@@ -25,7 +25,7 @@ export const featuresList = [
     }
 ];
 
-export const aboutUsAlt = `indoor climate controlled storage units with roll-up doors inside of a clean, well-lit building`;
+export const aboutUsAlt = `a row of outdoor metal self storage units with roll-up doors.`;
 
 export const aboutUsHeading = `Affordable Self Storage in Arcanum, Ohio`;
 
