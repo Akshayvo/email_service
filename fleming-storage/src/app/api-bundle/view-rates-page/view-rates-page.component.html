@@ -68,10 +68,7 @@
       </tbody>
       
   </table>
-  <div [class.loader]="!showTable">
-  </div>
-  <div [class.loader]="showLoader" class="loader-position"> 
-  </div>
+  
     <p  class="viewrates-desktop text-center mt-2" [class.display]="!showTable">
       <span>There is $50 deposit on all our units.</span>
       </p>
@@ -106,5 +103,5 @@
         </ng-template>
     </div>
   </div>
-  <h4 class='viewrates-mobile text-center mt-2'>There is $50 deposit on all our units.</h4>
+  <h4 class='viewrates-mobile text-center mt-2' [class.display]="!showTable">There is $50 deposit on all our units.</h4>
 </div>
