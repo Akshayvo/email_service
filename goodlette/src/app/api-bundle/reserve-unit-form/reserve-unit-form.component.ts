@@ -89,7 +89,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   reserveUnitForm: FormGroup;
 
   tokenExit: string;
-
+showLoader = false;
   submitted = false;
   rate: string;
   PeriodDescription: string;
@@ -478,9 +478,11 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
           this.dataSharingService.MoveInData.TotalTaxAmount = parseFloat(
             this.totalTaxAmount.toFixed(2)
           );
+          this.showLoader = false
         },
         (err) => {}
       );
+      
   }
 
   getLeadDays(data: any) {
@@ -577,6 +579,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   }
 
   getData() {
+    this.showLoader = true
     this.getDataSubscribe$ = this.fetchDataService
       .getData()
       .subscribe((unitTypesResponse) => {
@@ -596,7 +599,9 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
           this.monthlyRate =
             this.dataSharingService.LstUnitTypes.MonthlyRate ||
             defaultMonthlyValue;
+
         }
+        
         const serviceMonthlyValue =
           this.dataSharingService.LstUnitTypes.MonthlyRate;
         const serviceDescriptionValue =
