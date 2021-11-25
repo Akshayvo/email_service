@@ -27,6 +27,30 @@
   compress = true
 # A basic redirect rule
 [[redirects]]
+  from = "/lease-agreement"
+  to = "/"
+  status = 302
+[[redirects]]
+  from = "https://12fc5613-238b-dc9a-d2e6-789a72c3925c.filesusr.com/ugd/656a74_d5f5a4aaf7d6450d82ff6bd88c01e9d8.pdf"
+  to = "/"
+  status = 302
+[[redirects]]
+  from = "/credit-card-authorization-form"
+  to = "/"
+  status = 302
+[[redirects]]
+  from = "/east-rochester-stogage"
+  to = "/"
+  status = 302
+[[redirects]]
+  from = "/east-rochester-storage-ctzx"
+  to = "/"
+  status = 302
+[[redirects]]
+  from = "/east-rochester-storage-con8"
+  to = "/"
+  status = 302
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
