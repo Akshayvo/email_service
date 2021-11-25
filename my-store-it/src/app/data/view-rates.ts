@@ -53,18 +53,18 @@ export const th = [
     data: `Rate`,
     state: objSIMSetting.objUnitSizesSetting.blnShowRate
   },
-  {
-    data: `Waiting List`,
-    state:true,
-  }
+  // {
+  //   data: `Waiting List`,
+  //   state:true,
+  // }
   // {
   //   data: 'deposit',
   //   state: objSIMSetting.objUnitSizesSetting.blnShowDeposit
   // },
-  // {  
-  //   data: `Reserve a Unit`,
-  //   state: objSIMSetting.objActionSetting.blnAllowReservation
-  // },
+  {  
+    data: `Reserve a Unit`,
+    state: objSIMSetting.objActionSetting.blnAllowReservation
+  },
   // {
   //   data: `Move In`,
   //   state: objSIMSetting.objActionSetting.blnAllowMoveIn
