@@ -14,8 +14,8 @@ export const environment = {
   facilityName: 'Sodus Self Storage Plus',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: 'https://sodus-self-storage-plus-staging.netlify.app',
+  websiteUrl: 'https://sodusselfstorage.com',
   // APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north
-  APIKey: `dzJ0OVc1SjMqMk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29462
+  APIKey: `Mjk1MzI6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29532
 
 };

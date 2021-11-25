@@ -1,5 +1,5 @@
 # www.robotstxt.org/
 # Allow crawling of all content
-Sitemap: https://sodus-self-storage-plus-staging.netlify.app/sitemap.xml
+Sitemap: https://sodusselfstorage.com/sitemap.xml
 User-agent: *
 Disallow:/privacy-policy

@@ -1,7 +1,7 @@
 export const featuresList = [
     {
         td1: 'Convenient Location',
-        td2: 'Security Cameras',
+        td2: 'Security Cameras (Coming Soon)',
     },
     {
         td1: 'Well-Lit Facility',
@@ -12,7 +12,7 @@ export const featuresList = [
         td2: 'Drive-Up Units',
     },
     {
-        td1: 'Security System',
+        td1: 'Security System (Coming Soon)',
         td2: 'Auto-Pay Available',
     },
     {
@@ -21,7 +21,7 @@ export const featuresList = [
     },
     {
         td1: 'Affordable Rates',
-        td2: 'Recreational Vehicle Storage',
+        td2: 'Recreational Vehicle Storage (Coming Soon)',
     },
     {
         td1: 'Boat Storage',

@@ -52,7 +52,7 @@ export const hours = [
     // },
     {
         label: 'Storage Access Hours: ',
-        data: '24 hours a day, 7 days a week'
+        data: '24 hours a day, 7 days a week (Coming Soon)'
     }
 ];
 
