@@ -4,12 +4,13 @@ export const contact = [
         label: 'Address:',
         data: '870 Linden Ave, Rochester, NY 14625',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect:'https://goo.gl/maps/fGW5MZNagrQAwC4P9'
     },
     {
         id: 1,
         redirect: 'mailto:support@lindenstorage.com',
         label: 'Email:',
-        email: 'akshay.o@codeparva.in',
+        email: 'support@lindenstorage.com',
         data: `support@lindenstorage.com`,
         class: 'fas fa-envelope mr-2 iconColor',
     },

@@ -3,6 +3,14 @@
 .padding-top {
   padding-top: 90px;
 }
+.contentHolder {
+
+  padding-top: 45px;
+  margin-bottom: 50px;
+  min-height: 90vh;
+  max-height: auto;
+  display: block;
+}
 
 .pay-rent-holder {
   background-color: #f1f0ed;
@@ -10,4 +18,24 @@
 
 a {
   color: black;
+}
+
+
+@media only screen and (max-width: 600px) and (min-width: 576px) {
+  .contentholder {
+    padding-top: 152px;
+  }
+}
+
+
+@media screen and (max-width: 575px) and (min-width: 453px) {
+  .contentholder {
+    padding-top: 172px;
+  } 
+}
+
+@media screen and (max-width: 452px) {
+  .contentHolder {
+    padding-top: 125px;
+  } 
 }

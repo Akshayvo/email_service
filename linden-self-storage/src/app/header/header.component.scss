@@ -4,7 +4,11 @@
 a {
   cursor: pointer;
 }
-
+.contact-details{
+  a{
+    color:#000 !important;
+  }
+}
 .dropdown-menu {
   border-radius: 0;
   border: none;
@@ -24,6 +28,11 @@ a {
     }
   }
 }
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
 .dropdown-item:active{
   background-color:transparent;
   color: $white;
@@ -64,12 +73,27 @@ a {
 }
 
 .display {
+  background-color: #678d4e;
   display: block;
 }
 
 .navbar-toggler:focus,
 .navbar-toggler:hover {
-  border: 1px solid $primary;
+  
+   border: 1px solid $primary;
+}
+
+.btn-payment {
+  background-color: #ffffff;
+  color: $primary;
+  
+}
+
+.payment-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 }
 
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
@@ -79,11 +103,13 @@ a {
   }
 }
 
-@media only screen and (min-width: 992px) {
-  .dropdown:hover>.dropdown-menu {
-    display: block;
-  }
-}
+// @media only screen and (min-width: 992px) {
+//   .dropdown:hover>.dropdown-menu {
+//     display: block;
+//   }
+// }
+
+
 
 @media screen and (max-width: 991px) {
   .navbar-nav {
@@ -111,5 +137,31 @@ a {
   .navbar-nav-scroll {
     height: 200px;
     overflow-y: scroll;
+    
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .payment-button {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .contact-details{
+    
+    font-size: 0.9em;
+  }
+}
+
+@media only screen and (max-width: 425px) and (min-width: 280px) {
+  .navbar-nav-scroll{
+    line-height: 0.5rem;
+  }
+  .dropdown-menu{
+    line-height: 0.8rem;
+  }
+  .contact-details{
+    display: block;
   }
 }

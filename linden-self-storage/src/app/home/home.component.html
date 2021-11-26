@@ -29,9 +29,9 @@
         </div>
         
         <div class="col-lg-6 py-3">
-          <div class="mb-4">
+          <!-- <div class="mb-4">   -->
            <!-- <h2 class="heading pb-4">Location Information</h2> -->
-            <div>
+            <!-- <div> 
               <div class="font-xs-device" *ngFor="let contact of contactDetails">
                 <b>{{contact.label}}</b><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
                 <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
@@ -42,8 +42,54 @@
                       <b>{{hour.label}}</b>{{hour.data}}<br>
                     </div>    
               </div>
+              </div> -->
+          
+            <!-- </div>  -->
+            <div class="mb-4 contact-details">
+              <div
+                *ngFor="let contact of contactDetails"
+                class="display-contact"
+              >
+                <div *ngIf="contact?.label != 'Email: '">
+                  <h4>
+                    <strong>{{ contact.label }}&nbsp;</strong>
+                  </h4>
+                </div>
+                <div
+                  class="contact-links"
+                  [class.mb-2]="contact?.label === 'Phone:'"
+                  *ngIf="
+                    contact?.label === 'Address:' ||
+                    contact?.label === 'Email:' ||
+                    contact?.label === 'Phone:'
+                  "
+                >
+                  <h4>
+                    <a
+                      [href]="contact?.redirect"
+                      target="{{
+                        contact?.label === 'Address:'
+                          ? '_blank'
+                          : '_self'
+                      }}"
+                      rel="noopener"
+                      >{{ contact.data }}</a
+                    >
+                  </h4>
+                </div>
+                <!-- <ng-template #other_content>&nbsp;<h4>{{contact.data}}</h4></ng-template><br> -->
               </div>
-          </div>
+              <!-- <h4><b>Facility Hours:</b></h4> -->
+              <strong class='mt-2'>Office Hours:</strong>
+              <div class="display-contact contacts" *ngFor="let hour of hours">
+                <h4 *ngIf="hour.label">
+                  <strong>{{ hour.label }}</strong
+                  >&nbsp;
+                </h4>
+                <h4>{{ hour.data }}</h4>
+                <br />
+              </div>
+            </div>
           
           <div class="pt-2  amenities">
             <h2 class="pb-2">Only Linden Self Storage Includes:</h2>

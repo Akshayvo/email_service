@@ -1,9 +1,16 @@
 @import "../../styles.scss";
 
 .contentHolder {
-  padding-top: 90px;
+  
+  // padding-top: 90px;
+  // margin-bottom: 50px;
+  // min-height: 86vh;
+
+  padding-top: 140px;
   margin-bottom: 50px;
-  min-height: 86vh;
+  min-height: 90vh;
+  max-height: auto;
+  display: block;
 
   .padding {
     padding: 48px;
@@ -45,6 +52,21 @@
   }
 }
 
+.contact-details {
+  h4 {
+    font-size: 1rem !important;
+    // line-height: 20px; 
+    margin-top:5px;
+  }
+}
+
+.display-contact {
+  display: block;
+  line-height: 10px;
+}
+
+
+
 .map-responsive {
   overflow: hidden;
   padding-bottom: 56.25%;
@@ -64,6 +86,22 @@
 small {
   font-size: 0.8rem;
 }
+
+@media only screen and (max-width: 768px) {
+  .contact-buton {
+    
+    .btn-primary {
+      min-width: 100%;
+      margin-bottom: 5px;
+    }
+
+    .btn-outline-primary {
+      min-width: 100%;
+      margin-top: 5px;
+    }
+  }
+}
+
 
 @media only screen and (max-width: 600px) {
   .contentHolder {
@@ -90,4 +128,32 @@ small {
   h2 {
     font-size: 1.2rem;
   }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 576px) {
+  .contentholder {
+    padding-top: 152px;
+  }
+}
+
+
+@media screen and (max-width: 575px) and (min-width: 453px) {
+  .contentholder {
+    padding-top: 172px;
+  } 
+}
+
+@media screen and (max-width: 452px) {
+  .contentHolder {
+    padding-top: 200px;
+  } 
+}
+
+
+@media screen and (max-width: 425px) and (min-width: 280px) {
+  
+  .padding{
+    padding: 1rem 1rem 5rem 1rem !important;
+  }
+
 }

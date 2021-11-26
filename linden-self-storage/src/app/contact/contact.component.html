@@ -1,12 +1,12 @@
 
 <div class="contentHolder">
-  <div class="container">
+  <div class="container ">
       <div class="heading pb-5">
         <h1 class="text-center pt-5 disp">Contact Linden Self Storage</h1>
       </div>
-      <div class="contact-data">
+      <div class="contact-data background-padding">
         <div class="row bg-light padding">
-          <div class="col-lg-7 p-4">
+          <div class="col-lg-7 col-md-6 col-12 p-4">
             <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
                 <div class="form-group">
                     <div [hidden]="" *ngIf="submitted && !this.contactForm.valid" class="alert alert-danger alert-dismissible fade show">
@@ -23,7 +23,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-lg-6 col-md-12">
                         <div class="form-group">
                             <label>Name*</label>
                             <input type="text" formControlName="name" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.name.errors }" placeholder="Enter Name"/>
@@ -32,7 +32,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-lg-6 col-md-12">
                         <div class="form-group">
                             <label>Phone Number*</label>
                             <input type="tel" formControlName="phone" placeholder="Enter Phone Number" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.phone.errors }" />
@@ -46,7 +46,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-lg-6 col-md-12">
                         <div class="form-group">
                             <label>Email Address*</label>
                             <input type="text" formControlName="email" placeholder="Enter Email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
@@ -58,7 +58,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-lg-6 col-md-12">
                         <div class="form-group">
                             <label>Subject</label>
                             <input type="text" formControlName="subject" placeholder="Enter subject" class="form-control" />
@@ -72,19 +72,19 @@
                         <small class="form-text text-muted" *ngIf="f.message.errors.required">Please fill out this field</small>
                     </div>
                 </div>
-                <div class="form-group">
-                    <button type="submit" class="btn btn-primary px-4 mx-1">Submit</button>
-                    <button type="button" class="btn btn-outline-primary mx-1 px-4" (click)="contactForm.reset()">Clear</button>
+                <div class="form-group contact-buton">
+                    <button type="submit" class="btn btn-primary px-4 mx-md-1">Submit</button>
+                    <button type="button" class="btn btn-outline-primary px-4 mx-md-1" (click)="contactForm.reset()">Clear</button>
  
                 </div>
             </form>
           </div>
           
-          <div class="col-lg-5 p-4">
+          <div class="col-lg-5 col-md-6 col-12 p-4">
               <div class="map-responsive">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11648.846704027552!2d-77.4961197!3d43.1210793!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9ba11914c8f2cb7f!2sLinden%20Self%20Storage!5e0!3m2!1sen!2sus!4v1573430516282!5m2!1sen!2sus" width="100%" height="400px" frameborder="0"  allowfullscreen></iframe>
               </div>
-              <div class="contact-details pt-4">
+              <!-- <div class="contact-details pt-4">
                 <h2 class="py-1">Linden Self Storage</h2>
                 <span class="font-xs-device" *ngFor="let contact of contactInfo">
                     <b>{{contact.label}}</b><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
@@ -94,8 +94,54 @@
                 <span class="font-xs-device" *ngFor="let hour of hours">
                   <b>{{hour.label}}</b> {{hour.data}}<br>
                 </span>
+              </div> -->
+              <div class="mb-4 contact-details">
+                <h2 class=" my-3 py-1">Linden Self Storage</h2>
+                <div
+                  *ngFor="let contact of contactInfo"
+                  class="display-contact"
+                >
+                  <div *ngIf="contact?.label != 'Email: '">
+                    <h4>
+                      <strong>{{ contact.label }}&nbsp;</strong>
+                    </h4>
+                  </div>
+                  <div
+                    class="contact-links"
+                    [class.mb-2]="contact?.label === 'Phone:'"
+                    *ngIf="
+                      contact?.label === 'Address:' ||
+                      contact?.label === 'Email:' ||
+                      contact?.label === 'Phone:'
+                    "
+                  >
+                    <h4>
+                      <a
+                        [href]="contact?.redirect"
+                        target="{{
+                          contact?.label === 'Address:'
+                            ? '_blank'
+                            : '_self'
+                        }}"
+                        rel="noopener"
+                        >{{ contact.data }}</a
+                      >
+                    </h4>
+                  </div>
+                  <!-- <ng-template #other_content>&nbsp;<h4>{{contact.data}}</h4></ng-template><br> -->
+                </div>
+                <!-- <h4><b>Facility Hours:</b></h4> -->
+                <strong class='mt-2'>Office Hours:</strong>
+                <div class="display-contact contacts" *ngFor="let hour of hours">
+                  <h4 *ngIf="hour.label">
+                    <strong>{{ hour.label }}</strong
+                    >&nbsp;
+                  </h4>
+                  <h4>{{ hour.data }}</h4>
+                  <br />
+                </div>
               </div>
-          </div>
+            </div>
       </div>
   </div>
 

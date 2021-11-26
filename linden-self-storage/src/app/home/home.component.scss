@@ -7,9 +7,22 @@
   height: 15px;
 }
 
+.contact-details {
+  h4 {
+    font-size: 1rem !important;
+    line-height: 1.6rem !important;
+  }
+}
+
+.display-contact {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .carousel-item {
   height: 250px;
 }
+
 
 .amenities {
   color: #2e36d1;
@@ -610,4 +623,11 @@
   .carousel-item {
     height: 400px;
   }
+}
+
+@media only screen and (max-width: 425px) and (min-width: 280px){
+.display-contact {
+  display: block;
+  line-height: 5px;
+}
 }

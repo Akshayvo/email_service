@@ -1,14 +1,16 @@
-import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, OnInit, Input, Inject } from '@angular/core';
+import { ActivatedRoute,Router } from '@angular/router';
 import { navLinks } from '../data/nav';
 import { contact, socialLinks } from '../data/contact';
 import { UaParserService } from '../services/ua-parser.service';
+import { WINDOW } from '@ng-toolkit/universal';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
+
 export class HeaderComponent implements OnInit {
   contactDetails: any;
   navLinks: any;
@@ -16,8 +18,12 @@ export class HeaderComponent implements OnInit {
   navbarCollapsed = true;
   imagetype: any;
   imageBaseUrl: any;
+  @Input() currentActive: any;
+  locationId: any;
 
   constructor(
+    @Inject(WINDOW) private window: Window,
+    private route: ActivatedRoute,
     private router: Router,
     private uaParserService: UaParserService,
   ) { 

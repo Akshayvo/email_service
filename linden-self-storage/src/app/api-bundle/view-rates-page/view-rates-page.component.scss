@@ -133,3 +133,72 @@ p {
     }
   }
 }
+
+
+
+.viewRates {
+  background-color: $white;
+  h3 {
+    color: $white;
+    background-color: $primary;
+    font-size: 28px;
+  }
+
+  .unitDetail:nth-child(odd) {
+    background: #a8a8a8;
+  }
+  
+  .unitDetail:nth-child(even) {
+    background: #fff5ee;
+  }
+
+  .unitDetail {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .unitType {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .custom-font {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 425px)  and (min-width: 375px){
+  .custom-font strong{
+    font-size: 0.9rem;
+  }
+  .unitType {
+    flex-direction: column;
+  }
+
+   .buttons .btn-primary{
+     min-width: 90px;
+   }
+
+}
+
+
+@media only screen and (max-width: 320px)  and (min-width: 280px){
+  .custom-font strong{
+    
+    font-size: 15px;
+
+  }
+  .unitType {
+    flex-direction: column;
+  }
+
+  .buttons .btn-primary{
+    min-width: 70px !important;
+    font-size: 13px;
+  }
+}
