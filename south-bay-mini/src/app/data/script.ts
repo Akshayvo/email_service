@@ -57,14 +57,14 @@ export const homePageScript = [ {
     '@id': script.id,
     'name': environment.facilityName,
      'description': script.description || homePageContent,
-    'address': {
-      '@type': 'PostalAddress',
-      'streetAddress': script.streetAddress,
-      'addressLocality': script.addressLocality,
-      'addressRegion': script.addressRegion,
-      'postalCode': script.postalCode,
-      'addressCountry': script.addressCountry
-    },
+    // 'address': {
+    //   '@type': 'PostalAddress',
+    //   'streetAddress': script.streetAddress,
+    //   'addressLocality': script.addressLocality,
+    //   'addressRegion': script.addressRegion,
+    //   'postalCode': script.postalCode,
+    //   'addressCountry': script.addressCountry
+    // },
    'aggregateRating': {
       '@type': 'AggregateRating',
       'ratingValue': script.ratingValue,
