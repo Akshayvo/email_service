@@ -45,11 +45,11 @@ export const th = [
     data: `Move In`,
     state: objSIMSetting.objActionSetting.blnAllowMoveIn,
   },
-  {
-    id: `waiting-list`,
-    data:`Join Our Waiting List`,
-    state:true,
-  },  
+  // {
+  //   id: `waiting-list`,
+  //   data:`Join Our Waiting List`,
+  //   state:true,
+  // },  
   {
     id:`climate-controls`,
     data: `Climate Control`,
