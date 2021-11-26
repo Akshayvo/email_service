@@ -31,7 +31,7 @@ export const aboutUsHeading = `Affordable Recreational, Boat, and Trailer Parkin
 
 export const aboutUs = [
     {
-        p: `Cedar Lake Storage is your one stop vehicle parking solution in Cedar Lake, Indiana. We offer both outdoor covered and uncovered parking for recreational vehicles, boats, and trailers. We also provide climate controlled indoor parking spaces for your RV, camper, or other vehicles in need of seasonal protection. We are conveniently located on West 133rd Ave just west of Cedar Lake.`,
+        p: `Cedar Lake Storage is your one stop vehicle parking solution in Cedar Lake, Indiana. We offer both outdoor covered and uncovered parking for recreational vehicles, boats, and trailers. We also provide temperature controlled indoor parking spaces for your RV, camper, or other vehicles in need of seasonal protection. We are conveniently located on West 133rd Ave just west of Cedar Lake.`,
     },
     {
         p: `We are a locally owned and operated vehicle storage facility that understands the value of amazing customer service. That’s why we’ve gone the extra mile to make your stay with us simple and easy. Start by checking out our availability and pricing online, then reserve or rent your spot with us in minutes with our online tenant portal. Once your rental application is complete, you’ll have access to your boat, trailer, or RV from 7:00AM to 7:00PM 7 days a week at our well-maintained facility. You can also pay your rent online, or sign up for automatic payments 24 hours a day through our website.`,
