@@ -1,7 +1,7 @@
 export const featuresList = [
     {
         td1: 'Convenient Location',
-        td2: 'Online Bill Pay',
+        td2: 'Fully-Fenced Facility',
     },
     {
         td1: 'Security Cameras',
@@ -21,13 +21,12 @@ export const featuresList = [
     },
     {
         td1: 'Climate-Controlled Units Available',
-        td2: 'Fully-Fenced Facility',
     }
 ];
 
 export const aboutUsAlt = ``;
 
-export const aboutUsHeading = `Self Storage Units and Vehicle Parking Units in Lecanto`;
+export const aboutUsHeading = `Self Storage Units in Lecanto`;
 
 export const aboutUs = [
     {
@@ -37,10 +36,10 @@ export const aboutUs = [
         p: `As a local small business, we understand that self storage services can be needed at stressful times. That’s why we go the extra mile every day to make your next storage project, be it a move, renovation, or just looking for space around the office or work-site, a fast and convenient one. From our clean, well-lit facility, to the electronic access control gate, and the security cameras placed around the grounds, we want your experience to be a positive one.`,
     },
     {
-        p: `We offer a number of unit sizes in both regular and climate-controlled varieties from our 5-foot-by-5-foot units perfect for seasonal clothing and decorations all the way up to our oversized 10-foot-by-30-foot units. Some of our larger units even offer pull-through access for boat and vehicle storage. Whatever your storage needs are, we’ve got you covered!`,
+        p: `We offer a number of unit sizes in both regular and climate-controlled varieties from our 5-foot-by-5-foot units perfect for seasonal clothing and decorations all the way up to our oversized 10-foot-by-30-foot units. Whatever your storage needs are, we’ve got you covered!`,
     },
     {
-        p: `So whatever your storage unit or vehicle parking needs, take a moment to check out our sizes, then give our office a call today! We can’t wait to meet you at the big yellow windmill!`,
+        p: `So whatever your storage unit needs, take a moment to check out our sizes, then give our office a call today! We can’t wait to meet you at the big yellow windmill!`,
     }
     
 ];
@@ -77,7 +76,7 @@ export const feature = [
 
 export const jumbotron = [
     {
-        h2: `Affordable Self Storage & Vehicle Parking in Lecanto`,
-        blurb: `Windmill Self Storage is locally owned and operated self storage facility centrally located in Lecanto, Florida. We serve Lecanto, Inverness, Citrus Hills, and the surrounding communities with clean, well-maintained self storage units, friendly service and affordable prices!`,
+        h2: `Affordable Self Storage in Lecanto`,
+        blurb: `Windmill Self Storage is a locally owned and operated self storage facility centrally located in Lecanto, Florida. We serve Lecanto, Inverness, Citrus Hills, and the surrounding communities with clean, well-maintained self storage units, friendly service and affordable prices!`,
     }
 ];

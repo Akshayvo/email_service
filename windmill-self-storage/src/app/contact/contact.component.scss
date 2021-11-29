@@ -6,8 +6,17 @@
   }
 }
 
+.contact-number {
+  text-align: center !important;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .display-contact {
   display: flex;
+  flex-wrap: wrap;
 
   // h4 {
   //   width: 100%;

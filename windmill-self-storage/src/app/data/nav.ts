@@ -6,7 +6,7 @@ export const navLinks = [
         path: '/',
     },
     {
-        label: 'VIEW RATES',
+        label: 'VIEW UNIT SIZES',
         path: `${environment.locationName}/view-rates`,
     },
     // {
@@ -21,14 +21,18 @@ export const navLinks = [
     //     label: 'PAY RENT',
     //     path: '/pay-rent'
     // },
+    // {
+    //     label: 'STORAGE TIPS',
+    //     path: `${environment.locationName}/storage-tips`
+    // },
+    // {
+    //     label: 'UNIT SIZER',
+    //     path: '/unit-sizer'
+    // },
     {
-        label: 'STORAGE TIPS',
-        path: `${environment.locationName}/storage-tips`
-    },
-    {
-        label: 'UNIT SIZER',
-        path: '/unit-sizer'
-    },
+            label: 'GALLERY',
+            path: '/gallery'
+        },
     {
         label: 'CONTACT US',
         path: '/contact-us'

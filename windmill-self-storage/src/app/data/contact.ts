@@ -9,9 +9,9 @@ export const contact = [
     {
         id: 1,
         label: 'Office Address:',
-        data: 'P.O. Box 255, Lecanto, FL 34461',
+        data: '2297 W Gulf to Lake Hwy, Lecanto, FL 34461',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
-        redirect: 'https://goo.gl/maps/gw3AE98Ksr93eRtn8'
+        redirect: 'https://goo.gl/maps/V1GkHWmvMyFvEQRo9'
     },
     {
         id: 2,
@@ -35,12 +35,16 @@ export const hours = [
         data: '9:00AM to 3:00PM'
     },
     {
-        label: 'Saturday-Sunday: ',
-        data: 'CLOSED'
+        // label: '',
+        data: 'Rent by Phone After 3:00PM (352) 746-3633'
     },
     {
-        label: 'Storage Access Hours: ',
-        data: ''
+        label: 'Saturday-Sunday: ',
+        data: 'Rent By Phone:(352) 746-3633'
+    },
+    {
+        label: 'Gate Access Hours: ',
+        data: '7:00AM to 9:00PM 7 Days a Week'
     }
 ];
 

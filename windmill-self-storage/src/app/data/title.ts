@@ -1,7 +1,7 @@
 export const homePageTitle = `Affordable Storage Units and Vehicle Parking in Lecanto`;
 export const homePageContent = `Are you in search of affordable self storage units near Lecanto? Windmill Self Storage has a variety of convenient sizes and vehicle parking available today!`;
 
-export const viewRatesPageTitle = `View Units  | Windmill Self Storage`;
+export const viewRatesPageTitle = `View Unit Sizes  | Windmill Self Storage`;
 export const viewRatesPageContent = `Review our current rates and availability, then give our office a call and reserve your unit in minutes with one of our friendly managers.`;
 
 export const reservePageTitle = ``;
@@ -24,3 +24,6 @@ export const thankYouPageContent = `We've received your reservation! One of our 
 
 export const privacyPolicyPageTitle = ``;
 export const privacyPolicyPageContent = ``;
+
+export const galleryContent = `Check out our clean, well-maintained self storage facility with our image galleries!`;
+export const galleryTitle = `Gallery | Windmill Self Storage`;
