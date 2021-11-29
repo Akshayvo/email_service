@@ -532,18 +532,18 @@ public navigateToPrevious() {
         this.amountToPay = result.decTotalAmount;
         this.dataSharingService.amountToPayThankYou = this.amountToPay;
         if (this.router.url.includes('payReservationCharges')) {
-          this.surcharge = result.decTotalAmount - this.TotalReserveAmount;
+          this.surcharge = parseFloat((result.decTotalAmount - this.TotalReserveAmount).toFixed(2));
         } else {
-          if (this.router.url.includes('payReservationCharges')) {
-            this.surcharge = result.decTotalAmount - this.totalMoveInAmount;
+          if (this.router.url.includes('payMoveInCharges')) {
+            this.surcharge = parseFloat((result.decTotalAmount - this.totalMoveInAmount).toFixed(2));
           } else {
             if (this.showInput) {
               if (this.customOtherValue) {
-                 this.surcharge = result.decTotalAmount - this.customOtherValue;
+                 this.surcharge = parseFloat((result.decTotalAmount - this.customOtherValue).toFixed(2));
                }
              } else {
                  if (this.balance > 0) {
-                   this.surcharge = result.decTotalAmount - this.balance;
+                   this.surcharge = parseFloat((result.decTotalAmount - this.balance).toFixed(2));
                  }
                }
           }
