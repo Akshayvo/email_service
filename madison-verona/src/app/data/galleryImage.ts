@@ -7,14 +7,7 @@ export const galleryHome = [
     alt: `a self storage facility front office building`,
     caption: '',
   },
-  {
-    // tslint:disable-next-line: max-line-length
-    url: `climate-controlled-self-storage`,
-    // tslint:disable-next-line:max-line-length
-    thumb: `climate-controlled-self-storage`,
-    alt: `a climate controlled self storage building with signage that reads "Climate Control and RV Storage"`,
-    caption: '',
-  },
+ 
   {
     // tslint:disable-next-line: max-line-length
     url: `open-storage-unit`,
@@ -23,14 +16,7 @@ export const galleryHome = [
     alt: `an open self storage unit revealing brand new, clean interior`,
     caption: '',
   },
-  {
-    // tslint:disable-next-line: max-line-length
-    url: `row-of-self-storage-units`,
-    // tslint:disable-next-line:max-line-length
-    thumb: `row-of-self-storage-units`,
-    alt: `a long row of brand new self storage units with green roll-up doors`,
-    caption: '',
-  },
+
   {
     // tslint:disable-next-line: max-line-length
     url: `electrical-outlet-equipped-self-storage-unit`,
@@ -39,12 +25,7 @@ export const galleryHome = [
     alt: `electrical outlet on the inside of a brand new clean self storage unit`,
     caption: '',
   },
-  {
-    url: `madison-verona-main-office`,
-    thumb: `madison-verona-main-office`,
-    alt: `a self storage front office with a gate and units behind a security`,
-    caption: '',
-  },
+ 
   {
     url: `self-storage-office-and-gate`,
     thumb: `self-storage-office-and-gate`,
@@ -75,12 +56,7 @@ export const galleryHome = [
     alt: `a row of self storage unit doors under a grey sky`,
     caption: '',
   },
-  {
-    url: `madison-verona-self-storage-24`,
-    thumb: `madison-verona-self-storage-24`,
-    alt: `aerial photograph of a single story self storage facility with multiple metal buildings inside a fence`,
-    caption: '',
-  },
+
   {
     url: `madison-verona-self-storage-26`,
     thumb: `madison-verona-self-storage-26`,
@@ -93,12 +69,7 @@ export const galleryHome = [
     alt: `automated kiosk system built into a self storage facility's foyer wall`,
     caption: 'Rental station open 24-hours a day',
   },
-  {
-    url: `madison-verona-self-storage-aerial`,
-    thumb: `madison-verona-self-storage-aerial-thumb`,
-    alt: `aerial photography of a single story self storage facility`,
-    caption: '',
-  },
+  
   {
     url: `madison-verona-self-storage-37`,
     thumb: `madison-verona-self-storage-37-thumb`,
