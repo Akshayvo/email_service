@@ -18,6 +18,9 @@ $fontColor: #707070;
 // $primaryFont: 'Roboto';
 $primaryFont: "Lato", sans-serif;
 
+html,
+body { height: 100%; }
+
 body {
   // font: $primaryFont;
   font-family: $primaryFont;
@@ -102,8 +105,6 @@ body {
   width: 100%;
 }
 
-html,
-body { height: 100%; }
 
 
 .background-padding {

@@ -3,6 +3,7 @@
 .contact-details {
   h4 {
     font-size: 1rem;
+    line-height: 1.5;
   }
 }
 
@@ -17,6 +18,7 @@
 
 .display-contact {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .jumbotron {
