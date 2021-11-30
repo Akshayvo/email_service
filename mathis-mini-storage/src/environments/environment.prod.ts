@@ -5,6 +5,7 @@ export const environment = {
   // errorsMails: ['website.dev@codeparva.in'],
   errorsMails: ['sanghmitra.v@codeparva.in'],
   locationName: 'mathis/texas', // state/city
+  cards: ['Visa', 'Master Card', 'Amex', 'Discover', 'test'],
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
   senderEmail: 'errors@codeparva.in',
   appId: 'mathis-mini',

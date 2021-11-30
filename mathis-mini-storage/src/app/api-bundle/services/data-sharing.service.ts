@@ -21,6 +21,8 @@ export class DataSharingService {
   CCApprovalCode: string;
   amountToPayThankYou: number;
   eventName: string;
+  addingTenant = false;
+  insuranceChoiceId: number;
 
 
   cardDetailsObject = {

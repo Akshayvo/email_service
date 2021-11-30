@@ -5,6 +5,7 @@ export const environment = {
   signUpForAuotoPay: 1, // { Yes: 1, No: 0 }
   errorsMails: [ 'sanghmitra.v@codeparva.in' ],
   locationName: 'mathis/texas', // state/city
+  cards: ['Visa', 'Master Card', 'Amex', 'Discover', 'test'],
   senderEmail: 'errors@codeparva.in',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
   appId: 'mathis-mini',

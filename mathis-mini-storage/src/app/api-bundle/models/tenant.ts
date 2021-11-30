@@ -16,6 +16,16 @@ export class ObjTenant {
   City: string;
   State: string;
   ZIP: string;
+  DriversLicense: string;
+  DriversLicenseExpDate: string;
+  DateOfBirth: string;
+  MilitaryType: MilitaryType;
+  MilitaryBranch: MilitaryBranch
+  MilitaryID: string;
+  DeployedUntil: string;
+  MilitaryDivision: string;
+  CommandingOfficer: string;
+  CommandingOfficerPhone: string;
 
   constructor(
     FirstName: string,
@@ -40,6 +50,23 @@ export class ObjTenant {
   }
 }
 
+
+export class MilitaryType {
+  militaryType: MilitaryType;
+
+  constructor(militaryType: MilitaryType) {
+    this.militaryType = militaryType;
+  }
+
+}
+
+export class MilitaryBranch {
+  militaryBranch: MilitaryBranch;
+
+  constructor(militaryBranch: MilitaryBranch ) {
+    this.militaryBranch = militaryBranch;
+  }
+}
 
 export class TenantInfo {
   tenant: Tenant;
@@ -79,7 +106,7 @@ export class UnpaidAR {
   Description: string;
   Amount: number;
   AmountOwed: number;
-  demoAmountOwed: number;
+  amountOwed: number;
   Comments: string;
 
   constructor(
@@ -88,7 +115,7 @@ export class UnpaidAR {
     Description: string,
     Amount: number,
     AmountOwed: number,
-    demoAmountOwed: number,
+    amountOwed: number,
     Comments: string
   ) {
     this.FromDate = FromDate;
@@ -96,7 +123,7 @@ export class UnpaidAR {
     this.Description = Description;
     this.Amount = Amount;
     this.AmountOwed = AmountOwed;
-    this.demoAmountOwed = demoAmountOwed;
+    this.amountOwed = amountOwed;
     this.Comments = Comments;
   }
 }
@@ -104,6 +131,7 @@ export class UnpaidAR {
 
 export class StrTempTenantToken {
   strTempTenantToken: string;
+  intErrorCode: number;
 
   constructor(strTempTenantToken: string) {
     this.strTempTenantToken = strTempTenantToken;
