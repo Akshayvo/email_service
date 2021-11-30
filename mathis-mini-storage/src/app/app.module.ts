@@ -47,9 +47,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './modules/material/material.module';
 import { ResetPasswordComponent } from './api-bundle/reset-password/reset-password.component';
 import { RequestInterceptorService } from './api-bundle/services/request-interceptor.service';
-
+import { AutoPayComponent } from './api-bundle/auto-pay/auto-pay.component';
 import { CanDeactivateGuard } from './preventRouteChange.guard';
 import { PhotosComponent } from './photos/photos.component';
+import { ThankYouComponent } from './api-bundle/thank-you/thank-you.component';
+import { ThankYouGuard } from './thank-you.guard';
+import { RentSubComponent } from './api-bundle/rent-sub/rent-sub.component';
+import { SignUpComponent } from './api-bundle/sign-up/sign-up.component';
+import { PayRentComponent } from './api-bundle/pay-rent/pay-rent.component';
+import { TabsComponent } from './tabs/tabs.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -81,6 +88,13 @@ import { PhotosComponent } from './photos/photos.component';
     PhotosComponent,
     VerifyCodeComponent,
     ResetPasswordComponent,
+    AutoPayComponent,
+    ThankYouComponent,
+    RentSubComponent,
+    SignUpComponent,
+    PayRentComponent,
+    TabsComponent,
+
   ],
   imports: [
     CommonModule,
@@ -99,6 +113,7 @@ import { PhotosComponent } from './photos/photos.component';
     DatePipe,
     AuthService,
     AuthGuard,
+    ThankYouGuard,
     VerifictionCodeGuard,
     Title,
     CanDeactivateGuard,

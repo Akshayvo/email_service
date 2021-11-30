@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class DataSharingService {
-
+  paymentSuccess: boolean;
   verificationCode: string;
   navigateToPrevious: string;
   navigateToReserve: boolean;
@@ -12,7 +12,25 @@ export class DataSharingService {
   isValueUpdated: boolean;
   changePassword: boolean;
   // showLoginDetail: boolean;
+  isDataSaved: boolean;
+  isDataUpdated: boolean;
+  signUpForAutoPay: boolean;
+  strConfirmation: string;
+  strAccessCode: string;
+  PaymentAmount: number;
+  CCApprovalCode: string;
+  amountToPayThankYou: number;
+  eventName: string;
 
+
+  cardDetailsObject = {
+    CCNumber: '',
+    CCBillingAccountName: '',
+    CCExpirationMonth: '',
+    CCExpirationYear: '',
+    CCBillingAddress: '',
+    CCBillingZIP: '',
+  };
 
   MoveInData = {
     Description: '',
