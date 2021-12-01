@@ -1,4 +1,10 @@
-<div class="reserve-unit-form">
+
+<div class='loader' [class.loader]="!showForm && navigateToMoveIn">  
+</div>
+<div *ngIf = '!showForm && navigateToMoveIn' class='text-center pb-5'>Please wait... we are calculating your charges</div>
+<div *ngIf='navigateToMoveIn' [class.loader]="showLoader" class="loader-position"> </div>
+
+<div class="reserve-unit-form " *ngIf = 'showForm== true'> 
         <div [hidden]="" *ngIf="unitTypeNotAvailability" class="alert alert-danger alert-dismissible fade show">
             There is no Unit available, Please choose the other unit type or call the facility for more detail
             <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click)="close()">
@@ -7,7 +13,7 @@
         </div>
 
         <div class="loader" *ngIf="gettingTenantData"></div>
-        <div [class.loader]="showLoader" class="loader-position"> 
+        <div [class.loader]="!showLoader" class="loader-position"> 
         </div>
         <form [formGroup]="reserveUnitForm" (ngSubmit)="onSubmit()" >
          <div  class="row justify-content">
@@ -337,7 +343,7 @@
 
         <div class="form-group text-right">
             <button type="button" *ngIf="showReservationButton" class="btn btn-primary col-lg-3 col-md-4 col-sm-12 mr-2 margin-bottom" (click)="navigate('/view-rates')">Previous</button>
-            <button type="button" *ngIf="!showLoader" class="btn btn-primary col-lg-3 col-md-4 col-sm-12"  (click)="navigateToConfirmation('/view-rates/confirmation')">Next</button>
+            <button type="button" class="btn btn-primary col-lg-3 col-md-4 col-sm-12"  (click)="navigateToConfirmation('/view-rates/confirmation')">Next</button>
         </div>
     </form>
 </div>

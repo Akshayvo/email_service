@@ -46,6 +46,7 @@ import { CommonService } from "../services/common.service";
   providers: [DatePipe],
 })
 export class ReserveUnitFormComponent implements OnInit, OnDestroy {
+  showForm = false;
   proRateAmount?: number;
   curStage: number;
   deposit?: number;
@@ -288,7 +289,7 @@ showLoader = false;
     this.description = this.dataSharingService.getReservationData().Description;
     this.monthlyRate = this.dataSharingService.getReservationData().MonthlyRate;
     this.unitTypeId = this.dataSharingService.getReservationData().UnitTypeID;
-
+    
     this.getData();
     this.getRentalPeriod();
     if (this.navigateToMoveIn === true) {
@@ -298,7 +299,9 @@ showLoader = false;
     this.MoveIn.intUnitTypeID = this.unitTypeId;
 
     this.currentdate = new Date();
-
+if(this.navigateToReserve){
+  this.showForm= true;
+}
     this.fetchUSState();
     if (window.localStorage) {
       if (!!localStorage.getItem("strTenantToken")) {
@@ -448,6 +451,7 @@ showLoader = false;
       })
       .subscribe(
         (result) => {
+          this.showForm = true;
           const {
             objCharges: {
               ProrateAmt = 0,
@@ -614,9 +618,11 @@ showLoader = false;
             this.dataSharingService.periodID
           );
         }
+        
 
         this.dataSharingService.LstUnitTypes.ReservationFee =
           this.reservationFee;
+         
         this.dataSharingService.LstUnitTypes.ReservationFeeTax =
           this.reservationFeeTax;
 
