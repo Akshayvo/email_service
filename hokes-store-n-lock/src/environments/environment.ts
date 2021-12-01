@@ -18,7 +18,7 @@ export const environment = {
   facilityName: 'Hokes Store-N-Lock',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: 'https://hokes-store-n-lock-staging.netlify.app',
+  websiteUrl: 'https://hokestorenlock.com',
   // APIKey: `dzJ0OVc0SjYqMk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29462
   APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28463
     // APIKey: `dzJ0OVc1SjQqMk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29542

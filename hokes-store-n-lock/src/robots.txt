@@ -1,5 +1,5 @@
 # www.robotstxt.org/
 # Allow crawling of all content
-Sitemap: https://hokes-store-n-lock-staging.netlify.app/sitemap.xml
+Sitemap: https://hokestorenlock.com/sitemap.xml
 User-agent: *
 Disallow:/privacy-policy
