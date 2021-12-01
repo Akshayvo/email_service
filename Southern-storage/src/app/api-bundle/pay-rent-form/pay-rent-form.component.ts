@@ -675,17 +675,17 @@ public navigateToPrevious() {
       this.reservationInProgress = false;
       this.showloaderForPayment = false;
 
-      // if (!!localStorage.getItem('paymentTab')) {
-      //   this.router.navigate([`${environment.locationName}/${this.facilityLocation}/reserve-unit/${localStorage.getItem('paymentTab')}/thank-you`]);
-      // } else {
-      //   this.router.navigate([`${environment.locationName}/${this.facilityLocation}/reserve-unit/thank-you`]);
-      // }
-
       if (!!localStorage.getItem('paymentTab')) {
-        this.router.navigate([`${environment.locationName}/reserve-unit/${localStorage.getItem('paymentTab')}/thank-you`]);
+        this.router.navigate([`location/${this.facilityLocation}/reserve-unit/${localStorage.getItem('paymentTab')}/thank-you`]);
       } else {
-        this.router.navigate([`${environment.locationName}/reserve-unit/thank-you`]);
+        this.router.navigate([`location/${this.facilityLocation}/reserve-unit/thank-you`]);
       }
+
+      // if (!!localStorage.getItem('paymentTab')) {
+      //   this.router.navigate([`${environment.locationName}/reserve-unit/${localStorage.getItem('paymentTab')}/thank-you`]);
+      // } else {
+      //   this.router.navigate([`${environment.locationName}/reserve-unit/thank-you`]);
+      // }
     }
     }, (err: any) => {
       if (err.status === 403) {
@@ -716,15 +716,15 @@ public navigateToPrevious() {
         if (strConfirmationResponse.intErrorCode === 1  ) {
           this.makePaymentForUnit = false;
 
+          // if (!!localStorage.getItem('paymentTab')) {
+          //   this.router.navigate([`${environment.locationName}/move-in/${localStorage.getItem('paymentTab')}/thank-you`]);
+          // } else {
+          //   this.router.navigate([`${environment.locationName}/move-in/thank-you`]);
+          // }
           if (!!localStorage.getItem('paymentTab')) {
-            this.router.navigate([`${environment.locationName}/move-in/${localStorage.getItem('paymentTab')}/thank-you`]);
+            this.router.navigate([`location/${this.facilityLocation}/move-in/${localStorage.getItem('paymentTab')}/thank-you`]);
           } else {
-            this.router.navigate([`${environment.locationName}/move-in/thank-you`]);
-          }
-          if (!!localStorage.getItem('paymentTab')) {
-            this.router.navigate([`${environment.locationName}/${this.facilityLocation}/move-in/${localStorage.getItem('paymentTab')}/thank-you`]);
-          } else {
-            this.router.navigate([`${environment.locationName}/${this.facilityLocation}/move-in/thank-you`]);
+            this.router.navigate([`location/${this.facilityLocation}/move-in/thank-you`]);
           }
           this.showloaderForPayment = false;
 

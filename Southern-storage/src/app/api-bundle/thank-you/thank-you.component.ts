@@ -25,6 +25,7 @@ export class ThankYouComponent implements OnInit, OnDestroy {
   monthlyRate: number;
   PaymentAmount: number;
   CCApprovalCode: string;
+  unitTypeId:number;
   eventName: string;
   paymentNavigationUrl: string;
   locationName: string;
@@ -49,7 +50,7 @@ export class ThankYouComponent implements OnInit, OnDestroy {
       name: 'description',
       content: `We've received your reservation! One of our friendly staff will be in touch!`
     });
-    this.titleService.setTitle('Thank You For Reserving Your Unit at Storage Town!');
+    this.titleService.setTitle('Thank You For Reserving Your Unit at Southern Storage!');
   }
 
   ngOnInit() {
@@ -63,6 +64,9 @@ export class ThankYouComponent implements OnInit, OnDestroy {
     this.CCApprovalCode = this.dataSharingService.CCApprovalCode;
     this.MoveIn.dteMoveIn = this.dataSharingService.MoveIn.dteMoveIn;
     this.locationName =  this.dataSharingService.locationName;
+    this.unitTypeId = this.dataSharingService.LstUnitTypes.UnitTypeID
+   
+    
 
 
     if (localStorage.getItem('strTenantToken')) {
