@@ -4,7 +4,7 @@ import { FetchDataService } from '../services/fetch-data.service';
 import {UnitTypes, LstUnitTypes, RentalPeriod, LstRentalPeriods, LstInsuranceChoices  } from '../models/unittypes';
 import { ObjTenantDetail, ObjTenant, StrTempTenantToken } from '../models/tenant';
 import { Router } from '@angular/router';
-import { option, option1 } from '../../data/view-rates';
+import {option, option1 } from '../../data/view-rates';
 import { DatePipe } from '@angular/common';
 import { TenantInfoService } from '../services/tenant-info.service';
 import { LeadDaysService } from '../services/lead-days.service';
@@ -53,6 +53,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   strTempTenantToken: StrTempTenantToken;
 
   strConfirmation: string;
+  dteStartDate: string;
 
   successMessage = false;
 
@@ -93,8 +94,10 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   premium: number;
   minDay: number;
   maxDay: number;
-
-
+  militaryTypes = [];
+  militaryBranch = [];
+  MilitaryBranch: number;
+  MilitaryTypes: number;
   MoveInStringParent: string;
 
   tenant: any;
@@ -133,6 +136,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   alternatetypeDetail: any;
 
   showAltDetails = false;
+  showMilitaryDetails = false;
 
   private  getLeadDaysSubscribe$: Subscription;
   private  getTenantInfoSubscribe$: Subscription;
@@ -170,6 +174,8 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
           this.dataSharingService.navigateToReserve = false;
           this.showAltDetails = (environment.alternateType.moveIn === true) ? true : false;
           this.dataSharingService.showAltDetails = this.showAltDetails;
+          // this.showMilitaryDetails = (environment.military === true) ? true : false;
+          // this.dataSharingService.showMilitaryDetails = this.showMilitaryDetails;
         }
       }
         
@@ -188,7 +194,50 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         City: ['', Validators.required],
         State: ['', Validators.required],
         ZIP: ['', Validators.required],
-        AlternateName: [''],
+        DriversLicense: ['', conditionalValidator(
+          (() => this.showMilitaryDetails === false),
+          Validators.required
+        )],
+        DriversLicenseExpDate: ['', conditionalValidator(
+          (() => this.showMilitaryDetails === false),
+          Validators.required
+        )],
+        DateOfBirth: ['', conditionalValidator(
+          (() => this.showMilitaryDetails === false),
+          Validators.required
+        )],
+        MilitaryBranch: ['', conditionalValidator(
+          (() => this.showMilitaryDetails === false),
+          Validators.required
+        )],
+        MilitaryDivision: ['', conditionalValidator(
+          (() => this.showMilitaryDetails === false),
+          Validators.required
+        )],
+        MilitaryType: ['', conditionalValidator(
+          (() => this.showMilitaryDetails === false),
+          Validators.required
+        )],
+        MilitaryID: ['', conditionalValidator(
+          (() => this.showMilitaryDetails === false),
+          Validators.required
+        )],
+        DeployedUntil: ['', conditionalValidator(
+          (() => this.showMilitaryDetails === false),
+          Validators.required
+        )],
+        CommandingOfficer: ['', conditionalValidator(
+          (() => this.showMilitaryDetails === false),
+          Validators.required
+        )],
+        CommandingOfficerPhone: ['', conditionalValidator(
+          (() => this.showMilitaryDetails === false),
+          Validators.required
+        ),],
+        AlternateName: ['', conditionalValidator(
+          (() => this.showAltDetails === false),
+          Validators.required
+        ),],
         AlternatePhone:   ['', [  conditionalValidator(
           (() => this.showAltDetails === false),
           Validators.required
@@ -197,11 +246,23 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
             '^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$'
             )
         ]],
-        AlternateAddressLine1: [''],
+        AlternateAddressLine1: ['', conditionalValidator(
+          (() => this.showAltDetails === false),
+          Validators.required
+        ),],
         AlternateAddressLine2: [''],
-        AlternateCity: [''],
-        AlternateState: [''],
-        AlternateZIP: [''],
+        AlternateCity: ['', conditionalValidator(
+          (() => this.showAltDetails === false),
+          Validators.required
+        ),],
+        AlternateState: ['', conditionalValidator(
+          (() => this.showAltDetails === false),
+          Validators.required
+        ),],
+        AlternateZIP: ['', conditionalValidator(
+          (() => this.showAltDetails === false),
+          Validators.required
+        ),],
       }),
 
 
@@ -257,10 +318,10 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
+    this.dteStartDate =this.convertDate(new Date());
     this.description  = this.dataSharingService.getReservationData().Description;
     this.monthlyRate = this.dataSharingService.getReservationData().MonthlyRate;
     this.unitTypeId = this.dataSharingService.getReservationData().UnitTypeID;
-
     this.getData();
     this.getRentalPeriod();
     if (this.navigateToMoveIn === true ) {
@@ -318,11 +379,11 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   selectInsuranceChoice(event: any) {
     const indexValue = event.target.value;
     const index = this.LstInsuranceChoices.findIndex(x => x.CoverageDescription === indexValue);
-    if (!!index) {
+    if (index!=null && index>=0) {
       this.dataSharingService.insuranceChoiceId = this.LstInsuranceChoices[index].InsuranceChoiceID;
       this.premium = this.LstInsuranceChoices[index].Premium;
     }
-    this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId, this.dataSharingService.periodID);
+    this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId, this.dataSharingService.periodID, this.dteStartDate);
   }
 
 
@@ -330,13 +391,13 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     const indexValue = event.target.value;
     const index = this.LstRentalPeriods.findIndex(x => x.PeriodDescription === indexValue);
     this.dataSharingService.periodID = this.LstRentalPeriods[index].PeriodID;
-    this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId, this.dataSharingService.periodID);
+    this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId, this.dataSharingService.periodID, this.dteStartDate);
   }
 
   selectChangeHandler (event: any) {
     const indexValue  = event.target.value;
     const index = this.lstUnitTypes.findIndex(x => x.Description === indexValue);
-    if (!!index) {
+    if (index!=null && index>=0) {
       this.monthlyRate = this.lstUnitTypes[index].MonthlyRate;
       this.annualRate = this.lstUnitTypes[index].AnnualRate;
       this.biAnnualRate = this.lstUnitTypes[index].BiAnnualRate;
@@ -355,17 +416,18 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
     if (this.navigateToMoveIn) {
       // tslint:disable-next-line:max-line-length
-      this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId, this.dataSharingService.periodID);
+      this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId, this.dataSharingService.periodID,  this.dteStartDate);
     }
 }
 
 
 
-getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number) {
+getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number,  dteStartDate: string,) {
   this.moveInService.getMoveInCharges({
     intUnitTypeID,
     intInsuranceID,
-    intPeriodID
+    intPeriodID,
+    dteStartDate
   }).subscribe(result => {
     const {objCharges: {
       ProrateAmt = 0,
@@ -402,6 +464,7 @@ getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number
         this.intLeadDaysTo = result.intLeadDaysTo;
         this.from = moment().add(this.intLeadDaysFrom, 'days').toISOString();
         this.to = moment().add(this.intLeadDaysTo, 'days').toISOString();
+        this.currentDate = new Date().toISOString();
       });
     }
 
@@ -423,6 +486,16 @@ getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number
             City: Tenant.City,
             State: Tenant.State,
             ZIP: Tenant.ZIP,
+            DriversLicense: Tenant.DriversLicense,
+            DriversLicenseExpDate: Tenant.DriversLicenseExpDate,
+            DateOfBirth: Tenant.DateOfBirth,
+            MilitaryType: Tenant.militaryType,
+            MilitaryBranch: Tenant.militaryBranch,
+            MilitaryID: Tenant.MilitaryID,
+            DeployedUntil: Tenant.DeployedUntil,
+            MilitaryDivision: Tenant.MilitaryDivision,
+            CommandingOfficer: Tenant.CommandingOfficer,
+            CommandingOfficerPhone: Tenant.CommandingOfficerPhone,
             AlternateName: Tenant.AlternateName,
             AlternatePhone: Tenant.AlternatePhone,
             AlternateAddressLine1: Tenant.AlternateAddressLine2,
@@ -442,6 +515,16 @@ getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number
               City: Tenant.City,
               State: Tenant.State,
               ZIP: Tenant.ZIP,
+              DriversLicense: Tenant.DriversLicense,
+              DriversLicenseExpDate: Tenant.DriversLicenseExpDate,
+              DateOfBirth: Tenant.DateOfBirth,
+              MilitaryType: Tenant.militaryType,
+              MilitaryBranch: Tenant.militaryBranch,
+              MilitaryID: Tenant.MilitaryID,
+              DeployedUntil: Tenant.DeployedUntil,
+              MilitaryDivision: Tenant.MilitaryDivision,
+              CommandingOfficer: Tenant.CommandingOfficer,
+              CommandingOfficerPhone: Tenant.CommandingOfficerPhone,
               AlternateName: Tenant.AlternateName,
               AlternatePhone: Tenant.AlternatePhone,
               AlternateAddressLine1: Tenant.AlternateAddressLine1,
@@ -482,24 +565,25 @@ getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number
   getData() {
     this.getDataSubscribe$ = this.fetchDataService.getData()
        .subscribe(unitTypesResponse => {
+       if (this.dataSharingService.LstUnitTypes) {
+       const index = unitTypesResponse.lstUnitTypes.findIndex(x => x.UnitTypeID === this.dataSharingService.LstUnitTypes.UnitTypeID);
        this.lstUnitTypes = unitTypesResponse.lstUnitTypes;
        this.getFilterLstUnitTypes(unitTypesResponse);
-       if (this.filterLstUnitTypes.length != 0) {
-         const defaultMonthlyValue = this.filterLstUnitTypes[0].MonthlyRate;
-         this.description = this.filterLstUnitTypes[0].Description;
-         this.reservationFeeTax = this.filterLstUnitTypes[0].ReservationFeeTax;
-         this.reservationFee = this.filterLstUnitTypes[0].ReservationFee;
-         this.unitTypeID = this.filterLstUnitTypes[0].UnitTypeID;
-         this.MoveIn.intUnitTypeID = this.unitTypeID || this.filterLstUnitTypes[0].UnitTypeID;
-         this.unitTypeId =
-         this.dataSharingService.getReservationData().UnitTypeID || this.filterLstUnitTypes[0].UnitTypeID;
-         this.monthlyRate = this.dataSharingService.LstUnitTypes.MonthlyRate || defaultMonthlyValue;
+       if (index!=null && index >= 0 ) {
+         const defaultMonthlyValue = unitTypesResponse.lstUnitTypes[index].MonthlyRate;
+         this.description = unitTypesResponse.lstUnitTypes[index].Description;
+         this.reservationFeeTax = unitTypesResponse.lstUnitTypes[index].ReservationFeeTax;
+         this.reservationFee = unitTypesResponse.lstUnitTypes[index].ReservationFee;
+         this.MoveIn.intUnitTypeID = this.unitTypeID || unitTypesResponse.lstUnitTypes[index].UnitTypeID;
+          this.unitTypeId =
+          this.dataSharingService.getReservationData().UnitTypeID || unitTypesResponse.lstUnitTypes[index].UnitTypeID;
+          this.monthlyRate = this.dataSharingService.LstUnitTypes.MonthlyRate || defaultMonthlyValue;
        }
        const serviceMonthlyValue = this.dataSharingService.LstUnitTypes.MonthlyRate;
        const serviceDescriptionValue = this.dataSharingService.LstUnitTypes.Description;
        if (this.navigateToMoveIn) {
          // tslint:disable-next-line:max-line-length
-         this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId, this.dataSharingService.periodID);
+         this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId, this.dataSharingService.periodID,  this.dteStartDate);
        }
  
  
@@ -529,7 +613,7 @@ getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number
          this.dataSharingService.LstUnitTypes.Description = serviceDescriptionValue;
          this.dataSharingService.LstUnitTypes.MonthlyRate = serviceMonthlyValue;
        }
-     });
+     }});
    }
 
 
