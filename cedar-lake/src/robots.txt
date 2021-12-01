@@ -1,5 +1,5 @@
 # www.robotstxt.org/
 # Allow crawling of all content
-Sitemap: https://cedar-lake-staging.netlify.app/sitemap.xml
+Sitemap: https://cedarlakestorage219.com/sitemap.xml
 User-agent: *
 Disallow:/privacy-policy

@@ -4,12 +4,8 @@ export const featuresList = [
         td2: 'Online Bill Pay',
     },
     {
-        td1: 'Security Cameras',
-        td2: 'Well-Lit Facility',
-    },
-    {
-        td1: 'Single-Level Facility',
-        td2: 'Security System',
+        td1: 'Well-Lit Facility',
+        td2: 'Single-Level Facility',
     },
     {
         td1: 'Auto-Pay Available',
@@ -37,7 +33,7 @@ export const aboutUs = [
         p: `We are a locally owned and operated vehicle storage facility that understands the value of amazing customer service. That’s why we’ve gone the extra mile to make your stay with us simple and easy. Start by checking out our availability and pricing online, then reserve or rent your spot with us in minutes with our online tenant portal. Once your rental application is complete, you’ll have access to your boat, trailer, or RV from 7:00AM to 7:00PM 7 days a week at our well-maintained facility. You can also pay your rent online, or sign up for automatic payments 24 hours a day through our website.`,
     },
     {
-        p: `The team at Cedar Lake Storage understands that conveniences are not the only concern when renting a parking space for your vehicles. We strive	to ensure a sense of safety and security at all times. That’s why we maintain a well-lit self storage facility complete with security system and CCTV placed strategically around the grounds. Our team also performs regular lot inspections. `,
+        p: `The team at Cedar Lake Storage understands that conveniences are not the only concern when renting a parking space for your vehicles. We strive	to ensure a sense of safety and security at all times. Our team also performs regular lot inspections. `,
     },
     {
         p: `Whether you’re looking for long term storage of a recreational vehicle or seasonal storage for that classic car, we’ve got your parking needs covered(or uncovered). Give our friendly team of storage professionals a call today.`,
