@@ -1,0 +1,21 @@
+@import "../../styles.scss";
+
+.aboutUs-holder {
+  padding: 64px;
+  background-color: $light;
+  margin-bottom: 50px;
+
+  h2 {
+    text-transform: capitalize;
+  }
+
+  img {
+    border: 2px solid $white;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .aboutUs-holder {
+    padding: 16px;
+  }
+}

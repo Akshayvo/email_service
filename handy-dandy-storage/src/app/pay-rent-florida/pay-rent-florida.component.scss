@@ -1,0 +1,23 @@
+@import "../../styles.scss";
+
+.containHolder {
+  min-height: 94vh;
+  padding-top: 100px;
+}
+
+.pay-rent-holder {
+  background-color: #f1f0ed;
+  .row{
+      margin-left: 15px;
+      margin-right: 15px;
+  }
+}
+
+.rent-example {
+  border-left: 1px solid black;
+  padding-left: 15px;
+}
+
+a {
+  color: black;
+}
