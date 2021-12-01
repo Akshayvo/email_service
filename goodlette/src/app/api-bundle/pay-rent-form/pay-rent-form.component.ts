@@ -863,7 +863,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       return;
     } else {
       this.showloaderForPayment = true;
-      // if ( this.navigateToMoveIn === false && this.navigateToReserve === false) {
+      if ( this.navigateToMoveIn === false && this.navigateToReserve === false) {
       if (this.amountToPay > 0) {
         this.payRentForm.patchValue({
           objPayment: {
@@ -883,7 +883,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
           },
         });
       }
-      // }
+      }
 
       if (
         !localStorage.getItem("strTenantToken") &&

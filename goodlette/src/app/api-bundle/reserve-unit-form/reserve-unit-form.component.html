@@ -2,7 +2,7 @@
 <div class='loader' [class.loader]="!showForm && navigateToMoveIn">  
 </div>
 <div *ngIf = '!showForm && navigateToMoveIn' class='text-center pb-5'>Please wait... we are calculating your charges</div>
-<div *ngIf='navigateToMoveIn' [class.loader]="showLoader" class="loader-position"> </div>
+<div *ngIf='navigateToMoveIn && !showForm' [class.loader]="showLoader" class="loader-position"> </div>
 
 <div class="reserve-unit-form " *ngIf = 'showForm== true'> 
         <div [hidden]="" *ngIf="unitTypeNotAvailability" class="alert alert-danger alert-dismissible fade show">
@@ -13,8 +13,8 @@
         </div>
 
         <div class="loader" *ngIf="gettingTenantData"></div>
-        <div [class.loader]="!showLoader" class="loader-position"> 
-        </div>
+        <!-- <div [class.loader]="showLoader" class="loader-position"> 
+        </div> -->
         <form [formGroup]="reserveUnitForm" (ngSubmit)="onSubmit()" >
          <div  class="row justify-content">
              <div formGroupName="objTenant" class="col-lg-12 ">

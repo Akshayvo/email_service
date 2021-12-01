@@ -1,6 +1,6 @@
 <div class="text-center">
   <div class="go-to-home py-4">
-    <div *ngIf="paymentSuccess">
+    <div *ngIf="paymentSuccess && !navigateToMoveIn">
       <h1>Thank You</h1>
       Your payment of <strong>${{ PaymentAmount }}</strong> was successful.
       <div *ngIf="CCApprovalCode && CCApprovalCode !== 'SMS_NONE'">
@@ -31,10 +31,10 @@
       <div *ngIf="CCApprovalCode && CCApprovalCode !== 'SMS_NONE'">
         Your confirmation number is: <strong>{{ CCApprovalCode }}</strong
         >.
-      </div>
+      <!-- </div>
       Please check your email to sign your digital Rental Agreement. Your
       move-in is not complete without a signed Rental Agreement.
-    </div>
+    </div> -->
   </div>
 
   <div class="py-4" *ngIf="strConfirmation || strAccessCode">
