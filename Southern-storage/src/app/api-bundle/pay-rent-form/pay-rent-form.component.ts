@@ -488,38 +488,42 @@ public navigateToPrevious() {
   }
 
   getPayMethods() {
-   this.getPayMethodsSubscribe$ = this.fetchDataService.getPayMethods()
-      .subscribe(payTypesResponse => {
-        this.cards.forEach(element => {
-          if (payTypesResponse.lstPayTypes.findIndex(x => x.PayTypeDescription === element)) {
-            const index = payTypesResponse.lstPayTypes.findIndex(x => x.PayTypeDescription === element);
-             if (index > -1) {
-                this.lstPayTypes.push(payTypesResponse.lstPayTypes[index]);
-              }
-          }
-        });
-        if ((!!localStorage.getItem('strTenantToken')) && (this.router.url.includes(`${this.loginUrl}`))) {
-          this.tenantTokenExist = true;
-          this.showLoader = true;
-          this.getTenantInfo();
-        }
-        if (!localStorage.getItem('strTenantToken')) {
-          const defaultDescription = this.lstPayTypes[0].PayTypeDescription;
-          const defaultPayTypeID = this.lstPayTypes[0].PayTypeID;
-          this.paytypeid =  this.lstPayTypes[0].PayTypeID;
-          this.surchargeService.getIdPaytype(defaultPayTypeID);
-          this.payRentForm.patchValue({
-            objPayment: {
-              PayType: {
-                PayTypeDescription: defaultDescription,
-                PayTypeID: defaultPayTypeID,
-              }
-            }
-          });
-        }
-      }
-    );
-  }
+    this.getPayMethodsSubscribe$ = this.fetchDataService.getPayMethods()
+       .subscribe(payTypesResponse => {
+ 
+         this.cards.forEach(element => {
+             const index = payTypesResponse.lstPayTypes.findIndex(x => x.PayTypeDescription === element);
+              if (index!=null && index > -1) {
+                 this.lstPayTypes.push(payTypesResponse.lstPayTypes[index]);
+               }
+           
+         });
+ 
+ 
+         if (!!localStorage.getItem('strTenantToken')) {
+           this.tenantTokenExist = true;
+           this.showLoader = true;
+           this.getTenantInfo();
+         } else {
+           const defaultDescription = this.lstPayTypes[0].PayTypeDescription;
+           const defaultPayTypeID = this.lstPayTypes[0].PayTypeID;
+           this.paytypeid =  this.lstPayTypes[0].PayTypeID;
+           console.log('lstPayTypes', this.lstPayTypes, this.paytypeid);
+           this.surchargeService.getIdPaytype(this.paytypeid);
+           console.log('this.surchargeService.getIdPaytype(this.paytypeid);', this.surchargeService.getIdPaytype(this.paytypeid));
+           this.getSurCharge();
+           this.payRentForm.patchValue({
+             objPayment: {
+               PayType: {
+                 PayTypeDescription: defaultDescription,
+                 PayTypeID: defaultPayTypeID,
+               }
+             }
+           });
+         }
+       }
+     );
+   }
 
   toggleEvent(e: any) {
     this.toggleSignUp = true;
@@ -532,18 +536,20 @@ public navigateToPrevious() {
         this.amountToPay = result.decTotalAmount;
         this.dataSharingService.amountToPayThankYou = this.amountToPay;
         if (this.router.url.includes('payReservationCharges')) {
-          this.surcharge = parseFloat((result.decTotalAmount - this.TotalReserveAmount).toFixed(2));
+          this.surcharge = result.decTotalAmount - this.TotalReserveAmount;
         } else {
           if (this.router.url.includes('payMoveInCharges')) {
-            this.surcharge = parseFloat((result.decTotalAmount - this.totalMoveInAmount).toFixed(2));
+            
+            this.surcharge = result.decTotalAmount - this.totalMoveInAmount;
           } else {
+            
             if (this.showInput) {
               if (this.customOtherValue) {
-                 this.surcharge = parseFloat((result.decTotalAmount - this.customOtherValue).toFixed(2));
+                 this.surcharge = result.decTotalAmount - this.customOtherValue;
                }
              } else {
                  if (this.balance > 0) {
-                   this.surcharge = parseFloat((result.decTotalAmount - this.balance).toFixed(2));
+                   this.surcharge =result.decTotalAmount - this.balance;
                  }
                }
           }
@@ -597,7 +603,7 @@ public navigateToPrevious() {
           }
         } else {
           this.makePaymentForUnit = false;
-
+          this.showloaderForPayment = false;
           this.invalidPayment = 'Unable to make the payment. Please check your card detail.';
         }
 
