@@ -100,6 +100,16 @@ table {
 }
 
 @media screen and (max-width: 600px) {
+  .gif{
+    height: 50px;
+    width: 20px;
+  }
+
+  h1{
+    font-size: 32px;
+    font-weight: 800;
+  }
+
   .view-rates {
     background-color: #edf1ee;
     padding: 16px 0;
