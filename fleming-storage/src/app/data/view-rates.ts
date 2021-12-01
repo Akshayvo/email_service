@@ -74,7 +74,7 @@ export const th = [
   },
   {
     id: 'rate',
-    data: `Rate`,
+    data: `Weekly Rate`,
     state: objSIMSetting.objUnitSizesSetting.blnShowRate
   },
   // {

@@ -32,8 +32,8 @@
 
           </td>
           <td  colspan="2" class="px-4 border text-center" *ngIf="showRate">
-              <span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate | number : '1.2-2'}}
-              <meta itemprop="priceRange" content="{{lstUnitType.MonthlyRate}}" />
+              <span *ngIf="lstUnitType.WeeklyRate != null">$</span>{{lstUnitType.WeeklyRate | number : '1.2-2'}}
+              <meta itemprop="priceRange" content="{{lstUnitType.WeeklyRate}}" />
           </td>
           <!-- <td  colspan="2" class="px-4 border text-center" *ngIf="showDeposit" >
             <span *ngIf="lstUnitType.DepositAmount != null">$</span>{{lstUnitType.DepositAmount | number : '1.2-2'}}
@@ -70,8 +70,14 @@
   </table>
   
     <p  class="viewrates-desktop text-center mt-2" [class.display]="!showTable">
-      <span>There is $50 deposit on all our units.</span>
+      <span><b>There is $50 deposit on all our units.</b></span>
+      
       </p>
+      <p  class="viewrates-desktop text-center mt-2" [class.display]="!showTable">
+        <span><b>*There is a 4-week minimum rental period and there is a $50 deposit on all units.</b></span>
+        
+        </p>
+      
   
   
   <div class="row viewrates-mobile py-2 border" *ngFor="let lstUnitType of LstUnitTypes">
@@ -81,7 +87,7 @@
     <div class="row">
         <div class="col-6 text-center " *ngIf="showRate">
             <p class=" "><b><u>Rate</u></b></p>
-            <div class=" "><span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate | number : '1.2-2'}}</div>
+            <div class=" "><span *ngIf="lstUnitType.WeeklyRate != null">$</span>{{lstUnitType.WeeklyRate | number : '1.2-2'}}</div>
         </div>
         <div   class="col-6 "[class.ClimateBorder]="lstUnitType.IsClimateControlled" *ngIf="showClimateControl" >
             <div class=" ClimateControlled" *ngIf="lstUnitType.IsClimateControlled" >Temperature Controlled</div>
@@ -103,5 +109,6 @@
         </ng-template>
     </div>
   </div>
-  <h4 class='viewrates-mobile text-center mt-2' [class.display]="!showTable">There is $50 deposit on all our units.</h4>
+  <h4 class='viewrates-mobile text-center mt-2' [class.display]="!showTable"><b>There is $50 deposit on all our units.</b></h4>
+  <h4 class='viewrates-mobile text-center mt-2' [class.display]="!showTable"><b>*There is a 4-week minimum rental period and there is a $50 deposit on all units.</b></h4>
 </div>
