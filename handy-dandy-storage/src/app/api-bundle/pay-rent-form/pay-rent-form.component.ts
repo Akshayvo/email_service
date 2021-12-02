@@ -663,7 +663,7 @@ public navigateToPrevious() {
       this.showloaderForPayment = false;
 
       if (!!localStorage.getItem('paymentTab')) {
-        this.router.navigate([`${environment.locationName}/${this.facilityLocation}/reserve-unit/${localStorage.getItem('paymentTab')}/thank-you`]);
+        this.router.navigate([`location/${this.facilityLocation}/reserve-unit/${localStorage.getItem('paymentTab')}/thank-you`]);
       } else {
         this.router.navigate([`${environment.locationName}/${this.facilityLocation}/reserve-unit/thank-you`]);
       }
