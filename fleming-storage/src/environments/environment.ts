@@ -18,7 +18,7 @@ export const environment = {
   facilityName: 'Fleming Storage Solutions',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: 'https://fleming-storage-solutions-staging.netlify.app',
+  websiteUrl: 'https://flemingstorage.ca',
   APIKey: `Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 28464
   // APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28463
   
