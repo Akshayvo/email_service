@@ -4,6 +4,7 @@ export const contact = [
     label: 'Address: ',
     data: '142 Buell Rd, Rochester, NY 14624',
     class: 'fas fa-map-marker-alt mr-2 iconColor',
+    redirect: 'https://g.page/storage-units-rochester-ny?share'
   },
   {
     id: 1,

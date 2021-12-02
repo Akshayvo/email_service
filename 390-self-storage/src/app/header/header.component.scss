@@ -3,6 +3,7 @@
 
 a {
   cursor: pointer;
+  color: $white;
 }
 
 // .dropdown:hover>.dropdown-menu {
@@ -11,6 +12,18 @@ a {
 
 img {
   height: 80px;
+}
+
+.contact-header {
+  display: inline;
+
+  .contact-details {
+    // display: block;
+    color: $white;
+    font-size: 0.82em;
+    font-weight: 500;
+    width: 100%;
+  }
 }
 
 .dropdown-menu {
@@ -115,6 +128,10 @@ img {
 
   .nav-link {
     padding: 20px;
+  }
+
+  .contact-details {
+    display: block;
   }
 
   .navbar {
