@@ -29,6 +29,7 @@ export const featuresList = [
     },
     {
         td1: 'Fully-Fenced Facility',
+        td2: '5% Veterans Discount'
         
     }
 ];
