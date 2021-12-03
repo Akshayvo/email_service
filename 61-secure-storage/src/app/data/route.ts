@@ -144,6 +144,11 @@ export const apiRoutes = [
       { path: "confirmation-page", component: ConfirmationPageComponent },
       { path: "payReservationCharges", component: PayRentFormComponent },
       { path: "payMoveInCharges", component: PayRentFormComponent },
+      {
+        path: "thank-you",
+        component: ThankYouComponent,
+        canActivate: [ThankYouGuard],
+      },
     ],
   },
   {

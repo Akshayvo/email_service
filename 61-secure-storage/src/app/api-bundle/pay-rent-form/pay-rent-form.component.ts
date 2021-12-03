@@ -191,8 +191,8 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       this.navigateToMoveIn = false;
       this.payRentForm.patchValue({
         objPayment: {
-         PaymentAmount: this.TotalReserveAmount
-        }
+          PaymentAmount: this.TotalReserveAmount,
+        },
       });
     } else {
       if (this.router.url.includes("/payMoveInCharges")) {
@@ -733,17 +733,19 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
             this.reservationInProgress = false;
             this.showloaderForPayment = false;
 
-            if (!!localStorage.getItem("paymentTab")) {
-              this.router.navigate([
-                `location/${
-                  this.facilityLocation
-                }/reserve-unit/${localStorage.getItem("paymentTab")}/thank-you`,
-              ]);
-            } else {
-              this.router.navigate([
-                `location/${this.facilityLocation}/reserve-unit/thank-you`,
-              ]);
-            }
+            this.router.navigate([`view-rates/thank-you`]);
+
+            // if (!!localStorage.getItem("paymentTab")) {
+            //   this.router.navigate([
+            //     `location/${
+            //       this.facilityLocation
+            //     }/reserve-unit/${localStorage.getItem("paymentTab")}/thank-you`,
+            //   ]);
+            // } else {
+            //   this.router.navigate([
+            //     `location/${this.facilityLocation}/reserve-unit/thank-you`,
+            //   ]);
+            // }
           }
         },
         (err: any) => {
