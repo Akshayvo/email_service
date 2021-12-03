@@ -116,26 +116,38 @@ body { height: 100%; }
 
 // Content Holder Styles
 .contentHolder {
-  padding-top: 90px;
+  padding-top: 135px;
   min-height: 96vh;
   margin-bottom: 50px;
 }
 
 @media only screen and (max-width: 991px) and (min-width: 768px) {
   .contentHolder {
-    padding-top: 56px;
+    padding-top: 180px;
   }
+
+  .btn-primary {
+    min-width: 100px; 
+}
 }
 
 @media only screen and (max-width: 767px) and (min-width: 601px) {
   .contentHolder {
-    padding-top: 56px;
+    padding-top: 220px;
+  }
+
+  .btn-primary {
+    min-width: 100px; 
   }
 }
 
 @media screen and (max-width: 600px) {
   .contentHolder {
-    padding-top: 56px;
+    padding-top: 220px;
+  }
+
+  .btn-primary {
+    min-width: 100px; 
   }
   
   .background-padding {

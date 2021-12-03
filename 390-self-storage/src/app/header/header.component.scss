@@ -26,6 +26,17 @@ img {
   }
 }
 
+.btn-payment {
+  background-color: #ffffff;
+  color: $primary;
+}
+
+.payment-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .dropdown-menu {
   border-radius: 0;
   border: none;
@@ -113,6 +124,11 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .payment-button {
+    display: none;
+  }
+}
 
 @media only screen and (min-width: 992px) {
   .dropdown:hover> .dropdown-menu {

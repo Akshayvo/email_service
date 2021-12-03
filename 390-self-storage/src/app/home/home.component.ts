@@ -6,6 +6,7 @@ import { homePageScript } from '../data/script';
 import { contact, hours } from '../data/contact';
 import { featuresList, aboutUs, gettingStarted, feature, blurb} from '../data/home';
 import { CanonicalService } from '../services/canonical.service';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-home',
@@ -51,7 +52,15 @@ export class HomeComponent implements OnInit {
   }
 
   public navigate(location: any) {
-    this.router.navigate([location]);
+    if (
+      location === '/view-rates' ||
+      location === '/storage-tips' ||
+      location === '/reserve-unit'
+    ) {
+      this.router.navigate([`${environment.locationName}/${location}`]);
+    } else {
+      this.router.navigate([`${location}`]);
+    }
   }
 
   ngOnInit() {

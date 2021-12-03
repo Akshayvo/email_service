@@ -169,9 +169,9 @@ export class ContactComponent implements OnInit {
         this.contactForm.value.subject = "Website Form Submission";
       }
 
-      const index = contact.findIndex((x) => x.label === "Email:");
+      const index = contact.findIndex((x) => x.label === "Email: ");
 
-      if (index!=null && index>=0) {
+      if (!!index) {
         this.receiveremail = this.contactDetails[index].data;
       }
 
