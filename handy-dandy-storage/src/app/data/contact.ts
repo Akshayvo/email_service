@@ -42,15 +42,9 @@ export const contactsLocation1 = [
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: 'https://goo.gl/maps/3jEks8nvnMKoDfbm9'
     },
+    
     {
         id: 2,
-        label: 'Office Address: ',
-        data: '424 North St, Houlton, ME 04730',
-        class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/WwxYE5h1AFE5RzFm8'
-    },
-    {
-        id: 3,
         label: 'Email: ',
         email: 'watercare@pwless.net',
         data: `watercare@pwless.net`,
@@ -58,7 +52,7 @@ export const contactsLocation1 = [
         redirect: 'mailto:watercare@pwless.net'
     },
     {
-        id: 4,
+        id: 3,
         label: 'Phone: ',
         data: '(207) 532-3005',
         class: 'fas fa-phone mr-2 iconColor',
