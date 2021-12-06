@@ -91,11 +91,11 @@ export const th = [
     data: `Move In`,
     state: objSIMSetting.objActionSetting.blnAllowMoveIn
   },
-  {
-    id: 'climate-control',
-    data: `Climate Control`,
-    state: objSIMSetting.objUnitSizesSetting.blnClimateControl
-  },
+  // {
+  //   id: 'climate-control',
+  //   data: `Climate Control`,
+  //   state: objSIMSetting.objUnitSizesSetting.blnClimateControl
+  // },
 ];
 
 export const state = {

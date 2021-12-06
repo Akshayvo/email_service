@@ -60,6 +60,7 @@ table {
           background-color: #3f3c3c !important;
           border-color: #212121 !important;
         }
+        
       }
     }
   }
@@ -116,14 +117,20 @@ p {
   .viewrates-desktop {
     display: none;
   }
+  .btn-outline-primary{
+    color:#000 !important;
+  }
 }
 
 @media only screen and (max-width: 767px)  and (min-width: 381px) {
   .buttons {
     .btn {
       min-width: 150px;
+     
     }
+   
   }
+  
 }
 
 @media only screen and (max-width: 380px) {
