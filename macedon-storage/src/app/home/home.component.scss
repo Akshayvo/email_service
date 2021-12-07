@@ -603,9 +603,15 @@
   .jumbotron {
     text-align: center;
     background-attachment: unset;
-    background-position: center left;
-    height: 100vh;
+    // background-position: right 37% top 10px;
+    background-size: contain;
+    height: 87vh;
   }
+
+  .jumbotron-top {
+    height: 47vh;
+  }
+
 
   .feature {
     display: none;
@@ -624,10 +630,14 @@
     position: absolute;
   }
 
+  .home-map{
+    margin-top: 62px;
+  }
+  
   .jumbotorn-skew-text {
     width: 100%;
     left: 0;
-    top: auto;
+    top: 60vh;
     bottom: 2px;
 
     .btn-outline-primary {
