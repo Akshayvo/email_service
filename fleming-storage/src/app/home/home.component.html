@@ -54,11 +54,16 @@
                   <ng-template #other_content>&nbsp;<h4>{{contact.data}}</h4></ng-template><br>
                 </span>
               </p>
-              <h4><b>Facility Hours:</b></h4>
+              <h4><b>Office Hours:</b></h4>
               <p>
                 <span class="display-contact" *ngFor="let hour of hours">
                   <h4><b>{{hour.label}}</b></h4>&nbsp;<h4>{{hour.data}}</h4><br>
+                </span><br>
+                <span class="display-contact">
+                  <h4><b>Storage Access Hours: </b></h4>&nbsp;<h4>7 Days a Week, 7:00AM to 9:00PM</h4><br>
                 </span>
+              
+              
               </p>
             </div>
             <div>

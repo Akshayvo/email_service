@@ -30,11 +30,11 @@ export const featuresList = [
 
 export const aboutUsAlt = `a row of self storage units`;
 
-export const aboutUsHeading = `Affordable Self Storage Units in Cavan-Monaghan`;
+export const aboutUsHeading = `Affordable Self Storage Units in Peterborough`;
 
 export const aboutUs = [
     {
-        p: `Fleming Storage is Cavan Monaghan’s newest self storage facility offering a variety of regular and temperature controlled self storage units at very affordable rates. Our facility is conveniently located on Whittington Drive just outside of downtown Peterborough. As a locally owned and operated storage unit facility, we strive to provide a level of customer service that you just won’t get at the big chains.`,
+        p: `Fleming Storage is Cavan Monaghan’s newest self storage facility offering a variety of regular and temperature controlled self storage units at very affordable rates. Our facility is conveniently located on Whittington Drive. As a locally owned and operated storage unit facility, we strive to provide a level of customer service that you just won’t get at the big chains.`,
     },
     {
         b:`Convenience`,
@@ -80,7 +80,7 @@ export const feature = [
 
 export const jumbotron = [
     {
-        h2: `Affordable Self Storage Units in Cavan-Monaghan`,
+        h2: `Affordable Self Storage Units in Peterborough`,
         blurb: `We are proud to introduce Fleming Storage Solutions, a brand new self-storage facility on the edge of Peterborough. Our locally owned and operated storage facility offers a number of storage unit sizes in both regular and temperature controlled types. Our variety of affordable unit sizes are sure to meet your residential or business storage needs. Check out our current availability`,
     }
 ];

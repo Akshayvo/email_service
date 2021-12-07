@@ -1,4 +1,4 @@
-export const homePageTitle = `Affordable Self Storage Units in Cavan-Monaghan, ON`;
+export const homePageTitle = `Affordable Self Storage Units in Peterborough, ON`;
 export const homePageContent = `Are you in search of affordable self storage units near Cavan-Monaghan? Fleming Storage Solutions has a wide variety of convenient sizes and excellent customer service!`;
 
 export const viewRatesPageTitle = `View Rates  | Fleming Storage Solutions`;

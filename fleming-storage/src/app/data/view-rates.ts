@@ -2,7 +2,7 @@ import { objSIMSetting } from './configuration';
 
 export const dataViewRates = [
     {
-      p: `Take a moment to check out our rates and availability for our regular and temperature controlled storage units. Once you’ve found one that suits your storage needs, rent online in minutes. You’ll receive an electronic lease in your email, and once that’s signed, a confirmation email will include your new gate access code.`,
+      p: `Take a moment to check out our rates and availability for our regular and temperature controlled storage units. Once you’ve found one that suits your storage needs, rent online in minutes. You’ll receive an electronic agreement in your email, and once that’s signed, a confirmation email will include your new gate access code.`,
     },
     {
       p: `Now that you’re a Fleming Storage customer, you’ll have access to your unit(s) from 7:00AM to 8:00PM 7 days a week, and your account 24/7 through our website. Save yourself the hassle, and take advantage of our automatic payment service!`

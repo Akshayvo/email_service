@@ -31,7 +31,7 @@ export const script = {               // Please fill this script according to fa
      ],
      telephone: contact[contactIndex].data,
      map: "https://goo.gl/maps/HQfa1DBAgUoZLyw89",
-     description: "Fleming Storage is Cavan Monaghan’s newest self storage facility offering a variety of regular and temperature controlled self storage units at very affordable rates. Our facility is conveniently located on Whittington Drive just outside of downtown Peterborough. As a locally owned and operated storage unit facility, we strive to provide a level of customer service that you just won’t get at the big chains.",
+     description: "Fleming Storage is Cavan Monaghan’s newest self storage facility offering a variety of regular and temperature controlled self storage units at very affordable rates. Our facility is conveniently located on Whittington Drive. As a locally owned and operated storage unit facility, we strive to provide a level of customer service that you just won’t get at the big chains.",
      streetAddress: "2135 Whittington Dr",
      state: "Ontario",
      addressLocality: "Ontario",

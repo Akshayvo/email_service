@@ -32,7 +32,7 @@ export const contact = [
 export const hours = [
     {
         label: 'Monday - Friday: ',
-        data: '9:00AM to 5:00PM'
+        data: '9:00AM to 4:00PM'
     },
     {
         label: 'Saturday: ',
@@ -42,10 +42,10 @@ export const hours = [
         label: 'Sunday: ',
         data: 'CLOSED'
     },
-    {
-        label: 'Storage Access Hours: ',
-        data: '7 Days a Week, 7:00AM to 8:00PM'
-    }
+    // {
+    //     label: 'Storage Access Hours: ',
+    //     data: '7 Days a Week, 7:00AM to 9:00PM'
+    // }
 ];
 
 export const socialLinks = [
@@ -56,7 +56,7 @@ export const socialLinks = [
     },
     {
         label: 'facebook',
-        path: '',
+        path: 'https://www.facebook.com/flemingstorage.ca',
         class: 'fab fa-facebook-square',
     },
 ];
