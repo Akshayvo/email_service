@@ -16,9 +16,9 @@ export const contact = [
     {
         id: 2,
         label: 'Email:',
-        data: 'info@sodusselfstorage.com',
+        data: 'sodusstorageplus@gmail.com',
         class: 'fas fa-envelope mx-2 iconColor',
-        redirect: 'mailto:info@sodusselfstorage.com'
+        redirect: 'mailto:sodusstorageplus@gmail.com'
 
     },
     {
