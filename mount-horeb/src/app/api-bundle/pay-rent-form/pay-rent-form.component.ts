@@ -582,6 +582,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
               if (!!this.paymentTab) {
                 this.router.navigate([`pay-rent/${this.paymentTab}/thank-you`])
               } else {
+                
                 this.router.navigate([`pay-rent/thank-you`]);
               }
             }
@@ -703,6 +704,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
           this.tokenRemoved = true;
         }
         this.router.navigate([`${environment.locationName}/view-rates/thank-you`]);
+
         this.reservationInProgress = false;
       }, (err: any) => {
         this.makePaymentForUnit = false;
