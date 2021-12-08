@@ -78,19 +78,19 @@ export class ThankYouComponent implements OnInit, OnDestroy {
     }
     const today = new Date();
     window["dataLayer"] = window["dataLayer"] || [];
-    window["dataLayer"].push({ ecommerce: null }); // Clear the previous ecommerce object.
+    window["dataLayer"] = window["dataLayer"] || [];
     window["dataLayer"].push({
       event: "purchase",
-      ecommerce: {
-        transaction_id: this.strConfirmation,
-        unit_rate: this.monthlyRate,
-        items: [
-          {
-            item_name: this.description,
-            item_id: this.unitTypeid,
-            price: this.amountToPayThankYou,
-            quantity: 1,
-            date:
+      transaction_id: this.strConfirmation,
+      unit_rate: this.monthlyRate,
+      items:
+        {
+          item_name: this.description,
+          item_id: this.unitTypeid,
+          price: this.amountToPayThankYou,
+          quantity: 1,
+        },
+        date:
               today.getFullYear() +
               "-" +
               (today.getMonth() + 1) +
@@ -102,9 +102,6 @@ export class ThankYouComponent implements OnInit, OnDestroy {
               today.getMinutes() +
               ":" +
               today.getSeconds(),
-          },
-        ],
-      },
     });
   }
 
