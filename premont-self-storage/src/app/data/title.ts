@@ -1,7 +1,7 @@
 export const homePageTitle = `Affordable Storage Units & Parking in Premont, Texas`;
 export const homePageContent = `Are you in search of affordable self storage units near Premont, Texas? Premont Self Storage has several sizes, vehicle parking, and excellent customer service!`;
 
-export const viewRatesPageTitle = `View Rates  | Milton Mini Storage`;
+export const viewRatesPageTitle = `View Rates  | Premont Self Storage`;
 export const viewRatesPageContent = `Review our current rates and availability, then rent your unit in minutes with our easy online reservation form!`;
 
 export const reservePageTitle = ``;
