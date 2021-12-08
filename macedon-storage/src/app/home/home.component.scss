@@ -20,11 +20,11 @@
 
 
 .jumbotron-background-webp {
-  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Macedon/webp/macedon-storage-169.webp");
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Macedon/webp/macedon-storage-jumbotron.webp");
 }
 
 .jumbotron-background-jpg {
-  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Macedon/jpg/macedon-storage-169.jpg");
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Macedon/jpg/macedon-storage-jumbotron.jpg");
 }
 
 .display-contact {
@@ -602,10 +602,10 @@
 @media only screen and (max-width: 429px) {
   .jumbotron {
     text-align: center;
-    background-attachment: unset;
+    // background-attachment: unset;
     // background-position: right 37% top 10px;
     background-size: contain;
-    height: 87vh;
+    height: 75vh;
   }
 
   .jumbotron-top {

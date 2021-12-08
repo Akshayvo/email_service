@@ -16,9 +16,9 @@ export const contact = [
     {
         id: 1,
         label: 'Email:',
-        data: 'support@lindenstorage.com',
+        data: 'lindenmacedonselfstorage@gmail.com',
         class: 'fas fa-envelope mx-2 iconColor',
-        redirect: 'mailto:support@lindenstorage.com'
+        redirect: 'mailto:lindenmacedonselfstorage@gmail.com'
     },
     {
         id: 2,
