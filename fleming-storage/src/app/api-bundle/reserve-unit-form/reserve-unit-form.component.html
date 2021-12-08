@@ -192,8 +192,8 @@
               >
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 form-group ngx-select-dropdown">
-            <label>State*</label>
+          <!-- <div class="col-lg-4 col-md-6 form-group ngx-select-dropdown">
+            <label>Province/State*</label>
             <select
               class="form-control"
               formControlName="State"
@@ -205,6 +205,42 @@
               <option *ngFor="let option of option" [value]="option.id">
                 {{ option.description }}
               </option>
+            </select>
+
+            <div
+              *ngIf="submitted && f.objTenant.controls.State.errors"
+              class="invalid-feedback"
+            >
+              <small
+                class="form-text text-muted"
+                *ngIf="f.objTenant.controls.State.errors.required"
+                >Please fill out this field</small
+              >
+            </div>
+          </div> -->
+          <div class="col-lg-4 col-md-6 form-group ngx-select-dropdown">
+            <label>State/Province*</label>
+            <select
+              class="form-control"
+              formControlName="State"
+              [ngClass]="{
+                'is-invalid':
+                  submitted && f.objTenant.controls.State.errors
+              }"
+            >
+              <option value="" disabled selected>
+                Select your State/Province
+              </option>
+              <optgroup label="U.S. States/Territories">
+                <option *ngFor="let option of option" [value]="option.id">
+                  {{ option.description }}
+                </option>
+              </optgroup>
+              <optgroup label="Canadian Provinces">
+                <option *ngFor="let option of option1" [value]="option.id">
+                  {{ option.description }}
+                </option>
+              </optgroup>
             </select>
 
             <div
