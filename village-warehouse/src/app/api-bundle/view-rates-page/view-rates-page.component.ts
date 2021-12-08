@@ -4,7 +4,7 @@ import { MoveInService } from '../services/moveIn.service';
 import { ObjCharges } from '../models/movein';
 import { UnitTypes, LstUnitTypes } from '../models/unittypes';
 import { FetchDataService } from '../services/fetch-data.service';
-import { th } from '../../data/view-rates';
+import { th, th1 } from '../../data/view-rates';
 import { Router } from '@angular/router';
 import { DataSharingService } from '../services/data-sharing.service';
 import { environment } from '../../../environments/environment';
@@ -20,6 +20,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   showTable = false;
   unitTypes: UnitTypes;
   LstUnitTypes: LstUnitTypes[];
+  RegularUnitTypes: LstUnitTypes[];
 
   descriptionVR: string;
   monthlyRateVR: number;
@@ -46,6 +47,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   showPaymentForReserve = false;
   objCharges: ObjCharges;
   th: any;
+  th1: any;
   tenant: any;
   text = false;
   objSIMSetting: any;
@@ -77,6 +79,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
 
   public fetchThData() {
     this.th = th.filter(x => x.state === true);
+    this.th1 = th1.filter(x => x.state === true);
     this.showRate = objSIMSetting.objUnitSizesSetting.blnShowRate;
     this.showDeposit = objSIMSetting.objUnitSizesSetting.blnShowDeposit;
     this.showReserve = objSIMSetting.objActionSetting.blnAllowReservation;
@@ -134,6 +137,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   this.getDataSubscribe$ = this.fetchDataService.getData()
     .subscribe(unitTypesResponse => {
       this.showTable =  true;
+      this.RegularUnitTypes = unitTypesResponse.lstUnitTypes.filter(x => x.IsMobile === true);
       this.LstUnitTypes = unitTypesResponse.lstUnitTypes;
     });
   }
