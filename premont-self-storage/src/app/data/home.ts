@@ -35,7 +35,7 @@ export const aboutUs = [
     },
     {
         h:`Convenience`,
-        p: `We understand that the need for self storage often comes at stressful times, so at Premont Self Storage, we go the extra mile to make your experience a convenient one. You can check out our rates and availability, then move into your unit online in minutes! Once you’re a Premont Self Storage customer, you’ll have access to your unit from 9:00AM To 5:00PM 7 days a week, and you can pay your rent through our website 24 hours a day. Our knowledgeable and friendly staff are available during office hours to answer any questions and assist you in making your stay with us an easy one.`,
+        p: `We understand that the need for self storage often comes at stressful times, so at Premont Self Storage, we go the extra mile to make your experience a convenient one. You can check out our rates and availability, then move into your unit online in minutes! Once you’re a Premont Self Storage customer, you’ll have access to your unit during our facility hours, and you can pay your rent through our website 24 hours a day. Our knowledgeable and friendly staff are available during office hours to answer any questions and assist you in making your stay with us an easy one.`,
     },
     {
         h:`Security`,

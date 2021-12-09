@@ -6,26 +6,26 @@ export const contact = [
         class: 'fas fa-map-marker-alt mx-2 iconColor',
         redirect: 'https://goo.gl/maps/rWzkkU5JZLyj7QNe6'
     },
+    // {
+    //     id: 1,
+    //     label: 'Office Address:',
+    //     data: '42215 Washington St, Palm Desert, CA 92211',
+    //     class: 'fas fa-map-marker-alt mx-2 iconColor',
+    //     redirect: 'https://goo.gl/maps/rWzkkU5JZLyj7QNe6'
+    // },
     {
         id: 1,
-        label: 'Office Address:',
-        data: '42215 Washington St, Palm Desert, CA 92211',
-        class: 'fas fa-map-marker-alt mx-2 iconColor',
-        redirect: 'https://goo.gl/maps/rWzkkU5JZLyj7QNe6'
-    },
-    {
-        id: 2,
         label: 'Email:',
         data: 'premontselfstorage@gmail.com',
         class: 'fas fa-envelope mx-2 iconColor',
         redirect: 'mailto:premontselfstorage@gmail.com'
     },
     {
-        id: 3,
+        id: 2,
         label: 'Phone:',
-        data: '(760) 977-6308',
+        data: '(361) 253-2200',
         class: 'fas fa-phone mx-2 iconColor',
-        redirect: 'tel:7609776308',
+        redirect: 'tel:3612532200',
     }
 ];
 
@@ -39,10 +39,10 @@ export const hours = [
         data: '9:00AM to 5:00PM'
     },
     
-    {
-        label: 'Storage Access Hours: ',
-        data: '7 Days a Week 9:00AM to 5:00PM'
-    }
+    // {
+    //     label: 'Storage Access Hours: ',
+    //     data: '7 Days a Week 9:00AM to 5:00PM'
+    // }
 ];
 
 export const socialLinks = [

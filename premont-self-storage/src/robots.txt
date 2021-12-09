@@ -1,5 +1,5 @@
 # www.robotstxt.org/
 # Allow crawling of all content
-Sitemap: https://premont-self-storage-staging.netlify.app/sitemap.xml
+Sitemap: https://premontselfstorage.com/sitemap.xml
 User-agent: *
 Disallow:/privacy-policy

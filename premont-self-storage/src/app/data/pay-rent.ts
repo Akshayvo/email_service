@@ -1,10 +1,10 @@
 export const loginDetail = [
     {
-        userName: `Tenant's First Initial + Last Name`,
+        userName: `Tenant's Email Address`,
         password: `Tenant's Full Phone Number`,
         example: {
             code: "John Smith's Full Phone Number is 555-555-5555",
-            userName: 'jsmith',
+            userName: 'jsmith@email.com',
             password: '5555555555'
         }
     }
