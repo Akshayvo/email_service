@@ -16,6 +16,7 @@
 
 .display-contact {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .jumbotron {
@@ -572,7 +573,7 @@
     transform: skew(0deg);
     width: 100%;
     left: auto;
-    height: 90px;
+    height: 140px;
     bottom: 0;
     position: absolute;
   }
@@ -620,11 +621,15 @@
     transform: skew(0deg);
     width: 100%;
     left: auto;
-    height: 150px;
+    height: 106px;
     bottom: 0;
     position: absolute;
     top: 33vh;
-    background-color: grey;
+    background-color: black;
+  }
+
+  .jumbotron-bottom {
+    height: 14vh;
   }
 
   .jumbotorn-skew-text {
