@@ -100,7 +100,7 @@
 }
 
 .jumbotron-bottom {
-  height: 20vh;
+  height: 34vh;
   display: flex;
   align-items: center;
 }
@@ -168,7 +168,7 @@
   }
 
   .jumbotron-bottom {
-    height: 150px;
+    height: 270px;
   }
 
   .jumbotorn-skew-text {
@@ -234,7 +234,7 @@
   }
 
   .jumbotron-bottom {
-    height: 150px;
+    height: 270px;
   }
 }
 
@@ -298,7 +298,7 @@
   }
 
   .jumbotron-bottom {
-    height: 150px;
+    height: 270px;
   }
 }
 
@@ -366,7 +366,7 @@
   }
 
   .jumbotron-bottom {
-    height: 150px;
+    height: 270px;
   }
 }
 
@@ -404,7 +404,7 @@
   }
 
   .jumbotron-bottom {
-    height: 160px;
+    height: 280px;
   }
 }
 
@@ -475,7 +475,7 @@
   }
 
   .jumbotron-bottom {
-    height: 200px;
+    height: 320px;
   }
 
   .jumbotorn-skew-style {
@@ -609,7 +609,7 @@
   }
 
   .jumbotron-top {
-    height: 47vh;
+    height: 50vh;
   }
 
 
@@ -631,13 +631,28 @@
   }
 
   .home-map{
-    margin-top: 62px;
+    margin-top: 20vh
   }
   
+  .center-text{
+    color: green;
+    margin-top: 10px;
+    font-size: 18px;
+
+  }
+
+  .additional-text{
+    color: green;
+    position: relative;
+    top: 22vh;
+    margin: 5vh;
+    text-align: center;
+  }
+
   .jumbotorn-skew-text {
     width: 100%;
     left: 0;
-    top: 60vh;
+    top: 75vh;
     bottom: 2px;
 
     .btn-outline-primary {

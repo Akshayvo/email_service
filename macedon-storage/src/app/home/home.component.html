@@ -1,6 +1,7 @@
 <div class="">
   <div class="jumbotron-container">
     <div class="jumbotron-top">
+      <h5 class="additional-text"> There is nothing "Squirrely" at Macedon storage. Only the best self storage experiance and rates in the Macedon, NY! </h5>
     <div class="jumbotron px-0 m-0" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
       <!-- <div class=" jumbotorn-skew-style" [ngClass]="template === 'darkTheme' ? 'bg-translucent-dark' : 'bg-translucent-light'">
       </div> -->
@@ -13,8 +14,9 @@
           <p class="text-justify">{{jumbotron.blurb}}</p>
           </div>
           <div class="jumbotorn-button">
-            <a class="btn btn-lg btn-outline-primary" (click)="navigate('/view-rates')" role="button">Rent Now</a>
             <a class="btn btn-lg btn-primary" (click)="navigate('/contact-us')" role="button">Contact Us</a>
+            <p class="center-text"> 24/7 </p>
+            <a class="btn btn-lg btn-outline-primary" (click)="navigate('/view-rates')" role="button">Rent Now</a>
           </div>
           </div>
         </div>
