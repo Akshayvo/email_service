@@ -16,14 +16,21 @@
   
           <div class="col-lg-4 col-md-6 rent-example padding-for-small-device">
             <h2> How to Login </h2>
-            <p class="pt-3"> <b>Username:</b> E-mail Address </p>
-            <p> <b>Password:</b> Full Phone Number</p>
+            <p class="pt-3"> <b>Username 1 Unit:</b> Tenant's First Initial + Last Name </p>
+            <p><b>Note: </b>Accounts are assigned 1 unit to 1 account. If you have multiple units, each account login is the Tenant's First Initial + Last Name + Unit Number</p>
+            <p> <b>Password:</b> Tenant's Gate Access Code + Last 4 Digits of Phone Number</p>
         
-            <p class="py-3"> <b>Example</b> </p>
-            <p class="pb-3">John Smith's email is jsmith@email.com and phone number is (555) 555-5555.</p>
+            <p class="py-3"> <b>Example for 1 Unit:</b> </p>
+            <p class="pb-3">John Smith's Gate Codeode is 1234 and Phone Number is 555-555-5555</p>
         
-            <p> <b>John's Username:</b> jsmith@email.com </p>
-            <p class="pb-3"> <b>John's Password:</b> 5555555555</p>
+            <p> <b>John's Username:</b> jsmith</p>
+            <p class="pb-3"> <b>John's Password:</b> 12345555</p>
+
+            <p class="py-3"> <b>Example for Multiple Units:</b> </p>
+            <p class="pb-3">John Smith's Gate Code is 1234, Phone Number is 555-555-5555, and the Unit Number is A27</p>
+        
+            <p> <b>John's Username:</b> jsmitha27</p>
+            <p class="pb-3"> <b>John's Password:</b> 12345555</p>
         
             <p><b>Have questions about your account?</b>
               <span *ngFor="let contact of contact"><span *ngIf="contact?.id == 1 || contact?.id == 2"><a [href]="contact?.redirect">{{contact.data}}</a></span><br>
