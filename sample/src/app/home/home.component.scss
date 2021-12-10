@@ -568,7 +568,7 @@
   .jumbotorn-skew-style {
     transform: skew(0deg);
     width: 100%;
-    left: auto;
+    // left: auto;
     height: 90px;
     bottom: 0;
     position: absolute;
@@ -577,7 +577,7 @@
   .jumbotorn-skew-text {
     width: 100%;
     left: 0;
-    top: auto;
+    // top: auto;
     bottom: 10px;
   }
 
@@ -586,15 +586,27 @@
   }
 }
 
-@media only screen and (max-width: 429px) {
+@media only screen and (max-width: 419px) {
   .jumbotron {
     text-align: center;
     background-attachment: unset;
-    background-position: center left;
-    height: 100vh;
+    // background-position: right 37% top 10px;
+    background-size: contain;
+    height: 44vh;
   }
 
-  .feature {
+  .jumbotron-top {
+    height: 40vh;
+  }
+
+  .video-style {
+    iframe {
+      width: 100%;
+      height: 300px;
+    }
+  }
+
+  .feature{
     display: none;
   }
 
@@ -603,23 +615,28 @@
   }
 
   .jumbotorn-skew-style {
-    transform: skew(0deg);
-    width: 100%;
-    left: auto;
-    height: 150px;
-    bottom: 0;
-    position: absolute;
+    // transform: skew(0deg);
+    // width: 100%;
+    // left: auto;
+    // height: 150px;
+    // bottom: 0;
+    // position: absolute;
+    // top: 35.5vh;
+    display: none;
   }
 
   .jumbotorn-skew-text {
     width: 100%;
     left: 0;
-    top: auto;
+    // top: auto;
     bottom: 2px;
+    text-align: center;
+    top:36vh;
 
     .btn-outline-primary {
       margin-right: 0;
       margin-bottom: 8px;
+      color: #154121 !important;
     }
 
     .btn-primary {
@@ -631,3 +648,4 @@
     }
   }
 }
+
