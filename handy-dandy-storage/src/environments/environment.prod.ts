@@ -6,8 +6,8 @@ export const environment = {
   alternateType: { moveIn: false, reserve: false }, // { moveIn: true, reserve: true },
   template: 'darkTheme', // { darkTheme, lightTheme, withoutJumbotron}
   cards: ['Visa', 'Master Card', 'Amex', 'Discover'],
-  errorsMails: [''],
-  senderEmail: '',
+  errorsMails: ['website.dev@codeparva.in'],
+  senderEmail: 'errors@codeparva.in',
   appId: 'Handy Dandy Storage - North Road Storage - Production',
   facilityName: 'Handy Dandy Storage - North Road Storage',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
