@@ -44,12 +44,12 @@ export const tabs = [
         path: './unit-sizer',
         active: false,
     },
-    {
-        id: '3',
-        name: 'Reserve Unit',
-        path: './reserve-unit',
-        active: false,
-    },
+    // {
+    //     id: '3',
+    //     name: 'Reserve Unit',
+    //     path: './reserve-unit',
+    //     active: false,
+    // },
     // {
     //     id: '4',
     //     name: 'About Us',
@@ -147,13 +147,13 @@ export const headingReservePageLocation1 = `Handy Dandy Storage`;
 
 export const headingReservePageLocation2 = `North Road Storage`;
 
-export const headingReservePageLocation3 = `Ready to Reserve a Self Storage Unit in Barnwell`;
+export const headingReservePageLocation3 = ``;
 
 export const headingReservePageLocation4 = ``;
 
-export const headingReservePageLocation5 = `Ready to Reserve a Self Storage Unit in Fairhope`;
+export const headingReservePageLocation5 = ``;
 
-export const headingReservePageLocation6 = `Ready to Reserve a Self Storage Unit in Robertsdale`;
+export const headingReservePageLocation6 = ``;
 
 export const heading1 = `Handy Dandy Storage`;
 
