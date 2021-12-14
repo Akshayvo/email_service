@@ -793,7 +793,7 @@ public navigateToPrevious() {
     } else {
       console.log('form is valid');
       this.showloaderForPayment = true;
-      if ( this.navigateToMoveIn === false && this.navigateToReserve === false) {
+      // if ( this.navigateToMoveIn === false && this.navigateToReserve === false) {
         if (this.amountToPay > 0) {
           this.payRentForm.patchValue({
             objPayment: {
@@ -813,7 +813,7 @@ public navigateToPrevious() {
             }
           });
         }
-      }
+      // }
 
       if (!localStorage.getItem('strTenantToken') &&
       !localStorage.getItem('strTempTenantToken')) {

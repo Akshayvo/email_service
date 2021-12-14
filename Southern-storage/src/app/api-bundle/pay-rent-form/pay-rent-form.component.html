@@ -42,7 +42,7 @@
           <div class="row">
             <div class="form-group col-lg-12 " *ngIf="navigateToMoveIn">    
               <label>Total Move In Fee</label>&nbsp;
-              <input type="number" class="form-control" formControlName="PaymentAmount" readonly  [value]="amountToPay"/>
+              <input type="number" class="form-control" formControlName="PaymentAmount" readonly  [value]="totalMoveInAmount"/>
             </div>
           </div>
           <div *ngIf="!navigateToReserve && !navigateToMoveIn"> 
