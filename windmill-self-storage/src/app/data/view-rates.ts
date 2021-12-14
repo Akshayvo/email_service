@@ -6,7 +6,7 @@ export const dataViewRates = [
       `,
     },
     {
-      p: `Have questions about the services we offer? Give us a call today! We'll be happy to assist you.
+      p: `Have questions about the services we offer? Give us a call at <b>(352) 746-3633</b>! We'll be happy to assist you..
       `
     }
     

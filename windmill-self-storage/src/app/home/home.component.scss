@@ -594,6 +594,10 @@
     width: -140px;
   }
 
+  .jumbotron-top {
+    height: 29vh;
+  }
+
   h1{
     font-size: 35px;
     font-weight: 800;
@@ -602,8 +606,13 @@
   .jumbotron {
     text-align: center;
     background-attachment: unset;
-    background-position: center left;
+    background-position: right 0  top 55px;
     height: 100vh;
+    background-size: contain;
+  } 
+
+  .jumbotorn-skew-style {
+    display: none;
   }
 
   .feature {
@@ -626,12 +635,13 @@
   .jumbotorn-skew-text {
     width: 100%;
     left: 0;
-    top: auto;
+    top: 32vh;
     bottom: 2px;
 
     .btn-outline-primary {
       margin-right: 0;
       margin-bottom: 8px;
+      color: $primary !important;
     }
 
     .btn-primary {
@@ -640,6 +650,7 @@
 
     .jumbotorn-button {
       padding: 15px;
+      background: $light;
     }
   }
 }

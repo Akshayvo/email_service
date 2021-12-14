@@ -4,10 +4,10 @@
       <div class="row">
         <div class="col-md-12">
           <span class="contact-details pr-4" *ngFor="let contact of contactDetails">
-            <span *ngIf="contact?.label !== 'Office Address:'">
+            <span *ngIf="contact?.label !== 'Mailing Address:'">
               <i [class]="contact?.class"></i>
-              <span class="contact-links" *ngIf="contact?.label === 'Address:' || contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
-                <a [href]="contact?.redirect" target="{{(contact?.label === 'Address:') ? '_blank' : '_self'}}">&nbsp;{{contact.data}}</a></span>
+              <span class="contact-links" *ngIf="contact?.label === 'Office Address:' || contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
+                <a [href]="contact?.redirect" target="{{(contact?.label === 'Office Address:') ? '_blank' : '_self'}}">&nbsp;{{contact.data}}</a></span>
               <ng-template #other_content>&nbsp;{{contact.data}}</ng-template>
             </span>
           </span>

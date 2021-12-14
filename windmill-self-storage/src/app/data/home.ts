@@ -39,7 +39,7 @@ export const aboutUs = [
         p: `We offer a number of unit sizes in both regular and climate-controlled varieties from our 5-foot-by-5-foot units perfect for seasonal clothing and decorations all the way up to our oversized 10-foot-by-30-foot units. Whatever your storage needs are, we’ve got you covered!`,
     },
     {
-        p: `So whatever your storage unit needs, take a moment to check out our sizes, then give our office a call today! We can’t wait to meet you at the big yellow windmill!`,
+        p: `So whatever your storage unit needs, take a moment to check out our sizes, then give our office a call at <b>(352) 746-3633</b>! We can’t wait to meet you at the big yellow windmill!`,
     }
     
 ];

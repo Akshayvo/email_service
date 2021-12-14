@@ -1,17 +1,17 @@
 export const contact = [
     {
         id: 0,
-        label: 'Address:',
+        label: 'Office Address:',
         data: '2297 W Gulf to Lake Hwy, Lecanto, FL 34461',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
         redirect: 'https://goo.gl/maps/V1GkHWmvMyFvEQRo9'
     },
     {
         id: 1,
-        label: 'Office Address:',
-        data: '2297 W Gulf to Lake Hwy, Lecanto, FL 34461',
+        label: 'Mailing Address:',
+        data: 'P.O. 255 Lecanto, FL 34460 (All Mail Received At This Address Only)',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
-        redirect: 'https://goo.gl/maps/V1GkHWmvMyFvEQRo9'
+        redirect: ''
     },
     {
         id: 2,
