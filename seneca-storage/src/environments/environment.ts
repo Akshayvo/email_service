@@ -18,7 +18,7 @@ export const environment = {
   facilityName: 'Seneca Storage',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: 'https://seneca-storage-staging.netlify.app',
+  websiteUrl: 'https:// https://seneca-storage.com/',
   // APIKey: `dzF0M1cxSjkqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 28464
   APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28463
   

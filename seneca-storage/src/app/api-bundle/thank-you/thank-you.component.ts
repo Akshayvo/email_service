@@ -30,6 +30,7 @@ export class ThankYouComponent implements OnInit, OnDestroy {
   thankYouPageContent: string;
   facilityName: string;
   unitTypeid: any;
+  locationName: any;
   paymentSuccess = false;
   MoveIn = {
     dteMoveIn: "",
@@ -110,6 +111,7 @@ export class ThankYouComponent implements OnInit, OnDestroy {
 
   public fetchMetaData() {
     this.thankYouPageTitle = thankYouPageTitle;
+    this.locationName = environment.locationName;
     this.thankYouPageContent = thankYouPageContent;
   }
 
