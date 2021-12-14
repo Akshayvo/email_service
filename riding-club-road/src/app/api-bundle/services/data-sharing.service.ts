@@ -1,7 +1,7 @@
-import { Injectable } from '@angular/core';
+import { Injectable } from "@angular/core";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root",
 })
 export class DataSharingService {
   paymentSuccess: boolean;
@@ -20,7 +20,7 @@ export class DataSharingService {
   strConfirmation: string;
   addingTenant = false;
   period: string;
-  apiKey = '';
+  apiKey = "";
   paymentNavigation: string;
   isDataUpdated: boolean;
   isDataSaved: boolean;
@@ -33,19 +33,18 @@ export class DataSharingService {
   amountToPayThankYou: number;
 
   cardDetailsObject = {
-    CCNumber: '',
-    CCBillingAccountName: '',
-    CCExpirationMonth: '',
-    CCExpirationYear: '',
-    CCBillingAddress: '',
-    CCBillingZIP: '',
-    ACHBankRoutingNumber : '',
-    ACHBankAccountNumber: ''
+    CCNumber: "",
+    CCBillingAccountName: "",
+    CCExpirationMonth: "",
+    CCExpirationYear: "",
+    CCBillingAddress: "",
+    CCBillingZIP: "",
+    ACHBankRoutingNumber: "",
+    ACHBankAccountNumber: "",
   };
 
-
   MoveInData = {
-    Description: '',
+    Description: "",
     MonthlyRate: 0,
     UnitTypeID: 0,
     proRateAmount: 0,
@@ -57,19 +56,19 @@ export class DataSharingService {
     DepositTax: 0,
     RateTax: 0,
     TotalTaxAmount: 0,
-    TotalChargesAmount: 0
+    TotalChargesAmount: 0,
   };
 
   ReservationData = {
-    Description: '',
+    Description: "",
     MonthlyRate: 0,
     UnitTypeID: 0,
     RateTax: 0,
-    formattedMoveInDate: '',
+    formattedMoveInDate: "",
   };
 
   LstUnitTypes = {
-    Description: '',
+    Description: "",
     ReservationFee: 0,
     ReservationFeeTax: 0,
     UnitTypeID: 0,
@@ -80,44 +79,42 @@ export class DataSharingService {
   };
 
   objTenant = {
-    FirstName: '',
-    LastName: '',
-    Phone: '',
-    EmailAddress: '',
-    AddressLine1: '',
-    AddressLine2: '',
-    City: '',
-    State: '',
-    ZIP: '',
-    DriversLicense: ' ',
-    DriversLicenseExpDate: ' ',
-    DateOfBirth: ' ',
+    FirstName: "",
+    LastName: "",
+    Phone: "",
+    EmailAddress: "",
+    AddressLine1: "",
+    AddressLine2: "",
+    City: "",
+    State: "",
+    ZIP: "",
+    DriversLicense: " ",
+    DriversLicenseExpDate: " ",
+    DateOfBirth: " ",
     MilitaryType: 0,
     MilitaryBranch: 0,
-    MilitaryID: ' ',
-    DeployedUntil: ' ',
-    MilitaryDivision: ' ',
-    CommandingOfficer: ' ',
-    CommandingOfficerPhone: ' ',
-    AlternateName: '',
-    AlternatePhone: '',
-    AlternateAddressLine1: '',
-    AlternateAddressLine2: '',
-    AlternateCity: '',
-    AlternateState: '',
-    AlternateZIP: ''
+    MilitaryID: " ",
+    DeployedUntil: " ",
+    MilitaryDivision: " ",
+    CommandingOfficer: " ",
+    CommandingOfficerPhone: " ",
+    AlternateName: "",
+    AlternatePhone: "",
+    AlternateAddressLine1: "",
+    AlternateAddressLine2: "",
+    AlternateCity: "",
+    AlternateState: "",
+    AlternateZIP: "",
   };
 
-
   MoveIn = {
-    dteMoveIn: '',
+    dteMoveIn: "",
     intUnitTypeID: 0,
   };
 
-
-constructor() {
- this.getUnitData();
-}
+  constructor() {
+    this.getUnitData();
+  }
   setTenantData(value: any) {
     this.objTenant = value;
   }
@@ -134,9 +131,8 @@ constructor() {
     return this.LstUnitTypes;
   }
 
-
   setReservationData(value: any) {
-    this.ReservationData.Description  = value.Description;
+    this.ReservationData.Description = value.Description;
     this.ReservationData.MonthlyRate = value.MonthlyRate;
     this.ReservationData.UnitTypeID = value.UnitTypeID;
   }
@@ -146,7 +142,7 @@ constructor() {
   }
 
   setMoveInData(value: any) {
-    this.MoveInData.Description  = value.Description;
+    this.MoveInData.Description = value.Description;
     this.MoveInData.MonthlyRate = value.MonthlyRate;
     this.MoveInData.UnitTypeID = value.UnitTypeID;
   }
@@ -154,5 +150,4 @@ constructor() {
   getMoveInData() {
     return this.MoveInData;
   }
-
 }

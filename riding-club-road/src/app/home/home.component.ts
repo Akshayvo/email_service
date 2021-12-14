@@ -1,4 +1,4 @@
-import { Component, OnInit, Renderer2, Inject, OnDestroy } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
 import { Title, Meta } from "@angular/platform-browser";
 import { contact, hours } from "../data/contact";
@@ -11,21 +11,12 @@ import {
   aboutUsAlt,
   aboutUsHeading,
 } from "../data/home";
-import { MetaService } from "../services/link.service";
-import { DOCUMENT } from "@angular/common";
 import { UaParserService } from "../services/ua-parser.service";
 import { homePageTitle, homePageContent } from "../data/title";
 import { objSIMSetting } from "../data/configuration";
 import { environment } from "../../environments/environment";
-import {
-  homePageScript,
-  ogHomePage,
-  script,
-  twitterHomePage,
-} from "../data/script";
+import { homePageScript, ogHomePage, twitterHomePage } from "../data/script";
 import { CanonicalService } from "../services/canonical.service";
-import { FetchDataService } from "../api-bundle/services/fetch-data.service";
-import { Subscription } from "rxjs";
 
 @Component({
   selector: "app-home",
@@ -54,20 +45,15 @@ export class HomeComponent implements OnInit {
   objSIMSetting: any;
   template: string;
   ogHomePage: any;
-twitterHomePage: any
+  twitterHomePage: any;
   script: any;
 
-  // private getDataSubscribe$: Subscription;
   constructor(
     private router: Router,
     private titleService: Title,
     private meta: Meta,
-    private _renderer2: Renderer2,
-    private metaService: MetaService,
     private uaParserService: UaParserService,
-    private canonical: CanonicalService,
-    private fetchDataService: FetchDataService,
-    @Inject(DOCUMENT) private _document: any
+    private canonical: CanonicalService
   ) {
     this.fetchScript();
     this.loadScript();
@@ -111,7 +97,6 @@ twitterHomePage: any
   }
 
   ngOnInit() {
-    // this.getData();
     this.objSIMSetting = objSIMSetting;
     this.fetchContactDetails();
     this.fetchHours();
@@ -120,7 +105,6 @@ twitterHomePage: any
     this.fetchFeature();
     this.fetchJumbotron();
     this.fetchTemplate();
-    this.fetchScript();
     window.scrollTo(0, 0);
   }
 
@@ -135,20 +119,6 @@ twitterHomePage: any
 
     return [min, max];
   }
-
-  // getData() {
-  //   this.getDataSubscribe$ = this.fetchDataService.getData()
-  //     .subscribe(unitTypesResponse => {
-  //       this.findMinMax(unitTypesResponse.lstUnitTypes)
-
-  //    const min = this.findMinMax(unitTypesResponse.lstUnitTypes)[0];
-  //    const max= this.findMinMax(unitTypesResponse.lstUnitTypes)[1];
-
-  //    console.log('this.findMinMax(unitTypesResponse.lstUnitTypes)[0]', min,
-  //    'this.findMinMax(unitTypesResponse.lstUnitTypes)[1]', max);
-
-  //     });
-  //   }
 
   public loadScript() {
     const node = document.createElement("script"); // creates the script tag
@@ -212,10 +182,4 @@ twitterHomePage: any
   public getImageUrl(imageName: string) {
     return `${this.imageBaseUrl}/${imageName}.${this.imagetype}`;
   }
-
-  // public ngOnDestroy(): void {
-  //   if (this.getDataSubscribe$ && this.getDataSubscribe$.closed) {
-  //     this.getDataSubscribe$.unsubscribe();
-  //   }
-  // }
 }

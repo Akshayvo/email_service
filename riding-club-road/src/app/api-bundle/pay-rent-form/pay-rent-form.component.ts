@@ -138,7 +138,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     private addTenantService: AddTenantService
   ) {
     
-    console.log(this.achPayment);
     this.payRentForm = this.formBuilder.group({
       objPayment: this.formBuilder.group({
         // CCAccountNumber: [
@@ -364,7 +363,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     const index = this.lstPayTypes.findIndex(
       (x) => x.PayTypeDescription === this.cardType
     );
-    console.log(index);
     // tslint:disable-next-line: max-line-length
     const cardTypeId =
       index > -1
@@ -420,7 +418,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   selectChangeHandler(event: any) {
     
     this.selectedDescription = JSON.stringify(event.target.value);
-    console.log(this.selectedDescription);
     const indexValue = event.target.value;
     const index = this.lstPayTypes.findIndex(
       (x) => x.PayTypeDescription === indexValue
@@ -437,14 +434,12 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       });
     }
 
-    console.log(this.PayTypeIDValue)
     if (this.PayTypeIDValue === -8) {
       this.achPayment = true;
     }
     else{
       this.achPayment = false;
     }
-    console.log(this.achPayment)
 
     if (this.router.url.includes("payReservationCharges")) {
       this.surchargeService.setAmt(this.TotalReserveAmount);
@@ -480,7 +475,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   }
 
   onKeyUp(e: any) {
-    console.log(this.payRentForm.value);
     this.customOtherValue = e.target.value;
     this.surchargeService.setAmt(e.target.value);
     setTimeout(() => {
@@ -562,11 +556,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
             if (localStorage.getItem("strTenantToken")) {
               this.paytypeid = defaultCardPayTypeId;
               this.surchargeService.getIdPaytype(this.paytypeid);
-              console.log(
-                " this.defaultCardType",
-                this.defaultCardType,
-                defaultCardPayTypeId
-              );
+
               this.payRentForm.patchValue({
                 objPayment: {
                   PayType: {
@@ -626,7 +616,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       .getPayMethods()
       .subscribe((payTypesResponse) => {
         this.cards.forEach((element) => {
-          console.log("elemet", element);
           const index = payTypesResponse.lstPayTypes.findIndex(
             (x) => x.PayTypeDescription === element
           );
@@ -635,7 +624,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
           }
         });
 
-        console.log("this.lstPayTypes", this.lstPayTypes);
 
         if (!!localStorage.getItem("strTenantToken")) {
           this.tenantTokenExist = true;
@@ -655,7 +643,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
               },
             },
           });
-          console.log("default value", defaultPayTypeID);
         }
       });
   }
@@ -928,13 +915,10 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   onSubmit() {
     this.submitted = true;
     if (this.payRentForm.invalid) {
-      console.log(this.payRentForm.value);
       return;
     } else {
 
-      console.log(this.payRentForm.value,"else");
       // if (this.PayTypeIDValue === -8) {
-      //   console.log("ACH payment");
       //   delete this.payRentForm.value.CCAccountNumber;
       //   delete this.payRentForm.value.CCAccountName;
       //   delete this.payRentForm.value.CCExpirationMonth;
@@ -950,7 +934,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       //   this.payRentForm.removeControl("CCAccountBillingAddress");
       //   this.payRentForm.removeControl("CCAccountZIP");
       // } else {
-      //   console.log("other payment");
       //   delete this.payRentForm.value.ACHBankRoutingNumber;
       //   delete this.payRentForm.value.ACHBankAccountNumber;
       //   this.payRentForm.removeControl('ACHBankRoutingNumber');
