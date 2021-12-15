@@ -66,7 +66,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   blnAllowPartialPayments: boolean;
   cards: any;
   paymentSuccess = false;
-
+  navigateToPayment = false;
   marked = false;
   signUp = {};
   logOut = {};
@@ -584,6 +584,9 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
               } else {
                 this.router.navigate([`pay-rent/thank-you`]);
               }
+              if (this.router.url.includes('/payment')){
+                this.dataSharingService.navigateToPayment = true
+              }
             }
           }
           this.showSuccessPayment = true;
@@ -780,7 +783,9 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         } else {
           this.makePayment(this.payRentForm.value);
         }
+        
       }
+      
     }
 
   public ngOnDestroy(): void {

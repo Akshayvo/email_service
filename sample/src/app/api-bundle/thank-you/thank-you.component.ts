@@ -31,6 +31,7 @@ export class ThankYouComponent implements OnInit, OnDestroy {
   facilityName: string;
   unitTypeid: any;
   paymentSuccess = false;
+  navigateToPayment:boolean;
   MoveIn = {
     dteMoveIn: "",
     intUnitTypeID: 0,
@@ -61,6 +62,7 @@ export class ThankYouComponent implements OnInit, OnDestroy {
     this.navigateToReserve = this.dataSharingService.navigateToReserve;
     this.description = this.dataSharingService.LstUnitTypes.Description;
     this.monthlyRate = this.dataSharingService.LstUnitTypes.MonthlyRate;
+    this.PaymentAmount = this.navigateToReserve ? undefined: this.dataSharingService.PaymentAmount;
     this.PaymentAmount = this.dataSharingService.PaymentAmount;
     this.CCApprovalCode = this.dataSharingService.CCApprovalCode;
     this.amountToPayThankYou = this.dataSharingService.amountToPayThankYou;
@@ -68,6 +70,8 @@ export class ThankYouComponent implements OnInit, OnDestroy {
     this.eventName = this.dataSharingService.eventName;
     this.paymentSuccess = this.dataSharingService.paymentSuccess;
     this.unitTypeid = this.dataSharingService.LstUnitTypes.UnitTypeID;
+    this.navigateToPayment = this.dataSharingService.navigateToPayment;
+    console.log(this.navigateToPayment)
 
     if (localStorage.getItem("strTenantToken")) {
       this.tokenExit = localStorage.getItem("strTenantToken");
@@ -103,6 +107,8 @@ export class ThankYouComponent implements OnInit, OnDestroy {
               ":" +
               today.getSeconds(),
     });
+   
+
   }
 
   public fetchMetaData() {
@@ -132,5 +138,15 @@ export class ThankYouComponent implements OnInit, OnDestroy {
       this.signOutSubscribe$.unsubscribe();
     }
     window.removeEventListener("beforeunload", (event) => {});
+    this.dataSharingService.PaymentAmount = null;
+    this.dataSharingService.CCApprovalCode = null;
+    this.dataSharingService.navigateToReserve = null;
+    this.dataSharingService.navigateToMoveIn = null;
+    this.dataSharingService.navigateToPayment = null;
+    this.dataSharingService.strConfirmation = null;
+    this.dataSharingService.strAccessCode = null;
+    this.dataSharingService.LstUnitTypes.MonthlyRate = null;
+    this.dataSharingService.MoveIn.dteMoveIn = null;
+  
   }
 }
