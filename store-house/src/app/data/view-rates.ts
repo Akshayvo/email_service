@@ -25,15 +25,15 @@ export const militaryData = [
     },
     {
         td1: '10\' x 15\'',
-        td2: '$110'
-    },
-    {
-        td1: '10\' x 20\'',
         td2: '$120'
     },
     {
+        td1: '10\' x 20\'',
+        td2: '$150'
+    },
+    {
         td1: '10\' x 30\'',
-        td2: '$145'
+        td2: '$200'
     },
     {
       td1: 'Outside Storage',
