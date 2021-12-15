@@ -79,7 +79,8 @@ export const feature = [
 
 export const jumbotron = [
     {
-        h2: ``,
-        blurb: ``,
+        h2: `Affordable Self Storage in Macedon, NY`,
+        blurb: `Macedon Storage is a locally owned and operated self storage facility, with easy access from the Cedar Commons Plaza. Macedon Storage has everything from RV & Boat Parking to up to 13 feet high ceilings to get the most out of our self storage units. Take a moment to review our rates, and rent your unit in minutes with our simple, online rental process!`,
+        
     }
 ];

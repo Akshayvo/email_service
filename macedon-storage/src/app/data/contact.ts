@@ -2,7 +2,7 @@ export const contact = [
     {
         id: 0,
         label: 'Facility Address:',
-        data: '1140 NY-31, Macedon, NY 14502',
+        data: '1140 Route 31, Macedon, NY 14502',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
         redirect: 'https://goo.gl/maps/NBZ2DjvR32toCmkq9'
     },
@@ -23,7 +23,7 @@ export const contact = [
     {
         id: 2,
         label: 'Phone:',
-        data: '(585) 381-6557(for appointment, questions, reservation)',
+        data: '(585) 381-6557',
         class: 'fas fa-phone mx-2 iconColor',
         redirect: 'tel:5853816557',
     }

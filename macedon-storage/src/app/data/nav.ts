@@ -24,7 +24,7 @@ export const navLinks = [
         ]
     },
     {
-        label: 'VIEW RATES',
+        label: 'RENT NOW',
         path: `${environment.locationName}/view-rates`,
         type: 'link',
     },
