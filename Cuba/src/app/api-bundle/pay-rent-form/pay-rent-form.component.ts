@@ -165,36 +165,21 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     this.navigateToMoveIn = this.dataSharingService.navigateToMoveIn;
 console.log(this.dataSharingService.LstUnitTypes.ReservationFeeTax)
 if (!!this.dataSharingService.LstUnitTypes.ReservationFeeTax) {
-  // tslint:disable-next-line: max-line-length
-  const amount =  parseFloat((this.dataSharingService.LstUnitTypes.ReservationFee + this.dataSharingService.LstUnitTypes.ReservationFeeTax).toFixed(2));
-  if (amount && amount > 0) {
-    this.surchargeService.setAmt(amount);
-    // this.getSurCharge();
-  }
+  this.TotalReserveAmount =
+ // tslint:disable-next-line: max-line-length
+ parseFloat((this.dataSharingService.LstUnitTypes.ReservationFee + this.dataSharingService.LstUnitTypes.ReservationFeeTax).toFixed(2));
+ this.surchargeService.setAmt(this.TotalReserveAmount);
 } else {
   this.TotalReserveAmount = this.dataSharingService.LstUnitTypes.ReservationFee;
-  if(!!this.TotalReserveAmount && this.TotalReserveAmount > 0) {
-    this.surchargeService.setAmt(this.TotalReserveAmount);
-    // this.getSurCharge();
-  }
+  this.surchargeService.setAmt(this.TotalReserveAmount);
 }
 
 if (!!this.dataSharingService.MoveInData.TotalChargesAmount) {
   this.totalMoveInAmount =
   // tslint:disable-next-line: max-line-length
   parseFloat((this.dataSharingService.MoveInData.TotalChargesAmount + this.dataSharingService.MoveInData.TotalTaxAmount).toFixed(2));
-  if (!!this.totalMoveInAmount && this.totalMoveInAmount > 0) {
-    this.surchargeService.setAmt(this.totalMoveInAmount);
-    // this.getSurCharge();
-  }
-} else {
-  this.totalMoveInAmount = this.dataSharingService.MoveInData.TotalChargesAmount;
-  if (!!this.totalMoveInAmount && this.totalMoveInAmount > 0) {
-    this.surchargeService.setAmt(this.totalMoveInAmount);
-    // this.getSurCharge();
-  }
+  this.surchargeService.setAmt(this.totalMoveInAmount);
 }
-
 
     if (this.router.url === '/view-rates/payReservationCharges') {
       this.navigateToReserve = true;
