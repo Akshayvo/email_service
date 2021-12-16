@@ -57,16 +57,18 @@ export class ThankYouComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.strConfirmation = this.dataSharingService.strConfirmation;
+    console.log(this.strConfirmation)
     this.strAccessCode = this.dataSharingService.strAccessCode;
+    console.log(this.strAccessCode)
     this.navigateToMoveIn = this.dataSharingService.navigateToMoveIn;
     this.navigateToReserve = this.dataSharingService.navigateToReserve;
     this.description = this.dataSharingService.LstUnitTypes.Description;
     this.monthlyRate = this.dataSharingService.LstUnitTypes.MonthlyRate;
-    this.PaymentAmount = this.navigateToReserve ? undefined: this.dataSharingService.PaymentAmount;
     this.PaymentAmount = this.dataSharingService.PaymentAmount;
     this.CCApprovalCode = this.dataSharingService.CCApprovalCode;
     this.amountToPayThankYou = this.dataSharingService.amountToPayThankYou;
     this.MoveIn.dteMoveIn = this.dataSharingService.MoveIn.dteMoveIn;
+    console.log(this.MoveIn.dteMoveIn )
     this.eventName = this.dataSharingService.eventName;
     this.paymentSuccess = this.dataSharingService.paymentSuccess;
     this.unitTypeid = this.dataSharingService.LstUnitTypes.UnitTypeID;

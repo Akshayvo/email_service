@@ -569,7 +569,11 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         }
         this.dataSharingService.CCApprovalCode = paymentDataResponse.PayTypeForResult.CCApprovalCode;
         if ( paymentDataResponse.intErrorCode === 1 ) {
+
           this.makePaymentForUnit = false;
+          if (this.router.url.includes('/payment')){
+            this.dataSharingService.navigateToPayment = true
+          }
           if (this.navigateToReserve) {
             this.MoveIn.intUnitTypeID = this.dataSharingService.LstUnitTypes.UnitTypeID;
             this.makeAReservation(this.MoveIn);
@@ -584,9 +588,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
               } else {
                 this.router.navigate([`pay-rent/thank-you`]);
               }
-              if (this.router.url.includes('/payment')){
-                this.dataSharingService.navigateToPayment = true
-              }
+              
             }
           }
           this.showSuccessPayment = true;
