@@ -1,6 +1,6 @@
 export const featuresList = [
     {
-        td1: 'Convenient Location',
+        td1: 'Climate-Controlled Units Available',
         td2: 'Security Cameras (Coming Soon)',
     },
     {
@@ -17,19 +17,19 @@ export const featuresList = [
     },
     {
         td1: 'Fully-Paved Facility',
-        td2: 'Pin-Pad Activated Security Gate',
+        td2: 'Pin-Pad Activated Security Gate(Coming Soon!)',
     },
     {
         td1: 'Affordable Rates',
-        td2: 'Recreational Vehicle Storage (Coming Soon)',
+        td2: 'Recreational Vehicle Storage',
     },
     {
         td1: 'Boat Storage',
-        td2: 'Climate-Controlled Units Available',
+        td2: 'Convenient Location',
     },
     {
-        td1: 'Fully-Fenced Facility',
-        td2: '5% Veterans Discount'
+        td1: 'Fully-Fenced Facility(Coming Soon!)',
+        td2: '5% Veterans & First-Responders Discount'
         
     }
 ];

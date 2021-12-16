@@ -1,5 +1,5 @@
 # www.robotstxt.org/
 # Allow crawling of all content
-Sitemap: https://sodusselfstorage.com/sitemap.xml
+Sitemap: https://sodusselfstorageplus.com/sitemap.xml
 User-agent: *
 Disallow:/privacy-policy

@@ -14,7 +14,7 @@ export const environment = {
   facilityName: 'Sodus Self Storage Plus',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: 'https://sodusselfstorage.com',
+  websiteUrl: 'https://sodusselfstorageplus.com',
   // APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north
   APIKey: `Mjk1MzI6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29532
 
