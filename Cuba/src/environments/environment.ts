@@ -8,6 +8,7 @@ export const environment = {
   errorsMails: [ 'website.dev@codeparva.in' ],
   senderEmail: 'errors@codeparva.in',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
+  cards: ['Visa', 'Master Card', 'Amex', 'Discover', 'test'],
   websiteUrl: 'https://www.cubamostorage.com',
   appId: 'Cuba Self Storage - Testing',
   VERSION: require('../../package.json').version,
