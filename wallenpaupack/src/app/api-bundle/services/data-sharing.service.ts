@@ -15,10 +15,10 @@ export class DataSharingService {
   }
 
   // locationAPIKey = {
-  //   loc1: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',   //7010
+  //   loc1: 'dzJ0OVc0SjYqMk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',   //7010 //l3
   //   loc2: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', //12389
-  //   loc3: 'bTd+NG44eTk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  //7489
-  //   loc4: 'dzF0MlczSjgqN046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  //12387 
+  //   loc3: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  //7489
+  //   loc4: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  //12387 
   // }
 
   locationName: string;

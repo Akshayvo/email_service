@@ -16,7 +16,8 @@
 
 .modal-position {
   position: absolute;
-  left: 225px;
+  left: 280px;
+  
 }
 
 table {
@@ -72,12 +73,17 @@ table {
   .btn-link {
     padding: 0;
     text-decoration: underline;
+    
   }
 }
 
-.custom-balance-width {
+.custom-balance-width{
   min-width: 100px;
+  // position: absolute;
+  // left:190px;
+  
 }
+
 
 .loader {
   border: 2px solid #f3f3f3;
@@ -145,5 +151,36 @@ table {
   .modal-dialog {
     max-width: 650px;
     margin: 1.75rem auto;
+  }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .custom-balance-width:nth-child(odd){
+    position: absolute;
+    // left:190px;
+    
+  }
+  .modal-position{
+    left:184px;
+    top:102px;
+  }
+}
+
+@media only screen and (max-width: 401px) and (min-width: 375px) {
+  .modal-position{
+    left:270px;
+    button{
+      font-size: 12px;
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) and (min-width: 320px) {
+  .modal-position{
+    left:186px;
+    top:103px;
+    button{
+      font-size: 12px;
+    }
   }
 }
