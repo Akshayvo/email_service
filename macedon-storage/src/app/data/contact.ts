@@ -42,10 +42,10 @@ export const hours = [
         label: 'Sunday: ',
         data: 'Closed'
     },
-    // {
-    //     label: 'Storage Access Hours: ',
-    //     data: '24 hours a day, 7 days a week'
-    // }
+    {
+        label: 'Access Hours: ',
+        data: '24 hours a day, 7 days a week'
+    }
 ];
 
 export const socialLinks = [
