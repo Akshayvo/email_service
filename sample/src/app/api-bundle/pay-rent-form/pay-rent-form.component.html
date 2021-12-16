@@ -55,7 +55,11 @@
                 <!-- *ngIf="balance == null" -->
                 <span>Balance Due</span>&nbsp; <span class="custom-balance-width" *ngIf="balance < 0 ; else other"> (${{displayBalance | number : '1.2-2'}}) </span>
                 <ng-template #other ><span *ngIf="balance >= 0">$</span>{{displayBalance | number : '1.2-2'}}</ng-template>
-              </label><br/>
+              </label>
+              <!-- Button trigger modal -->
+             <button type="button" class="btn  btn-link ml-md-4" data-toggle="modal" data-target="#exampleModalLong">
+               Balance Detail
+             </button><br/>
 
               <div *ngIf="blnAllowPartialPayments">
               <label >&nbsp;
@@ -69,12 +73,12 @@
               </span>
               </div>
             </div>
-            &nbsp;&nbsp;&nbsp;&nbsp;
+            <!-- &nbsp;&nbsp;&nbsp;&nbsp; -->
             <span class="modal-custom-style modal-position">
                 <!-- Button trigger modal -->
-              <button type="button" class="btn  btn-link ml-4" data-toggle="modal" data-target="#exampleModalLong">
+              <!-- <button type="button" class="btn  btn-link ml-4" data-toggle="modal" data-target="#exampleModalLong">
                 Balance Detail
-              </button>
+              </button> -->
   
               <!-- Modal -->
               <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLsongTitle" aria-hidden="true">
