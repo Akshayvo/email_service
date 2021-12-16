@@ -30,7 +30,7 @@ export const script = {               // Please fill this script according to fa
       "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg" // 16:9
      ],
      telephone: contact[contactIndex].data,
-     map: "https://www.google.com/maps?ie=UTF8&hq&ll=44.264137,-88.3540592",
+     map: "https://goo.gl/maps/MZ2bUNFNT1HWfDfw5",
      description: "A superb collection of fine gifts and clothing to accent your stay in Mexico Beach.",
      streetAddress: "148 W 51st St",
      state: "New York",

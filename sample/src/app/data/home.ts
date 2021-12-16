@@ -31,7 +31,7 @@ export const aboutUsHeading = `Affordable Self Storage in Baldwinsville`;
 
 export const aboutUs = [
     {
-        p: `Sample Self Storage - North has proudly served the village of Baldwinsville with friendly
+        p: `Self Storage Facility - Location 1 has proudly served the village of Baldwinsville with friendly
         service, and clean, well-maintained self storage units for nearly 20 years. We are a locally
         owned business that prides itself on the trust we've earned from out friends and neighbors over
         the past two decades.`,
@@ -45,19 +45,19 @@ export const aboutUs = [
     {
         p: `Our units range from closet-sized 5-foot-by-5-foot units that are perfect for seasonal
         clothing, and sports equipment to our 10-foot-by-30-foot units that will store a multi-bedroom
-        home during a move! Sample Self Storage - North has units available in regular, unconditioned
+        home during a move! Self Storage Facility - Location 1 has units available in regular, unconditioned
         varieties and climate controlled for those belongings that require a little extra protection.`,
     },
     {
         p: `Whether you're a growing business in need of a place for equipment, documents, and supplies,
         or if you're a residential storage user in the process of a move, or a renovation, we've got your
-        storage needs covered. Let Sample Self Storage - North help de-clutter your life today!`,
+        storage needs covered. Let Self Storage Facility - Location 1 help de-clutter your life today!`,
     }
     
 ];
 
 export const gettingStarted = `Are you ready to stop putting off cleaning out your attic, garage, or shed?
-Clear up some room around the house with Sample Self Storage - North and one of our affordable storage units,
+Clear up some room around the house with Self Storage Facility - Location 1 and one of our affordable storage units,
 accessible 24 hours a day!`;
 
 export const feature = [
@@ -91,7 +91,7 @@ export const feature = [
 export const jumbotron = [
     {
         h2: `Affordable Climate Controlled Units in Baldwinsville`,
-        blurb: `Sample Self Storage - North was the first self storage facility we built nearly 20 years ago.
+        blurb: `Self Storage Facility - Location 1 was the first self storage facility we built nearly 20 years ago.
         We recently renovated our entire operation to make sure our valued customers have another 20 years of
         clean, affordable regular and climate controlled self storage options in Baldwinsville! Let Sample Self
         Storage - North help you today. Our well-lit and personalized pin-code secured facility awaits your next
