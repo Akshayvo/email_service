@@ -2,10 +2,10 @@ import { objSIMSetting } from "./configuration";
 
 export const dataViewRates = [
   {
-    p: `Review our sizes and monthly rates in both regular self storage units and our climate-controlled variety, then give our friendly management team a call, and we’ll be more than happy to take your reservation! We are open during the final stage of construction!`,
+    p: `Review our sizes and monthly rates in both regular self storage units and our climate-controlled variety, then give our friendly management team a call, and we’ll be more than happy to take your reservation!`,
   },
   {
-    p: `Still not sure what sized unit will suit your home, business, or parking needs best? Check out our unit sizer page to find charts that show all of the sizes with descriptions of what contents are best suited for each type.`,
+    p: `Still not sure what sized unit will suit your home or business needs best? Check out our unit sizer page to find charts that show all of the sizes with descriptions of what contents are best suited for each type.`,
   },
   // {
   //   p: `Our residential storage users love our convenient location and affordable rates that take the stress
