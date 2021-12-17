@@ -206,13 +206,13 @@ getTenantUnitData() {
   this.driversLicense = this.dataSharingService.objTenant.DriversLicense;
   this.driversLicenseExpDate = this.dataSharingService.objTenant.DriversLicenseExpDate;
   this.dateOfBirth = this.dataSharingService.objTenant.DateOfBirth;
-  this.militaryType = this.dataSharingService.objTenant.MilitaryType;
-  this.militaryBranch = this.dataSharingService.objTenant.MilitaryBranch;
-  this.militaryID = this.dataSharingService.objTenant.MilitaryID;
-  this.deployedUntil = this.dataSharingService.objTenant.DeployedUntil;
-  this.militaryDivision = this.dataSharingService.objTenant.MilitaryDivision;
-  this.commandingOfficer = this.dataSharingService.objTenant.CommandingOfficer;
-  this.commandingOfficerPhone = this.dataSharingService.objTenant.CommandingOfficerPhone;
+  // this.militaryType = this.dataSharingService.objTenant.MilitaryType;
+  // this.militaryBranch = this.dataSharingService.objTenant.MilitaryBranch;
+  // this.militaryID = this.dataSharingService.objTenant.MilitaryID;
+  // this.deployedUntil = this.dataSharingService.objTenant.DeployedUntil;
+  // this.militaryDivision = this.dataSharingService.objTenant.MilitaryDivision;
+  // this.commandingOfficer = this.dataSharingService.objTenant.CommandingOfficer;
+  // this.commandingOfficerPhone = this.dataSharingService.objTenant.CommandingOfficerPhone;
 
 }
 
