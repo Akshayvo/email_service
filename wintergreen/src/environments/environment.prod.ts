@@ -1,7 +1,7 @@
 export const environment = {
   production: true,
   type: 0,  // { API: 0, iframe: 1 }
-  paymentPageType: 0, // { withoutTab: 0, withTab: 1}
+  paymentPageType: 1, // { withoutTab: 0, withTab: 1}
   template: 'darkTheme', // { darkTheme, lightTheme, withoutJumbotron}
   cards: ['Visa', 'Master Card', 'Amex', 'Discover'],
   errorsMails: ['website.dev@codeparva.in'],

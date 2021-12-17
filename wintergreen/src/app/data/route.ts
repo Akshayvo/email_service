@@ -74,7 +74,7 @@ const childroute = environment.paymentPageType ? withTab : withoutTab;
     // Fallback when no prior route is matched
     { path: '', component: HomeComponent },
     { path: 'storage-tips', component: StorageTipsComponent },
-    { path: 'reserve-unit', component: ReserveComponent },
+    // { path: 'reserve-unit', component: ReserveComponent },
     { path: 'storageTips', component: StorageTipsComponent },
     { path: 'contact-us', component: ContactComponent },
     { path: 'unit-sizer', component: UnitSizerComponent },
