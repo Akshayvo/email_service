@@ -90,8 +90,16 @@
   }
 }
 
-.jumbotron-background-jpg {
-  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Handy_Dandy_Storage/jpg/stock-self-storage-169.jpg");
+.jumbotron-background1-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Handy_Dandy_Storage/jpg/north-road-storage-Jumbotron1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
+
+.jumbotron-background2-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Handy_Dandy_Storage/jpg/handy-dandy-storage-169.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -99,8 +107,16 @@
 }
 
 
-.jumbotron-background-webp {
-  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Handy_Dandy_Storage/webp/stock-self-storage-169.webp");
+.jumbotron-background1-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Handy_Dandy_Storage/webp/north-road-storage-169-Jumbotron2.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
+
+.jumbotron-background2-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Handy_Dandy_Storage/webp/handy-dandy-storage-169.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

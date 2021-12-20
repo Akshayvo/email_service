@@ -4,24 +4,57 @@
 <ngx-json-ld [json]="script"></ngx-json-ld>
 <!-- <div class="jumbotron-container"> -->
 <div class="jumbotron-home">
-  <div class="jumbotron-top jumbotron-top-style" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
-    <div class=" jumbotorn-skew-style" [ngClass]="template === 'darkTheme' ? 'bg-translucent-dark' : 'bg-translucent-light'">
-      </div>
-      <div class="container">
-        <div class="jumbotorn-skew-text">
-          <div class="disp" *ngFor="let jumbotron of jumbotron">
-            <h2  class="my-4">
-              {{jumbotron.h2}}
-            </h2>
-          <p class="text-justify">{{jumbotron.blurb}}</p>
-          </div>
-          <div class="jumbotorn-button">
-            <a class="btn btn-lg btn-primary" (click)="navigate('/handy-dandy/storage-units')" role="button">Handy Dandy Storage Location</a>
-            <a class="btn btn-lg btn-primary" (click)="navigate('/north-road/storage-units')" role="button">North Road Storage Location</a>
-          </div>
-          </div>
+  <!-- <div class="jumbotron-top jumbotron-top-style" > -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active ">
+          <div class="jumbotron-top jumbotron-top-style" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background1-jpg' : 'jumbotron-background1-webp'" alt="First slide">
+            <div class=" jumbotorn-skew-style" [ngClass]="template === 'darkTheme' ? 'bg-translucent-dark' : 'bg-translucent-light'">
+            </div>
+              <div class="container">
+                <div class="jumbotorn-skew-text">
+                  <div class="disp" *ngFor="let jumbotron of jumbotron">
+                    <h2  class="my-4"><br />
+                      {{jumbotron.h2}}
+                    </h2>
+                  <p class="text-justify">{{jumbotron.blurb}}</p>
+                  </div>
+                  <div class="jumbotorn-button">
+                    <a class="btn btn-lg btn-primary" (click)="navigate('/handy-dandy/storage-units')" role="button">Handy Dandy Storage Location</a>
+                    <a class="btn btn-lg btn-primary" (click)="navigate('/north-road/storage-units')" role="button">North Road Storage Location</a>
+                  </div>
+                  </div>
+                </div>
         </div>
+        </div>
+        <div class="carousel-item">
+          <div class="jumbotron-top jumbotron-top-style" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background2-jpg' : 'jumbotron-background2-webp'" alt="First slide">
+            <div class=" jumbotorn-skew-style" [ngClass]="template === 'darkTheme' ? 'bg-translucent-dark' : 'bg-translucent-light'">
+            </div>
+              <div class="container">
+                <div class="jumbotorn-skew-text">
+                  <div class="disp" *ngFor="let jumbotron of jumbotron">
+                    <h2  class="my-4"><br>
+                      {{jumbotron.h2}}
+                    </h2>
+                  <p class="text-justify">{{jumbotron.blurb}}</p>
+                  </div>
+                  <div class="jumbotorn-button">
+                    <a class="btn btn-lg btn-primary" (click)="navigate('/handy-dandy/storage-units')" role="button">Handy Dandy Storage Location</a>
+                    <a class="btn btn-lg btn-primary" (click)="navigate('/north-road/storage-units')" role="button">North Road Storage Location</a>
+                  </div>
+                  </div>
+                </div>
+        </div>
+        </div>
+
+
+
       </div>
+    </div> 
+      
+    
+      <!-- </div> -->
     
   <!-- <div class="for-mobile-view"> -->
     <!-- <div id="carouselJumbo" class="carousel slide  jumbotron-top-style" data-ride="carousel">
@@ -139,8 +172,8 @@
             </div>
           </div>
           <div class="col-lg-6 text-center">
-            <!-- <app-photos></app-photos>  -->
-            <img src="https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Handy_Dandy_Storage/jpg/stock-self-storage-11.jpg" alt="A row of self storage units with metal roll up doors, one door is open to reveal personal belongings">
+            <app-photos></app-photos> 
+            <!-- <img src="https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Handy_Dandy_Storage/jpg/stock-self-storage-11.jpg" alt="A row of self storage units with metal roll up doors, one door is open to reveal personal belongings"> -->
           </div>
         </div>
       </div>
