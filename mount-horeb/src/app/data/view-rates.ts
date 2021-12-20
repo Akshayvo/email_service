@@ -158,11 +158,11 @@ export const thtempcontrolled = [
     data: `Reserve a Unit`,
     state: objSIMSetting.objActionSetting.blnAllowReservation,
   },
-  // {
-  //   id: "move-in",
-  //   data: `Move In`,
-  //   state: objSIMSetting.objActionSetting.blnAllowMoveIn,
-  // },
+  {
+    id: "move-in",
+    data: `Move In`,
+    state: objSIMSetting.objActionSetting.blnAllowMoveIn,
+  },
   // {
   //   id: 'climate-control',
   //   data: `Climate Control`,
