@@ -19,7 +19,7 @@ export const unitSizerPageContent = `Are you not sure what size unit you require
 export const contactPageTitle = `Contact Us  | Elm Creek Mini Storage`;
 export const contactPageContent = `Do you have a question about your account, or our self storage, boat, and recreational vehicle storage? Use our contact form, or call us today!`;
 
-export const thankYouPageTitle = `Thank You For Reserving Your Unit at Sample Self Storage!`;
+export const thankYouPageTitle = `Thank You For Reserving Your Unit at Elm Creek Mini Storage!`;
 export const thankYouPageContent = `We've received your reservation! One of our friendly staff will be in touch!`;
 
 export const privacyPolicyPageTitle = `Privacy Policy | Elm Creek Mini Storage`;
