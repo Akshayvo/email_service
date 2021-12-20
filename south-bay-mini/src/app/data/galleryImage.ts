@@ -48,13 +48,13 @@ export const galleryHome = [
     thumb: `south-bay-mini-storage-11-thumb`,
     alt: ``
   },
-  {
-    // tslint:disable-next-line: max-line-length
-    url: `south-bay-mini-storage-13`,
-    // tslint:disable-next-line:max-line-length
-    thumb: `south-bay-mini-storage-13-thumb`,
-    alt: ``
-  },
+  // {
+  //   // tslint:disable-next-line: max-line-length
+  //   url: `south-bay-mini-storage-13`,
+  //   // tslint:disable-next-line:max-line-length
+  //   thumb: `south-bay-mini-storage-13-thumb`,
+  //   alt: ``
+  // },
   {
     // tslint:disable-next-line: max-line-length
     url: `south-bay-mini-storage-15`,

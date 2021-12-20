@@ -31,10 +31,10 @@ export const hours = [
         label: 'Saturday and Sunday: ',
         data: 'CLOSED'
     },
-    // {
-    //     label: 'Sunday: ',
-    //     data: 'CLOSED'
-    // },
+    {
+        label: 'Closed on All Major Holidays',
+        // data: 'CLOSED'
+    },
     {
         label: 'GATE HOURS: ',
         data: '7AM to 7PM, 7 DAYS A WEEK'

@@ -20,7 +20,8 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   showTable = false;
   unitTypes: UnitTypes;
   LstUnitTypes: LstUnitTypes[];
-
+  GroundLevelUnitypes:LstUnitTypes[];
+  UpStairsUnitTypes:LstUnitTypes[];
   descriptionVR: string;
   monthlyRateVR: number;
   unitTypeIdVR: number;
@@ -135,6 +136,15 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     .subscribe(unitTypesResponse => {
       this.showTable =  true;
       this.LstUnitTypes = unitTypesResponse.lstUnitTypes;
+
+      this.GroundLevelUnitypes=this.LstUnitTypes.filter(
+        (x) => x.IsMobile === false
+      );
+
+      this.UpStairsUnitTypes=this.LstUnitTypes.filter(
+        (x) => x.IsMobile === true
+      );
+
     });
   }
 

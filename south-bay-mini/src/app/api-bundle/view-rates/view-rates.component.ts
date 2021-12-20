@@ -89,6 +89,7 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
   public fetchMetaData() {
     this.viewRatesPageContent = viewRatesPageContent;
     this.viewRatesPageTitle = viewRatesPageTitle;
+    
   }
 
   handleClick(event: Event, event1: Event) {

@@ -97,7 +97,12 @@ export const th = [
   },
   {
     id: 'deposit',
-    data: 'Deposit',
+    data: 'Reservation Deposit',
+    state: objSIMSetting.objUnitSizesSetting.blnShowDeposit
+  },
+  {
+    id: 'rental-deposit',
+    data: 'Rental Deposit',
     state: objSIMSetting.objUnitSizesSetting.blnShowDeposit
   },
   {  id: 'reserve',
@@ -115,6 +120,9 @@ export const th = [
     state: objSIMSetting.objUnitSizesSetting.blnClimateControl
   },
 ];
+
+
+
 
 export const state = {
   size: true,
