@@ -193,7 +193,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6 form-group ngx-select-dropdown">
-            <label>State*</label>
+            <label>State/Province*</label>
             <select
               class="form-control"
               formControlName="State"
@@ -202,9 +202,16 @@
               }"
             >
               <option value="" disabled selected>Select your State</option>
-              <option *ngFor="let option of option" [value]="option.id">
-                {{ option.description }}
-              </option>
+              <optgroup label="U.S. States/Territories">
+                <option *ngFor="let option of option" [value]="option.id">
+                  {{ option.description }}
+                </option>
+              </optgroup>
+              <optgroup label="Canadian Provinces">
+                <option *ngFor="let option of option1" [value]="option.id">
+                  {{ option.description }}
+                </option>
+              </optgroup>
             </select>
 
             <div
@@ -219,12 +226,12 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6 form-group">
-            <label>Zip Code*</label>
+            <label>Postal Code*</label>
             <input
               type="text"
               formControlName="ZIP"
               class="form-control"
-              placeholder="Enter Zip Code"
+              placeholder="Enter Postal Code"
               [ngClass]="{
                 'is-invalid': submitted && f.objTenant.controls.ZIP.errors
               }"
@@ -275,7 +282,7 @@
               class="example-full-width"
               class="form-control"
               placeholder="select your Driver's License Expiration Date"
-              [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.DriversLicenseExpDate.errors }"
+              [ngClass]="{ 'is-invalid': submitted && f.DriversLicenseExpDate.errors }"
             >
               <input
                 matInput
@@ -310,13 +317,13 @@
             class="example-full-width"
             class="form-control"
             placeholder="select your Birthdate"
-            [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.DateOfBirth.errors }"
+            [ngClass]="{ 'is-invalid': submitted && f.DateOfBirth.errors }"
           >
             <input
               matInput
               [matDatepicker]="dateOfBirth"
               formControlName="DateOfBirth"
-              [max]="currentdate"  
+              readonly  
               (click)="dateOfBirth.open()"
             />
 
@@ -423,7 +430,7 @@
             class="example-full-width"
             class="form-control"
             placeholder="select your Military Deployed Until Date"
-            [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.DeployedUntil.errors }"
+            [ngClass]="{ 'is-invalid': submitted && f.DeployedUntil.errors }"
           >
             <input
               matInput
@@ -522,7 +529,7 @@
         </div>
         <!-- End of Extra Detail -->
         <!-- Start of Aletrnate Contact Detail -->
-        <div *ngIf="!!showAltDetails">
+        <div *ngIf="!!showAltDetails && !navigateToReserve">
           <h2 class="pb-1 pt-3 border-bottom border-dark">
             Alternate Contact Information
           </h2>

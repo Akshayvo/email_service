@@ -33,23 +33,23 @@ export const MilitaryTypes = [
   },
   {
     Description: `Active`,
-    Value: 1
+    Value: `Active`
   },
   {
     Description: `Reserve`,
-    Value: 2 
+    Value:  `Reserve` 
   },
   {
     Description: `Veteran`,
-    Value: 3 
+    Value: `Veteran` 
   },
   {
     Description: `Retired`,
-    Value: 4
+    Value: `Retired`
   },
   {
     Description: `Deployed`,
-    Value: 5 
+    Value: `Deployed` 
   },
 ]
 
@@ -60,23 +60,23 @@ export const MilitaryBranch = [
   },
   {
     Description: `Army`,
-    Value: 1
+    Value: `Army`
   },
   {
     Description: `Navy`,
-    Value: 2 
+    Value: `Navy` 
   },
   {
     Description: `AirForce`,
-    Value: 3 
+    Value: `AirForce` 
   },
   {
     Description: `Marines`,
-    Value: 4
+    Value: `Marines`
   },
   {
     Description: `CoastGuard`,
-    Value: 5 
+    Value: `CoastGuard` 
   },
 ]
 

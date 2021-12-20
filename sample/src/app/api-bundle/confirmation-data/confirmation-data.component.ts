@@ -11,6 +11,8 @@ import { Subscription, Subject } from 'rxjs';
 import { option, option1 } from '../../data/view-rates';
 import { SignOutService } from '../services/sign-out.service';
 import { environment } from '../../../environments/environment';
+import { DatePipe } from '@angular/common';
+
 @Component({
   selector: 'app-confirmation-data',
   templateUrl: './confirmation-data.component.html',
@@ -110,6 +112,7 @@ constructor(
   private addTenantService: AddTenantService,
   private tenantInfoService: TenantInfoService,
   private signOutService: SignOutService,
+  private datePipe: DatePipe,
 ) {
   this.fetchOption();
   this.fetchSharedData();
@@ -204,12 +207,12 @@ getTenantUnitData() {
   this.description = this.dataSharingService.LstUnitTypes.Description;
   this.monthlyRate = this.dataSharingService.LstUnitTypes.MonthlyRate;
   this.driversLicense = this.dataSharingService.objTenant.DriversLicense;
-  this.driversLicenseExpDate = this.dataSharingService.objTenant.DriversLicenseExpDate;
-  this.dateOfBirth = this.dataSharingService.objTenant.DateOfBirth;
+  this.driversLicenseExpDate = this.datePipe.transform(this.dataSharingService.objTenant.DriversLicenseExpDate, 'MM/dd/yyyy');
+  this.dateOfBirth = this.datePipe.transform(this.dataSharingService.objTenant.DateOfBirth, 'MM/dd/yyyy');
   this.militaryType = this.dataSharingService.objTenant.MilitaryType;
   this.militaryBranch = this.dataSharingService.objTenant.MilitaryBranch;
   this.militaryID = this.dataSharingService.objTenant.MilitaryID;
-  this.deployedUntil = this.dataSharingService.objTenant.DeployedUntil;
+  this.deployedUntil = this.datePipe.transform(this.dataSharingService.objTenant.DeployedUntil, 'MM/dd/yyyy');
   this.militaryDivision = this.dataSharingService.objTenant.MilitaryDivision;
   this.commandingOfficer = this.dataSharingService.objTenant.CommandingOfficer;
   this.commandingOfficerPhone = this.dataSharingService.objTenant.CommandingOfficerPhone;
