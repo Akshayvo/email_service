@@ -59,7 +59,7 @@ body {
 .btn-primary {
   background-color: $primary !important;
   border-color: $primary !important;
-  color: $white !important;
+  color: $black !important;
   min-width: 200px;
 }
 
@@ -83,7 +83,7 @@ body {
 .btn-outline-primary:active {
   background-color: $primaryDark !important;
   border-color: $primaryDark !important;
-  color: $white !important;
+  color: $black !important;
 }
 
 .section-headings {

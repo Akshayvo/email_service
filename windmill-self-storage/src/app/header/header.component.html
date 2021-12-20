@@ -7,7 +7,7 @@
             <span *ngIf="contact?.label !== 'Mailing Address:'">
               <i [class]="contact?.class"></i>
               <span class="contact-links" *ngIf="contact?.label === 'Office Address:' || contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
-                <a [href]="contact?.redirect" target="{{(contact?.label === 'Office Address:') ? '_blank' : '_self'}}">&nbsp;{{contact.data}}</a></span>
+                <a [href]="contact?.redirect" rel="noopener" target="{{(contact?.label === 'Office Address:') ? '_blank' : '_self'}}">&nbsp;{{contact.data}}</a></span>
               <ng-template #other_content>&nbsp;{{contact.data}}</ng-template>
             </span>
           </span>

@@ -10,11 +10,11 @@ export const environment = {
   errorsMails: ['website.dev@codeparva.in'],
   senderEmail: 'errors@codeparva.in',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
-  appId: 'Windmill Self Storage',
+  appId: 'Windmill Self Storage - Production',
   facilityName: 'Windmill Self Storage',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: 'https://windmill-self-storage-staging.netlify.app',
+  websiteUrl: 'http://windmillselfstorageinc.com',
   // APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north
   APIKey: `bTh+OW4weTQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 8904
 
