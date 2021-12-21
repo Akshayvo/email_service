@@ -87,6 +87,7 @@ export class PaymentComponent implements OnInit {
             this.router.navigate([`/pay-rent/${navTo}/changePassword`]);
           } else {
             this.router.navigate([`/pay-rent/${navTo}/payment`]);
+            
           }
         }
       }

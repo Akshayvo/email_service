@@ -32,10 +32,7 @@ export const tableData = [
     address: '116 Ehrgood Rd, Greentown, PA 18426',
     url: 'greentown/rent-sub/login'
   },
-  
-  
- 
-  
+
 ];
 
 export const tableDataContactPage = [
