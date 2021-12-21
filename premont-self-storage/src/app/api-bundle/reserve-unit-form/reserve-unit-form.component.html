@@ -1,3 +1,4 @@
+
 <div class="reserve-unit-form">
   <div
     [hidden]=""
@@ -16,7 +17,7 @@
       <span aria-hidden="true">&times;</span>
     </button>
   </div>
-
+<p class='text-center'>Please call 361 253-2200 in order to complete the move in process.</p>
   <div class="loader" *ngIf="gettingTenantData"></div>
 
   <form [formGroup]="reserveUnitForm" (ngSubmit)="onSubmit()">
@@ -241,17 +242,17 @@
             </div>
           </div>
         </div>
-
+        <h2 class="pb-1 pt-3 border-bottom border-dark">Driver's License / Resident ID</h2>
         <!-- Start of Extra Detail -->
         <div *ngIf="!!showMilitaryDetails && !!navigateToMoveIn">
-        <div class="row" >
+        <div class="row pt-3" >
           <div class="col-lg-4 col-md-6 form-group">
-            <label>Driver's License Number</label>
+            <label>ID Number*</label>
             <input
               type="text"
               formControlName="DriversLicense"
               class="form-control"
-              placeholder="Enter Driver's License Number"
+              placeholder="Enter Driver's License / Resident ID Number"
               [ngClass]="{
                 'is-invalid': submitted && f.objTenant.controls.DriversLicense.errors
               }"
@@ -267,14 +268,15 @@
               >
             </div>
           </div>
+          
           <div
             class="col-lg-4 col-md-6 form-group custom-date-css"
             >
-            <label>Driver's License Expiration Date*</label>&nbsp;
+            <label>Expiration Date*</label>&nbsp;
             <mat-form-field
               class="example-full-width"
               class="form-control"
-              placeholder="select your Driver's License Expiration Date"
+              placeholder="select your Driver's License / Resident ID Expiration Date"
               [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.DriversLicenseExpDate.errors }"
             >
               <input

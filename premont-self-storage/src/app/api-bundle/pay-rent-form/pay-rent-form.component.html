@@ -1,4 +1,5 @@
 <div class="payRent">
+  <p class='text-center'>Please call 361 253-2200 in order to complete the move in process.</p>
   <h2 class="pb-1">Payment</h2>
   <form [formGroup]="payRentForm" (ngSubmit)="onSubmit()" class="pt-3">
   <strong ><i  *ngIf="showloaderForPayment">Processing payment, please wait...</i></strong>
@@ -278,7 +279,7 @@
           Make a Payment
         </button>
         <button type="submit" *ngIf="navigateToMoveIn" [disabled]="makePaymentForUnit"
-        class="btn btn-primary col-lg-3 col-sm-12">
+        class="btn btn-primary col-lg-4 col-sm-12 ">
           Pay and Complete Move-In
         </button>
         <button type="submit" *ngIf="navigateToReserve" class="btn btn-primary col-lg-3 col-sm-12" [disabled]="makePaymentForUnit">

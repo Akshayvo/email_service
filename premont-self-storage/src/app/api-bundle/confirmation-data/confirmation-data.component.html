@@ -4,8 +4,9 @@
     <p class="px-2 my-2" *ngIf="!navigateToMoveIn"><b>Confirming your Reservation, please wait...</b></p>
     <p class="px-2 my-2" *ngIf="navigateToMoveIn"><b>Confirming your Move in, please wait...</b></p>
 </div>
-
+<p class='text-center'>Please call 361 253-2200 in order to complete the move in process.</p>
 <div class="row">
+    
     <div class="col-md-6 p-3">
             <h3 class="mb-3">Tenant Information</h3>
             <table>
@@ -84,7 +85,7 @@
                     </tr>
                     <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
                         <td>
-                            Driver's License Number
+                            Driver's License / Resident ID Number
                         </td>
                         <td>
                             {{driversLicense}}
@@ -92,7 +93,7 @@
                     </tr>
                     <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
                         <td>
-                            Driver's License Expiration Date
+                            Driver's License / Resident ID Expiration Date
                         </td>
                         <td>
                             {{driversLicenseExpDate}}
