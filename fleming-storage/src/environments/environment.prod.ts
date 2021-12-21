@@ -14,7 +14,7 @@ export const environment = {
   facilityName: 'Fleming Storage Solutions',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: 'https://flemingstorage.ca',
+  websiteUrl: 'https://flemingstorage.ca/',
   // APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north
   APIKey: `dzJ0OVc1SjQqOU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29549
 
