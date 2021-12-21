@@ -59,7 +59,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   surcharge: number;
   unitTypeNotAvailability: boolean;
   showLoader = false;
-
+  
   marked = false;
   signUp = {};
   logOut = {};
@@ -84,6 +84,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   showError = false;
   count = 0;
   navigateToReserve: boolean;
+  autoPay:boolean;
   navigateToMoveIn: boolean;
   existTempToken: string;
   tokenExit: string;
@@ -194,6 +195,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       if (this.router.url.includes('/payMoveInCharges')) {
         this.navigateToReserve = false;
         this.navigateToMoveIn = true;
+        this.autoPay=true;
         this.payRentForm.patchValue({
           objPayment: {
            PaymentAmount: this.totalMoveInAmount
@@ -351,6 +353,7 @@ public navigateToPrevious() {
     if (this.router.url.includes('payMoveInCharges')) {
       this.surchargeService.setAmt(this.totalMoveInAmount);
       this.getSurCharge();
+      
     } else {
       if ( this.showInput) {
         if (this.customOtherValue) {
@@ -525,7 +528,7 @@ public navigateToPrevious() {
   }
 
   toggleEvent(e: any) {
-    this.toggleSignUp = true;
+    this.toggleSignUp = false;
   }
 
   getSurCharge() {
