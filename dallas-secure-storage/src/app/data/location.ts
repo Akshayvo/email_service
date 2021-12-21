@@ -104,7 +104,7 @@ export const unitSizerLocation1 = [
     {
         size: '5\' x 10\' Storage Unit',
         alt: '5\' x 10\' Storage Unit Graphic',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x10.png',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x10.png',
         data: `This unit is approximately 50 sq feet of space that can hold the contents of one small room, such as:`,
         amenities: [
             { content: 'Chairs', },
@@ -209,7 +209,7 @@ export const unitSizerLocation2 = [
     {
         size: '5\' x 10\' Storage Unit',
         alt: '5\' x 10\' Storage Unit Graphic',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x10.png',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x10.png',
         data: `This unit is approximately 50 sq feet of space that can hold the contents of one small room, such as:`,
         amenities: [
             { content: 'Chairs', },
