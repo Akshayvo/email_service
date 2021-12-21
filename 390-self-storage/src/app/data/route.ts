@@ -113,6 +113,19 @@ const reviewURL = ``
         { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
       ]
      },
+     {
+      path: `${environment.locationName}/rent-now`,
+      component: ViewRatesComponent,
+      children: [
+        { path: '', component: ViewRatesPageComponent },
+        { path: 'reserve', component: ReserveUnitFormComponent },
+        { path: 'move-in', component: ReserveUnitFormComponent },
+        { path: 'confirmation', component: ConfirmationDataComponent },
+        { path: 'payReservationCharges', component: PayRentFormComponent },
+        { path: 'payMoveInCharges', component: PayRentFormComponent },
+        { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
+      ]
+     },
     {
       path: 'pay-rent', component: PayRentComponent,
       children: childroute
@@ -136,6 +149,7 @@ export const iFrameRoutes = [
     { path: 'pay-rent', component: PaymentIframePageComponent },
     { path:  `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
     { path: `${environment.locationName}/view-rates`, component: ViewRatesIframePageComponent },
+    { path: `${environment.locationName}/rent-now`, component: ViewRatesIframePageComponent },
     { path: `${environment.locationName}/reserve-unit`, component: ReserveUnitIframePageComponent },    
     { path: 'contact-us', component: ContactComponent },
     { path: 'unit-sizer', component: UnitSizerComponent },

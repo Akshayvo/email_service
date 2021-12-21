@@ -22,6 +22,11 @@ import { environment } from '../../environments/environment';export const navLin
         ]
     },
     {
+        label: 'RENT NOW',
+        path: `${environment.locationName}/rent-now`,
+        type: 'link',
+    },
+    {
         label: 'VIEW RATES',
         path: `${environment.locationName}/view-rates`,
         type: 'link',

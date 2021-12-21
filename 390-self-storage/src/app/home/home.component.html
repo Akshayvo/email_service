@@ -6,19 +6,33 @@
   <!--Jumbotron Container Starts Here-->
   <div class="jumbotron-container">
     <div class="jumbotron-top">
-      <div class="jumbotron px-0 m-0">
-        <div class="container display-flex ">
-          <img class="p-5 m-5"  src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/390_Self_Storage/best-storage-units-badge.png" 
-          alt="badge artwork that says this facility is one of the top rated self storage facilities in Rochestser, NY" width="auto" />
-          </div>
-    </div>
-    </div>
-    <div class="jumbotron-bottom disp">
+    <div class="jumbotron px-0 m-0" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
+      <div class="jumbotorn-skew-style" [ngClass]="template === 'darkTheme' ? 'bg-translucent-dark' : 'bg-translucent-light'">
+      </div>
       <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-3 p-4 text-center override-padding-x-axis" *ngFor="let feature of feature">
-            <img [src]="feature?.path" [alt]="feature?.alt"  width="auto">
-              <h6 class="feature-text">{{feature.label}}</h6>
+        <div class="jumbotorn-skew-text">
+          <div class="disp" *ngFor="let jumbotron of jumbotron">
+            <h2  class="my-4">
+              {{jumbotron.h2}}
+            </h2>
+          <p class="text-justify">{{jumbotron.blurb}}</p>
+          </div>
+          <div class="jumbotorn-button text-center">
+            <a class="btn btn-lg btn-primary" (click)="navigate('/view-rates')" role="button">Rent Now</a>
+            <!-- <a class="btn btn-lg btn-primary" (click)="navigate('/contact-us')" role="button">Contact Us</a> -->
+            <div class="text-color text-center mt-2 ">24/7</div>
+          </div>
+         
+          </div>
+        </div>
+      </div>
+      </div>
+    <div class="jumbotron-bottom">
+      <div class="container">
+        <div class="feature row">
+          <div class="col-md-3 col-3 feature-icon-style" *ngFor="let feature of feature">
+            <img [src]="feature?.path" [alt]="feature?.alt" />
+              <h2 class="feature-text">{{feature.label}}</h2>
           </div>
         </div>
       </div>

@@ -24,17 +24,17 @@ export const contact = [
 
 export const hours = [
 
+  // {
+  //   label: 'Monday - Friday: ',
+  //   data: '9:00AM - 4:00PM'
+  // },
+  // {
+  //   label: 'Saturday: ',
+  //   data: '9:00AM - 1:00PM'
+  // },
   {
-    label: 'Monday - Friday: ',
-    data: '9:00AM - 4:00PM'
-  },
-  {
-    label: 'Saturday: ',
-    data: '9:00AM - 1:00PM'
-  },
-  {
-    label: 'Sunday: ',
-    data: 'Closed '
+    label: 'Access Hours: ',
+    data: '24 Hours / 7 Days a Week '
   },
 ];
 

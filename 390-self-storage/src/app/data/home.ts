@@ -219,11 +219,7 @@ export const blurb = [
 
 export const jumbotron = [
     {
-        h2: `Affordable Climate Controlled Units in Baldwinsville`,
-        blurb: `Sample Self Storage - North was the first self storage facility we built nearly 20 years ago.
-        We recently renovated our entire operation to make sure our valued customers have another 20 years of
-        clean, affordable regular and climate controlled self storage options in Baldwinsville! Let Sample Self
-        Storage - North help you today. Our well-lit and personalized pin-code secured facility awaits your next
-        storage project!`,
+        h2: `Single Story - Easy, 24 Hour Access! No Struggling with Elevators Or Stairs!`,
+        blurb: `390 Self Storage is conveniently located minutes away from the University of Rochester, R.I.T., and the Greater Rochester International Airport. Take a moment to review our rates, and rent your self storage unit in minutes with our simple, online rental process!`,
     }
 ];
