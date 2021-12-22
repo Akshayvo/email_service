@@ -10,7 +10,7 @@ import { WINDOW } from '@ng-toolkit/universal';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'aallen';
+  title = 'lancaster';
   flag: boolean;
   x: any;
 

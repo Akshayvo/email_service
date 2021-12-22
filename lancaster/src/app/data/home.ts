@@ -70,14 +70,7 @@ export const aboutUs = [
     {
         p: `We understand that conveniences aren’t the only concern with renting a self storage unit or finding a place to park that boat, trailer, or recreational vehicle during the off-season. Security is another important factor. That’s why we have security cameras installed around the property, use an electronic gate, and perform regular lot inspections. Our goal is to make you feel safe and secure as you come and go from your unit or parking spaces.`,
     },
-    // {
-    //     p: `Take a few moments to review our available storage units and rent online, or stop by our facility to utilize our on-site kiosk, which is available 24-hours per day. Our friendly staff would love to make your next storage project a fantastic experience!`,
-    // },
-    // {
-    //     p: `Have questions? The staff at Aallen Self Storage is available to answer any questions or assist you with a contactless rental or reservation. Simply give us a call, and a friendly, knowledgeable member of our staff will be glad to help. We look forward to making your next storage project easy and affordable!`,
-    // },
-    
-    
+
 ];
 export const aboutUsBold = [
     // {
