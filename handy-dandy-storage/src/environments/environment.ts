@@ -17,7 +17,7 @@ export const environment = {
   facilityName: 'Handy Dandy Storage - North Road Storage',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: `https:// northroadstorage.com`
+  websiteUrl: `https://northroadstorage.com`
 };
 
 /*
