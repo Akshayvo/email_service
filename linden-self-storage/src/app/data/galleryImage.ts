@@ -1,24 +1,28 @@
 export const galleryHome = [
   {
-    url: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Linden_Self_Storage/climate-controlled-self-storage-units.jpg`,
-    thumb: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Linden_Self_Storage/climate-controlled-self-storage-units-thumb.jpg`,
-    alt: `photograph of indoor climate controlled self storage units under bright lights`
+    url: `https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Linden_Self_Storage/jpg/linden-self-storage-100.jpg`,
+    thumb: `https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Linden_Self_Storage/jpg/linden-self-storage-100-thumb.jpg`,
+    alt: `a single story brick self storage building with green grass in front of the building`
   },
-  
   {
-    url: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Linden_Self_Storage/linden-self-storage-building.jpg`,
-    thumb: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Linden_Self_Storage/linden-self-storage-building-thumb.jpg`,
-    alt: `photograph of a row of metal self storage unit buildings`
+    url: `https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Linden_Self_Storage/jpg/linden-self-storage-102.jpg.jpg`,
+    thumb: `https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Linden_Self_Storage/jpg/linden-self-storage-102-thumb.jpg`,
+    alt: ` a row of self storage units in a single story self storage building surrounded by paved parking`
   },
-  // {
-  //   url: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Linden_Self_Storage/linden-self-storage-buildings.jpg`,
-  //   thumb: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Linden_Self_Storage/linden-self-storage-buildings-thumb.jpg`,
-  //   alt: `photograph of two self storage buildings on either side of a parking lot`
-  // },
   {
     url: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Linden_Self_Storage/linden-self-storage-security-camera.jpg`,
     thumb: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Linden_Self_Storage/linden-self-storage-security-camera-thumb.jpg`,
     alt: `photograph of a camera mounted on the side of a metal self storage building`
+  },
+  {
+    url: `https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Linden_Self_Storage/jpg/linden-self-storage-103.jpg`,
+    thumb: `https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Linden_Self_Storage/jpg/linden-self-storage-103-thumb.jpg`,
+    alt: `several single story metal self storage buildings surrounded by paved parking lanes`
+  },
+  {
+    url: `https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Linden_Self_Storage/jpg/linden-self-storage-105.jpg`,
+    thumb: `https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Linden_Self_Storage/jpg/linden-self-storage-105-thumb.jpg`,
+    alt: `two rows of self storage unit doors on either side of a wide paved parking area`
   },
   // {
   //   url: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Linden_Self_Storage/linden-self-storage-climate-controlled.jpg`,

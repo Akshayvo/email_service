@@ -29,6 +29,11 @@ export const navLinks = [
         type: 'link',
     },
     {
+        label: 'RENT NOW',
+        path: `${environment.locationName}/rent-now`,
+        type: 'link',
+    },
+    {
         label: 'PAY RENT',
         path: '/pay-rent',
         type: 'link',

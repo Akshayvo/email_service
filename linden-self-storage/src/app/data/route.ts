@@ -85,6 +85,7 @@ const reviewURL = ``
     { path: 'contact-us', component: ContactComponent },
     { path: 'unit-sizer', component: UnitSizerComponent },
     { path: 'privacy-policy', component: PrivacyPolicyComponent },
+    { path: 'rent-now', component: ViewRatesPageComponent },
     {
       path: `${environment.locationName}/view-rates`,
       component: ViewRatesComponent,

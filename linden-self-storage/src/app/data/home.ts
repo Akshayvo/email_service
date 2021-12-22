@@ -118,3 +118,11 @@ export const blurb = [
         p: ``,
     }
 ];
+
+export const jumbotron = [
+    {
+        h2: `Single Story - Easy, 24 Hour Access! No Struggling with Elevators or Stairs!`,
+        blurb: `At Linden Self Storage, we are one of the largest self-storage facilities in East Rochester, Pittsford, Perinton, and the Greater Rochester, NY Area! Linden Self Storage may be one of the largest self storage facilities in Monroe County, but our facility is extremely simple to navigate, you can drive right up to your unit to store your belongings and we are family owned and operated for years!`,
+        
+    }
+];
