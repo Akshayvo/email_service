@@ -528,7 +528,7 @@ public navigateToPrevious() {
   }
 
   toggleEvent(e: any) {
-    this.toggleSignUp = false;
+    this.toggleSignUp = true;
   }
 
   getSurCharge() {
@@ -568,7 +568,17 @@ public navigateToPrevious() {
 
     if (this.toggleSignUp === true) {
       if (this.payRentForm.value.objPayment.SignUpForAutoPay === true) {
-      this.signUpAutoPay(this.signUp);
+      this.signUpAutoPay({
+        CCAccountNumber:this.payRentForm.value.objPayment.CCAccountNumber,
+        CCAccountName:this.payRentForm.value.objPayment.CCAccountName,
+        CCExpirationMonth:this.payRentForm.value.objPayment.CCExpirationMonth,
+        CCExpirationYear:this.payRentForm.value.objPayment.CCExpirationYear,
+        CCAccountBillingAddress:this.payRentForm.value.objPayment.CCAccountBillingAddress,
+        CCAccountZIP:this.payRentForm.value.objPayment.CCAccountZIP,
+        // PaymentAmount:this.payRentForm.value.objPayment.PaymentAmount,
+        PreferredPaymentMethod:this.payRentForm.value.objPayment.PayType.PayTypeID,
+      });
+     
     } else {
       this.OptionOutOfAutoPay(this.signUp);
     }
