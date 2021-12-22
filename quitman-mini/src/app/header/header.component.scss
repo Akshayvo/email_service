@@ -154,6 +154,10 @@ display:none;
     padding-bottom: 10px !important;
   }
 
+  .contact-details {
+    display: block;
+  }
+
 
   .dropdown {
     ul {
@@ -185,6 +189,12 @@ display:none;
     }
   }
 
+}
+
+@media only screen and (max-width:767px) {
+  .contact-details {
+    display: block;
+  }
 }
 
   @media screen and (max-width: 600px) {
@@ -260,7 +270,7 @@ display:none;
       top: -101px;
     }
     .navbar-brand h1{
-      font-size: 25px;
+      font-size: 21px;
     }
     
   }
