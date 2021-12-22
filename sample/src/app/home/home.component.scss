@@ -30,6 +30,11 @@
   border-radius: 0;
 }
 
+.display-contact {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .home-map {
   iframe {
     border: 2px solid white;
