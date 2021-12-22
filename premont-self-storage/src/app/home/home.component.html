@@ -60,6 +60,12 @@
                   <h4><b>{{hour.label}}</b></h4>&nbsp;<h4>{{hour.data}}</h4><br>
                 </span>
               </p>
+              <h4><b>Move In Hours:</b></h4>
+              <p>
+                  <span class='display-contact' *ngFor='let moveInhour of moveInHours'>
+                    <h4><b>{{moveInhour.label}}</b></h4>&nbsp;<h4>{{moveInhour.data}}</h4><br>
+                  </span>
+              </p>
             </div>
             <div>
               <app-tables [tBody]="featuresList"></app-tables>

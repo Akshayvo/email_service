@@ -32,16 +32,33 @@ export const contact = [
 export const hours = [
     {
         label: 'Monday - Friday: ',
+        data: '9:00AM to 6:00PM'
+    },
+    {
+        label: 'Saturday-Sunday: ',
+        data: '9:00AM to 5:00PM'
+    }
+    
+    
+    // {
+    //     label: 'Storage Access Hours: ',
+    //     data: '7 Days a Week 9:00AM to 5:00PM'
+    // }
+];
+
+export const moveInHours = [
+    {
+        label: 'Monday - Friday: ',
         data: '9:00AM to 5:00PM'
     },
     {
         label: 'Saturday: ',
-        data: '9:00AM to 1:00PM'
+        data: ' 9AM to 1PM'
     },
     {
-        label: 'Sunday: ',
-        data: 'Unavailable'
-    },
+        label:'Sunday: ',
+        data:'Unavailable'
+    }
     
     // {
     //     label: 'Storage Access Hours: ',
