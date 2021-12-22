@@ -705,11 +705,11 @@ public navigateToPrevious() {
         this.dataSharingService.strAccessCode = strConfirmationResponse.strAccessCode;
         if (strConfirmationResponse.intErrorCode === 1  ) {
           this.makePaymentForUnit = false;
-          if (!!localStorage.getItem('paymentTab')) {
-            this.router.navigate([`${environment.locationName}/${this.facilityLocation}/move-in/${localStorage.getItem('paymentTab')}/thank-you`]);
-          } else {
+          // if (!!localStorage.getItem('paymentTab')) {
+          //   this.router.navigate([`${environment.locationName}/${this.facilityLocation}/move-in/${localStorage.getItem('paymentTab')}/thank-you`]);
+          // } else {
             this.router.navigate([`${environment.locationName}/${this.facilityLocation}/move-in/thank-you`]);
-          }
+          // }
           this.showloaderForPayment = false;
 
         } else {
