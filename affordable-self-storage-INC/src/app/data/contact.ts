@@ -27,12 +27,16 @@ export const hours = [
         data: '11:00AM to 4:00PM'
     },
     {
-        label: 'Tuesday - Thursday: ',
+        label: 'Tuesday - Wednesday: ',
         data: '9:00AM to 4:00PM'
     },
     {
         label: '*Tuesday the office is closed mid-morning from 10:00AM to 12:00PM ',
         data: ''
+    },
+    {
+        label: 'Thursday: ',
+        data: '9:00AM to 2:00PM'
     },
     {
         label: 'Friday: ',
