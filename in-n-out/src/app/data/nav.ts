@@ -1,13 +1,13 @@
 import { environment } from "../../environments/environment";
 
 export const navLinks = [
-  // {
-  //   label: "Home",
-  //   path: "/",
-  //   type: "link",
-  // },
   {
-    label: "Storage Location",
+    label: "Home",
+    path: "/",
+    type: "link",
+  },
+  {
+    label: "Location",
     type: "dropdown",
     path: "/location",
     sublinks: [
@@ -40,15 +40,10 @@ export const navLinks = [
     ],
   },
   {
-    label: "Unit Sizes",
-    path: `${environment.locationName}/unit-sizer`,
-    type: "link"
+    label: "Pay Rent",
+    path: "/pay-rent",
+    type: "link",
   },
-  // {
-  //   label: "Pay Rent",
-  //   path: "/pay-rent",
-  //   type: "link",
-  // },
   {
     label: "Storage Tools",
     type: "dropdown1",
@@ -64,39 +59,33 @@ export const navLinks = [
         label: "Trailer Rental",
         path: `${environment.locationName}/trailer-rental`,
       },
-      // {
-      //   id: "3",
-      //   label: "Clifford South RV/Trailer Information",
-      //   path: `${environment.locationName}/trailer-info`,
-      // },
       {
         id: "3",
-        label: "Auctions",
-        path: "${environment.locationName}/auctions",
-        
+        label: "Clifford South RV/Trailer Information",
+        path: `${environment.locationName}/trailer-info`,
       },
       {
         id: "4",
         label: "Specials & Discounts",
         path: `${environment.locationName}/specials`,
       },
-      // {
-      //   id: "5",
-      //   label: "Unit Sizes",
-      //   path: `${environment.locationName}/unit-sizer`,
-      // },
+      {
+        id: "5",
+        label: "Unit Sizes",
+        path: `${environment.locationName}/unit-sizer`,
+      },
     ],
   },
-  // {
-  //   label: "Auctions",
-  //   path: "/auctions",
-  //   type: "link",
-  // },
-  // {
-  //   label: "Testimonials",
-  //   path: "/testimonials",
-  //   type: "link",
-  // },
+  {
+    label: "Auctions",
+    path: "/auctions",
+    type: "link",
+  },
+  {
+    label: "Testimonials",
+    path: "/testimonials",
+    type: "link",
+  },
   {
     label: "Contact Us",
     path: "/contact-us",
