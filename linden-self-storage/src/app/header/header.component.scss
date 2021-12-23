@@ -6,7 +6,7 @@ a {
 }
 .contact-details{
   a{
-    color:#000 !important;
+    color:#ffffff !important;
   }
 }
 .dropdown-menu {
@@ -36,6 +36,10 @@ a {
 .dropdown-item:active{
   background-color:transparent;
   color: $white;
+}
+
+.contact-header{
+  color: white;
 }
 
 .navbar {
@@ -163,5 +167,19 @@ a {
   }
   .contact-details{
     display: block;
+  }
+
+  .contact-header{
+    font-size: .9em;
+    font-weight: 500;
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 330px){
+    .contact-header{
+      font-size: .7em;
+      font-weight: 500;
+      width: 100%;
+    }
   }
 }
