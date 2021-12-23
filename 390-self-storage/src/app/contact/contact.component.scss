@@ -13,14 +13,18 @@
 }
 
 .contact-links {
+  
   a {
     color: black;
   }
 }
 
 .display-contact {
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
+
+  // h4 {
+  //   width: 100%;
+  // }
 }
 
 
@@ -116,3 +120,7 @@
     padding-top: 180px;
   }
 }
+
+
+
+

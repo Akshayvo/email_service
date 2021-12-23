@@ -26,6 +26,7 @@
 
 .display-contact {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .jumbotron {
@@ -626,7 +627,7 @@
     background-attachment: unset;
     // background-position: right 37% top 10px;
     background-size: contain;
-    height: 54vh;
+    height: 80vh;
   }
 
   .jumbotron-top {
@@ -660,7 +661,7 @@
   }
 
   .jumbotron-bottom{
-    height: 20vh;
+    height: 33vh;
   }
 
   .jumbotorn-skew-text {
@@ -669,7 +670,7 @@
     // top: auto;
     bottom: 2px;
     text-align: center;
-    top:36vh;
+    top:50vh;
     color: black;
 
     .btn-outline-primary {
