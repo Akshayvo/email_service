@@ -2,7 +2,7 @@ import { Component, OnInit, Input, Inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { navLinks } from '../data/nav';
 import { WINDOW } from '@ng-toolkit/universal';
-import { contactsLocation1, socialLinks  } from '../data/contact';
+import { contactsLocation1, socialLinks, header  } from '../data/contact';
 import { UaParserService } from '../services/ua-parser.service';
 
 @Component({
@@ -17,6 +17,7 @@ export class HeaderComponent implements OnInit {
   socialLinks: any;
   data: any;
   logo: any;
+  HeaderData: any;
   imagetype: any;
   imageBaseUrl: any;
   @Input() currentActive: any;
@@ -125,6 +126,7 @@ export class HeaderComponent implements OnInit {
   public fetchContactDetails() {
     this.contactDetails = contactsLocation1;
     this.socialLinks = socialLinks
+    this.HeaderData = header;
     
   }
 

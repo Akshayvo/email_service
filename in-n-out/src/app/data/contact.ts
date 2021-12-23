@@ -4,7 +4,7 @@ export const contactsHomePage = [
     label: "Address: ",
     data: "N7124 Willow Rd, Sheboygan Falls, WI 53085",
     class: "fas fa-map-marker-alt mr-2 iconColor",
-    redirect: "https://goo.gl/maps/n2LkowFuwMuEZCtt5",
+    redirect: " https://goo.gl/maps/n2LkowFuwMuEZCtt5",
   },
   {
     id: 2,
@@ -22,6 +22,31 @@ export const contactsHomePage = [
     redirect: "tel:9206444423",
   },
 ];
+
+export const header = [
+  {
+    id: 1,
+    label: "Address: ",
+    data: "N7124 Willow Rd, Sheboygan Falls, WI 53085",
+    class: "fas fa-map-marker-alt mr-2 iconColor",
+    redirect: "https://goo.gl/maps/n2LkowFuwMuEZCtt5",
+  },
+  {
+    id: 2,
+    label: "Email: ",
+    email: "info@in-n-out-storage.com",
+    data: `info@in-n-out-storage.com`,
+    class: "fas fa-envelope-open mr-2 iconColor",
+    redirect: "mailto:info@in-n-out-storage.com",
+  },
+  {
+    id: 3,
+    label: "Phone: ",
+    data: "(920) 644-4423",
+    class: "fas fa-phone mr-2 iconColor",
+    redirect: "tel:9206444423",
+  },
+]
 
 export const hoursHomePage = [
   {

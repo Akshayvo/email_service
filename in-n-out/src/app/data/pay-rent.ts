@@ -16,26 +16,31 @@ export const tableData = [
     //address: '405 Commerce St Plymouth, WI 53073',
     address: "N7124 Willow Rd, Sheboygan Falls, WI 53085",
     url: "commerce-st/rent-sub/login",
+    email: "info@in-n-out-storage.com",
   },
   {
     facility: "Pleasantview",
     address: "N6112 N Pleasant View Rd, Plymouth, WI 53073",
     url: "pleasantview/rent-sub/login",
+    email: "info@in-n-out-storage.com",
   },
   {
     facility: "Clifford North",
     address: "424 E Clifford St, Plymouth, WI 53073",
     url: "clifford-north/rent-sub/login",
+    email: "info@in-n-out-storage.com",
   },
   {
     facility: "Clifford South",
     address: "423 E Clifford St Plymouth, WI 53073",
     url: "clifford-south/rent-sub/login",
+    email: "info@in-n-out-storage.com",
   },
   {
     facility: 'Woodland',
     address: 'N6480 WI-57 Plymouth, WI 53073',
-    url: 'woodland/rent-sub/login'
+    url: 'woodland/rent-sub/login',
+    email: "info@in-n-out-storage.com",
   },
   // {
   //   facility: 'Robertsdale',

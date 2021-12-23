@@ -5,11 +5,11 @@
   <div class="container">
     <h2 class="heading-color">AUCTION SCHEDULE</h2>
     <!-- <h4 class="coming-soon">Nothing for now, please check back soon!</h4> -->
-    <h2>August 28, 2021, at 8:00 a.m.</h2>
+    <!-- <h2>August 28, 2021, at 8:00 a.m.</h2>
     <h2>Unit R-08</h2>
     <h2>405 Commerce Street, Plymouth, WI 53073</h2>
     <p>Contents: Full size couch, rocker, Amana refrigerator, Whirlpool dryer, Frigidaire washing machine, Schwinn powered mini scooter, electric stove, metal tricycle, Next 2 wheel bike, small television, 3 wood cabinets, wood headboard with mirror, boxes of household items, totes, box of movies, 2 kids scooters, fishing poles, 2 HP printers, 3 metal pole lamps.</p>
-    
+     -->
     <h4 class="heading-color">CONTACT US</h4>
     <p>
       Call us at
@@ -21,7 +21,13 @@
     </p>
 
     <div class="contact-info">
-      <div class="contact">
+      <div class="contact" *ngFor="let contact of contactloc">
+        <p><strong>{{contact.facility}}</strong></p>
+        <p><b>address:</b>{{contact.address}}</p>
+        <p><b>Email:</b> <a href="mailto:info@in-n-out-storage.com" target="_blank" rel="noopener">info@in-n-out-storage.com</a></p>
+        <a href="tel:9206444423" target="_blank" rel="noopener">920-644-4423</a>
+      </div>
+      <!-- <div class="contact">
         <p><strong>Clifford North</strong></p>
         <p>424 E Clifford St</p>
         <p>Plymouth, WI 53073</p>
@@ -35,12 +41,7 @@
         <p><strong>Clifford North</strong></p>
         <p>424 E Clifford St</p>
         <p>Plymouth, WI 53073</p>
-      </div>
-      <div class="contact">
-        <p><strong>Clifford North</strong></p>
-        <p>424 E Clifford St</p>
-        <p>Plymouth, WI 53073</p>
-      </div>
+      </div> -->
     </div>
   </div>
 </div>

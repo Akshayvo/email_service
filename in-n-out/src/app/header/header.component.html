@@ -3,7 +3,7 @@
     <div class="contact-header">
       <div class="row">
         <div class="col-md-9 ">
-          <span class="contact-details " *ngFor="let contact of contactDetails">
+          <span class="contact-details " *ngFor="let contact of HeaderData">
             <i [class]="contact?.class "></i>
             <span class="contact-links" *ngIf="contact?.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
               <a [href]="contact?.redirect" target="{{(contact?.label === 'Address: ') ? '_blank' : '_self'}}" rel="noopener">&nbsp;{{contact.data}}</a></span>
