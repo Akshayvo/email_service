@@ -16,7 +16,7 @@ export const featuresList = [
         td2: 'Friendly Customer Service',
     },
     {
-        td1: 'Pin-Pad Activated Security Gate',
+        td1: 'Pin-Pad Activated Access Door',
         td2: 'Affordable Rates',
     },
     {
@@ -27,15 +27,13 @@ export const featuresList = [
 
 export const aboutUsAlt = `indoor climate controlled storage units with roll-up doors inside of a clean, well-lit building`;
 
-export const aboutUsHeading = `Affordable Self Storage in Baldwinsville`;
+export const aboutUsHeading = `Affordable Self Storage in Milton`;
 
 export const aboutUs = [
     {
         p: `Milton Mini Storage is Milton's one stop self storage solution. We are conveniently 
         located in the Perry Morris Square at the heart of downtown Milton, West Virginia.  
-        Our clean, well-maintained units range from 5' × 5' to 10' × 20', so whether or not you're just 
-        looking for some extra closet space, or if you need to store a multi-family home during a move, 
-        we've got you covered!`,
+        Our clean, well maintained units range from 5’x5’ to 10’x20’. So whether you’re looking for some extra closet space or need to store a multi-family home during a move, we’ve got you covered.`,
     },
     {
         h2: `Convenience`
@@ -75,7 +73,7 @@ export const feature = [
     {
         // tslint:disable-next-line:max-line-length
         path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/online.svg`,
-        label: 'Online Reservation & Bill Pay',
+        label: '24 Hour Kiosk On-Site',
         alt: 'Icon art displaying a screen with cursor'
     },
     {

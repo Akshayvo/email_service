@@ -90,10 +90,9 @@ export const unitSizer = [
       data: `This unit is approximately 200 sq feet of space that can hold the contents of about five rooms.`,
       amenities: [
         { content: 'Appliances', },
-        { content: 'Car or Small Boat', },
         { content: 'Furniture', },
         { content: 'Bookcases', },
-        { content: 'Tow Trailer', },
+     
       ],
     },
     // {

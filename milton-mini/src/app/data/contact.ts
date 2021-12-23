@@ -23,9 +23,9 @@ export const contact = [
     {
         id: 2,
         label: 'Phone:',
-        data: '(304)733-0900',
+        data: '(304) 743-0900',
         class: 'fas fa-phone mx-2 iconColor',
-        redirect: 'tel:3047330900',
+        redirect: 'tel:3047430900',
     }
 ];
 
