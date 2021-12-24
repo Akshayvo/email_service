@@ -3,12 +3,21 @@
     <div class="contact-header">
       <div class="row">
         <div class="col-md-9 ">
-          <span class="contact-details " *ngFor="let contact of HeaderData">
-            <i [class]="contact?.class "></i>
+          <span class="contact-details" *ngFor="let contact of HeaderData">
+            <i [class]="contact?.class"></i>
             <span class="contact-links" *ngIf="contact?.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
               <a [href]="contact?.redirect" target="{{(contact?.label === 'Address: ') ? '_blank' : '_self'}}" rel="noopener">&nbsp;{{contact.data}}</a></span>
             <ng-template #other_content>&nbsp;{{contact.data}}</ng-template>
           </span>
+          
+          <!-- <span class="contact-details">
+            <i class="fas fa-phone mr-2 iconColor"></i>
+            <span class="contact-links" >
+              <a href="tel:9206444423" rel="noopener"> (920) 644-4423 </a>
+          </span> -->
+             <!-- <ng-template #other_content></ng-template> -->
+          <!-- </span> -->
+          
         </div>
         <div class="col-md-2 ">
           <a class="btn btn-primary mobile-btn" (click)="navigate('/pay-rent')"  >PAY RENT
@@ -71,7 +80,6 @@
         </span>
         </li>
       </ul>
-      
     </div>
   </div>
 </nav>

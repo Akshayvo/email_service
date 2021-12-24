@@ -38,6 +38,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
     this.fetchNavigationLinks();
     this.fetchContactDetails();
+    this.fetchheaderdata();
     this.router.events.subscribe(path => {
     });
     // window.onscroll = function() {
@@ -126,8 +127,12 @@ export class HeaderComponent implements OnInit {
   public fetchContactDetails() {
     this.contactDetails = contactsLocation1;
     this.socialLinks = socialLinks
-    this.HeaderData = header;
     
+    
+  }
+
+  fetchheaderdata(){
+    this.HeaderData = header;
   }
 
   public onClick(menu: any) {

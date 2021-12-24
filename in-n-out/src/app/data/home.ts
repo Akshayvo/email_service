@@ -172,7 +172,7 @@ export const location6FeaturesHead = [
 
 export const serviceOffered = [
   {
-    p1: `In-N-Out Storage facilities are easily accessible via Highways 57 and 67 and close to residents and businesses throughout Greenbush, Howards Grove, Elkhart Lake, and several other surrounding areas. Find our state-of-the-art storage facilities at N6112 N Pleasant View Rd, 423 E Clifford St, 424 E Clifford St, and 405 Commerce St, just 10 miles from downtown Sheboygan Falls. Start storing today!`,
+    p1: `In-N-Out Storage facilities are easily accessible via Highways 57 and 67 and close to residents and businesses throughout Greenbush, Howards Grove, Elkhart Lake, and several other surrounding areas. With over 300 spots available, you'll find our state-of-the-art storage facilities at N6112 N Pleasant View Rd, N6480 WI-57 Plymouth, WI 53073, 423 E Clifford St, 424 E Clifford St, and 405 Commerce St, just 10 miles from downtown Sheboygan Falls. Start storing today!`,
   },
   {
     p2: `In-N-Out Storage is committed to serving your needs and providing the best storage experience. To help meet those needs we supply a free trailer when moving into your storage unit. We also offer trailer rental on a day-by-day basis.`,
@@ -210,7 +210,7 @@ export const featuresList = [
 
 export const jumbotron = [
   {
-    h2: `Affordable Self Storage Units & RV Parking in Sheboygan County`,
+    h2: `Affordable Self Storage Units & RV Parking in Sheboygan County, WI`,
     blurb: `We have the best all steel facilities, complete with paved access lanes at all 6 locations, video surveillance, 24-hour security lighting, accessibility 24-7, 365 days a year.`,
   },
 ];
