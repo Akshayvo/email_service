@@ -23,15 +23,27 @@ export const contact = [
 
 export const hours = [
     {
-        label: 'Monday to Thursday: ',
+        label: 'Monday: ',
         data: '11:00AM to 4:00PM'
     },
     {
-        label: 'Friday: ',
-        data: '12:00PM to 3:00PM'
+        label: 'Tuesday - Wednesday: ',
+        data: '9:00AM to 4:00PM'
     },
     {
-        label: 'Outside of Regular Hours: ',
+        label: '*Tuesday the office is closed mid-morning from 10:00AM to 12:00PM ',
+        data: ''
+    },
+    {
+        label: 'Thursday: ',
+        data: '9:00AM to 2:00PM'
+    },
+    {
+        label: 'Friday: ',
+        data: '11:00AM to 4:00PM'
+    },
+    {
+        label: 'After Hours: ',
         data: 'By Appointment'
     },
 ];
