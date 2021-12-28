@@ -2,56 +2,53 @@ export const contact = [
     {
         id: 0,
         label: 'Address:',
-        data: '6 Canton St, Baldwinsville, NY 13027',
+        data: '50 Friendship St, Westerly, RI 02891',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
-        redirect: ''
+        redirect: 'https://goo.gl/maps/t9U424FPvWa9ipLt5'
     },
     {
         id: 1,
         label: 'Email:',
-        data: 'syrasoftsoftware@gmail.com',
+        data: 'Info@friendship-selfstorage.com',
         class: 'fas fa-envelope mx-2 iconColor',
-        redirect: 'mailto:syrasoftsoftware@gmail.com'
+        redirect: 'mailto:Info@friendship-selfstorage.com'
     },
     {
         id: 2,
         label: 'Phone:',
-        data: '(505) 555-5555',
+        data: '(401) 596-6755',
         class: 'fas fa-phone mx-2 iconColor',
-        redirect: 'tel:5055555555',
+        redirect: 'tel:4015966755',
     }
 ];
 
 export const hours = [
     {
-        label: 'Monday - Friday: ',
-        data: '9:00AM to 7:00PM'
+        label: 'Monday Wednesday Saturday : ',
+        data: '10:00AM to 2:00PM'
     },
     {
-        label: 'Saturday: ',
-        data: '10:00 am - 2:00 pm'
-    },
-    {
-        label: 'Sunday: ',
+        label: 'Tuesday Thursday Friday Sunday : ',
         data: 'CLOSED'
     },
+   
     {
         label: 'Storage Access Hours: ',
-        data: '24 hours a day, 7 days a week'
+        data: '6:00AM to 9:00PM 7 Days a Week'
     }
 ];
 
 export const socialLinks = [
-    {
-        label: 'twitter',
-        path: '',
-        class: 'fab fa-twitter-square',
-    },
-    {
-        label: 'facebook',
-        path: '',
-        class: 'fab fa-facebook-square',
-    },
+    // {
+    //     label: 'twitter',
+    //     path: '',
+    //     class: 'fab fa-twitter-square',
+    // },
+    // {
+    //     label: 'facebook',
+    //     path: '',
+    //     class: 'fab fa-facebook-square',
+    // },
 ];
 
 

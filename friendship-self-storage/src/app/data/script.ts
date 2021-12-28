@@ -25,13 +25,13 @@ socialLinks.forEach(links => {
 
 export const script = {               // Please fill this script according to facility's information
     imagesHomePage: [
-      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/inside-self-storage-unit.jpg", // 1:1
-      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg", // 4:3
-      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg" // 16:9
+      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Friendship_Self_Storage/jpg/friendship-self-storage-11.jpg", // 1:1
+      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Friendship_Self_Storage/jpg/friendship-self-storage-43.jpg", // 4:3
+      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Friendship_Self_Storage/jpg/friendship-self-storage-jumbotron.jpg" // 16:9
      ],
      telephone: contact[contactIndex].data,
-     map: "https://goo.gl/maps/MZ2bUNFNT1HWfDfw5",
-     description: "A superb collection of fine gifts and clothing to accent your stay in Mexico Beach.",
+     map: "https://www.google.com/maps/place/Friendship+Self+Storage,+50+Friendship+St,+Westerly,+RI+02891/@41.3839364,-71.8274584,17z/data=!4m6!1m3!3m2!1s0x89e5e71481052259:0x324bd420a67e6f62!2sFriendship+Self+Storage,+50+Friendship+St,+Westerly,+RI+02891!3m1!1s0x89e5e71481052259:0x324bd420a67e6f62?hl=en-US&gl=us",
+     description: "Friendship Self Storage is Westerly’s one stop self storage solution. We provide a number of self storage unit sizes and vehicle parking spaces to accommodate all of your self storage or parking needs! Our friendly service and many amenities all come at extremely affordable rates. Give our friendly management team a call today!",
      streetAddress: "148 W 51st St",
      state: "New York",
      addressLocality: "New York",
@@ -39,15 +39,15 @@ export const script = {               // Please fill this script according to fa
      postalCode: "10019",
      addressCountry: "US",
      id: environment.websiteUrl || "",
-     paymentAccepted:  "Cash, Check, Credit Card, Debit Card, Online Credit Card, Online Debit Card",
+     paymentAccepted:  "Cash, Check, Credit Card, Debit Card",
      currenciesAccepted: "USD",
-     ratingValue: "4",
+     ratingValue: "4.4",
      bestRating: "5",
      reviewCount: "250",
-     latitude: 40.761293,
-     longitude: -73.982294,
+     latitude: 41.3839364,
+     longitude: -71.8274584,
      openingHours: [],
-     priceRange: ''
+     priceRange: '$65-$200'
 };
 
 export const homePageScript = [ {

@@ -39,11 +39,11 @@
         <div class="row">
           <div class="col-lg-6 py-3 home-map">
               <iframe title="Facility Google Map"
-               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11642.278493425898!2d-76.334158!3d43.155566!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa6050b46d0319b1d!2sSyrasoft%20Self%20Storage%20Software!5e0!3m2!1sen!2sus!4v1632153735978!5m2!1sen!2sus"
+               src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=50 Friendship St, Westerly, RI 02891&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
                 width="100%" height="100%" frameborder="0" allowfullscreen rel="noopener" ></iframe> 
           </div>
 
-         
+          
           <div class="col-lg-6 py-3">
             <div class="mb-4 contact-details">
               <div
@@ -107,17 +107,19 @@
     <div class="section py-5 m-0">
       <div class="row">
         <div class="col-lg-6 py-3">
-          <img src="{{imageBaseUrl}}/inside-self-storage-unit.{{imagetype}}" width="100%" alt="{{aboutUsAlt}}" class="sectionImage">
+          <img src="{{imageBaseUrl}}/friendship-self-storage-11.{{imagetype}}" width="100%" alt="{{aboutUsAlt}}" class="sectionImage">
         </div>
         <div class="col-lg-6 py-3">
-          <h1 class="heading pb-4">{{aboutUsHeading}}</h1>
-          <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p>
+          <!-- <h1 class="heading pb-4">{{aboutUsHeading}}</h1> -->
+          <h1 class="heading pb-4">Coming Soon</h1>
+          <!-- <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p> -->
+          <!-- <p class="justify" *ngFor="let data of aboutUs">Coming Soon</p> -->
         </div>
       </div>
     </div>
   </div>
 
-  <div class="getStarted" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
+  <!-- <div class="getStarted" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
     <div class="bg-translucent-dark">
       <div class="container">
         <div class="section py-5 m-0">
@@ -131,5 +133,5 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 </div> 
