@@ -1,25 +1,23 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
-import { FormGroup, FormBuilder, Validators, FormArray } from '@angular/forms';
-import { TenantInfoService } from '../services/tenant-info.service';
-import { FetchDataService } from '../services/fetch-data.service';
-import { SignOutService } from '../services/sign-out.service';
-import { LstPayTypes, PayTypes, PayTypeForResult, } from '../models/payment';
-import { UnpaidAR, ObjTenant} from '../models/tenant';
-import { month } from '../../data/date';
-import { Router } from '@angular/router';
+import { Component, OnInit, OnDestroy } from "@angular/core";
+import { FormGroup, FormBuilder, Validators, FormArray } from "@angular/forms";
+import { TenantInfoService } from "../services/tenant-info.service";
+import { FetchDataService } from "../services/fetch-data.service";
+import { SignOutService } from "../services/sign-out.service";
+import { LstPayTypes, PayTypes, PayTypeForResult } from "../models/payment";
+import { UnpaidAR, ObjTenant } from "../models/tenant";
+import { month } from "../../data/date";
+import { Router } from "@angular/router";
 
-import { Subscription } from 'rxjs';
-import { SurchargeService } from '../services/surcharge.service';
-import { DataSharingService } from '../services/data-sharing.service';
-
+import { Subscription } from "rxjs";
+import { SurchargeService } from "../services/surcharge.service";
+import { DataSharingService } from "../services/data-sharing.service";
 
 @Component({
-  selector: 'app-auto-pay',
-  templateUrl: './auto-pay.component.html',
-  styleUrls: ['./auto-pay.component.scss']
+  selector: "app-auto-pay",
+  templateUrl: "./auto-pay.component.html",
+  styleUrls: ["./auto-pay.component.scss"],
 })
 export class AutoPayComponent implements OnInit, OnDestroy {
-
   objTenant: ObjTenant;
   showPaymentForReserve: boolean;
   showPaymentForMoveIn: boolean;
@@ -87,7 +85,7 @@ export class AutoPayComponent implements OnInit, OnDestroy {
   strConfirmation: string;
   tokenRemoved = false;
   MoveIn = {
-    dteMoveIn: '',
+    dteMoveIn: "",
     intUnitTypeID: 0,
   };
   navigateToMoveInPayment: boolean;
@@ -111,22 +109,21 @@ export class AutoPayComponent implements OnInit, OnDestroy {
     private fetchDataService: FetchDataService,
     private signOutService: SignOutService,
     private surchargeService: SurchargeService,
-    private  dataSharingService: DataSharingService,
-    public router: Router,
-
+    private dataSharingService: DataSharingService,
+    public router: Router
   ) {
     this.autoPayForm = this.formBuilder.group({
       objTenant: this.formBuilder.group({
-        CCNumber: ['', Validators.required],
-        CCBillingAccountName: ['', Validators.required],
-        CCExpirationMonth: ['', Validators.required],
-        CCExpirationYear: ['', Validators.required],
-        CCBillingAddress: ['', Validators.required],
-        CCBillingZIP: ['', Validators.required],
+        CCNumber: ["", Validators.required],
+        CCBillingAccountName: ["", Validators.required],
+        CCExpirationMonth: ["", Validators.required],
+        CCExpirationYear: ["", Validators.required],
+        CCBillingAddress: ["", Validators.required],
+        CCBillingZIP: ["", Validators.required],
         PayType: this.formBuilder.group({
-          PayTypeDescription: ['', Validators.required],
-          PayTypeID: [''],
-        })
+          PayTypeDescription: ["", Validators.required],
+          PayTypeID: [""],
+        }),
       }),
     });
 
@@ -140,24 +137,25 @@ export class AutoPayComponent implements OnInit, OnDestroy {
       newYear = newYear + 1;
     }
 
-
-    if (this.router.url ===  '/pay-rent/sign-up/payment' ) {
+    if (this.router.url === "/pay-rent/sign-up/payment") {
       this.navigateToMoveInPayment = true;
     }
-    if (!!localStorage.getItem('paymentNavigationUrl')) {
-      this.navTo = localStorage.getItem('paymentNavigationUrl');
+    if (!!localStorage.getItem("paymentNavigationUrl")) {
+      this.navTo = localStorage.getItem("paymentNavigationUrl");
     }
-    if (!!localStorage.getItem('paymentTab')) {
-      this.paymentTab = localStorage.getItem('paymentTab');
+    if (!!localStorage.getItem("paymentTab")) {
+      this.paymentTab = localStorage.getItem("paymentTab");
     }
   }
 
   ngOnInit() {
-    if (!!localStorage.getItem('strTenantToken')) {
+    if (!!localStorage.getItem("strTenantToken")) {
       this.getPayMethods();
     } else {
-      if (!localStorage.getItem('strTempTenantToken')) {
-        this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/login`]);
+      if (!localStorage.getItem("strTempTenantToken")) {
+        this.router.navigate([
+          `/pay-rent/${this.navTo}/${this.paymentTab}/login`,
+        ]);
       } else {
         this.getPayMethods();
       }
@@ -165,7 +163,9 @@ export class AutoPayComponent implements OnInit, OnDestroy {
     this.fetchMonth();
   }
 
-  get f() { return this.autoPayForm.controls; }
+  get f() {
+    return this.autoPayForm.controls;
+  }
 
   public navigate(location: any) {
     this.router.navigate([location]);
@@ -176,56 +176,69 @@ export class AutoPayComponent implements OnInit, OnDestroy {
   }
 
   autoCardType(number: any) {
-   this.cardType = this.getCardType(number.target.value);
-   const index = this.lstPayTypes.findIndex(x => x.PayTypeDescription === this.cardType);
-   // tslint:disable-next-line: max-line-length
-   const cardTypeId = ((index > -1 ) ? this.lstPayTypes[index].PayTypeID : this.lstPayTypes[1].PayTypeID);
-   this.paytypeid =  cardTypeId;
-   this.surchargeService.getIdPaytype(this.paytypeid);
-   this.autoPayForm.patchValue({
-     objTenant: {
-      // PreferredPaymentMethod: cardTypeId,
-       PayType: {
-         PayTypeDescription: this.cardType,
-         PayTypeID: cardTypeId,
-       }
-     }
-   });
+    this.cardType = this.getCardType(number.target.value);
+    const index = this.lstPayTypes.findIndex(
+      (x) => x.PayTypeDescription === this.cardType
+    );
+    // tslint:disable-next-line: max-line-length
+    const cardTypeId =
+      index > -1
+        ? this.lstPayTypes[index].PayTypeID
+        : this.lstPayTypes[1].PayTypeID;
+    this.paytypeid = cardTypeId;
+    this.surchargeService.getIdPaytype(this.paytypeid);
+    this.autoPayForm.patchValue({
+      objTenant: {
+        // PreferredPaymentMethod: cardTypeId,
+        PayType: {
+          PayTypeDescription: this.cardType,
+          PayTypeID: cardTypeId,
+        },
+      },
+    });
   }
 
-   getCardType(number: any) {
+  getCardType(number: any) {
     // visa
-    let re = new RegExp('^4');
+    let re = new RegExp("^4");
     if (number.match(re) != null) {
-        return 'Visa';
+      return "Visa";
     }
 
     // Mastercard
     // Updated for Mastercard 2017 BINs expansion
-     // tslint:disable-next-line: max-line-length
-     if (/^(5[1-5][0-9]{14}|2(22[1-9][0-9]{12}|2[3-9][0-9]{13}|[3-6][0-9]{14}|7[0-1][0-9]{13}|720[0-9]{12}))$/.test(number)) {
-        return 'Master Card';
-     }
+    // tslint:disable-next-line: max-line-length
+    if (
+      /^(5[1-5][0-9]{14}|2(22[1-9][0-9]{12}|2[3-9][0-9]{13}|[3-6][0-9]{14}|7[0-1][0-9]{13}|720[0-9]{12}))$/.test(
+        number
+      )
+    ) {
+      return "Master Card";
+    }
 
     // AMEX
-    re = new RegExp('^3[47]');
+    re = new RegExp("^3[47]");
     if (number.match(re) != null) {
-        return 'Amex';
+      return "Amex";
     }
 
     // Discover
-    re = new RegExp('^(6011|622(12[6-9]|1[3-9][0-9]|[2-8][0-9]{2}|9[0-1][0-9]|92[0-5]|64[4-9])|65)');
+    re = new RegExp(
+      "^(6011|622(12[6-9]|1[3-9][0-9]|[2-8][0-9]{2}|9[0-1][0-9]|92[0-5]|64[4-9])|65)"
+    );
     if (number.match(re) != null) {
-        return 'Discover';
+      return "Discover";
     }
 
-    return '';
-}
+    return "";
+  }
 
   selectChangeHandler(event: any) {
     this.selectedDescription = JSON.stringify(event.target.value);
     const indexValue = event.target.value;
-    const index = this.lstPayTypes.findIndex(x => x.PayTypeDescription === indexValue);
+    const index = this.lstPayTypes.findIndex(
+      (x) => x.PayTypeDescription === indexValue
+    );
     this.PayTypeIDValue = this.lstPayTypes[index].PayTypeID;
     this.surchargeService.getIdPaytype(this.PayTypeIDValue);
     this.autoPayForm.patchValue({
@@ -233,66 +246,77 @@ export class AutoPayComponent implements OnInit, OnDestroy {
         // PreferredPaymentMethod: this.PayTypeIDValue,
         PayType: {
           PayTypeID: this.PayTypeIDValue,
-        }
-      }
+        },
+      },
     });
   }
 
-
   getTenantInfo() {
-    this.getTenantInfoSubscribe$ =  this.tenantInfoService.getTenantInfo()
-      .subscribe(tenantData => {
-        if (tenantData) {
-          const { Tenant } = tenantData;
-          this.balance = Tenant.Balance;
-          this.surchargeService.setAmt(this.balance);
-          this.surchargeService.getIdPaytype(this.paytypeid);
-          this.IsAutoPaymentsEnabled = Tenant.IsAutoPaymentsEnabled,
-          this.date = Tenant.LastPaymentOn;
-          this.dataSharingService.signUpForAutoPay = Tenant.IsAutoPaymentsEnabled,
-
-
-        // tslint:disable-next-line: max-line-length
-          this.defaultCardType = ((Tenant.CCNumber) ? this.getCardType(Tenant.CCNumber) : this.lstPayTypes[1].PayTypeDescription);
-          const index = this.lstPayTypes.findIndex(x => x.PayTypeDescription === this.defaultCardType);
-          // tslint:disable-next-line: max-line-length
-          const defaultCardPayTypeId = ((index > -1 ) ? this.lstPayTypes[index].PayTypeID : this.lstPayTypes[1].PayTypeID);
-
-          if (localStorage.getItem('strTenantToken')) {
-            this.paytypeid =  defaultCardPayTypeId;
+    this.getTenantInfoSubscribe$ = this.tenantInfoService
+      .getTenantInfo()
+      .subscribe(
+        (tenantData) => {
+          if (tenantData) {
+            const { Tenant } = tenantData;
+            this.balance = Tenant.Balance;
+            this.surchargeService.setAmt(this.balance);
             this.surchargeService.getIdPaytype(this.paytypeid);
+            (this.IsAutoPaymentsEnabled = Tenant.IsAutoPaymentsEnabled),
+              (this.date = Tenant.LastPaymentOn);
+            (this.dataSharingService.signUpForAutoPay =
+              Tenant.IsAutoPaymentsEnabled),
+              // tslint:disable-next-line: max-line-length
+              (this.defaultCardType = Tenant.CCNumber
+                ? this.getCardType(Tenant.CCNumber)
+                : this.lstPayTypes[1].PayTypeDescription);
+            const index = this.lstPayTypes.findIndex(
+              (x) => x.PayTypeDescription === this.defaultCardType
+            );
+            // tslint:disable-next-line: max-line-length
+            const defaultCardPayTypeId =
+              index > -1
+                ? this.lstPayTypes[index].PayTypeID
+                : this.lstPayTypes[1].PayTypeID;
+
+            if (localStorage.getItem("strTenantToken")) {
+              this.paytypeid = defaultCardPayTypeId;
+              this.surchargeService.getIdPaytype(this.paytypeid);
+              this.autoPayForm.patchValue({
+                objTenant: {
+                  // PreferredPaymentMethod: defaultCardPayTypeId,
+                  PayType: {
+                    PayTypeDescription: this.defaultCardType,
+                    PayTypeID: defaultCardPayTypeId,
+                  },
+                },
+              });
+            }
+
             this.autoPayForm.patchValue({
               objTenant: {
-                // PreferredPaymentMethod: defaultCardPayTypeId,
-                PayType: {
-                  PayTypeDescription: this.defaultCardType,
-                  PayTypeID: defaultCardPayTypeId,
-                }
-              }
+                CCNumber: Tenant.CCNumber,
+                CCBillingAccountName: Tenant.CCBillingAccountName,
+                CCExpirationMonth: Tenant.CCExpirationMonth,
+                CCExpirationYear: Tenant.CCExpirationYear,
+                CCBillingAddress: Tenant.CCBillingAddress,
+                CCBillingZIP: Tenant.CCBillingZIP,
+                // SignUpForAutoPay: Tenant.IsAutoPaymentsEnabled,
+              },
             });
+            this.showLoader = false;
           }
-
-          this.autoPayForm.patchValue({
-            objTenant: {
-              CCNumber: Tenant.CCNumber,
-              CCBillingAccountName: Tenant.CCBillingAccountName,
-              CCExpirationMonth: Tenant.CCExpirationMonth,
-              CCExpirationYear: Tenant.CCExpirationYear,
-              CCBillingAddress: Tenant.CCBillingAddress,
-              CCBillingZIP: Tenant.CCBillingZIP,
-              // SignUpForAutoPay: Tenant.IsAutoPaymentsEnabled,
-            }
-          });
-          this.showLoader = false;
+        },
+        (err: any) => {
+          if (err.status === 401) {
+            localStorage.removeItem("strTenantToken");
+            this.router.navigate([
+              `/pay-rent/${this.navTo}/${this.paymentTab}/login`,
+            ]);
+            this.sessionExpire =
+              "Session Expired. Please Login for completing the payment.";
+          }
         }
-      }
-      , (err: any) => {
-        if (err.status === 401) {
-          localStorage.removeItem('strTenantToken');
-          this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/login`]);
-          this.sessionExpire = 'Session Expired. Please Login for completing the payment.';
-        }
-      });
+      );
   }
 
   public navigateToConfirmation(location: any) {
@@ -300,18 +324,19 @@ export class AutoPayComponent implements OnInit, OnDestroy {
   }
 
   getPayMethods() {
-   this.getPayMethodsSubscribe$ = this.fetchDataService.getPayMethods()
-      .subscribe(payTypesResponse => {
+    this.getPayMethodsSubscribe$ = this.fetchDataService
+      .getPayMethods()
+      .subscribe((payTypesResponse) => {
         this.lstPayTypes = payTypesResponse.lstPayTypes;
-        if (!!localStorage.getItem('strTenantToken')) {
+        if (!!localStorage.getItem("strTenantToken")) {
           this.tenantTokenExist = true;
           this.showLoader = true;
           this.getTenantInfo();
         }
-        if (!localStorage.getItem('strTenantToken')) {
+        if (!localStorage.getItem("strTenantToken")) {
           const defaultDescription = this.lstPayTypes[1].PayTypeDescription;
           const defaultPayTypeID = this.lstPayTypes[1].PayTypeID;
-          this.paytypeid =  this.lstPayTypes[1].PayTypeID;
+          this.paytypeid = this.lstPayTypes[1].PayTypeID;
           this.surchargeService.getIdPaytype(defaultPayTypeID);
           this.autoPayForm.patchValue({
             objTenant: {
@@ -319,18 +344,18 @@ export class AutoPayComponent implements OnInit, OnDestroy {
               PayType: {
                 PayTypeDescription: defaultDescription,
                 PayTypeID: defaultPayTypeID,
-              }
-            }
+              },
+            },
           });
         }
-      }
-    );
+      });
   }
 
   toggleEvent() {
     this.count = this.count + 1;
     this.toggleSignUp = true;
-    this.dataSharingService.signUpForAutoPay = !this.dataSharingService.signUpForAutoPay;
+    this.dataSharingService.signUpForAutoPay =
+      !this.dataSharingService.signUpForAutoPay;
   }
 
   goBack() {
@@ -340,47 +365,57 @@ export class AutoPayComponent implements OnInit, OnDestroy {
   }
 
   signOut(logOut: any) {
-   this.signOutSubscribe$ = this.signOutService.signOut(logOut)
-      .subscribe(result => {
-        localStorage.removeItem('strTenantToken');
-        this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/login`]);
-      }, (err) => {
-      }
+    this.signOutSubscribe$ = this.signOutService.signOut(logOut).subscribe(
+      (result) => {
+        localStorage.removeItem("strTenantToken");
+        this.router.navigate([
+          `/pay-rent/${this.navTo}/${this.paymentTab}/login`,
+        ]);
+      },
+      (err) => {}
     );
   }
 
   signUpAutoPay(signUp: any) {
     this.makeAutoPayStatus = true;
-    this.progressMessage = 'Sign Up Auto Pay';
-    this.signUpAutoPaySubscribe$ =  this.tenantInfoService.signUpAutoPay(signUp)
-      .subscribe(result => {
-        this.makeAutoPayStatus = false;
-        if (result.intErrorCode === 1) {
-          this.showSuccessStatus = true;
-          this.successMessage = 'Sign Up Auto Pay is Completed.';
-        }
-      }, (err) => {
-      });
+    this.progressMessage = "Sign Up Auto Pay";
+    this.signUpAutoPaySubscribe$ = this.tenantInfoService
+      .signUpAutoPay(signUp)
+      .subscribe(
+        (result) => {
+          this.makeAutoPayStatus = false;
+          if (result.intErrorCode === 1) {
+            this.showSuccessStatus = true;
+            this.successMessage = "Sign Up Auto Pay is Completed.";
+          }
+        },
+        (err) => {}
+      );
   }
 
   OptionOutOfAutoPay(signUp: any) {
     this.makeAutoPayStatus = true;
-    this.progressMessage = 'Option Out Of AutoPay';
-    this.OptionOutOfAutoPaySubscribe$ = this.tenantInfoService.OptionOutOfAutoPay(signUp)
-      .subscribe(result => {
-        this.makeAutoPayStatus = false;
-        if (result.intErrorCode === 1) {
-          this.showSuccessStatus = true;
-          this.successMessage = 'Option Out Of AutoPay is Completed';
-        }
-      }, (err) => {
-      });
+    this.progressMessage = "Option Out Of AutoPay";
+    this.OptionOutOfAutoPaySubscribe$ = this.tenantInfoService
+      .OptionOutOfAutoPay(signUp)
+      .subscribe(
+        (result) => {
+          this.makeAutoPayStatus = false;
+          if (result.intErrorCode === 1) {
+            this.showSuccessStatus = true;
+            this.successMessage = "Option Out Of AutoPay is Completed";
+          }
+        },
+        (err) => {}
+      );
   }
 
   convertDate(date: any) {
     const formattedNormalDate = new Date(date);
     // tslint:disable-next-line:max-line-length
-    return `${formattedNormalDate.getMonth() + 1}-${formattedNormalDate.getDate()}-${formattedNormalDate.getFullYear()}`;
+    return `${
+      formattedNormalDate.getMonth() + 1
+    }-${formattedNormalDate.getDate()}-${formattedNormalDate.getFullYear()}`;
   }
 
   autoPayStatus() {
@@ -390,15 +425,18 @@ export class AutoPayComponent implements OnInit, OnDestroy {
         const data = {
           objTenant: {
             CCNumber: this.autoPayForm.value.objTenant.CCNumber,
-            CCBillingAccountName: this.autoPayForm.value.objTenant.CCBillingAccountName,
-            CCExpirationMonth: this.autoPayForm.value.objTenant.CCExpirationMonth,
+            CCBillingAccountName:
+              this.autoPayForm.value.objTenant.CCBillingAccountName,
+            CCExpirationMonth:
+              this.autoPayForm.value.objTenant.CCExpirationMonth,
             CCExpirationYear: this.autoPayForm.value.objTenant.CCExpirationYear,
             CCBillingAddress: this.autoPayForm.value.objTenant.CCBillingAddress,
             CCBillingZIP: this.autoPayForm.value.objTenant.CCBillingZIP,
-            PreferredPaymentMethod: this.autoPayForm.value.objTenant.PayType.PayTypeID,
-          }
+            PreferredPaymentMethod:
+              this.autoPayForm.value.objTenant.PayType.PayTypeID,
+          },
         };
-      this.signUpAutoPay(data);
+        this.signUpAutoPay(data);
       } else {
         this.OptionOutOfAutoPay(this.signUp);
       }
@@ -417,7 +455,10 @@ export class AutoPayComponent implements OnInit, OnDestroy {
   }
 
   public ngOnDestroy(): void {
-    if (this.OptionOutOfAutoPaySubscribe$ && this.OptionOutOfAutoPaySubscribe$.closed) {
+    if (
+      this.OptionOutOfAutoPaySubscribe$ &&
+      this.OptionOutOfAutoPaySubscribe$.closed
+    ) {
       this.OptionOutOfAutoPaySubscribe$.unsubscribe();
     }
 
@@ -440,7 +481,10 @@ export class AutoPayComponent implements OnInit, OnDestroy {
     if (this.getTenantInfoSubscribe$ && this.getTenantInfoSubscribe$.closed) {
       this.getTenantInfoSubscribe$.unsubscribe();
     }
-    if (this.makeAReservationSubscribe$ && this.makeAReservationSubscribe$.closed) {
+    if (
+      this.makeAReservationSubscribe$ &&
+      this.makeAReservationSubscribe$.closed
+    ) {
       this.makeAReservationSubscribe$.unsubscribe();
     }
   }
