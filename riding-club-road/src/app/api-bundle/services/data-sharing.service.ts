@@ -41,6 +41,8 @@ export class DataSharingService {
     CCBillingZIP: "",
     ACHBankRoutingNumber: "",
     ACHBankAccountNumber: "",
+    ACHAccountNumber: "",
+    ACHRoutingNumber: "",
   };
 
   MoveInData = {

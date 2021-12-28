@@ -128,14 +128,14 @@ export class AutoPayComponent implements OnInit, OnDestroy {
   ) {
     this.autoPayForm = this.formBuilder.group({
       objTenant: this.formBuilder.group({
-        ACHBankRoutingNumber: [
+        ACHRoutingNumber: [
           "",
           conditionalValidator(
             () => this.achPayment === false,
             Validators.required
           ),
         ],
-        ACHBankAccountNumber: [
+        ACHAccountNumber: [
           "",
           conditionalValidator(
             () => this.achPayment === false,
@@ -374,8 +374,8 @@ export class AutoPayComponent implements OnInit, OnDestroy {
             this.dataSharingService.signUpForAutoPay =
               Tenant.IsAutoPaymentsEnabled;
             // tslint:disable-next-line: max-line-length
-            this.defaultCardType = Tenant.ACHBankRoutingNumber
-              ? this.getCardType(Tenant.ACHBankRoutingNumber)
+            this.defaultCardType = Tenant.ACHRoutingNumber
+              ? this.getCardType(Tenant.ACHRoutingNumber)
               : this.lstPayTypes[0].PayTypeDescription;
             const index = this.lstPayTypes.findIndex(
               (x) => x.PayTypeDescription === this.defaultCardType
@@ -400,8 +400,8 @@ export class AutoPayComponent implements OnInit, OnDestroy {
               });
             }
             const tempObject = {
-              ACHBankRoutingNumber: Tenant.ACHBankRoutingNumber,
-              ACHBankAccountNumber: Tenant.ACHBankAccountNumber,
+              ACHRoutingNumber: Tenant.ACHRoutingNumber,
+              ACHAccountNumber: Tenant.ACHAccountNumber,
               // CCExpirationMonth: Tenant.CCExpirationMonth,
               // CCExpirationYear: Tenant.CCExpirationYear,
               // CCBillingAddress: Tenant.CCBillingAddress,
@@ -418,12 +418,10 @@ export class AutoPayComponent implements OnInit, OnDestroy {
             ) {
               this.autoPayForm.patchValue({
                 objTenant: {
-                  ACHBankRoutingNumber:
-                    this.dataSharingService.cardDetailsObject
-                      .ACHBankRoutingNumber,
-                  ACHBankAccountNumber:
-                    this.dataSharingService.cardDetailsObject
-                      .ACHBankAccountNumber,
+                  ACHRoutingNumber:
+                    this.dataSharingService.cardDetailsObject.ACHRoutingNumber,
+                  ACHAccountNumber:
+                    this.dataSharingService.cardDetailsObject.ACHAccountNumber,
                   // CCExpirationMonth: this.dataSharingService.cardDetailsObject.CCExpirationMonth,
                   // CCExpirationYear: this.dataSharingService.cardDetailsObject.CCExpirationYear,
                   // CCBillingAddress: this.dataSharingService.cardDetailsObject.CCBillingAddress,
@@ -434,8 +432,8 @@ export class AutoPayComponent implements OnInit, OnDestroy {
             } else {
               this.autoPayForm.patchValue({
                 objTenant: {
-                  ACHBankRoutingNumber: Tenant.ACHBankRoutingNumber,
-                  ACHBankAccountNumber: Tenant.ACHBankAccountNumber,
+                  ACHRoutingNumber: Tenant.ACHRoutingNumber,
+                  ACHAccountNumber: Tenant.ACHAccountNumber,
                   // CCExpirationMonth: Tenant.CCExpirationMonth,
                   // CCExpirationYear: Tenant.CCExpirationYear,
                   // CCBillingAddress: Tenant.CCBillingAddress,
@@ -609,10 +607,8 @@ export class AutoPayComponent implements OnInit, OnDestroy {
     if (this.dataSharingService.signUpForAutoPay === true) {
       const signUpData = {
         objTenant: {
-          ACHBankRoutingNumber:
-            this.autoPayForm.value.objTenant.ACHBankRoutingNumber,
-          ACHBankAccountNumber:
-            this.autoPayForm.value.objTenant.ACHBankAccountNumber,
+          ACHRoutingNumber: this.autoPayForm.value.objTenant.ACHRoutingNumber,
+          ACHAccountNumber: this.autoPayForm.value.objTenant.ACHAccountNumber,
           PreferredPaymentMethod:
             this.autoPayForm.value.objTenant.PayType.PayTypeID,
         },
@@ -626,10 +622,8 @@ export class AutoPayComponent implements OnInit, OnDestroy {
   customDataUpdate() {
     const data = {
       objTenant: {
-        ACHBankRoutingNumber:
-          this.autoPayForm.value.objTenant.ACHBankRoutingNumber,
-        ACHBankAccountNumber:
-          this.autoPayForm.value.objTenant.ACHBankAccountNumber,
+        ACHRoutingNumber: this.autoPayForm.value.objTenant.ACHRoutingNumber,
+        ACHAccountNumber: this.autoPayForm.value.objTenant.ACHAccountNumber,
         PreferredPaymentMethod:
           this.autoPayForm.value.objTenant.PayType.PayTypeID,
       },

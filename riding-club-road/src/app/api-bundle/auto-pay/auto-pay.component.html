@@ -94,24 +94,22 @@
                 <input
                   class="form-control"
                   type="text"
-                  formControlName="ACHBankRoutingNumber"
+                  formControlName="ACHRoutingNumber"
                   [ngClass]="{
                     'is-invalid':
-                      submitted &&
-                      f.objTenant.controls.ACHBankRoutingNumber.errors
+                      submitted && f.objTenant.controls.ACHRoutingNumber.errors
                   }"
                 />
                 <div
                   *ngIf="
-                    submitted &&
-                    f.objTenant.controls.ACHBankRoutingNumber.errors
+                    submitted && f.objTenant.controls.ACHRoutingNumber.errors
                   "
                   class="invalid-feedback"
                 >
                   <small
                     class="form-text text-muted"
                     *ngIf="
-                      f.objTenant.controls.ACHBankRoutingNumber.errors.required
+                      f.objTenant.controls.ACHRoutingNumber.errors.required
                     "
                   >
                     Please fill out this field
@@ -123,24 +121,22 @@
                 <input
                   class="form-control"
                   type="text"
-                  formControlName="ACHBankAccountNumber"
+                  formControlName="ACHAccountNumber"
                   [ngClass]="{
                     'is-invalid':
-                      submitted &&
-                      f.objTenant.controls.ACHBankAccountNumber.errors
+                      submitted && f.objTenant.controls.ACHAccountNumber.errors
                   }"
                 />
                 <div
                   *ngIf="
-                    submitted &&
-                    f.objTenant.controls.ACHBankAccountNumber.errors
+                    submitted && f.objTenant.controls.ACHAccountNumber.errors
                   "
                   class="invalid-feedback"
                 >
                   <small
                     class="form-text text-muted"
                     *ngIf="
-                      f.objTenant.controls.ACHBankAccountNumber.errors.required
+                      f.objTenant.controls.ACHAccountNumber.errors.required
                     "
                   >
                     Please fill out this field
