@@ -254,7 +254,7 @@ export const Location1Script = {
     'telephone': contactsLocation1[contactIndex1].data,
 
     'priceRange': '$45-$98',
-    'openingHours': ['Mo-Fr 08:30 - 17:00'],
+    'openingHours': ['Our office is located at our 424 North Street location.'],
     'currenciesAccepted': 'USD',
   'paymentAccepted': 'Cash, Check, Credit Card, Debit Card',
      'areaServed': {
@@ -289,7 +289,7 @@ export const Location2Script = {
     'telephone': contactsLocation2[contactIndex2].data,
 
     'priceRange': '$40 - $110',
-    'openingHours': ['Mo-Fr 8:00AM to 5:00PM'],
+    'openingHours': ['Mo-Fr 8:30AM to 5:00PM'],
     'currenciesAccepted': 'USD',
   'paymentAccepted': 'Cash, Check, Credit Card, Debit Card',
      'areaServed': {

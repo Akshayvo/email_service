@@ -62,13 +62,13 @@ export const contactsLocation1 = [
 
 export const hoursLocation1 = [
     {
-        label: 'Monday - Friday: ',
-        data: 'no office on site',
+        label: '',
+        data: 'Our office is located at our 424 North Street location.',
     },
-    {
-        label: 'Saturday - Sunday: ',
-        data: 'no office on site',
-    },
+    // {
+    //     label: 'Saturday - Sunday: ',
+    //     data: 'no office on site',
+    // },
 ];
 
 export const hoursLocation1AcessHours = [
@@ -119,7 +119,7 @@ export const contactsLocation2 = [
 export const hoursLocation2 = [
     {
         label: 'Monday - Friday: ',
-        data: '8:00AM - 5:00PM',
+        data: '8:30AM - 5:00PM',
     },
     {
         label: 'Saturday - Sunday: ',
