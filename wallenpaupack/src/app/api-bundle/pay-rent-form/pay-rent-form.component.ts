@@ -619,15 +619,16 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       if (this.payRentForm.value.objPayment.SignUpForAutoPay === true) {
         this.signUpAutoPay({
           objTenant: {
-            CCAccountNumber: this.payRentForm.value.objPayment.CCAccountNumber,
-            CCAccountName: this.payRentForm.value.objPayment.CCAccountName,
+            CCNumber: this.payRentForm.value.objPayment.CCAccountNumber,
+            CCBilllingAccountName:
+              this.payRentForm.value.objPayment.CCAccountName,
             CCExpirationMonth:
               this.payRentForm.value.objPayment.CCExpirationMonth,
             CCExpirationYear:
               this.payRentForm.value.objPayment.CCExpirationYear,
-            CCAccountBillingAddress:
+            CCBillingAddress:
               this.payRentForm.value.objPayment.CCAccountBillingAddress,
-            CCAccountZIP: this.payRentForm.value.objPayment.CCAccountZIP,
+            CCBillingZIP: this.payRentForm.value.objPayment.CCAccountZIP,
             // PaymentAmount:this.payRentForm.value.objPayment.PaymentAmount,
             PreferredPaymentMethod:
               this.payRentForm.value.objPayment.PayType.PayTypeID,
