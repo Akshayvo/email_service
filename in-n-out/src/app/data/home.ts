@@ -210,8 +210,8 @@ export const featuresList = [
 
 export const jumbotron = [
   {
-    h2: `Affordable Self Storage Units & RV Parking in Sheboygan County`,
-    blurb: `We have the best all steel facilities, complete with paved access lanes at all 6 locations, video surveillance, 24-hour security lighting, accessibility 24-7, 365 days a year.`,
+    h2: `Affordable Self Storage Units near Sheboygan County`,
+    blurb: ` In-N-Out Storage facilities are easily accessible via Highways 57 and 67 and close to residents and businesses throughout Greenbush, Howards Grove, Elkhart Lake, and several other surrounding areas. With over 300 spots available, you'll find our state-of-the-art storage facilities at N6112 N Pleasant View Rd, 423 E Clifford St, 424 E Clifford St, and 405 Commerce St, just 10 miles from downtown Sheboygan Falls. Start storing today!`,
   },
 ];
 

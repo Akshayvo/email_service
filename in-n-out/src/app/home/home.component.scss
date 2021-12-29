@@ -135,7 +135,20 @@
   }
 }
 
-.jumbotron-background-jpg {
+.sliding{
+  height: auto;
+  padding: 20px;
+  p{
+    font-size: 22px;
+    height: auto;
+    margin: 10px;
+    font-weight: 600;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+.jumbotron-background-jpg1 {
   background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/IN_N_OUT/jpg/in-n-out-storage-jumbotron.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -143,9 +156,56 @@
   height: 80vh;
 }
 
+.jumbotron-background-jpg2 {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/IN_N_OUT/jpg/in-n-out-commerce-169.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
 
-.jumbotron-background-webp {
+.jumbotron-background-jpg3 {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/IN_N_OUT/jpg/in-n-out-pleasantviewmain-169.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
+
+.jumbotron-background-jpg4 {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/IN_N_OUT/jpg/in-n-out-storage-clifford-north-169.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
+
+.jumbotron-background-webp1 {
   background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/IN_N_OUT/webp/in-n-out-storage-jumbotron.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
+
+.jumbotron-background-webp2 {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/IN_N_OUT/webp/in-n-out-commerce-169.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
+
+.jumbotron-background-webp3 {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/IN_N_OUT/webp/in-n-out-pleasantviewmain-169.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
+
+.jumbotron-background-webp4 {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/IN_N_OUT/webp/in-n-out-storage-clifford-north-169.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -752,6 +812,13 @@
     height: 0;
   }
 
+  .jumbotron-background-jpg1, .jumbotron-background-jpg2,.jumbotron-background-jpg3, .jumbotron-background-jpg4 
+  .jumbotron-background-webp1, .jumbotron-background-webp2, .jumbotron-background-webp3, .jumbotron-background-webp4 {
+    background-size: contain;
+    height: 40vh;
+  }
+
+
   // .jumbotorn-skew-style {
   //   transform: skew(0deg);
   //   width: 100%;
@@ -817,6 +884,19 @@
     font-size: 1.4rem;
   }
 
+  .jumbotron-background-jpg1, .jumbotron-background-jpg2,.jumbotron-background-jpg3, .jumbotron-background-jpg4, 
+  .jumbotron-background-webp1, .jumbotron-background-webp2, .jumbotron-background-webp3, .jumbotron-background-webp4 {
+    background-size: contain;
+    height: 40vh;
+  }
+
+  .jumbotron-top{
+    height: 40vh;
+  }
+
+  .sliding{
+    height: 500px;
+  }
   
   // .jumbotorn-skew-style {
   //   transform: skew(0deg);

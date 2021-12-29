@@ -7,94 +7,51 @@
           <div class="row">
             <div class="col-lg-12 px-0 contact-data">
               <span *ngFor="let contact of contacts" class="py-2 each-contact">
-                <span class="pl-3"><i class="{{ contact.class }}"></i></span
-                ><span
-                  *ngIf="
+                <span class="pl-3"><i class="{{ contact.class }}"></i></span><span *ngIf="
                     contact?.id === 2 || contact?.id === 3 || contact?.id === 4;
                     else other_content
-                  "
-                  ><a [href]="contact?.redirect" rel="noopener">{{
+                  "><a [href]="contact?.redirect" rel="noopener">{{
                     contact.data
-                  }}</a></span
-                >
-                <ng-template #other_content
-                  >&nbsp;<a
-                    [href]="contact?.redirect"
-                    target="_blank"
-                    rel="noopener"
-                    >{{ contact.data }}</a
-                  ></ng-template
-                >
+                    }}</a></span>
+                <ng-template #other_content>&nbsp;<a [href]="contact?.redirect" target="_blank" rel="noopener">{{
+                    contact.data }}</a></ng-template>
               </span>
             </div>
           </div>
         </div>
         <div class="contact-img">
-          <span
-            *ngIf="locationId == 1"
-            title="Aerial Photograph of self storage units surrounded by a fence."
-          >
-            <div
-              class="img-box-1"
-              [ngClass]="
+          <span *ngIf="locationId == 1" title="Aerial Photograph of self storage units surrounded by a fence.">
+            <div class="img-box-1" [ngClass]="
                 imagetype === 'jpg' ? 'img-box-1-jpg' : 'img-box-1-webp'
-              "
-            ></div>
+              "></div>
           </span>
-          <span
-            *ngIf="locationId == 2"
-            title="Aerial photograph of self storage facility with recreational vehicles and boats parked next to the buildings"
-          >
-            <div
-              class="img-box-2"
-              [ngClass]="
+          <span *ngIf="locationId == 2"
+            title="Aerial photograph of self storage facility with recreational vehicles and boats parked next to the buildings">
+            <div class="img-box-2" [ngClass]="
                 imagetype === 'jpg' ? 'img-box-2-jpg' : 'img-box-2-webp'
-              "
-            ></div>
+              "></div>
           </span>
-          <span
-            *ngIf="locationId == 3"
-            title="Aerial photograph of self storage units running alongside a highway"
-          >
-            <div
-              class="img-box-3"
-              [ngClass]="
+          <span *ngIf="locationId == 3" title="Aerial photograph of self storage units running alongside a highway">
+            <div class="img-box-3" [ngClass]="
                 imagetype === 'jpg' ? 'img-box-3-jpg' : 'img-box-3-webp'
-              "
-            ></div>
+              "></div>
           </span>
-          <span
-            *ngIf="locationId == 4"
-            title="Aerial photograph of a self storage facility and recreational vehicle parking spots"
-          >
-            <div
-              class="img-box-4"
-              [ngClass]="
+          <span *ngIf="locationId == 4"
+            title="Aerial photograph of a self storage facility and recreational vehicle parking spots">
+            <div class="img-box-4" [ngClass]="
                 imagetype === 'jpg' ? 'img-box-4-jpg' : 'img-box-4-webp'
-              "
-            ></div>
+              "></div>
           </span>
-          <span
-            *ngIf="locationId == 5"
-            title="a row of self storage unit doors in a single story metal storage building"
-          >
-            <div
-              class="img-box-4"
-              [ngClass]="
+          <span *ngIf="locationId == 5"
+            title="a row of self storage unit doors in a single story metal storage building">
+            <div class="img-box-4" [ngClass]="
                 imagetype === 'jpg' ? 'img-box-5-jpg' : 'img-box-5-webp'
-              "
-            ></div>
+              "></div>
           </span>
-          <span
-            *ngIf="locationId == 6"
-            title="single story self storage unit buildings with green metal roll up doors"
-          >
-            <div
-              class="img-box-4"
-              [ngClass]="
+          <span *ngIf="locationId == 6" title="single story self storage unit buildings with green metal roll up doors">
+            <div class="img-box-4" [ngClass]="
                 imagetype === 'jpg' ? 'img-box-6-jpg' : 'img-box-6-webp'
-              "
-            ></div>
+              "></div>
           </span>
         </div>
       </div>
@@ -103,52 +60,27 @@
           <span *ngIf="locationId == 1">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.534632688732!2d-87.96977654884932!3d43.740993479015884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88049daecc4dac91%3A0xc63ffa1ee3f6da99!2sCommerce%20St%2C%20Plymouth%2C%20WI%2053073!5e0!3m2!1sen!2sus!4v1627232929500!5m2!1sen!2sus"
-              width="100%"
-              height="220"
-              frameborder="0"
-              title="Facility Google Map"
-              allowfullscreen
-            ></iframe>
+              width="100%" height="220" frameborder="0" title="Facility Google Map" allowfullscreen></iframe>
           </span>
           <span *ngIf="locationId == 2">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2881.530439797672!2d-87.95318072602402!3d43.76184679042719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88049ded40d8d7ad%3A0x67bd4eaa3c22ca7a!2sN6112%20N%20Pleasant%20View%20Rd%2C%20Plymouth%2C%20WI%2053073!5e0!3m2!1sen!2sus!4v1627234261315!5m2!1sen!2sus"
-              width="100%"
-              height="230"
-              frameborder="0"
-              title="Facility Google Map"
-              allowfullscreen
-            ></iframe>
+              width="100%" height="230" frameborder="0" title="Facility Google Map" allowfullscreen></iframe>
           </span>
           <span *ngIf="locationId == 3">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.504960182667!2d-87.97766298449939!3d43.741609779118384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88049d06f867372b%3A0xb85d56a2a206200b!2sIn-N-Out%20Storage%2C%20LLC!5e0!3m2!1sen!2sus!4v1627234815284!5m2!1sen!2sus"
-              width="100%"
-              height="220"
-              frameborder="0"
-              title="Facility Google Map"
-              allowfullscreen
-            ></iframe>
+              width="100%" height="220" frameborder="0" title="Facility Google Map" allowfullscreen></iframe>
           </span>
           <span *ngIf="locationId == 4">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.529736243485!2d-87.97711354884933!3d43.74109517901592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88049d071c5f091d%3A0x61b74a5046d72452!2s423%20E%20Clifford%20St%2C%20Plymouth%2C%20WI%2053073!5e0!3m2!1sen!2sus!4v1627235619947!5m2!1sen!2sus"
-              width="100%"
-              height="220"
-              frameborder="0"
-              title="Facility Google Map"
-              allowfullscreen
-            ></iframe>
+              width="100%" height="220" frameborder="0" title="Facility Google Map" allowfullscreen></iframe>
           </span>
           <span *ngIf="locationId == 5">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.930139871891!2d-87.9463756844983!3d43.774308979117365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8803620865d969fb%3A0xd4ace4d8c5439002!2sN6480%20WI-57%2C%20Plymouth%2C%20WI%2053073!5e0!3m2!1sen!2sus!4v1630637696874!5m2!1sen!2sus"
-              width="100%"
-              height="220"
-              frameborder="0"
-              title="Facility Google Map"
-              allowfullscreen
-            ></iframe>
+              width="100%" height="220" frameborder="0" title="Facility Google Map" allowfullscreen></iframe>
           </span>
           <!-- <span *ngIf="locationId == 6">
             <iframe
@@ -172,18 +104,8 @@
               <app-tables [tBody]="access"></app-tables>
             </div>
             <div class="col-lg-4 btn-area text-center">
-              <a
-                class="btn btn-outline-primary p-2"
-                [routerLink]="['/contact-us']"
-                role="button"
-                >Contact Us</a
-              >
-              <a
-                class="btn btn-primary-light p-2"
-                [routerLink]="['/pay-rent']"
-                role="button"
-                >Pay Rent</a
-              >
+              <a class="btn btn-outline-primary p-2" [routerLink]="['/contact-us']" role="button">Contact Us</a>
+              <a class="btn btn-primary-light p-2" [routerLink]="['/pay-rent']" role="button">Pay Rent</a>
               <!-- <a class="btn btn-primary p-2" (click)='navigateToReserve()' role="button">Reserve Unit</a>                                        -->
             </div>
           </div>
@@ -207,12 +129,7 @@
     </div>
   </div>
   <div class="container px-0 pt-2 mt-3">
-    <app-tabs
-      [tabs]="tabs"
-      [name]="name"
-      class="sub-component-background"
-      [currentActiveTab]="currentTab"
-    ></app-tabs>
+    <app-tabs [tabs]="tabs" [name]="name" class="sub-component-background" [currentActiveTab]="currentTab"></app-tabs>
   </div>
 </section>
 

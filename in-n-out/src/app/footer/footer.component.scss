@@ -17,7 +17,19 @@
     text-align: right;
   }
 
-  a {
-    color: #000;
+  .footer-button{
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: white;
+    color: #3e99b4;
   }
+
+  p,a,div,h1,h2,h3,h4,h5,h6{
+    color: white;
+    text-align: left;
+  }
+  // a {
+  //   text-decoration: none;
+  //   color: #000;
+  // }
 }
