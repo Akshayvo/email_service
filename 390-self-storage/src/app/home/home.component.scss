@@ -6,6 +6,10 @@
   }
 }
 
+.mobile{
+  display: none;
+}
+
 .special-row {
   // position: absolute;
   // bottom: 0;
@@ -647,6 +651,10 @@
 
   .disp {
     display: none;
+  }
+
+  .mobile{
+    display: flex;
   }
 
   .jumbotorn-skew-style {

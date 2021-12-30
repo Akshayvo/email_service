@@ -2,10 +2,10 @@ export const homePageTitle = `Cheap Storage Units Rochester NY, Affordable Stora
 export const homePageContent = `390 Self Storage is Rochester's newest self-storage facility available at a very
 affordable price. Reserve your unit in our brand new facility today!`;
 
-export const viewRatesPageTitle = `Storage Units in Baldwinsville | Self Storage Units Rochester`;
-export const viewRatesPageContent = `Self Storage Units Rochester serves Baldwinsville and the surrounding communities with a variety of well-maintained and affordable self storage units!`;
+export const viewRatesPageTitle = `View Rates | Self Storage Units Rochester`;
+export const viewRatesPageContent = `390 Self Storage serves Rochester with a variety of well-maintained and affordable self storage units! Check out our rates, then rent online in minutes!`;
 
-export const reservePageTitle = `Reserve a Unit | Self Storage Units Rochester`;
+export const reservePageTitle = `View Rates | Self Storage Units Rochester`;
 export const reservePageContent = `Simply fill out our easy reservation form and one of our friendly self storage associates will be ready and waiting for your arrival!`;
 
 export const payRentPageTitle = `Pay Rent  | Self Storage Units Rochester`;
