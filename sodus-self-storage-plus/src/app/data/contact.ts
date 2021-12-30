@@ -23,14 +23,14 @@ export const contact = [
     },
     {
         id: 3,
-        label: 'Phone:',
+        label: "Don's Phone:",
         data: '(315) 573-6681',
         class: 'fas fa-phone mx-2 iconColor',
         redirect: 'tel:3155736681',
     },
     {
-        id: 3,
-        label: 'Phone:',
+        id: 4,
+        label: "Howard's Phone:",
         data: '(315) 569-7242',
         class: 'fas fa-phone mx-2 iconColor',
         redirect: 'tel:3155697242',
