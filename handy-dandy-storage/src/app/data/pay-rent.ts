@@ -81,7 +81,7 @@ export const tableDataContactPage = [
 export const loginDetail = [
   {
       userName: `Tenant's First Initial + Last Name`,
-      password: `Tenant's First Unit Number`,
+      password: `Tenant's First Unit Number(all unit number letters must be capitalized.)`,
       example: {
           code: `Unit Number is 123`,
           userName: 'jsmith',
