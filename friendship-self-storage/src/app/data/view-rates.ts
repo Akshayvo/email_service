@@ -2,7 +2,7 @@ import { objSIMSetting } from './configuration';
 
 export const dataViewRates = [
     {
-      p: ``,
+      p: `At Friendship Self Storage, you’ll find a number of unit size options to meet any self storage needs. Preparing for a move, renovation, or downsizing? We’ve got you covered with units ranging from five-foot-by-five-foot up to our oversized twelve-foot-by-twelve-foot self storage units. Whether you’re a residential or commercial storage user, you’re sure to find a friend in Friendship Self Storage!`,
     },
     {
       p: ``
