@@ -630,8 +630,8 @@
     text-align: center;
     background-attachment: unset;
     // background-position: right 37% top 10px;
-    background-size: contain;
-    height: 80vh;
+    background-size: cover;
+    height: 47vh;
   }
 
   .jumbotron-top {
@@ -654,7 +654,8 @@
   }
 
   .mobile{
-    display: flex;
+    display: block;
+    padding-top: 193px;
   }
 
   .jumbotorn-skew-style {
@@ -669,7 +670,7 @@
   }
 
   .jumbotron-bottom{
-    height: 33vh;
+    height: 7vh;
   }
 
   .jumbotorn-skew-text {
@@ -678,7 +679,7 @@
     // top: auto;
     bottom: 2px;
     text-align: center;
-    top:50vh;
+    top:65vh;
     color: black;
 
     .btn-outline-primary {
