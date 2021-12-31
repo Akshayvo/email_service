@@ -1,4 +1,4 @@
-export const homePageTitle = `Affordable 24-Hour Access Storage Units in Dundee`;
+export const homePageTitle = `Affordable 24-Hour Access Storage Units in Milan`;
 export const homePageContent = `My Store-It Space offers convenient 24/7 access to your belongings, online payments and a variety of unit sizes for all of your self storage needs.`;
 
 export const viewRatesPageTitle = `View Rates  | My Store-It Space`;
