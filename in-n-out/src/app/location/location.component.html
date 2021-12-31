@@ -21,37 +21,235 @@
         </div>
         <div class="contact-img">
           <span *ngIf="locationId == 1" title="Aerial Photograph of self storage units surrounded by a fence.">
-            <div class="img-box-1" [ngClass]="
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active" [ngClass]="
                 imagetype === 'jpg' ? 'img-box-1-jpg' : 'img-box-1-webp'
-              "></div>
+              ">
+                </div>
+                <div class="carousel-item" [ngClass]="
+                imagetype === 'jpg' ? 'img-box-2-jpg' : 'img-box-2-webp'
+              ">
+                </div>
+        
+                <div class="carousel-item" [ngClass]="
+                imagetype === 'jpg' ? 'img-box-3-jpg' : 'img-box-3-webp'
+              ">
+                </div>
+        
+                <div class="carousel-item" [ngClass]="
+                imagetype === 'jpg' ? 'img-box-4-jpg' : 'img-box-4-webp'
+              ">
+                </div>
+                <div class="carousel-item" [ngClass]="
+                imagetype === 'jpg' ? 'img-box-5-jpg' : 'img-box-5-webp'
+              ">
+                </div>
+              </div>
+            </div>
+            <!-- <div class="img-box-1" [ngClass]="
+                imagetype === 'jpg' ? 'img-box-1-jpg' : 'img-box-1-webp'
+              "></div> -->
           </span>
           <span *ngIf="locationId == 2"
             title="Aerial photograph of self storage facility with recreational vehicles and boats parked next to the buildings">
-            <div class="img-box-2" [ngClass]="
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active" [ngClass]="
                 imagetype === 'jpg' ? 'img-box-2-jpg' : 'img-box-2-webp'
-              "></div>
+              ">
+                </div>
+                <div class="carousel-item" [ngClass]="
+                imagetype === 'jpg' ? 'img-box-1-jpg' : 'img-box-1-webp'
+              ">
+                </div>
+        
+                <div class="carousel-item" [ngClass]="
+                imagetype === 'jpg' ? 'img-box-3-jpg' : 'img-box-3-webp'
+              ">
+                </div>
+        
+                <div class="carousel-item" [ngClass]="
+                imagetype === 'jpg' ? 'img-box-4-jpg' : 'img-box-4-webp'
+              ">
+                </div>
+                <div class="carousel-item" [ngClass]="
+                imagetype === 'jpg' ? 'img-box-5-jpg' : 'img-box-5-webp'
+              ">
+                </div>
+              </div>
+            </div>            
+            <!-- <div class="img-box-2" [ngClass]="
+                imagetype === 'jpg' ? 'img-box-2-jpg' : 'img-box-2-webp'
+              "></div> -->
           </span>
           <span *ngIf="locationId == 3" title="Aerial photograph of self storage units running alongside a highway">
-            <div class="img-box-3" [ngClass]="
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active" [ngClass]="
                 imagetype === 'jpg' ? 'img-box-3-jpg' : 'img-box-3-webp'
-              "></div>
+              ">
+                </div>
+                <div class="carousel-item" [ngClass]="
+                imagetype === 'jpg' ? 'img-box-2-jpg' : 'img-box-2-webp'
+              ">
+                </div>
+        
+                <div class="carousel-item" [ngClass]="
+                imagetype === 'jpg' ? 'img-box-1-jpg' : 'img-box-1-webp'
+              ">
+                </div>
+        
+                <div class="carousel-item" [ngClass]="
+                imagetype === 'jpg' ? 'img-box-4-jpg' : 'img-box-4-webp'
+              ">
+                </div>
+                <div class="carousel-item" [ngClass]="
+                imagetype === 'jpg' ? 'img-box-5-jpg' : 'img-box-5-webp'
+              ">
+                </div>
+              </div>
+            </div>
+            <!-- <div class="img-box-3" [ngClass]="
+                imagetype === 'jpg' ? 'img-box-3-jpg' : 'img-box-3-webp'
+              "></div> -->
           </span>
           <span *ngIf="locationId == 4"
             title="Aerial photograph of a self storage facility and recreational vehicle parking spots">
-            <div class="img-box-4" [ngClass]="
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active" [ngClass]="
                 imagetype === 'jpg' ? 'img-box-4-jpg' : 'img-box-4-webp'
-              "></div>
+              ">
+                </div>
+                <div class="carousel-item" [ngClass]="
+                imagetype === 'jpg' ? 'img-box-2-jpg' : 'img-box-2-webp'
+              ">
+                </div>
+        
+                <div class="carousel-item" [ngClass]="
+                imagetype === 'jpg' ? 'img-box-3-jpg' : 'img-box-3-webp'
+              ">
+                </div>
+        
+                <div class="carousel-item" [ngClass]="
+                imagetype === 'jpg' ? 'img-box-1-jpg' : 'img-box-1-webp'
+              ">
+                </div>
+                <div class="carousel-item" [ngClass]="
+                imagetype === 'jpg' ? 'img-box-5-jpg' : 'img-box-5-webp'
+              ">
+                </div>
+              </div>
+            </div>
+            <!-- <div class="img-box-4" [ngClass]="
+                imagetype === 'jpg' ? 'img-box-4-jpg' : 'img-box-4-webp'
+              "></div> -->
           </span>
           <span *ngIf="locationId == 5"
             title="a row of self storage unit doors in a single story metal storage building">
-            <div class="img-box-4" [ngClass]="
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active" [ngClass]="
+                imagetype === 'jpg' ? 'img-box-4-jpg' : 'img-box-4-webp'
+              ">
+                </div>
+                <div class="carousel-item" [ngClass]="
+                imagetype === 'jpg' ? 'img-box-2-jpg' : 'img-box-2-webp'
+              ">
+                </div>
+        
+                <div class="carousel-item" [ngClass]="
+                imagetype === 'jpg' ? 'img-box-3-jpg' : 'img-box-3-webp'
+              ">
+                </div>
+        
+                <div class="carousel-item" [ngClass]="
+                imagetype === 'jpg' ? 'img-box-4-jpg' : 'img-box-4-webp'
+              ">
+                </div>
+                <div class="carousel-item" [ngClass]="
+                imagetype === 'jpg' ? 'img-box-1-jpg' : 'img-box-1-webp'
+              ">
+                </div>
+              </div>
+            </div>
+            <!-- <div class="img-box-4" [ngClass]="
                 imagetype === 'jpg' ? 'img-box-5-jpg' : 'img-box-5-webp'
-              "></div>
+              "></div> -->
           </span>
           <span *ngIf="locationId == 6" title="single story self storage unit buildings with green metal roll up doors">
-            <div class="img-box-4" [ngClass]="
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active" [ngClass]="
                 imagetype === 'jpg' ? 'img-box-6-jpg' : 'img-box-6-webp'
-              "></div>
+              ">
+                </div>
+                <div class="carousel-item" [ngClass]="
+                imagetype === 'jpg' ? 'img-box-2-jpg' : 'img-box-2-webp'
+              ">
+                </div>
+        
+                <div class="carousel-item" [ngClass]="
+                imagetype === 'jpg' ? 'img-box-3-jpg' : 'img-box-3-webp'
+              ">
+                </div>
+        
+                <div class="carousel-item" [ngClass]="
+                imagetype === 'jpg' ? 'img-box-4-jpg' : 'img-box-4-webp'
+              ">
+                </div>
+                <div class="carousel-item" [ngClass]="
+                imagetype === 'jpg' ? 'img-box-1-jpg' : 'img-box-1-webp'
+              ">
+                </div>
+              </div>
+            </div>
+            <!-- <div class="img-box-4" [ngClass]="
+                imagetype === 'jpg' ? 'img-box-6-jpg' : 'img-box-6-webp'
+              "></div> -->
           </span>
         </div>
       </div>
@@ -114,8 +312,13 @@
     </div>
   </div>
 </section>
-
-<section class="sub-components">
+<div class="container">
+<h2 class="content-title"> Lorem Ipsum</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+</div>
+  <section class="sub-components">
   <div class="container feature-block mt-3">
     <div class="row">
       <div class="col-md-3 col-6 p-3" *ngFor="let feature of features">

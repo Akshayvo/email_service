@@ -478,7 +478,7 @@ export const apiRoutes = [
     component: SpecialsComponent,
   },
   { path: `auctions`, component: AuctionComponent },
-  { path: `testimonials`, component: TestimonialComponent },
+  // { path: `testimonials`, component: TestimonialComponent },
   { path: "contact-us", component: ContactComponent },
   { path: "contact-commerce-st", component: ContactUsComponent },
   { path: "contact-pleasantview", component: ContactUsComponent },
@@ -496,7 +496,7 @@ export const apiRoutes = [
     component: TrailerInfoComponent,
   },
   { path: `auctions`, component: AuctionComponent },
-  { path: `testimonials`, component: TestimonialComponent },
+  // { path: `testimonials`, component: TestimonialComponent },
   {
     path: `${environment.locationName}/specials`,
     component: SpecialsComponent,
