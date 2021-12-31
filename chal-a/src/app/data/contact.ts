@@ -1,10 +1,10 @@
 export const header = [
     {
         id: 1,
-        label: 'Office Address:',
-        data: '5628 Danmar Dr, Sturgeon, Wisconsin',
+        label: 'Facility Address:',
+        data: '3910 WI-57, Sturgeon Bay, WI 54235',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
-        redirect: ''
+        redirect: 'https://g.page/chal-a-apartments-storage?share'
     },
     {
         id: 2,
@@ -28,7 +28,7 @@ export const contact = [
         label: 'Facility Address:',
         data: '3910 WI-57, Sturgeon Bay, WI 54235',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
-        redirect: ''
+        redirect: 'https://g.page/chal-a-apartments-storage?share'
     },
     {
         id: 1,
