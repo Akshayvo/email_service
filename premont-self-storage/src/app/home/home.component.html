@@ -48,8 +48,8 @@
               
               <p>
                 <span *ngFor="let contact of contactDetails" class="display-contact">
-                  <span><h4><b>{{contact.label}}</b></h4></span><span class="contact-links" *ngIf="contact?.label === 'Address:' || contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
-                    <h4><a [href]="contact?.redirect" target="{{(contact?.label === 'Address:') ? '_blank' : '_self'}}">&nbsp;{{contact.data}}</a></h4>
+                  <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.label === 'Address:' || contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
+                    <a [href]="contact?.redirect" target="{{(contact?.label === 'Address:') ? '_blank' : '_self'}}">&nbsp;{{contact.data}}</a>
                   </span>
                   <ng-template #other_content>&nbsp;<h4>{{contact.data}}</h4></ng-template><br>
                 </span>
@@ -57,13 +57,13 @@
               <h4><b>Facility Hours:</b></h4>
               <p>
                 <span class="display-contact" *ngFor="let hour of hours">
-                  <h4><b>{{hour.label}}</b></h4>&nbsp;<h4>{{hour.data}}</h4><br>
+                  <b>{{hour.label}}</b>&nbsp;{{hour.data}}<br>
                 </span>
               </p>
               <h4><b>Move In Hours:</b></h4>
               <p>
                   <span class='display-contact' *ngFor='let moveInhour of moveInHours'>
-                    <h4><b>{{moveInhour.label}}</b></h4>&nbsp;<h4>{{moveInhour.data}}</h4><br>
+                    <b>{{moveInhour.label}}</b>&nbsp;{{moveInhour.data}}<br>
                   </span>
               </p>
             </div>
