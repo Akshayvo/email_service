@@ -48,13 +48,13 @@
               
               <p>
                 <span *ngFor="let contact of contactDetails" class="display-contact">
-                  <span class="heading"><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.label === 'Address:' || contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
-                    <a [href]="contact?.redirect" rel="noopener" class="heading" target="{{(contact?.label === 'Address:') ? '_blank' : '_self'}}">&nbsp;{{contact.data}}</a>
+                  <span class="heading"><h3><b>{{contact.label}}</b></h3></span><span class="contact-links" *ngIf="contact?.label === 'Address:' || contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
+                    <h4><a [href]="contact?.redirect" rel="noopener" class="heading" target="{{(contact?.label === 'Address:') ? '_blank' : '_self'}}">&nbsp;{{contact.data}}</a></h4>
                   </span>
                   <ng-template #other_content class="heading">&nbsp;{{contact.data}}</ng-template><br>
                 </span>
               </p>
-              <p class="heading"><b>Facility Hours:</b></p>
+              <h4 class="heading"><b>Facility Hours:</b></h4>
               <p>
                 <span class="display-contact heading" *ngFor="let hour of hours">
                   <b>{{hour.label}}</b>&nbsp;{{hour.data}}<br>
