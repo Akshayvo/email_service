@@ -220,6 +220,6 @@ export const blurb = [
 export const jumbotron = [
     {
         h2: `Single Story - Easy, 24 Hour Access! No Struggling with Elevators Or Stairs!`,
-        blurb: `390 Self Storage is conveniently located minutes away from the University of Rochester, R.I.T., and the Greater Rochester International Airport. Take a moment to review our rates, and rent your self storage unit in minutes with our simple, online rental process!`,
+        blurb: `390 Self Storage is conveniently located minutes away from the universities and colleges in Rochester and the Greater Rochester International Airport. Take a moment to review our rates, and rent your self storage unit in minutes with our simple, online rental process!`,
     }
 ];

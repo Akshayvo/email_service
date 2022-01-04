@@ -123,11 +123,12 @@
   transform: skew(0deg);
   width: 500px;
   position: absolute;
-  top: 30%;
-
+  top: 35%;
+ 
   .btn-outline-primary {
     margin-right: 10px;
   }
+  
 }
 
 // Get started Section
@@ -690,10 +691,12 @@
 
     .btn-primary {
       margin-top: 50px;
+      
     }
 
     .jumbotorn-button {
-      padding: 15px;
+      padding: 6px;
+      
     }
   }
   .getStarted{
