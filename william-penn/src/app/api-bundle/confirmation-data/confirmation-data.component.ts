@@ -119,6 +119,7 @@ constructor(
 ngOnInit() {
   this.getTenantUnitData();
   this.showAltDetails = this.dataSharingService.showAltDetails;
+  this.showMilitaryDetails = this.dataSharingService.showMilitaryDetails;
 }
 
 fetchSharedData() {
@@ -201,6 +202,9 @@ getTenantUnitData() {
   this.reservationFeeTax = this.dataSharingService.LstUnitTypes.ReservationFeeTax;
   this.description = this.dataSharingService.LstUnitTypes.Description;
   this.monthlyRate = this.dataSharingService.LstUnitTypes.MonthlyRate;
+  this.driversLicense = this.dataSharingService.objTenant.DriversLicense;
+  this.driversLicenseExpDate = this.dataSharingService.objTenant.DriversLicenseExpDate;
+  this.dateOfBirth = this.dataSharingService.objTenant.DateOfBirth;
 }
 
   addTenant(data: any): void {

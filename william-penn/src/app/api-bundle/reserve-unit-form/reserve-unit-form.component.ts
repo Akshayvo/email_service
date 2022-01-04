@@ -4,7 +4,7 @@ import { FetchDataService } from '../services/fetch-data.service';
 import {UnitTypes, LstUnitTypes, RentalPeriod, LstRentalPeriods, LstInsuranceChoices  } from '../models/unittypes';
 import { ObjTenantDetail, ObjTenant, StrTempTenantToken } from '../models/tenant';
 import { Router } from '@angular/router';
-import { option, option1 } from '../../data/view-rates';
+import { MilitaryBranch, MilitaryTypes,option, option1 } from '../../data/view-rates';
 import { DatePipe } from '@angular/common';
 import { TenantInfoService } from '../services/tenant-info.service';
 import { LeadDaysService } from '../services/lead-days.service';
@@ -93,8 +93,10 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   premium: number;
   minDay: number;
   maxDay: number;
-
-
+  militaryTypes = [];
+  militaryBranch = [];
+  MilitaryBranch: number;
+  MilitaryTypes: number;
   MoveInStringParent: string;
 
   tenant: any;
@@ -133,6 +135,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   alternatetypeDetail: any;
 
   showAltDetails = false;
+  showMilitaryDetails = false;
 
   private  getLeadDaysSubscribe$: Subscription;
   private  getTenantInfoSubscribe$: Subscription;
@@ -170,6 +173,8 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
           this.dataSharingService.navigateToReserve = false;
           this.showAltDetails = (environment.alternateType.moveIn === true) ? true : false;
           this.dataSharingService.showAltDetails = this.showAltDetails;
+          this.showMilitaryDetails = (environment.military === true) ? true : false;
+          this.dataSharingService.showMilitaryDetails = this.showMilitaryDetails;
         }
       }
         
@@ -188,7 +193,22 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         City: ['', Validators.required],
         State: ['', Validators.required],
         ZIP: ['', Validators.required],
-        AlternateName: [''],
+        DriversLicense: ['', conditionalValidator(
+          (() => this.showMilitaryDetails === false),
+          Validators.required
+        )],
+        DriversLicenseExpDate: ['', conditionalValidator(
+          (() => this.showMilitaryDetails === false),
+          Validators.required
+        )],
+        DateOfBirth: ['', conditionalValidator(
+          (() => this.showMilitaryDetails === false),
+          Validators.required
+        )],
+        AlternateName: ['', conditionalValidator(
+          (() => this.showAltDetails === false),
+          Validators.required
+        ),],
         AlternatePhone:   ['', [  conditionalValidator(
           (() => this.showAltDetails === false),
           Validators.required
@@ -197,11 +217,23 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
             '^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$'
             )
         ]],
-        AlternateAddressLine1: [''],
+        AlternateAddressLine1: ['', conditionalValidator(
+          (() => this.showAltDetails === false),
+          Validators.required
+        ),],
         AlternateAddressLine2: [''],
-        AlternateCity: [''],
-        AlternateState: [''],
-        AlternateZIP: [''],
+        AlternateCity: ['', conditionalValidator(
+          (() => this.showAltDetails === false),
+          Validators.required
+        ),],
+        AlternateState: ['', conditionalValidator(
+          (() => this.showAltDetails === false),
+          Validators.required
+        ),],
+        AlternateZIP: ['', conditionalValidator(
+          (() => this.showAltDetails === false),
+          Validators.required
+        ),],
       }),
 
 
@@ -423,6 +455,9 @@ getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number
             City: Tenant.City,
             State: Tenant.State,
             ZIP: Tenant.ZIP,
+            DriversLicense: Tenant.DriversLicense,
+            DriversLicenseExpDate: Tenant.DriversLicenseExpDate,
+            DateOfBirth: Tenant.DateOfBirth,
             AlternateName: Tenant.AlternateName,
             AlternatePhone: Tenant.AlternatePhone,
             AlternateAddressLine1: Tenant.AlternateAddressLine2,
@@ -442,6 +477,9 @@ getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number
               City: Tenant.City,
               State: Tenant.State,
               ZIP: Tenant.ZIP,
+              DriversLicense: Tenant.DriversLicense,
+              DriversLicenseExpDate: Tenant.DriversLicenseExpDate,
+              DateOfBirth: Tenant.DateOfBirth,
               AlternateName: Tenant.AlternateName,
               AlternatePhone: Tenant.AlternatePhone,
               AlternateAddressLine1: Tenant.AlternateAddressLine1,
