@@ -54,13 +54,13 @@
                   <ng-template #other_content>&nbsp;<h4>{{contact.data}}</h4></ng-template><br>
                 </span>
               </p>
-              <h4><b>Facility Hours:</b></h4>
+              <h3><b>Facility Hours:</b></h3>
               <p>
                 <span class="display-contact" *ngFor="let hour of hours">
-                  <b>{{hour.label}}</b>&nbsp;{{hour.data}}<br>
+                  <h4><b>{{hour.label}}</b></h4>&nbsp;<h4>{{hour.data}}<br></h4>
                 </span>
               </p>
-              <h4><b>Move In Hours:</b></h4>
+              <h3><b>Move In Hours:</b></h3>
               <p>
                   <span class='display-contact' *ngFor='let moveInhour of moveInHours'>
                     <b>{{moveInhour.label}}</b>&nbsp;{{moveInhour.data}}<br>
