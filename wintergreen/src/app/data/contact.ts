@@ -14,9 +14,9 @@ export const contact = [
     },
     {
         id: 2,
-        redirect: 'tel:7152090821',
+        redirect: 'tel:7154903123',
         label: 'Phone:',
-        data: '(715) 209-0821',
+        data: '(715) 490-3123',
         class: 'fas fa-phone mx-2 iconColor',
     }
 ];
