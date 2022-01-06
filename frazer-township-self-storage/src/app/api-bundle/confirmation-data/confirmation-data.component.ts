@@ -207,8 +207,8 @@ getTenantUnitData() {
   this.description = this.dataSharingService.LstUnitTypes.Description;
   this.monthlyRate = this.dataSharingService.LstUnitTypes.MonthlyRate;
   this.driversLicense = this.dataSharingService.objTenant.DriversLicense;
-  this.driversLicenseExpDate = this.datePipe.transform(this.dataSharingService.objTenant.DriversLicenseExpDate, 'MM/dd/yyyy');
-  this.dateOfBirth = this.datePipe.transform(this.dataSharingService.objTenant.DateOfBirth, 'MM/dd/yyyy');
+  // this.driversLicenseExpDate = this.datePipe.transform(this.dataSharingService.objTenant.DriversLicenseExpDate, 'MM/dd/yyyy');
+  // this.dateOfBirth = this.datePipe.transform(this.dataSharingService.objTenant.DateOfBirth, 'MM/dd/yyyy');
   this.militaryType = this.dataSharingService.objTenant.MilitaryType;
   this.militaryBranch = this.dataSharingService.objTenant.MilitaryBranch;
   this.militaryID = this.dataSharingService.objTenant.MilitaryID;
@@ -216,7 +216,8 @@ getTenantUnitData() {
   this.militaryDivision = this.dataSharingService.objTenant.MilitaryDivision;
   this.commandingOfficer = this.dataSharingService.objTenant.CommandingOfficer;
   this.commandingOfficerPhone = this.dataSharingService.objTenant.CommandingOfficerPhone;
-
+  this.dateOfBirth = this.dataSharingService.objTenant.DateOfBirth;
+  this.driversLicenseExpDate = this.dataSharingService.objTenant.DriversLicenseExpDate;
 }
 
   addTenant(data: any): void {
