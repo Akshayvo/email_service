@@ -1,7 +1,7 @@
 <div class="">
   <div class="jumbotron-container">
     <div class="jumbotron-top">
-    <div class="jumbotron px-0 m-0" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
+    <div class="jumbotron px-0 m-0" height="100" width="100" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
       <div class=" jumbotorn-skew-style" [ngClass]="template === 'darkTheme' ? 'bg-translucent-dark' : 'bg-translucent-light'">
       </div>
       <div class="container">
@@ -24,7 +24,7 @@
       <div class="container">
         <div class="feature row">
           <div class="col-md-3 col-3 feature-icon-style" *ngFor="let feature of feature">
-            <img [src]="feature?.path" [alt]="feature?.alt" />
+            <img [src]="feature?.path" [alt]="feature?.alt" height="100" width="100"/>
               <h2 class="feature-text">{{feature.label}}</h2>
           </div>
         </div>
@@ -46,13 +46,13 @@
               
               <p>
                 <span *ngFor="let contact of contactDetails" class="display-contact">
-                  <span><h4><b>{{contact.label}}</b></h4></span><span class="contact-links" *ngIf="contact?.label === 'Address:' || contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
+                  <span><h3><b>{{contact.label}}</b></h3></span><span class="contact-links" *ngIf="contact?.label === 'Address:' || contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
                     <h4><a [href]="contact?.redirect" target="{{(contact?.label === 'Address:') ? '_blank' : '_self'}}">&nbsp;{{contact.data}}</a></h4>
                   </span>
                   <ng-template #other_content>&nbsp;<h4>{{contact.data}}</h4></ng-template><br>
                 </span>
               </p>
-              <h4><b>Facility Hours:</b></h4>
+              <h3><b>Facility Hours:</b></h3>
               <p>
                 <span class="display-contact" *ngFor="let hour of hours">
                   <h4><b>{{hour.label}}</b></h4>&nbsp;<h4>{{hour.data}}</h4><br>
