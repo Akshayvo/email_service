@@ -69,24 +69,15 @@ export class PaymentComponent implements OnInit {
     // if (!!localStorage.getItem('paymentTab')) {
     //   this.paymentTab = localStorage.getItem('paymentTab');
     // }
-
-    if (!!localStorage.getItem("strTenantToken")) {
-      const navTo = localStorage.getItem("paymentNavigationUrl");
-      if (!!localStorage.getItem("paymentTab")) {
+    if (!!(localStorage.getItem('strTenantToken'))) {
+      const navTo = localStorage.getItem('paymentNavigationUrl');
+      if (!!localStorage.getItem('paymentTab')) {
         if (!!navTo) {
           if (this.dataSharingService.changePassword === true) {
-            this.router.navigate([ `/pay-rent/${navTo}/${localStorage.getItem("paymentTab")}/changePassword`,]);
-          } 
-          else {
-            this.router.navigate([`/pay-rent/${navTo}/rent-sub/payment`]);
+            this.router.navigate([`/pay-rent/${navTo}/${localStorage.getItem('paymentTab')}/changePassword`]);
+          } else {
+            this.router.navigate([`/pay-rent/${navTo}/${localStorage.getItem('paymentTab')}/payment`]);
           }
-          // else {
-          //   if (this.paymentTab === "rent-sub") {
-          //     this.router.navigate([`/pay-rent/${navTo}/rent-sub/payment`]);
-          //   } else {
-          //     this.router.navigate([`/pay-rent/${navTo}/sign-up/payment`]);
-          //   }
-          // }
         }
       } else {
         if (!!navTo) {
@@ -97,7 +88,7 @@ export class PaymentComponent implements OnInit {
           }
         }
       }
-    } else {
+    }else {
       this.router.navigate(["/pay-rent"]);
     }
   }
