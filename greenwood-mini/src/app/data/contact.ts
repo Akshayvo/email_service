@@ -4,7 +4,7 @@ export const contactMainOffice = [
         label: 'Mailing Address: ',
         data: 'P.O. Box 1032 Greenwood, MS 38935',
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: ''
+        redirect: 'https://goo.gl/maps/o8yb1nJen7XkuWzj7'
     },
     {
         id: 2,
