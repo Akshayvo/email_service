@@ -4,7 +4,7 @@ export const contact = [
         label: 'Address:',
         data: '1030 Madison Market Place, Hamilton, NY 13346',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
-        redirect: ''
+        redirect: 'https://goo.gl/maps/zhdWE6FosEnjGkvY8'
     },
     {
         id: 1,
