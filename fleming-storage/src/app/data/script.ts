@@ -42,7 +42,7 @@ export const script = {               // Please fill this script according to fa
      paymentAccepted:  'Cash, Check, Credit Card, Debit Card',
      currenciesAccepted: 'USD',
      ratingValue: '0',
-     bestRating: '5',
+     bestRating: '0',
      reviewCount: '0',
      latitude: 44.259044,
      longitude: -78.3819203,
@@ -65,12 +65,12 @@ export const homePageScript = [ {
       'postalCode': script.postalCode,
       'addressCountry': script.addressCountry
     },
-   'aggregateRating': {
-      '@type': 'AggregateRating',
-      'ratingValue': script.ratingValue,
-      'bestRating': script.bestRating,
-      'reviewCount': script.reviewCount
-    },
+  //  'aggregateRating': {
+  //     '@type': 'AggregateRating',
+  //     'ratingValue': script.ratingValue,
+  //     'bestRating': script.bestRating,
+  //     'reviewCount': script.reviewCount
+  //   },
     'geo': {
       '@type': 'GeoCoordinates',
       'latitude': script.latitude,
