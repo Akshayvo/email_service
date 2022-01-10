@@ -132,7 +132,7 @@ export const iFrameRoutes = [
     // Fallback when no prior route is matched
     { path: '', component: HomeComponent },
     { path: 'pay-rent', component: PaymentIframePageComponent },
-    { path:  `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
+    { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
     { path: `${environment.locationName}/view-rates`, component: ViewRatesIframePageComponent },
     { path: `${environment.locationName}/reserve-unit`, component: ReserveUnitIframePageComponent },    
     { path: 'contact-us', component: ContactComponent },
