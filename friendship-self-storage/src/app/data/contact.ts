@@ -27,14 +27,14 @@ export const hours = [
         label: 'Monday Wednesday Saturday : ',
         data: '10:00AM to 2:00PM'
     },
-    {
-        label: 'Tuesday Thursday Friday Sunday : ',
-        data: 'CLOSED'
-    },
+    // {
+    //     label: 'Tuesday Thursday Friday Sunday : ',
+    //     data: 'CLOSED'
+    // },
    
     {
         label: 'Storage Access Hours: ',
-        data: '6:00AM to 9:00PM 7 Days a Week'
+        data: '6:00AM to 9:00PM 7 Days a Week or by Prescheduled Appointment'
     }
 ];
 

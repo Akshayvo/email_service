@@ -86,36 +86,36 @@ export const storageTipAccordion = [
             },
         ]
     },
-    {
-        id: '4',
-        label: `Artwork, Mirrors & Lamps`,
-        status: false,
-        data : [
-            {
-                p: `Wrap in bubble wrap and stack in a large box with bubble wrap or large peanuts.`
-            },
-            {
-                p: `Remove light bulbs, harps, and lamp shades off lamp.`
-            },
-            {
-                p: `Artwork & mirrors should be wrapped in paper, covered with cardboard.`
-            },
-        ]
-    },
-    {
-        id: '5',
-        label: `Collectibles`,
-        status: false,
-        data : [
-            {
-                p: `Wrap each fragile item separately with bubble wrap and packing tape`
-            },
-            {
-                p: `Layer wrapped items in sturdy cardboard box using large peanuts or wadded paper between.`
-            },
-            {
-                p: `Place a final layer of peanuts or wadded paper on top, seal and mark.`
-            },
-        ]
-    }
+    // {
+    //     id: '4',
+    //     label: `Artwork, Mirrors & Lamps`,
+    //     status: false,
+    //     data : [
+    //         {
+    //             p: `Wrap in bubble wrap and stack in a large box with bubble wrap or large peanuts.`
+    //         },
+    //         {
+    //             p: `Remove light bulbs, harps, and lamp shades off lamp.`
+    //         },
+    //         {
+    //             p: `Artwork & mirrors should be wrapped in paper, covered with cardboard.`
+    //         },
+    //     ]
+    // },
+    // {
+    //     id: '5',
+    //     label: `Collectibles`,
+    //     status: false,
+    //     data : [
+    //         {
+    //             p: `Wrap each fragile item separately with bubble wrap and packing tape`
+    //         },
+    //         {
+    //             p: `Layer wrapped items in sturdy cardboard box using large peanuts or wadded paper between.`
+    //         },
+    //         {
+    //             p: `Place a final layer of peanuts or wadded paper on top, seal and mark.`
+    //         },
+    //     ]
+    // }
 ];

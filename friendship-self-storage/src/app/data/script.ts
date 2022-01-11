@@ -27,7 +27,7 @@ export const script = {               // Please fill this script according to fa
     imagesHomePage: [
       "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Friendship_Self_Storage/jpg/friendship-self-storage-11.jpg", // 1:1
       "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Friendship_Self_Storage/jpg/friendship-self-storage-43.jpg", // 4:3
-      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Friendship_Self_Storage/jpg/friendship-self-storage-jumbotron.jpg" // 16:9
+      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Friendship_Self_Storage/jpg/friendship-self-storage-169.jpg" // 16:9
      ],
      telephone: contact[contactIndex].data,
      map: "https://www.google.com/maps/place/Friendship+Self+Storage,+50+Friendship+St,+Westerly,+RI+02891/@41.3839364,-71.8274584,17z/data=!4m6!1m3!3m2!1s0x89e5e71481052259:0x324bd420a67e6f62!2sFriendship+Self+Storage,+50+Friendship+St,+Westerly,+RI+02891!3m1!1s0x89e5e71481052259:0x324bd420a67e6f62?hl=en-US&gl=us",
