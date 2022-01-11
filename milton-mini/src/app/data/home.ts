@@ -49,10 +49,7 @@ export const aboutUs = [
         h2: `Security`
     },
     {
-        p: `We understand that when selecting a self storage facility, security is a top priority. 
-        That's why access to Milton Mini Storage is controlled by a pin-code activated electronic gate, 
-        and our well-lit grounds are covered by multiple security cameras. Our staff also perform regular 
-        lot inspections.`,
+        p: `We understand that when selecting a self storage facility, security is a top priority. That's why access to Milton Mini Storage is controlled by a pin-code activated access door, and our well-lit grounds are covered by multiple security cameras. Our staff also perform regular lot inspections.`,
     },
     
     
