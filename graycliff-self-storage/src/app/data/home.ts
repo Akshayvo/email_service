@@ -16,7 +16,7 @@ export const featuresList = [
 
 export const aboutUsAlt = `a row of red metal roll up self storage unit doors`;
 
-export const aboutUsHeading = ``;
+export const aboutUsHeading = `Affordable Storage Units in Marion, NC`;
 
 export const aboutUs = [
     {
