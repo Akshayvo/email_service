@@ -15,7 +15,12 @@
 .contact-links {
   a {
     color: black;
+    line-height: 1.8;
   }
+}
+
+h2 {
+  font-size: 1.75rem;
 }
 
 .modal-open {
@@ -29,6 +34,7 @@
     color: $primary;
     text-decoration: underline;
     cursor: pointer;
+    line-height: 1.8;
   }
 }
 

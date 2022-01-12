@@ -1,13 +1,19 @@
 @import "../../styles.scss";
 
 .contact-details {
-  h4 {
+  h4,h3 {
     font-size: 1rem;
+    line-height: 1.6;
   }
+}
+
+h2 {
+  font-size: 1.75rem;
 }
 
 .display-contact {
   display: flex;
+  flex-wrap: wrap;
 
   // h4 {
   //   width: 100%;

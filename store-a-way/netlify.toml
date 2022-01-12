@@ -27,6 +27,14 @@
   compress = true
 # A basic redirect rule
 [[redirects]]
+  from = "/Hamilton/Madison/view-rates"
+  to = "/new-york/hamilton/view-rates"
+  status = 301
+[[redirects]]
+  from = "/Hamilton/Madison/storage-tips"
+  to = "/new-york/hamilton/storage-tips"
+  status = 301
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
