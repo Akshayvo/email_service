@@ -4,6 +4,9 @@
 .vertical-line {
   border-left: 1px solid black;
   padding-left: 50px;
+  h2{
+    font-size: 28px;
+  }
 }
 
 
@@ -15,6 +18,7 @@
 .contact-links {
   a {
     color: black;
+    line-height:1.4rem;
   }
 }
 
@@ -29,6 +33,7 @@
     color: $primary;
     text-decoration: underline;
     cursor: pointer;
+    line-height:1.4rem;
   }
 }
 
