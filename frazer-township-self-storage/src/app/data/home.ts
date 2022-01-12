@@ -17,7 +17,7 @@ export const featuresList = [
     },
     {
         td1: 'Affordable Rates',
-        td2: '',
+       
     },
     // {
     //     td1: 'Retail Store On-Premises',

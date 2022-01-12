@@ -25,9 +25,9 @@ socialLinks.forEach(links => {
 
 export const script = {               // Please fill this script according to facility's information
     imagesHomePage: [
-      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Frazer_Township/jpg/stock-self-storage-11.jpg", // 1:1
-      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Frazer_Township/jpg/stock-self-storage-43.jpg", // 4:3
-      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Frazer_Township/jpg/stock-self-storage-169.jpg" // 16:9
+      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Frazer_Township/jpg/frazer-township-self-storage-11.jpg", // 1:1
+      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Frazer_Township/jpg/frazer-township-self-storage-43.jpg", // 4:3
+      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Frazer_Township/jpg/frazer-township-self-storage-169.jpg" // 16:9
      ],
      telephone: contact[contactIndex].data,
      map: "https://goo.gl/maps/QXG1awbAoxXJRuSp9",
