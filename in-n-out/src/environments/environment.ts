@@ -18,7 +18,7 @@ export const environment = {
   facilityName: "In-N-Out Storage",
   VERSION: require("../../package.json").version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: `https://in-n-out-storage-staging.com`,
+  websiteUrl: `https://in-n-out-storage.com`,
 };
 
 /*

@@ -14,7 +14,7 @@ export const tableData = [
   {
     facility: " Commerce St",
     //address: '405 Commerce St Plymouth, WI 53073',
-    address: "N7124 Willow Rd, Sheboygan Falls, WI 53085",
+    address: "405 Commerce St, Plymouth WI 53073",
     url: "commerce-st/rent-sub/login",
     email: "info@in-n-out-storage.com",
   },
