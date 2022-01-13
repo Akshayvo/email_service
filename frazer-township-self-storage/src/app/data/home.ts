@@ -32,7 +32,7 @@ export const aboutUsHeading = `Affordable Self Storage in Tarentum`;
 export const aboutUs = [
     {
         h:``,
-        p: `Frazer Township Self Storage is Tarentum's newest self storage facility. As a locally owned and operated storage facility, we understand the key to success is building relationships with our friends and neighbors through outstanding customer service and fair pricing. That's why we went the extra mile to build our business and it's services from the ground up with your storge needs in mind. Take a moment to review our rates, then rent online, or give one of our friendly managers a call today!`,
+        p: `Frazer Township Self Storage is Tarentum's newest self storage facility serving Tarentum, Creighton, Frazer Township, and the surrounding communities. As a locally owned and operated storage facility, we understand the key to success is building relationships with our friends and neighbors through outstanding customer service and fair pricing. That's why we went the extra mile to build our business and it's services from the ground up with your storage needs in mind. Take a moment to review our rates, then rent online, or give one of our friendly managers a call today!`,
     },
     {
         h:`Convenience`,
@@ -80,6 +80,6 @@ export const feature = [
 export const jumbotron = [
     {
         h2: `Affordable Self Storage Units in Tarentum`,
-        blurb: `Frazer Township Self Storage is locally owned and operated, and provides high-quality, well-maintained self storage units in Tarentum, Cheswick, and the surrounding communities! Take a moment to review our availability, then rent your unit online in minutes with our easy online rental application.`,
+        blurb: `Frazer Township Self Storage is locally owned and operated, and provides high-quality, well-maintained self storage units in Tarentum, Springdale, Cheswick, and the surrounding communities! We are conveniently located on Butler Logan Road, just a stone's throw from the Pittsburgh Mills Mall and just off of Route 28 (exit 12A)Take a moment to review our availability, then rent your unit online in minutes with our easy online rental application.`,
     }
 ];

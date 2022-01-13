@@ -9,9 +9,9 @@ export const contact = [
     {
         id: 1,
         label: 'Email:',
-        data: 'sampleemail@sampleemail.com',
+        data: 'frazertownshipselfstorage@gmail.com',
         class: 'fas fa-envelope mx-2 iconColor',
-        redirect: 'mailto:sampleemail@sampleemail.com'
+        redirect: 'mailto:frazertownshipselfstorage@gmail.com'
     },
     {
         id: 2,
