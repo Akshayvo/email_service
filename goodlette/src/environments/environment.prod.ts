@@ -13,6 +13,6 @@ export const environment = {
   facilityName: 'Goodlette Self Storage',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: 'https://goodlette-staging.netlify.app',
+  websiteUrl: 'https://goodletteselfstorage.com',
   APIKey: `dzF0MlcySjlOOjIyfCU4Nzg3NyQoOD1iVzBzaGRkOWtlb2NeTg==`, // demo north
 };
