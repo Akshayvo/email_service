@@ -72,7 +72,7 @@ export const navLinks = [
       {
         id: "3",
         label: "Auctions",
-        path: "${environment.locationName}/auctions",
+        path: "/auctions",
         
       },
       {
