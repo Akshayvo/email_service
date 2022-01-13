@@ -6,7 +6,7 @@
     </div>
 <div class="pb-4" *ngIf="strConfirmation || strAccessCode; else other_content">
     <div *ngIf="ReservationFee === undefined">
-        Your reservation was successful.
+        New tenants will not be able to move in outside of business hours. If you have any questions, please contact us during business hours.
         <div class="py-4">
             <table>
                 <tbody>
@@ -29,6 +29,7 @@
                     </tbody>
             </table>
         </div>
+        
         <div>
             <button *ngIf="tokenExit" (click)="signOut(logOut)" class="btn btn-primary">LogOff</button>
             <div class="py-3 home-link"><a (click)="navigate('/')">Go to Home</a></div>
@@ -172,6 +173,69 @@
                                 {{period}}
                             </td>
                         </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-6 p-3 confirmation-style" *ngIf="!!showAltDetails">
+                <h3 class="mb-3">Alternate Contact Information</h3>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                Name
+                            </td>
+                            <td>
+                                {{alternateName}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                    Phone Number 
+                            </td>
+                            <td>
+                                {{alternatePhone}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                    Address Line 1
+                            </td>
+                            <td>
+                                {{alternateAddressLine1}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                    Address Line 2
+                            </td>
+                            <td>
+                                {{alternateAddressLine2}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                    City
+                            </td>
+                            <td>
+                                {{alternateCity}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                State
+                        </td>
+                            <td>
+                                {{alternateState}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                    ZIP
+                            </td>
+                            <td>
+                                {{alternateZIP}}
+                            </td>
+                        </tr>                     
                     </tbody>
                 </table>
             </div>

@@ -7,7 +7,7 @@ import { MakeAReservationService } from '../services/make-a-reservation.service'
 import { AddTenantService } from '../services/add-tenant.service';
 import { TenantInfoService } from '../services/tenant-info.service';
 import { Subscription } from 'rxjs';
-import { option } from '../data/view-rates';
+import { option, option1 } from '../data/view-rates';
 import { SignOutService } from '../services/sign-out.service';
 
 
@@ -29,13 +29,21 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
   clickedMoveIn: boolean;
   defaultTotalChargesAmount: number;
   defaultTotalTaxAmount: number;
-
+  alternateIndex: string;
   index: string;
+  showAltDetails = false;
 
   options = [{
     description: '',
     id: ''
   }];
+
+  options1 = [ {
+    description: '',
+    id: ''
+  }];
+
+  alternateStateString: string;
 
   stateString: string;
   navigateToReserve: boolean;
@@ -66,6 +74,13 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
   reservationFeeTax: number;
   description: string;
   monthlyRate: number;
+  alternateName: string;
+  alternatePhone: string;
+  alternateAddressLine1: string;
+  alternateAddressLine2:string;
+  alternateCity: string;
+  alternateState: string;
+  alternateZIP: string;
   myNavLinks: any;
 
   tenantData = {
@@ -133,8 +148,23 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
 
   public fetchOption() {
     this.options = option;
-    this.index = JSON.stringify(this.options.findIndex(x => x.id === this.dataSharingService.objTenant.State));
-    this.stateString = this.options[this.index].description;
+    this.options1 = option1;
+    if (!!this.dataSharingService.objTenant.State) {
+      this.index = JSON.stringify(this.options.findIndex(x => x.id === this.dataSharingService.objTenant.State));
+      if (!!this.options) {
+        this.stateString = this.options[this.index].description;
+      }
+     }
+  
+     if (!!this.dataSharingService.objTenant.AlternateState) {
+      this.alternateIndex = JSON.stringify(this.options.findIndex(x => x.id === this.dataSharingService.objTenant.AlternateState));
+      if (!!this.alternateIndex) {
+        this.alternateStateString = this.options[this.alternateIndex].description;
+      } else {
+        this.alternateIndex = JSON.stringify(this.options1.findIndex(x => x.id === this.dataSharingService.objTenant.AlternateState));
+        this.alternateStateString = this.options1[this.alternateIndex].description; 
+      }
+     }
   }
 
   public navigateToPrevious() {
@@ -164,8 +194,15 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
     this.description = this.dataSharingService.LstUnitTypes.Description;
     this.monthlyRate = this.dataSharingService.LstUnitTypes.MonthlyRate;
     this.navTo = this.dataSharingService.navigationTo;
+    this.alternateName = this.dataSharingService.objTenant.AlternateName;
+  this.alternatePhone = this.dataSharingService.objTenant.AlternatePhone;
+  this.alternateAddressLine1 = this.dataSharingService.objTenant.AlternateAddressLine1;
+  this.alternateAddressLine2 = this.dataSharingService.objTenant.AlternateAddressLine2;
+  this.alternateCity = this.dataSharingService.objTenant.AlternateCity;
+  this.alternateState = this.dataSharingService.objTenant.AlternateState;
+  this.alternateZIP = this.dataSharingService.objTenant.AlternateZIP;
     this.dataSharingService.initMyNavLinks('confirmationData', window.location.pathname);
-
+    this.showAltDetails = this.dataSharingService.showAltDetails;
     this.myNavLinks = this.dataSharingService.getMyNavLinks('confirmationData');
   }
 

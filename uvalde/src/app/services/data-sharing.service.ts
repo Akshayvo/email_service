@@ -40,8 +40,9 @@ export class DataSharingService {
   //   loc8: 'YzI+OEs0ejZqNUg6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O'
   //   // loc8: 'dzJ0OVczSjcqOE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O'  // 29378
   // };
-
+  showAltDetails: boolean;
   apiKey = '';
+  
 
   MoveInData = {
     Description: '',
@@ -88,6 +89,13 @@ export class DataSharingService {
     City: '',
     State: '',
     ZIP: '',
+    AlternateName: '',
+    AlternatePhone: '',
+    AlternateAddressLine1: '',
+    AlternateAddressLine2: '',
+    AlternateCity: '',
+    AlternateState: '',
+    AlternateZIP: ''
   };
 
 

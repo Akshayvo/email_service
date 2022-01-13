@@ -4,15 +4,17 @@ import { FetchDataService } from '../services/fetch-data.service';
 import { UnitTypes, LstUnitTypes, RentalPeriod, LstRentalPeriods } from '../models/unittypes';
 import { ObjTenantDetail, ObjTenant, StrTempTenantToken } from '../models/tenant';
 import { Router, ActivatedRoute } from '@angular/router';
-import { option } from '../data/view-rates';
+import { option, option1 } from '../data/view-rates';
 import { DatePipe } from '@angular/common';
 import { TenantInfoService } from '../services/tenant-info.service';
 import { LeadDaysService } from '../services/lead-days.service';
 import { Subscription } from 'rxjs';
 import * as moment from 'moment';
+import { environment } from '../../environments/environment';
 import { MoveInService } from '../services/moveIn.service';
 import { DataSharingService } from '../services/data-sharing.service';
 import { PreviousRouteService } from '../services/previous-route.service';
+
 
 @Component({
   selector: 'app-reserve-unit-form',
@@ -57,7 +59,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   strConfirmation: string;
 
   successMessage = false;
-
+  showAltDetails = false;
   dataModel: any;
 
   objTenantCopy: any;
@@ -65,6 +67,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   count = 0;
 
   option = [];
+  option1 = [];
   reserveUnitForm: FormGroup;
 
   tokenExit: string;
@@ -104,6 +107,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   valueOfString: any;
 
   isValueUpdated = true;
+  
   MoveIn = {
     dteMoveIn: '',
     intUnitTypeID: 0,
@@ -160,6 +164,39 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         City: ['', Validators.required],
         State: ['', Validators.required],
         ZIP: ['', Validators.required],
+        AlternateName:  ['',  conditionalValidator(
+          (() => this.showAltDetails === false),
+          Validators.required
+        )],
+        // AlternateLastName: ['',  conditionalValidator(
+        //   (() => this.navigateToReserve === true),
+        //   Validators.required
+        // )],
+        AlternatePhone:   ['', [  conditionalValidator(
+          (() => this.showAltDetails === false),
+          Validators.required
+        ),
+          Validators.pattern(
+            '^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$'
+            )
+        ]],
+        AlternateAddressLine1: ['',  conditionalValidator(
+          (() => this.showAltDetails === false),
+          Validators.required
+        )],
+        AlternateAddressLine2: [''],
+        AlternateCity: ['', conditionalValidator(
+          (() => this.showAltDetails === false),
+          Validators.required
+        )],
+        AlternateState: ['', conditionalValidator(
+          (() => this.showAltDetails === false),
+          Validators.required
+        )],
+        AlternateZIP: ['', conditionalValidator(
+          (() => this.showAltDetails === false),
+          Validators.required
+        )],
       }),
 
       lstUnitTypes: new FormArray([
@@ -191,11 +228,15 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
       this.navigateToReserve = true;
       this.dataSharingService.navigateToReserve = true;
       this.dataSharingService.navigateToMoveIn = false;
+      this.showAltDetails = (environment.alternateType.reserve === true) ? true : false;
+      this.dataSharingService.showAltDetails = this.showAltDetails;
     } else {
       if (this.router.url.includes('/move-in')) {
         this.navigateToMoveIn = true;
         this.dataSharingService.navigateToMoveIn = true;
         this.dataSharingService.navigateToReserve = false;
+        this.showAltDetails = (environment.alternateType.moveIn === true) ? true : false;
+        this.dataSharingService.showAltDetails = this.showAltDetails;
       }
     }
   }
@@ -260,6 +301,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   }
   public fetchUSState() {
     this.option = option;
+    this.option1 = option1;
   }
 
   public navigate(location: any) {

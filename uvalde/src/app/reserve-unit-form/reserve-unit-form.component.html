@@ -113,6 +113,194 @@
                     </div>
                 </div>
                    </div>
+                    <!-- Start of Aletrnate Contact Detail -->
+        <div *ngIf="!!showAltDetails">
+            <h2 class="pb-1 pt-3 border-bottom border-dark">
+              Alternate Contact Information
+            </h2>
+            <div class="pt-3 row">
+              <div class="col-md-6 form-group">
+                <label>Name*</label>
+                <input
+                  type="text"
+                  formControlName="AlternateName"
+                  class="form-control"
+                  placeholder="Enter Alternate Name"
+                  [value]=""
+                  [ngClass]="{
+                    'is-invalid':
+                      submitted && f.objTenant.controls.AlternateName.errors
+                  }"
+                />
+                <div
+                  *ngIf="submitted && f.objTenant.controls.AlternateName.errors"
+                  class="invalid-feedback"
+                >
+                  <small
+                    class="form-text text-muted"
+                    *ngIf="f.objTenant.controls.AlternateName.errors.required"
+                    >Please fill out this field</small
+                  >
+                </div>
+              </div>
+              <div class="col-md-6 form-group">
+                <label>Phone Number*</label>
+                <input
+                  type="tel"
+                  formControlName="AlternatePhone"
+                  placeholder="Enter Alternate Phone Number"
+                  class="form-control"
+                  [ngClass]="{
+                    'is-invalid':
+                      submitted && f.objTenant.controls.AlternatePhone.errors
+                  }"
+                />
+                <div
+                  *ngIf="submitted && f.objTenant.controls.AlternatePhone.errors"
+                  class="invalid-feedback"
+                >
+                  <small
+                    class="form-text text-muted"
+                    *ngIf="f.objTenant.controls.AlternatePhone.errors.required"
+                    >Please fill out this field</small
+                  >
+                </div>
+                <div *ngIf="f.objTenant.controls.AlternatePhone.errors">
+                  <small
+                    class="form-text text-muted"
+                    *ngIf="f.objTenant.controls.AlternatePhone.errors.pattern"
+                    >Please enter valid number</small
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12 form-group">
+                <label>Address Line 1*</label>
+                <input
+                  type="text"
+                  formControlName="AlternateAddressLine1"
+                  class="form-control"
+                  placeholder="Enter Alternate Address Line 1"
+                  [ngClass]="{
+                    'is-invalid':
+                      submitted &&
+                      f.objTenant.controls.AlternateAddressLine1.errors
+                  }"
+                />
+                <div
+                  *ngIf="
+                    submitted && f.objTenant.controls.AlternateAddressLine1.errors
+                  "
+                  class="invalid-feedback"
+                >
+                  <small
+                    class="form-text text-muted"
+                    *ngIf="
+                      f.objTenant.controls.AlternateAddressLine1.errors.required
+                    "
+                    >Please fill out this field</small
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12 form-group">
+                <label>Address Line 2</label>
+                <input
+                  type="text"
+                  formControlName="AlternateAddressLine2"
+                  class="form-control"
+                  placeholder="Enter Alternate Address Line 2"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 col-md-6 form-group">
+                <label>City*</label>
+                <input
+                  type="text"
+                  formControlName="AlternateCity"
+                  class="form-control"
+                  placeholder="Enter Alternate City"
+                  [ngClass]="{
+                    'is-invalid':
+                      submitted && f.objTenant.controls.AlternateCity.errors
+                  }"
+                />
+                <div
+                  *ngIf="submitted && f.objTenant.controls.AlternateCity.errors"
+                  class="invalid-feedback"
+                >
+                  <small
+                    class="form-text text-muted"
+                    *ngIf="f.objTenant.controls.AlternateCity.errors.required"
+                    >Please fill out this field</small
+                  >
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 form-group ngx-select-dropdown">
+                <label>State/Province*</label>
+                <select
+                  class="form-control"
+                  formControlName="AlternateState"
+                  [ngClass]="{
+                    'is-invalid':
+                      submitted && f.objTenant.controls.AlternateState.errors
+                  }"
+                >
+                  <option value="" disabled selected>
+                    Select Alternate Contact State/Province
+                  </option>
+                  <optgroup label="U.S. States/Territories">
+                    <option *ngFor="let option of option" [value]="option.id">
+                      {{ option.description }}
+                    </option>
+                  </optgroup>
+                  <optgroup label="Canadian Provinces">
+                    <option *ngFor="let option of option1" [value]="option1.id">
+                      {{ option.description }}
+                    </option>
+                  </optgroup>
+                </select>
+  
+                <div
+                  *ngIf="submitted && f.objTenant.controls.AlternateState.errors"
+                  class="invalid-feedback"
+                >
+                  <small
+                    class="form-text text-muted"
+                    *ngIf="f.objTenant.controls.AlternateState.errors.required"
+                    >Please fill out this field</small
+                  >
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 form-group">
+                <label>Postal Code*</label>
+                <input
+                  type="text"
+                  formControlName="AlternateZIP"
+                  class="form-control"
+                  placeholder="Enter Alternate Postal Code"
+                  [ngClass]="{
+                    'is-invalid':
+                      submitted && f.objTenant.controls.AlternateZIP.errors
+                  }"
+                />
+                <div
+                  *ngIf="submitted && f.objTenant.controls.AlternateZIP.errors"
+                  class="invalid-feedback"
+                >
+                  <small
+                    class="form-text text-muted"
+                    *ngIf="f.objTenant.controls.AlternateZIP.errors.required"
+                    >Please fill out this field</small
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End of Aletrnate Contact Detail -->
                  </div>
 
                  <div class="col-lg-4">
