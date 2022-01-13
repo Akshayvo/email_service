@@ -30,7 +30,7 @@ export const hours = [
     },
     {
         label: 'Saturday: ',
-        data: '9:00AM to 4:00PM'
+        data: ' CLOSED'
     },
     {
         label: 'Sunday: ',

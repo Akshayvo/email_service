@@ -6,7 +6,7 @@
           <span class="contact-details pr-4" *ngFor="let contact of contactDetails">
             <i [class]="contact?.class"></i>
             <span class="contact-links" *ngIf="contact?.label === 'Address:' || contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
-              <a [href]="contact?.redirect" target="{{(contact?.label === 'Address:') ? '_blank' : '_self'}}">&nbsp;{{contact.data}}</a></span>
+              <a [href]="contact?.redirect" target="{{(contact?.label === 'Address:') ? '_blank' : '_self'}}" rel="noreferrer">&nbsp;{{contact.data}}</a></span>
             <ng-template #other_content>&nbsp;{{contact.data}}</ng-template>
           </span>
         </div>
@@ -26,7 +26,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-navbg py-0 bg-secondary">
   <div class="container">
     <a class="navbar-brand" (click)="navigate('/')" class="mr-0 py-2">
-      <img src="{{imageBaseUrl}}/allender-storage-logo.{{imagetype}}"  alt="logo artwork with a blue square and the words Allender Storage spelled in block text">
+      <img src="{{imageBaseUrl}}/allender-storage-logo.{{imagetype}}"  alt="logo artwork with a blue square and the words Allender Storage spelled in block text" height='76' width='200'>
     <!-- <b>Allender Storage</b> -->
     </a>
     <div class="p-2">
