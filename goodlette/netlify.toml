@@ -31,14 +31,14 @@
   to = "/index.html"
   status = 200
 [[redirects]]
-  from = "https://goodletteselfstorage.com/if-we-dont-make-you-happy-our-competitor-will"
-  to = "https://goodletteselfstorage.com"
+  from = "/if-we-dont-make-you-happy-our-competitor-will"
+  to = "/"
   status = 301
   [[redirects]]
-  from = "https://goodletteselfstorage.com/uncategorized/hurricane-season-tips?utm_source=rss&utm_medium=rss&utm_campaign=hurricane-season-tips"
-  to = "https://goodletteselfstorage.com"
+  from = "/uncategorized/hurricane-season-tips?utm_source=rss&utm_medium=rss&utm_campaign=hurricane-season-tips"
+  to = "/"
   status = 301
   [[redirects]]
-  from = "https://goodletteselfstorage.com/uncategorized/hurricane-shutter-storage?utm_source=rss&utm_medium=rss&utm_campaign=hurricane-shutter-storage"
-  to = "https://goodletteselfstorage.com"
+  from = "/uncategorized/hurricane-shutter-storage?utm_source=rss&utm_medium=rss&utm_campaign=hurricane-shutter-storage"
+  to = "/"
   status = 301
