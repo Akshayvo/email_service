@@ -4,7 +4,7 @@
     <h1 class="py-5 text-center">{{contactHeading}}</h1>
     <div class="row bg-light background-padding">
       <div class="col-lg-7 col-md-6 col-12 px-4">
-        <h3 class="heading py-3">Contact Form</h3>
+        <h2 class="heading py-3">Contact Form</h2>
         <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
           <div class="form-group">
               <div [hidden]="" *ngIf="submitted && !this.contactForm.valid" class="alert alert-danger alert-dismissible fade show">
