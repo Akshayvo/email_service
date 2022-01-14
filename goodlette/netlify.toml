@@ -26,19 +26,21 @@
 [build.processing.images]
   compress = true
 # A basic redirect rule
+
 [[redirects]]
+  from = "https://goodletteselfstorage.com/if-we-dont-make-you-happy-our-competitor-will"
+  to = "https://goodletteselfstorage.com"
+  status = 301
+  [[redirects]]
+  from = "https://goodletteselfstorage.com/uncategorized/hurricane-season-tips?utm_source=rss&utm_medium=rss&utm_campaign=hurricane-season-tips"
+  to = "https://goodletteselfstorage.com"
+  status = 301
+  [[redirects]]
+  from = "https://goodletteselfstorage.com/uncategorized/hurricane-shutter-storage?utm_source=rss&utm_medium=rss&utm_campaign=hurricane-shutter-storage "
+  to = "https://goodletteselfstorage.com"
+  status = 301
+
+  [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-[[redirects]]
-  from = "/if-we-dont-make-you-happy-our-competitor-will"
-  to = "/index.html"
-  status = 301
-  [[redirects]]
-  from = "/uncategorized/hurricane-season-tips?utm_source=rss&utm_medium=rss&utm_campaign=hurricane-season-tips"
-  to = "/index.html"
-  status = 301
-  [[redirects]]
-  from = "/uncategorized/hurricane-shutter-storage?utm_source=rss&utm_medium=rss&utm_campaign=hurricane-shutter-storage"
-  to = "/index.html"
-  status = 301
