@@ -1,10 +1,14 @@
 @import "../../styles.scss";
 
 .contact-details {
-  h4 {
+  h4,h3 {
     font-size: 1rem;
   }
 }
+
+h2 {
+    font-size: 1.75rem;
+   }
 
 .display-contact {
   display: block;
