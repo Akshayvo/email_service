@@ -32,13 +32,13 @@
   status = 200
 [[redirects]]
   from = "/if-we-dont-make-you-happy-our-competitor-will"
-  to = "/"
+  to = "/index.html"
   status = 301
   [[redirects]]
   from = "/uncategorized/hurricane-season-tips?utm_source=rss&utm_medium=rss&utm_campaign=hurricane-season-tips"
-  to = "/"
+  to = "/index.html"
   status = 301
   [[redirects]]
   from = "/uncategorized/hurricane-shutter-storage?utm_source=rss&utm_medium=rss&utm_campaign=hurricane-shutter-storage"
-  to = "/"
+  to = "/index.html"
   status = 301
