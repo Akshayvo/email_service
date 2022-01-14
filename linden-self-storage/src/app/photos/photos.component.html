@@ -1,7 +1,7 @@
 <div class="gallery-content">
   <div class="container px-0">
     <div id="selectedImageM" class="text-center selectedImageM">
-      <img *ngIf="selectedImage" src="{{selectedImage.url}}" alt="{{selectedImage.alt}}" height="auto" width="100%">
+      <img *ngIf="selectedImage" src="{{selectedImage.url}}" alt="{{selectedImage.alt}}" height="540" width="100%">
     </div>
     <div class="">
       <div class="data">
@@ -9,7 +9,7 @@
           <span *ngFor="let image of galleryImages; let i = index" class="p-1">
              <img src="{{image.thumb}}" alt="{{image.alt}}" class="tn" height="auto" 
                 data-toggle="image.url"   data-target="#selectedImageM"
-                  (click)=setSelectedImage(image)>
+                  (click)=setSelectedImage(image) width='78' height='78'>
           </span>
           <p class="text-center"><b>(Click On Picture)</b></p>
         </div>

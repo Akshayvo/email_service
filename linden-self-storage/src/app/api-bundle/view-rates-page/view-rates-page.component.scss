@@ -106,6 +106,12 @@ p {
   text-align: left;
 }
 
+// .viewRates{
+//   h2 strong{
+//   font-size: 28px;
+//   }
+// }
+
 @media only screen and (min-width: 992px) {
   .viewrates-mobile {
     display: none;
@@ -138,7 +144,7 @@ p {
 
 .viewRates {
   background-color: $white;
-  h3 {
+  h2 {
     color: $white;
     background-color: $primary;
     font-size: 28px;

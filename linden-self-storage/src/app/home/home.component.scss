@@ -30,6 +30,7 @@
 .display-contact {
   display: flex;
   flex-wrap: wrap;
+  line-height: 1.7;
 }
 
 .jumbotron {
@@ -129,6 +130,9 @@
   }
 }
 
+.aboutUsHeading{
+  font-size: 19px;
+}
 
 @media only screen and (min-width: 1200px) and (max-height: 750px) and (min-height: 640px) {
   .disp {
