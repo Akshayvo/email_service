@@ -1,11 +1,11 @@
 export const galleryHome = [
-  {
-    // tslint:disable-next-line: max-line-length
-    url: `village-warehouse-inc-1`,
-    // tslint:disable-next-line:max-line-length
-    thumb: `village-warehouse-inc-1-thumb`,
-    alt: ``
-  },
+  // {
+  //   // tslint:disable-next-line: max-line-length
+  //   url: `village-warehouse-inc-1`,
+  //   // tslint:disable-next-line:max-line-length
+  //   thumb: `village-warehouse-inc-1-thumb`,
+  //   alt: ``
+  // },
   {
     // tslint:disable-next-line: max-line-length
     url: `village-warehouse-inc-2`,

@@ -35,6 +35,13 @@ h1 {
       filter: alpha(opacity=40);
       cursor: pointer;
       padding-top: 25%;
+      height:auto;
+    }
+  }
+
+  .col-4{
+    img{
+      height:auto;
     }
   }
 
@@ -52,7 +59,7 @@ h1 {
   width: 100%;
   margin: auto;
 
-  h3 {
+  h2 {
     font-size: 1.3rem;
   }
 
@@ -117,7 +124,7 @@ h1 {
   }
 
   .unit-data {
-    h3 {
+    h2 {
       padding-top: 20px;
     }
   }

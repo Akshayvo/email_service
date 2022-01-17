@@ -13,8 +13,8 @@ export const payRentPageContent = `Take a moment to review our easy login instru
 export const storageTipsTitle = `Storage Tips  | Village Warehouse Inc.`;
 export const storageTipsContent = `Follow these easy self storage tips to make your stay with Village Warehouse Inc. a breeze! Have questions? Call today!`;
 
-export const unitSizerPageTitle = ``;
-export const unitSizerPageContent = ``;
+export const unitSizerPageTitle = `Unit Sizer  | Village Warehouse Inc.`;
+export const unitSizerPageContent = `Are you not sure what size unit you require? Use this guide to help you figure out what fits inside the units offered at Self Storage Facility`;
 
 export const contactPageTitle = `Contact Us  | Village Warehouse Inc.`;
 export const contactPageContent = `Do you have a question about your account, or our self storage, boat, and recreational vehicle storage? Use our contact form, or call us today!`;

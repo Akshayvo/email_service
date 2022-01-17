@@ -23,18 +23,18 @@ export const contact = [
 ];
 
 export const hours = [
-    {
-        label: 'Monday - Friday: ',
-        data: '9:00AM to 5:00PM'
-    },
-    {
-        label: 'Saturday: ',
-        data: '9:00 am - 12:00 pm'
-    },
-    {
-        label: 'Sunday: ',
-        data: 'CLOSED'
-    },
+    // {
+    //     label: 'Monday - Friday: ',
+    //     data: ''
+    // },
+    // {
+    //     label: 'Saturday: ',
+    //     data: '9:00 am - 12:00 pm'
+    // },
+    // {
+    //     label: 'Sunday: ',
+    //     data: 'CLOSED'
+    // },
     {
         label: 'Storage Access Hours: ',
         data: '24 hours a day, 7 days a week'

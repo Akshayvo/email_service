@@ -4,6 +4,11 @@
 .vertical-line {
   border-left: 1px solid black;
   padding-left: 50px;
+  
+  h2{
+    font-size: 28px;
+  }
+  
 }
 
 
@@ -13,8 +18,10 @@
 }
 
 .contact-links {
+ 
   a {
     color: black;
+    padding: 20px 0px;
   }
 }
 
@@ -25,12 +32,15 @@
 }
 
 .forgot-link {
+  margin:0rem 0rem 0.5rem;
   a {
     color: $primary;
     text-decoration: underline;
     cursor: pointer;
   }
 }
+
+
 
 .loader {
   border: 5px solid #f3f3f3;
