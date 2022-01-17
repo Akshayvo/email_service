@@ -2,7 +2,7 @@ export const contact = [
     {
         id: 0,
         label: 'Address:',
-        data: '2326, 3008 PA-257, Seneca, PA 16346',
+        data: '3008 PA-257, Seneca, PA 16346',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
         redirect: 'https://goo.gl/maps/63iRvweA3cAUGHMj8'
     },
