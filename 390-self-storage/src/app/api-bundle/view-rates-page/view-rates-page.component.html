@@ -56,9 +56,9 @@
       </div>
       <div class="col-4 d-flex justify-content-center" >
         <div *ngIf="lstUnitType.IsUnitsAvailable" >
-          <div [id]="locationReserve" class=" py-1 buttons" >
+          <!-- <div [id]="locationReserve" class=" py-1 buttons" >
               <button class="btn  btn-primary" (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
-          </div>
+          </div> -->
           <div [id]="locationMovein" class="py-1 buttons">
               <button class=" btn btn-primary" (click)="navigate('/view-rates/move-in', lstUnitType)">Rent Now</button>
               <link *ngIf="lstUnitType.IsUnitsAvailable" itemprop="availability" href="https://schema.org/InStock" />
