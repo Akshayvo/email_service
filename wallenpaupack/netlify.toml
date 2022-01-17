@@ -26,22 +26,22 @@
   compress = true
 # A basic redirect rule
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-[[redirects]]
   from = "https://wallenpaupackselfstorage.com/pay-rent/lake-ariel/payment"
   to = "https://wallenpaupackselfstorage.com/pay-rent/lake-ariel/rent-sub/payment"
-  status = 200
+  status = 301
 [[redirects]]
   from = "https://wallenpaupackselfstorage.com/pay-rent/hawley/payment"
   to = "https://wallenpaupackselfstorage.com/pay-rent/hawley/rent-sub/payment"
-  status = 200
+  status = 301
 [[redirects]]
   from = "https://wallenpaupackselfstorage.com/pay-rent/lakeville/payment"
   to = "https://wallenpaupackselfstorage.com/pay-rent/lakeville/rent-sub/payment"
-  status = 200
+  status = 301
 [[redirects]]
   from = "https://wallenpaupackselfstorage.com/pay-rent/greentown/payment"
   to = "https://wallenpaupackselfstorage.com/pay-rent/greentown/rent-sub/payment"
+  status = 301
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
   status = 200
