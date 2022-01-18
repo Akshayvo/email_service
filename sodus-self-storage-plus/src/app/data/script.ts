@@ -30,7 +30,7 @@ export const script = {               // Please fill this script according to fa
       "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Sodus_Self_storage/jpg/stock-self-storage-169.jpg" // 16:9
      ],
      telephone: contact[contactIndex].data,
-     map: "https://goo.gl/maps/ULKeBBUppyrD7Cw59",
+     map: "https://goo.gl/maps/WkxXAVM8asKL5k6B8",
      description: "Sodus Self Storage Plus is the newest self storage facility in Sodus, New York. We are proud to serve Sodus, Sodus Point, Willliamson, and the surrounding communities in Wayne County with clean, well-maintained self storage units and amazing customer service at affordable rates. Our facility is built from the ground up with all of the modern conveniences required to make your storage or vehicle parking experience a fast and easy one.",
      streetAddress: "148 W 51st St",
      state: "New York",

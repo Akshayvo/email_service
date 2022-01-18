@@ -4,7 +4,7 @@ export const contact = [
         label: 'Address:',
         data: '6295 Ridge Rd, Sodus, NY 14551',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
-        redirect: 'https://goo.gl/maps/bgdKbP4AUKnVFzNo9'
+        redirect: 'https://goo.gl/maps/WkxXAVM8asKL5k6B8'
     },
     {
         id: 1,
@@ -39,8 +39,8 @@ export const contact = [
 
 export const hours = [
     {
-        label: 'By Appointment Only',
-        // data: '9:00AM to 7:00PM'
+        label: 'Facility Hours:',
+        data: 'By Appointment Only'
     },
     // {
     //     label: 'Saturday: ',
