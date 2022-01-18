@@ -6,9 +6,9 @@ import { Injectable } from '@angular/core';
 export class DataSharingService {
 
  locationAPIKey = {                                                    
-    loc1: 'UDIoOEQ0YzZ2NDw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28464
-    loc2: 'aDJLOGk0KzZBNng6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28466
-    loc3: 'aDJLOGk0KzZBNng6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28466
+    loc1: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28464
+    loc2: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28466
+    loc3: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28466
   };
 
 //  locationAPIKey = {                                                    
@@ -40,6 +40,7 @@ export class DataSharingService {
   eventName: string;
   paymentTab: string;
   showAltDetails: boolean;
+  showMilitaryDetails: boolean;
 
   apiKey = '';
 
@@ -88,6 +89,16 @@ export class DataSharingService {
     City: '',
     State: '',
     ZIP: '',
+    DriversLicense: ' ',
+    DriversLicenseExpDate: ' ',
+    DateOfBirth: ' ',
+    MilitaryType: 0,
+    MilitaryBranch: 0,
+    MilitaryID: ' ',
+    DeployedUntil: ' ',
+    MilitaryDivision: ' ',
+    CommandingOfficer: ' ',
+    CommandingOfficerPhone: ' ',
     AlternateName: '',
     AlternatePhone: '',
     AlternateAddressLine1: '',

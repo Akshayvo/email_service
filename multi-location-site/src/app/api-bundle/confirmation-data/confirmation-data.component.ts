@@ -70,6 +70,16 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
   alternateZIP: string;
   reservationFee: number;
   reservationFeeTax: number;
+  driversLicense : string;
+  driversLicenseExpDate : string;
+  dateOfBirth : string;
+  militaryType : number;
+  militaryBranch: number;
+  militaryID : string;
+  deployedUntil : string;
+  militaryDivision : string;
+  commandingOfficer : string;
+  commandingOfficerPhone : string;
   description: string;
   monthlyRate: number;
   myNavLinks: any;
@@ -91,6 +101,7 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
 
   period: string;
   showAltDetails = false;
+  showMilitaryDetails = false;
   navTo: any;
 
   facilityLocation: string;
@@ -160,6 +171,7 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
+    
     this.firstName = this.dataSharingService.objTenant.FirstName;
     this.lastName = this.dataSharingService.objTenant.LastName;
     this.phone = this.dataSharingService.objTenant.Phone;
@@ -182,6 +194,17 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
     this.navTo = this.dataSharingService.navigationTo;
     this.dataSharingService.initMyNavLinks('confirmationData', window.location.pathname);
     this.showAltDetails = this.dataSharingService.showAltDetails;
+    this.showMilitaryDetails = this.dataSharingService.showMilitaryDetails;
+    this.driversLicense = this.dataSharingService.objTenant.DriversLicense;
+    this.driversLicenseExpDate = this.dataSharingService.objTenant.DriversLicenseExpDate;
+    this.dateOfBirth = this.dataSharingService.objTenant.DateOfBirth;
+    this.militaryType = this.dataSharingService.objTenant.MilitaryType;
+    this.militaryBranch = this.dataSharingService.objTenant.MilitaryBranch;
+    this.militaryID = this.dataSharingService.objTenant.MilitaryID;
+    this.deployedUntil = this.dataSharingService.objTenant.DeployedUntil;
+    this.militaryDivision = this.dataSharingService.objTenant.MilitaryDivision;
+    this.commandingOfficer = this.dataSharingService.objTenant.CommandingOfficer;
+    this.commandingOfficerPhone = this.dataSharingService.objTenant.CommandingOfficerPhone;
 
     this.myNavLinks = this.dataSharingService.getMyNavLinks('confirmationData');
 
