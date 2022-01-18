@@ -20,14 +20,15 @@
         <form [formGroup]="reserveUnitForm" (ngSubmit)="onSubmit()" >
          <div class="row justify-content">
              <div formGroupName="objTenant" class="col-lg-12">
-                <p class="text-center reserve-text" *ngIf="navigateToReserve">
-                    <b>If either of the following apply, please call or e-mail the office to reserve a unit:
-                        <ol type="1" class="list-text">
-                            <li>You are a current tenant, you will not be refunded the 2nd deposit if you rent online!</li>
-                            <li>You qualify for a Military Discount, the discount will not apply if you rent online!</li>
-                        </ol>
+                <p class="text-center moveIn-text" *ngIf="navigateToReserve"> <b>The online rental/reservation is NOT COMPLETE, until you are notified by email by Access Self Storage.</b>&nbsp;<br>
+                    You will receive an e-mail shortly with your instructions to complete this process. If you rent a unit online, after business hours, you will be contacted the next business day.
+                    <b>
+                        
+                        <p>*If you are MILITARY, please contact the office to rent a unit. YOU WILL NOT RECEIVE THE 10% Discount if your rent online!*</p>
+                        <p>*If you are a CURRENT TENANT, please contact the office to rent another unit. If you rent it online, the 2nd deposit WILL NOT BE REFUNDED. *</p>
+                        
                     </b>
-                </p>
+                    </p>
                  <h2 class="pb-3  border-bottom border-dark">Tenant Information</h2>
 
                  <div class="row pt-3 ">
