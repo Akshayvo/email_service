@@ -14,7 +14,7 @@ export const environment = {
   facilityName: 'Lancaster Self Storage',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: 'lancaster-self-storage-staging.netlify.app',
+  websiteUrl: 'https://lancasterscselfstorage.com',
   APIKey: `bTJUOW40TDhbNls6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, 
   // APIKey: `Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O` //testing
 };
