@@ -2,23 +2,23 @@ export const contactsHomePage = [
     {
         id: 1,
         label: 'Address: ',
-        data: '17860 US-98, Foley, AL 36535',
+        data: '6 Canton St, Baldwinsville, NY 13027',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://g.page/r/CeBIy_cEP-szEBA'
+        redirect: 'https://goo.gl/maps/MZ2bUNFNT1HWfDfw5'
     },
     {
         id: 2,
         label: 'Email: ',
-        data: `accounts@storageplusbaldwin.com`,
+        data: `syrasoftsoftware@gmail.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`accounts@storageplusbaldwin.com`'
+        redirect: 'mailto:`syrasoftsoftware@gmail.com`'
     },
     {
         id: 3,
         label: 'Phone: ',
-        data: '(251) 970-3168',
+        data: '(505) 555-5555',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:2519703168'
+        redirect: 'tel:5055555555'
     },
 ];
 
@@ -37,23 +37,23 @@ export const contactsLocation1 = [
     {
         id: 1,
         label: 'Address: ',
-        data: '17860 US-98, Foley, AL 36535',
+        data: '6 Canton St, Baldwinsville, NY 13027',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://g.page/r/CeBIy_cEP-szEBA'
+        redirect: 'https://goo.gl/maps/MZ2bUNFNT1HWfDfw5'
     },
     {
         id: 2,
         label: 'Email: ',
-        data: `accounts@storageplusbaldwin.com`,
+        data: `syrasoftsoftware@gmail.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`accounts@storageplusbaldwin.com`'
+        redirect: 'mailto:`syrasoftsoftware@gmail.com`'
     },
     {
         id: 3,
         label: 'Phone: ',
-        data: '(251) 970-3168',
+        data: '(505) 555-5555',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:2519703168'
+        redirect: 'tel:5055555555'
     },
 ];
 
@@ -78,23 +78,23 @@ export const contactsLocation2 = [
     {
         id: 1,
         label: 'Address: ',
-        data: '15410 AL-104, Silverhill, AL 36576',
+        data: '6 Canton St, Baldwinsville, NY 13027',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://g.page/r/CT1A0QzwMwCHEBA'
+        redirect: 'https://goo.gl/maps/MZ2bUNFNT1HWfDfw5'
     },
     {
         id: 2,
         label: 'Email: ',
-        data: 'accounts@storageplusbaldwin.com',
+        data: `syrasoftsoftware@gmail.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`accounts@storageplusbaldwin.com`'
+        redirect: 'mailto:`syrasoftsoftware@gmail.com`'
     },
     {
         id: 3,
         label: 'Phone: ',
-        data: '(251) 970-3168',
+        data: '(505) 555-5555',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:2519703168'
+        redirect: 'tel:5055555555'
     },
 ];
 
@@ -116,23 +116,23 @@ export const contactsLocation3 = [
     {
         id: 1,
         label: 'Address: ',
-        data: '8089A US-98, Fairhope, AL 36532',
+        data: '6 Canton St, Baldwinsville, NY 13027',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://g.page/r/CeskY5sIbmGZEAE'
+        redirect: 'https://goo.gl/maps/MZ2bUNFNT1HWfDfw5'
     },
     {
         id: 2,
         label: 'Email: ',
-        data: 'accounts@storageplusbaldwin.com',
+        data: `syrasoftsoftware@gmail.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`accounts@storageplusbaldwin.com`'
+        redirect: 'mailto:`syrasoftsoftware@gmail.com`'
     },
     {
         id: 3,
         label: 'Phone: ',
-        data: '(251) 970-3168',
+        data: '(505) 555-5555',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:2519703168'
+        redirect: 'tel:5055555555'
     },
 ];
 

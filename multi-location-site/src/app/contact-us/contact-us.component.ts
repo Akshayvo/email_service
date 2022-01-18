@@ -163,7 +163,7 @@ public fetchTwitter() {
   }
 
   public fetchContactDetailsLocation1() {
-    this.heading = `Storage Plus of Baldwin County - Foley`;
+    this.heading = `Self Storage Facility - Location-1`;
     this.locationId = '1'
     this.contactDetails = contactsLocation1;
     this.hoursDetails = hoursLocation1;
@@ -171,13 +171,13 @@ public fetchTwitter() {
   
   public fetchContactDetailsLocation2() {
     this.locationId = '2'
-    this.heading = `Storage Plus of Baldwin County - Silverhill`;
+    this.heading = `Self Storage Facility - Location-2`;
     this.contactDetails = contactsLocation2;
     this.hoursDetails = hoursLocation2;
   }
 
   public fetchContactDetailsLocation3() {
-    this.heading = `Storage Plus of Baldwin County - Barnwell`;
+    this.heading = `Self Storage Facility - Location-3`;
     this.locationId = '3'
     this.contactDetails = contactsLocation3;
     this.hoursDetails = hoursLocation3;

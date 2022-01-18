@@ -46,11 +46,11 @@ export class PayRentComponent implements OnInit {
     });
     this.canonical.create();
     if (this.router.url.includes('location-1')) {
-      this.name = ' Foley';
+      this.name = ' Location-1';
   } else if (this.router.url.includes('location-2')) {
-    this.name = ' Silverhill';
+    this.name = ' Location-2';
   } else if (this.router.url.includes('location-3')) {
-    this.name = 'Barnwell';
+    this.name = 'Location-3';
   }
     if (!!localStorage.getItem('APIKey')) {
       this.dataSharingService.apiKey = localStorage.getItem('APIKey');

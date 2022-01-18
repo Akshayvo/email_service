@@ -51,7 +51,7 @@ export class ThankYouComponent implements OnInit, OnDestroy {
       name: 'description',
       content: `We've received your reservation! One of our friendly staff will be in touch!`
     });
-    this.titleService.setTitle('Thank You For Reserving Your Unit at Storage Plus of Baldwin County!');
+    this.titleService.setTitle('Thank You For Reserving Your Unit at Self Storage Facility!');
   }
 
   ngOnInit() {

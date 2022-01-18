@@ -132,19 +132,19 @@ export class LoginComponent implements OnInit, OnDestroy {
 
     if (this.router.url.includes('location-1')) {
       this.id = 1;
-      this.name = 'Storage Plus of Baldwin County - Foley';
+      this.name = 'Self Storage Facility - Location-1';
       this.contact = contactsLocation1;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc1);
     } else  if (this.router.url.includes('location-2')) {
       this.id = 2;
-      this.name = 'Storage Plus of Baldwin County - Silverhill';
+      this.name = 'Self Storage Facility - Location-2';
       this.contact = contactsLocation2;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc2);
     } else  if (this.router.url.includes('location-3')) {
       this.id = 3;
-      this.name = 'Storage Plus of Baldwin County - Barnwell';
+      this.name = 'Self Storage Facility - Location-3';
       this.contact = contactsLocation3;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc3);

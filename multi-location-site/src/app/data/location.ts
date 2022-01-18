@@ -23,18 +23,18 @@ export const tabs = [
     //     path: 'move-in',
     //     active: false,
     // },
-    {
-        id: '3',
-        name: 'About Us',
-        path: 'about',
-        active: false,
-    },
-    {
-        id: '4',
-        name: 'Directions',
-        path: 'directions',
-        active: false,
-    },
+    // {
+    //     id: '3',
+    //     name: 'About Us',
+    //     path: 'about',
+    //     active: false,
+    // },
+    // {
+    //     id: '4',
+    //     name: 'Directions',
+    //     path: 'directions',
+    //     active: false,
+    // },
 ];
 
 export const headingLocation1 = ``;
@@ -51,11 +51,11 @@ export const headingLocation6 = ``;
 
 
 
-export const headingReservePageLocation1 = `Are you ready to rent a unit at Foley`;
+export const headingReservePageLocation1 = `Are you ready to rent a unit at Location-1`;
 
-export const headingReservePageLocation2 = `Are you ready to rent a unit at Silverhill`;
+export const headingReservePageLocation2 = `Are you ready to rent a unit at Location-2`;
 
-export const headingReservePageLocation3 = `Are you ready to rent a unit at Barnwell`;
+export const headingReservePageLocation3 = `Are you ready to rent a unit at Location-3`;
 
 export const headingReservePageLocation4 = ``;
 
@@ -63,17 +63,17 @@ export const headingReservePageLocation5 = `Are you ready to rent a unit at Fair
 
 export const headingReservePageLocation6 = `Are you ready to rent a unit at Robertsdale`;
 
-export const heading1 = `Storage Plus of Baldwin County - Foley`;
+export const heading1 = `Self Storage Facility - Location-1`;
 
-export const heading2 = `Storage Plus of Baldwin County - Silverhill`;
+export const heading2 = `Self Storage Facility - Location-2`;
 
-export const heading3 = `Storage Plus of Baldwin County - Barnwell`;
+export const heading3 = `Self Storage Facility - Location-3`;
 
-export const heading4 = `Storage Plus of Baldwin County - Belforest`;
+export const heading4 = `Self Storage Facility - Belforest`;
 
-export const heading5 = `Storage Plus of Baldwin County - Fairhope`;
+export const heading5 = `Self Storage Facility - Fairhope`;
 
-export const heading6 = `Storage Plus of Baldwin County - Robertsdale`;
+export const heading6 = `Self Storage Facility - Robertsdale`;
 
 
 export const unitSizerLocation1 = [

@@ -99,7 +99,7 @@ id = 3;
               content: `${this.location1PageContent}`
     });
     this.titleService.setTitle(`${this.location1PageTitle}`);
-            this.locationName = `Storage Plus of Baldwin County - Foley`;
+            this.locationName = `Self Storage Facility - Location-1`;
             this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
             this.dataSharingService.locationName = this.locationName;
             this.script = Location1Script;
@@ -123,7 +123,7 @@ id = 3;
              content: `${this.location2PageContent}`
     });
     this.titleService.setTitle(`${this.location2PageTitle}`);
-           this.locationName = `Storage Plus of Baldwin County - Silverhill`;
+           this.locationName = `Self Storage Facility - Location-2`;
            this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
            this.dataSharingService.locationName = this.locationName;
            this.script = Location2Script;
@@ -147,7 +147,7 @@ id = 3;
           content: `${this.location3PageContent}`
     });
     this.titleService.setTitle(`${this.location3PageTitle}`);
-        this.locationName = `Storage Plus of Baldwin County - Barnwell Location`;
+        this.locationName = `Self Storage Facility - Location-3 Location`;
         this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
         this.dataSharingService.locationName = this.locationName;
         this.script = Location3Script;

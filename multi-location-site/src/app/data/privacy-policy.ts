@@ -124,7 +124,7 @@ export const privacyPolicy = [
       }
     ],
     note: `If you feel that we are not abiding by this privacy policy, you should contact us immediately via telephone
-    at  <a href="tel:2519703168" style="color: #000;">(251) 970-3168</a> or via email at <a href="mailto:accounts@storageplusbaldwin.com" style="color:#000;">accounts@storageplusbaldwin.com</a>.`,
+    at  <a href="tel:5055555555" style="color: #000;">(505) 555-5555</a> or via email at <a href="mailto:syrasoftsoftware@gmail.com" style="color:#000;">syrasoftsoftware@gmail.com</a>.`,
     // sharing: [
     //   {
     //     heading: `Sharing`

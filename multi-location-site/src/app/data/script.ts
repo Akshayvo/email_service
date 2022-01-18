@@ -57,9 +57,9 @@ const emailIndex2 = contactsLocation2.findIndex(x => x.label === 'Email: ');
 const emailIndex3 = contactsLocation3.findIndex(x => x.label === 'Email: ');
 
   
-export const nameLocation1 = `Storage Plus of Baldwin County - Foley`;
-export const nameLocation2 = `Storage Plus of Baldwin County - Silverhill`;
-export const nameLocation3 = `Storage Plus of Baldwin County - Barnwell`;
+export const nameLocation1 = `Self Storage Facility - Location-1`;
+export const nameLocation2 = `Self Storage Facility - Location-2`;
+export const nameLocation3 = `Self Storage Facility - Location-3`;
 
 
 
@@ -75,62 +75,62 @@ export const urlLocation3 = `${environment.websiteUrl}/${environment.locationNam
 export const description1 = `brick self storage facility front office with a green lawn
                              in the front and blue sky above`;
 
-export const description2 = `Our Silverhill location has a number of regular and climate controlled unit types `;
+export const description2 = `Our Location-2 location has a number of regular and climate controlled unit types `;
 
-export const description3 = `Our Barnwell location has a number of regular and climate controlled unit types ideal
+export const description3 = `Our Location-3 location has a number of regular and climate controlled unit types ideal
                              for just about any self storage need at an affordable price!  Our 24-hour access policy
                              makes coming and going on your schedule a breeze!`;
 
-export const maplocation1 = 'https://goo.gl/maps/FqeHH1xEv8AP4GLg6';
-export const maplocation2 = 'https://goo.gl/maps/FTweCN2UdexnsJB49';
-export const maplocation3 = 'https://goo.gl/maps/EPmskBQ9TgFTBXcb8';
+export const maplocation1 = 'https://goo.gl/maps/MZ2bUNFNT1HWfDfw5';
+export const maplocation2 = 'https://goo.gl/maps/MZ2bUNFNT1HWfDfw5';
+export const maplocation3 = 'https://goo.gl/maps/MZ2bUNFNT1HWfDfw5';
 
 export const addressLoaction1 = {
   '@type': 'PostalAddress',
-      'streetAddress': '17860 US-98',
-      'addressLocality': 'Foley',
-      'addressRegion': 'AL',
-      'postalCode': '36535',
+      'streetAddress': '',
+      'addressLocality': '',
+      'addressRegion': '',
+      'postalCode': '',
       'addressCountry': 'United state'
 };
 
 export const addressLoaction2 = {
   '@type': 'PostalAddress',
-  'streetAddress': '15410 AL-104',
-  'addressLocality': 'Silverhill',
-  'addressRegion': 'AL',
-  'postalCode': '36576',
+  'streetAddress': '',
+  'addressLocality': '',
+  'addressRegion': '',
+  'postalCode': '',
   'addressCountry': 'United state'
 }
 
 export const addressLoaction3 = {
-  '@type': 'PostalAddress',
-  'streetAddress': '8089A US-98',
-  'addressLocality': 'Fairhope',
-  'addressRegion': 'AL',
-  'postalCode': '36532',
-  'addressCountry': 'United state'
+  '@type': '',
+  'streetAddress': '',
+  'addressLocality': '',
+  'addressRegion': '',
+  'postalCode': '',
+  'addressCountry': ''
 } 
 
 
 
 
 export const imageLocation1 = [
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-foley11.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-foley196.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-foley43.jpg'
+  '',
+  '',
+  ''
  ]
 
  export const imageLocation2 = [
-      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-silverhill-11.jpg',
-      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-silverhill-169.jpg',
-      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-silverhill-43.jpg'
+      '',
+      '',
+      ''
  ]
 
  export const imageLocation3 = [
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-11.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-169.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-43.jpg'
+  '',
+  '',
+  ''
  ]
 
  
@@ -146,7 +146,7 @@ export const homePageScript = [
       'address' : addressLoaction1,
     'telephone': contactsLocation1[contactIndex1].data,
     'image' : imageLocation1,
-    'logo': 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/jpg/storage-plus-baldwin-county-logo.jpg'
+    'logo': 'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Sample_Self_Storage_Multi/jpg/sample-self-storage-north.jpg'
   }, 
   {
     '@context' : 'http://schema.org',
