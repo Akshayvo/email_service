@@ -90,7 +90,7 @@
                             {{driversLicense}}
                         </td>
                     </tr>
-                    <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
+                    <!-- <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
                         <td>
                             Driver's License Expiration Date
                         </td>
@@ -161,7 +161,7 @@
                         <td>
                             {{commandingOfficerPhone}}
                         </td>
-                    </tr>                    
+                    </tr>                     -->
                 </tbody>
             </table>
         </div>
@@ -169,7 +169,7 @@
             <h3 class="mb-3">Alternate Contact Information</h3>
             <table>
                 <tbody>
-                    <tr>
+                    <tr *ngIf="alternateName" >
                         <td>
                             Name
                         </td>
@@ -177,7 +177,7 @@
                             {{alternateName}}
                         </td>
                     </tr>
-                    <tr>
+                    <tr *ngIf="alternatePhone">
                         <td>
                                 Phone Number 
                         </td>
@@ -185,7 +185,7 @@
                             {{alternatePhone}}
                         </td>
                     </tr>
-                    <tr>
+                    <tr *ngIf="alternateAddressLine1">
                         <td>
                                 Address Line 1
                         </td>
@@ -193,7 +193,7 @@
                             {{alternateAddressLine1}}
                         </td>
                     </tr>
-                    <tr>
+                    <tr *ngIf="alternateAddressLine2">
                         <td>
                                 Address Line 2
                         </td>
@@ -201,7 +201,7 @@
                             {{alternateAddressLine2}}
                         </td>
                     </tr>
-                    <tr>
+                    <tr *ngIf="alternateCity">
                         <td>
                                 City
                         </td>
@@ -209,7 +209,7 @@
                             {{alternateCity}}
                         </td>
                     </tr>
-                    <tr>
+                    <tr *ngIf="alternateStateString">
                         <td>
                             State
                     </td>
@@ -217,7 +217,7 @@
                             {{alternateStateString}}
                         </td>
                     </tr>
-                    <tr>
+                    <tr *ngIf="alternateZIP">
                         <td>
                                 ZIP
                         </td>
