@@ -26,6 +26,16 @@
   compress = true
 # A basic redirect rule
 [[redirects]]
+  from = "https://aqualitystoragetx.com/pay-rent/holly-avenue/payment"
+  to = "https://aqualitystoragetx.com/pay-rent/holly-avenue/rent-sub/payment"
+  status = 301
+[[redirects]]
+  from = "https://aqualitystoragetx.com/pay-rent/line-drive/payment"
+  to = "https://aqualitystoragetx.com/pay-rent/line-drive/rent-sub/payment"
+  status = 301
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+
+  
