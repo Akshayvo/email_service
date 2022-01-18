@@ -86,17 +86,14 @@
             <div *ngFor="let contact of contactDetails" class="display-contact">
               <div
   
-                *ngIf="((contact?.label != 'Email:') && (contact?.label != 'Phone:'))"
+                
                 ><h3 [class.py-1]="contact.label" class="mb-0">
                   <strong>{{ contact.label }}&nbsp;</strong>
                 </h3></div
               >
               <div
                 class="contact-links"
-                *ngIf="contact?.label === 'Address:' &&
-                  contact?.label != 'Email:' &&
-                  contact?.label != 'Phone:'
-                "
+                
               >
                 <h4 class="py-1">
                     <a
@@ -112,47 +109,16 @@
                 </h4>
               </div>
             </div>
-            <div class="display-contact" *ngFor="let hour of hours">
-              <h4
-                [class.py-1]="hour.label"
-                *ngIf="hour.label === 'Hours: '"
-              >
-                <strong>{{ hour.label }}</strong>
-              </h4>
-              <h4 class="py-1" *ngIf="hour.label === 'Hours: '">
-               {{ hour.data }}
-              </h4>
-            </div>
-            <div *ngFor="let contact of contactDetails" class="display-contact">
-              <div *ngIf="contact?.label === 'Phone:'"
-                ><h4 [class.py-1]="contact.label" class="mb-0">
-                  <strong>{{ contact.label }} &nbsp;</strong>
-                </h4></div
-              >
-              <div class="contact-links" *ngIf="contact?.label === 'Phone:'">
-                <h4 class="py-1">
-                    <a
-                      [href]="contact?.redirect"
-                      target="{{
-                        contact?.label === 'Facility Address:'
-                          ? '_blank'
-                          : '_self'
-                      }}"
-                      rel="noopener"
-                      >{{ contact.data }}</a
-                    >
-                </h4>
-              </div>
-            </div>
+            
   
             <span class="display-contact" *ngFor="let hour of hours">
               <h4
                 [class.py-1]="hour.label"
-                *ngIf="hour.label != 'Business Hours: '"
+                
               >
                 <strong>{{ hour.label }}</strong>
               </h4>
-              <h4 class="py-1" *ngIf="hour.label != 'Business Hours: '">
+              <h4 class="py-1" >
                 {{ hour.data }}
               </h4>
             </span>
