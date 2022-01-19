@@ -79,7 +79,7 @@
       </div>
       <div class="col-lg-5 col-md-6 col-12 px-4 contact-details">
         <div class="my-4 contact-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12429.494335085277!2d-104.6893824!3d38.8468047!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x95aaf15095550fc6!2sClaremont%20Park%20Self%20Storage!5e0!3m2!1sen!2sus!4v1634075215603!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12429.494335085277!2d-104.6893824!3d38.8468047!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x95aaf15095550fc6!2sClaremont%20Park%20Self%20Storage!5e0!3m2!1sen!2sus!4v1634075215603!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" title="Facility Google Map" allowfullscreen="" loading="lazy"></iframe>
         </div>
         <p>
           <span *ngFor="let contact of contactDetails" class="display-contact">
@@ -90,10 +90,10 @@
             <ng-template #other_content>&nbsp;<h4>{{contact.data}}</h4></ng-template><br>
           </span>
         </p>
-        <h4><b>Facility Hours:</b></h4>
+        <h3><b>Facility Hours:</b></h3>
         <p>
           <span class="display-contact" *ngFor="let hour of hours">
-            <h4><strong>{{hour.label}}</strong></h4>&nbsp;<h4>{{hour.data}}</h4><br>
+            <h3><strong>{{hour.label}}</strong></h3>&nbsp;<h4>{{hour.data}}</h4><br>
           </span>
         </p>
       </div>
