@@ -31,11 +31,11 @@ export const payRentPageContent = `Take a moment to review our easy login instru
 export const storageTipsTitle = `Storage Tips  | Herlihy Self Storage`;
 export const storageTipsContent = `Use our helpful self storage tips list to make your stay at Herlihy Self Storage an easy and enjoyable one!`;
 
-export const unitSizerPageTitle = ``;
-export const unitSizerPageContent = ``;
+export const unitSizerPageTitle = `Unit Sizer  | Herlihy Self Storage`;
+export const unitSizerPageContent = `Are you not sure what size unit you require? Use this guide to help you figure out what fits inside the units offered at Herlihy Self Storage!`;
 
-export const contactPageTitle = `Unit Sizer  | Herlihy Self Storage`;
-export const contactPageContent = `Are you not sure what size unit you require? Use this guide to help you figure out what fits inside the units offered at Herlihy Self Storage!`;
+export const contactPageTitle = `Contact Us  | Herlihy Self Storage`;
+export const contactPageContent = `Do you have a question about our services, or would you like help with your account? Use our form or contact information to reach out, today!`;
 
 export const thankYouPageTitle = `Thank You For Reserving Your Unit at Herlihy Self Storage!`;
 export const thankYouPageContent = `We've received your reservation! One of our friendly staff will be in touch!`;

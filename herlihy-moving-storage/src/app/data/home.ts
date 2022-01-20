@@ -11,9 +11,9 @@ export const featuresHead = [
         alt: 'Icon art displaying a screen with cursor'
     },
     {
-        label: 'Friendly Customer Service',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/bubble.svg',
-        alt: ' Icon of a customer service agent'
+        label: 'Stellar Customer Service',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg',
+        alt: 'Customer Service Representative Icon'
     },
     {
         label: 'Secure Storage',
@@ -56,9 +56,9 @@ export const location2FeaturesHead = [
         alt: 'Icon art displaying clock hands and the number 24'
     },
     {
-        label: 'Friendly Customer Service',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/bubble.svg',
-        alt: 'Icon of a customer service agent'
+        label: 'Stellar Customer Service',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg',
+        alt: 'Customer Service Representative Icon'
     },
     {
         label: 'Secure Storage',
