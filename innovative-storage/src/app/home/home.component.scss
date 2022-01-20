@@ -1,0 +1,923 @@
+@import "../../styles.scss";
+
+.contact-details {
+  h4 {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+}
+
+.feature-text {
+  font-size: 1rem;
+}
+
+.display-contact {
+  display: flex;
+}
+
+.contact-links {
+  a {
+    color: white;
+  }
+}
+
+.bold {
+  font-size: 1.2rem;
+}
+
+.jumbotron {
+  // background: url("../../assets/scotia_images/Scotia_Images_JPG/moving-boxes.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: center;
+  height: 100vh;
+  color: $white;
+  border-radius: 0;
+
+  a {
+    margin-top: 20px;
+  }
+}
+
+.jumbotorn-background-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Innovative_Storage/webp/innovative-storage-169.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: center;
+  height: 100vh;
+}
+
+.jumbotorn-background-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Innovative_Storage/jpg/innovative-storage-169.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: center;
+  height: 100vh;
+}
+
+
+.btn-primary {
+  margin: 8px;
+}
+
+.btn-outline-primary {
+  margin: 8px;
+}
+
+.primary-margin {
+  margin: 64px 0;
+}
+
+.content-margin-top {
+  margin-top: 64px;
+}
+
+.button-top-margin {
+  margin-top: 24px;
+}
+
+
+.feature-list {
+  position: relative;
+  margin: auto;
+
+  li {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.we-provide-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Innovative_Storage/jpg/innovative-storage-169.jpg");
+}
+
+.we-provide-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Innovative_Storage/webp/innovative-storage-169.webp");
+}
+
+.we-provide {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center top;
+  color: $white;
+  text-align: center;
+
+  .heading {
+    border-bottom: 1px solid $primary;
+    width: 300px;
+    margin: auto;
+    font-size: 2rem;
+  }
+
+  .we-provide-background {
+    background: rgba(0, 0, 0, 0.8);
+
+    ul {
+      list-style: none;
+      padding-inline-start: 0;
+      width: 80%;
+      margin: auto;
+    }
+
+    li::before {
+      content: "• ";
+      color: $primary;
+      padding: 10px;
+    }
+  }
+}
+
+.contact-data {
+  a {
+    color: $white;
+  }
+}
+
+.locate-us {
+  .heading {
+    border-bottom: 1px solid $primary;
+    width: 300px;
+    margin: auto;
+    font-size: 2rem;
+  }
+}
+
+.locate-us-style {
+  td {
+    padding: 2px 15px;
+  }
+}
+
+.bg-dark-background {
+  color: $white;
+}
+
+.disp {
+  padding: 0% 10%;
+  color: $white;
+
+  a {
+    color: $white;
+  }
+
+  p {
+    font-size: 1rem;
+    padding-bottom: 20px;
+    line-height: 1.5;
+  }
+
+  // h1 {
+  //   font-size: 3.5rem;
+  // }
+}
+
+
+.display {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.margin-bottom {
+  margin-bottom: 5vh;
+}
+
+.margin-top {
+  margin-top: 15%;
+}
+
+.text-align {
+  text-align: center;
+}
+
+.arrow {
+  position: relative;
+  bottom: 100px;
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  animation-name: example;
+  cursor: pointer;
+}
+
+.about-us {
+  .heading {
+    border-bottom: 1px solid $primary;
+    width: 450px;
+    margin: auto;
+  }
+}
+
+@keyframes example {
+  0% { bottom: 100px; }
+  50% { bottom: 120px; }
+  100% { bottom: 100px; }
+}
+
+@media only screen and (min-width: 992px) and (max-height: 600px) and (min-height: 481px) {
+  .jumbotron {
+    .arrow {
+      display: none;
+    }
+
+    .margin-bottom {
+      margin-bottom: 10vh;
+    }
+
+    .display {
+      text-align: center;
+      justify-content: center;
+      align-items: flex-end;
+    }
+
+    .disp {
+      p {
+        font-size: 0.95rem;
+      }
+
+      h1 {
+        font-size: 3rem;
+      }
+    }
+  }
+  .about-us {
+    
+    .heading {
+      width: 100%;
+    }
+    
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-height: 480px) {
+  .jumbotron {
+    .arrow {
+      display: none;
+    }
+
+    .display {
+      text-align: center;
+      justify-content: center;
+      align-items: flex-end;
+    }
+
+    .disp {
+      padding: 0% 0%;
+
+      p {
+        display: none;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+  .about-us {
+    .heading {
+      width: 100%;
+    }
+  }
+}
+
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .jumbotron {
+    background-attachment: unset;
+    background-position: center top;
+  }
+
+  .we-provide {
+    background-attachment: unset;
+    background-position: center top;
+  }
+  .about-us {
+    .heading {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) and (max-height: 600px) and (min-height: 451px) {
+  .jumbotron {
+    background-attachment: unset;
+    background-position: center top;
+
+    .display {
+      align-items: flex-end;
+    }
+  }
+
+  .disp {
+    p {
+      font-size: 0.9rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .we-provide {
+    background-attachment: unset;
+    background-position: center top;
+  }
+  .about-us {
+    .heading {
+      width: 100%;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 450px) {
+  .jumbotron {
+    background-attachment: unset;
+    background-position: center top;
+
+    .display {
+      align-items: flex-end;
+      justify-content: center;
+
+      .button-top-margin {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .we-provide {
+    background-attachment: unset;
+    background-position: center top;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .disp {
+    padding: 0% 0%;
+
+    p {
+      display: none;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+  .about-us {
+    .heading {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 601px) and (max-height: 649px) and (min-height: 481px) {
+  .jumbotron {
+    background-attachment: unset;
+    background-position: center top;
+
+    .display {
+      align-items: flex-end;
+      justify-content: center;
+
+      .button-top-margin {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .we-provide {
+    background-attachment: unset;
+    background-position: center top;
+  }
+
+  .disp {
+    padding: 0%;
+    margin-top: 100px;
+    p {
+      font-size: 1rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+  .about-us {
+    .heading {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 601px) and (max-height: 480px) {
+  .jumbotron {
+    background-attachment: unset;
+    background-position: center top;
+
+    .display {
+      align-items: flex-end;
+      justify-content: center;
+
+      .button-top-margin {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .disp {
+    padding: 0%;
+
+    p {
+      display: none;
+    }
+
+    h1 {
+      font-size: 3rem;
+    }
+    
+  }
+
+  .we-provide {
+    background-attachment: unset;
+    background-position: center top;
+  }
+  .about-us {
+    .heading {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 601px) {
+  .jumbotron {
+    background-attachment: unset;
+    background-position: center top;
+  }
+
+  .we-provide {
+    background-attachment: unset;
+    background-position: center top;
+  }
+
+  .disp {
+    padding: 0;
+    margin-top: 70px;
+    p {
+      font-size: 1rem;
+      padding-bottom: 0px;
+    }
+
+    h1 {
+      font-size: 1.8em;
+    }
+  }
+  
+  .about-us {
+    .heading {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 481px) {
+  .jumbotron {
+    text-align: center;
+    background-attachment: scroll;
+    background-position: center left;
+
+    .display {
+      justify-content: center;
+
+      .button-top-margin {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .we-provide {
+    background-attachment: unset;
+    background-position: center top;
+  }
+
+  .content-margin-top {
+    margin-top: 36px;
+  }
+
+  .disp {
+    padding: 0%;
+
+    p {
+      font-size: 1rem;
+    }
+
+    h1 {
+      font-size: 1.9rem;
+    }
+  }
+
+  .we-provide-background {
+    li {
+      text-align: left;
+    }
+  }
+  .about-us {
+    .heading {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 481px) and (max-height: 590px) and (min-height: 481px) {
+  .jumbotron {
+    text-align: center;
+    background-attachment: scroll;
+    background-position: center left;
+
+    .display {
+      justify-content: center;
+      align-items: flex-end;
+
+      .button-top-margin {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .margin-bottom {
+    margin-bottom: 5vh;
+  }
+
+  .we-provide {
+    background-attachment: unset;
+    background-position: center top;
+  }
+
+  .content-margin-top {
+    margin-top: 36px;
+  }
+
+  .disp {
+    padding: 0%;
+    
+
+    p {
+      font-size: .9rem;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+    }
+  }
+
+  .we-provide-background {
+    li {
+      text-align: left;
+    }
+  }
+  .about-us {
+    .heading {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 481px) and (max-height: 480px) {
+  .jumbotron {
+    text-align: center;
+    background-attachment: scroll;
+    background-position: center left;
+
+    .display {
+      align-items: flex-end;
+      justify-content: center;
+
+      .button-top-margin {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .we-provide {
+    background-attachment: unset;
+    background-position: center top;
+  }
+
+  .content-margin-top {
+    margin-top: 36px;
+  }
+
+  .disp {
+    p {
+      display: none;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    margin-top: 150px;
+    padding: 0%;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .we-provide-background {
+    li {
+      text-align: left;
+    }
+  }
+  .about-us {
+    .heading {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .jumbotron {
+    text-align: center;
+    background-attachment: scroll;
+    background-position: center left;
+
+    h1 {
+      font-size: 1.6em;
+    }
+  }
+
+  .btn-primary {
+    min-width: 100%;
+    margin: 5px 0;
+    font-size: 1rem;
+  }
+
+  .btn-outline-primary {
+    min-width: 100%;
+    margin: 5px 0;
+    font-size: 1rem;
+  }
+
+  .we-provide {
+    background-attachment: unset;
+    background-position: center top;
+  }
+
+  .content-margin-top {
+    margin-top: 36px;
+  }
+  
+  .arrow {
+    display: none;
+  }
+
+  .disp {
+    p {
+      font-size: 1rem;
+      margin-bottom: 0;
+    }
+
+    margin-top: 120px;
+    padding: 0;
+  }
+
+  .we-provide-background {
+    li {
+      text-align: left;
+    }
+  }
+
+  .locate-us {
+    .heading {
+      width: auto;
+    }
+  }
+
+  .we-provide {
+    .heading {
+      width: auto;
+    }
+  }
+
+
+  .about-us {
+    .heading {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) and (min-height: 801px) {
+  .jumbotron {
+    text-align: center;
+    background-attachment: scroll;
+    background-position: center left;
+
+    h1 {
+      font-size: 1.6em;
+    }
+  }
+
+
+  .we-provide {
+    background-attachment: unset;
+    background-position: center top;
+  }
+
+  .content-margin-top {
+    margin-top: 36px;
+  }
+  
+  .arrow {
+    display: none;
+  }
+
+  .disp {
+    p {
+      font-size: 1rem;
+      margin-bottom: 0;
+    }
+
+    margin-top: 120px;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) and (max-height: 800px) and (min-height: 569px) {
+  .jumbotron {
+    text-align: center;
+    background-attachment: scroll;
+    background-position: center left;
+
+    h1 {
+      font-size: 1.2rem;
+    }
+  }
+
+  .we-provide {
+    background-attachment: unset;
+    background-position: center top;
+  }
+
+
+  .display {
+    .button-top-margin {
+      margin-top: 0;
+    }
+  }
+
+  .content-margin-top {
+    margin-top: 36px;
+  }
+
+  .disp {
+    p {
+      font-size: 0.8rem;
+      margin-bottom: 0;
+    }
+
+    margin-top: 150px;
+    padding: 0;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 480px) and (max-height: 568px) and (min-height: 420px) {
+  .jumbotron {
+    text-align: center;
+    background-attachment: scroll;
+    background-position: center left;
+
+    .width {
+      width: 100%;
+    }
+
+    .display {
+      align-items: flex-end;
+      justify-content: center;
+
+      .button-top-margin {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .margin-bottom {
+    margin-bottom: 10vh;
+  }
+
+  .disp {
+    padding: 0;
+
+    p {
+      display: none;
+    }
+
+    h1 {
+      font-size: 1.9rem;
+    }
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .about-us {
+    .heading {
+      width: 100%;
+    }
+  }
+
+  .locate-us {
+    .heading {
+      width: auto;
+    }
+  }
+
+  .we-provide {
+    .heading {
+      width: auto;
+    }
+  }
+
+  .about-us {
+    .heading {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) and (max-height: 419px) {
+  .jumbotron {
+    background-attachment: scroll;
+    background-position: center left;
+
+    .display {
+      align-items: flex-end;
+      justify-content: center;
+
+      .button-top-margin {
+        margin-top: 0;
+      }
+    }
+
+    .disp {
+      p {
+        display: none;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      padding: 0;
+    }
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .locate-us {
+    .heading {
+      width: auto;
+    }
+  }
+
+  .we-provide {
+    .heading {
+      width: auto;
+    }
+  }
+
+  .about-us {
+    .heading {
+      width: 100%;
+    }
+  }
+}

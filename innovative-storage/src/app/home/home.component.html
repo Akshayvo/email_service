@@ -1,0 +1,118 @@
+<div class="">
+  <div class="jumbotron p-0 m-0"
+    [ngClass]="imagetype === 'jpg' ? 'jumbotorn-background-jpg' :  'jumbotorn-background-webp'">
+    <div class="bg-translucent  text-align">
+      <div class="container display">
+        <div class="row justify-content-center width margin-bottom">
+          <div class="col-md-12">
+            <div class="disp" *ngFor="let jumbotron of jumbotron">
+              <h1 class="my-4">
+                {{jumbotron.h1}}<br>
+                {{jumbotron.h3}}
+              </h1>
+              <p class="text-justify">{{jumbotron.blurb}}</p>
+            </div>
+            <div class="button-top-margin">
+              <a class="btn btn-lg btn-outline-primary" (click)="navigate('/contact-us')" role="button">Contact Us</a>
+              <a class="btn btn-lg btn-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="arrow" (click)="scroll(target)">
+        <!-- <img (click)="scroll(target)" src="https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Lancaster/down.svg" alt="" /> -->
+        <i class="fas fa-chevron-down" style="color: white; font-size: xx-large;"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-us bg-dark-background" #target>
+    <div class="container py-5 ">
+      <div class="section py-5 m-0">
+        <h2 class="heading pb-3 text-center text-dark">{{aboutUsHeading}}</h2>
+        <div class="row content-margin-top">
+          <div class="col-md-6 py-3">
+            <div *ngFor="let data of aboutUs">
+              <h2 *ngIf="data.h2" class="text-dark">{{data.h2}}</h2>
+              <p class="justify text-dark">{{data.p}}</p>
+            </div>
+            <p class="justify  bold " *ngFor="let databold of aboutUsBold"><b>{{databold.b}}</b></p>
+          </div>
+          <div class="col-md-6 py-3">
+            <app-photos> </app-photos>
+            <!-- <img alt="a single story metal self storage building with a facility office on the end of the building" class="sectionImage" src="https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Lancaster/jpg/stock-self-storage-11.jpg"> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="we-provide" [ngClass]="imagetype === 'jpg' ? 'we-provide-jpg' :  'we-provide-webp'">
+    <div class="we-provide-background py-5">
+      <div class="container py-5">
+        <div class="section  m-0">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="heading pb-3 text-center">We Provide</h3>
+              <div class="row primary-margin">
+                <div class="col-md-3 col-6 p-4 text-center" *ngFor="let feature of feature">
+                  <div class="p-4">
+                    <img [src]="feature?.path" height="75px" alt="" width="100%"/>
+                  </div>
+                  <h4 class="feature-text">{{feature.label}}</h4>
+                </div>
+              </div>
+              <div class="feature-list">
+                <ul class="row">
+                  <li class="col-md-6 col-lg-4 py-2 text-left" *ngFor="let featuresList of featuresList">
+                    <h5 class="mb-0">{{featuresList.li}}</h5>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="locate-us bg-dark-background">
+    <div class="container py-5">
+      <div class="section py-5 m-0">
+        <h4 class="heading pb-3 text-center text-dark">Locate Us</h4>
+        <div class="row content-margin-top">
+          <div class="col-md-6 py-3">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6057.909502226294!2d-83.06657118610572!3d40.60882197396936!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6a505ba964e4216a!2sInnovative%20Storage!5e0!3m2!1sen!2sus!4v1642090995287!5m2!1sen!2sus"
+              title="Google Map" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div class="col-md-6 py-3 locate-us-style">
+            <div class="mb-4 contact-details">
+
+              <p>
+                <span *ngFor="let contact of contactDetails" class="display-contact text-dark">
+                  <span>
+                    <h4><b>{{contact.label}}</b></h4>
+                  </span><span class="contact-links"
+                    *ngIf="contact?.label === 'Address:' || contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
+                    <h4><a class='text-dark' [href]="contact?.redirect" rel="noreferrer"
+                        target="{{(contact?.label === 'Address:') ? '_blank' : '_self'}}">&nbsp;
+                        &nbsp;{{contact.data}}</a></h4>
+                  </span>
+                  <ng-template #other_content>&nbsp;<h4>{{contact.data}}</h4>
+                  </ng-template><br>
+                </span>
+              </p>
+              <p>
+                <span class="display-contact text-dark" *ngFor="let hour of hours">
+                  <h4><b>{{hour.label}}</b></h4>&nbsp;&nbsp;<h4>{{hour.data}}</h4><br>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
