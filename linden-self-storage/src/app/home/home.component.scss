@@ -11,6 +11,10 @@
   }
 }
 
+.additional-text{
+  display: none;
+}
+
 
 .contact-details {
   h4 {
@@ -649,6 +653,7 @@
   }
 
   .additional-text{
+    display: block;
     color: green;
     position: relative;
     top: -7vh;
@@ -705,6 +710,7 @@
     }
   }
   .additional-text{
+    display: block;
     color: green;
     position: relative;
     top: -2vh;
@@ -722,6 +728,7 @@
     height: 120vh;
   }
   .additional-text{
+    display: block;
     color: green;
     position: relative;
     top: -10vh;
@@ -751,6 +758,7 @@
     }
   }
   .additional-text{
+    display: block;
     color: green;
     position: relative;
     top: 2vh;
