@@ -99,6 +99,9 @@ p {
 .buttons {
   display: flex;
   justify-content: center;
+  .btn-outline-primary{
+    color:#000 !important;
+  }
 }
 
 .ClimateBorder {

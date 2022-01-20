@@ -17,6 +17,9 @@
 
 .display-contact {
   display: flex;
+  h3{
+    font-size: 16px;
+  }
 }
 
 .jumbotron {
@@ -51,6 +54,9 @@
 }
 
 .contact-links {
+  h4{
+    margin:0px 0px 10px;
+  }
   a {
     color: black;
   }
