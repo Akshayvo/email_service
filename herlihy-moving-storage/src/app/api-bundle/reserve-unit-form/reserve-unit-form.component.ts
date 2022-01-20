@@ -166,7 +166,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
       this.navigateToReserve = true;
       this.dataSharingService.navigateToReserve = true;
       this.dataSharingService.navigateToMoveIn = false;
-      this.showAltDetails = (environment.alternateType.reserve === true) ? true : false;
+      this.showAltDetails = (environment.alternateType.reserve === false);
       this.dataSharingService.showAltDetails = this.showAltDetails;
     } else {
       if (this.router.url.includes('move-in')) {

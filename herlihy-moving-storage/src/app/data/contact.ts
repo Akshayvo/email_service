@@ -52,7 +52,7 @@ export const contactsLocation1 = [
     },
     {
         id: 3,
-        label: 'Phone: ',
+        label: 'Business Hours: ',
         data: '(740) 775-6683',
         class: 'fas fa-phone mr-2 iconColor',
         redirect: 'tel:7407756683'

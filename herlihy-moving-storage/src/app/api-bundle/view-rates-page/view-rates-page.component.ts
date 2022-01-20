@@ -41,7 +41,8 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   defaultTotalChargesAmount: number;
   defaultTotalTaxAmount: number;
   defaultClimateString = ' ';
-
+  showBtnG:boolean;
+  showBtnC:boolean;
   showPaymentForMoveIn = false;
   showPaymentForReserve = false;
   objCharges: ObjCharges;
@@ -70,10 +71,20 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     this.fetchThData();
     this.dataSharingService.initMyNavLinks('viewRates', this.router.url);
     this.facilityLocation = this.dataSharingService.facilityLocation;
+    
   }
 
   public fetchThData() {
     this.th = th;
+
+    if((this.router.url.includes('chillicothe'))){
+      this.showBtnG=false;
+      this.showBtnC=true;
+   }else{
+    this.showBtnG=true;
+    this.showBtnC=false;
+   }
+
   }
 
   public navigate(location: any, unitData: any) {
@@ -128,6 +139,11 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
       this.curStage = 2;
       }, err => {
       });
+
+      
+       
+     
+
   }
 
   getData() {
@@ -144,3 +160,5 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     }
   }
 }
+
+

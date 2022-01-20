@@ -480,7 +480,18 @@ public navigateToPrevious() {
       });
   }
 
-  public navigateToConfirmation(location: any) {
+  // public navigateToConfirmation(location: any) {
+  //   this.router.navigate([`${environment.locationName}/${this.facilityLocation}/reserve-unit/${location}`]);
+  // }
+
+
+  public navigateToConfirmation_moveIn(location: any) {
+    // this.router.navigate([`${environment.locationName}/reserve-unit/${location}`]); 
+    this.router.navigate([`${environment.locationName}/${this.facilityLocation}/move-in/${location}`]);
+  }
+
+  public navigateToConfirmation_reserveUnit(location: any) {
+    // this.router.navigate([`${environment.locationName}/reserve-unit/${location}`]); 
     this.router.navigate([`${environment.locationName}/${this.facilityLocation}/reserve-unit/${location}`]);
   }
 
@@ -662,11 +673,11 @@ public navigateToPrevious() {
       this.reservationInProgress = false;
       this.showloaderForPayment = false;
 
-      if (!!localStorage.getItem('paymentTab')) {
-        this.router.navigate([`${environment.locationName}/${this.facilityLocation}/reserve-unit/${localStorage.getItem('paymentTab')}/thank-you`]);
-      } else {
+      // if (!!localStorage.getItem('paymentTab')) {
+      //   this.router.navigate([`${environment.locationName}/${this.facilityLocation}/reserve-unit/${localStorage.getItem('paymentTab')}/thank-you`]);
+      // } else {
         this.router.navigate([`${environment.locationName}/${this.facilityLocation}/reserve-unit/thank-you`]);
-      }
+      // }
     }
     }, (err: any) => {
       if (err.status === 403) {
@@ -696,11 +707,11 @@ public navigateToPrevious() {
         this.dataSharingService.strAccessCode = strConfirmationResponse.strAccessCode;
         if (strConfirmationResponse.intErrorCode === 1  ) {
           this.makePaymentForUnit = false;
-          if (!!localStorage.getItem('paymentTab')) {
-            this.router.navigate([`${environment.locationName}/${this.facilityLocation}/move-in/${localStorage.getItem('paymentTab')}/thank-you`]);
-          } else {
+          // if (!!localStorage.getItem('paymentTab')) {
+          //   this.router.navigate([`${environment.locationName}/${this.facilityLocation}/move-in/${localStorage.getItem('paymentTab')}/thank-you`]);
+          // } else {
             this.router.navigate([`${environment.locationName}/${this.facilityLocation}/move-in/thank-you`]);
-          }
+          // }
           this.showloaderForPayment = false;
 
         } else {

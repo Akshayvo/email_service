@@ -1,7 +1,7 @@
 import { HomeComponent } from '../home/home.component';
 import { LocationComponent } from '../location/location.component';
 import { ViewRatesPageComponent } from '../api-bundle/view-rates-page/view-rates-page.component';
-import { ReserveUnitFormComponent } from '../api-bundle/reserve-unit-form/reserve-unit-form.component';
+import { ReserveUnitFormComponent } from '../api-bundle/reserve-unit-form/reserve-unit-form.component'; 
 import { ConfirmationDataComponent } from '../api-bundle/confirmation-data/confirmation-data.component';
 import { PayRentFormComponent } from '../api-bundle/pay-rent-form/pay-rent-form.component';
 import { UnitSizerComponent } from '../unit-sizer/unit-sizer.component';
@@ -97,8 +97,8 @@ export const apiRoutes = [
         { path: 'unit-sizer', component: UnitSizerComponent },
         { path: 'reserve-unit', component: ReserveComponent,
           children: [
-            // { path: '', component: ReserveUnitFormComponent },
-            // { path: 'reserve', component: ReserveUnitFormComponent },
+            { path: '', component: ReserveUnitFormComponent },
+            { path: 'reserve', component: ReserveUnitFormComponent },
             // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
             { path: 'confirmation', component: ConfirmationDataComponent },
             { path: 'payReservationCharges', component: PayRentFormComponent },
@@ -108,8 +108,8 @@ export const apiRoutes = [
         },
         { path: 'move-in', component: ReserveComponent,
           children: [
-            // { path: '', component: ReserveUnitFormComponent },
-            // { path: 'move-in', component: ReserveUnitFormComponent },
+            { path: '', component: ReserveUnitFormComponent },
+            { path: 'move-in', component: ReserveUnitFormComponent },
             // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
             { path: 'confirmation', component: ConfirmationDataComponent },
             { path: 'payReservationCharges', component: PayRentFormComponent },
@@ -132,8 +132,8 @@ export const apiRoutes = [
         { path: 'unit-sizer', component: UnitSizerComponent },
         { path: 'reserve-unit', component: ReserveComponent,
           children: [
-            // { path: '', component: ReserveUnitFormComponent },
-            // { path: 'reserve', component: ReserveUnitFormComponent },
+            { path: '', component: ReserveUnitFormComponent },
+            { path: 'reserve', component: ReserveUnitFormComponent },
             // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
             { path: 'confirmation', component: ConfirmationDataComponent },
             { path: 'payReservationCharges', component: PayRentFormComponent },
@@ -143,8 +143,8 @@ export const apiRoutes = [
         },
         { path: 'move-in', component: ReserveComponent,
           children: [
-            // { path: '', component: ReserveUnitFormComponent },
-            // { path: 'move-in', component: ReserveUnitFormComponent },
+            { path: '', component: ReserveUnitFormComponent },
+            { path: 'move-in', component: ReserveUnitFormComponent },
             // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
             { path: 'confirmation', component: ConfirmationDataComponent },
             { path: 'payReservationCharges', component: PayRentFormComponent },

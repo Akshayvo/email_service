@@ -143,9 +143,9 @@ export const headingLocation6 = ``;
 
 
 
-export const headingReservePageLocation1 = `Ready to Reserve a Self Storage Unit in Foley`;
+export const headingReservePageLocation1 = `Herlihy Self Storage`;
 
-export const headingReservePageLocation2 = `Ready to Reserve a Self Storage Unit in Silverhill`;
+export const headingReservePageLocation2 = `U Stor 104 Self-Storage`;
 
 export const headingReservePageLocation3 = ``;
 
