@@ -4,6 +4,9 @@
 .vertical-line {
   border-left: 1px solid black;
   padding-left: 50px;
+  h2{
+    font-size: 1.75rem;
+  }
 }
 
 
@@ -13,10 +16,13 @@
 }
 
 .contact-links {
+
   a {
     color: black;
   }
 }
+
+
 
 .modal-open {
   .modal-backdrop {
@@ -25,6 +31,7 @@
 }
 
 .forgot-link {
+  margin:0rem 0rem 0.5rem;
   a {
     color: $primary;
     text-decoration: underline;

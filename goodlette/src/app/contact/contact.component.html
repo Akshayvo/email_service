@@ -4,7 +4,7 @@
     <h1 class="py-5 text-center">{{contactHeading}}</h1>
     <div class="row bg-light background-padding">
       <div class="col-lg-7 col-md-6 col-12 px-4">
-        <h3 class="heading py-3">Contact Form</h3>
+        <h2 class="heading py-3">Contact Form</h2>
         <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
           <div class="form-group">
               <div [hidden]="" *ngIf="submitted && !this.contactForm.valid" class="alert alert-danger alert-dismissible fade show">
@@ -87,9 +87,9 @@
               <div
   
                 *ngIf="((contact?.label != 'Phone:'))"
-                ><h4 [class.py-1]="contact.label" class="mb-0">
+                ><h3 [class.py-1]="contact.label" class="mb-0" style="font-size:16px">
                   <strong>{{ contact.label }}&nbsp;</strong>
-                </h4></div
+                </h3></div
               >
               <div
                 class="contact-links"
@@ -174,14 +174,14 @@
               >
                 <strong>{{ hour.label }}</strong>
               </h4>
-              <h6 class="py-1" *ngIf="hour.label != 'Business Hours: '">
+              <h4 class="py-1" *ngIf="hour.label != 'Business Hours: '">
                 {{ hour.data }}
                 
-              </h6>
-              <h6 class="py-1" *ngIf="hour.label != 'Business Hours: '">
+              </h4>
+              <h4 class="py-1" *ngIf="hour.label != 'Business Hours: '">
                 {{ hour.data1 }}
                 
-              </h6>
+              </h4>
             </span>
             <div >
               <div
@@ -189,12 +189,14 @@
                   <strong>You can do it all online, or call, or come in: &nbsp;</strong>
                 </h4></div
               >
-              <div class="contact-links " >
-                <li>Online Reservation without obligation</li>
-                <li>Online Rental and Move-in</li>
-                <li>Online Bill Pay</li>
-                <li>Online Set Up Autopay</li>
-              </div>
+              <ul class="contact-links " >
+                
+                  <li>Online Reservation without obligation</li>
+                  <li>Online Rental and Move-in</li>
+                  <li>Online Bill Pay</li>
+                  <li>Online Set Up Autopay</li>
+                
+              </ul>
             </div>
           </div>
         </div>
