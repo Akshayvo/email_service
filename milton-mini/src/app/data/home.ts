@@ -31,9 +31,7 @@ export const aboutUsHeading = `Affordable Self Storage in Milton`;
 
 export const aboutUs = [
     {
-        p: `Milton Mini Storage is Milton's one stop self storage solution. We are conveniently 
-        located in the Perry Morris Square at the heart of downtown Milton, West Virginia.  
-        Our clean, well maintained units range from 5’x5’ to 10’x20’. So whether you’re looking for some extra closet space or need to store a multi-family home during a move, we’ve got you covered.`,
+        p: `Milton Mini Storage is Milton's one stop self storage solution. We are conveniently located in the Perry Morris Square Shopping Plaza in downtown Milton, West Virginia. Our clean, well maintained units range from 5’x5’ to 10’x20’. So whether you’re looking for some extra closet space or need to store a multi-family home during a move, we’ve got you covered.`,
     },
     {
         h2: `Convenience`

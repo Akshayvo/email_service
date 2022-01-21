@@ -8,7 +8,7 @@
 
 .display-contact {
   display: flex;
-
+  margin-top:0.5rem;
   // h4 {
   //   width: 100%;
   // }
@@ -31,6 +31,7 @@
 }
 
 .contact-links {
+  
   a {
     color: black;
   }
@@ -64,6 +65,8 @@
 .form-control {
   font-size: 0.8rem;
 }
+
+.heading{font-size: 28px;}
 
 @media only screen and (max-width: 600px) {
   .contact-butoon {

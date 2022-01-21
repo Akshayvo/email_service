@@ -14,7 +14,7 @@ export const environment = {
   facilityName: 'Milton Mini Storage',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: 'https://milton-mini-staging.netlify.app',
+  websiteUrl: 'https://www.miltonministorage.net',
   // APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north
   APIKey: `dzF0Mlc3SjkqOU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 12799
 

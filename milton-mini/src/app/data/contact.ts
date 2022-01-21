@@ -49,14 +49,14 @@ export const hours = [
 ];
 
 export const socialLinks = [
-    {
-        label: 'twitter',
-        path: '',
-        class: 'fab fa-twitter-square',
-    },
+    // {
+    //     label: 'twitter',
+    //     path: '',
+    //     class: 'fab fa-twitter-square',
+    // },
     {
         label: 'facebook',
-        path: '',
+        path: 'https://www.facebook.com/Milton-Mini-Storage-222636467771008',
         class: 'fab fa-facebook-square',
     },
 ];
