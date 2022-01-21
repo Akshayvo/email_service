@@ -4,6 +4,9 @@
 .vertical-line {
   border-left: 1px solid black;
   padding-left: 50px;
+  h2{
+    font-size:19px;
+  }
 }
 
 
@@ -16,6 +19,9 @@
   a {
     color: black;
   }
+  div{
+    margin-top:10px;
+  }
 }
 
 .modal-open {
@@ -25,6 +31,7 @@
 }
 
 .forgot-link {
+  margin:0rem 0rem 0.5rem;
   a {
     color: $secondary;
     text-decoration: underline;

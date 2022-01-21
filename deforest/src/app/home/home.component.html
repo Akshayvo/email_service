@@ -76,14 +76,14 @@
           <div class="mb-4">
             <p>
               <span class="font-xs-device" *ngFor="let contact of contactDetails">
-                <b>{{contact.label}}</b><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+                <h3>{{contact.label}}</h3><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
                 <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
               </span>
             </p>
             <div class="mt-2">
               <p>
-                <span *ngFor="let hour of hours">
-                  <strong>{{hour.label}} </strong> {{hour.data}}<br>
+                <span *ngFor="let hour of hours" class='accessHours'>
+                  <h4>{{hour.label}} </h4> {{hour.data}}<br>
                 </span>
               </p>
             </div>
@@ -120,7 +120,7 @@
         <p class="justify" *ngFor="let data of aboutFamily">{{data.p}}</p>
       </div>
       <div class="col-lg-6 py-2">
-        <img src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Deforest/deforest-self-storage-family.jpg" width="100%" alt="photograph of a man, a woman, and a child posing in front of a field and sunset" class="sectionImage">
+        <img src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Deforest/deforest-self-storage-family.jpg" width="100%" alt="photograph of a man, a woman, and a child posing in front of a field and sunset" class="sectionImage" width='100%' height='100%'>
       </div>
      </div>
     </div>
