@@ -14,7 +14,7 @@ export const environment = {
   senderEmail: "errors@codeparva.in",
   emailBaseUrl: "https://emailsvc-ext.syrasoft.com/v1/email",
   appId: "Deforest - Production",
-  facilityName: "Deforest - Production",
+  facilityName: "Deforest Self Storage",
   VERSION: require("../../package.json").version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   websiteUrl: "https://www.deforestselfstorage.com",

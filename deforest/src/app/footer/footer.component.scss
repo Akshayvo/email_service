@@ -1,15 +1,28 @@
 @import "../../styles.scss";
 
 .footer {
-  color: $shadow;
+  color: $black;
+  text-align: center;
+  font-size: 0.7em;
+ 
+}
 
-  .copyright-text {
-    float: left;
+.secure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.privacy-policy {
+  a {
+    color: $black;
   }
+}
 
-  .copyright-image {
-    a {
-      float: right;
+@media only screen and (max-width: 360px) {
+  .secure {
+    img {
+      width: 110px;
     }
   }
 }
