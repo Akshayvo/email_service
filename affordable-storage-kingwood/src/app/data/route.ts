@@ -6,7 +6,7 @@ import { ViewRatesComponent } from '../api-bundle/view-rates/view-rates.componen
 import { ViewRatesPageComponent } from '../api-bundle/view-rates-page/view-rates-page.component';
 import { ReserveUnitFormComponent } from '../api-bundle/reserve-unit-form/reserve-unit-form.component';
 import { ConfirmationDataComponent } from '../api-bundle/confirmation-data/confirmation-data.component';
-import { PayRentFormComponent } from '../api-bundle/pay-rent-form/pay-rent-form.component';
+import { PayRentFormComponent } from '../api-bundle/pay-rent-form/pay-rent-form.component'; 
 import { PaymentComponent } from '../api-bundle/payment/payment.component';
 import { LoginComponent } from '../api-bundle/login/login.component';
 import { ForgotPasswordComponent } from '../api-bundle/forgot-password/forgot-password.component';

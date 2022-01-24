@@ -4,7 +4,9 @@
     <div class="pay-rent-holder">
       <div class="row bg-light background-padding" *ngIf="showPaymentPageType === 0">
         <div class="col-md-12">
-            <router-outlet></router-outlet>
+            <!-- <router-outlet></router-outlet> -->
+            <h2> Payments Temporarily Offline</h2>
+            <p class='mt-3'>Payments are temporarily offline until a website update can be completed. Please call the office for more information.</p>
         </div>
       </div>
       <div class="row" *ngIf="showPaymentPageType === 1">
