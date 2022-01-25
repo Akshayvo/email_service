@@ -13,32 +13,4 @@ export const galleryHome = [
     thumb: `north-road-storage-11-thumb`,
     alt: `several metal pitched roof buildings with large roll up doors surrounded by paved parking`
   },
-  {
-    // tslint:disable-next-line: max-line-length
-    url: ``,
-    // tslint:disable-next-line:max-line-length
-    thumb: ``,
-    alt: ``
-  },
-  {
-    // tslint:disable-next-line: max-line-length
-    url: ``,
-    // tslint:disable-next-line:max-line-length
-    thumb: ``,
-    alt: ``
-  },
-  {
-    // tslint:disable-next-line: max-line-length
-    url: ``,
-    // tslint:disable-next-line:max-line-length
-    thumb: ``,
-    alt: ``
-  },
-  {
-    // tslint:disable-next-line: max-line-length
-    url: ``,
-    // tslint:disable-next-line:max-line-length
-    thumb: ``,
-    alt: ``
-  },
 ];

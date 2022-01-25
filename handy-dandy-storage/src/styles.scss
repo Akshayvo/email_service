@@ -30,7 +30,16 @@ $AffordableSecureStorage-theme: mat-light-theme($AffordableSecureStorage-primary
 @include angular-material-theme($AffordableSecureStorage-theme);
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+// body { margin: 0; font-family:  Roboto, "Helvetica Neue", sans-serif;  }
+
+@font-face {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-style: normal;
+  // font-weight: 400;
+  src: local('Pacifico Regular'), local('Pacifico-Regular'), url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2) format('woff2');
+  font-display: swap;
+}
+
 //Basic color and font styles
 $primary: #12448c;
 $primaryDark: rgb(20, 63, 107);
