@@ -38,7 +38,7 @@ export const aboutUs = [
     },
     {
         h:`Convenience`,
-        p: `We built Friendship Self Storage from the ground up with convenience in mind. Our single-level facility is conveniently located on Friendship Street between West Street and Canal Street, making our facility very easy to pull in and out of, even if you’re driving one of our moving trucks. You can check out our inventory online, then reserve your unit in seconds with our easy tenant portal, or you can give our office a call, and one of our friendly staff will be happy to perform a contactless rental. Once you’re a tenant, you’ll have access to your unit(s) during our extended access hours from 6:00AM to 9:00PM 7 days a week!`,
+        p: `Friendship Self Storage was built from the ground up with convenience in mind. Our single-level facility is conveniently located on Friendship Street between High Street and Canal Street., making our facility very easy to pull in and out of, even if you’re driving one of our moving trucks. You can check out our inventory online, then reserve your unit in seconds with our easy tenant portal, or you can give our office a call, and one of our friendly staff will be happy to perform a contactless rental. Once you’re a tenant, you’ll have access to your unit(s) during our extended access hours from 6:00AM to 9:00PM 7 days a week!`,
     },
     {
         h:`Security`,
