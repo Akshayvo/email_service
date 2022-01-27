@@ -69,7 +69,7 @@ export const contactsLocation1 = [
 export const hoursLocation1 = [
     {
         label: 'Monday - Friday: ',
-        data: '8:00AM to 5:00PM',
+        data: '8:00AM to 4:00PM',
     },
     {
         label: 'Saturday - Sunday: ',
@@ -101,7 +101,7 @@ export const contactsLocation2 = [
     {
         id: 1,
         label: 'Address: ',
-        data: '3759 Jackson Pike, Grove City, OH 43123',
+        data: '3759 Jackson Pike, Grove-city, OH 43123',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: 'https://g.page/Herlihymoving?share'
     },
