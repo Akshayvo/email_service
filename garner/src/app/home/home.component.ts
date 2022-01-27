@@ -3,7 +3,7 @@ import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { contactsHomePage, hoursHomePage, contactsLocation1, hoursLocation1, contactsLocation2, hoursLocation2,
        } from '../data/contact';
-import { featuresHead, serviceOffered, gettingStarted, featuresList, jumbotron } from '../data/home';
+import { featuresHead, serviceOffered, gettingStarted, featuresList, jumbotron , grid} from '../data/home';
 import { LocationService } from '../services/location.service';
 import { homeScript } from '../data/script';
 import { UaParserService } from '../services/ua-parser.service';
@@ -29,6 +29,7 @@ export class HomeComponent implements OnInit {
   imagetype: any;
   featuresList: any;
   jumbotron: any;
+  unitTypes :any;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -48,6 +49,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
+   
     this.fetchStaticContent();
     this.fetchFeatureHead();
     window.scrollTo(0, 0);
@@ -57,7 +59,11 @@ export class HomeComponent implements OnInit {
     this.fetchScript();
     this.fetchFeatures();
     this.fetchJumbotron();
+    this.fetchGrid();
+    
   }
+
+  
 
   public fetchJumbotron() {
     this.jumbotron = jumbotron;
@@ -116,5 +122,9 @@ export class HomeComponent implements OnInit {
   public fetchStaticContent() {
     this.serviceOffered = serviceOffered;
     this.gettingStarted = gettingStarted;
+  }
+
+  public fetchGrid(){
+    this.unitTypes = grid;
   }
 }

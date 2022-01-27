@@ -70,3 +70,52 @@ export const jumbotron = [
         to anyone looking for a little extra elbow-room around the home, office, or worksite!`,
     }
 ];
+
+export const grid = [
+    {
+        description: `10' X 10'`,
+        rate: '59.00'
+    },
+    {
+        description: `10' X 20'`,
+        rate: '79.00'
+    },
+    {
+        description: `10'X10'CC`,
+        rate: '85.00'
+    },
+    {
+        description: `10'X12'CC`,
+        rate: '95'
+    },
+    {
+        description: `10'X15'CC`,
+        rate: '105.00'
+    },
+    {
+        description: `10'X20'CC`,
+        rate: '115.00'
+    },
+    {
+        description: `10' X 25'`,
+        rate: '89.00'
+    },
+    {
+        description: `13 X 10`,
+        rate: '60.00'
+    },
+    {
+        description: `13 X 20`,
+        rate: '80.00'
+    },
+    {
+        description: `Open St, Elec Rec`,
+        rate: '30.00'
+    },
+    {
+        description: `Open Storage`,
+        rate: '25.00'
+    },
+
+
+]

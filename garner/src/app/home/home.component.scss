@@ -47,6 +47,16 @@
     margin-top: 20px;
   }
 }
+.viewrates-desktop{
+table-layout: fixed;
+width: 100%;
+
+}
+table,td,th{
+  border: 1px solid black !important;
+}
+
+
 
 .jumbotorn-skew-text {
   transform: skew(0deg);
@@ -58,6 +68,8 @@
   h2 {
     font-size: 2rem;
   }
+
+
 
 
 

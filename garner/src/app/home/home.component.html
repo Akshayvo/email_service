@@ -46,8 +46,27 @@
     <div class="section py-4 m-0">
       <div class="row">
         <div class="col-lg-6 py-3 home-map"> 
-            <iframe class="border" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361.5203147470475!2d-82.95076898450606!3d32.592314600686606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f120df15ed6977%3A0xd634e4f1d8ec55a1!2s653%20Old%20Toomsboro%20Rd%2C%20Dublin%2C%20GA%2031021%2C%20USA!5e0!3m2!1sen!2sin!4v1595433343961!5m2!1sen!2sin" width="100%" height="100%" frameborder="0" allowfullscreen></iframe> 
+            <!-- <iframe class="border" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361.5203147470475!2d-82.95076898450606!3d32.592314600686606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f120df15ed6977%3A0xd634e4f1d8ec55a1!2s653%20Old%20Toomsboro%20Rd%2C%20Dublin%2C%20GA%2031021%2C%20USA!5e0!3m2!1sen!2sin!4v1595433343961!5m2!1sen!2sin" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>  -->
+            <table  class="viewrates-desktop">
+              <tHead >
+                  <tr>
+                    <th colspan="2" class="px-4 py-4 text-center" ><b>Description</b></th>
+                    <th colspan="2" class="px-4 py-4 text-center" ><b>Rate</b></th>
+                  </tr>
+              </tHead>
+              <tbody>
+                <tr *ngFor="let unitType of unitTypes">
+                  <td colspan="2" class="px-4  py-1 text-center">
+                      {{unitType.description}}
+                  </td>
+                  <td colspan="2" class="px-4 py-1 text-center">
+                      <span >$</span>{{unitType.rate}}
+                  </td>
+                </tr>
+              </tbody>
+          </table>
         </div>
+        
 
         <div class="col-lg-6 py-3">
           <div class="mb-4">

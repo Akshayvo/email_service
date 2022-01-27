@@ -11,12 +11,12 @@ export const tabs1 = [
         path: './unit-sizer',
         active: false,
     },
-    {
-        id: '3',
-        name: 'Reserve Unit',
-        path: './reserve-unit',
-        active: false,
-    },
+    // {
+    //     id: '3',
+    //     name: 'Reserve Unit',
+    //     path: './reserve-unit',
+    //     active: false,
+    // },
     // {
     //     id: '4',
     //     name: 'Move In',
@@ -40,10 +40,16 @@ export const tabs = [
     },
     {
         id: '2',
-        name: 'Reserve Unit',
-        path: './reserve-unit',
+        name: 'Unit Sizer',
+        path: './unit-sizer',
         active: false,
     },
+    // {
+    //     id: '2',
+    //     name: 'Reserve Unit',
+    //     path: './reserve-unit',
+    //     active: false,
+    // },
     // {
     //     id: '3',
     //     name: 'Move In',
@@ -56,12 +62,12 @@ export const tabs = [
     //     path: './photos',
     //     active: false,
     // },
-    {
-        id: '5',
-        name: 'About Us',
-        path: './about',
-        active: false,
-    },
+    // {
+    //     id: '5',
+    //     name: 'About Us',
+    //     path: './about',
+    //     active: false,
+    // },
     // {
     //     id: '6',
     //     name: 'Directions',

@@ -126,7 +126,7 @@
                                  <select class="form-control" formControlName="Description" [id]="lstUnitTypes?.Description"
                                  (change)="selectChangeHandler($event)"
                                 >
-                                    <option *ngFor="let lstUnitType of filterLstUnitTypes"
+                                    <option *ngFor="let lstUnitType of lstUnitTypes"
                                         [value]="lstUnitType?.Description">
                                         {{lstUnitType.Description}}
                                     </option>

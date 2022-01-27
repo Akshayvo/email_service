@@ -67,8 +67,11 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.getData();
+    console.log("1");
     this.fetchThData();
+    console.log("2")
     this.dataSharingService.initMyNavLinks('viewRates', this.router.url);
+    console.log("3")
   }
 
   public fetchThData() {
@@ -86,7 +89,13 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     this.dataSharingService.updateMyNavLink('viewRates', 'prev', `${this.router.url}`);
     const myNavLinks = this.dataSharingService.getMyNavLinks('viewRates');
     console.log('TCL: ViewRatesPageComponent -> navigate -> myNavLinks', myNavLinks);
-    this.router.navigate([`${this.navTo}/${location}`]);
+    if(this.router.url.includes("1321-north-jefferson-st-location")){
+      this.router.navigate([`location/1321-north-jefferson-st-location/${location}`]);
+    }
+    else{
+      this.router.navigate([`location/1687-US-441-location/${location}`]);
+    }
+    
     this.dataSharingService.LstUnitTypes = unitData;
   }
 
