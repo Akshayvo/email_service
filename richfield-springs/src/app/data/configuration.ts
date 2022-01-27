@@ -1,0 +1,23 @@
+export const objSIMSetting = {
+    objActionSetting: {
+        blnAllowMoveIn: true,
+        blnAllowReservation: true
+    },
+    objPaymentSetting: {
+        blnAllowACHPayments: false,
+        blnAllowAutoPay: false,
+        blnAllowCCPayments: true,
+        blnAllowCancelAutoPay: false,
+        blnAllowPartialPayments: false
+    },
+    objReservationSetting: {
+        blnHideGateAccessCode: true,
+    },
+    objUnitSizesSetting: {
+        blnClimateControl: false,
+        blnShowDeposit: true,
+        blnShowRate: false,
+        blnShowUnavailableUnitTypes: true,
+        blnShowUnitAvailability: false
+    },
+};
