@@ -4,7 +4,7 @@
     <h1 class="py-5 text-center">{{contactHeading}}</h1>
     <div class="row bg-light background-padding">
       <div class="col-lg-7 col-md-6 col-12 px-4">
-        <h3 class="heading py-3">Contact Form</h3>
+        <h2 class="heading py-3">Contact Form</h2>
         <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
           <div class="form-group">
               <div [hidden]="" *ngIf="submitted && !this.contactForm.valid" class="alert alert-danger alert-dismissible fade show">
@@ -79,11 +79,11 @@
       </div>
       <div class="col-lg-5 col-md-6 col-12 px-4 contact-details">
         <div class="my-4 contact-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3056.84349556871!2d-84.55556988434222!3d39.989602679417075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883f8dbb2bcf2e05%3A0xba668a7d9298a04!2s10%20S%20Main%20St%2C%20Arcanum%2C%20OH%2045304!5e0!3m2!1sen!2sus!4v1634583749606!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1528.4350103620961!2d-84.55426524176127!3d39.98900994987719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883f8dbad118fd47%3A0x5cf593155c251ee9!2s108%20S%20Main%20St%2C%20Arcanum%2C%20OH%2045304!5e0!3m2!1sen!2sus!4v1643127133751!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" title='map'></iframe> 
         </div>
         <p>
           <span *ngFor="let contact of contactDetails" class="display-contact">
-            <span><h4><b>{{contact.label}}</b></h4></span>
+            <span><h3><b>{{contact.label}}</b></h3></span>
             <span class="contact-links" *ngIf="contact?.label === 'Address:' || contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
                 <h4><a [href]="contact?.redirect" target="{{(contact?.label === 'Address:') ? '_blank' : '_self'}}">&nbsp;{{contact.data}}</a></h4>
             </span>

@@ -2,7 +2,7 @@ export const contact = [
     {
         id: 0,
         label: 'Facility Address:',
-        data: '10 South Main Street Arcanum, Ohio 45304',
+        data: '108 S Main St, Arcanum, OH 45304',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
         redirect: ''
     },
@@ -33,7 +33,7 @@ export const contacts = [
     {
         id: 0,
         label: 'Facility Address:',
-        data: '10 South Main Street Arcanum, Ohio 45304',
+        data: '108 S Main St, Arcanum, OH 45304',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
         redirect: ''
     },
