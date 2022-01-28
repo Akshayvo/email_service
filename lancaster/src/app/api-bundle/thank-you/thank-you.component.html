@@ -22,6 +22,7 @@
         <div *ngIf="navigateToMoveIn">
             <!-- <h1>Thank You </h1>
             <div *ngIf="PaymentAmount > 0" >Your payment of <strong>${{PaymentAmount}}</strong> was successful. </div>  -->
+            <p *ngIf="navigateToMoveIn">After completing this form, your online rental is not complete until you email Lancaster Self Storage a copy of your driver's license and photos of any vehicles you intend to store at Lancaster Self Storage. You may email these documents to: <a href="lancasterselfstoragesc@gmail.com" rel="noopener">lancasterselfstoragesc@gmail.com</a></p>
             <div *ngIf="CCApprovalCode && CCApprovalCode !== 'SMS_NONE'">  Your confirmation number is: <strong>{{CCApprovalCode}}</strong>.
             </div>Please check your email to sign your digital lease agreement. Your move-in is not complete without a signed lease agreement.
         </div>
