@@ -243,18 +243,21 @@
         </div>
 
         <!-- Start of Extra Detail -->
-        <div *ngIf="!!showMilitaryDetails && !!navigateToMoveIn">
+        <div *ngIf="!!showMilitaryDetails && !!navigateToMoveIn" >
         <div class="row" >
           <div class="col-lg-4 col-md-6 form-group">
-            <label>Driver's License Number</label>
+            <label>Driver's License Number*</label>
             <input
               type="text"
               formControlName="DriversLicense"
               class="form-control"
               placeholder="Enter Driver's License Number"
+              [ngClass]="{
+                'is-invalid': submitted && f.objTenant.controls.DriversLicense.errors
+              }"
               
             />
-            <!-- <div
+            <div
               *ngIf="submitted && f.objTenant.controls.DriversLicense.errors"
               class="invalid-feedback"
             >
@@ -263,7 +266,7 @@
                 *ngIf="f.objTenant.controls.DriversLicense.errors.required"
                 >Please fill out this field</small
               >
-            </div> -->
+            </div>
           </div>
           <!-- <div
             class="col-lg-4 col-md-6 form-group custom-date-css"
