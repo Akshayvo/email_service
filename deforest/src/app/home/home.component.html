@@ -76,7 +76,7 @@
           <div class="mb-4">
             <p>
               <span class="font-xs-device" *ngFor="let contact of contactDetails">
-                <h3>{{contact.label}}</h3><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+                <h3>{{contact.label}}</h3><span class="contact-links" *ngIf="contact?.id === 0 || contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
                 <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
               </span>
             </p>

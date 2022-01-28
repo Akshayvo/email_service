@@ -2,4 +2,4 @@
 # Allow crawling of all content
 Sitemap: http://deforestselfstorage.com/sitemap.xml
 User-agent: *
-Disallow:
+Disallow:/privacy-policy

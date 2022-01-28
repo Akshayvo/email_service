@@ -4,6 +4,7 @@ export const contact = [
         label: 'Address:',
         data:  '7227 Gene St, DeForest, WI 53532',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect:'https://www.google.com/maps/place/7227+Gene+St,+DeForest,+WI+53532,+USA/@43.2531096,-89.3870643,17z/data=!3m1!4b1!4m5!3m4!1s0x8806fde3d26ed3c5:0x990deca1633a79c!8m2!3d43.2531096!4d-89.3848756'
     },
     {
         id: 1,

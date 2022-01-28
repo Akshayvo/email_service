@@ -14,8 +14,13 @@ import {
   blurbText,
   aboutFamily,
 } from "../data/home";
-import { script } from "../data/script";
+import {    homePageScript,
+            ogHomePage,
+            script,
+            twitterHomePage, } from "../data/script";
 import { environment } from "../../environments/environment";
+import { CanonicalService } from "../services/canonical.service";
+import { UaParserService } from "../services/ua-parser.service";
 
 @Component({
   selector: "app-home",
@@ -27,6 +32,8 @@ export class HomeComponent implements OnInit {
   hours: any;
   featuresHead: any;
   featuresList: any;
+  imageBaseUrl: any;
+  imagetype: any;
   aboutUs: any;
   serviceOffered: any;
   gettingStarted: any;
@@ -39,21 +46,44 @@ export class HomeComponent implements OnInit {
   homePageTitle: string;
   homePageContent: string;
   script: any;
+  ogHomePage: any;
+  twitterHomePage: any
 
   constructor(
     @Inject(WINDOW) private window: Window,
     private router: Router,
     private titleService: Title,
-    private meta: Meta
+    private meta: Meta,
+    private uaParserService: UaParserService,
+    private canonical: CanonicalService,
   ) {
     this.fetchScript();
     this.loadScript();
     this.fetchMetaData();
+    this.fetchOgHomePage();
+    this.fetchTwitterHomePage();
+    this.ogHomePage.forEach((element) => {
+      this.meta.updateTag({
+        property: element.property,
+        content: element.content,
+      });
+    });
+
+    this.twitterHomePage.forEach((element) => {
+      this.meta.updateTag({
+        name: element.name,
+        content: element.content,
+      });
+    });
+
     this.meta.addTag({
       name: "description",
       content: `${this.homePageContent}`,
     });
     this.titleService.setTitle(`${this.homePageTitle}`);
+    this.canonical.create();
+    this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
+    this.imageBaseUrl = this.uaParserService.baseUrl;
   }
 
   public navigate(location: any) {
@@ -75,6 +105,7 @@ export class HomeComponent implements OnInit {
     this.fetchStaticContent();
     this.fetchFeature();
     this.fetchJumbotronText();
+    this.fetchScript();
     window.scrollTo(0, 0);
   }
 
@@ -93,6 +124,15 @@ export class HomeComponent implements OnInit {
 
   public fetchScript() {
     this.script = script;
+    this.script = homePageScript;
+  }
+
+  public fetchOgHomePage() {
+    this.ogHomePage = ogHomePage;
+  }
+
+  public fetchTwitterHomePage() {
+    this.twitterHomePage = twitterHomePage;
   }
 
   public loadScript() {
@@ -124,5 +164,10 @@ export class HomeComponent implements OnInit {
 
   public fetchFeature() {
     this.feature = feature;
+  }
+
+
+  public getImageUrl(imageName: string) {
+    return `${this.imageBaseUrl}/${imageName}.${this.imagetype}`;
   }
 }
