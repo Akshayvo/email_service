@@ -11,7 +11,7 @@ export const contact = [
     label: "Email:",
     data: "herkimerstorageoutlett@yahoo.com",
     class: "fas fa-envelope mx-2 iconColor",
-    redirect: "mailto:`herkimerstorageoutlett@yahoo.com`",
+    redirect: "mailto:herkimerstorageoutlett@yahoo.com",
   },
   {
     id: 2,
