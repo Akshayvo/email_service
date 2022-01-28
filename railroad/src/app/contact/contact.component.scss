@@ -8,7 +8,9 @@
 
 .display-contact {
   display: flex;
-
+  h3{
+    font-size:16px;
+  }
   // h4 {
   //   width: 100%;
   // }
@@ -31,6 +33,9 @@
 }
 
 .contact-links {
+  
+  padding-bottom:5px;
+
   a {
     color: black;
   }
@@ -63,6 +68,9 @@
 
 .form-control {
   font-size: 0.8rem;
+}
+.heading{
+  font-size:28px;
 }
 
 @media only screen and (max-width: 600px) {
