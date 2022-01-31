@@ -67,12 +67,12 @@
     </div>
       <div class="col-6 d-flex justify-content-center" >
         <div *ngIf="lstUnitType.IsUnitsAvailable; else other" >
-          <div class=" py-1 buttons" >
+          <!-- <div class=" py-1 buttons" >
               <button class="btn  btn-primary" (click)="navigate('reserve', lstUnitType )">Reserve</button>
-          </div>
-          <!-- <div class="py-1 buttons">
-              <button class=" btn btn-outline-primary" (click)="navigate('move-in', lstUnitType)"> Move In</button>
           </div> -->
+          <div class="py-1 buttons">
+              <button class=" btn btn-outline-primary" (click)="navigate('move-in', lstUnitType)"> Move In</button>
+          </div>
         </div>
         <ng-template #other> 
           <div class="text-right" ><p class="card-text ">Please call the facility to reserve a unit or move in.</p></div>
