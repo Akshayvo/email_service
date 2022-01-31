@@ -123,6 +123,9 @@ p {
   .viewrates-desktop {
     display: none;
   }
+  h2{
+    font-size: 24px;
+  }
 }
 
 @media only screen and (max-width: 767px)  and (min-width: 381px) {
@@ -131,7 +134,7 @@ p {
       min-width: 150px;
     }
   }
-  h3{
+  h2{
     font-size: 24px;
   }
 }
@@ -143,7 +146,7 @@ p {
     }
   }
 
-  h3{
+  h2{
     font-size: 1rem;
   }
 }
