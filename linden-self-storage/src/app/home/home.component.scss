@@ -15,6 +15,12 @@
   display: none;
 }
 
+.extra-info{
+  margin-left: 8%;
+  padding: 10px;
+  font-size: 18px;
+}
+
 
 .contact-details {
   h4 {
@@ -578,6 +584,8 @@
     height: 100vh;
   }
 
+
+
   .feature {
     display: none;
   }
@@ -614,6 +622,13 @@
     // background-position: right 37% top 10px;
     background-size: contain;
     height: 80vh;
+  }
+
+  .extra-info{
+    margin-right: 30px;
+    color: green;
+    text-align: center;
+    padding: 0;
   }
 
   .jumbotron-top {
