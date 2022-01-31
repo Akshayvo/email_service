@@ -11,7 +11,7 @@
   </div>
   <div [class.display]="!showTable"  *ngIf="regularLstUnitTypes?.length > 0"> 
     <h2 class="mt-4 mb-2 ">Regular Units</h2>
-    <table  class="viewrates-desktop" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+    <table  class="viewrates-desktop w-auto" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
       <tHead [class.display]="!showTable">
         <tr>
           <th colspan="2" class="px-4 py-1 text-center" *ngFor="let th of th" id={{th.id}}>
@@ -25,7 +25,7 @@
       
       <tbody itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
         <tr itemprop="itemOffered" itemscope itemtype="https://schema.org/SelfStorage" *ngFor="let lstUnitType of regularLstUnitTypes" >
-          <td  colspan="2" class="px-4 border text-center">
+          <td  colspan="2" class="px-2 border text-center">
             <span hidden itemprop="name">{{lstUnitType.Description}} unit Type </span>
             {{lstUnitType.Description}}
             <meta itemprop="description" 
@@ -33,6 +33,10 @@
             <link itemprop="image" href="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg" />
             
           </td>
+          <td colspan="2" class="px-4 border text-center" id='door-size' *ngIf="lstUnitType.UnitTypeID">
+            {{lstUnitType.doorSize}}
+            <meta itemprop="doorSize" content="{{lstUnitType.doorSize}}" />
+        </td>
           <td  colspan="2" class="px-4 border text-center" *ngIf="showRate">
             <span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate | number : '1.2-2'}}
             <meta itemprop="priceRange" content="{{lstUnitType.MonthlyRate}}" />
@@ -57,12 +61,12 @@
           </ng-template>
           <ng-template #other_reserve >
             <td   id="reserve" colspan="2" class="py-2 px-4 border" *ngIf="showReserve">
-              <div class="text-center">Please call the facility to reserve a unit.</div>
+              <div class="text-center">Please call the facility to be placed on a waiting list.</div>
             </td>
           </ng-template>
           <ng-template #other_moveIn >
             <td  id="move-in"  colspan="2" class="py-2 px-4 border" *ngIf="showMovein">
-              <div  class="text-center">Please call the facility to move in.</div>
+              <div  class="text-center">Please call the facility to be placed on a waiting list.</div>
             </td>
           </ng-template>
         </tr> 
@@ -102,7 +106,7 @@
 
 
   <div [class.display]="!showTable" *ngIf="TemperatureLstUnitTypes?.length > 0">
-    <h2 class="mt-4 mb-2 ">Indoor Access Climate Controlled</h2>
+    <h2 class="mt-4 mb-2 ">Indoor Access Climate Controlled - Single Story</h2>
     <table  class="viewrates-desktop" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
       <tHead [class.display]="!showTable">
         <tr>
@@ -125,6 +129,10 @@
             <link itemprop="image" href="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg" />
             
           </td>
+          <td colspan="2" class="px-4 border text-center" id='door-size' *ngIf="lstUnitType.UnitTypeID">
+            {{lstUnitType.doorSize}}
+            <meta itemprop="doorSize" content="{{lstUnitType.doorSize}}" />
+        </td>
           <td  colspan="2" class="px-4 border text-center" *ngIf="showRate">
             <span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate | number : '1.2-2'}}
             <meta itemprop="priceRange" content="{{lstUnitType.MonthlyRate}}" />
@@ -149,12 +157,12 @@
           </ng-template>
           <ng-template #other_reserve >
             <td   id="reserve" colspan="2" class="py-2 px-4 border" *ngIf="showReserve">
-              <div class="text-center">Please call the facility to reserve a unit.</div>
+              <div class="text-center">Please call the facility to be placed on a waiting list.</div>
             </td>
           </ng-template>
           <ng-template #other_moveIn >
             <td  id="move-in"  colspan="2" class="py-2 px-4 border" *ngIf="showMovein">
-              <div  class="text-center">Please call the facility to move in.</div>
+              <div  class="text-center">Please call the facility to be placed on a waiting list.</div>
             </td>
           </ng-template>
         </tr> 
@@ -213,6 +221,10 @@
             content="{{lstUnitType.Description}}" />
             <link itemprop="image" href="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg" />
           </td>
+          <td colspan="2" class="px-4 border text-center" id='door-size' *ngIf="lstUnitType.UnitTypeID">
+            {{lstUnitType.doorSize}}
+            <meta itemprop="doorSize" content="{{lstUnitType.doorSize}}" />
+        </td>
           <td  colspan="2" class="px-4 border text-center" *ngIf="showRate">
             <span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate | number : '1.2-2'}}
             <meta itemprop="priceRange" content="{{lstUnitType.MonthlyRate}}" />
@@ -237,12 +249,12 @@
           </ng-template>
           <ng-template #other_reserve >
             <td   id="reserve" colspan="2" class="py-2 px-4 border" *ngIf="showReserve">
-              <div class="text-center">Please call the facility to reserve a unit.</div>
+              <div class="text-center">Please call the facility to be placed on a waiting list.</div>
             </td>
           </ng-template>
           <ng-template #other_moveIn >
             <td  id="move-in"  colspan="2" class="py-2 px-4 border" *ngIf="showMovein">
-              <div  class="text-center">Please call the facility to move in.</div>
+              <div  class="text-center">Please call the facility to be placed on a waiting list.</div>
             </td>
           </ng-template>
         </tr> 
@@ -297,7 +309,7 @@
       <tbody itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
         <tr itemprop="itemOffered" itemscope itemtype="https://schema.org/SelfStorage"
           *ngFor="let lstUnitType of OverSizedLstUnitTypes">
-          <td colspan="2" class="px-4 border text-center">
+          <td colspan="2" class="px-2 border text-center">
             <span hidden itemprop="name">{{lstUnitType.Description}} unit Type </span>
             {{lstUnitType.Description}}
             <meta itemprop="description" content="{{lstUnitType.Description}}" />
@@ -305,6 +317,10 @@
               href="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg" />
   
           </td>
+          <td colspan="2" class="px-4 border text-center" id='door-size' *ngIf="lstUnitType.UnitTypeID">
+            {{lstUnitType.doorSize}}
+            <meta itemprop="doorSize" content="{{lstUnitType.doorSize}}" />
+        </td>
           <td colspan="2" class="px-4 border text-center" *ngIf="showRate">
             <span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate | number : '1.2-2'}}
             <meta itemprop="priceRange" content="{{lstUnitType.MonthlyRate}}" />
@@ -331,12 +347,12 @@
           </ng-template>
           <ng-template #other_reserve>
             <td id="reserve" colspan="2" class="py-2 px-4 border" *ngIf="showReserve">
-              <div class="text-center">Please call the facility to reserve a unit.</div>
+              <div class="text-center">Please call the facility to be placed on a waiting list.</div>
             </td>
           </ng-template>
           <ng-template #other_moveIn>
             <td id="move-in" colspan="2" class="py-2 px-4 border" *ngIf="showMovein">
-              <div class="text-center">Please call the facility to move in.</div>
+              <div class="text-center">Please call the facility to be placed on a waiting list.</div>
             </td>
           </ng-template>
         </tr>

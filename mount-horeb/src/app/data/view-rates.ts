@@ -22,6 +22,42 @@ export const dataViewRates = [
 
 export const viewRatesAltText = `the corner of a single story self storage building`;
 
+
+export const doorSize = {
+  //unitId:doorsize
+  64: `9'x9'`,
+  63: `9'x9'`,
+  62: `11''x9'`,
+  61: `11''x9'`,
+  60: `9'x9'`,
+  59: `9'x9'`,
+  58: `10'x9'`,
+  57: `9'x9'`,
+  56: `9'x9'`,
+  48: `9'x8'`,
+  47: `9'x8'`,
+  46: `9'x8'`,
+  45: `9''x7'`,
+  44: `11'x12'`,
+  43: `10'x8'10"`,
+  42: `11'x12'`,
+  41: `11'x12'`,
+  40: `11'x12'`,
+  39: `11'x11'8"`,
+  38: `11'x11'8"`,
+  37: `11'x11'8"`,
+  36: `-`,
+  35: `9'x8'`,
+  34: `3'8"X8`,
+  33: `-`,
+  32: `10'x8'10"`,
+  31: `-`,
+  30: `9'x8'10"`,
+  29: `9'x8'10"`,
+  28: `9'x8'`,
+  27: `9'x8'`
+};
+
 export const MilitaryTypes = [
   {
     Description: `NA`,
@@ -112,6 +148,11 @@ export const th = [
     state: true,
   },
   {
+    id: `door-size`,
+    data: `Door Size`,
+    state: true,
+  },
+  {
     id: "rate",
     data: `Rate`,
     state: objSIMSetting.objUnitSizesSetting.blnShowRate,
@@ -144,6 +185,11 @@ export const thtempcontrolled = [
     state: true,
   },
   {
+    id: `door-size`,
+    data: `Door Size`,
+    state: true,
+  },
+  {
     id: "rate",
     data: `Rate`,
     state: objSIMSetting.objUnitSizesSetting.blnShowRate,
@@ -172,6 +218,11 @@ export const thtempcontrolled = [
 export const thoversized = [
   {
     data: `Size`,
+    state: true,
+  },
+  {
+    id: `door-size`,
+    data: `Door Size`,
     state: true,
   },
   {

@@ -12,6 +12,7 @@ import { UnitTypes, LstUnitTypes } from "../models/unittypes";
 import { FetchDataService } from "../services/fetch-data.service";
 import {
   th,
+  doorSize,
   th1,
   thoversized,
   thtempcontrolled,
@@ -77,6 +78,8 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   state: string;
   newUnitTypes: any;
   newUnitTypes1: any;
+  doorSize: any;
+  
 
   private getDataSubscribe$: Subscription;
   constructor(
@@ -108,6 +111,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     this.showMovein = objSIMSetting.objActionSetting.blnAllowMoveIn;
     this.showClimateControl =
       objSIMSetting.objUnitSizesSetting.blnClimateControl;
+    this.doorSize = doorSize;
   }
 
   public navigate(location: any, unitData: any) {
@@ -180,6 +184,38 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
         this.regularLstUnitTypes = this.LstUnitTypes.filter(
           (x) => x.IsClimateControlled !== true && x.IsOutdoor !== true //"Outdoor/Parking"
         );
+
+        this.TemperatureLstUnitTypes.forEach((ele) => {
+          if (this.doorSize[ele.UnitTypeID]) {
+            ele["doorSize"] = this.doorSize[ele.UnitTypeID];
+          } else {
+            ele["doorSize"] = "-";
+          }
+        });
+        this.OutdoorClimate.forEach((ele) => {
+          if (this.doorSize[ele.UnitTypeID]) {
+            ele["doorSize"] = this.doorSize[ele.UnitTypeID];
+          } else {
+            ele["doorSize"] = "-";
+          }
+        });
+        this.OverSizedLstUnitTypes.forEach((ele) => {
+          if (this.doorSize[ele.UnitTypeID]) {
+            ele["doorSize"] = this.doorSize[ele.UnitTypeID];
+          } else {
+            ele["doorSize"] = "-";
+          }
+        });
+
+        this.regularLstUnitTypes.forEach((ele) => {
+          if (this.doorSize[ele.UnitTypeID]) {
+            ele["doorSize"] = this.doorSize[ele.UnitTypeID];
+          } else {
+            ele["doorSize"] = "-";
+          }
+        });
+
+
       });
   }
 
