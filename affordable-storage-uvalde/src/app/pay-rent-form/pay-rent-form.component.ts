@@ -455,6 +455,7 @@ public navigateToPrevious() {
 
   makePayment(paymentData: any) {
     this.makePaymentForUnit = true;
+
     if (this.toggleSignUp === true) {
       if (this.payRentForm.value.objPayment.SignUpForAutoPay === true) {
       this.signUpAutoPay(this.signUp);
@@ -462,6 +463,7 @@ public navigateToPrevious() {
       this.OptionOutOfAutoPay(this.signUp);
     }
     }
+
     this.invalidPayment = null,
     this.makePaymentSubscribe$ = this.paymentService.makePayment(paymentData)
       .subscribe(paymentDataResponse => {
@@ -479,9 +481,11 @@ public navigateToPrevious() {
               this.moveIn(this.MoveIn);
             }
           }
+          
           this.showSuccessPayment = true;
         } else {
           this.makePaymentForUnit = false;
+          this.showloaderForPayment = false;
           this.invalidPayment = 'Unable to make the payment. Please check your card detail.';
         }
 
@@ -492,6 +496,11 @@ public navigateToPrevious() {
           if (err.status === 400) {
             this.showloaderForPayment = false;
             this.invalidPayment = 'Invalid Amount, Payment Amount must be greater than 0.';
+          }
+          if(err.status === 401){
+            
+            this.showloaderForPayment = false;
+            this.invalidPayment = 'Unable to make the payment. Please check your card detail.';
           }
         }
       }
@@ -609,6 +618,7 @@ public navigateToPrevious() {
       return;
     } else {
       this.showloaderForPayment = true;
+      
 
       if ( this.navigateToMoveIn === false && this.navigateToReserve === false) {
         if (this.AmountToPay > 0) {
@@ -632,6 +642,7 @@ public navigateToPrevious() {
            }
          }
       this.makePayment(this.payRentForm.value);
+
     }
   }
 
@@ -664,3 +675,6 @@ public navigateToPrevious() {
     }
   }
 }
+
+
+

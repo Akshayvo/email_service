@@ -20,6 +20,13 @@ export class DataSharingService {
   insuranceChoiceId: number;
   periodID: number;
   addingTenant = false;
+  facilityLocation: string;
+  amountToPayThankYou: number;
+  PaymentAmount: number;
+  CCApprovalCode: string;
+  paymentSuccess: boolean;
+  strConfirmation: string;
+  strAccessCode: string;
 
   locationAPIKey = {
     // loc2: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
@@ -35,8 +42,8 @@ export class DataSharingService {
 
   
   // locationAPIKey = {                                                     // demo north
-  //   loc1: 'PTJeOCM0VDZ4M2s6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
-  //   loc2: 'UDIoOEQ0YzZ2NDw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
+  //   loc1: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', //28463
+  //   loc2: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', //28464
   //   loc3: 'YzI+OEs0ejZqNUg6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
   //   loc4: 'aDJLOGk0KzZBNng6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
   //   loc5: 'PTJeOCM0VDZ4M2s6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',

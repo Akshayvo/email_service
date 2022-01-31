@@ -17,7 +17,7 @@ export const environment = {
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
   facilityName: 'Uvalde Affordable Storage - Testing',
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: `https://affordable-storage-uvalde-staging.netlify.app`
+  websiteUrl: `https://www.uvaldeaffordablestorage.com`
   // APIKey: `dzJ0OVcySjMqNE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29234
 
   // APIKey: `PTJeOCM0VDZ4M2s6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 28463
