@@ -1,11 +1,11 @@
 export const contact = [
-    // {
-    //     id: 0,
-    //     label: 'Address:',
-    //     data: '6 Canton St, Baldwinsville, NY 13027',
-    //     class: 'fas fa-map-marker-alt mx-2 iconColor',
-    //     redirect: ''
-    // },
+    {
+        id: 0,
+        label: 'Address:',
+        data: '2031 Eich Rd, Eureka, CA 95503',
+        class: 'fas fa-map-marker-alt mx-2 iconColor',
+        redirect: 'https://www.google.com/maps/place/South+Bay+Mini+Storage/@40.73965,-124.200731,15z/data=!4m5!3m4!1s0x0:0xe1e8e9323ea91f6d!8m2!3d40.739632!4d-124.2007645?hl=en'
+    },
     {
         id: 1,
         label: 'Email:',
