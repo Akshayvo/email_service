@@ -1,5 +1,6 @@
-<div  itemscope itemtype="https://schema.org/SelfStorage" itemtype="https://schema.org/LocalBusiness">
-  <link itemprop="image" href="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg" />
+<div itemscope itemtype="https://schema.org/SelfStorage" itemtype="https://schema.org/LocalBusiness">
+  <link itemprop="image"
+    href="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg" />
   <span hidden itemprop="name">{{facilityName}}</span>
   <span hidden itemprop="areaServed" itemscope itemtype="https://schema.org/State">
     <span itemprop="name">{{state}}</span>
@@ -7,11 +8,12 @@
   <!-- <app-microdata></app-microdata>  -->
   <div [class.loader]="!showTable">
   </div>
-  <div [class.loader]="showLoader" class="loader-position"> 
+  <div [class.loader]="showLoader" class="loader-position">
   </div>
-  <div [class.display]="!showTable"  *ngIf="regularLstUnitTypes?.length > 0"> 
+  <div [class.display]="!showTable" *ngIf="regularLstUnitTypes?.length > 0">
     <h2 class="mt-4 mb-2 ">Regular Units</h2>
-    <table  class="viewrates-desktop w-auto" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+    <table class="viewrates-desktop w-auto" itemprop="hasOfferCatalog" itemscope
+      itemtype="https://schema.org/OfferCatalog">
       <tHead [class.display]="!showTable">
         <tr>
           <th colspan="2" class="px-4 py-1 text-center" *ngFor="let th of th" id={{th.id}}>
@@ -20,85 +22,100 @@
         </tr>
       </tHead>
       <span hidden itemprop="name">{{facilityName}}</span>
-      
+
       <meta itemprop="name" content="{{facilityName}}" />
-      
+
       <tbody itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
-        <tr itemprop="itemOffered" itemscope itemtype="https://schema.org/SelfStorage" *ngFor="let lstUnitType of regularLstUnitTypes" >
-          <td  colspan="2" class="px-2 border text-center">
+        <tr itemprop="itemOffered" itemscope itemtype="https://schema.org/SelfStorage"
+          *ngFor="let lstUnitType of regularLstUnitTypes">
+          <td colspan="2" class="px-2 border text-center">
             <span hidden itemprop="name">{{lstUnitType.Description}} unit Type </span>
             {{lstUnitType.Description}}
-            <meta itemprop="description" 
-            content="{{lstUnitType.Description}}" />
-            <link itemprop="image" href="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg" />
-            
+            <meta itemprop="description" content="{{lstUnitType.Description}}" />
+            <link itemprop="image"
+              href="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg" />
+
           </td>
           <td colspan="2" class="px-4 border text-center" id='door-size' *ngIf="lstUnitType.UnitTypeID">
             {{lstUnitType.doorSize}}
             <meta itemprop="doorSize" content="{{lstUnitType.doorSize}}" />
-        </td>
-          <td  colspan="2" class="px-4 border text-center" *ngIf="showRate">
+          </td>
+          <td colspan="2" class="px-4 border text-center" *ngIf="showRate">
             <span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate | number : '1.2-2'}}
             <meta itemprop="priceRange" content="{{lstUnitType.MonthlyRate}}" />
           </td>
-          <td  colspan="2" class="px-4 border text-center" *ngIf="showDeposit" >
+          <td colspan="2" class="px-4 border text-center" *ngIf="showDeposit">
             <span *ngIf="lstUnitType.DepositAmount != null">$</span>{{lstUnitType.DepositAmount | number : '1.2-2'}}
           </td>
-          <td id="reserve" colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable && showReserve; else other_reserve" >
+          <td id="reserve" colspan="2" class="py-2 px-4 border text-center"
+            *ngIf="lstUnitType.IsUnitsAvailable && showReserve; else other_reserve">
             <button (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
           </td>
-          <td id="move-in" colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable && showMovein; else other_moveIn" >
+          <td id="move-in" colspan="2" class="py-2 px-4 border text-center"
+            *ngIf="lstUnitType.IsUnitsAvailable && showMovein; else other_moveIn">
             <button (click)="navigate('/view-rates/move-in', lstUnitType)"> Move In</button>
             <link *ngIf="lstUnitType.IsUnitsAvailable" itemprop="availability" href="https://schema.org/InStock" />
           </td>
           <!-- <td  colspan="2" class="px-4 border text-center" *ngIf="lstUnitType.IsClimateControlled && showClimateControl; else other_climate">
             <strong> Yes</strong>
           </td> -->
-          <ng-template #other_climate >
-            <td  colspan="2"  class="px-4 border text-center" *ngIf="showClimateControl">
+          <ng-template #other_climate>
+            <td colspan="2" class="px-4 border text-center" *ngIf="showClimateControl">
               <div>{{defaultClimateString}}</div>
             </td>
           </ng-template>
-          <ng-template #other_reserve >
-            <td   id="reserve" colspan="2" class="py-2 px-4 border" *ngIf="showReserve">
+          <ng-template #other_reserve>
+            <td id="reserve" colspan="2" class="py-2 px-4 border" *ngIf="showReserve">
               <div class="text-center">Please call the facility to be placed on a waiting list.</div>
             </td>
           </ng-template>
-          <ng-template #other_moveIn >
-            <td  id="move-in"  colspan="2" class="py-2 px-4 border" *ngIf="showMovein">
-              <div  class="text-center">Please call the facility to be placed on a waiting list.</div>
+          <ng-template #other_moveIn>
+            <td id="move-in" colspan="2" class="py-2 px-4 border" *ngIf="showMovein">
+              <div class="text-center">Please call the facility to be placed on a waiting list.</div>
             </td>
           </ng-template>
-        </tr> 
-        
+        </tr>
+
       </tbody>
     </table>
     <div class="row viewrates-mobile py-2 border" *ngFor="let lstUnitType of regularLstUnitTypes">
-      <div class="col-6 text-center ">  
+      <div class="col-6 text-center ">
         <strong>Unit Size</strong>
-        <div class=" py-1 ">{{lstUnitType.Description}}</div>
+        <div class="row">
+          <div class="col-6">
+          <div class=" py-1 ">{{lstUnitType.Description}}</div>
+        </div>
+        <div class="col-6">
+            <p class=" "><b><u>Door Size</u></b></p>
+            <div class=" "><span *ngIf="lstUnitType.doorSize != null"></span>{{lstUnitType.doorSize}}</div>
+        </div>
+        </div>
         <div class="row">
           <div class="col-6 text-center " *ngIf="showRate">
             <p class=" "><b><u>Rate</u></b></p>
-            <div class=" "><span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate | number : '1.2-2'}}</div>
+            <div class=" "><span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate | number :
+              '1.2-2'}}</div>
           </div>
-          <div   class="col-6 "[class.ClimateBorder]="lstUnitType.IsClimateControlled" *ngIf="showClimateControl" >
-            <div class=" ClimateControlled" *ngIf="lstUnitType.IsClimateControlled" >Climate Controlled</div>
+          <div class="col-6 " [class.ClimateBorder]="lstUnitType.IsClimateControlled" *ngIf="showClimateControl">
+            <div class=" ClimateControlled" *ngIf="lstUnitType.IsClimateControlled">Climate Controlled</div>
           </div>
         </div>
       </div>
-      <div class="col-6 d-flex justify-content-center" >
-        <div  *ngIf="lstUnitType.IsUnitsAvailable; else other">
-          <div id="reserve"   class=" py-1 buttons" *ngIf="showReserve">
+      <div class="col-6 d-flex justify-content-center">
+        <div *ngIf="lstUnitType.IsUnitsAvailable; else other">
+          <div id="reserve" class=" py-1 buttons" *ngIf="showReserve">
             <button class="btn btn-primary" (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
           </div>
-          <div id="move-in"   class="py-1 buttons" *ngIf="showMovein"> 
-            <button class=" btn btn-outline-primary" (click)="navigate('/view-rates/move-in', lstUnitType)"> Move In</button>
+          <div id="move-in" class="py-1 buttons" *ngIf="showMovein">
+            <button class=" btn btn-outline-primary" (click)="navigate('/view-rates/move-in', lstUnitType)"> Move
+              In</button>
           </div>
         </div>
-        
-        <ng-template #other> 
-          <div  class="text-right" *ngIf="showMovein || showReserve" ><p class="card-text ">Please call the facility to reserve a unit or move in.</p></div>
+
+        <ng-template #other>
+          <div class="text-right" *ngIf="showMovein || showReserve">
+            <p class="card-text ">Please call the facility to reserve a unit or move in.</p>
+          </div>
         </ng-template>
       </div>
     </div>
@@ -107,7 +124,7 @@
 
   <div [class.display]="!showTable" *ngIf="TemperatureLstUnitTypes?.length > 0">
     <h2 class="mt-4 mb-2 ">Indoor Access Climate Controlled - Single Story</h2>
-    <table  class="viewrates-desktop" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+    <table class="viewrates-desktop" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
       <tHead [class.display]="!showTable">
         <tr>
           <th colspan="2" class="px-4 py-1 text-center" *ngFor="let th of thtempcontrolled" id={{thtempcontrolled.id}}>
@@ -116,84 +133,99 @@
         </tr>
       </tHead>
       <span hidden itemprop="name">{{facilityName}}</span>
-      
+
       <meta itemprop="name" content="{{facilityName}}" />
-      
+
       <tbody itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
-        <tr itemprop="itemOffered" itemscope itemtype="https://schema.org/SelfStorage" *ngFor="let lstUnitType of TemperatureLstUnitTypes" >
-          <td  colspan="2" class="px-4 border text-center">
+        <tr itemprop="itemOffered" itemscope itemtype="https://schema.org/SelfStorage"
+          *ngFor="let lstUnitType of TemperatureLstUnitTypes">
+          <td colspan="2" class="px-4 border text-center">
             <span hidden itemprop="name">{{lstUnitType.Description}} unit Type </span>
             {{lstUnitType.Description}}
-            <meta itemprop="description" 
-            content="{{lstUnitType.Description}}" />
-            <link itemprop="image" href="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg" />
-            
+            <meta itemprop="description" content="{{lstUnitType.Description}}" />
+            <link itemprop="image"
+              href="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg" />
+
           </td>
           <td colspan="2" class="px-4 border text-center" id='door-size' *ngIf="lstUnitType.UnitTypeID">
             {{lstUnitType.doorSize}}
             <meta itemprop="doorSize" content="{{lstUnitType.doorSize}}" />
-        </td>
-          <td  colspan="2" class="px-4 border text-center" *ngIf="showRate">
+          </td>
+          <td colspan="2" class="px-4 border text-center" *ngIf="showRate">
             <span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate | number : '1.2-2'}}
             <meta itemprop="priceRange" content="{{lstUnitType.MonthlyRate}}" />
           </td>
-          <td  colspan="2" class="px-4 border text-center" *ngIf="showDeposit" >
+          <td colspan="2" class="px-4 border text-center" *ngIf="showDeposit">
             <span *ngIf="lstUnitType.DepositAmount != null">$</span>{{lstUnitType.DepositAmount | number : '1.2-2'}}
           </td>
-          <td id="reserve" colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable && showReserve; else other_reserve" >
+          <td id="reserve" colspan="2" class="py-2 px-4 border text-center"
+            *ngIf="lstUnitType.IsUnitsAvailable && showReserve; else other_reserve">
             <button (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
           </td>
-          <td id="move-in" colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable && showMovein; else other_moveIn" >
+          <td id="move-in" colspan="2" class="py-2 px-4 border text-center"
+            *ngIf="lstUnitType.IsUnitsAvailable && showMovein; else other_moveIn">
             <button (click)="navigate('/view-rates/move-in', lstUnitType)"> Move In</button>
             <link *ngIf="lstUnitType.IsUnitsAvailable" itemprop="availability" href="https://schema.org/InStock" />
           </td>
           <!-- <td  colspan="2" class="px-4 border text-center" *ngIf="lstUnitType.IsClimateControlled && showClimateControl; else other_climate">
             <strong> Yes</strong>
           </td> -->
-          <ng-template #other_climate >
-            <td  colspan="2"  class="px-4 border text-center" *ngIf="showClimateControl">
+          <ng-template #other_climate>
+            <td colspan="2" class="px-4 border text-center" *ngIf="showClimateControl">
               <div>{{defaultClimateString}}</div>
             </td>
           </ng-template>
-          <ng-template #other_reserve >
-            <td   id="reserve" colspan="2" class="py-2 px-4 border" *ngIf="showReserve">
+          <ng-template #other_reserve>
+            <td id="reserve" colspan="2" class="py-2 px-4 border" *ngIf="showReserve">
               <div class="text-center">Please call the facility to be placed on a waiting list.</div>
             </td>
           </ng-template>
-          <ng-template #other_moveIn >
-            <td  id="move-in"  colspan="2" class="py-2 px-4 border" *ngIf="showMovein">
-              <div  class="text-center">Please call the facility to be placed on a waiting list.</div>
+          <ng-template #other_moveIn>
+            <td id="move-in" colspan="2" class="py-2 px-4 border" *ngIf="showMovein">
+              <div class="text-center">Please call the facility to be placed on a waiting list.</div>
             </td>
           </ng-template>
-        </tr> 
-        
+        </tr>
+
       </tbody>
     </table>
     <div class="row viewrates-mobile py-2 border" *ngFor="let lstUnitType of TemperatureLstUnitTypes">
-      <div class="col-6 text-center ">  
+      <div class="col-6 text-center ">
         <strong>Unit Size</strong>
-        <div class=" py-1 ">{{lstUnitType.Description}}</div>
+        <div class="row">
+          <div class="col-6">
+          <div class=" py-1 ">{{lstUnitType.Description}}</div>
+        </div>
+        <div class="col-6">
+            <p class=" "><b><u>Door Size</u></b></p>
+            <div class=" "><span *ngIf="lstUnitType.doorSize != null"></span>{{lstUnitType.doorSize}}</div>
+        </div>
+        </div>
         <div class="row">
           <div class="col-6 text-center " *ngIf="showRate">
             <p class=" "><b><u>Rate</u></b></p>
-            <div class=" "><span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate | number : '1.2-2'}}</div>
+            <div class=" "><span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate | number :
+              '1.2-2'}}</div>
           </div>
-          <div   class="col-6 "[class.ClimateBorder]="lstUnitType.IsClimateControlled" *ngIf="showClimateControl" >
-            <div class=" ClimateControlled" *ngIf="lstUnitType.IsClimateControlled" >Climate Controlled</div>
+          <div class="col-6 " [class.ClimateBorder]="lstUnitType.IsClimateControlled" *ngIf="showClimateControl">
+            <div class=" ClimateControlled" *ngIf="lstUnitType.IsClimateControlled">Climate Controlled</div>
           </div>
         </div>
       </div>
-      <div class="col-6 d-flex justify-content-center" >
-        <div  *ngIf="lstUnitType.IsUnitsAvailable; else other">
-          <div id="reserve"   class=" py-1 buttons" *ngIf="showReserve">
+      <div class="col-6 d-flex justify-content-center">
+        <div *ngIf="lstUnitType.IsUnitsAvailable; else other">
+          <div id="reserve" class=" py-1 buttons" *ngIf="showReserve">
             <button class="btn btn-primary" (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
           </div>
-          <div id="move-in"   class="py-1 buttons" *ngIf="showMovein"> 
-            <button class=" btn btn-outline-primary" (click)="navigate('/view-rates/move-in', lstUnitType)"> Move In</button>
+          <div id="move-in" class="py-1 buttons" *ngIf="showMovein">
+            <button class=" btn btn-outline-primary" (click)="navigate('/view-rates/move-in', lstUnitType)"> Move
+              In</button>
           </div>
         </div>
-        <ng-template #other> 
-          <div  class="text-right" *ngIf="showMovein || showReserve" ><p class="card-text ">Please call the facility to reserve a unit or move in.</p></div>
+        <ng-template #other>
+          <div class="text-right" *ngIf="showMovein || showReserve">
+            <p class="card-text ">Please call the facility to reserve a unit or move in.</p>
+          </div>
         </ng-template>
       </div>
     </div>
@@ -202,7 +234,7 @@
 
   <div [class.display]="!showTable" *ngIf="TemperatureLstUnitTypes?.length > 0">
     <h2 class="mt-4 mb-2 ">Outdoor Access Climate Controlled</h2>
-    <table  class="viewrates-desktop" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+    <table class="viewrates-desktop" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
       <tHead [class.display]="!showTable">
         <tr>
           <th colspan="2" class="px-4 py-1 text-center" *ngFor="let th of thtempcontrolled" id={{thtempcontrolled.id}}>
@@ -213,79 +245,94 @@
       <span hidden itemprop="name">{{facilityName}}</span>
       <meta itemprop="name" content="{{facilityName}}" />
       <tbody itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
-        <tr itemprop="itemOffered" itemscope itemtype="https://schema.org/SelfStorage" *ngFor="let lstUnitType of OutdoorClimate" >
-          <td  colspan="2" class="px-4 border text-center">
+        <tr itemprop="itemOffered" itemscope itemtype="https://schema.org/SelfStorage"
+          *ngFor="let lstUnitType of OutdoorClimate">
+          <td colspan="2" class="px-4 border text-center">
             <span hidden itemprop="name">{{lstUnitType.Description}} unit Type </span>
             {{lstUnitType.Description}}
-            <meta itemprop="description" 
-            content="{{lstUnitType.Description}}" />
-            <link itemprop="image" href="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg" />
+            <meta itemprop="description" content="{{lstUnitType.Description}}" />
+            <link itemprop="image"
+              href="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg" />
           </td>
           <td colspan="2" class="px-4 border text-center" id='door-size' *ngIf="lstUnitType.UnitTypeID">
             {{lstUnitType.doorSize}}
             <meta itemprop="doorSize" content="{{lstUnitType.doorSize}}" />
-        </td>
-          <td  colspan="2" class="px-4 border text-center" *ngIf="showRate">
+          </td>
+          <td colspan="2" class="px-4 border text-center" *ngIf="showRate">
             <span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate | number : '1.2-2'}}
             <meta itemprop="priceRange" content="{{lstUnitType.MonthlyRate}}" />
           </td>
-          <td  colspan="2" class="px-4 border text-center" *ngIf="showDeposit" >
+          <td colspan="2" class="px-4 border text-center" *ngIf="showDeposit">
             <span *ngIf="lstUnitType.DepositAmount != null">$</span>{{lstUnitType.DepositAmount | number : '1.2-2'}}
           </td>
-          <td id="reserve" colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable && showReserve; else other_reserve" >
+          <td id="reserve" colspan="2" class="py-2 px-4 border text-center"
+            *ngIf="lstUnitType.IsUnitsAvailable && showReserve; else other_reserve">
             <button (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
           </td>
-          <td id="move-in" colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable && showMovein; else other_moveIn" >
+          <td id="move-in" colspan="2" class="py-2 px-4 border text-center"
+            *ngIf="lstUnitType.IsUnitsAvailable && showMovein; else other_moveIn">
             <button (click)="navigate('/view-rates/move-in', lstUnitType)"> Move In</button>
             <link *ngIf="lstUnitType.IsUnitsAvailable" itemprop="availability" href="https://schema.org/InStock" />
           </td>
           <!-- <td  colspan="2" class="px-4 border text-center" *ngIf="lstUnitType.IsClimateControlled && showClimateControl; else other_climate">
             <strong> Yes</strong>
           </td> -->
-          <ng-template #other_climate >
-            <td  colspan="2"  class="px-4 border text-center" *ngIf="showClimateControl">
+          <ng-template #other_climate>
+            <td colspan="2" class="px-4 border text-center" *ngIf="showClimateControl">
               <div>{{defaultClimateString}}</div>
             </td>
           </ng-template>
-          <ng-template #other_reserve >
-            <td   id="reserve" colspan="2" class="py-2 px-4 border" *ngIf="showReserve">
+          <ng-template #other_reserve>
+            <td id="reserve" colspan="2" class="py-2 px-4 border" *ngIf="showReserve">
               <div class="text-center">Please call the facility to be placed on a waiting list.</div>
             </td>
           </ng-template>
-          <ng-template #other_moveIn >
-            <td  id="move-in"  colspan="2" class="py-2 px-4 border" *ngIf="showMovein">
-              <div  class="text-center">Please call the facility to be placed on a waiting list.</div>
+          <ng-template #other_moveIn>
+            <td id="move-in" colspan="2" class="py-2 px-4 border" *ngIf="showMovein">
+              <div class="text-center">Please call the facility to be placed on a waiting list.</div>
             </td>
           </ng-template>
-        </tr> 
-        
+        </tr>
+
       </tbody>
     </table>
     <div class="row viewrates-mobile py-2 border" *ngFor="let lstUnitType of OutdoorClimate">
-      <div class="col-6 text-center ">  
+      <div class="col-6 text-center ">
         <strong>Unit Size</strong>
-        <div class=" py-1 ">{{lstUnitType.Description}}</div>
+        <div class="row">
+          <div class="col-6">
+          <div class=" py-1 ">{{lstUnitType.Description}}</div>
+        </div>
+        <div class="col-6">
+            <p class=" "><b><u>Door Size</u></b></p>
+            <div class=" "><span *ngIf="lstUnitType.doorSize != null"></span>{{lstUnitType.doorSize}}</div>
+        </div>
+        </div>
         <div class="row">
           <div class="col-6 text-center " *ngIf="showRate">
             <p class=" "><b><u>Rate</u></b></p>
-            <div class=" "><span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate | number : '1.2-2'}}</div>
+            <div class=" "><span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate | number :
+              '1.2-2'}}</div>
           </div>
-          <div   class="col-6 "[class.ClimateBorder]="lstUnitType.IsClimateControlled" *ngIf="showClimateControl" >
-            <div class=" ClimateControlled" *ngIf="lstUnitType.IsClimateControlled" >Climate Controlled</div>
+          <div class="col-6 " [class.ClimateBorder]="lstUnitType.IsClimateControlled" *ngIf="showClimateControl">
+            <div class=" ClimateControlled" *ngIf="lstUnitType.IsClimateControlled">Climate Controlled</div>
           </div>
         </div>
       </div>
-      <div class="col-6 d-flex justify-content-center" >
-        <div  *ngIf="lstUnitType.IsUnitsAvailable; else other">
-          <div id="reserve"   class=" py-1 buttons" *ngIf="showReserve">
+      <div class="col-6 d-flex justify-content-center">
+        <div *ngIf="lstUnitType.IsUnitsAvailable; else other">
+          <div id="reserve" class=" py-1 buttons" *ngIf="showReserve">
             <button class="btn btn-primary" (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
           </div>
-          <div id="move-in"   class="py-1 buttons" *ngIf="showMovein"> 
-            <button class=" btn btn-outline-primary" (click)="navigate('/view-rates/move-in', lstUnitType)"> Move In</button>
+          <div id="move-in" class="py-1 buttons" *ngIf="showMovein">
+            <button class=" btn btn-outline-primary" (click)="navigate('/view-rates/move-in', lstUnitType)"> Move
+              In</button>
           </div>
         </div>
-        <ng-template #other> 
-          <div  class="text-right" *ngIf="showMovein || showReserve" ><p class="card-text ">Please call the facility to reserve a unit or move in.</p></div>
+        <ng-template #other>
+          <div class="text-right" *ngIf="showMovein || showReserve">
+            <p class="card-text ">Please call the facility to reserve a unit or move in.</p>
+          </div>
         </ng-template>
       </div>
     </div>
@@ -303,9 +350,9 @@
         </tr>
       </tHead>
       <span hidden itemprop="name">{{facilityName}}</span>
-  
+
       <meta itemprop="name" content="{{facilityName}}" />
-  
+
       <tbody itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
         <tr itemprop="itemOffered" itemscope itemtype="https://schema.org/SelfStorage"
           *ngFor="let lstUnitType of OverSizedLstUnitTypes">
@@ -315,12 +362,12 @@
             <meta itemprop="description" content="{{lstUnitType.Description}}" />
             <link itemprop="image"
               href="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg" />
-  
+
           </td>
           <td colspan="2" class="px-4 border text-center" id='door-size' *ngIf="lstUnitType.UnitTypeID">
             {{lstUnitType.doorSize}}
             <meta itemprop="doorSize" content="{{lstUnitType.doorSize}}" />
-        </td>
+          </td>
           <td colspan="2" class="px-4 border text-center" *ngIf="showRate">
             <span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate | number : '1.2-2'}}
             <meta itemprop="priceRange" content="{{lstUnitType.MonthlyRate}}" />
@@ -356,13 +403,21 @@
             </td>
           </ng-template>
         </tr>
-  
+
       </tbody>
     </table>
     <div class="row viewrates-mobile py-2 border" *ngFor="let lstUnitType of OverSizedLstUnitTypes">
       <div class="col-6 text-center ">
         <strong>Unit Size</strong>
-        <div class=" py-1 ">{{lstUnitType.Description}}</div>
+        <div class="row">
+          <div class="col-6">
+          <div class=" py-1 ">{{lstUnitType.Description}}</div>
+        </div>
+        <div class="col-6">
+            <p class=" "><b><u>Door Size</u></b></p>
+            <div class=" "><span *ngIf="lstUnitType.doorSize != null"></span>{{lstUnitType.doorSize}}</div>
+        </div>
+        </div>
         <div class="row">
           <div class="col-6 text-center " *ngIf="showRate">
             <p class=" "><b><u>Rate</u></b></p>
@@ -384,7 +439,7 @@
               In</button>
           </div>
         </div>
-  
+
         <ng-template #other>
           <div class="text-right" *ngIf="showReserve">
             <p class="card-text ">Please call the facility to reserve a unit or move in.</p>
@@ -396,7 +451,7 @@
 </div>
 
 
-  
+
 
 
 
