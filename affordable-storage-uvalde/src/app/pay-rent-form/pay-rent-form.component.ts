@@ -484,8 +484,9 @@ public navigateToPrevious() {
           
           this.showSuccessPayment = true;
         } else {
-          this.makePaymentForUnit = false;
           this.showloaderForPayment = false;
+          this.makePaymentForUnit = false;
+          
           this.invalidPayment = 'Unable to make the payment. Please check your card detail.';
         }
 
@@ -497,11 +498,7 @@ public navigateToPrevious() {
             this.showloaderForPayment = false;
             this.invalidPayment = 'Invalid Amount, Payment Amount must be greater than 0.';
           }
-          if(err.status === 401){
-            
-            this.showloaderForPayment = false;
-            this.invalidPayment = 'Unable to make the payment. Please check your card detail.';
-          }
+         
         }
       }
     );
