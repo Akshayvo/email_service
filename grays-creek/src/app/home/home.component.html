@@ -7,9 +7,9 @@
       <div class="container">
         <div class="jumbotorn-skew-text">
           <div class="disp" *ngFor="let jumbotron of jumbotron">
-            <h1  class="my-4">
+            <h2  class="my-4">
               {{jumbotron.h2}}
-            </h1>
+            </h2>
           <p class="text-justify">{{jumbotron.blurb}}</p>
           </div>
           <div class="jumbotorn-button">
@@ -110,7 +110,7 @@
           <app-photos></app-photos>
         </div>
         <div class="col-lg-6 py-3">
-          <h2 class="heading pb-4">{{aboutUsHeading}}</h2>
+          <h1 class="heading pb-4">{{aboutUsHeading}}</h1>
           <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p>
         </div>
       </div>

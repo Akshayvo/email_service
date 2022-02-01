@@ -27,7 +27,7 @@ export const featuresList = [
 
 export const aboutUsAlt = `indoor climate controlled storage units with roll-up doors inside of a clean, well-lit building`;
 
-export const aboutUsHeading = `Affordable Self Storage in Baldwinsville`;
+export const aboutUsHeading = `Affordable Self Storage Units in Fayetteville, North Carolina`;
 
 export const aboutUs = [
     {
