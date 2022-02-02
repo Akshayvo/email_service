@@ -1,7 +1,7 @@
 @import "../../styles.scss";
 
 .contact-details {
-  h4 {
+  h3,h4 {
     font-size: 1rem;
   }
 }
@@ -56,6 +56,8 @@
 }
 
 .contact-links {
+  
+  padding-bottom: 5px;
   a {
     color: black;
   }
