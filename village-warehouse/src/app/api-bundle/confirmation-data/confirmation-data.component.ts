@@ -133,6 +133,7 @@ fetchSharedData() {
   this.isValueUpdated = this.dataSharingService.isValueUpdated;
   this.totalTaxAmount = this.dataSharingService.MoveInData.TotalTaxAmount;
   this.totalChargesAmount = this.dataSharingService.MoveInData.TotalChargesAmount;
+  console.log(this.totalChargesAmount)
   this.period = this.dataSharingService.period;
 }
 

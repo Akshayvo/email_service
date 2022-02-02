@@ -16,7 +16,7 @@ export const environment = {
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   websiteUrl: 'https://www.eastrochesterstorage.com',
   // APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north
-  APIKey: `Mjk1NDg6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29548
+  APIKey: `dzJ0OVc1SjQqOE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29548
 
 
 };
