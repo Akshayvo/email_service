@@ -2,26 +2,19 @@ import { objSIMSetting } from './configuration';
 
 export const dataViewRates = [
     {
-      p: `Self Storage Facility - Location 1 has been serving Baldwinsville, and the surrounding communities
-      with quality regular and climate controlled self storage units for nearly two decades. We have
-      the experience and commitment to modern conveniences you need to make your next storage project an easy one`,
+      p: `Are you looking for a storage unit in Richfield Springs?`,
     },
     {
-      p: `At Self Storage Facility - Location 1, you'll have access to our services with an online tenant portal
-      for contactless rentals, and online payments. If you're here after hours and want to make a payment,
-      stop into the office's foyer and use our 24-hour kiosk!`
+      p: `We offer clean, well-lit self storage units across Richfield Springs that cater to a 
+      variety of local residential and business needs. Our facilities are conveniently located, 
+      our access hours are 24/7 to accommodate your busy schedule, and you can easily drive up 
+      or walk up to many of our storage units!`
     },
     {
-      p: `Our residential storage users love our convenient location and affordable rates that take the stress
-      out of their move, renovation, or seasonal de-cluttering projects. An extra closet to an extra garage's
-      worth of space makes the most out of your home's space!
-      `
+      p: `Take a look at our availability and rate today, then give our friendly management team a 
+      call or reserve your unit online in minutes!`
     },
-    {
-      p: `Many local businesses in use our climate controlled storage units to save money by storing in a climate
-      controlled storage unit instead of expensive commercial real estate. We are the ideal space for your extra
-    inventory, or documents. Our 24-hour access policy is the ideal solution for your local business.`
-    }
+    
 ];
 
 export const viewRatesAltText = `two rows of roll-up metal self storage unit doors inside a climate controlled self storage building`;
