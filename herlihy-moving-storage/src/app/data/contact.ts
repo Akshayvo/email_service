@@ -69,11 +69,11 @@ export const contactsLocation1 = [
 export const hoursLocation1 = [
     {
         label: 'Monday - Friday: ',
-        data: '8:00AM to 4:00PM',
+        data: '8:30AM to 4:30PM',
     },
     {
-        label: 'Saturday - Sunday: ',
-        data: 'CLOSED',
+        label: 'Other Times By Appointment',
+        // data: 'CLOSED',
     },
 ];
 
@@ -123,17 +123,17 @@ export const contactsLocation2 = [
 ];
 
 export const hoursLocation2 = [
-    // {
-    //     label: 'Monday - Saturday: ',
-    //     data: '9:00AM - 5:00PM',
-    // },
-    // {
-    //     label: 'Sunday: ',
-    //     data: 'CLOSED',
-    // },
     {
-        label: '8:00AM to 5:00PM 7 Days a Week',
+        label: 'Monday - Saturday: ',
+        data: '8:30AM to 4:30PM',
     },
+    {
+        label: 'Other Times By Appointment',
+        // data: 'CLOSED',
+    },
+    // {
+    //     label: '8:00AM to 5:00PM 7 Days a Week',
+    // },
 ];
 
 export const hoursLocation2AcessHours = [
