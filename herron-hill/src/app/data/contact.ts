@@ -40,7 +40,7 @@ export const hours = [
     },
     {
         label: 'Storage Access Hours: ',
-        data: '7 Days a Week 6:00AM - 9:00PM'
+        data: '7 Days a Week 7:00 AM - 6:00 PM (Winter Hours)'
     }
 ];
 

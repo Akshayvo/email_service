@@ -4,7 +4,7 @@ export const featuresList = [
         td2: 'Online Bill Pay'
     },
     {
-        td1: 'Security Cameras',
+        td1: 'Security Cameras On Site',
         td2: 'Well-Lit Facility'
     },
     {
@@ -19,9 +19,7 @@ export const featuresList = [
         td1: 'Friendly Customer Service',
         td2: 'Affordable Rates'
     },
-    {
-        td1: 'Fully-Fenced Facility'
-    }
+    
 ];
 
 export const aboutUsAlt = `an open self storage unit with children's toys, decorations, and shelving stored inside`;
