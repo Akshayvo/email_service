@@ -81,26 +81,22 @@
     <div class="row viewrates-mobile py-2 border" *ngFor="let lstUnitType of regularLstUnitTypes">
       <div class="col-6 text-center ">
         <strong>Unit Size</strong>
-        <div class="row">
-          <div class="col-6">
           <div class=" py-1 ">{{lstUnitType.Description}}</div>
-        </div>
-        <div class="col-6">
-            <p class=" "><b><u>Door Size</u></b></p>
-            <div class=" "><span *ngIf="lstUnitType.doorSize != null"></span>{{lstUnitType.doorSize}}</div>
-        </div>
-        </div>
         <div class="row">
           <div class="col-6 text-center " *ngIf="showRate">
             <p class=" "><b><u>Rate</u></b></p>
             <div class=" "><span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate | number :
               '1.2-2'}}</div>
           </div>
-          <div class="col-6 " [class.ClimateBorder]="lstUnitType.IsClimateControlled" *ngIf="showClimateControl">
+          <div class="col-6">
+            <p class=" "><b><u>Door Size</u></b></p>
+            <div class=" "><span *ngIf="lstUnitType.doorSize != null"></span>{{lstUnitType.doorSize}}</div>
+        </div>
+        </div>
+          <div [class.ClimateBorder]="lstUnitType.IsClimateControlled" *ngIf="showClimateControl">
             <div class=" ClimateControlled" *ngIf="lstUnitType.IsClimateControlled">Climate Controlled</div>
           </div>
         </div>
-      </div>
       <div class="col-6 d-flex justify-content-center">
         <div *ngIf="lstUnitType.IsUnitsAvailable; else other">
           <div id="reserve" class=" py-1 buttons" *ngIf="showReserve">
@@ -192,25 +188,21 @@
     <div class="row viewrates-mobile py-2 border" *ngFor="let lstUnitType of TemperatureLstUnitTypes">
       <div class="col-6 text-center ">
         <strong>Unit Size</strong>
-        <div class="row">
-          <div class="col-6">
           <div class=" py-1 ">{{lstUnitType.Description}}</div>
-        </div>
-        <div class="col-6">
-            <p class=" "><b><u>Door Size</u></b></p>
-            <div class=" "><span *ngIf="lstUnitType.doorSize != null"></span>{{lstUnitType.doorSize}}</div>
-        </div>
-        </div>
         <div class="row">
           <div class="col-6 text-center " *ngIf="showRate">
             <p class=" "><b><u>Rate</u></b></p>
             <div class=" "><span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate | number :
               '1.2-2'}}</div>
           </div>
-          <div class="col-6 " [class.ClimateBorder]="lstUnitType.IsClimateControlled" *ngIf="showClimateControl">
-            <div class=" ClimateControlled" *ngIf="lstUnitType.IsClimateControlled">Climate Controlled</div>
-          </div>
+          <div class="col-6">
+            <p class=" "><b><u>Door Size</u></b></p>
+            <div class=" "><span *ngIf="lstUnitType.doorSize != null"></span>{{lstUnitType.doorSize}}</div>
         </div>
+        </div>
+          <div [class.ClimateBorder]="lstUnitType.IsClimateControlled" *ngIf="showClimateControl">
+            <div class="ClimateControlled" *ngIf="lstUnitType.IsClimateControlled">Climate Controlled</div>
+          </div>
       </div>
       <div class="col-6 d-flex justify-content-center">
         <div *ngIf="lstUnitType.IsUnitsAvailable; else other">
@@ -299,25 +291,21 @@
     <div class="row viewrates-mobile py-2 border" *ngFor="let lstUnitType of OutdoorClimate">
       <div class="col-6 text-center ">
         <strong>Unit Size</strong>
-        <div class="row">
-          <div class="col-6">
           <div class=" py-1 ">{{lstUnitType.Description}}</div>
-        </div>
-        <div class="col-6">
-            <p class=" "><b><u>Door Size</u></b></p>
-            <div class=" "><span *ngIf="lstUnitType.doorSize != null"></span>{{lstUnitType.doorSize}}</div>
-        </div>
-        </div>
         <div class="row">
           <div class="col-6 text-center " *ngIf="showRate">
             <p class=" "><b><u>Rate</u></b></p>
             <div class=" "><span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate | number :
               '1.2-2'}}</div>
           </div>
+          <div class="col-6">
+            <p class=" "><b><u>Door Size</u></b></p>
+            <div class=" "><span *ngIf="lstUnitType.doorSize != null"></span>{{lstUnitType.doorSize}}</div>
+          </div>
+          </div>
           <div class="col-6 " [class.ClimateBorder]="lstUnitType.IsClimateControlled" *ngIf="showClimateControl">
             <div class=" ClimateControlled" *ngIf="lstUnitType.IsClimateControlled">Climate Controlled</div>
           </div>
-        </div>
       </div>
       <div class="col-6 d-flex justify-content-center">
         <div *ngIf="lstUnitType.IsUnitsAvailable; else other">
@@ -409,25 +397,21 @@
     <div class="row viewrates-mobile py-2 border" *ngFor="let lstUnitType of OverSizedLstUnitTypes">
       <div class="col-6 text-center ">
         <strong>Unit Size</strong>
-        <div class="row">
-          <div class="col-6">
           <div class=" py-1 ">{{lstUnitType.Description}}</div>
-        </div>
-        <div class="col-6">
-            <p class=" "><b><u>Door Size</u></b></p>
-            <div class=" "><span *ngIf="lstUnitType.doorSize != null"></span>{{lstUnitType.doorSize}}</div>
-        </div>
-        </div>
         <div class="row">
           <div class="col-6 text-center " *ngIf="showRate">
             <p class=" "><b><u>Rate</u></b></p>
             <div class=" "><span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate | number :
               '1.2-2'}}</div>
           </div>
-          <div class="col-6 " [class.ClimateBorder]="lstUnitType.IsClimateControlled" *ngIf="showClimateControl">
+          <div class="col-6">
+            <p class=" "><b><u>Door Size</u></b></p>
+            <div class=" "><span *ngIf="lstUnitType.doorSize != null"></span>{{lstUnitType.doorSize}}</div>
+          </div>
+          </div>
+          <div [class.ClimateBorder]="lstUnitType.IsClimateControlled" *ngIf="showClimateControl">
             <div class=" ClimateControlled" *ngIf="lstUnitType.IsClimateControlled">Climate Controlled</div>
           </div>
-        </div>
       </div>
       <div class="col-6 d-flex justify-content-center">
         <div *ngIf="lstUnitType.IsUnitsAvailable; else other">
