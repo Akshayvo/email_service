@@ -1,11 +1,11 @@
 export const loginDetail = [
     {
         userName: `First initial + Last Name`,
-        password: `Your gate access code. Remember to use the # symbol after the numbers.`,
+        password: `Your full phone number(only the numbers)`,
         example: {
-            code: "John Smith's gate access code is 1234#",
+            code: "Full Phone Number is 555-555-5555",
             userName: 'jsmith',
-            password: '1234#'
+            password: '5555555555'
         }
     }
 ];
