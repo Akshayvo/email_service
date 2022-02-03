@@ -45,7 +45,7 @@ export class ThankYouComponent implements OnInit, OnDestroy {
     public router: Router,
     private signOutService: SignOutService
   ) {
-    this.facilityName = environment.facilityName;
+    this.facilityName = environment.locationName;
     this.fetchMetaData();
     this.meta.updateTag({
       name: "description",
