@@ -28,8 +28,7 @@ export const aboutUs = [
         what you’re looking for! `,
     },
     {
-        p: `Our clean, well-lit units with easy access at competitive prices are conveniently located at 
-        several properties around Richfield Springs, so we are sure to have a unit just around the corner!`,
+        p: `Our clean, well-lit units with easy access at competitive prices are conveniently located right next to the Price Chopper Plaza in Richfield Springs, so your unit(s) will be easy to access 24 hours a day, 7 days a week!`,
     },
     {
         p: `Take a moment to review our current rates and availability, then reserve online, or give us a 
@@ -64,9 +63,9 @@ export const feature = [
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/thermometer.svg`,
-        label: 'Climate Controlled',
-        alt: 'Icon of thermometer indicating climate-controlled units'
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/hand.svg`,
+        label: 'Affordable Self Storage Rates',
+        alt: 'Icon of a hand holding money'
     },
 ];
 

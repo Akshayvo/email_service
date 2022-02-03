@@ -15,8 +15,8 @@ export const objSIMSetting = {
     },
     objUnitSizesSetting: {
         blnClimateControl: false,
-        blnShowDeposit: true,
-        blnShowRate: false,
+        blnShowDeposit: false,
+        blnShowRate: true,
         blnShowUnavailableUnitTypes: true,
         blnShowUnitAvailability: false
     },

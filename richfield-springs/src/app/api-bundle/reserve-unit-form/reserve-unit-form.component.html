@@ -249,7 +249,7 @@
           </div>
         </div>
 
-        <!-- Start of Extra Detail
+        <!-- Start of Extra Detail -->
         <div *ngIf="!!showMilitaryDetails && !!navigateToMoveIn">
         <div class="row" >
           <div class="col-lg-4 col-md-6 form-group">
@@ -282,7 +282,7 @@
               class="example-full-width"
               class="form-control"
               placeholder="select your Driver's License Expiration Date"
-              [ngClass]="{ 'is-invalid': submitted && f.DriversLicenseExpDate.errors }"
+              [ngClass]="{ 'is-invalid': submitted &&  f.objTenant.controls.DriversLicenseExpDate.errors}"
             >
               <input
                 matInput
@@ -317,7 +317,7 @@
             class="example-full-width"
             class="form-control"
             placeholder="select your Birthdate"
-            [ngClass]="{ 'is-invalid': submitted && f.DateOfBirth.errors }"
+            [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.DateOfBirth.errors }"
           >
             <input
               matInput
@@ -430,7 +430,7 @@
             class="example-full-width"
             class="form-control"
             placeholder="select your Military Deployed Until Date"
-            [ngClass]="{ 'is-invalid': submitted && f.DeployedUntil.errors }"
+            [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.DeployedUntil.errors }"
           >
             <input
               matInput
@@ -526,7 +526,7 @@
               </div>
             </div>
           </div> 
-        </div> -->
+        </div>
         <!-- End of Extra Detail -->
         <!-- Start of Aletrnate Contact Detail -->
         <div *ngIf="!!showAltDetails && !navigateToReserve">
