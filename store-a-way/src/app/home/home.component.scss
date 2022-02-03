@@ -4,6 +4,7 @@
   h4,h3,h5 {
     margin: 5px;;
     font-size: 1rem;
+    font-weight: 600;
   }
 }
 
@@ -110,7 +111,7 @@
   transform: skew(0deg);
   width: 500px;
   position: absolute;
-  top: 30%;
+  top: 25%;
 
   .btn-outline-primary {
     margin-right: 10px;
