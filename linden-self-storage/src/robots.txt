@@ -1,5 +1,5 @@
  # www.robotstxt.org/
  # Allow crawling of all content
-Sitemap: https://www.lindenstorage.com/sitemap.xml
+Sitemap: https://lindenstorage.com/sitemap.xml
  User-agent: *
  Disallow:
