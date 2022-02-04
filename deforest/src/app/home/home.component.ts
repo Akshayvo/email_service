@@ -1,5 +1,5 @@
 import { WINDOW } from "@ng-toolkit/universal";
-import { Component, OnInit, Inject } from "@angular/core";
+import { Component, OnInit, Inject,Renderer2 } from "@angular/core";
 import { Router } from "@angular/router";
 import { Title, Meta } from "@angular/platform-browser";
 import { homePageTitle, homePageContent } from "../data/title";
@@ -53,6 +53,7 @@ export class HomeComponent implements OnInit {
     @Inject(WINDOW) private window: Window,
     private router: Router,
     private titleService: Title,
+    private _renderer2: Renderer2,
     private meta: Meta,
     private uaParserService: UaParserService,
     private canonical: CanonicalService,
