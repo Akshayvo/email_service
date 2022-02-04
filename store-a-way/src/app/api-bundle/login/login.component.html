@@ -26,7 +26,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="form-group col-lg-6 col-12">ng 
+                    <div class="form-group col-lg-6 col-12">
                         <label for="userpassword">Password</label> &nbsp;
                         <input id="userpassword" type="password" formControlName="strPassword" class="form-control" 
                         [ngClass]="{ 'is-invalid': submitted && f.strPassword.errors }"  
@@ -65,9 +65,9 @@
         <h2>How to Login</h2>
         <div *ngFor="let loginDetail of loginDetail">
           <p><b>Username: </b>&nbsp;{{loginDetail.userName}}<br>
-          <b>Password:</b>&nbsp;{{loginDetail.password}}</p>
+          <b>Password: </b>&nbsp;{{loginDetail.password}}</p>
             <p><b>Example:</b></p>
-            <p>John Smith's {{loginDetail.example.code}}</p>
+            <p>{{loginDetail.example.code}}</p>
             <p>John's Username: {{loginDetail.example.userName}}<br>
               John's Password: {{loginDetail.example.password}}</p>
             <p><strong>Have questions about your account?</strong><br>

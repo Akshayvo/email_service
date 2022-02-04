@@ -25,9 +25,9 @@ socialLinks.forEach(links => {
 
 export const script = {               // Please fill this script according to facility's information
     imagesHomePage: [
-      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Store-A-Way/jpg/stock-self-storage-11.jpg', // 1:1
-      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Store-A-Way/jpg/stock-self-storage-43.jpg', // 4:3
-      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Store-A-Way/jpg/stock-self-storage-169.jpg' // 16:9
+      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Store-A-Way/jpg/store-a-way-llc-11.jpg', // 1:1
+      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Store-A-Way/jpg/store-a-way-llc-43.jpg', // 4:3
+      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Store-A-Way/jpg/store-a-way-llc-169.jpg' // 16:9
      ],
      telephone: contact[contactIndex].data,
      map: 'https://goo.gl/maps/VNEHpc84RsAXAjfa8',
