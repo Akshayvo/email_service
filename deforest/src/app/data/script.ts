@@ -25,9 +25,9 @@ socialLinks.forEach(links => {
 
 export const script = {               // Please fill this script according to facility's information
     imagesHomePage: [
-      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Deforest/deforest-self-storage-units-in-WI+(1x1).jpg",
-        "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Deforest/deforest-self-storageunits-in-WI+(4x3).jpg",
-        "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Deforest/deforest-self-storage-units-in-WI+(16x9).jpg"
+      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Deforest/deforest-self-storage-units-in-WI+(1x1).jpg", // 1:1
+      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Deforest/deforest-self-storageunits-in-WI+(4x3).jpg", // 4:3
+      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Deforest/deforest-self-storage-units-in-WI+(16x9).jpg" // 16:9
      ],
      telephone: contact[contactIndex].data,
      map: "https://www.google.com/maps/place/7227+Gene+St,+DeForest,+WI+53532,+USA/@43.2531096,-89.3870643,17z/data=!3m1!4b1!4m5!3m4!1s0x8806fde3d26ed3c5:0x990deca1633a79c!8m2!3d43.2531096!4d-89.3848756",
@@ -39,7 +39,7 @@ export const script = {               // Please fill this script according to fa
      postalCode: "53532",
      addressCountry: "US",
      id: environment.websiteUrl || "",
-     paymentAccepted:  "Cash, Credit card, Online Payment",
+     paymentAccepted:  "Cash, Check, Credit Card, Debit Card",
      currenciesAccepted: "EUR",
      ratingValue: "4.2",
      bestRating: "5",
@@ -105,7 +105,7 @@ export const homePageScript = [ {
           "postalCode": script.postalCode,
           "streetAddress": script.streetAddress,
         },
-         "url": environment.websiteUrl,
+         "url": `${environment.websiteUrl}/contact-us`,
          "image": script.imagesHomePage[0],
         "contactPoint": [{
           "@type": "ContactPoint",
@@ -337,3 +337,5 @@ export const ogPayRentPage = [
       content: script.imagesHomePage[0]
     },
   ];
+
+  

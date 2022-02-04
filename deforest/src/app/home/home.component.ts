@@ -123,7 +123,7 @@ export class HomeComponent implements OnInit {
   }
 
   public fetchScript() {
-    this.script = script;
+    // this.script = script;
     this.script = homePageScript;
   }
 
