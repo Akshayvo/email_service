@@ -25,9 +25,9 @@ socialLinks.forEach(links => {
 
 export const script = {               // Please fill this script according to facility's information
     imagesHomePage: [
-      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Richfield_Springs/Jpg/stock-self-storage-11.jpg", // 1:1
-      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg", // 4:3
-      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Richfield_Springs/Jpg/stock-self-storage-169.jpg" // 16:9
+      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Richfield_Springs/Jpg/richfield-self-storage-6.jpg", // 1:1
+      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Richfield_Springs/Jpg/richfield-self-storage-43.jpg", // 4:3
+      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Richfield_Springs/Jpg/richfield-self-storage-169.jpg" // 16:9
      ],
      telephone: contact[contactIndex].data,
      map: "https://goo.gl/maps/1DKzu29gmW2T63D77",

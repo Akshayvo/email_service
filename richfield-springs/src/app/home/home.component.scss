@@ -8,11 +8,11 @@
 
 
 .jumbotron-background-webp {
-  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Richfield_Springs/Webp/stock-self-storage-169.webp");
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Richfield_Springs/Webp/richfield-self-storage-169.webp");
 }
 
 .jumbotron-background-jpg {
-  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Richfield_Springs/Jpg/stock-self-storage-169.jpg");
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Richfield_Springs/Jpg/richfield-self-storage-169.jpg");
 }
 
 .display-contact {
@@ -56,6 +56,7 @@
 }
 
 .contact-links {
+  padding-bottom: 5px;
   a {
     color: black;
   }
