@@ -4,7 +4,7 @@ import { MoveInService } from '../services/moveIn.service';
 import { ObjCharges } from '../models/movein';
 import { UnitTypes, LstUnitTypes } from '../models/unittypes';
 import { FetchDataService } from '../services/fetch-data.service';
-import { th } from '../../data/view-rates';
+import { th, discountRate, discountRateHeader } from '../../data/view-rates';
 import { Router } from '@angular/router';
 import { DataSharingService } from '../services/data-sharing.service';
 import { environment } from '../../../environments/environment';
@@ -55,6 +55,8 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   windowLocation: any;
   showSpecialData = [];
   facilityLocation: string;
+  discountRate: any;
+  discountRateHeader: any;
   Description: any;
 
   private getDataSubscribe$: Subscription;
@@ -81,6 +83,8 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
 
   public fetchThData() {
     this.th = th;
+    this.discountRate = discountRate;
+    this.discountRateHeader = discountRateHeader;
   }
 
   receiveMessage() {

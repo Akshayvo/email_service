@@ -73,6 +73,52 @@ export const th = [
     },
   ]
 
+  export const discountRateHeader = [
+    {
+      heading: 'Size'
+    },
+    {
+      heading: 'Monthly Rental'
+    },
+    {
+      heading: 'Semi-Annual Rental with 5% '
+    },
+    {
+      heading: 'Discount      Annual Rental with 10% discount'
+    }
+  ];
+
+  export const discountRate = [
+    {
+      heading: 'Size',
+      size: `30 Footer (12'x30'x10')`,
+      monthlyRental: '$150.00',
+      semiAnnualRental: '$855.00',
+      discountAnnualRental: '$1,620.00'
+    },
+    {
+      heading: 'Monthly Rental',
+      size: `32 Footer (12'x32'x12')`,
+      monthlyRental: '$165.00',
+      semiAnnualRental: '$940.00      ',
+      discountAnnualRental: '$1,782.00'
+    },
+    {
+      heading: 'Semi-Annual Rental with 5% ',
+      size: `33 Footer (12'x33'x12')`,
+      monthlyRental: '$165.00',
+      semiAnnualRental: '$940.00',
+      discountAnnualRental: '$1,782.00'
+    },
+    {
+      heading: 'Discount      Annual Rental with 10% discount',
+      size: `42 Footer (12'x42'x14')`,
+      monthlyRental: '$210.00',
+      semiAnnualRental: '$1,197.00',
+      discountAnnualRental: '$2,268.00'
+    }
+  ];
+
   export const option =  [
     {
       description: 'Alaska',
