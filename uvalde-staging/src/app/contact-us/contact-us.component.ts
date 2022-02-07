@@ -106,6 +106,21 @@ export class ContactUsComponent implements OnInit {
     } else if (this.router.url.includes('246-w-south-lane')) {
       this.og = ogContactPageLocation3;
     }
+    else if (this.router.url.includes('817-s-getty')) {
+      this.og = ogContactPageLocation4;
+    }
+    else if (this.router.url.includes('430-s-hwy-83')) {
+      this.og = ogContactPageLocation5;
+    }
+    else if (this.router.url.includes('500-east-garden-street')) {
+      this.og = ogContactPageLocation6;
+    }
+    else if (this.router.url.includes('2633-east-main-street')) {
+      this.og = ogContactPageLocation7;
+    }
+    else if (this.router.url.includes('244-n-grove')) {
+      this.og = ogContactPageLocation8;
+    }
 }
 
 public fetchMetaData() {
@@ -120,6 +135,21 @@ public fetchTwitter() {
     this.twitter = twitterContactPageLocation1;
   } else if (this.router.url.includes('246-w-south-lane')) {
     this.twitter = twitterContactPageLocation3;
+  }
+  else if (this.router.url.includes('817-s-getty')) {
+    this.twitter = twitterContactPageLocation4;
+  }
+  else if (this.router.url.includes('430-s-hwy-83')) {
+    this.twitter = twitterContactPageLocation5;
+  }
+  else if (this.router.url.includes('500-east-garden-street')) {
+    this.twitter = twitterContactPageLocation6;
+  }
+  else if (this.router.url.includes('2633-east-main-street')) {
+    this.twitter = twitterContactPageLocation7;
+  }
+  else if (this.router.url.includes('244-n-grove')) {
+    this.twitter = twitterContactPageLocation8;
   }
 }
 
@@ -159,6 +189,21 @@ public fetchTwitter() {
       this.fetchContactDetailsLocation2();
     } else if (this.router.url.includes('246-w-south-lane')) {
       this.fetchContactDetailsLocation3();
+    }
+    else if (this.router.url.includes('817-s-getty')) {
+      this.fetchContactDetailsLocation4();
+    }
+    else if (this.router.url.includes('430-s-hwy-83')) {
+      this.fetchContactDetailsLocation5();
+    }
+    else if (this.router.url.includes('500-east-garden-street')) {
+      this.fetchContactDetailsLocation6();
+    }
+    else if (this.router.url.includes('2633-east-main-street')) {
+      this.fetchContactDetailsLocation7();
+    }
+    else if (this.router.url.includes('244-n-grove')) {
+      this.fetchContactDetailsLocation8();
     }
   }
 

@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { aboutUsLocation1, aboutUsLocation2, aboutUsHeadingLocation1, aboutUsHeadingLocation2,
-  aboutUsImageLocation1, aboutUsImageLocation2, aboutUsLocation3, aboutUsImageLocation3,
-  aboutUsHeadingLocation3, aboutUsLocation4, aboutUsHeadingLocation4, aboutUsImageLocation4,
+  aboutUsImageLocation1, aboutUsImageLocation2, aboutUsLocation3,aboutUsLocation4, aboutUsLocation5, aboutUsLocation6, aboutUsLocation7,aboutUsLocation8, aboutUsImageLocation3,
+  aboutUsHeadingLocation3, aboutUsLocation4, aboutUsHeadingLocation4, aboutUsImageLocation4, aboutUsHeadingLocation5,aboutUsHeadingLocation6,aboutUsHeadingLocation7,aboutUsHeadingLocation8,
   aboutUsLocation5, aboutUsHeadingLocation5, aboutUsImageLocation5,
-  aboutUsLocation6, aboutUsHeadingLocation6, aboutUsImageLocation6,  } from '../data/location';
+  aboutUsLocation6, aboutUsHeadingLocation6, aboutUsImageLocation6, aboutUsImageLocation7, aboutUsImageLocation8 } from '../data/location';
 import { CanonicalService } from '../services/canonical.service';
 import { environment } from '../../environments/environment';
 
@@ -39,19 +39,19 @@ export class AboutUsComponent implements OnInit {
     this.fetchDetailsLocation3();
   }
   else if (this.router.url.includes(`${environment.locationName}/817-s-getty`)) {
-    this.fetchDetailsLocation3();
+    this.fetchDetailsLocation4();
   }
   else if (this.router.url.includes(`${environment.locationName}/430-s-hwy-83`)) {
-    this.fetchDetailsLocation3();
+    this.fetchDetailsLocation5();
   }
   else if (this.router.url.includes(`${environment.locationName}/500-east-garden-street`)) {
-    this.fetchDetailsLocation3();
+    this.fetchDetailsLocation6();
   }
   else if (this.router.url.includes(`${environment.locationName}/2633-east-main-street`)) {
-    this.fetchDetailsLocation3();
+    this.fetchDetailsLocation7();
   }
   else if (this.router.url.includes(`${environment.locationName}/244-n-grove`)) {
-    this.fetchDetailsLocation3();
+    this.fetchDetailsLocation8();
   }
 }
 
@@ -94,6 +94,22 @@ export class AboutUsComponent implements OnInit {
     this.aboutPara = aboutUsLocation6;
     this.heading = aboutUsHeadingLocation6;
     this.image = aboutUsImageLocation6;
+    this.alt = `Aerial photo of a self storage unit surrounded by fence with recreational
+    vehicles parked inside the gate.`;
+  }
+
+  public fetchDetailsLocation7() {
+    this.aboutPara = aboutUsLocation7;
+    this.heading = aboutUsHeadingLocation7;
+    this.image = aboutUsImageLocation7;
+    this.alt = `Aerial photo of a self storage unit surrounded by fence with recreational
+    vehicles parked inside the gate.`;
+  }
+
+  public fetchDetailsLocation8() {
+    this.aboutPara = aboutUsLocation8;
+    this.heading = aboutUsHeadingLocation8;
+    this.image = aboutUsImageLocation8;
     this.alt = `Aerial photo of a self storage unit surrounded by fence with recreational
     vehicles parked inside the gate.`;
   }

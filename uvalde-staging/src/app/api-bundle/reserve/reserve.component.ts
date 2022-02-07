@@ -52,12 +52,12 @@ export class ReserveComponent implements OnInit {
       this.heading = headingReservePageLocation6;
     }
     else if (this.router.url.includes(`${environment.locationName}/2633-east-main-street`)) {
-      this.id = 6;
-      this.heading = headingReservePageLocation6;
+      this.id = 7;
+      this.heading = headingReservePageLocation7;
     }
     else if (this.router.url.includes(`${environment.locationName}/244-n-grove`)) {
-      this.id = 6;
-      this.heading = headingReservePageLocation6;
+      this.id = 8;
+      this.heading = headingReservePageLocation8;
     }
   }
 

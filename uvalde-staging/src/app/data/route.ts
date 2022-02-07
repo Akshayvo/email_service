@@ -398,6 +398,46 @@ export const apiRoutes = [
         externalUrl: ''
     }
   },
+  { path: 'review/817-s-getty', component: HomeComponent,
+    resolve: {
+        url: 'externalUrlRedirectResolver'
+    },
+    data: {
+        externalUrl: ''
+    }
+  },
+  { path: 'review/430-s-hwy-83', component: HomeComponent,
+    resolve: {
+        url: 'externalUrlRedirectResolver'
+    },
+    data: {
+        externalUrl: ''
+    }
+  },
+  { path: 'review/500-east-garden-street', component: HomeComponent,
+    resolve: {
+        url: 'externalUrlRedirectResolver'
+    },
+    data: {
+        externalUrl: ''
+    }
+  },
+  { path: 'review/2633-east-main-street', component: HomeComponent,
+    resolve: {
+        url: 'externalUrlRedirectResolver'
+    },
+    data: {
+        externalUrl: ''
+    }
+  },
+  { path: 'review/244-n-grove', component: HomeComponent,
+    resolve: {
+        url: 'externalUrlRedirectResolver'
+    },
+    data: {
+        externalUrl: ''
+    }
+  },
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentComponent },
   {
@@ -412,11 +452,35 @@ export const apiRoutes = [
     path: 'pay-rent/246-w-south-lane', component: PayRentComponent,
     children: childroute
   },
+  {
+    path: 'pay-rent/817-s-getty', component: PayRentComponent,
+    children: childroute
+  },
+  {
+    path: 'pay-rent/430-s-hwy-83', component: PayRentComponent,
+    children: childroute
+  },
+  {
+    path: 'pay-rent/500-east-garden-street', component: PayRentComponent,
+    children: childroute
+  },
+  {
+    path: 'pay-rent/2633-east-main-street', component: PayRentComponent,
+    children: childroute
+  },
+  {
+    path: 'pay-rent/244-n-grove', component: PayRentComponent,
+    children: childroute
+  },
   { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
   { path: 'contact-260-n-grove', component: ContactUsComponent},
   { path: 'contact-201-n-grove', component: ContactUsComponent},
-  { path: 'contact-246-w-south-lane', component: ContactUsComponent},
+  { path: 'contact-817-s-getty', component: ContactUsComponent},
+  { path: 'contact-430-s-hwy-83', component: ContactUsComponent},
+  { path: 'contact-500-east-garden-street', component: ContactUsComponent},
+  { path: 'contact-2633-east-main-street', component: ContactUsComponent},
+  { path: 'contact-244-n-grove', component: ContactUsComponent},
   { path: '**', component: ErrorComponent },
   { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
 ];
@@ -448,6 +512,61 @@ export const iFrameRoutes = [
     ]
   },
   { path: `${environment.locationName}/246-w-south-lane`,
+    component: LocationComponent,
+    children: [
+      {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
+      { path: 'storage-units', component: StorageUnitComponent },
+      { path: 'unit-sizer', component: UnitSizerComponent },
+      { path: 'reserve-unit', component: ReserveUnitComponent },
+      { path: 'about', component: AboutUsComponent },
+      { path: 'directions', component: DirectionsComponent },
+    ]
+  },
+  { path: `${environment.locationName}/817-s-getty`,
+    component: LocationComponent,
+    children: [
+      {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
+      { path: 'storage-units', component: StorageUnitComponent },
+      { path: 'unit-sizer', component: UnitSizerComponent },
+      { path: 'reserve-unit', component: ReserveUnitComponent },
+      { path: 'about', component: AboutUsComponent },
+      { path: 'directions', component: DirectionsComponent },
+    ]
+  },
+  { path: `${environment.locationName}/430-s-hwy-83`,
+    component: LocationComponent,
+    children: [
+      {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
+      { path: 'storage-units', component: StorageUnitComponent },
+      { path: 'unit-sizer', component: UnitSizerComponent },
+      { path: 'reserve-unit', component: ReserveUnitComponent },
+      { path: 'about', component: AboutUsComponent },
+      { path: 'directions', component: DirectionsComponent },
+    ]
+  },
+  { path: `${environment.locationName}/500-east-garden-street`,
+    component: LocationComponent,
+    children: [
+      {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
+      { path: 'storage-units', component: StorageUnitComponent },
+      { path: 'unit-sizer', component: UnitSizerComponent },
+      { path: 'reserve-unit', component: ReserveUnitComponent },
+      { path: 'about', component: AboutUsComponent },
+      { path: 'directions', component: DirectionsComponent },
+    ]
+  },
+  { path: `${environment.locationName}/2633-east-main-street`,
+    component: LocationComponent,
+    children: [
+      {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
+      { path: 'storage-units', component: StorageUnitComponent },
+      { path: 'unit-sizer', component: UnitSizerComponent },
+      { path: 'reserve-unit', component: ReserveUnitComponent },
+      { path: 'about', component: AboutUsComponent },
+      { path: 'directions', component: DirectionsComponent },
+    ]
+  },
+  { path: `${environment.locationName}/244-n-grove`,
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
