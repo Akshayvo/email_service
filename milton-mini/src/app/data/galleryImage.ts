@@ -1,10 +1,10 @@
 export const galleryHome = [
   {
     // tslint:disable-next-line: max-line-length
-    url: `milton-ministorage-1`,
+    url: `milton-ministorage-7`,
     // tslint:disable-next-line:max-line-length
-    thumb: `milton-ministorage-1`,
-    alt: `row of self storage units`
+    thumb: `milton-ministorage-7`,
+    alt: `entry of self stoage unit`
   },
   {
     // tslint:disable-next-line: max-line-length
@@ -43,10 +43,10 @@ export const galleryHome = [
   },
   {
     // tslint:disable-next-line: max-line-length
-    url: `milton-ministorage-7`,
+    url: `milton-ministorage-1`,
     // tslint:disable-next-line:max-line-length
-    thumb: `milton-ministorage-7`,
-    alt: `entry of self stoage unit`
+    thumb: `milton-ministorage-1`,
+    alt: `row of self storage units`        
   },
   {
     // tslint:disable-next-line: max-line-length
