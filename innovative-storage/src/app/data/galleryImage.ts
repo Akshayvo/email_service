@@ -19,5 +19,5 @@ export const galleryHome = [
     // tslint:disable-next-line:max-line-length
     thumb: `innovative-self-storage-3-thumb`,
     alt: `a self storage facility made of single story metal buildings behind an electronic security gate`
-  }
+  },
 ];
