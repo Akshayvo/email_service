@@ -1,0 +1,299 @@
+<div class="loaderBg" *ngIf="showConfirmation">
+    <div [class.loader]="showConfirmation ">   
+    </div>
+    <p class="px-2 my-2" *ngIf="!navigateToMoveIn"><b>Confirming your Reservation, please wait...</b></p>
+    <p class="px-2 my-2" *ngIf="navigateToMoveIn"><b>Confirming your Move in, please wait...</b></p>
+</div>
+
+<div class="row">
+    <div class="col-md-6 p-3">
+            <h3 class="mb-3">Tenant Information</h3>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                                FirstName
+                        </td>
+                        <td>
+                            {{firstName}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                                LastName
+                        </td>
+                        <td>
+                            {{lastName}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                                Phone Number 
+                        </td>
+                        <td>
+                            {{phone}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                                Email Adddress
+                        </td>
+                        <td>
+                            {{emailAddress}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                                Address Line 1
+                        </td>
+                        <td>
+                            {{addressLine1}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                                Address Line 2
+                        </td>
+                        <td>
+                            {{addressLine2}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                                City
+                        </td>
+                        <td>
+                            {{city}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            State
+                    </td>
+                        <td>
+                            {{stateString}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                                ZIP
+                        </td>
+                        <td>
+                            {{zip}}
+                        </td>
+                    </tr>
+                    <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
+                        <td>
+                            Driver's License Number
+                        </td>
+                        <td>
+                            {{driversLicense}}
+                        </td>
+                    </tr>
+                    <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
+                        <td>
+                            Driver's License Expiration Date
+                        </td>
+                        <td>
+                            {{driversLicenseExpDate}}
+                        </td>
+                    </tr>
+                    <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
+                        <td>
+                            Birthdate
+                        </td>
+                        <td>
+                            {{dateOfBirth}}
+                        </td>
+                    </tr>
+                    <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
+                        <td>
+                            Military Type
+                        </td>
+                        <td>
+                            {{militaryType}}
+                        </td>
+                    </tr>
+                    <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
+                        <td>
+                            Military Branch
+                        </td>
+                        <td>
+                            {{militaryBranch}}
+                        </td>
+                    </tr>
+                    <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
+                        <td>
+                            Military ID
+                        </td>
+                        <td>
+                            {{militaryID}}
+                        </td>
+                    </tr>
+                    <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
+                        <td>
+                            Military Deployed Until Date
+                        </td>
+                        <td>
+                            {{deployedUntil}}
+                        </td>
+                    </tr>
+                    <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
+                        <td>
+                            Military Division/Unit
+                        </td>
+                        <td>
+                            {{militaryDivision}}
+                        </td>
+                    </tr>
+                    <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
+                        <td>
+                            Military Commanding Officer
+                        </td>
+                        <td>
+                            {{commandingOfficer}}
+                        </td>
+                    </tr>
+                    <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
+                        <td>
+                            Military C.O. Phone
+                        </td>
+                        <td>
+                            {{commandingOfficerPhone}}
+                        </td>
+                    </tr>                    
+                </tbody>
+            </table>
+        </div>
+        <div class="col-lg-6 p-3 confirmation-style" *ngIf="!!showAltDetails && !navigateToReserve">
+            <h3 class="mb-3">Alternate Contact Information</h3>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            Name
+                        </td>
+                        <td>
+                            {{alternateName}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                                Phone Number 
+                        </td>
+                        <td>
+                            {{alternatePhone}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                                Address Line 1
+                        </td>
+                        <td>
+                            {{alternateAddressLine1}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                                Address Line 2
+                        </td>
+                        <td>
+                            {{alternateAddressLine2}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                                City
+                        </td>
+                        <td>
+                            {{alternateCity}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            State
+                    </td>
+                        <td>
+                            {{alternateStateString}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                                ZIP
+                        </td>
+                        <td>
+                            {{alternateZIP}}
+                        </td>
+                    </tr>                     
+                </tbody>
+            </table>
+        </div>
+        <div class="col-lg-6 p-3 confirmation-style">
+            <h3 class="mb-3">Unit Information</h3>
+            <table class="p-2">
+                <tbody>
+                    <tr>
+                        <td>
+                            Unit Type
+                        </td>
+                        <td>
+                            {{description}}
+                        </td>
+                    </tr>
+                    <tr *ngIf="monthlyRate">
+                        <td>
+                            Rate
+                        </td>
+                        <td>
+                            ${{monthlyRate | number : '1.2-2'}}
+                        </td>
+                    </tr>
+                    <tr *ngIf="navigateToReserve && reservationFee > 0">
+                        <td>
+                            Reservation Charges
+                        </td>
+                        <td>
+                            ${{reservationFee | number : '1.2-2'}} <span *ngIf="reservationFeeTax"> + ${{reservationFeeTax | number : '1.2-2'}}(Tax)</span>
+                        </td>
+                    </tr>
+                    <tr *ngIf="!navigateToMoveIn">
+                        <td>
+                            Move In Date
+                        </td>
+                        <td>
+                            {{MoveIn.dteMoveIn}}
+                        </td>
+                    </tr>
+                    <tr *ngIf="navigateToMoveIn">
+                        <td>
+                            Total Charges
+                        </td>
+                        <td>
+                            ${{totalChargesAmount | number : '1.2-2'}}
+                            <span *ngIf="totalTaxAmount > 0">
+                                    + ${{totalTaxAmount | number : '1.2-2'}} (Tax)
+                            </span>
+                        </td>                   
+                    </tr>
+                    <tr>
+                        <td>
+                            Period
+                        </td>
+                        <td>
+                            {{period}}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    <div class="form-group text-right button">
+        <button type="button" class="btn btn-primary col-lg-3 col-md-4 col-sm-12 my-2"
+        (click)="navigateToPrevious()">Previous</button>
+
+        <button type="submit" (click)="onSubmit()" [disabled]="showConfirmation" class="btn btn-primary ml-lg-4 ml-md-2 ml-sm-auto col-lg-3 col-md-4 col-sm-12 " 
+        *ngIf="navigateToReserve">Reserve</button>
+
+        <button type="submit" (click)="onSubmit()" [disabled]="showConfirmation" class="btn btn-primary ml-lg-4 ml-md-2 ml-sm-auto col-lg-3 col-md-4 col-sm-12 "
+        *ngIf="navigateToMoveIn" >Move In</button>
+    </div>
+</div>
