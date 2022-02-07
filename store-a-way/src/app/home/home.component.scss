@@ -10,11 +10,11 @@
 
 
 .jumbotron-background-webp {
-  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Store-A-Way/webp/store-a-way-self-storage-jumbotron.webp");
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Store-A-Way/webp/store-a-way-jumbotron-169.webp");
 }
 
 .jumbotron-background-jpg {
-  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Store-A-Way/jpg/store-a-way-self-storage-jumbotron.jpg");
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Store-A-Way/jpg/store-a-way-jumbotron-169.jpg");
 }
 
 .display-contact {
@@ -591,9 +591,14 @@
 @media only screen and (max-width: 429px) {
   .jumbotron {
     text-align: center;
-    background-attachment: unset;
-    background-position: center left;
-    height: 100vh;
+    background-size: contain;
+    // background-attachment: unset;
+    // background-position: center left;
+    height: 42vh;
+  }
+
+  .jumbotron-top {
+    height: 30vh;
   }
 
   .feature {
@@ -611,6 +616,7 @@
     height: 150px;
     bottom: 0;
     position: absolute;
+    top: 33vh;
   }
 
   .jumbotorn-skew-text {
@@ -618,6 +624,62 @@
     left: 0;
     top: auto;
     bottom: 2px;
+    position: absolute;
+    top: 33vh;
+
+    .btn-outline-primary {
+      margin-right: 0;
+      margin-bottom: 8px;
+    }
+
+    .btn-primary {
+      margin-top: 8px;
+    }
+
+    .jumbotorn-button {
+      padding: 15px;
+    }
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .jumbotron {
+    text-align: center;
+    background-size: contain;
+    // background-attachment: unset;
+    // background-position: center left;
+    height: 45vh;
+  }
+
+  .jumbotron-top {
+    height: 34vh;
+  }
+
+  .feature {
+    display: none;
+  }
+
+  .disp {
+    display: none;
+  }
+
+  .jumbotorn-skew-style {
+    transform: skew(0deg);
+    width: 100%;
+    left: auto;
+    height: 150px;
+    bottom: 0;
+    position: absolute;
+    top: 37vh;
+  }
+
+  .jumbotorn-skew-text {
+    width: 100%;
+    left: 0;
+    top: auto;
+    bottom: 2px;
+    position: absolute;
+    top: 37vh;
 
     .btn-outline-primary {
       margin-right: 0;
