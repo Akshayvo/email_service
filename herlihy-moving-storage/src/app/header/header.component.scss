@@ -38,6 +38,11 @@ a {
   }
 }
 
+.payment-button {
+  display: none;
+  
+}
+
 .social :hover {
   color: $white;
 }
@@ -114,9 +119,9 @@ a {
 }
 
 @media screen and (max-width: 991px) {
-  .display {
-    display: none;
-  }
+  // .display {
+  //   display: none;
+  // }
 
   .nav-link {
     padding-top: 10px !important;
@@ -193,7 +198,7 @@ a {
     #site-header {
       position: relative;
       height: auto;
-      background: #fff;
+      background: $primary;
       top: 0;
       width: 100%;
       z-index: 100;
@@ -202,6 +207,17 @@ a {
     }
     #site-header.hide {
       top:-101px;
+    }
+
+    .contact-details, .social{
+      display: none;
+    }
+
+    .payment-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
     }
     
     #nav-header {

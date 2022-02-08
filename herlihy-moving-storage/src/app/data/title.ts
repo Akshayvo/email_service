@@ -1,10 +1,10 @@
 export const homePageTitle = `Herlihy Self Storage serves Chillicothe and the surrounding communities with a variety of well-maintained and affordable self storage units`;
 export const homePageContent = `Herlihy Self Storage serves Chillicothe and the surrounding communities with a variety of well-maintained and affordable self storage unit options! Call or rent online today!`;
 
-export const location1PageTitle = `Affordable Self Storage Units & Moving In Chillicothe`;
+export const location1PageTitle = `Chillicothe Self Storage | Herlihy Self Storage`;
 export const location1PageContent = `Herlihy Storage serves Chillicothe and the surrounding communities with a variety of well-maintained and affordable self storage units`;
 
-export const location2PageTitle = `Affordable Self Storage Units in Grove City`;
+export const location2PageTitle = `Grove City Self Storage | U Stor 104 Self-Storage`;
 export const location2PageContent = `U Stor 104 Self-Storage offers convenient 24/7 access to your belongings, online payments, and a variety of unit sizes for all of your self storage needs.`;
 
 export const location3PageTitle = ``;
@@ -68,10 +68,10 @@ export const location6PayrentPageContent = ``;
 
 
 
-export const location1ContactPageTitle = `Contact Us  | Herlihy Self Storage`;
+export const location1ContactPageTitle = `Chillicothe Self Storage | Herlihy Self Storage`;
 export const location1ContactPageContent = `Do you have a question about our services, or would you like help with your account? Use our form or contact information to reach out, today!`;
 
-export const location2ContactPageTitle = `Contact Us  | U Stor 104 Self-Storage`;
+export const location2ContactPageTitle = `Grove City Self Storage | U Stor 104 Self-Storage`;
 export const location2ContactPageContent = `Do you have a question about our services, or would you like help with your account? Use our form or contact information to reach out, today!`;
 
 export const location3ContactPageTitle = ``;

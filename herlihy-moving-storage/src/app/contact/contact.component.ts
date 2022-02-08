@@ -13,7 +13,7 @@ import { LocationService } from '../services/location.service';
 import { CanonicalService } from '../services/canonical.service';
 import { ogContactPage, twitterContactPage } from '../data/script';
 import { tableDataContactPage, tableHeader } from '../data/pay-rent';
-import { contactPageTitle, contactPageContent } from '../data/title';
+import { contactPageTitle, location1ContactPageTitle, location1ContactPageContent, contactPageContent } from '../data/title';
 
 @Component({
   selector: 'app-contact',
@@ -44,6 +44,7 @@ export class ContactComponent implements OnInit {
   tableData: any;
   tableHeader: any;
   contactPageTitle: string;
+  location1ContactPageTitle: string;
   contactPageContent: string;
 
   constructor(

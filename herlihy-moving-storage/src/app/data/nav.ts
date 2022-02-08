@@ -13,12 +13,12 @@ export const navLinks = [
         sublinks: [
             {
                 id: '1',
-                label: 'Chillicothe',
+                label: 'Chillicothe Self Storage',
                 path: `${environment.locationName}/chillicothe`,
               },
             {
                 id: '2',
-                label: 'Grove-city',
+                label: 'Grove City Self Storage',
                 path: `${environment.locationName}/grove-city`,
             },
              

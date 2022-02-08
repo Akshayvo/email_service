@@ -9,6 +9,7 @@ import { homePageScript, ogHomePage, twitterHomePage } from '../data/script';
 import { CanonicalService } from '../services/canonical.service';
 import { LocationService } from '../services/location.service';
 import { homePageTitle, homePageContent } from '../data/title';
+import { Router } from "@angular/router";
 import { environment } from '../../environments/environment';
 import { UaParserService } from '../services/ua-parser.service';
 
@@ -42,6 +43,7 @@ export class HomeComponent implements OnInit {
   constructor(
     @Inject(WINDOW) private window: Window,
     private titleService: Title,
+    private router: Router,
     private meta: Meta,
     private data: LocationService,
     private canonical: CanonicalService,
@@ -122,6 +124,15 @@ export class HomeComponent implements OnInit {
   public fetchTemplate() {
     this.template = environment.template;
   }
+
+
+  public navigate1(location: any) {
+      this.router.navigate([`${location}`]);
+  }
+
+  public navigate2(location: any) {
+    this.router.navigate([`${location}`]);
+}
 
   receiveMessage() {
     this.data.currentLocation.subscribe(locationId => {
