@@ -158,7 +158,7 @@ export const socialLinks = [
     // },
     {
         label: 'facebook',
-        path: 'https://www.facebook.com/storageplusbaldwin/',
+        path: ' https://www.facebook.com/Affordable-Storage-of-Kingwood-315380055684716/ ',
         class: 'fab fa-facebook-square',
     },
 ];
