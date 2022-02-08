@@ -10,8 +10,8 @@ export const contact = [
         id: 1,
         label: 'Email:',
         class: 'fas fa-envelope mr-2 iconColor',
-        data: 'info@deforestselfstorage.com',
-        redirect: 'mailto:info@deforestselfstorage.com'
+        data: 'deforestselfstorage@gmail.com',
+        redirect: 'mailto:deforestselfstorage@gmail.com'
     },
     {
         id: 2,
