@@ -1,5 +1,5 @@
 # www.robotstxt.org/
 # Allow crawling of all content
-Sitemap: https://friendship-self-storage-staging.netlify.app/sitemap.xml
+Sitemap: https://friendship-selfstorage.com/sitemap.xml
 User-agent: *
 Disallow:/privacy-policy
