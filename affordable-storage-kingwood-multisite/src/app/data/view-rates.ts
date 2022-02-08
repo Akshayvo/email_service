@@ -81,10 +81,10 @@ export const th = [
       heading: 'Monthly Rental'
     },
     {
-      heading: 'Semi-Annual Rental with 5% '
+      heading: 'Semi-Annual Rental with 5% Discount'
     },
     {
-      heading: 'Discount      Annual Rental with 10% discount'
+      heading: 'Annual Rental with 10% Discount'
     }
   ];
 
