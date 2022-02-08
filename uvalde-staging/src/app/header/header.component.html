@@ -43,7 +43,7 @@
 
           <span *ngIf="nav?.type === 'dropdown'">
               <div class="dropdown show">  
-                <a class="dropdown-toggle nav-link" role="button" id="dropdownMenuLink" [class.nav-link-active]="router.isActive('/alabama/260-n-grove') || router.isActive('/alabama/201-n-grove') || router.isActive('/alabama/246-w-south-lane') || router.isActive('/alabama/belforest') || router.isActive('/alabama/fairhope') || router.isActive('/alabama/robertsdale')" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{nav.label}}</a>
+                <a class="dropdown-toggle nav-link" role="button" id="dropdownMenuLink" [class.nav-link-active]="router.isActive('/texas/260-n-grove') || router.isActive('/texas/201-n-grove') || router.isActive('/texas/246-w-south-lane') || router.isActive('/texas/817-s-getty') || router.isActive('/texas/430-s-hwy-83') || router.isActive('/texas/500-east-garden-street') || router.isActive('/texas/2633-east-main-street') || router.isActive('/texas/244-n-grove')" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{nav.label}}</a>
                 <ul class="dropdown-menu location-list" aria-labelledby="dropdownMenuLink">
                   <li *ngFor="let sub of nav.sublinks text-center">
                     <a class="dropdown-item" [routerLinkActive]="'location-active'" [routerLink]="sub?.path" (click)="onClick(menu)">{{sub.label}}</a></li>

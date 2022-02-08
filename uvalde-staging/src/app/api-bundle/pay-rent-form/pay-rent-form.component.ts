@@ -139,7 +139,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         CCAccountCVV2: [''],
         CCAccountBillingAddress: ['', Validators.required],
         CCAccountZIP: ['', Validators.required],
-        // SignUpForAutoPay:  [],
+        SignUpForAutoPay:  [],
         PaymentAmount: ['', Validators.required],
         PayType: this.formBuilder.group({
           PayTypeDescription: ['', Validators.required],
@@ -462,7 +462,7 @@ public navigateToPrevious() {
               CCExpirationYear: Tenant.CCExpirationYear,
               CCAccountBillingAddress: Tenant.CCBillingAddress,
               CCAccountZIP: Tenant.CCBillingZIP,
-              // SignUpForAutoPay: Tenant.IsAutoPaymentsEnabled,
+              SignUpForAutoPay: Tenant.IsAutoPaymentsEnabled,
               // tslint:disable-next-line: max-line-length
               PaymentAmount: (this.navigateToMoveInPayment ? this.balance : (this.navigateToReserve ? this.TotalReserveAmount : this.totalMoveInAmount)),
             }
@@ -519,7 +519,7 @@ public navigateToPrevious() {
     );
   }
 
-  toggleEvent(e: any) {
+  toggleEvent() {
     this.toggleSignUp = true;
   }
 
@@ -558,13 +558,24 @@ public navigateToPrevious() {
   makePayment(paymentData: any) {
     this.makePaymentForUnit = true;
 
-    // if (this.toggleSignUp === true) {
-    //   if (this.payRentForm.value.objPayment.SignUpForAutoPay === true) {
-    //   this.signUpAutoPay(this.signUp);
-    // } else {
-    //   this.OptionOutOfAutoPay(this.signUp);
-    // }
-    // }
+    if (this.toggleSignUp === true) {
+      if (this.payRentForm.value.objPayment.SignUpForAutoPay === true) {
+        this.signUp = {
+          objTenant: {
+            CCNumber: this.payRentForm.value.objPayment.CCAccountNumber,
+            CCBillingAccountName: this.payRentForm.value.objPayment.CCAccountName,
+            CCExpirationMonth: this.payRentForm.value.objPayment.CCExpirationMonth,
+            CCExpirationYear: this.payRentForm.value.objPayment.CCExpirationYear,
+            CCBillingAddress: this.payRentForm.value.objPayment.CCAccountBillingAddress,
+            CCBillingZIP: this.payRentForm.value.objPayment.CCAccountZIP,
+            PreferredPaymentMethod: this.payRentForm.value.objPayment.PayType.PayTypeID,
+          }
+        };
+      this.signUpAutoPay(this.signUp);
+    } else {
+      this.OptionOutOfAutoPay(this.signUp);
+    }
+    }
 
     this.invalidPayment = null,
     this.makePaymentSubscribe$ = this.paymentService.makePayment(paymentData)
@@ -626,6 +637,7 @@ public navigateToPrevious() {
   }
 
   signUpAutoPay(signUp: any) {
+    
   this.signUpAutoPaySubscribe$ =  this.tenantInfoService.signUpAutoPay(signUp)
       .subscribe(result => {
       }, (err) => {

@@ -67,9 +67,9 @@ export class PaymentComponent implements OnInit {
     this.fetchTableHeader();
     this.fetchTableData();
 
-    // if (!!localStorage.getItem('paymentTab')) {
-    //   this.paymentTab = localStorage.getItem('paymentTab');
-    // }
+    if (!!localStorage.getItem('paymentTab')) {
+      this.paymentTab = localStorage.getItem('paymentTab');
+    }
 
     if (!!(localStorage.getItem('strTenantToken'))) {
       const navTo = localStorage.getItem('paymentNavigationUrl');

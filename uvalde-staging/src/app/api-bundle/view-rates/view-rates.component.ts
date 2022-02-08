@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { CanonicalService } from '../../services/canonical.service';
 import { headingLocation1, headingLocation2, headingLocation3, headingLocation4, headingLocation5,
-  headingLocation6,   } from '../../data/location';
+  headingLocation6,headingLocation7,headingLocation8   } from '../../data/location';
 import { environment } from '../../../environments/environment'
 @Component({
   selector: 'app-view-rates',

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "multi-location-site": {
+    "uvalde-staging": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -57,7 +57,7 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "multi-location-site:build"
+            "browserTarget": "uvalde-staging:build"
           },
           "configurations": {
             "production": {
@@ -68,7 +68,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "multi-location-site:build"
+            "browserTarget": "uvalde-staging:build"
           }
         },
         "test": {
@@ -110,7 +110,7 @@
         }
       }
     },
-    "multi-location-site-e2e": {
+    "uvalde-staging-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -118,11 +118,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "multi-location-site:serve"
+            "devServerTarget": "uvalde-staging:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "multi-location-site:serve:production"
+              "devServerTarget": "uvalde-staging:serve:production"
             }
           }
         },
@@ -138,7 +138,7 @@
       }
     }
   },
-  "defaultProject": "multi-location-site",
+  "defaultProject": "uvalde-staging",
   "cli": {
     "analytics": "6bd82b3b-d39e-41fa-9ce4-407a47e43b37"
   }

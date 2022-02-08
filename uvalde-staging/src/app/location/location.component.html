@@ -32,11 +32,19 @@
               </div>
             </span>
             <span *ngIf="locationId == 5" title="a row of self storage unit doors in a single story metal storage building"> 
-              <div class="img-box-4" [ngClass]="imagetype === 'jpg' ? 'img-box-5-jpg' : 'img-box-5-webp'">
+              <div class="img-box-4" [ngClass]="imagetype === 'jpg' ? 'img-box-4-jpg' : 'img-box-4-webp'">
               </div>
             </span>
             <span *ngIf="locationId == 6" title="single story self storage unit buildings with green metal roll up doors"> 
-              <div class="img-box-4" [ngClass]="imagetype === 'jpg' ? 'img-box-6-jpg' : 'img-box-6-webp'">
+              <div class="img-box-4" [ngClass]="imagetype === 'jpg' ? 'img-box-4-jpg' : 'img-box-4-webp'">
+              </div>
+            </span>
+            <span *ngIf="locationId == 7" title="single story self storage unit buildings with green metal roll up doors"> 
+              <div class="img-box-4" [ngClass]="imagetype === 'jpg' ? 'img-box-4-jpg' : 'img-box-4-webp'">
+              </div>
+            </span>
+            <span *ngIf="locationId == 8" title="single story self storage unit buildings with green metal roll up doors"> 
+              <div class="img-box-4" [ngClass]="imagetype === 'jpg' ? 'img-box-4-jpg' : 'img-box-4-webp'">
               </div>
             </span>
         </div>
@@ -61,14 +69,20 @@
             <span *ngIf="locationId == 6">
               <iframe title="Facility Google Map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6889.883101799224!2d-99.79744752223074!3d29.210172296544446!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe7372c54e142f60f!2sAffordable%20Storage!5e0!3m2!1sen!2sus!4v1582163678285!5m2!1sen!2sus" width="100%" height="220" frameborder="0"  allowfullscreen></iframe>
             </span>
+            <span *ngIf="locationId == 7">
+              <iframe title="Facility Google Map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6889.883101799224!2d-99.79744752223074!3d29.210172296544446!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe7372c54e142f60f!2sAffordable%20Storage!5e0!3m2!1sen!2sus!4v1582163678285!5m2!1sen!2sus" width="100%" height="220" frameborder="0"  allowfullscreen></iframe>
+            </span>
+            <span *ngIf="locationId == 8">
+              <iframe title="Facility Google Map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6889.883101799224!2d-99.79744752223074!3d29.210172296544446!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe7372c54e142f60f!2sAffordable%20Storage!5e0!3m2!1sen!2sus!4v1582163678285!5m2!1sen!2sus" width="100%" height="220" frameborder="0"  allowfullscreen></iframe>
+            </span>
         </div>
         <div class="hours-data w-100">
           <div class="row">
             <div class="col-lg-8">
               <h4 class="pt-3" *ngIf="locationId !== 1;then content else other_content" >Access Hours</h4>
               <ng-template #content><h4 class="pt-3">Access Hours</h4><app-tables [tBody]="hours" ></app-tables></ng-template>
-              <ng-template #other_content><h4 class="pt-3">Office Hours</h4><app-tables [tBody]="hours" >
-              </app-tables><h4 class="pt-3">Access Hours</h4><app-tables [tBody]="access" ></app-tables>
+              <ng-template #other_content><h4 class="pt-3">Office Hours</h4><app-tables [tBody]="hours" > </app-tables>
+                <!-- <h4 class="pt-3">Access Hours</h4><app-tables [tBody]="access" ></app-tables> -->
             </ng-template> 
             </div>
             <div class="col-lg-4 btn-area text-center">

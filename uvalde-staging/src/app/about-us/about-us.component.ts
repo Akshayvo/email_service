@@ -1,10 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { aboutUsLocation1, aboutUsLocation2, aboutUsHeadingLocation1, aboutUsHeadingLocation2,
-  aboutUsImageLocation1, aboutUsImageLocation2, aboutUsLocation3,aboutUsLocation4, aboutUsLocation5, aboutUsLocation6, aboutUsLocation7,aboutUsLocation8, aboutUsImageLocation3,
-  aboutUsHeadingLocation3, aboutUsLocation4, aboutUsHeadingLocation4, aboutUsImageLocation4, aboutUsHeadingLocation5,aboutUsHeadingLocation6,aboutUsHeadingLocation7,aboutUsHeadingLocation8,
-  aboutUsLocation5, aboutUsHeadingLocation5, aboutUsImageLocation5,
-  aboutUsLocation6, aboutUsHeadingLocation6, aboutUsImageLocation6, aboutUsImageLocation7, aboutUsImageLocation8 } from '../data/location';
+import { aboutUsLocation1, aboutUsLocation2,aboutUsLocation4,aboutUsLocation5,aboutUsLocation7,aboutUsLocation8, aboutUsHeadingLocation1, aboutUsHeadingLocation2,
+  aboutUsImageLocation1, aboutUsImageLocation2, aboutUsLocation3, aboutUsHeadingLocation3,aboutUsImageLocation3,aboutUsHeadingLocation4, aboutUsImageLocation4,
+  aboutUsLocation6, aboutUsHeadingLocation6, aboutUsImageLocation6 } from '../data/location';
 import { CanonicalService } from '../services/canonical.service';
 import { environment } from '../../environments/environment';
 
@@ -71,22 +69,22 @@ export class AboutUsComponent implements OnInit {
 
   public fetchDetailsLocation3() {
     this.aboutPara = aboutUsLocation3;
-    this.heading = aboutUsHeadingLocation3;
-    this.image = aboutUsImageLocation3;
+    this.heading = aboutUsHeadingLocation2;
+    this.image = aboutUsImageLocation2;
     this.alt = 'Aerial photograph of a self storage facility and main office.';
   }
 
   public fetchDetailsLocation4() {
-    this.aboutPara = aboutUsLocation4;
-    this.heading = aboutUsHeadingLocation4;
-    this.image = aboutUsImageLocation4;
+    this.aboutPara = aboutUsLocation3;
+    this.heading = aboutUsHeadingLocation2;
+    this.image = aboutUsImageLocation2;
     this.alt = `Aerial photo of a self storage unit surrounded by fence with recreational
     vehicles parked inside the gate.`;
   }
   public fetchDetailsLocation5() {
     this.aboutPara = aboutUsLocation5;
-    this.heading = aboutUsHeadingLocation5;
-    this.image = aboutUsImageLocation5;
+    this.heading = aboutUsHeadingLocation2;
+    this.image = aboutUsImageLocation2;
     this.alt = `Aerial photo of a self storage unit surrounded by fence with recreational
     vehicles parked inside the gate.`;
   }
@@ -100,16 +98,16 @@ export class AboutUsComponent implements OnInit {
 
   public fetchDetailsLocation7() {
     this.aboutPara = aboutUsLocation7;
-    this.heading = aboutUsHeadingLocation7;
-    this.image = aboutUsImageLocation7;
+    this.heading = aboutUsHeadingLocation2;
+    this.image = aboutUsImageLocation2;
     this.alt = `Aerial photo of a self storage unit surrounded by fence with recreational
     vehicles parked inside the gate.`;
   }
 
   public fetchDetailsLocation8() {
     this.aboutPara = aboutUsLocation8;
-    this.heading = aboutUsHeadingLocation8;
-    this.image = aboutUsImageLocation8;
+    this.heading = aboutUsHeadingLocation2;
+    this.image = aboutUsImageLocation2;
     this.alt = `Aerial photo of a self storage unit surrounded by fence with recreational
     vehicles parked inside the gate.`;
   }

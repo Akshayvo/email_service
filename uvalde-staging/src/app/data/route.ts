@@ -601,14 +601,58 @@ export const iFrameRoutes = [
         externalUrl: ''
     }
   },
+  { path: 'review/817-s-getty', component: HomeComponent,
+    resolve: {
+        url: 'externalUrlRedirectResolver'
+    },
+    data: {
+        externalUrl: ''
+    }
+  },
+  { path: 'review/430-s-hwy-83', component: HomeComponent,
+    resolve: {
+        url: 'externalUrlRedirectResolver'
+    },
+    data: {
+        externalUrl: ''
+    }
+  },
+  { path: 'review/500-east-garden-street', component: HomeComponent,
+    resolve: {
+        url: 'externalUrlRedirectResolver'
+    },
+    data: {
+        externalUrl: ''
+    }
+  },
+  { path: 'review/2633-east-main-street', component: HomeComponent,
+    resolve: {
+        url: 'externalUrlRedirectResolver'
+    },
+    data: {
+        externalUrl: ''
+    }
+  },
+  { path: 'review/244-n-grove', component: HomeComponent,
+    resolve: {
+        url: 'externalUrlRedirectResolver'
+    },
+    data: {
+        externalUrl: ''
+    }
+  },
+  
+
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentIframeComponent },
   { path: 'pay-rent-260-n-grove', component: PayRentFloridaComponent },
   { path: 'pay-rent-201-n-grove', component: PayRentChesterComponent},
   { path: 'pay-rent-246-w-south-lane', component: PayRentMontgomeryComponent},
-  { path: 'pay-rent-belforest', component: PayRentMiddletownComponent},
-  { path: 'pay-rent-fairhope', component: PayRentMontgomeryComponent},
-  { path: 'pay-rent-robertsdale', component: PayRentMiddletownComponent},
+  { path: 'pay-rent-817-s-getty', component: PayRentMiddletownComponent},
+  { path: 'pay-rent-430-s-hwy-83', component: PayRentMontgomeryComponent},
+  { path: 'pay-rent-500-east-garden-street', component: PayRentMiddletownComponent},
+  { path: 'pay-rent-2633-east-main-street', component: PayRentMiddletownComponent},
+  { path: 'pay-rent-244-n-grove', component: PayRentMiddletownComponent},
   { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
   { path: '**', component: ErrorComponent },

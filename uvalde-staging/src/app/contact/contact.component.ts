@@ -2,16 +2,28 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { EmailService } from '../services/email.service';
-import { contactsLocation1, hoursLocation1,
-          contactsLocation2, hoursLocation2, contactsLocation3,
-          hoursLocation3  } from '../data/contact';
+import {
+  contactsHomePage,
+  contactsLocation1,
+  contactsLocation2,
+  contactsLocation3,
+  contactsLocation4,
+  contactsLocation5,
+  contactsLocation6,
+  contactsLocation7,
+  contactsLocation8,
+  hoursHomePage,
+  hoursLocation1,
+  hoursLocation2,
+  hoursLocation3,
+  hoursLocation4,
+  hoursLocation5,
+  hoursLocation6, 
+  hoursLocation7,
+  hoursLocation8
+} from '../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
-import { LocationService } from '../services/location.service';
-import { CanonicalService } from '../services/canonical.service';
-import { ogContactPage, twitterContactPage } from '../data/script';
-import { tableDataContactPage, tableHeader } from '../data/pay-rent';
-import { contactPageTitle, contactPageContent } from '../data/title';
 
 @Component({
   selector: 'app-contact',
@@ -20,29 +32,75 @@ import { contactPageTitle, contactPageContent } from '../data/title';
 })
 export class ContactComponent implements OnInit {
 
-  contactDetails: any;
-  heading: string;
-  hoursDetails: any;
+  places = [
+    {
+      id: 0,
+      name: 'AFFORDABLE STORAGE #1 - 260 N GROVE',
+    },
+    {
+      id: 1,
+      name: 'AFFORDABLE STORAGE #2 - 201 N GROVE',
+    },
+    {
+      id: 2,
+      name: 'AFFORDABLE STORAGE #3 - 246 W. SOUTH LANE',
+    },
+    {
+      id: 3,
+      name: 'AFFORDABLE STORAGE #4 - 817 S. GETTY',
+    },
+    {
+      id: 4,
+      name: 'AFFORDABLE STORAGE #5 - 430 S HWY 83',
+    },
+    {
+      id: 5,
+      name: 'AFFORDABLE STORAGE #6 - 500 E. GARDEN',
+    },
+    {
+      id: 6,
+      name: 'AFFORDABLE STORAGE #7 - 2633 E. MAIN ST',
+    },
+    {
+      id: 7,
+      name: 'AFFORDABLE STORAGE #8 - 244 N. GROVE',
+    },
+ ];
+
+  contactsLocation2: any;
+  contactsLocation1: any;
+  contactsLocation6: any;
+  contactsLocation4: any;
+  contactsLocation3: any;
+  contactsLocation5: any;
+  contactsLocation8: any;
+  hoursLocation1: any;
+  hoursLocation2: any;
+  hoursLocation3: any;
+  hoursLocation5: any;
+  hoursLocation7: any;
+  contactsLocation7: any;
+  hoursLocation6: any;
+  hoursLocation4: any;
+  hoursLocation8: any;
   placeName: string;
   name: string;
   email: any;
   phone: any;
+  subject: string;
+  location: any;
   message: string;
   receiveremail: string;
+  contact: any;
+  hours: any;
   completeMessage: string;
-  locationId: any;
-  subject: any;
-  script: any;
+
+
   contactForm: FormGroup;
   submitted = false;
   mailSent = false;
-  eventName: string;
-  og: any;
-  twitter: any;
-  tableData: any;
-  tableHeader: any;
-  contactPageTitle: string;
-  contactPageContent: string;
+  private sub: any;
+
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -50,33 +108,14 @@ export class ContactComponent implements OnInit {
     private route: ActivatedRoute,
     private titleService: Title,
     private meta: Meta,
-    private formBuilder: FormBuilder,
-    private data: LocationService,
-    private canonical: CanonicalService
-
+    private formBuilder: FormBuilder
   ) {
-    this.fetchMetaData();
-    this.fetchOg();
-    this.fetchTwitter();
-    this.og.forEach(element => {
-      this.meta.addTag({
-        property: element.property,
-        content: element.content
-      })
-    });
-
-    this.twitter.forEach(element => {
-      this.meta.addTag({
-        name: element.name,
-        content: element.content
-      })
-    });
-    this.canonical.create();
     this.meta.addTag({
       name: 'description',
-      content: `${this.contactPageContent}`
+      content: `Do you have a question about your account, or our self storage, boat and
+      recreational vehicle storage? Use our contact form, or call us today!`
     });
-    this.titleService.setTitle(`${this.contactPageTitle}`);
+    this.titleService.setTitle('Contact Us  | Affordable Storage');
 
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
@@ -84,81 +123,49 @@ export class ContactComponent implements OnInit {
                 Validators.pattern('^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$')]],
       email: ['', [Validators.required, Validators.email]],
       message: ['', Validators.required],
-      subject: [''],
+      location: ['', Validators.required],
+      subject: ['']
   });
   }
 
   ngOnInit() {
-    window.scrollTo(0, 0);
-    this.receiveMessage();
-    this.fetchTableHeader();
-    this.fetchTableData();
+    this.sub = this.route.queryParams.subscribe(params => {
+      this.placeName = params['name'];
+    });
 
-}
+    this.fetchContactDetails();
+    this.fetchHours();
+    window.scrollTo(0, 0);
+  }
 
   get f() { return this.contactForm.controls; }
 
-  public fetchOg() {
-    this.og = ogContactPage;
-}
-
-public fetchTwitter() {
-    this.twitter = twitterContactPage;
-}
-
-public fetchMetaData() {
-  this.contactPageTitle = contactPageTitle;
-  this.contactPageContent = contactPageContent;
-}
-
-  receiveMessage() {
-    this.data.currentLocation.subscribe(locationId => {
-      this.locationId = locationId;
-      this.dataupdate();
-    });
+  public fetchContactDetails() {
+    this.contact = contactsHomePage;
+    this.contactsLocation3 = contactsLocation3;
+    this.contactsLocation1 = contactsLocation1;
+    this.contactsLocation2 = contactsLocation2;
+    this.contactsLocation4 = contactsLocation4;
+    this.contactsLocation6 = contactsLocation6;
+    this.contactsLocation5 = contactsLocation5;
+    this.contactsLocation7 = contactsLocation7;
+    this.contactsLocation8 = contactsLocation8;
   }
 
-  public dataupdate() {
-    if ( this.locationId === '1' || this.locationId === 1 ) {
-      this.fetchContactDetailsLocation1();
-      this.mailSent = false;
-    } else if ( this.locationId === '2' ) {
-      this.fetchContactDetailsLocation2();
-      this.mailSent = false;
-    } else if ( this.locationId === '3' ) {
-      this.fetchContactDetailsLocation3();
-    }
-  }
-
-  public fetchTableData() {
-    this.tableData = tableDataContactPage;
-  }
-  
-  public fetchTableHeader() {
-    this.tableHeader = tableHeader;
-  }
-  
-  public fetchContactDetailsLocation1() {
-    this.heading = `AFFORDABLE STORAGE #1 - 260 N GROVE`;
-    this.contactDetails = contactsLocation1;
-    this.hoursDetails = hoursLocation1;
-  }
-
-  public fetchContactDetailsLocation2() {
-    this.heading = `AFFORDABLE STORAGE #2 - 201 N GROVE`;
-    this.contactDetails = contactsLocation2;
-    this.hoursDetails = hoursLocation2;
-  }
-
-  public fetchContactDetailsLocation3() {
-    this.heading = `AFFORDABLE STORAGE #3 - 246 W. SOUTH LANE`;
-    this.contactDetails = contactsLocation3;
-    this.hoursDetails = hoursLocation3;
+  public fetchHours() {
+    this.hours = hoursHomePage;
+    this.hoursLocation2 = hoursLocation2;
+    this.hoursLocation1 = hoursLocation1;
+    this.hoursLocation3 = hoursLocation3;
+    this.hoursLocation5 = hoursLocation5;
+    this.hoursLocation4 = hoursLocation4;
+    this.hoursLocation6 = hoursLocation6;
+    this.hoursLocation7 = hoursLocation7;
+    this.hoursLocation8 = hoursLocation8;
   }
 
 onSubmit() {
   this.submitted = true;
-
 
  // stop here if form is invalid
  if (this.contactForm.invalid) {
@@ -169,7 +176,23 @@ onSubmit() {
     this.contactForm.value.subject = 'Website Form Submission';
   }
 
-  this.receiveremail = this.contactDetails[1].data;
+   if (this.contactForm.value.location === 'AFFORDABLE STORAGE #1 - 260 N GROVE') {
+    this.receiveremail = this.contactsLocation1[2].data;
+  } else if (this.contactForm.value.location === 'AFFORDABLE STORAGE #2 - 201 N GROVE') {
+    this.receiveremail = this.contactsLocation2[2].data;
+  } else if (this.contactForm.value.location === 'AFFORDABLE STORAGE #3 - 246 W. SOUTH LANE') {
+    this.receiveremail = this.contactsLocation3[2].data;
+  } else if (this.contactForm.value.location === 'AFFORDABLE STORAGE #4 - 817 S. GETTY') {
+    this.receiveremail = this.contactsLocation4[2].data;
+  } else if (this.contactForm.value.location === 'AFFORDABLE STORAGE #5 - 430 S HWY 83') {
+    this.receiveremail = this.contactsLocation5[2].data;
+  } else if (this.contactForm.value.location === 'AFFORDABLE STORAGE #6 - 500 E. GARDEN') {
+    this.receiveremail = this.contactsLocation6[2].data;
+  } else if (this.contactForm.value.location === 'AFFORDABLE STORAGE #7 - 2633 E. MAIN ST') {
+    this.receiveremail = this.contactsLocation7[2].data;
+  } else if (this.contactForm.value.location === 'AFFORDABLE STORAGE #8 - 244 N. GROVE') {
+    this.receiveremail = this.contactsLocation8[3].data;
+  }
   this.completeMessage = `<strong>Phone:</strong> ${this.contactForm.value.phone}, <br/>
                           <strong>Message:</strong> ${this.contactForm.value.message}`;
 
@@ -178,7 +201,7 @@ onSubmit() {
          email: this.contactForm.value.email,
          receiveremail: this.receiveremail,
          message: this.completeMessage,
-         subject: this.contactForm.value.subject,
+         subject: this.contactForm.value.subject
        };
        this.emailService.sendEmail(body)
          .subscribe((response: any) => {
@@ -192,8 +215,6 @@ onSubmit() {
        this.submitted = false;
        this.mailSent = false;
        this.contactForm.reset();
- }
-}
-
-
+    }
+  }
 }

@@ -7,8 +7,8 @@ import { TenantInfo } from '../models/tenant';
 import { DataSharingService } from '../services/data-sharing.service';
 import { contactsLocation1, contactsLocation2, contactsLocation3 , contactsLocation4,contactsLocation5,contactsLocation6,contactsLocation7,contactsLocation8} from '../../data/contact';
 import { loginDetail } from '../../data/pay-rent';
-import { ogPayRentPageLocation1, ogPayRentPageLocation2, ogPayRentPageLocation3,
-   twitterPayRentPageLocation1, twitterPayRentPageLocation2, twitterPayRentPageLocation3 } from '../../data/script';
+import { ogPayRentPageLocation1, ogPayRentPageLocation2, ogPayRentPageLocation3,ogPayRentPageLocation4,ogPayRentPageLocation5,ogPayRentPageLocation6,ogPayRentPageLocation7,ogPayRentPageLocation8,
+   twitterPayRentPageLocation1, twitterPayRentPageLocation2, twitterPayRentPageLocation3,twitterPayRentPageLocation4,twitterPayRentPageLocation5,twitterPayRentPageLocation6,twitterPayRentPageLocation7,twitterPayRentPageLocation8 } from '../../data/script';
 import { Meta } from '@angular/platform-browser';
 
 
@@ -203,19 +203,19 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.og = ogPayRentPageLocation3;
     }
     else if (this.router.url.includes('817-s-getty')) {
-      this.og = ogPayRentPageLocation3;
+      this.og = ogPayRentPageLocation4;
     }
     else if (this.router.url.includes('430-s-hwy-83')) {
-      this.og = ogPayRentPageLocation3;
+      this.og = ogPayRentPageLocation5;
     }
     else if (this.router.url.includes('500-east-garden-street')) {
-      this.og = ogPayRentPageLocation3;
+      this.og = ogPayRentPageLocation6;
     }
     else if (this.router.url.includes('2633-east-main-street')) {
-      this.og = ogPayRentPageLocation3;
+      this.og = ogPayRentPageLocation7;
     }
     else if (this.router.url.includes('244-n-grove')) {
-      this.og = ogPayRentPageLocation3;
+      this.og = ogPayRentPageLocation8;
     }
     }
 

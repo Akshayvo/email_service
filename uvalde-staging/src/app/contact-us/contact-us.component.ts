@@ -4,12 +4,17 @@ import { Title, Meta } from '@angular/platform-browser';
 import { EmailService } from '../services/email.service';
 import { contactsLocation1, hoursLocation1,
           contactsLocation2, hoursLocation2, contactsLocation3,
-          hoursLocation3 } from '../data/contact';
+          hoursLocation3,contactsLocation4,
+          hoursLocation4,contactsLocation5,
+          hoursLocation5,contactsLocation6,
+          hoursLocation6,contactsLocation7,
+          hoursLocation7,contactsLocation8,
+          hoursLocation8} from '../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { LocationService } from '../services/location.service';
-import { contactPageLocation1Script, ogContactPageLocation1, ogContactPageLocation2, ogContactPageLocation3,
-   twitterContactPageLocation1, twitterContactPageLocation2, twitterContactPageLocation3 } from '../data/script';
+import { contactPageLocation1Script, ogContactPageLocation1, ogContactPageLocation2, ogContactPageLocation3,ogContactPageLocation4,ogContactPageLocation5,ogContactPageLocation6,ogContactPageLocation7,ogContactPageLocation8,
+   twitterContactPageLocation1, twitterContactPageLocation2, twitterContactPageLocation3,twitterContactPageLocation4,twitterContactPageLocation5,twitterContactPageLocation6,twitterContactPageLocation7,twitterContactPageLocation8 } from '../data/script';
 import { CanonicalService } from '../services/canonical.service';
 import { contactPageTitle, contactPageContent } from '../data/title';
 @Component({
@@ -226,6 +231,38 @@ public fetchTwitter() {
     this.locationId = '3'
     this.contactDetails = contactsLocation3;
     this.hoursDetails = hoursLocation3;
+  }
+
+  public fetchContactDetailsLocation4() {
+    this.heading = `AFFORDABLE STORAGE #4 - 817 S. GETTY`;
+    this.locationId = '4'
+    this.contactDetails = contactsLocation4;
+    this.hoursDetails = hoursLocation4;
+  }
+
+  public fetchContactDetailsLocation5() {
+    this.heading = `AFFORDABLE STORAGE #5 - 430 S HWY 83`;
+    this.locationId = '5'
+    this.contactDetails = contactsLocation5;
+    this.hoursDetails = hoursLocation5;
+  }
+  public fetchContactDetailsLocation6() {
+    this.heading = `AFFORDABLE STORAGE #6 - 500 E. GARDEN`;
+    this.locationId = '6'
+    this.contactDetails = contactsLocation6;
+    this.hoursDetails = hoursLocation6;
+  }
+  public fetchContactDetailsLocation7() {
+    this.heading = `AFFORDABLE STORAGE #7 - 2633 E. MAIN ST`;
+    this.locationId = '7'
+    this.contactDetails = contactsLocation7;
+    this.hoursDetails = hoursLocation7;
+  }
+  public fetchContactDetailsLocation8() {
+    this.heading = `AFFORDABLE STORAGE #8 - 244 N. GROVE`;
+    this.locationId = '8'
+    this.contactDetails = contactsLocation8;
+    this.hoursDetails = hoursLocation8;
   }
 
 onSubmit() {

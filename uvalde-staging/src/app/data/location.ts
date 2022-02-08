@@ -48,20 +48,25 @@ export const headingLocation4 = ``;
 export const headingLocation5 = ``;
 
 export const headingLocation6 = ``;
+export const headingLocation7 = ``;
+export const headingLocation8 = ``;
 
 
 
-export const headingReservePageLocation1 = `Are you ready to rent a unit at Location-1`;
+export const headingReservePageLocation1 = `Are you ready to rent a unit at AFFORDABLE STORAGE #1 - 260 N GROVE`;
 
-export const headingReservePageLocation2 = `Are you ready to rent a unit at Location-2`;
+export const headingReservePageLocation2 = `Are you ready to rent a unit at AFFORDABLE STORAGE #2 - 201 N GROVE`;
 
-export const headingReservePageLocation3 = `Are you ready to rent a unit at Location-3`;
+export const headingReservePageLocation3 = `Are you ready to rent a unit at AFFORDABLE STORAGE #3 - 246 W. SOUTH LANE`;
 
-export const headingReservePageLocation4 = ``;
+export const headingReservePageLocation4 = `Are you ready to rent a unit at AFFORDABLE STORAGE #4 - 817 S. GETTY`;
 
-export const headingReservePageLocation5 = `Are you ready to rent a unit at Fairhope`;
+export const headingReservePageLocation5 = `Are you ready to rent a unit at AFFORDABLE STORAGE #5 - 430 S HWY 83`;
 
-export const headingReservePageLocation6 = `Are you ready to rent a unit at Robertsdale`;
+export const headingReservePageLocation6 = `Are you ready to rent a unit at AFFORDABLE STORAGE #6 - 500 E. GARDEN`;
+export const headingReservePageLocation7 = `Are you ready to rent a unit at AFFORDABLE STORAGE #7 - 2633 E. MAIN ST`;
+export const headingReservePageLocation8 = `Are you ready to rent a unit at AFFORDABLE STORAGE #8 - 244 N. GROVE`;
+
 
 export const heading1 = `AFFORDABLE STORAGE #1 - 260 N GROVE`;
 
@@ -69,11 +74,15 @@ export const heading2 = `AFFORDABLE STORAGE #2 - 201 N GROVE`;
 
 export const heading3 = `AFFORDABLE STORAGE #3 - 246 W. SOUTH LANE`;
 
-export const heading4 = `Self Storage Facility - Belforest`;
+export const heading4 = `AFFORDABLE STORAGE #4 - 817 S. GETTY`;
 
-export const heading5 = `Self Storage Facility - Fairhope`;
+export const heading5 = `AFFORDABLE STORAGE #5 - 430 S HWY 83`;
 
-export const heading6 = `Self Storage Facility - Robertsdale`;
+export const heading6 = `AFFORDABLE STORAGE #6 - 500 E. GARDEN`;
+
+export const heading7 = `AFFORDABLE STORAGE #7 - 2633 E. MAIN ST`;
+
+export const heading8 = `AFFORDABLE STORAGE #8 - 244 N. GROVE`;
 
 
 export const unitSizerLocation1 = [
@@ -641,6 +650,14 @@ export const aboutUsLocation5 = [
 ];
 
 export const aboutUsLocation6 = [
+    
+];
+
+export const aboutUsLocation7 = [
+    
+];
+
+export const aboutUsLocation8 = [
     
 ];
 
