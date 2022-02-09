@@ -95,7 +95,6 @@ export const jumbotron = [
         h2: `Arcanum's Newest Self Storage Facility`,
         blurb: `Hoke's Store-N-More is Arcanum's newest self storage facility, and we are proud to be serving our 
         friends and neighbors as a locally owned and operated business. We have a number of unit sizes ranging 
-        from smaller to oversized to cover all of your storage needs. Looking for a spot to park that RV, boar, 
-        or trailer? We also have outdoor vehicle parking!`,
+        from smaller to oversized to cover all of your storage needs.`,
     }
 ];
