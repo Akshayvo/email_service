@@ -7,10 +7,11 @@ import { TenantInfo } from '../models/tenant';
 import { DataSharingService } from '../services/data-sharing.service';
 import { contactsLocation1, contactsLocation2, contactsLocation3, contactsLocation4, contactsLocation5, contactsLocation6, } from '../../data/contact';
 import { loginDetail1,loginDetail2 } from '../../data/pay-rent';
+import { location1PayrentPageTitle, location2PayrentPageTitle } from '../../data/title';
 import { ogPayRentPageLocation1, ogPayRentPageLocation2, ogPayRentPageLocation3, ogPayRentPageLocation4, ogPayRentPageLocation5,
    twitterPayRentPageLocation1, twitterPayRentPageLocation2, twitterPayRentPageLocation3, twitterPayRentPageLocation4,ogPayRentPageLocation6,
    twitterPayRentPageLocation5, twitterPayRentPageLocation6 } from '../../data/script';
-import { Meta } from '@angular/platform-browser';
+import { Title, Meta } from '@angular/platform-browser';
 
 
 @Injectable()
@@ -48,6 +49,8 @@ export class LoginComponent implements OnInit, OnDestroy {
   
 
   contact: any;
+  location1PayrentPageTitle: any;
+  location2PayrentPageTitle: any;
   name: string;
   id: number;
   paymentTab: string;
@@ -61,11 +64,13 @@ export class LoginComponent implements OnInit, OnDestroy {
     private formBuilder: FormBuilder,
     private authService: AuthService,
     public router: Router,
+    private titleService: Title,
     private meta: Meta,
     private  dataSharingService: DataSharingService,
   ) {
     this.fetchOg();
     this.fetchTwitter();
+    this.fetchMetaData();
     this.og.forEach(element => {
       this.meta.addTag({
         property: element.property,
@@ -122,6 +127,11 @@ export class LoginComponent implements OnInit, OnDestroy {
 
   }
 
+  fetchMetaData(){
+    this.location1PayrentPageTitle = location1PayrentPageTitle;
+    this.location2PayrentPageTitle = location2PayrentPageTitle;
+  }
+
   get f() { return this.loginForm.controls; }
 
   openBox() {
@@ -141,6 +151,7 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.id = 1;
       this.name = 'Herlihy Self Storage';
       this.contact = contactsLocation1;
+      this.titleService.setTitle(`${this.location1PayrentPageTitle}`);
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc1);
       this.fetchLoginDetail1();
@@ -148,6 +159,7 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.id = 2;
       this.name = 'U Stor 104 Self-Storage';
       this.contact = contactsLocation2;
+      this.titleService.setTitle(`${this.location2PayrentPageTitle}`);
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc2);
       this.fetchLoginDetail2();

@@ -46,9 +46,7 @@ export const privacyPolicyPageContent = `This page contains this website's priva
 export const faqPageTitle = ``;
 export const faqPagecontent = ``;
 
-
-
-export const location1PayrentPageTitle = `Pay Rent  | Herlihy Self Storage`;
+export const location1PayrentPageTitle = `Pay Rent | U Stor 104 Self-Storage`;
 export const location1PayrentPageContent = `Take a moment to review our easy login instructions, or call our friendly management team and start paying your rent online 24 hours a day!`;
 
 export const location2PayrentPageTitle = `Pay Rent | U Stor 104 Self-Storage`;

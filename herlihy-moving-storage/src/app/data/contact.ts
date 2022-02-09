@@ -101,7 +101,7 @@ export const contactsLocation2 = [
     {
         id: 1,
         label: 'Address: ',
-        data: '3759 Jackson Pike, Grove-city, OH 43123',
+        data: '3759 Jackson Pike, Grove City, OH 43123',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: 'https://g.page/Herlihymoving?share'
     },
