@@ -98,7 +98,7 @@ export const unitSizer = [
     },
    
     {
-      id: 7,
+      id: 6,
       size: '10\' x 30\'',
       heading: '10\' x 30\' Storage Unit',
       alt: '10\' x 30\' Storage Unit Graphic ',
