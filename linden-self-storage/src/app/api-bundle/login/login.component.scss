@@ -17,6 +17,9 @@
     color: black;
     line-height: 1.8;
   }
+  div{
+    margin-top:5px;
+  }
 }
 
 .modal-open {
@@ -26,6 +29,7 @@
 }
 
 .forgot-link {
+  padding-bottom: 5px;
   a {
     color: $primary;
     text-decoration: underline;

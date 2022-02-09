@@ -17,7 +17,7 @@
                     <div class="form-group col-lg-6 col-12">
                         <label for='username'>User Name</label> &nbsp;
                         <input type="text" formControlName="strUserName"  
-                        class="form-control" 
+                        class="form-control" id="username"
                         [ngClass]="{ 'is-invalid': submitted && f.strUserName.errors }"
                         
                         />
@@ -31,7 +31,7 @@
                         <label for='password'>Password</label> &nbsp;
                         <input type="password" formControlName="strPassword" class="form-control" 
                         [ngClass]="{ 'is-invalid': submitted && f.strPassword.errors }"  
-                        
+                        id='password'
                         />
                         <div *ngIf="submitted && f.strPassword.errors" class="invalid-feedback">
                             <small class="form-text text-muted" *ngIf="f.strPassword.errors.required">Please fill out this field</small>
@@ -77,7 +77,7 @@
               <a  *ngIf="contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content" [href]="contact?.redirect">
                 {{contact.data}}
               </a>
-            <br>
+            <div></div>
           </span>
           </p>
         </div>
