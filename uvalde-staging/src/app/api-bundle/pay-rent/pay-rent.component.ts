@@ -113,19 +113,19 @@ public fetchTwitter() {
     this.twitter = twitterPayRentPageLocation3;
   }
   else if (this.router.url.includes('817-s-getty')) {
-    this.twitter = twitterPayRentPageLocation3;
+    this.twitter = twitterPayRentPageLocation4;
   }
   else if (this.router.url.includes('430-s-hwy-83')) {
-    this.twitter = twitterPayRentPageLocation3;
+    this.twitter = twitterPayRentPageLocation5;
   }
   else if (this.router.url.includes('500-east-garden-street')) {
-    this.twitter = twitterPayRentPageLocation3;
+    this.twitter = twitterPayRentPageLocation6;
   }
   else if (this.router.url.includes('2633-east-main-street')) {
-    this.twitter = twitterPayRentPageLocation3;
+    this.twitter = twitterPayRentPageLocation7;
   }
   else if (this.router.url.includes('244-n-grove')) {
-    this.twitter = twitterPayRentPageLocation3;
+    this.twitter = twitterPayRentPageLocation8;
   }
 }
 

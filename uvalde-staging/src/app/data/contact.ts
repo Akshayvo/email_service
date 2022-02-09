@@ -42,6 +42,7 @@ export const contactsLocation1 = [
         label: 'Address: ',
         data: '260 N Grove St, Uvalde, TX 78801',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/HU5MKpFAg1AbAiSi9'
     },
     {
         id: 1,
@@ -86,6 +87,7 @@ export const contactsLocation2 = [
         label: 'Address: ',
         data: '201 N Grove St, Uvalde, TX 78801',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/8P3cumYwRerb9Hg49'
     },
     {
         id: 1,
@@ -124,6 +126,7 @@ export const contactsLocation3 = [
         label: 'Address: ',
         data: '246 W South Lane, Uvalde, TX 78801',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/vtEBB815r4PShGgR7'
     },
     {
         id: 1,
@@ -163,6 +166,7 @@ export const contactsLocation4 = [
         label: 'Address: ',
         data: '817 S Getty St, Uvalde, TX 78801',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/UtSF5VT6bN5axdzA6'
     },
     {
         id: 1,
@@ -202,6 +206,7 @@ export const contactsLocation5 = [
         label: 'Address: ',
         data: '430 S Hwy 83, Uvalde, TX 78801',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/UCKJTaf4SYirjCFk7'
     },
     {
         id: 1,
@@ -243,6 +248,7 @@ export const contactsLocation6 = [
         label: 'Address: ',
         data: '500 E. Garden Street, Uvalde, TX 78801',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/gpRiakjBp8jbMTFx9'
     },
     {
         id: 1,
@@ -282,6 +288,7 @@ export const contactsLocation7 = [
         label: 'Address: ',
         data: '2633 E Main St, Uvalde, TX 78801',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/U5XXLhc91mwUVcsw7'
     },
     {
         id: 1,
@@ -321,6 +328,7 @@ export const contactsLocation8 = [
         label: 'Office Address: ',
         data: '260 N. Grove St, Uvalde, TX 78801',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/2ddKTwn8zKLaqqyF9'
     },
     {
         id: 1,

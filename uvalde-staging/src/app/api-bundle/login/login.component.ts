@@ -50,7 +50,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   twitter: any;
   og: any;
   private authUnsubscribe$: Subscription;
-  acceptedValues = [6];
+  acceptedValues = [8];
   acceptedValuesComingSoon = [];
   
   constructor(
@@ -149,35 +149,35 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc3);
     }
-    else  if (this.router.url.includes('location-4')) {
+    else  if (this.router.url.includes('817-s-getty')) {
       this.id = 4;
       this.name = 'AFFORDABLE STORAGE #4 - 817 S. GETTY';
       this.contact = contactsLocation4;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc4;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc4);
     }
-    else  if (this.router.url.includes('location-5')) {
+    else  if (this.router.url.includes('430-s-hwy-83')) {
       this.id = 5;
       this.name = 'AFFORDABLE STORAGE #5 - 430 S HWY 83';
       this.contact = contactsLocation5;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc5;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc5);
     }
-    else  if (this.router.url.includes('location-6')) {
+    else  if (this.router.url.includes('500-east-garden-street')) {
       this.id = 6;
       this.name = 'AFFORDABLE STORAGE #6 - 500 E. GARDEN';
       this.contact = contactsLocation6;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc6;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc6);
     }
-    else  if (this.router.url.includes('location-7')) {
+    else  if (this.router.url.includes('2633-east-main-street')) {
       this.id = 7;
       this.name = 'AFFORDABLE STORAGE #7 - 2633 E. MAIN ST';
       this.contact = contactsLocation7;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc7;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc7);
     }
-    else  if (this.router.url.includes('location-8')) {
+    else  if (this.router.url.includes('244-n-grove')) {
       this.id = 8;
       this.name = 'AFFORDABLE STORAGE #8 - 244 N. GROVE';
       this.contact = contactsLocation8;
@@ -228,19 +228,19 @@ public fetchTwitter() {
         this.twitter = twitterPayRentPageLocation3;
   }
   else if (this.router.url.includes('817-s-getty')) {
-    this.twitter = twitterPayRentPageLocation3;
+    this.twitter = twitterPayRentPageLocation4;
 }
-else if (this.router.url.includes('817-s-getty')) {
-  this.twitter = twitterPayRentPageLocation3;
+else if (this.router.url.includes('430-s-hwy-83')) {
+  this.twitter = twitterPayRentPageLocation5;
 }
 else if (this.router.url.includes('500-east-garden-street')) {
-  this.twitter = twitterPayRentPageLocation3;
+  this.twitter = twitterPayRentPageLocation6;
 }
 else if (this.router.url.includes('2633-east-main-street')) {
-  this.twitter = twitterPayRentPageLocation3;
+  this.twitter = twitterPayRentPageLocation7;
 }
 else if (this.router.url.includes('244-n-grove')) {
-  this.twitter = twitterPayRentPageLocation3;
+  this.twitter = twitterPayRentPageLocation8;
 }
 }
 
