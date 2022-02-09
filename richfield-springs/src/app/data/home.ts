@@ -4,12 +4,11 @@ export const featuresList = [
         td2: 'Online Bill Pay',
     },
     {
-        td1: 'Security Cameras',
-        td2: 'Auto-Pay Available',
+        td1: 'Auto-Pay Available',
+        td2: 'Friendly Customer Service',
     },
     {
-        td1: 'Friendly Customer Service',
-        td2: 'Affordable Rates',
+        td1: 'Affordable Rates',
     },
 ];
 
@@ -33,8 +32,12 @@ export const aboutUs = [
     {
         p: `Take a moment to review our current rates and availability, then reserve online, or give us a 
         call today and see how much we can save you on your next storage project! `,
+    },
+    {
+        p: `If you can't find a unit that suits your needs, we also offer storage units at our Mohawk 
+        and Herkimer locations. If you're searching for temperature controlled unit, our Herkimer 
+        location has you covered!`,
     }
-    
 ];
 
 export const gettingStarted = `Are you ready to stop putting off cleaning out your attic, garage, or shed?

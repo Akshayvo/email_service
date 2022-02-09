@@ -15,7 +15,7 @@ export const unitSizer = [
   //     ],
   //   },
     {
-      id: 1,
+      id: 0,
       size: '5\' x 10\'',
       heading: '5\' x 10\' Storage Unit',
       alt: '5\' x 10\' Storage Unit Graphic',
@@ -49,7 +49,7 @@ export const unitSizer = [
     //   ],
     // },
     {
-      id: 3,
+      id: 1,
       size: '10\' x 10\'',
       heading: '10\' x 10\' Storage Unit',
       alt: '10\' x 10\' Storage Unit Graphic ',
@@ -66,7 +66,7 @@ export const unitSizer = [
       ],
     },
     {
-      id: 4,
+      id: 2,
       size: '10\' x 15\'',
       heading: '10\' x 15\' Storage Unit',
       alt: '10\' x 15\' Storage Unit Graphic ',
@@ -82,7 +82,7 @@ export const unitSizer = [
       ],
     },
     {
-      id: 5,
+      id: 3,
       size: '10\' x 20\'',
       heading: '10\' x 20\' Storage Unit',
       alt: '10\' x 20\' Storage Unit Graphic ',
@@ -113,7 +113,7 @@ export const unitSizer = [
     //   ],
     // },
     {
-      id: 7,
+      id: 4,
       size: '10\' x 30\'',
       heading: '10\' x 30\' Storage Unit',
       alt: '10\' x 30\' Storage Unit Graphic ',
