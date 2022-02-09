@@ -4,6 +4,7 @@
   .selectedImageM {
     img {
       border: 2px solid $white;
+      height: auto;
     }
   }
 
@@ -22,6 +23,7 @@
       margin-top: 5px;
       margin-bottom: 5px;
       cursor: pointer;
+      height:auto;
     }
   }
 }
@@ -31,6 +33,7 @@
     .thumbnailsList {
       img {
         width: 95px;
+        height:auto;
       }
     }
   }
@@ -41,6 +44,7 @@
     .thumbnailsList {
       img {
         width: 90px;
+        height:auto;
       }
     }
   }
@@ -51,6 +55,7 @@
     .thumbnailsList {
       img {
         width: 78px;
+        height:auto;
       }
     }
   }
@@ -61,6 +66,7 @@
     .thumbnailsList {
       img {
         width: 75px;
+        height:auto;
       }
     }
   }
