@@ -617,7 +617,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       .subscribe(result => {
         localStorage.removeItem('strTenantToken');
         if (!!this.paymentTab) {
-          this.router.navigate([`/pay-rent/${this.paymentTab}/login`]);
+          this.router.navigate([`/pay-rent/login`]);
         } else {
           this.router.navigate(['/pay-rent/login']);
         }
