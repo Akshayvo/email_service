@@ -43,7 +43,7 @@ export const testimonialContent = `See what others in your community are saying 
 export const specialsTitle = `Testimonials | In-N-Out Storage`;
 export const specialsContent = `See what others in your community are saying about the customer service at In-N-Out Storage!`;
 
-export const unitSizerPageTitle = ``;
+export const unitSizerPageTitle = `Unit Sizer | In-N-Out Storage`;
 export const unitSizerPageContent = ``;
 
 export const contactPageTitle = `Contact Us  | In-N-Out Storage`;
