@@ -50,6 +50,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   text = false;
   objSIMSetting: any;
   showRate: boolean;
+  showReservationFee:boolean;
   showDeposit: boolean;
   showReserve: boolean;
   showMovein: boolean;
@@ -78,6 +79,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   public fetchThData() {
     this.th = th.filter(x => x.state === true);
     this.showRate = objSIMSetting.objUnitSizesSetting.blnShowRate;
+    
     this.showDeposit = objSIMSetting.objUnitSizesSetting.blnShowDeposit;
     this.showReserve = objSIMSetting.objActionSetting.blnAllowReservation;
     this.showMovein = objSIMSetting.objActionSetting.blnAllowMoveIn;

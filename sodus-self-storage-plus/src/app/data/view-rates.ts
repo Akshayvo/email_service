@@ -82,7 +82,12 @@ export const th = [
   },
   {
     id: 'rate',
-    data: `Rate`,
+    data: `Reservation Deposit`,
+    state: objSIMSetting.objUnitSizesSetting.blnShowRate
+  },
+  {
+    id: 'rate',
+    data: `Rental Deposit`,
     state: objSIMSetting.objUnitSizesSetting.blnShowRate
   },
   {
@@ -94,11 +99,11 @@ export const th = [
     data: `Reserve a Unit`,
     state: objSIMSetting.objActionSetting.blnAllowReservation
   },
-  // {
-  //   id: 'move-in',
-  //   data: `Move In`,
-  //   state: objSIMSetting.objActionSetting.blnAllowMoveIn
-  // },
+  {
+    id: 'move-in',
+    data: `Move In`,
+    state: objSIMSetting.objActionSetting.blnAllowMoveIn
+  },
   {
     id: 'climate-control',
     data: `Climate Control`,

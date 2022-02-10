@@ -16,6 +16,6 @@ export const environment = {
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   websiteUrl: 'https://sodusselfstorageplus.com',
   // APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north
-  APIKey: `Mjk1MzI6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29532
+  APIKey: `dzJ0OVc1SjMqMk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29532
 
 };
