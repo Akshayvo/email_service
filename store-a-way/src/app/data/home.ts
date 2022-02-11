@@ -25,6 +25,11 @@ export const featuresList = [
     },
     {
         td1: 'Tenant Protection Plans Available',
+        td2: 'Month to Month Rentals',
+    },
+    {
+        td1: 'Locally Owned & Operated',
+        td2: 'Discounted Rates for Yearly Rentals',
     }
 ];
 
@@ -54,7 +59,7 @@ export const aboutUs = [
         p: `Store-A-Way was built with your convenience in mind. Start by checking out our live inventory and pricing, 
         then reserve your unit, or call our friendly management team today! We will walk you through a simple contactless 
         rental over the phone, then provide you with your electronically signed lease, unit number, and personal 
-        access code to our facility. That’s it! You’ll have access to your unit(s) 24 hours a day, 7 days a week.`,
+        access code to our facility. That’s it.`,
     },
     {
         p: `Still have questions about the services offered at Store-A-Way? Give our team a call today, and we’ll be 
@@ -98,8 +103,6 @@ export const feature = [
 export const jumbotron = [
     {
         h2: `Affordable Climate Controlled Storage`,
-        blurb: `Store-A-Way is Hamilton's newest locally owned and operated self storage facility. We offer a variety 
-        of climate controlled self storage unit sizes to fit any self storage need. Our 24/7 facility access, 
-        reasonable rates, and easy online tenant portal make us Hamilton's premiere self storage facility.`,
+        blurb: `Store-A-Way is Hamilton's newest locally owned and operated self storage facility. We offer a variety of climate controlled self storage unit sizes to fit any self storage need. Our brand new, well-lit storage units, reasonable rates, and easy online tenant portal make us Hamilton's premiere self storage facility.`,
     }
 ];
