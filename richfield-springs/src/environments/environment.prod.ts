@@ -14,7 +14,7 @@ export const environment = {
   facilityName: 'Richfield Springs Self Storage',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: 'https://richfield-springs-staging.netlify.app',
+  websiteUrl: 'https://richfieldspringsselfstorage.com',
   // APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north
   APIKey: `dzJ0OVc1SjUqNE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29554
 

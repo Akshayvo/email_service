@@ -75,10 +75,6 @@ export const feature = [
 export const jumbotron = [
     {
         h2: `Affordable Self Storage Units in Richfield Springs`,
-        blurb: `Richfield Springs Self Storage is the one-stop storage solution for our friends and family 
-        in Richfield Springs. We have a wide variety of sizes and are conveniently located on Tamarack Road! 
-        Our newly opened facility was designed with modern conveniences like 24-hour access, ample security 
-        cameras, and friendly customer service. Take a moment to review our rates, then reserve your 
-        unit online, or give us a call!`,
+        blurb: `Richfield Springs Self Storage is the one-stop storage solution for our friends and family in Richfield Springs. We have a wide variety of sizes and are conveniently located on Tamarack Road! Our newly opened facility was designed with modern conveniences like 24-hour access, online tenant portal, and friendly customer service. Take a moment to review our rates, then reserve your unit online, or give us a call!`,
     }
 ];
