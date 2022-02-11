@@ -27,13 +27,13 @@
   compress = true
 # A basic redirect rule
 [[redirects]]
-  from = "https://affordablestorageofkingwood.com/pay-rent/units-199/sign-up/payment"
-  to = "https://affordablestorageofkingwood.com/pay-rent/units-199/rent-sub/payment"
+  from = "https://sample-self-storage-staging.netlify.app/pay-rent/units-199/sign-up/payment"
+  to = "https://sample-self-storage-staging.netlify.app/pay-rent/units-199/rent-sub/payment"
   status = 301
 
 [[redirects]]
-  from = "https://affordablestorageofkingwood.com/pay-rent/units-199/rent-sub/auto-pay"
-  to = "https://affordablestorageofkingwood.com/pay-rent/units-199/sign-up/auto-pay"
+  from = "https://sample-self-storage-staging.netlify.app/pay-rent/units-199/rent-sub/auto-pay"
+  to = "https://sample-self-storage-staging.netlify.app/pay-rent/units-199/sign-up/auto-pay"
   status = 301
 
 [[redirects]]
