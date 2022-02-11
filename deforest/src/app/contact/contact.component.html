@@ -84,12 +84,12 @@
           
           <div class="col-md-5">
               <div class="map-responsive">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11623.652597299486!2d-89.38453!3d43.253242!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfd738b8baa5ef3d7!2sDeforest%20Self%20Storage!5e0!3m2!1sen!2sus!4v1576035767459!5m2!1sen!2sus" width="100%" height="200px" frameborder="0" style="border:2px solid #fff;"  allowfullscreen title="Facility Google Map"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11623.652597299486!2d-89.38453!3d43.253242!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfd738b8baa5ef3d7!2sDeforest%20Self%20Storage!5e0!3m2!1sen!2sus!4v1576035767459!5m2!1sen!2sus" width="100%" height="200px" frameborder="0" style="border:2px solid #fff;"  allowfullscreen title="Facility Google Map" rel="noopener" ></iframe>
               </div>
               <div class="contact-details pt-3">
                 <h2 class="py-1">Deforest Self Storage</h2>
                 <span class="font-xs-device" *ngFor="let contact of contactDetails">
-                    <b>{{contact.label}}</b><span class="contact-links" *ngIf="contact?.id === 0 || contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+                    <b>{{contact.label}}</b><span class="contact-links" *ngIf="contact?.id === 0 || contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect" rel="noopener">&nbsp;{{contact.data}}</a></span>
                     <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
                   </span>
               <div class="mt-2">
