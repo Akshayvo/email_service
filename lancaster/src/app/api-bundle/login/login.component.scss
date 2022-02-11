@@ -15,10 +15,15 @@
 //   color: black !important;
 // }
 
+p{
+  margin: 5px;
+}
+
 .display-none {
   display: none;
   visibility: hidden;
 }
+
 
 .contact-links {
   a {
@@ -32,7 +37,9 @@
   }
 }
 
+
 .forgot-link {
+  padding: 4px;
   a {
     color: $primary;
     text-decoration: underline;

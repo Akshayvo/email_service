@@ -15,11 +15,11 @@
                 </div>
                 <div class="row">
                     <div class="form-group col-lg-6 col-12">
-                        <label class="userdata text-dark">User Name</label> &nbsp;
+                        <label class="userdata text-dark">User Name &nbsp;
                         <input type="text" formControlName="strUserName"  
                         class="form-control" 
                         [ngClass]="{ 'is-invalid': submitted && f.strUserName.errors }"
-                        />
+                        /></label>
                         <div *ngIf="submitted && f.strUserName.errors" class="invalid-feedback">
                             <small class="form-text text-muted" *ngIf="f.strUserName.errors.required">Please fill out this field</small>
                         </div>
@@ -27,10 +27,10 @@
                 </div>
                 <div class="row">
                     <div class="form-group col-lg-6 col-12">
-                        <label class="userdata text-dark">Password</label> &nbsp;
+                        <label class="userdata text-dark">Password &nbsp;
                         <input type="password" formControlName="strPassword" class="form-control" 
                         [ngClass]="{ 'is-invalid': submitted && f.strPassword.errors }"  
-                        />
+                        /></label>
                         <div *ngIf="submitted && f.strPassword.errors" class="invalid-feedback">
                             <small class="form-text text-muted" *ngIf="f.strPassword.errors.required">Please fill out this field</small>
                         </div>
@@ -64,20 +64,18 @@
     <div class="col-md-5  vertical-line text-dark"  >
         <h3>How to Login</h3>
         <div *ngFor="let loginDetail of loginDetail">
-          <p><b>Username: </b>&nbsp;{{loginDetail.userName}}<br>
-          <b>Password: </b>&nbsp;{{loginDetail.password}}</p>
+          <p><b>Username: </b>&nbsp;{{loginDetail.userName}}</p>
+          <p><b>Password: </b>&nbsp;{{loginDetail.password}}</p><br>
             <p><b>Example:</b></p>
             <p>John Smith's {{loginDetail.example.code}}</p>
-            <p>John's Username: {{loginDetail.example.userName}}<br>
-              John's Password: {{loginDetail.example.password}}</p>
-            <p><strong>Have questions about your account?</strong><br>
+            <p>John's Username: {{loginDetail.example.userName}}</p>
+              <p>John's Password: {{loginDetail.example.password}}</p><br>
+            <p><strong>Have questions about your account?</strong></p>
             <span *ngFor="let contact of contact" class="contact-links" [class.display-none]="contact?.id == 0">
               <a class='text-dark' *ngIf="contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content" [href]="contact?.redirect">
-                {{contact.data}}
+                <div>{{contact.data}}</div>
               </a>
-            <br>
           </span>
-          </p>
         </div>
 </div>
      

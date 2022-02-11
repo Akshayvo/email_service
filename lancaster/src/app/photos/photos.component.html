@@ -1,13 +1,13 @@
 <div class="gallery-content">
   <div class="container px-0">
     <div id="selectedImageM" class="text-center selectedImageM">
-      <img *ngIf="selectedImage" src="{{imageBaseUrl}}/{{selectedImage.url}}.{{imagetype}}" alt="{{selectedImage.alt}}" height="auto" width="100%">
+      <img *ngIf="selectedImage" src="{{imageBaseUrl}}/{{selectedImage.url}}.{{imagetype}}" alt="{{selectedImage.alt}}" height="100%" width="100%">
     </div>
     <div class="">
       <div class="data">
         <div id="thumbnailsList" class="thumbnailsList">
           <span *ngFor="let image of galleryImages" class="p-1">
-             <img src="{{imageBaseUrl}}/{{image.thumb}}.{{imagetype}}" alt="{{image.alt}}" class="tn" height="auto"
+             <img src="{{imageBaseUrl}}/{{image.thumb}}.{{imagetype}}" alt="{{image.alt}}" class="tn" height="100%"
                 data-toggle="image.thumb"   data-target="#selectedImageM"
                   (click)=setSelectedImage(image)>
           </span>
