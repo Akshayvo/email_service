@@ -622,20 +622,18 @@ public navigateToPrevious() {
   }
 
   signOut(logOut: any) {
-   this.signOutSubscribe$ = this.signOutService.signOut(logOut)
-      .subscribe(result => {
-        this.router.navigate([`pay-rent`]);
-        localStorage.removeItem('paymentNavigationUrl');
-        if (!!this.paymentTab) {
-          this.router.navigate([`/pay-rent/${this.paymentTab}/login`]);
-        } else {
-          this.router.navigate(['/pay-rent/login']);
-        }
-        
-      }, (err) => {
-      }
-    );
-  }
+    this.signOutSubscribe$ = this.signOutService.signOut(logOut)
+       .subscribe(result => {
+         this.router.navigate([`pay-rent`]);
+         localStorage.removeItem('paymentNavigationUrl');
+         if (!!localStorage.getItem('APIKey')) {
+           localStorage.removeItem('APIKey');
+         }
+         localStorage.removeItem('strTenantToken');
+       }, (err) => {
+       }
+     );
+   }
 
   signUpAutoPay(signUp: any) {
   this.signUpAutoPaySubscribe$ =  this.tenantInfoService.signUpAutoPay(signUp)
