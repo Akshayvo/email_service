@@ -735,7 +735,8 @@
   }
 
   .jumbotron-top {
-    height:110vh;
+    background-size: contain;
+    height:55vh;
   }
 
   .jumbotron-bottom {
@@ -760,7 +761,7 @@
   .jumbotorn-skew-text {
     width: 100%;
     left: 0;
-    top: 85vh;
+    top: 35vh;
     bottom: 2px;
 
     .btn-outline-primary {

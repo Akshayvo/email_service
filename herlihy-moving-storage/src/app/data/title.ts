@@ -34,7 +34,7 @@ export const storageTipsContent = `Use our helpful self storage tips list to mak
 export const unitSizerPageTitle = `Unit Sizer  | Herlihy Self Storage`;
 export const unitSizerPageContent = `Are you not sure what size unit you require? Use this guide to help you figure out what fits inside the units offered at Herlihy Self Storage!`;
 
-export const contactPageTitle = `Contact Us  | Herlihy Self Storage`;
+export const contactPageTitle = `Contact Us | U Stor 104 Self-Storage`;
 export const contactPageContent = `Do you have a question about our services, or would you like help with your account? Use our form or contact information to reach out, today!`;
 
 export const thankYouPageTitle = `Thank You For Reserving Your Unit at Herlihy Self Storage!`;
@@ -66,10 +66,10 @@ export const location6PayrentPageContent = ``;
 
 
 
-export const location1ContactPageTitle = `Chillicothe Self Storage | Herlihy Self Storage`;
+export const location1ContactPageTitle = `Contact Us | U Stor 104 Self-Storage`;
 export const location1ContactPageContent = `Do you have a question about our services, or would you like help with your account? Use our form or contact information to reach out, today!`;
 
-export const location2ContactPageTitle = `Grove City Self Storage | U Stor 104 Self-Storage`;
+export const location2ContactPageTitle = `Contact Us | U Stor 104 Self-Storage`;
 export const location2ContactPageContent = `Do you have a question about our services, or would you like help with your account? Use our form or contact information to reach out, today!`;
 
 export const location3ContactPageTitle = ``;
