@@ -5,7 +5,8 @@ import { Injectable } from '@angular/core';
 })
 export class DataSharingService {
 
- locationAPIKey = {                                                    
+ locationAPIKey = {      
+  //  loc1:'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O'      ,                                        
   loc1: 'dzJ0OVcwSjMqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
   loc2: 'dzJ0OVcwSjMqNE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
   loc3: 'dzJ0OVcwSjMqNU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
