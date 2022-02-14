@@ -2,7 +2,12 @@ import { Component, OnInit, Injectable, OnDestroy, ElementRef, Input, Output, Ev
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { AuthService } from '../services/auth.service';
 import { Router } from '@angular/router';
+import { Title, Meta } from '@angular/platform-browser';
 import { Subscription } from 'rxjs';
+import { location1PayrentPageTitle, 
+  location1PayrentPageContent, 
+  location2PayrentPageTitle, 
+  location2PayrentPageContent} from '../../data/title';
 import { DataSharingService } from '../services/data-sharing.service';
 
 @Component({
@@ -25,15 +30,22 @@ export class LoginModalComponent implements OnInit, OnDestroy {
   authData: string;
   navTo: string;
   paymentTab: string;
+  location1PayrentPageTitle: string;
+  location1PayrentPageContent: string;
+  location2PayrentPageTitle: string;
+  location2PayrentPageContent: string;
   private authUnsubscribe$: Subscription;
 
   constructor(
+    private meta: Meta,
+    private titleService: Title,
     private formBuilder: FormBuilder,
     private authService: AuthService,
     private dataSharingService: DataSharingService,
     public router: Router,
     public elementRef: ElementRef,
   ) {
+    this.fetchMetaData();
     if (!!localStorage.getItem('paymentTab')) {
       this.paymentTab = localStorage.getItem('paymentTab');
     }
@@ -57,6 +69,13 @@ export class LoginModalComponent implements OnInit, OnDestroy {
 
   handleForgotPassword() {
     this.showForgotPassword = true;
+  }
+
+  public fetchMetaData() {
+    this.location1PayrentPageTitle = location1PayrentPageTitle;
+    this.location1PayrentPageContent = location1PayrentPageContent;
+    this.location2PayrentPageTitle = location2PayrentPageTitle;
+    this.location2PayrentPageContent = location2PayrentPageContent;
   }
 
   handleShowLoader() {

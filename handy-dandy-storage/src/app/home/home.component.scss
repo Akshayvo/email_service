@@ -8,6 +8,14 @@
   }
 }
 
+.jumbotorn-button{
+  a{
+    margin: 10px;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}
+
 .btn-outline-primary{
   color: $white;
 }
@@ -327,11 +335,6 @@
     display: none;
   }
 
-  
-
-  .jumbotorn-button {
-    padding: 10px;
-  }
 
   .feature-icon-style {
     padding: 12px 24px;

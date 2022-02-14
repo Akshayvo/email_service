@@ -6,7 +6,7 @@
           <h1> {{name}}</h1>
           <div class="row">
             <div class="col-lg-12 px-0 contact-data">
-              <span *ngFor="let contact of contacts" class="py-2 each-contact">
+              <span *ngFor="let contact of contacts" class="py-3 each-contact">
                 <span class="pl-3"><i class="{{contact.class}}"></i></span><span *ngIf="contact?.id === 2 || contact?.id === 3 || contact?.id === 4 else other_content"><a [href]="contact?.redirect" rel="noopener">{{contact.data}}</a></span>
                 <ng-template #other_content >&nbsp;<a [href]="contact?.redirect" target="_blank" rel="noopener">{{contact.data}}</a></ng-template>
               </span>
@@ -67,8 +67,8 @@
             <div class="col-lg-8">
               <h4 class="pt-3" *ngIf="locationId !== 1 && locationId !==2;then content else other_content" >Access Hours</h4>
               <ng-template #content><h4 class="pt-3">Access Hours</h4><app-tables [tBody]="hours" ></app-tables></ng-template>
-              <ng-template #other_content><h4 class="pt-3">Office Hours</h4><app-tables [tBody]="hours" >
-              </app-tables><h4 class="pt-3">Access Hours</h4><app-tables [tBody]="access" ></app-tables>
+              <ng-template #other_content><h2 class="pt-3">Office Hours</h2><app-tables [tBody]="hours" >
+              </app-tables><h2 class="pt-3">Access Hours</h2><app-tables [tBody]="access" ></app-tables>
             </ng-template> 
             </div>
             <div class="col-lg-4 btn-area text-center">
@@ -88,11 +88,11 @@
     <div class="row">
       <div class="col-md-3 col-6 p-3" *ngFor= "let feature of features">
         <p class="text-center f-block-img"> 
-          <img src="{{feature.data}}" class="f-img" alt="{{feature.alt}}" >
+          <img src="{{feature.data}}" height="100%" width="100%" class="f-img" alt="{{feature.alt}}" >
         </p>
-        <h2 class="text-center f-text">
+        <h3 class="text-center f-text">
           {{feature.label}}
-        </h2>
+        </h3>
       </div>
     </div>
   </div>
