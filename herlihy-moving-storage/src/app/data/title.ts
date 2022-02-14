@@ -34,7 +34,7 @@ export const storageTipsContent = `Use our helpful self storage tips list to mak
 export const unitSizerPageTitle = `Unit Sizer  | Herlihy Self Storage`;
 export const unitSizerPageContent = `Are you not sure what size unit you require? Use this guide to help you figure out what fits inside the units offered at Herlihy Self Storage!`;
 
-export const contactPageTitle = `Contact Us | U Stor 104 Self-Storage`;
+export const contactPageTitle = `Contact Us | Herlihy Self Storage`;
 export const contactPageContent = `Do you have a question about our services, or would you like help with your account? Use our form or contact information to reach out, today!`;
 
 export const thankYouPageTitle = `Thank You For Reserving Your Unit at Herlihy Self Storage!`;
@@ -46,7 +46,7 @@ export const privacyPolicyPageContent = `This page contains this website's priva
 export const faqPageTitle = ``;
 export const faqPagecontent = ``;
 
-export const location1PayrentPageTitle = `Pay Rent | U Stor 104 Self-Storage`;
+export const location1PayrentPageTitle = `Pay Rent | Herlihy Self Storage`;
 export const location1PayrentPageContent = `Take a moment to review our easy login instructions, or call our friendly management team and start paying your rent online 24 hours a day!`;
 
 export const location2PayrentPageTitle = `Pay Rent | U Stor 104 Self-Storage`;
@@ -66,7 +66,7 @@ export const location6PayrentPageContent = ``;
 
 
 
-export const location1ContactPageTitle = `Contact Us | U Stor 104 Self-Storage`;
+export const location1ContactPageTitle = `Contact Us | Herlihy Self Storage`;
 export const location1ContactPageContent = `Do you have a question about our services, or would you like help with your account? Use our form or contact information to reach out, today!`;
 
 export const location2ContactPageTitle = `Contact Us | U Stor 104 Self-Storage`;

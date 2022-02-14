@@ -15,7 +15,7 @@ import { contactPageLocation1Script, ogContactPage, ogContactPageLocation1, ogCo
   twitterContactPage, twitterContactPageLocation1, twitterContactPageLocation2, twitterContactPageLocation3, twitterContactPageLocation4,
   twitterContactPageLocation5, twitterContactPageLocation6 } from '../data/script';
 import { CanonicalService } from '../services/canonical.service';
-import { contactPageTitle, contactPageContent } from '../data/title';
+import { contactPageTitle, contactPageContent, location1ContactPageTitle, location2ContactPageTitle } from '../data/title';
 @Component({
   selector: 'app-contact-us',
   templateUrl: './contact-us.component.html',
@@ -43,6 +43,8 @@ export class ContactUsComponent implements OnInit {
   og: any;
   twitter: any;
   contactPageContent: string;
+  location1ContactPageTitle: string;
+  location2ContactPageTitle: string;
   contactPageTitle: string;
   
   constructor(
@@ -119,8 +121,8 @@ export class ContactUsComponent implements OnInit {
 }
 
 public fetchMetaData() {
-  this.contactPageTitle = contactPageTitle;
-  this.contactPageContent = contactPageContent;
+  this.location1ContactPageTitle = location1ContactPageTitle;
+  this.location2ContactPageTitle = location2ContactPageTitle;
 }
 
 public fetchTwitter() {
@@ -173,8 +175,10 @@ public fetchTwitter() {
   public fetchLocationDetails() {
     if (this.router.url.includes('chillicothe')) {
       this.fetchContactDetailsLocation1();
+      this.titleService.setTitle(`${this.location1ContactPageTitle}`);
     } else if (this.router.url.includes('grove-city')) {
       this.fetchContactDetailsLocation2();
+      this.titleService.setTitle(`${this.location2ContactPageTitle}`);
     } else if (this.router.url.includes('')) {
       this.fetchContactDetailsLocation3();
     } else if (this.router.url.includes('')) {
