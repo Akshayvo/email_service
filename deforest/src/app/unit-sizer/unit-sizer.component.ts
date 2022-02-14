@@ -3,6 +3,7 @@ import { unitSizer } from '../data/unitSizer';
 import { Title, Meta } from '@angular/platform-browser';
 import { unitSizerPageContent, unitSizerPageTitle } from '../data/title';
 import { unitSizerHeading } from '../data/heading';
+import { CanonicalService } from "../services/canonical.service";
 
 @Component({
   selector: 'app-unit-sizer',
@@ -21,7 +22,8 @@ export class UnitSizerComponent implements OnInit {
 
   constructor(
     private titleService: Title,
-    private meta: Meta
+    private meta: Meta,
+    private canonical: CanonicalService
   ) {
     this.fetchMetaData();
     this.meta.addTag({
@@ -29,6 +31,7 @@ export class UnitSizerComponent implements OnInit {
       content: `${this.unitSizerPageContent}`
     });
     this.titleService.setTitle(`${this.unitSizerPageTitle}`);
+    this.canonical.create();
   }
 
   ngOnInit() {

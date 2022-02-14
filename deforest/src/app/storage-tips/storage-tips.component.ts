@@ -4,7 +4,8 @@ import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { storageTipsTitle, storageTipsContent } from '../data/title';
 import { storageTipsHeading } from '../data/heading';
-
+import { CanonicalService } from "../services/canonical.service";
+import { ogStorageTipsPage, twitterStorageTipsPage } from "../data/script";
 
 @Component({
   selector: 'app-storage-tips',
@@ -19,19 +20,30 @@ export class StorageTipsComponent implements OnInit {
   storageTipsTitle: string;
   storageTipsContent: string;
   storageTipsHeading: string;
-
+  og: any;
+  twitter: any;
 
   constructor(
     private titleService: Title,
+    private canonical: CanonicalService,
     @Inject(WINDOW) private window: Window,
     private meta: Meta
   ) {
     this.fetchMetaData();
+    this.fetchOg();
+    this.fetchTwitter();
+    this.og.forEach((element) => {
+      this.meta.updateTag({
+        property: element.property,
+        content: element.content,
+      });
+    });
     this.meta.addTag({
       name: 'description',
       content: `${this.storageTipsContent}`
     });
     this.titleService.setTitle(`${this.storageTipsTitle}`);
+    this.canonical.create();
   }
 
   ngOnInit() {
@@ -41,7 +53,13 @@ export class StorageTipsComponent implements OnInit {
     this.fetchStorageTipsHeading();
   }
 
+  public fetchOg() {
+    this.og = ogStorageTipsPage;
+  }
 
+  public fetchTwitter() {
+    this.twitter = twitterStorageTipsPage;
+  }
   /**
    * fetchstoragePoints
    */
