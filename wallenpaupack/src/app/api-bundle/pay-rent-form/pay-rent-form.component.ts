@@ -682,6 +682,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
                 }
               }
             } else {
+              this.showloaderForPayment = false;
               this.makePaymentForUnit = false;
 
               this.invalidPayment =

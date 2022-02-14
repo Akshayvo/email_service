@@ -1,7 +1,7 @@
 <div class="payRent">
   <h2 class="pb-1">Payment</h2>
   <form [formGroup]="payRentForm" (ngSubmit)="onSubmit()" class="pt-3">
-    <strong ><i  *ngIf="showloaderForPayment">Processing payment, please wait...</i></strong>
+    <strong ><i  *ngIf="showloaderForPayment">The payment may take up to 60 seconds to process.</i></strong>
     <strong><i *ngIf="invalidPayment">{{invalidPayment}}</i></strong>
     <div
       [class.loaderForPayment]="showloaderForPayment || showLoader"
