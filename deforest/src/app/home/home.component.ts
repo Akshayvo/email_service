@@ -4,6 +4,7 @@ import { Router } from "@angular/router";
 import { Title, Meta } from "@angular/platform-browser";
 import { homePageTitle, homePageContent } from "../data/title";
 import { contact, officeHours } from "../data/contact";
+import { MetaService } from "../services/link.service";
 import {
   featuresList,
   featuresHead,
@@ -55,6 +56,7 @@ export class HomeComponent implements OnInit {
     private titleService: Title,
     private _renderer2: Renderer2,
     private meta: Meta,
+    private metaService: MetaService,
     private uaParserService: UaParserService,
     private canonical: CanonicalService,
   ) {
