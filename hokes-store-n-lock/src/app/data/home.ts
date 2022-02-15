@@ -93,8 +93,6 @@ export const feature = [
 export const jumbotron = [
     {
         h2: `Arcanum's Newest Self Storage Facility`,
-        blurb: `Hoke's Store-N-More is Arcanum's newest self storage facility, and we are proud to be serving our 
-        friends and neighbors as a locally owned and operated business. We have a number of unit sizes ranging 
-        from smaller to oversized to cover all of your storage needs.`,
+        blurb: `Hoke's Store-N-Lock is Arcanum's newest self storage facility, and we are proud to be serving our friends and neighbors as a locally owned and operated business with quality self storage units at very affordable rates! Take a moment to check our unit rates and availability, then reserve your storage unit today!`,
     }
 ];
