@@ -14,7 +14,7 @@ export const environment = {
   facilityName: 'Innovative Self Storage',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: 'innovative-storage-staging.netlify.app',
+  websiteUrl: 'https://marionstorageunits.com',
   APIKey: `bTJUOG44TDRbM1s6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 28843
   // APIKey: `Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O` //testing
 };
