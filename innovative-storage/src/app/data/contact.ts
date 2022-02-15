@@ -13,7 +13,7 @@ export const contact = [
         label: 'Address:',
         data: '2181 Innovation Dr Suite 101, Marion, OH 43302',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
-        redirect: 'https://goo.gl/maps/HL8io8ssdG8Aa3WF7'
+        redirect: 'https://www.google.com/maps/place/Innovative+Storage/@40.608156,-83.0708,14z/data=!4m5!3m4!1s0x0:0x6a505ba964e4216a!8m2!3d40.6081518!4d-83.0708092?hl=en'
     },
     {
         id: 1,
