@@ -605,9 +605,14 @@ h1 {
 @media only screen and (max-width: 467px) {
   .jumbotron {
     text-align: center;
-    background-attachment: unset;
-    background-position: center;
-    height: 100vh;
+    background-size: contain;
+    // background-attachment: unset;
+    // background-position: center;
+    height: 40vh;
+  }
+
+  .jumbotron-top{
+    height: 50vh;
   }
 
   .feature {
@@ -623,6 +628,8 @@ h1 {
     height: 150px;
     bottom: 0;
     position: absolute;
+    top: 30vh;
+    background-color: white;
   }
 
   .jumbotorn-skew-text {
@@ -633,11 +640,12 @@ h1 {
     height: auto;
 
     .btn-outline-primary {
-     margin: 5px
+     margin: 5px;
+     color: red;
     }
 
     .btn-primary {
-      margin: 5px
+      margin: 5px;
 
     }
 
