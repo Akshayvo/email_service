@@ -81,7 +81,7 @@ export const feature = [
 
 export const jumbotron = [
     {
-        h2: `Affordable Storage Units and Vehicle Parking in`,
+        h2: `Affordable Storage Units and Vehicle Parking in Westerly`,
         blurb: `Friendship Self Storage is Westerly’s premier self storage facility. We offer a selection of self storage unit sizes and parking spaces. Our skilled and friendly staff are here to help you pick out the perfect unit for your move, renovation, or downsizing project. Take a moment to check out our rates on storage units and parking, then reserve your unit online, or call our knowledgeable team today. You're sure to find a friend in Friendship Self Storage!`,
     }
 ];
