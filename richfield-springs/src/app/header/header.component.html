@@ -35,15 +35,25 @@
       <i class="fas fa-bars iconColor"></i>
     </button>
   </div>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent" #menu>
-      <ul class="navbar-nav ml-auto navbar-nav-scroll">
-        <li class="nav-item px-1" *ngFor="let nav of navLinks">
-          <a class="nav-link py-4" [routerLinkActive]="'nav-link-active'" [routerLink]="nav?.path" 
-          [routerLinkActiveOptions]="{exact: true}" (click)="onClick(menu)" *ngIf="nav?.path != '/pay-rent'">{{nav.label}}</a>
-          <a class="nav-link py-4" [routerLinkActive]="'nav-link-active'" [routerLink]="nav?.path" 
-          [routerLinkActiveOptions]="{exact: false}" (click)="onClick(menu)" *ngIf="nav?.path === '/pay-rent'">{{nav.label}}</a>
-        </li>
-      </ul>
-    </div>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent" #menu>
+    <ul class="navbar-nav ml-auto navbar-nav-scroll">
+      <li class="nav-item px-1" *ngFor="let nav of navLinks">
+        <span *ngIf="nav?.type === 'link'">
+          <a class="nav-link py-4" [routerLink]="nav?.path" [routerLinkActive]="'nav-link-active'" [routerLinkActiveOptions]="{exact: true}" (click)="onClick(menu)">{{nav.label}}</a>
+        </span>
+
+        <span *ngIf="nav?.type === 'dropdown'">
+            <div class="dropdown show">
+              <a class="dropdown-toggle nav-link" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{nav.label}}</a>
+              <ul class="dropdown-menu location-list" aria-labelledby="dropdownMenuLink">
+                <li>
+                  <a class="dropdown-item" [routerLinkActive]="'location-active'" href="https://mohawkselfstorage.com/">Mohawk Self Storage</a></li>
+                  <li><a class="dropdown-item" [routerLinkActive]="'location-active'" href="https://herkimerstorageoutlet.com/">Herkimer Storage Outlet</a></li>
+              </ul>
+            </div>
+        </span>
+      </li>
+    </ul>
+  </div>
   </div>
 </nav>
