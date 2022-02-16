@@ -4,7 +4,7 @@ export const homePageContent = `Hoke's Store-N-Lock offers affordable storage un
 export const viewRatesPageTitle = `View Rates  | Hoke's Store-N-Lock`;
 export const viewRatesPageContent = `Review our current rates and availability, then rent your unit in minutes with our easy online rental form!`;
 
-export const reservePageTitle = `Reserve a Unit | Hoke's Store-N-Lock `;
+export const reservePageTitle = `Reserve a Unit | Hoke's Store-N-Lock`;
 export const reservePageContent = `Simply fill out our easy reservation form and one of our friendly self storage associates will be ready and waiting for your arrival!`;
 
 export const payRentPageTitle = `Pay Rent  | Hoke's Store-N-Lock`;

@@ -24,7 +24,7 @@ export class PaymentComponent implements OnInit {
     @Inject(WINDOW) private window: Window,
     private meta: Meta
   ) {
-    // this.fetchMetaData();
+    this.fetchMetaData();
     // this.fetchOg();
     // this.fetchTwitter();
     // this.og.forEach(element => {
