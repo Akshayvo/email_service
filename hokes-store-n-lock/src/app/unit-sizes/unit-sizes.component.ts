@@ -39,7 +39,7 @@ export class UnitSizesComponent implements OnInit {
   }
 
   /**
-   * fetchUnitSizer
+   * fetchUnitSizer.
    */
   public fetchUnitSizer() {
     this.unitsizers = unitSizer;
