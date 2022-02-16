@@ -13,6 +13,6 @@ export const environment = {
   facilityName: 'Mathis Mini Storage',
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   websiteUrl: 'https://mathisministorage.com',
-  // APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // north demo 
-  APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 18009 mathis 
+   APIKey: `Mjg0NjU6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // north demo 
+  //APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 18009 mathis 
 };
