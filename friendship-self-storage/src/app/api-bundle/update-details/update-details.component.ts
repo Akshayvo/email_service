@@ -129,7 +129,6 @@ export class UpdateDetailsComponent implements OnInit {
   biAnnualRate: number;
   quarterRate: number;
   initialValues: any;
-  navTo :any;
 
   private  getTenantInfoSubscribe$: Subscription;
   private  updateTenantSubscribe$: Subscription;
@@ -179,7 +178,6 @@ export class UpdateDetailsComponent implements OnInit {
     if (!!localStorage.getItem('paymentTab')) {
       this.paymentTab = localStorage.getItem('paymentTab');
     }
-    this.navTo = localStorage.getItem('paymentNavigationUrl');
   }
     public fetchUSState() {
     this.option = option;
@@ -271,9 +269,9 @@ export class UpdateDetailsComponent implements OnInit {
        .subscribe(result => {
          localStorage.removeItem('strTenantToken');
          if (!!this.paymentTab) {
-           this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/login`]);
+           this.router.navigate([`/pay-rent/${this.paymentTab}/login`]);
          } else {
-           this.router.navigate(['/pay-rent/rent-sub/login']);
+           this.router.navigate(['/pay-rent/login']);
          }
        }, (err) => {
        }
