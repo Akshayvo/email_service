@@ -19,8 +19,8 @@ export const environment = {
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   websiteUrl: 'https://friendship-selfstorage.com',
-  // APIKey: `dzJ0OVc1SjYqME46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29462
-  APIKey: `Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 28464 demo
+  // APIKey: `dzJ0OVc1SjYqME46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29560 
+  APIKey: `Mjg0NjU6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 28465 demo 
   
 };
 
