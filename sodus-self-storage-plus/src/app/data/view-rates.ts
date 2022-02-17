@@ -82,17 +82,17 @@ export const th = [
   },
   {
     id: 'rate',
-    data: `Reservation Deposit`,
+    data: `Rate`,
     state: objSIMSetting.objUnitSizesSetting.blnShowRate
   },
-  {
-    id: 'rate',
-    data: `Rental Deposit`,
-    state: objSIMSetting.objUnitSizesSetting.blnShowRate
-  },
+  // {
+  //   id: 'rate',
+  //   data: `Rental Deposit`,
+  //   state: objSIMSetting.objUnitSizesSetting.blnShowRate
+  // },
   {
     id: 'deposit',
-    data: 'Deposit',
+    data: 'Rental Deposit',
     state: objSIMSetting.objUnitSizesSetting.blnShowDeposit
   },
   {  id: 'reserve',
