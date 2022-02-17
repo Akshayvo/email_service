@@ -1,10 +1,10 @@
 export const objSIMSetting = {
     objActionSetting: {
-        blnAllowMoveIn: true,
+        blnAllowMoveIn: false,
         blnAllowReservation: true
     },
     objPaymentSetting: {
-        blnAllowACHPayments: true,
+        blnAllowACHPayments: false,
         blnAllowAutoPay: true,
         blnAllowCCPayments: true,
         blnAllowCancelAutoPay: true,
@@ -14,7 +14,7 @@ export const objSIMSetting = {
         blnHideGateAccessCode: true,
     },
     objUnitSizesSetting: {
-        blnClimateControl: true,
+        blnClimateControl: false,
         blnShowDeposit: true,
         blnShowRate: true,
         blnShowUnavailableUnitTypes: true,
