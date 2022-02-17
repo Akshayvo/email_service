@@ -20,21 +20,7 @@
     </div>
 <div class="row">
   <div class="col-md-6 py-3">
-    <!-- <img src="{{imageBaseUrl}}/stock-self-storage-169.{{imagetype}}" alt="a single story metal self storage building with a facility office on the end of the building" width="100%" /> -->
-    <div id="selectedImageM" class="text-center selectedImageM">
-      <img *ngIf="selectedImage" src="{{imageBaseUrl}}/{{selectedImage.url}}.{{imagetype}}" alt="{{selectedImage.alt}}" height="100%" width="100%">
-    </div>
-    <div class="">
-      <div class="data">
-        <div id="thumbnailsList" class="thumbnailsList">
-          <span *ngFor="let image of galleryImages" class="p-1">
-             <img src="{{imageBaseUrl}}/{{image.thumb}}.{{imagetype}}" alt="{{image.alt}}" class="tn" height="100%" width="100%"
-                data-toggle="image.thumb"   data-target="#selectedImageM"
-                  (click)=setSelectedImage(image)>
-          </span>
-        </div>
-      </div>
-    </div>
+    <app-photos></app-photos>
   </div>
   <div class="col-md-6 py-3 "> 
     <p  class='text-dark' *ngFor="let viewRate of viewRate ">
