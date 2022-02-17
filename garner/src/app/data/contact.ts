@@ -12,13 +12,13 @@ export const contactsHomePage = [
         class: 'fas fa-phone mr-2 iconColor',
         redirect: 'tel:4782723724'
     },
-    {
-        id: 2,
-        label: 'Phone:',
-        data: '(478) 697-9570',
-        class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:4786979570'
-    },
+    // {
+    //     id: 2,
+    //     label: 'Phone:',
+    //     data: '(478) 697-9570',
+    //     class: 'fas fa-phone mr-2 iconColor',
+    //     redirect: 'tel:4786979570'
+    // },
     {
         id: 3,
         label: 'Email:',
@@ -68,13 +68,13 @@ export const contactsLocation1 = [
         class: 'fas fa-phone mr-2 iconColor',
         redirect: 'tel:4782723724'
     },
-    {
-        id: 2,
-        label: 'Phone:',
-        data: '(478) 697-9570',
-        class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:4786979570'
-    },
+    // {
+    //     id: 2,
+    //     label: 'Phone:',
+    //     data: '(478) 697-9570',
+    //     class: 'fas fa-phone mr-2 iconColor',
+    //     redirect: 'tel:4786979570'
+    // },
     {
         id: 3,
         label: 'Email:',
@@ -119,13 +119,13 @@ export const contactsLocation2 = [
         class: 'fas fa-phone mr-2 iconColor',
         redirect: 'tel:4782723724'
     },
-    {
-        id: 2,
-        label: 'Phone:',
-        data: '(478) 697-9570',
-        class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:4786979570'
-    },
+    // {
+    //     id: 2,
+    //     label: 'Phone:',
+    //     data: '(478) 697-9570',
+    //     class: 'fas fa-phone mr-2 iconColor',
+    //     redirect: 'tel:4786979570'
+    // },
     {
         id: 3,
         label: 'Email:',

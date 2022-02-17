@@ -93,6 +93,18 @@ a {
   outline: 1px $primary solid;
 }
 
+.btn-payment {
+  background-color: #ffffff;
+  color: $primary;
+}
+
+.payment-button {
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  display: none;
+}
+
 @media screen and (max-width: 1199px) and (min-width: 992px) {
   .navbar {
     .nav-link {
@@ -110,7 +122,7 @@ a {
 @media screen and (max-width: 991px) {
 
   .display {
-    display: none;
+    // display: none;
   }
 
   .nav-link {
@@ -140,6 +152,12 @@ a {
   }
 
   @media (min-width: 768px) {
+    .display{
+      .payment-button{
+        display: none;
+      }
+    }
+    
     .navbar-nav {
       li {
         a {
@@ -148,6 +166,7 @@ a {
         }
       }
     }
+    
   }
 
   
@@ -158,3 +177,31 @@ a {
     }
   }
 }
+
+@media only screen and (max-width: 426px){
+  .payment-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 426px) and (min-width: 280px) {
+  .contact-details{
+    display: block;
+  }
+
+  .contact-header{
+    font-size: 1.1em;
+    font-weight: 500;
+    width: 100%;
+  }
+}
+
+// @media only screen and (max-width: 330px){
+//   .contact-header{
+//     font-size: .7em;
+//     font-weight: 500;
+//     width: 100%;
+//   }
+// }
