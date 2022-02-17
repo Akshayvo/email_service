@@ -2,9 +2,9 @@ export const contact = [
     {
         id: 0,
         label: 'Facility Address:',
-        data: '108 S Main St, Arcanum, OH 45304',
+        data: '108 S Main St Arcanum, OH 45304',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
-        redirect: ''
+        redirect: 'https://www.google.com/maps?ie=UTF8&hq&ll=44.264137,-88.3540592'
     },
     {
         id: 1,
@@ -33,7 +33,7 @@ export const contacts = [
     {
         id: 0,
         label: 'Facility Address:',
-        data: '108 S Main St, Arcanum, OH 45304',
+        data: '108 S Main St Arcanum, OH 45304',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
         redirect: ''
     },
