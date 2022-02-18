@@ -18,14 +18,12 @@ import { MoveInService } from '../services/moveIn.service';
 import { AddTenantService } from '../services/add-tenant.service';
 import { environment } from '../../../environments/environment';
 import { objSIMSetting } from '../../data/configuration';
-import { CurrencyPipe } from '@angular/common';
-import $ from 'jquery';
 
 @Component({
   selector: 'app-pay-rent-form',
   templateUrl: './pay-rent-form.component.html',
   styleUrls: ['./pay-rent-form.component.scss'],
-  providers: [DatePipe, CurrencyPipe ],
+  providers: [DatePipe],
 })
 
 export class PayRentFormComponent implements OnInit, OnDestroy {
@@ -56,7 +54,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   IsAutoPaymentsEnabled = false;
   makePaymentForUnit = false;
   TotalReserveAmount: number;
-  totalMoveInAmount: any;
+  totalMoveInAmount: number;
   date: Date;
   reservationInProgress: boolean;
   MinDate: string;
@@ -68,12 +66,13 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   blnAllowPartialPayments: boolean;
   cards: any;
   paymentSuccess = false;
+  navigateToPayment = false;
   marked = false;
   signUp = {};
   logOut = {};
   defaultCardType: string;
 
-  otherValue : any;
+  otherValue = 0;
   id: string;
 
   UnpaidAR: UnpaidAR[];
@@ -128,7 +127,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     private surchargeService: SurchargeService,
     public router: Router,
     private datePipe: DatePipe,
-    private currencyPipe: CurrencyPipe,
     private dataSharingService: DataSharingService,
     private makeAReservationService: MakeAReservationService,
     private moveInService: MoveInService,
@@ -184,7 +182,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     if (!!this.dataSharingService.MoveInData.TotalChargesAmount) {
       this.totalMoveInAmount =
       // tslint:disable-next-line: max-line-length
-      currencyPipe.transform((this.dataSharingService.MoveInData.TotalChargesAmount + this.dataSharingService.MoveInData.TotalTaxAmount), 'USD');
+      parseFloat((this.dataSharingService.MoveInData.TotalChargesAmount + this.dataSharingService.MoveInData.TotalTaxAmount).toFixed(2));
       if (!!this.totalMoveInAmount && this.totalMoveInAmount > 0) {
         this.surchargeService.setAmt(this.totalMoveInAmount);
         // this.getSurCharge();
@@ -237,20 +235,9 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-
-    $("input[data-type='currency']").on({
-      keyup: function() {
-        this.formatCurrency($(this));
-      },
-      blur: function() { 
-        this.formatCurrency($(this), "blur");
-      }
-  });
     if (!!localStorage.getItem('paymentTab')) {
       this.paymentTab = localStorage.getItem('paymentTab');
     }
-
-    
 
     this.blnAllowPartialPayments = objSIMSetting.objPaymentSetting.blnAllowPartialPayments;
     this.tenantData.objTenant = this.dataSharingService.objTenant;
@@ -288,7 +275,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
    this.cardType = this.getCardType(number.target.value);
    const index = this.lstPayTypes.findIndex(x => x.PayTypeDescription === this.cardType);
    // tslint:disable-next-line: max-line-length
-   const cardTypeId = ((index > -1 ) ? this.lstPayTypes[index].PayTypeID : this.lstPayTypes[0].PayTypeID);
+   const cardTypeId = ((index!=null && index > -1 ) ? this.lstPayTypes[index].PayTypeID : this.lstPayTypes[0].PayTypeID);
    this.paytypeid =  cardTypeId;
    this.surchargeService.getIdPaytype(this.paytypeid);
    this.payRentForm.patchValue({
@@ -437,7 +424,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
           this.defaultCardType = ((Tenant.CCNumber) ? this.getCardType(Tenant.CCNumber) : this.lstPayTypes[0].PayTypeDescription);
           const index = this.lstPayTypes.findIndex(x => x.PayTypeDescription === this.defaultCardType);
           // tslint:disable-next-line: max-line-length
-          const defaultCardPayTypeId = ((index > -1 ) ? this.lstPayTypes[index].PayTypeID : this.lstPayTypes[0].PayTypeID);
+          const defaultCardPayTypeId = ((index!=null && index > -1 ) ? this.lstPayTypes[index].PayTypeID : this.lstPayTypes[0].PayTypeID);
 
           if (localStorage.getItem('strTenantToken')) {
             this.paytypeid =  defaultCardPayTypeId;
@@ -491,12 +478,11 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
        .subscribe(payTypesResponse => {
  
          this.cards.forEach(element => {
-           if (payTypesResponse.lstPayTypes.findIndex(x => x.PayTypeDescription === element)) {
              const index = payTypesResponse.lstPayTypes.findIndex(x => x.PayTypeDescription === element);
-              if (index > -1) {
+              if (index!=null && index > -1) {
                  this.lstPayTypes.push(payTypesResponse.lstPayTypes[index]);
                }
-           }
+           
          });
  
  
@@ -534,6 +520,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     this.surchargeService.getSurCharge()
     .subscribe(result => {
       this.amountToPay = result.decTotalAmount;
+      this.dataSharingService.amountToPayThankYou = this.amountToPay
       this.TotalReserveAmount = result.decTotalAmount;
 
 
@@ -567,6 +554,17 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     this.makePaymentForUnit = true;
     if (this.toggleSignUp === true) {
       if (this.payRentForm.value.objPayment.SignUpForAutoPay === true) {
+        this.signUp = {
+          objTenant: {
+            CCNumber: this.payRentForm.value.objPayment.CCAccountNumber,
+            CCBillingAccountName: this.payRentForm.value.objPayment.CCAccountName,
+            CCExpirationMonth: this.payRentForm.value.objPayment.CCExpirationMonth,
+            CCExpirationYear: this.payRentForm.value.objPayment.CCExpirationYear,
+            CCBillingAddress: this.payRentForm.value.objPayment.CCAccountBillingAddress,
+            CCBillingZIP: this.payRentForm.value.objPayment.CCAccountZIP,
+            PreferredPaymentMethod: this.payRentForm.value.objPayment.PayType.PayTypeID,
+          }
+        };
       this.signUpAutoPay(this.signUp);
     } else {
       this.OptionOutOfAutoPay(this.signUp);
@@ -582,7 +580,11 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         }
         this.dataSharingService.CCApprovalCode = paymentDataResponse.PayTypeForResult.CCApprovalCode;
         if ( paymentDataResponse.intErrorCode === 1 ) {
+
           this.makePaymentForUnit = false;
+          if (this.router.url.includes('/payment')){
+            this.dataSharingService.navigateToPayment = true
+          }
           if (this.navigateToReserve) {
             this.MoveIn.intUnitTypeID = this.dataSharingService.LstUnitTypes.UnitTypeID;
             this.makeAReservation(this.MoveIn);
@@ -597,19 +599,20 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
               } else {
                 this.router.navigate([`pay-rent/thank-you`]);
               }
+              
             }
           }
           this.showSuccessPayment = true;
         } else {
-          this.makePaymentForUnit = false;
           this.showloaderForPayment = false;
+          this.makePaymentForUnit = false;
           this.invalidPayment = 'Unable to make the payment. Please check your card detail.';
         }
 
 
       }, (err: any) => {
         this.makePaymentForUnit = false;
-
+        this.showloaderForPayment = false;
         if (err instanceof HttpErrorResponse) {
           if (err.status === 400) {
             this.showloaderForPayment = false;
@@ -759,81 +762,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
        });
      }
 
-
-    formatNumber(n) {
-      // format number 1000000 to 1,234,567
-      return n.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ",")
-    }
-    
-    
-    formatCurrency(input, blur) {
-      // appends $ to value, validates decimal side
-      // and puts cursor back in right position.
-      
-      // get input value
-      var input_val = input.val();
-      
-      // don't validate empty input
-      if (input_val === "") { return; }
-      
-      // original length
-      var original_len = input_val.length;
-    
-      // initial caret position 
-      var caret_pos = input.prop("selectionStart");
-        
-      // check for decimal
-      if (input_val.indexOf(".") >= 0) {
-    
-        // get position of first decimal
-        // this prevents multiple decimals from
-        // being entered
-        var decimal_pos = input_val.indexOf(".");
-    
-        // split number by decimal point
-        var left_side = input_val.substring(0, decimal_pos);
-        var right_side = input_val.substring(decimal_pos);
-    
-        // add commas to left side of number
-        left_side = this.formatNumber(left_side);
-    
-        // validate right side
-        right_side = this.formatNumber(right_side);
-        
-        // On blur make sure 2 numbers after decimal
-        if (blur === "blur") {
-          right_side += "00";
-        }
-        
-        // Limit decimal to only 2 digits
-        right_side = right_side.substring(0, 2);
-    
-        // join number by .
-        input_val = "$" + left_side + "." + right_side;
-    
-      } else {
-        // no decimal entered
-        // add commas to number
-        // remove all non-digits
-        input_val = this.formatNumber(input_val);
-        input_val = "$" + input_val;
-        
-        // final formatting
-        if (blur === "blur") {
-          input_val += ".00";
-        }
-      }
-      
-      // send updated string to input
-      input.val(input_val);
-    
-      // put caret back in the right position
-      var updated_len = input_val.length;
-      caret_pos = updated_len - original_len + caret_pos;
-      input[0].setSelectionRange(caret_pos, caret_pos);
-    }
-    
-
      onSubmit() {
       this.submitted = true;
       if (this.payRentForm.invalid) {
@@ -868,7 +796,9 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         } else {
           this.makePayment(this.payRentForm.value);
         }
+        
       }
+      
     }
 
   public ngOnDestroy(): void {
@@ -902,7 +832,4 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
      this.addTenantSubscribe$.unsubscribe();
     }
   }
-
-
-  
 }

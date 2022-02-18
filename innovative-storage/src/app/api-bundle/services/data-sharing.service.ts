@@ -30,6 +30,9 @@ export class DataSharingService {
   signUpForAutoPay: boolean;
   showAltDetails: boolean;
   showMilitaryDetails: boolean;
+  amountToPayThankYou: number;
+  navigateToPayment: boolean;
+  
   cardDetailsObject = {
     CCNumber: '',
     CCBillingAccountName: '',
