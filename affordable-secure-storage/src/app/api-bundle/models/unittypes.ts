@@ -31,6 +31,7 @@ export class LstUnitTypes {
         ReservationFee: number,
         UnitTypeID: number,
         IsUnitsAvailable: boolean,
+        blnAllowReservation: boolean,
         IsClimateControlled: boolean,
         DepositAmount: number
         ) {
@@ -42,6 +43,7 @@ export class LstUnitTypes {
         this.QuarterRate = QuarterRate;
         this.ReservationFeeTax  = ReservationFeeTax;
         this.ReservationFee = ReservationFee;
+        blnAllowReservation = blnAllowReservation;
         this.UnitTypeID = UnitTypeID;
         this.IsUnitsAvailable = IsUnitsAvailable;
         this.IsClimateControlled = IsClimateControlled;

@@ -38,12 +38,12 @@ export const tabs2 = [
         path: './unitSizer',
         active: false,
     },
-    {
-        id: '3',
-        name: 'Reserve Unit',
-        path: './reserveUnit',
-        active: false,
-    },
+    // {
+    //     id: '3',
+    //     name: 'Reserve Unit',
+    //     path: './reserveUnit',
+    //     active: false,
+    // },
     {
         id: '4',
         name: 'Gallery',

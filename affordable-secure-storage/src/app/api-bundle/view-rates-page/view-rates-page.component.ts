@@ -4,7 +4,7 @@ import { MoveInService } from '../services/moveIn.service';
 import { ObjCharges } from '../models/movein';
 import { UnitTypes, LstUnitTypes } from '../models/unittypes';
 import { FetchDataService } from '../services/fetch-data.service';
-import { th } from '../../data/view-rates';
+import { th, thFloral } from '../../data/view-rates';
 import { Router } from '@angular/router';
 import { DataSharingService } from '../services/data-sharing.service';
 
@@ -27,6 +27,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   deposit: any;
   openComponent = false;
   showMoveIn = false;
+  locationId = 0;
   curStage = 0;
   depositTax: number;
   rate: number;
@@ -45,6 +46,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   showPaymentForReserve = false;
   objCharges: ObjCharges;
   th: any;
+  thFloral: any;
   tenant: any;
   text = false;
   navTo: any;
@@ -71,9 +73,23 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     this.dataSharingService.initMyNavLinks('viewRates', this.router.url);
   }
 
+  
   public fetchThData() {
-    this.th = th;
+    if (this.router.url.includes('/location/affordable-secure-storage-west-hernando')){
+      this.th = thFloral;
+      this.locationId = 2;
+    } else if (this.router.url.includes('/location/affordable-secure-storage-hernando')) {
+      this.th = thFloral;
+      this.locationId = 3;
+    } else if (this.router.url.includes('/location/affordable-secure-storage-labelle/')) {
+      this.th = th;
+      this.locationId = 4;
+    } else  if (this.router.url.includes('/location/affordable-secure-storage-backyard')){
+      this.th = th;
+      this.locationId = 5;
+    }
   }
+
 
   public navigate(location: any, unitData: any) {
 
