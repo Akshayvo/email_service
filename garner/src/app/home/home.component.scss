@@ -546,3 +546,65 @@ h1 {
     display: none;
   }
 }
+
+@media only screen and (max-width: 426px) {
+  .jumbotron {
+    background-size: contain;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    height:78vh;
+  }
+  .jumbotorn-skew-text{
+    top:76vh;
+    width:90%;
+    color:#000;
+    margin:0 auto;
+    
+    h2{
+      text-align: center;
+      font-size: 20px;
+    }
+    p{
+      display: none;
+    }
+  }
+  .jumbotorn-skew-style{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .jumbotron {
+    background-size: contain;
+    height:73vh; 
+  }
+  .jumbotorn-skew-text{
+    top:73vh;
+  }
+}
+
+@media only screen and (max-width: 414px) and (min-width: 390px) and (max-height:916px) and (min-height:844px){
+  .jumbotron-top{
+    height:60vh;
+    
+  }
+  .jumbotron {
+    height:45vh;
+  }
+  .jumbotorn-skew-text{
+    top:45vh;
+  }
+}
+
+@media only screen and (max-width: 376px) and (min-width: 280px) and (max-height:740px) and (min-height:653px){
+  .jumbotron-top{
+    height:75vh;
+    
+  }
+  .jumbotron {
+    height:52vh;
+  }
+  .jumbotorn-skew-text{
+    top:55vh;
+  }
+}

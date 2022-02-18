@@ -7,6 +7,12 @@ export const contactsHomePage = [
     },
     {
         id: 1,
+        label: 'Address:',
+        data: '1321 N Jefferson St, Dublin, GA 31021',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+    },
+    {
+        id: 2,
         label: 'Phone:',
         data: '(478) 272-3724',
         class: 'fas fa-phone mr-2 iconColor',
