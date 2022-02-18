@@ -6,13 +6,13 @@ export const contact = [
         class: 'fas fa-map-marker-alt mx-2 iconColor',
         redirect: 'https://goo.gl/maps/WkxXAVM8asKL5k6B8'
     },
-    {
-        id: 1,
-        label: 'Mailing Address:',
-        data: '4864 Arcadia Zurich Norris Rd, Sodus, NY 14551',
-        class: 'fas fa-map-marker-alt mx-2 iconColor',
-        redirect: 'https://goo.gl/maps/QS6x5SLYfG8UpLPA8'
-    },
+    // {
+    //     id: 1,
+    //     label: 'Mailing Address:',
+    //     data: '4864 Arcadia Zurich Norris Rd, Sodus, NY 14551',
+    //     class: 'fas fa-map-marker-alt mx-2 iconColor',
+    //     redirect: 'https://goo.gl/maps/QS6x5SLYfG8UpLPA8'
+    // },
     {
         id: 2,
         label: 'Email:',
