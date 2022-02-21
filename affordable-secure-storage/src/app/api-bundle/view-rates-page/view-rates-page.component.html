@@ -76,7 +76,7 @@
       </div>
     </div>
     <div class="col-6 d-flex justify-content-center">
-      <div *ngIf="lstUnitType.IsUnitsAvailable; else other">
+      <div *ngIf="lstUnitType.blnAllowReservation; else other">
         <div class=" py-1 buttons">
           <button class="btn  btn-primary" (click)="navigate('reserve', lstUnitType )">Reserve</button>
         </div>
@@ -85,7 +85,7 @@
           </div> -->
       </div>
       <ng-template #other>
-        <div class="text-right">
+        <div class="text-right" *ngIf="locationId == 4 || locationId == 5">
           <p class="card-text ">Please call the facility to reserve a unit or move in.</p>
         </div>
       </ng-template>
