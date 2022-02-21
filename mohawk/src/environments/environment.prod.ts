@@ -12,6 +12,6 @@ export const environment = {
   appId: 'Mohawk Self Storage - Production',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: '',
+  websiteUrl: 'http://mohawkselfstorage.com',
   APIKey: `XjF7M0Y3VzZHOEk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // Mohawk 13768
 };

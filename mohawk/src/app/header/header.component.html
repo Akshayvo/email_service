@@ -9,9 +9,27 @@
       <i class="fas fa-bars"></i>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent" #menu>
-      <ul class="navbar-nav ml-auto navbar-nav-scroll">
+      <!-- <ul class="navbar-nav ml-auto navbar-nav-scroll">
         <li class="nav-item px-2 text-center" *ngFor="let nav of navLinks">
           <a class="nav-link" [routerLinkActive]="'nav-link-active'" [routerLink]="nav?.path" [routerLinkActiveOptions]="{exact: true}" (click)="onClick(menu)">{{nav.label}}</a>
+        </li>
+      </ul> -->
+      <ul class="navbar-nav ml-auto navbar-nav-scroll">
+        <li class="nav-item px-1" *ngFor="let nav of navLinks">
+          <span *ngIf="nav?.type === 'link'">
+          <a class="nav-link py-4" [routerLinkActive]="'nav-link-active'" [routerLink]="nav?.path" 
+          [routerLinkActiveOptions]="{exact: true}" (click)="onClick(menu)" *ngIf="nav?.path != '/pay-rent'">{{nav.label}}</a>
+          <a class="nav-link py-4" [routerLinkActive]="'nav-link-active'" [routerLink]="nav?.path" 
+          [routerLinkActiveOptions]="{exact: false}" (click)="onClick(menu)" *ngIf="nav?.path === '/pay-rent'">{{nav.label}}</a>
+        </span>
+        <span *ngIf="nav?.type === 'dropdown'">
+          <div class="dropdown show">  
+            <a class="dropdown-toggle nav-link " role="button" id="dropdownMenuLink"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{nav.label}}</a>
+            <ul class="dropdown-menu location-list" aria-labelledby="dropdownMenuLink">
+              <li *ngFor="let sub of nav.sublinks text-center"><a class="dropdown-item" [routerLinkActive]="'location-active'" rel="noreferrer" href="{{sub.path}}" target="_blank"  (click)="onClick(menu)" >{{sub.label}}</a></li>
+            </ul>
+          </div>
+      </span>
         </li>
       </ul>
     </div>
