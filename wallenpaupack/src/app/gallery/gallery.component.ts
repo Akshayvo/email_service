@@ -50,7 +50,9 @@ export class GalleryComponent implements OnInit {
     if (this.router.url.includes("lakeville")) {
       this.fetchDetailsLocation4();
     }
-    
+    if (this.router.url.includes("greentown1")) {
+      this.fetchDetailsLocation5();
+    }
   }
 
   public fetchDetailsLocation1() {
@@ -72,7 +74,10 @@ export class GalleryComponent implements OnInit {
     this.galleryImages = galleryLakeVille;
     this.id = 4;
   }
-  
+  public fetchDetailsLocation5() {
+    this.galleryImages = galleryGreentown;
+    this.id = 5;
+  }
   setSelectedImage(image: any) {
     this.selectedImage = image;
   }

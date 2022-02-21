@@ -34,6 +34,8 @@ export class DirectionsComponent implements OnInit {
        this.fetchDetailsLocation3();
     }  else  if (this.router.url.includes(`${environment.locationName}/lakeville`))  {
       this.fetchDetailsLocation4();
+    } else  if (this.router.url.includes(`${environment.locationName}/greentown1`))  {
+      this.fetchDetailsLocation5();
     } 
  }
 
@@ -59,6 +61,10 @@ export class DirectionsComponent implements OnInit {
     this.directionHeading = ``;
     this.id = 4;
   }
-
+  public fetchDetailsLocation5() {
+    // this.directionPoints = directionLocation4;
+    this.directionHeading = ``;
+    this.id = 5;
+  }
   
 }

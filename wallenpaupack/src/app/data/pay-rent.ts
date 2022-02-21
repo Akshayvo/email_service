@@ -32,6 +32,11 @@ export const tableData = [
     address: '116 Ehrgood Rd, Greentown, PA 18426',
     url: 'greentown/rent-sub/login'
   },
+  {
+    facility: ' Greentown1',
+    address: '116 Ehrgood Rd, Greentown, PA 18426',
+    url: 'greentown1/rent-sub/login'
+  },
 
 ];
 
@@ -56,6 +61,11 @@ export const tableDataContactPage = [
     facility: ' Greentown',
     address: '116 Ehrgood Rd, Greentown, PA 18426',
     url: 'greentown'
+  },
+  {
+    facility: ' Greentown1',
+    address: '116 Ehrgood Rd, Greentown, PA 18426',
+    url: 'greentown1'
   },
   
  

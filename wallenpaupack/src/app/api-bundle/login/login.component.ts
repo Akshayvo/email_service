@@ -10,6 +10,7 @@ import {
   contactsLocation2,
   contactsLocation3,
   contactsLocation4,
+  contactsLocation5
 } from "../../data/contact";
 import { loginDetail } from "../../data/pay-rent";
 import {
@@ -17,10 +18,12 @@ import {
   ogPayRentPageLocation2,
   ogPayRentPageLocation3,
   ogPayRentPageLocation4,
+  ogPayRentPageLocation5,
   twitterPayRentPageLocation1,
   twitterPayRentPageLocation2,
   twitterPayRentPageLocation3,
   twitterPayRentPageLocation4,
+  twitterPayRentPageLocation5,
 } from "../../data/script";
 import { Meta } from "@angular/platform-browser";
 
@@ -188,6 +191,17 @@ export class LoginComponent implements OnInit, OnDestroy {
         this.dataSharingService.locationAPIKey.loc4
       );
     }
+    else if (this.router.url.includes("greentown1")) {
+      this.id = 4;
+      this.name = "Wallenpaupack Self Storage - Greentown";
+      this.contact = contactsLocation5;
+      this.dataSharingService.apiKey =
+        this.dataSharingService.locationAPIKey.loc1;
+      localStorage.setItem(
+        "APIKey",
+        this.dataSharingService.locationAPIKey.loc1
+      );
+    }
   }
 
   public navigate(location: any) {
@@ -209,6 +223,8 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.og = ogPayRentPageLocation3;
     } else if (this.router.url.includes("lakeville")) {
       this.og = ogPayRentPageLocation4;
+    }else if (this.router.url.includes("greentown1")) {
+      this.og = ogPayRentPageLocation5;
     }
   }
 
@@ -221,6 +237,9 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.twitter = twitterPayRentPageLocation3;
     } else if (this.router.url.includes("lakeville")) {
       this.twitter = twitterPayRentPageLocation4;
+    }
+    else if (this.router.url.includes("greentown1")) {
+      this.twitter = twitterPayRentPageLocation5;
     }
   }
 

@@ -39,6 +39,8 @@ export class AboutUsComponent implements OnInit {
     this.fetchDetailsLocation3();
   } else if (this.router.url.includes(`${environment.locationName}/lakeville`)) {
     this.fetchDetailsLocation4();
+  } else if (this.router.url.includes(`${environment.locationName}/greentown1`)) {
+    this.fetchDetailsLocation5();
   } 
 }
 

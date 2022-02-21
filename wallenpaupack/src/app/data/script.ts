@@ -6,20 +6,24 @@ location1PageContent, location2PageTitle,
 location2PageContent, location1PageTitle,
 location3PageContent, location3PageTitle,
 location4PageContent, location4PageTitle,
+location5PageContent, location5PageTitle,
 location1PayrentPageTitle, location1PayrentPageContent,
 location2PayrentPageTitle, location2PayrentPageContent,
 location3PayrentPageTitle, location3PayrentPageContent,
 location4PayrentPageTitle, location4PayrentPageContent,
+location5PayrentPageTitle, location5PayrentPageContent,
 location1ContactPageTitle, location1ContactPageContent,
 location2ContactPageTitle, location2ContactPageContent,
 location3ContactPageTitle, location3ContactPageContent,
 location4ContactPageTitle, location4ContactPageContent,
+location5ContactPageTitle, location5ContactPageContent,
  } from '../data/title';
 import { featuresList } from '../data/home';
 import { contactsLocation1, hoursLocation1, 
   contactsLocation2, hoursLocation2, 
   contactsLocation3, hoursLocation3, 
   contactsLocation4, hoursLocation4,
+  contactsLocation5,hoursLocation5,
  } from '../data/contact';
 
 //  const openingHoursLocation1 = [];
@@ -57,31 +61,33 @@ const contactIndex1 = contactsLocation1.findIndex(x => x.label === 'Phone: ');
 const contactIndex2 = contactsLocation2.findIndex(x => x.label === 'Phone: ');
 const contactIndex3 = contactsLocation3.findIndex(x => x.label === 'Phone: ');
 const contactIndex4 = contactsLocation4.findIndex(x => x.label === 'Phone: ');
+const contactIndex5 = contactsLocation5.findIndex(x => x.label === 'Phone: ');
 
 const emailIndex1 = contactsLocation1.findIndex(x => x.label === 'Email: ');
 const emailIndex2 = contactsLocation2.findIndex(x => x.label === 'Email: ');
 const emailIndex3 = contactsLocation3.findIndex(x => x.label === 'Email: ');
 const emailIndex4 = contactsLocation4.findIndex(x => x.label === 'Email: ');
+const emailIndex5 = contactsLocation5.findIndex(x => x.label === 'Email: ');
   
 export const nameLocation1 = `Wallenpaupack Self Storage - Greentown`;
 export const nameLocation2 = `Wallenpaupack Self Storage - Lake Ariel`;
 export const nameLocation3 = `Wallenpaupack Self Storage - Hawley`;
 export const nameLocation4 = `Wallenpaupack Self Storage - Lakeville`;
-
+export const nameLocation5 = `Wallenpaupack Self Storage - Greentown1`;
 
 
 export const location1 = `greentown`;
 export const location2 = `lake-ariel`;
 export const location3 = `hawley`;
 export const location4 = `lakeville`;
-
+export const location5 = `greentown1`;
 
 
 export const urlLocation1 = `${environment.websiteUrl}/${environment.locationName}/greentown/storage-units`;
 export const urlLocation2 = `${environment.websiteUrl}/${environment.locationName}/lake-ariel/storage-units`;
 export const urlLocation3 = `${environment.websiteUrl}/${environment.locationName}/hawley/storage-units`;
 export const urlLocation4 = `${environment.websiteUrl}/${environment.locationName}/lakeville/storage-units`;
-
+export const urlLocation5 = `${environment.websiteUrl}/${environment.locationName}/greentown1/storage-units`;
 
 
 export const description1 = `Wallenpaupack Self Storage provides quality self storage and vehicle parking services in the Wallenpaupack Lake region with our 4 well-lit, well-maintained self storage facilities. Our facilities have a wide range of self storage unit sizes in both regular unconditioned and climate controlled varieties. We are a locally owned and operated business that understands the value of building long-lasting relationships with our customers by providing amazing customer service at affordable prices. `;
@@ -92,13 +98,13 @@ export const description3 = `Wallenpaupack Self Storage provides quality self st
 
 export const description4 = `Wallenpaupack Self Storage provides quality self storage and vehicle parking services in the Wallenpaupack Lake region with our 4 well-lit, well-maintained self storage facilities. Our facilities have a wide range of self storage unit sizes in both regular unconditioned and climate controlled varieties. We are a locally owned and operated business that understands the value of building long-lasting relationships with our customers by providing amazing customer service at affordable prices. `;
 
-
+export const description5 = `Wallenpaupack Self Storage provides quality self storage and vehicle parking services in the Wallenpaupack Lake region with our 4 well-lit, well-maintained self storage facilities. Our facilities have a wide range of self storage unit sizes in both regular unconditioned and climate controlled varieties. We are a locally owned and operated business that understands the value of building long-lasting relationships with our customers by providing amazing customer service at affordable prices. `;
 
 export const maplocation1 = 'https://goo.gl/maps/qQ3uAvaGjHbfer5J9';
 export const maplocation2 = 'https://goo.gl/maps/Sk3d1U3orZAmZjcQ7';
 export const maplocation3 = 'https://goo.gl/maps/jnSFyA6ivmkt1LEE6';
 export const maplocation4 = 'https://goo.gl/maps/Zqd1W9yYMM5bES1R7';
-
+export const maplocation5 = 'https://goo.gl/maps/qQ3uAvaGjHbfer5J9';
 
 
 export const addressLoaction1 = {
@@ -137,7 +143,14 @@ export const addressLoaction4 = {
   'addressCountry': 'United state'
 }
 
-
+export const addressLoaction5 = {
+  '@type': 'PostalAddress',
+      'streetAddress': '116 Ehrgood Rd',
+      'addressLocality': 'Greentown',
+      'addressRegion': 'PA',
+      'postalCode': '18426',
+      'addressCountry': 'United state'
+};
 
 
 export const imageLocation1 = [
@@ -162,6 +175,12 @@ export const imageLocation1 = [
   'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Wallenpaupack/jpg/wallenpaupack-self-storage-hawley-169.jpg',
   'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Wallenpaupack/jpg/wallenpaupack-self-storage-lakeville-169.jpg',
   'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Wallenpaupack/jpg/wallenpaupack-self-storage-lakeville-43.jpg'
+ ]
+
+ export const imageLocation5 = [
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Wallenpaupack/jpg/100_9816.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Wallenpaupack/jpg/wallenpaupack-self-storage-169.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Wallenpaupack/jpg/wallenpaupack-self-storage-43.jpg'
  ]
 
  
@@ -215,7 +234,18 @@ export const homePageScript = [
      'openingHours': [],
      'url' : urlLocation4
   },
- 
+  {
+    '@context' : 'http://schema.org',
+    '@type' : ['LocalBusiness', 'SelfStorage'],
+    'name' : nameLocation5,
+    'image' : imageLocation5,
+    'telephone' : contactsLocation5[contactIndex4].data,
+    'email' : contactsLocation5[emailIndex4].data,
+    'address': addressLoaction5,
+     'priceRange': '$30 - $125',
+     'openingHours': [],
+     'url' : urlLocation5
+  },
  ];
 
 
@@ -362,6 +392,41 @@ export const Location4Script = {
 
 };
 
+export const Location5Script = {
+  '@context': 'https://schema.org',
+  '@type': 'SelfStorage',
+  'image': imageLocation5,
+  '@id': environment.websiteUrl,
+  'name': nameLocation5,
+   'description': description5 || location5PageContent,
+  'address': addressLoaction5,
+  'aggregateRating': {
+  '@type': 'AggregateRating',
+  'ratingValue': '3.4',
+  'bestRating': '5',
+  'reviewCount': '10'
+},
+  'geo': {
+    '@type': 'GeoCoordinates',
+    'latitude': 41.3407778,
+    'longitude': -75.3195352,
+  },
+  'url': urlLocation5,
+  'telephone': contactsLocation5[contactIndex5].data,
+
+  'priceRange': '$40 - $190',
+  'openingHours': ['Mo-Fr 08:30 - 17:00'],
+  'currenciesAccepted': 'USD',
+'paymentAccepted': 'Cash, Check, Credit, Debit',
+   'areaServed': {
+'@type': 'State',
+'name': 'New York'
+ },
+ 'hasMap': maplocation5,
+
+  'acceptsReservations': 'True'
+};
+
 
 
 
@@ -464,7 +529,30 @@ export const contactPageLocation4Script = {
 };
 
 
+export const contactPageLocation5Script = {
+  '@context': 'http://schema.org',
+  '@type': 'Selfstorage',
+  'name': nameLocation5,
+  'address': addressLoaction5,
+   'url': urlLocation5,
+   'image':  imageLocation5,
+  'contactPoint': [{
+    '@type': 'ContactPoint',
+    'telephone':  contactsLocation5[contactIndex5].data,
+    'contactType': 'reservations'
+  }, {
+    '@type': 'ContactPoint',
+    'telephone':  contactsLocation5[contactIndex5].data,
+    'contactType': 'customer service'
+  }],
+  'email': contactsLocation5[emailIndex5].data,
+  'sameAs': [
+    '',
+    '',
+    ''
+  ]
 
+};
 
 
 
@@ -741,6 +829,59 @@ export const twitterLocation4 = [
   },
 ];
 
+export const ogLocation5 = [
+  {
+    property: `og:title`,
+    content: location5PageTitle
+  },
+  {
+    property: `og:description`,
+    content: location5PageContent
+  },
+  {
+    property: `og:type`,
+    content: `website`
+  },
+  {
+    property: `og:site_name`,
+    content: environment.facilityName
+  },
+  {
+    property: `og:url`,
+    content: urlLocation5
+  },
+  {
+    property: `og:image`,
+    content: imageLocation5[1]
+  },
+];
+
+export const twitterLocation5 = [
+  {
+    name: `twitter:site`,
+    content: `@${environment.facilityName}`
+  },
+  {
+    name: `twitter:card`,
+    content: `summary`
+  },
+  {
+    name: `twitter:creator`,
+    content: `@syrasoft_connect`
+  },
+  {
+    name: `twitter:title`,
+    content: `@${location5PageTitle}`
+  },
+  {
+    name: `twitter:description`,
+    content: location5PageContent
+  },
+  {
+    name: `twitter:image`,
+    content: imageLocation5[0]
+  },
+];
 
 
 
@@ -1015,7 +1156,59 @@ export const twitterPayRentPageLocation4 = [
   },
 ];
 
+export const ogPayRentPageLocation5 = [
+  {
+    property: `og:title`,
+    content: location5PayrentPageTitle
+  },
+  {
+    property: `og:description`,
+    content: location5PayrentPageContent
+  },
+  {
+    property: `og:type`,
+    content: `website`
+  },
+  {
+    property: `og:site_name`,
+    content: environment.facilityName
+  },
+  {
+    property: `og:url`,
+    content: `${environment.websiteUrl}/pay-rent/${location5}/login`
+  },
+  {
+    property: `og:image`,
+    content: imageLocation5[1]
+  },
+];
 
+export const twitterPayRentPageLocation5 = [
+  {
+    name: `twitter:title`,
+    content: `@${location5PayrentPageTitle}`
+  },
+  {
+    name: `twitter:description`,
+    content: location5PayrentPageContent
+  },
+  {
+    name: `twitter:site`,
+    content: `@${environment.facilityName}`
+  },
+  {
+    name: `twitter:card`,
+    content: `summary`
+  },
+  {
+    name: `twitter:creator`,
+    content: `@syrasoft_connect`
+  },
+  {
+    name: `twitter:image`,
+    content: imageLocation5[0]
+  },
+];
 
 
 export const ogTruckRentalPage = [
@@ -1342,6 +1535,58 @@ export const twitterContactPageLocation4 = [
   },
 ];
 
+export const ogContactPageLocation5 = [
+  {
+    property: `og:title`,
+    content: location5ContactPageTitle
+  },
+  {
+    property: `og:description`,
+    content: location5ContactPageContent
+  },
+  {
+    property: `og:type`,
+    content: `website`
+  },
+  {
+    property: `og:site_name`,
+    content: environment.facilityName
+  },
+  {
+    property: `og:url`,
+    content: `${environment.websiteUrl}/contact-${location5}`
+  },
+  {
+    property: `og:image`,
+    content: imageLocation5[1]
+  },
+];
 
+export const twitterContactPageLocation5 = [
+  {
+    name: `twitter:title`,
+    content: `@${location5ContactPageTitle}`
+  },
+  {
+    name: `twitter:description`,
+    content: location5ContactPageContent
+  },
+  {
+    name: `twitter:site`,
+    content: `@${environment.facilityName}`
+  },
+  {
+    name: `twitter:card`,
+    content: `summary`
+  },
+  {
+    name: `twitter:creator`,
+    content: `@syrasoft_connect`
+  },
+  {
+    name: `twitter:image`,
+    content: imageLocation5[0]
+  },
+];
 
 

@@ -32,12 +32,11 @@ export const navLinks = [
                 label: 'Greentown',
                 path: `${environment.locationName}/greentown`,
             },
-           
-            
-            
-            
-              
-            
+            {
+                id: '5',
+                label: 'Greentown1',
+                path: `${environment.locationName}/greentown1`,
+            },
             
         ]
     },

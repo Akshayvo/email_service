@@ -14,7 +14,8 @@ export const location4PageTitle = `Lakeville Location | Wallenpaupack Self Stora
 export const location4PageContent = `Take a moment to view our affordable self storage unit rates, then make your reservation by filling out our form or calling our office today!
 `;
 
-
+export const location5PageTitle = `Greentown1 Location | Wallenpaupack Self Storage`;
+export const location5PageContent = `Take a moment to view our affordable self storage unit rates, then make your reservation by filling out our form or calling our office today!`;
 
 export const viewRatesPageTitle = ``;
 export const viewRatesPageContent = ``;
@@ -57,7 +58,8 @@ export const location3PayrentPageContent = `Take a moment to review our easy log
 export const location4PayrentPageTitle = `Pay Rent | Wallenpaupack Self Storage`;
 export const location4PayrentPageContent = `Take a moment to review our easy login instructions, or call our friendly management team and start paying your rent online 24 hours a day!`;
 
-
+export const location5PayrentPageTitle = `Pay Rent | Wallenpaupack Self Storage`;
+export const location5PayrentPageContent = `Take a moment to review our easy login instructions, or call our friendly management team and start paying your rent online 24 hours a day!`;
 
 
 export const location1ContactPageTitle = `Contact Us  | Wallenpaupack Self Storage`;
@@ -72,3 +74,5 @@ export const location3ContactPageContent = `Do you have a question about our ser
 export const location4ContactPageTitle = `Contact Us | Wallenpaupack Self Storage`;
 export const location4ContactPageContent = `Do you have a question about your account, or our self storage, boat, and recreational vehicle storage? Use our contact form, or call us today!`;
 
+export const location5ContactPageTitle = `Contact Us | Wallenpaupack Self Storage`;
+export const location5ContactPageContent = `Do you have a question about your account, or our self storage, boat, and recreational vehicle storage? Use our contact form, or call us today!`;

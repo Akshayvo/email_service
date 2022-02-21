@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { CanonicalService } from '../../services/canonical.service';
-import { headingReservePageLocation1, headingReservePageLocation2, headingReservePageLocation3, headingReservePageLocation4,
+import { headingReservePageLocation1, headingReservePageLocation2, headingReservePageLocation3, headingReservePageLocation4,headingReservePageLocation5,
   } from '../../data/location';
 import { DataSharingService } from '../services/data-sharing.service';
 import { environment } from '../../../environments/environment';
@@ -44,6 +44,9 @@ export class ReserveComponent implements OnInit {
     } else if (this.router.url.includes(`${environment.locationName}/lakeville`)) {
       this.id = 4;
       this.heading = headingReservePageLocation4;
+    } else if (this.router.url.includes(`${environment.locationName}/greentown1`)) {
+      this.id = 5;
+      this.heading = headingReservePageLocation5;
     } 
   }
 

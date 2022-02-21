@@ -118,6 +118,11 @@ export const hoursLocation4AcessHours = [
         data: '6:00AM to 8:00PM 7 Days a Week'
     },
 ];
+export const hoursLocation5AcessHours = [
+    {
+        data: '6:00AM to 8:00PM 7 Days a Week'
+    },
+];
 
 export const socialLinks = [
     // {
@@ -282,5 +287,49 @@ export const hoursLocation4 = [
     }
 ];
 
+export const contactsLocation5 = [
+    // {
+    //     id: 1,
+    //     label: 'Facility Address: ',
+    //     data: '116 Ehrgood Rd, Greentown, PA 18426',
+    //     class: 'fas fa-map-marker-alt mr-2 iconColor',
+    //     redirect: 'https://goo.gl/maps/qQ3uAvaGjHbfer5J9'
+    // },
+    {
+        id: 1,
+        label: 'Office Address: ',
+        data: '204 Purdytown Turnpike, Lakeville, PA 18438',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://www.google.com/maps/place/Wallenpaupack+Self+Storage,+204+Purdytown+Turnpike,+Lakeville,+PA+18438,+United+States/@41.427774,-75.281754,15z/data=!4m2!3m1!1s0x89c4b9c615c3a081:0x4ab43978c9491515'
+    },
+    {
+        id: 2,
+        label: 'Email: ',
+        email: 'andy@wallenpaupackselfstorage.com',
+        data: `andy@wallenpaupackselfstorage.com`,
+        class: 'fas fa-envelope-open mr-2 iconColor',
+        redirect: 'mailto:andy@wallenpaupackselfstorage.com'
+    },
+    {
+        id: 3,
+        label: 'Facility Address: ',
+        data: '116 Ehrgood Rd, Greentown, PA 18426',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/qQ3uAvaGjHbfer5J9'
+    },
+    {
+        id: 4,
+        label: 'Phone: ',
+        data: '(570) 676-0851',
+        class: 'fas fa-phone mr-2 iconColor',
+        redirect: 'tel:5706760851'
+    },
+];
 
+export const hoursLocation5 = [
+    {
+        label: 'Monday - Sunday: ',
+        data: '9:00AM to 5:00PM'
+    }
+];
 

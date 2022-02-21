@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { unitSizerLocation1, unitSizerLocation2,
-   unitSizerLocation3, unitSizerLocation4,
+   unitSizerLocation3, unitSizerLocation4,unitSizerLocation5
    } from '../data/location';
 import { CanonicalService } from '../services/canonical.service';
 import { environment } from '../../environments/environment';
@@ -36,6 +36,8 @@ export class UnitSizerComponent implements OnInit {
     this.fetchDetailsLocation3();
   } else if (this.router.url.includes(`${environment.locationName}/lakeville`)) {
     this.fetchDetailsLocation4();
+  } else if (this.router.url.includes(`${environment.locationName}/greentown1`)) {
+    this.fetchDetailsLocation5();
   } 
 }
 
@@ -71,6 +73,13 @@ export class UnitSizerComponent implements OnInit {
     *Actual contents vary depending of the size of your belongings.`;
     this.unitSizer = unitSizerLocation4;
   } 
-
+  public fetchDetailsLocation5() {
+    this.unitSizer = unitSizerLocation5;
+    this.h2tag = 'Unit Sizer';
+    // this.description = `Not sure what size unit you need for your belongings? Use our handy unit sizing guide to figure that
+    // out! Still have questions? Call (251) 970-3168`;
+    this.description = `Not sure what size unit you need for your belongings? Use our handy unit sizing guide to figure that
+    out!`;
+  }
   
 }

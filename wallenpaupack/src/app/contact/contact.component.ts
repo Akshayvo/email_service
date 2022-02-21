@@ -4,7 +4,7 @@ import { Title, Meta } from '@angular/platform-browser';
 import { EmailService } from '../services/email.service';
 import { contactsLocation1, hoursLocation1,
           contactsLocation2, hoursLocation2, contactsLocation3,
-          hoursLocation3, hoursLocation4, contactsLocation4,
+          hoursLocation3, hoursLocation4, contactsLocation4,hoursLocation5, contactsLocation5,
            } from '../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
@@ -164,7 +164,11 @@ public fetchMetaData() {
     this.contactDetails = contactsLocation4;
     this.hoursDetails = hoursLocation4;
   }
-
+  public fetchContactDetailsLocation5() {
+    this.heading = `Wallenpaupack Self Storage - Greentown`;
+    this.contactDetails = contactsLocation5;
+    this.hoursDetails = hoursLocation5;
+  }
  
 
 onSubmit() {

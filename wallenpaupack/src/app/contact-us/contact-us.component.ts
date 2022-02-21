@@ -4,14 +4,14 @@ import { Title, Meta } from '@angular/platform-browser';
 import { EmailService } from '../services/email.service';
 import { contactsLocation1, hoursLocation1,
           contactsLocation2, hoursLocation2, contactsLocation3,
-          hoursLocation3, hoursLocation4, contactsLocation4,
+          hoursLocation3, hoursLocation4, contactsLocation4,contactsLocation5, hoursLocation5,
             } from '../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { LocationService } from '../services/location.service';
-import { contactPageLocation1Script, ogContactPage, ogContactPageLocation1, ogContactPageLocation2, ogContactPageLocation3, ogContactPageLocation4,
+import { contactPageLocation1Script, ogContactPage, ogContactPageLocation1, ogContactPageLocation2, ogContactPageLocation3, ogContactPageLocation4,ogContactPageLocation5,
  
-  twitterContactPage, twitterContactPageLocation1, twitterContactPageLocation2, twitterContactPageLocation3, twitterContactPageLocation4,
+  twitterContactPage, twitterContactPageLocation1, twitterContactPageLocation2, twitterContactPageLocation3, twitterContactPageLocation4,twitterContactPageLocation5
   } from '../data/script';
 import { CanonicalService } from '../services/canonical.service';
 import { contactPageTitle, contactPageContent } from '../data/title';
@@ -110,6 +110,8 @@ export class ContactUsComponent implements OnInit {
       this.og = ogContactPageLocation3;
     } else if (this.router.url.includes('lakeville')) {
       this.og = ogContactPageLocation4;
+    }  else if (this.router.url.includes('greentown1')) {
+      this.og = ogContactPageLocation5;
     } 
 }
 
@@ -127,7 +129,9 @@ public fetchTwitter() {
     this.twitter = twitterContactPageLocation3;
   } else if (this.router.url.includes('lakeville')) {
     this.twitter = twitterContactPageLocation4;
-  } 
+  } else if (this.router.url.includes('greentown1')) {
+    this.twitter = twitterContactPageLocation5;
+  }
 }
 
   public loadScript() {
@@ -170,6 +174,8 @@ public fetchTwitter() {
       this.fetchContactDetailsLocation3();
     } else if (this.router.url.includes('lakeville')) {
       this.fetchContactDetailsLocation4();
+    } else if (this.router.url.includes('greentown1')) {
+      this.fetchContactDetailsLocation5();
     } 
   }
 
@@ -200,7 +206,12 @@ public fetchTwitter() {
     this.contactDetails = contactsLocation4;
     this.hoursDetails = hoursLocation4;
   } 
-
+  public fetchContactDetailsLocation5() {
+    this.heading = `Wallenpaupack Self Storage - Greentown`;
+    this.locationId = '5'
+    this.contactDetails = contactsLocation5;
+    this.hoursDetails = hoursLocation5;
+  }
  
 
 onSubmit() {

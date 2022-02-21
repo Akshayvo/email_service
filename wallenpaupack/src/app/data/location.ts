@@ -163,6 +163,8 @@ export const headingReservePageLocation3 = `To rent your unit at our Hawley loca
 
 export const headingReservePageLocation4 = `To rent your unit at our Lakeville location, please enter your information below.`;
 
+export const headingReservePageLocation5 = `To rent your unit at our Greentown1 location, please enter your information below.`;
+
 
 export const heading1 = `Wallenpaupack Self Storage - Greentown`;
 
@@ -172,7 +174,7 @@ export const heading3 = `Wallenpaupack Self Storage - Hawley`;
 
 export const heading4 = `Wallenpaupack Self Storage - Lakeville`;
 
-
+export const heading5 = `Wallenpaupack Self Storage - Greentown1`;
 
 
 export const unitSizerLocation1 = [
@@ -516,7 +518,68 @@ export const unitSizerLocation4 = [
     }
 
 ];
-
+export const unitSizerLocation5 = [
+    {
+        text: '5\' x 5\' Storage Unit',
+        alt: '5\' x 5\' Storage Unit Graphic ',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x5.png',
+        data: `This unit is approximately 25 sq feet of space that can hold the contents of one small closet, such as:`,
+        amenities: [
+        { content: 'Chairs', },
+        { content: 'Small Bookcases', },
+        { content: 'Suitcases', },
+        { content: 'Lamps', },
+        { content: 'Kitchenware' },
+        ],
+    },
+    {
+        text: '5\' x 10\' Storage Unit',
+        alt: '5\' x 10\' Storage Unit Graphic ',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x10.png',
+        data: `This unit is approximately 50 sq feet of space that can hold the contents of one small room, such as:
+        `,
+        amenities: [
+            { content: 'Chairs', },
+            { content: 'Small Desks', },
+            { content: 'Small Bookcases', },
+            { content: 'Suitcases', },
+            { content: 'Lamps', },
+            { content: 'Kitchenware' },
+            { content: 'Mattresses' }
+            ],
+    },
+    {
+        text: '10\' x 10\' Storage Unit',
+        alt: '10\' x 10\' Storage Unit Graphic ',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x10.png',
+        data: `This unit is approximately 100 sq feet of space that can hold the contents of two rooms, such as:`,
+        amenities: [
+            { content: 'Chairs', },
+            { content: 'Small Desks', },
+            { content: 'Bookcases', },
+            { content: 'Furniture', },
+            { content: 'Suitcases', },
+            { content: 'Mattresses' },
+            { content: 'Kitchen Appliances' },
+        ],
+    },
+    
+    {
+        text: '10\' x 20\' Storage Unit',
+        alt: '10\' x 20\' Storage Unit Graphic ',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x20.png',
+        data: `This unit is approximately 200 sq feet of space that can hold the contents of about five rooms.
+        `,
+        amenities: [
+            { content: 'Appliances', },
+            { content: 'Car or Small Boat', },
+            { content: 'Furniture', },
+            { content: 'Bookcases', },
+            { content: 'Tow Trailer', },
+            ],
+    },
+    
+];
 
 
 export const aboutUsHeadingLocation1 = `About Us`;
