@@ -46,6 +46,11 @@ a {
 .navbar-toggler:hover {
   border: 1px solid $primary;
 }
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
 @media screen and (max-width:1199px) and (min-width:992px){
   .px-2 {
     padding-right: .4rem!important;
