@@ -71,12 +71,12 @@ export const tabs3 = [
         path: './reserveUnit',
         active: false,
     },
-    // {
-    //     id: '4',
-    //     name: 'Gallery',
-    //     path: './photos',
-    //     active: false,
-    // },
+    {
+        id: '4',
+        name: 'Gallery',
+        path: './photos',
+        active: false,
+    },
 ];
 
 export const tabs4 = [
@@ -98,12 +98,39 @@ export const tabs4 = [
         path: './reserveUnit',
         active: false,
     },
+    {
+        id: '4',
+        name: 'Gallery',
+        path: './photos',
+        active: false,
+    },
+];
+
+export const tabs5 = [
+    {
+        id: '1',
+        name: 'Storage Units',
+        path: './storageUnits',
+        active: true,
+    },
+    {
+        id: '2',
+        name: 'Unit Sizer',
+        path: './unitSizer',
+        active: false,
+    },
     // {
-    //     id: '4',
-    //     name: 'Gallery',
-    //     path: './photos',
+    //     id: '3',
+    //     name: 'Reserve Unit',
+    //     path: './reserveUnit',
     //     active: false,
     // },
+    {
+        id: '4',
+        name: 'Gallery',
+        path: './photos',
+        active: false,
+    },
 ];
 
 export const headingLocation1 = `Affordable Secure Storage - Floral City`;

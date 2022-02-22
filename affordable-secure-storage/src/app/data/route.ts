@@ -52,17 +52,17 @@ export const apiRoutes = [
           ]
         },
         { path: 'unitSizer', component: UnitSizerComponent },
-        { path: 'reserveUnit', component: ReserveComponent,
-          children: [
-            // { path: '', component: ViewRatesPageComponent },
-            { path: '', component: ReserveUnitFormComponent },
-            { path: 'reserve', component: ReserveUnitFormComponent },
-            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
-            { path: 'confirmation', component: ConfirmationDataComponent },
-            { path: 'payReservationCharges', component: PayRentFormComponent },
-            { path: 'payMoveInCharges', component: PayRentFormComponent },
-          ]
-        },
+        // { path: 'reserveUnit', component: ReserveComponent,
+        //   children: [
+        //     // { path: '', component: ViewRatesPageComponent },
+        //     { path: '', component: ReserveUnitFormComponent },
+        //     { path: 'reserve', component: ReserveUnitFormComponent },
+        //     // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+        //     { path: 'confirmation', component: ConfirmationDataComponent },
+        //     { path: 'payReservationCharges', component: PayRentFormComponent },
+        //     { path: 'payMoveInCharges', component: PayRentFormComponent },
+        //   ]
+        // },
         { path: 'moveIn', component: ReserveComponent,
           children: [
             // { path: '', component: ViewRatesPageComponent },
@@ -96,17 +96,17 @@ export const apiRoutes = [
           ]
         },
         { path: 'unitSizer', component: UnitSizerComponent },
-        { path: 'reserveUnit', component: ReserveComponent,
-          children: [
-            // { path: '', component: ViewRatesPageComponent },
-            { path: '', component: ReserveUnitFormComponent },
-            { path: 'reserve', component: ReserveUnitFormComponent },
-            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
-            { path: 'confirmation', component: ConfirmationDataComponent },
-            { path: 'payReservationCharges', component: PayRentFormComponent },
-            { path: 'payMoveInCharges', component: PayRentFormComponent },
-          ]
-        },
+        // { path: 'reserveUnit', component: ReserveComponent,
+        //   children: [
+        //     // { path: '', component: ViewRatesPageComponent },
+        //     { path: '', component: ReserveUnitFormComponent },
+        //     { path: 'reserve', component: ReserveUnitFormComponent },
+        //     // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+        //     { path: 'confirmation', component: ConfirmationDataComponent },
+        //     { path: 'payReservationCharges', component: PayRentFormComponent },
+        //     { path: 'payMoveInCharges', component: PayRentFormComponent },
+        //   ]
+        // },
         { path: 'moveIn', component: ReserveComponent,
           children: [
             // { path: '', component: ViewRatesPageComponent },
@@ -231,17 +231,17 @@ export const apiRoutes = [
         ]
       },
       { path: 'unitSizer', component: UnitSizerComponent },
-      { path: 'reserveUnit', component: ReserveComponent,
-        children: [
-          // { path: '', component: ViewRatesPageComponent },
-          { path: '', component: ReserveUnitFormComponent },
-          { path: 'reserve', component: ReserveUnitFormComponent },
-          // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
-          { path: 'confirmation', component: ConfirmationDataComponent },
-          { path: 'payReservationCharges', component: PayRentFormComponent },
-          { path: 'payMoveInCharges', component: PayRentFormComponent },
-        ]
-      },
+      // { path: 'reserveUnit', component: ReserveComponent,
+      //   children: [
+      //     // { path: '', component: ViewRatesPageComponent },
+      //     { path: '', component: ReserveUnitFormComponent },
+      //     { path: 'reserve', component: ReserveUnitFormComponent },
+      //     // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+      //     { path: 'confirmation', component: ConfirmationDataComponent },
+      //     { path: 'payReservationCharges', component: PayRentFormComponent },
+      //     { path: 'payMoveInCharges', component: PayRentFormComponent },
+      //   ]
+      // },
       { path: 'moveIn', component: ReserveComponent,
         children: [
           // { path: '', component: ViewRatesPageComponent },

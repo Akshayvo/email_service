@@ -7,7 +7,7 @@ import { contactsLocation1, hoursLocation1,
        contactsLocation3,
        hoursLocation3, contactsLocation4, hoursLocation4, contactsLocation5, hoursLocation5
           } from '../data/contact';
-import { tabs1, tabs2, tabs3, tabs4, headingLocation2, headingLocation3, headingLocation4, headingLocation5  } from '../data/location';
+import { tabs1, tabs2, tabs3, tabs4, tabs5, headingLocation2, headingLocation3, headingLocation4, headingLocation5  } from '../data/location';
 import { headingLocation1 } from '../data/location';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
@@ -32,6 +32,7 @@ export class LocationComponent implements OnInit {
   socialLinks: any;
   imageBaseUrl: any;
   imagetype: any;
+  ReserveButton: boolean;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -48,6 +49,7 @@ export class LocationComponent implements OnInit {
               content: `Check out our affordable rates for self storage units and boat, RV, or vehicle parking
               spaces in Floral City, then reserve your unit online, or call our friendly team!`
             });
+            this.ReserveButton = false
             this.titleService.setTitle('Storage Units & Vehicle Parking in Floral City | Affordable Secure Storage');
             this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
       } else if (this.router.url.includes('/location/affordable-secure-storage-west-hernando')) {
@@ -55,6 +57,7 @@ export class LocationComponent implements OnInit {
             name: 'description',
             content: `Take a moment to review our units and rates at our 7th location at 2633 East. Main Street! Then reserve online in a jiffy with our form!`
           });
+          this.ReserveButton = false;
           this.titleService.setTitle('Self Storage Units in Hernango | Affordable Secure Storage');
           this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
     } else if (this.router.url.includes('/location/affordable-secure-storage-labelle')) {
@@ -62,6 +65,7 @@ export class LocationComponent implements OnInit {
             name: 'description',
             content: `Check out our quality self storage units and affordable rates at our Labelle location, then reserve or call today!`
           });
+          this.ReserveButton = true;
           this.titleService.setTitle('Self Storage Units and Parking in Labelle | Affordable Secure Storage');
           this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
     } else {
@@ -70,6 +74,7 @@ export class LocationComponent implements OnInit {
           name: 'description',
           content: `Check out our quality self storage units and affordable rates at our Labelle location, then reserve or call today!`
         });
+        this.ReserveButton = true;
         this.titleService.setTitle('Self Storage Units and Parking in Backyard | Affordable Secure Storage');
         this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc4;
       } else {
@@ -78,6 +83,7 @@ export class LocationComponent implements OnInit {
             name: 'description',
             content: `Check out our quality self storage units and affordable rates at our Hernando location, then reserve or call today!`
           });
+          this.ReserveButton = false;
           this.titleService.setTitle('Self Storage Units and Parking in Hernando | Affordable Secure Storage');
           this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc5;
         }
@@ -150,7 +156,7 @@ export class LocationComponent implements OnInit {
       this.locationId = 5;
       this.contacts = contactsLocation5;
       this.hours = hoursLocation5;
-      this.tabs = tabs4;
+      this.tabs = tabs5;
       this.socialLinks = socialLinks;
     }
 
