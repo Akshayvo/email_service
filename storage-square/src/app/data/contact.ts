@@ -118,7 +118,7 @@ export const contactsLocation2 = [
     {
         id: 1,
         label: 'Address: ',
-        data: '53 Brookside Ave, Chester, NY 10918',
+        data: '676 Thompson Run Rd, West Mifflin, PA 15122',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: 'https://g.page/r/CT1A0QzwMwCHEBA'
     },
@@ -133,9 +133,9 @@ export const contactsLocation2 = [
     {
         id: 3,
         label: 'Phone: ',
-        data: '(845) 469-4888',
+        data: '(412) 461-0556',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:8454694888'
+        redirect: 'tel:4124610556'
     },
 ];
 
