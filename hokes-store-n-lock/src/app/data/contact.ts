@@ -35,7 +35,7 @@ export const contacts = [
         label: 'Facility Address:',
         data: '108 S Main St Arcanum, OH 45304',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
-        redirect: ''
+        redirect: 'https://www.google.com/maps/place/108+S+Main+St,+Laura,+OH+45337/@39.989008,-84.5531[…]818c9:0xa3466fd05646977a!8m2!3d39.9899796!4d-84.4096133?hl=en'
     },
    
     {
