@@ -84,7 +84,7 @@ export const contactsLocation1 = [
         data: 'storagesquare.wm@gmail.com',
         class: 'fas fa-envelope mx-2 iconColor',
         email: 'storagesquare.wm@gmail.com',
-        redirect: 'mailto:`storagesquare.wm@gmail.com`'
+        redirect: 'mailto:storagesquare.wm@gmail.com'
     },
     {
         id: 3,
@@ -126,9 +126,9 @@ export const contactsLocation2 = [
         id: 2,
         label: 'Email: ',
         data: 'storagetownchester@gmail.com',
-        email: `storagetownchester@gmail.com, syrasoftsoftware@gmail.com`,
+        email: `storagetownchester@gmail.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`storagetownchester@gmail.com, syrasoftsoftware@gmail.com`'
+        redirect: 'mailto:storagetownchester@gmail.com'
     },
     {
         id: 3,
