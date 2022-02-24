@@ -2,7 +2,7 @@
     <div class="go-to-home py-4">
         <div *ngIf="!navigateToMoveIn && !navigateToReserve">
             <h1>Thank You </h1>
-            Your payment of <strong>${{PaymentAmount}}</strong> was successful. 
+            Your payment of <strong>${{PaymentAmount | number : '1.2-2'}}</strong> was successful. 
             <div *ngIf="CCApprovalCode && CCApprovalCode !== 'SMS_NONE'"> 
                 Your confirmation number is: <strong>{{CCApprovalCode}}</strong> .
             </div>
@@ -16,13 +16,13 @@
             </p>
           
             <div *ngIf="CCApprovalCode && PaymentAmount">  
-                Your payment of <strong>${{PaymentAmount}}</strong> was successful. Your confirmation number is: <strong>{{CCApprovalCode}}</strong>
+                Your payment of <strong>${{PaymentAmount | number : '1.2-2'}}</strong> was successful. Your confirmation number is: <strong>{{CCApprovalCode}}</strong>
             </div>
         </div>
 
         <div *ngIf="navigateToMoveIn">
             <h1>Thank You </h1>
-            <div *ngIf="PaymentAmount > 0" >Your payment of <strong>${{PaymentAmount}}</strong> was successful. </div> 
+            <div *ngIf="PaymentAmount > 0" >Your payment of <strong>${{PaymentAmount | number : '1.2-2'}}</strong> was successful. </div> 
             <div *ngIf="CCApprovalCode && CCApprovalCode !== 'SMS_NONE'">  Your confirmation number is: <strong>{{CCApprovalCode}}</strong>.
             </div>Thank you for renting a unit with us. Your Rental Agreement, Facility Map and Gate Code will be emailed to you shortly! If you rented online after office hours, you will receive your documents the following business day.
         </div>
@@ -42,7 +42,7 @@
                       </tr>
                       <tr>
                           <td class="td-1">Rate</td>
-                          <td> <span *ngIf="monthlyRate">$</span>{{monthlyRate}}</td>
+                          <td> <span *ngIf="monthlyRate">$</span>{{monthlyRate | number : '1.2-2'}}</td>
                       </tr> 
                       <tr *ngIf="!navigateToMoveIn">
                           <td> Move In Date</td>

@@ -301,47 +301,47 @@
             </div>
         <div *ngIf="monthlyRate">
             <label>Rate:</label>&nbsp;
-            ${{monthlyRate}}
+            ${{monthlyRate | number: "1.2-2"}}
             <span *ngIf="rateTax > 0">
-                + ${{rateTax}} (Tax)
+                + ${{rateTax | number: "1.2-2"}} (Tax)
             </span>
         </div>
         <div class="form-group readonly-form-control" *ngIf="navigateToReserve && reservationFee !== undefined">
             <label>Reservation Charges:</label>&nbsp;
-            ${{reservationFee}}
+            ${{reservationFee | number: "1.2-2"}}
             <span *ngIf="reservationFeeTax !== undefined">
-                    + ${{reservationFeeTax }} (Tax)
+                    + ${{reservationFeeTax | number: "1.2-2" }} (Tax)
                 </span>
         </div>
     
         <div  *ngIf="navigateToMoveIn && proRateAmount">
             <label>Prorate Amount:</label>&nbsp;
-            ${{proRateAmount}} 
+            ${{proRateAmount | number: "1.2-2"}} 
             <span *ngIf="prorateAmtTax > 0">
-                    + ${{prorateAmtTax}} (Tax)
+                    + ${{prorateAmtTax | number: "1.2-2"}} (Tax)
                 </span>
         </div>
         <div  *ngIf=" navigateToMoveIn && deposit > 0">
             <label>Deposit Amount:</label>&nbsp;
-            ${{deposit}}
+            ${{deposit | number: "1.2-2"}}
             <span *ngIf="depositTax > 0.0">
-                    + ${{depositTax}} (Tax)
+                    + ${{depositTax | number: "1.2-2"}} (Tax)
                 </span>
         </div>
         <div  *ngIf="navigateToMoveIn && othDeposit > 0">
             <label>Other Deposit:</label>&nbsp;
-            ${{othDeposit}}
+            ${{othDeposit | number: "1.2-2"}}
         </div>
         <div  *ngIf="navigateToMoveIn && setup > 0">
             <label>Set Up:</label>&nbsp;
-            ${{setup}}
+            ${{setup | number: "1.2-2"}}
             <span *ngIf="setupTax > 0.0">
-                + ${{setupTax}} (Tax)
+                + ${{setupTax | number: "1.2-2"}} (Tax)
             </span>
         </div>
         <div  *ngIf="navigateToMoveIn && premium > 0">
             <label>Premium:</label>&nbsp;
-            {{premium}}
+            {{premium | number: "1.2-2"}}
         </div>
             </div>
          </div>

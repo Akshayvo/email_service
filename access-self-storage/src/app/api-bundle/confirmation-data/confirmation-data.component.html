@@ -102,7 +102,7 @@
                             Rate
                         </td>
                         <td>
-                            ${{monthlyRate}}
+                            ${{monthlyRate | number : '1.2-2'}}
                         </td>
                     </tr>
                     <tr *ngIf="navigateToReserve && reservationFee > 0">
@@ -110,7 +110,7 @@
                             Reservation Charges
                         </td>
                         <td>
-                            ${{reservationFee}} <span *ngIf="reservationFeeTax"> + ${{reservationFeeTax}}(Tax)</span>
+                            ${{reservationFee | number : '1.2-2'}} <span *ngIf="reservationFeeTax"> + ${{reservationFeeTax | number : '1.2-2'}}(Tax)</span>
                         </td>
                     </tr>
                     <tr *ngIf="!navigateToMoveIn">
@@ -126,9 +126,9 @@
                             Total Charges
                         </td>
                         <td>
-                            ${{totalChargesAmount}}
+                            ${{totalChargesAmount | number : '1.2-2'}}
                             <span *ngIf="totalTaxAmount > 0">
-                                    + ${{totalTaxAmount}} (Tax)
+                                    + ${{totalTaxAmount | number : '1.2-2'}} (Tax)
                             </span>
                         </td>                   
                     </tr>
