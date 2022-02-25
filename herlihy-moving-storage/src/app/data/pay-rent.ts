@@ -33,7 +33,7 @@ export const tableDataContactPage = [
     url: 'chillicothe'
   },
   {
-    facility: 'Grove city',
+    facility: 'Grove City',
     address: '3759 Jackson Pike, Grove City, OH 43123',
     url: 'grove-city'
   },
