@@ -4,7 +4,7 @@ export const contact = [
         label: 'Facility Address:',
         data: '499 W Commercial St, East Rochester, NY 14445',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
-        redirect: 'https://goo.gl/maps/VEgPZ4BZ59JYkrBM9'
+        redirect: ' https://www.google.com/maps/place/Safe+Self+Storage+LLC/@43.116764,-77.497395,16z/data=!4m5!3m4!1s0x0:0x3c57f076e6effa95!8m2!3d43.1166243!4d-77.4974696?hl=en'
     },
     {
         id: 1,

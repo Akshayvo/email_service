@@ -16,6 +16,9 @@
 
 .directions{
   font-size: .9rem;
+  .directionHeading{
+    font-size: 20px;
+  }
 }
 
 .btn-outline-primary {
@@ -68,7 +71,9 @@
 .form-control {
   font-size: 0.8rem;
 }
-
+.heading{
+  font-size: 28px;
+}
 @media only screen and (max-width: 600px) {
   .contact-butoon {
     .btn-primary {

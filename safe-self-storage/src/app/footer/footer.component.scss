@@ -17,7 +17,9 @@
     color: $black;
   }
 }
-
+.sectionImage{
+  height:auto;
+}
 @media only screen and (max-width: 360px) {
   .secure {
     img {
