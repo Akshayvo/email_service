@@ -6,12 +6,10 @@
         <div class="jumbotorn-skew-style" [ngClass]="template === 'darkTheme' ? 'bg-translucent-dark' : 'bg-translucent-light'">
           <div class="jumbotorn-skew-text container p-4">
             <div class="disp" *ngFor="let jumbotron of jumbotron">
-              <h1 class="my-4 text-center">
-                {{jumbotron.h1}}
-              </h1>
-              <h2  class="my-4 text-center">
-                {{jumbotron.h2}}
-              </h2>
+              <h1 class="my-4 text-center">{{jumbotron.h1}}</h1>
+              <h2  class="my-4 text-center">{{jumbotron.h2}}</h2> 
+              <!-- <h1 class="my-4 text-center">NOW OPEN!</h1>
+              <h2  class="my-4 text-center">24-Hour Access Self Storage Units</h2>  -->
             <p class="text-center">{{jumbotron.blurb}}</p>
             </div>
             <div class="jumbotorn-button text-center">
@@ -60,7 +58,7 @@
               
               <p>
                 <span *ngFor="let contact of contactDetails" class="display-contact">
-                  <span><h4><b>{{contact.label}}</b></h4></span><span class="contact-links" *ngIf="contact?.label === 'Address:' || contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
+                  <span><h3><b>{{contact.label}}</b></h3></span><span class="contact-links" *ngIf="contact?.label === 'Address:' || contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
                     <h4><a [href]="contact?.redirect" target="{{(contact?.label === 'Address:') ? '_blank' : '_self'}}" rel="noopener">&nbsp;{{contact.data}}</a></h4>
                   </span>
                   <ng-template #other_content>&nbsp;<h4>{{contact.data}}</h4></ng-template><br>
@@ -90,7 +88,7 @@
           <!-- <img src="{{imageBaseUrl}}/mount-horeb-self-storage-11%20%281%29.{{imagetype}}" width="100%" alt="{{aboutUsAlt}}" class="sectionImage"> -->
         </div>
         <div class="col-lg-6 py-3">
-          <h1 class="heading pb-4">{{aboutUsHeading}}</h1>
+          <h2 class="heading pb-4">{{aboutUsHeading}}</h2>
           <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p>
         </div>
       </div>
