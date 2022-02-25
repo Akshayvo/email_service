@@ -4,6 +4,9 @@
 .vertical-line {
   border-left: 1px solid black;
   padding-left: 50px;
+  h2{
+    font-size: 28px;
+  }
 }
 
 .mobile-view{
@@ -18,6 +21,9 @@
 .contact-links {
   a {
     color: black;
+  }
+  div{
+    margin-top: 5px;
   }
 }
 
@@ -80,5 +86,17 @@
 
   .mobile-view{
     display: flex;
+    h2{
+      font-size: 28px;
+    }
+  }
+  .contact-links{
+    div{
+      margin-top: 8px;
+    }
+  }
+  .forgot-link{
+    
+    padding-bottom: 10px;
   }
 }
