@@ -25,6 +25,8 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   monthlyRateVR: number;
   unitTypeIdVR: number;
   ProrateAmt: any;
+  additionalData: string;
+  additionalMessage: string;
   deposit: any;
   openComponent = false;
   showMoveIn = false;
@@ -82,6 +84,8 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     this.showReserve = objSIMSetting.objActionSetting.blnAllowReservation;
     this.showMovein = objSIMSetting.objActionSetting.blnAllowMoveIn;
     this.showClimateControl = objSIMSetting.objUnitSizesSetting.blnClimateControl;
+    this.additionalData = "14 X 45 Interior Access"
+    this.additionalMessage = "Contact the facility for pricing information"
   }
 
 

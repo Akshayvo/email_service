@@ -25,23 +25,29 @@
         <tr itemprop="itemOffered" itemscope itemtype="https://schema.org/SelfStorage" *ngFor="let lstUnitType of LstUnitTypes" >
           <td  colspan="2" style="width: 15%;" class="px-4 border text-center">
             <span hidden itemprop="name">{{lstUnitType.Description}} unit Type </span>
-              {{lstUnitType.Description}}
+              <span *ngIf="lstUnitType.UnitTypeID != 8">{{lstUnitType.Description}}</span>
+              <span *ngIf="lstUnitType.UnitTypeID === 8">{{additionalData}}</span>
               <meta itemprop="description" 
               content="{{lstUnitType.Description}}" />
               <link itemprop="image" href="https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Store-A-Way/jpg/store-a-way-self-storage-jumbotron.jpg" />
           </td>
+          <!-- <ng-template #other_content>&nbsp;Hello</ng-template> -->
           <td  colspan="2" class="px-4 border text-center" *ngIf="showRate">
-              <span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate | number : '1.2-2'}}
+              <span *ngIf="lstUnitType.MonthlyRate != null">$</span>
+              <span *ngIf="lstUnitType.UnitTypeID != 8">{{lstUnitType.MonthlyRate | number : '1.2-2'}}</span>
+              <span *ngIf="lstUnitType.UnitTypeID === 8">{{additionalMessage}}</span>
               <meta itemprop="priceRange" content="{{lstUnitType.MonthlyRate}}" />
           </td>
           <td  colspan="2" class="px-4 border text-center" *ngIf="showDeposit" >
-            <span *ngIf="lstUnitType.ReservationFee != null">$</span>{{lstUnitType.ReservationFee | number : '1.2-2'}}
+            <span *ngIf="lstUnitType.ReservationFee != null">$</span>
+            <span *ngIf="lstUnitType.UnitTypeID != 8">{{lstUnitType.ReservationFee | number : '1.2-2'}}</span>
+            <span *ngIf="lstUnitType.UnitTypeID === 8">{{additionalMessage}}</span>
           </td>
           <!-- <td  colspan="2" class="px-4 border text-center" *ngIf="showDeposit" >
             <span *ngIf="lstUnitType.SetupFee != null">$</span>{{lstUnitType.SetupFee | number : '1.2-2'}}
           </td> -->
           <td id="reserve" colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable && showReserve; else other_reserve" >
-              <button (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
+              <button *ngIf="lstUnitType.UnitTypeID != 8" (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
           </td>
           <td id="move-in" colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable && showMovein; else other_moveIn" >
             <button (click)="navigate('/view-rates/move-in', lstUnitType)"> Move In</button>
@@ -53,16 +59,19 @@
           <ng-template #other_climate >
             <td  colspan="2"  class="px-4 border text-center" *ngIf="showClimateControl">
               <!-- <div>Currently unavailable. Please call us for more information.</div> -->
+              <span *ngIf="lstUnitType.UnitTypeID === 8">{{additionalMessage}}</span>
             </td>
           </ng-template>
           <ng-template #other_reserve >
             <td   id="reserve" colspan="2" class="py-2 px-4 border" *ngIf="showReserve">
               <!-- <div class="text-center">Currently unavailable. Please call us for more information.</div> -->
+              <span *ngIf="lstUnitType.UnitTypeID === 8">{{additionalMessage}}</span>
             </td>
           </ng-template>
           <ng-template #other_moveIn >
             <td  id="move-in"  colspan="2" class="py-2 px-4 border" *ngIf="showMovein">
             <!-- <div  class="text-center">Currently unavailable. Please call us for more information.</div> -->
+            <span *ngIf="lstUnitType.UnitTypeID === 8">{{additionalMessage}}</span>
           </td>
           </ng-template>
         </tr> 
@@ -77,7 +86,10 @@
     <div class="row">
         <div class="col-6 text-center " *ngIf="showRate">
             <p class=" "><b><u>Rate</u></b></p>
-            <div class=" "><span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate | number : '1.2-2'}}</div>
+            <div class=" "><span *ngIf="lstUnitType.MonthlyRate != null">$</span>
+              <span *ngIf="lstUnitType.UnitTypeID != 8">{{lstUnitType.MonthlyRate | number : '1.2-2'}}</span>
+              <span *ngIf="lstUnitType.UnitTypeID === 8">{{additionalMessage}}</span>
+            </div>
         </div>
         <div   class="col-6 "[class.ClimateBorder]="lstUnitType.IsClimateControlled" *ngIf="showClimateControl" >
             <div class=" ClimateControlled" *ngIf="lstUnitType.IsClimateControlled" >Climate Controlled</div>
@@ -96,6 +108,7 @@
         
         <ng-template #other> 
           <div  class="text-right" *ngIf="showMovein || showReserve" >
+            <span *ngIf="lstUnitType.UnitTypeID === 8">{{additionalMessage}}</span>
             <!-- <p class="card-text ">Currently unavailable. Please call us for more information.</p> -->
           </div>
         </ng-template>
