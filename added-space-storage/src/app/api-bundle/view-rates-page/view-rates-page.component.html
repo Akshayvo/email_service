@@ -22,28 +22,32 @@
       <meta itemprop="name" content="{{facilityName}}" />
 
       <tbody itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
-        <tr itemprop="itemOffered" itemscope itemtype="https://schema.org/SelfStorage" *ngFor="let fetchUnitData of fetchUnitData" >
+        <tr itemprop="itemOffered" itemscope itemtype="https://schema.org/SelfStorage" *ngFor="let uniTtypes of uniTtypes" >
           <td  colspan="2" style="width: 15%;" class="px-4 border text-center">
-              {{fetchUnitData.unitTypes}}
+            
+              {{uniTtypes.uniTtypes}}
           </td>
           
           <td  colspan="2" class="px-4 border text-center" >
-              <span>$</span>{{fetchUnitData.unitRate}}  
+              <span>$</span>{{uniTtypes.unitRate}}  
           </td>
         </tr> 
         
 
       </tbody>
   </table>
-  <div class="row viewrates-mobile py-2 border" *ngFor="let fetchUnitData of fetchUnitData">
+  <div class="row viewrates-mobile py-2 border" *ngFor="let uniTtypes of uniTtypes">
     <div class="col-6 text-center ">  
       <strong>Unit Size</strong>
-    <div class=" py-1 ">{{fetchUnitData.unitTypes}}</div>
+    <div class=" py-1 ">{{uniTtypes.uniTtypes}}</div>
     
     </div>
       <div class="col-6 d-flex justify-content-center" >
         
-        <div  class="text-right"  ><p class="card-text ">${{fetchUnitData.unitRate}}</p></div>
+        <div  class="text-center"  >
+          <b>Rate</b>
+          <p class="card-text ">${{uniTtypes.unitRate}}</p>
+        </div>
     </div>
   </div>
 </div>

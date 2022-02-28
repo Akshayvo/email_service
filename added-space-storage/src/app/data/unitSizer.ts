@@ -1,3 +1,33 @@
+export const uniTtypess=[
+  {
+    uniTtypes:'05 X 05',
+    unitRate:55
+  },{
+    uniTtypes:'05 X 10',
+    unitRate:75
+  },{
+    uniTtypes:'08 X 12',
+    unitRate:110
+  },{
+    uniTtypes:'10 X 15',
+    unitRate:130
+  },{
+    uniTtypes:'10 X 20',
+    unitRate:155
+  },{
+    uniTtypes:'11 X 27(297 sq ft)',
+    unitRate:235
+  },{
+    uniTtypes:'12 X 33(396 sq ft)',
+    unitRate:317
+  },{
+    uniTtypes:"Covered RV Parking - 22' Long ",
+    unitRate:90
+  },{
+    uniTtypes:'Covered RV Parking - 44" long space',
+    unitRate:180
+  }
+]
 export const unitSizer = [
   {
       id: 0,

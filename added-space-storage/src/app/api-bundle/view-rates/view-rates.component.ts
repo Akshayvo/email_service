@@ -2,8 +2,8 @@ import { Component, OnInit, OnDestroy, ViewChild } from "@angular/core";
 import { Title, Meta } from "@angular/platform-browser";
 import { dataViewRates, viewRatesAltText } from "../../data/view-rates";
 import { MetaService } from "../../services/link.service";
-import { FetchDataService } from "../services/fetch-data.service";
-import { UnitTypes, LstUnitTypes } from "../models/unittypes";
+// import { FetchDataService } from "../services/fetch-data.service";
+// import { UnitTypes, LstUnitTypes } from "../models/unittypes";
 import { UaParserService } from "../../services/ua-parser.service";
 import { Subscription } from "rxjs";
 import { viewRatesHeading } from "../../data/heading";
@@ -20,8 +20,8 @@ import { script } from "../../data/script";
 export class ViewRatesComponent implements OnInit, OnDestroy {
   viewRates: any;
   showTable = false;
-  unitTypes: UnitTypes;
-  LstUnitTypes: LstUnitTypes[];
+  // unitTypes: UnitTypes; 
+  // LstUnitTypes: LstUnitTypes[];
 
   DescriptionVR: string;
   MonthlyRateVR: number;

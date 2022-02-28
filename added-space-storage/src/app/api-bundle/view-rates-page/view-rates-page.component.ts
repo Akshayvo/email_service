@@ -2,7 +2,7 @@ import { Component, OnInit, OnDestroy, ElementRef, HostListener, } from '@angula
 import { Subscription } from 'rxjs';
 import { MoveInService } from '../services/moveIn.service';
 import { ObjCharges } from '../models/movein';
-import { UnitTypes, LstUnitTypes } from '../models/unittypes';
+import { UnitTypes, LstUnitTypes } from '../models/unittypes'; 
 import { FetchDataService } from '../services/fetch-data.service';
 import { th } from '../../data/view-rates';
 import { Router } from '@angular/router';
@@ -10,6 +10,7 @@ import { DataSharingService } from '../services/data-sharing.service';
 import { environment } from '../../../environments/environment';
 import { objSIMSetting } from '../../data/configuration';
 import { script } from '../../data/script';
+import { uniTtypess } from '../../data/unitSizer';
 @Component({
   selector: 'app-view-rates-page',
   templateUrl: './view-rates-page.component.html',
@@ -21,7 +22,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   unitTypes: UnitTypes;
   LstUnitTypes: LstUnitTypes[];
   fetchUnitData=[];
-  
+  uniTtypes:any;
   descriptionVR: string;
   monthlyRateVR: number;
   unitTypeIdVR: number;
@@ -71,11 +72,12 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
 
 
   ngOnInit() {
-    this.getData();
-    this.fetchThData();    
+    // this.getData(); 
+    // this.fetchThData();    
     this.state = script.state;
-    this.tabledata()
-    console.log(this.fetchUnitData);
+    // this.tabledata() 
+    this.uniTtypes = uniTtypess;
+    
   }
 
   public fetchThData() {
@@ -85,47 +87,16 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     this.showReserve = objSIMSetting.objActionSetting.blnAllowReservation;
     this.showMovein = objSIMSetting.objActionSetting.blnAllowMoveIn;
     this.showClimateControl = objSIMSetting.objUnitSizesSetting.blnClimateControl;
+    
   }
 
-  public tabledata(){
-    
-    this.fetchUnitData.push({
-      unitTypes:'05 X 05',
-      unitRate:55
-    },{
-      unitTypes:'05 X 10',
-      unitRate:75
-    },{
-      unitTypes:'08 X 12',
-      unitRate:110
-    },{
-      unitTypes:'10 X 15',
-      unitRate:130
-    },{
-      unitTypes:'10 X 20',
-      unitRate:155
-    },{
-      unitTypes:'11 X 27(297 sq ft)',
-      unitRate:235
-    },{
-      unitTypes:'12 X 33(396 sq ft)',
-      unitRate:317
-    },{
-      unitTypes:"Covered RV Parking - 22' Long ",
-      unitRate:90
-    },{
-      unitTypes:'Covered RV Parking - 44" long space',
-      unitRate:180
-    }
-    
-    ); 
-  }
+  
 
 
   public navigate(location: any, unitData: any) {
     this.dataSharingService.setReservationData(unitData);
     this.router.navigate([`${environment.locationName}/${location}`]);
-    this.dataSharingService.LstUnitTypes = unitData;
+    this.dataSharingService.LstUnitTypes = unitData; 
   }
 
   getMoveInCharges(description: any, monthlyRate: any, intUnitTypeID: any) {
@@ -171,7 +142,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   this.getDataSubscribe$ = this.fetchDataService.getData()
     .subscribe(unitTypesResponse => {
       this.showTable =  true;
-      this.LstUnitTypes = unitTypesResponse.lstUnitTypes;
+      this.LstUnitTypes = unitTypesResponse.lstUnitTypes;  
     });
   }
 
