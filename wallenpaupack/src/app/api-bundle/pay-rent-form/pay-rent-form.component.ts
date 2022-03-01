@@ -226,8 +226,9 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-    this.fetchCards();
 
+    this.fetchCards();
+   
     if (!!localStorage.getItem("paymentTab")) {
       this.paymentTab = localStorage.getItem("paymentTab");
     }
@@ -289,7 +290,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       );
       // tslint:disable-next-line: max-line-length
       const cardTypeId =
-        index > -1
+        index >=0
           ? this.lstPayTypes[index].PayTypeID
           : this.lstPayTypes[0].PayTypeID;
       this.paytypeid = cardTypeId;
@@ -469,10 +470,9 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
               (x) => x.PayTypeDescription === this.defaultCardType
             );
             // tslint:disable-next-line: max-line-length
-            const defaultCardPayTypeId =
-              index > -1
-                ? this.lstPayTypes[index].PayTypeID
-                : this.lstPayTypes[0].PayTypeID;
+            const defaultCardPayTypeId = ((index!=null && index > -1 ) ? this.lstPayTypes[index].PayTypeID : this.lstPayTypes[0].PayTypeID);
+            
+               
 
             if (localStorage.getItem("strTenantToken")) {
               this.paytypeid = defaultCardPayTypeId;
@@ -533,22 +533,14 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   }
 
   getPayMethods() {
-    this.getPayMethodsSubscribe$ = this.fetchDataService
-      .getPayMethods()
+    this.getPayMethodsSubscribe$ = this.fetchDataService.getPayMethods()
       .subscribe((payTypesResponse) => {
         this.cards.forEach((element) => {
-          if (
-            payTypesResponse.lstPayTypes.findIndex(
-              (x) => x.PayTypeDescription === element
-            )
-          ) {
-            const index = payTypesResponse.lstPayTypes.findIndex(
-              (x) => x.PayTypeDescription === element
-            );
-            if (index > -1) {
-              this.lstPayTypes.push(payTypesResponse.lstPayTypes[index]);
-            }
-          }
+          const index = payTypesResponse.lstPayTypes.findIndex(x => x.PayTypeDescription === element);
+              if (index!=null && index > -1) {
+                 this.lstPayTypes.push(payTypesResponse.lstPayTypes[index]);
+                
+               }
         });
         if (
           !!localStorage.getItem("strTenantToken") &&
@@ -560,6 +552,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         }
         if (!localStorage.getItem("strTenantToken")) {
           const defaultDescription = this.lstPayTypes[0].PayTypeDescription;
+          console.log(defaultDescription);
           const defaultPayTypeID = this.lstPayTypes[0].PayTypeID;
           this.paytypeid = this.lstPayTypes[0].PayTypeID;
           this.surchargeService.getIdPaytype(defaultPayTypeID);
