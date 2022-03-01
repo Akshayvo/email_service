@@ -11,6 +11,7 @@ import { environment } from '../../../environments/environment';
 import { objSIMSetting } from '../../data/configuration';
 import { script } from '../../data/script';
 import { uniTtypess } from '../../data/unitSizer';
+
 @Component({
   selector: 'app-view-rates-page',
   templateUrl: './view-rates-page.component.html',
@@ -77,11 +78,11 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     this.state = script.state;
     // this.tabledata() 
     this.uniTtypes = uniTtypess;
-    
+    this.th = th.filter(x => x.state === true);
   }
 
   public fetchThData() {
-    this.th = th.filter(x => x.state === true);
+    
     this.showRate = objSIMSetting.objUnitSizesSetting.blnShowRate;
     this.showDeposit = objSIMSetting.objUnitSizesSetting.blnShowDeposit;
     this.showReserve = objSIMSetting.objActionSetting.blnAllowReservation;

@@ -1,5 +1,5 @@
 <div  itemscope itemtype="https://schema.org/SelfStorage" itemtype="https://schema.org/LocalBusiness">
-  <link itemprop="image" href="https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Added_Space_Self_Storage/jpg/added-space-storage-169.jpg" />
+  <link itemprop="image" href="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg" />
   <span hidden itemprop="name">{{facilityName}}</span>
   <span hidden itemprop="areaServed" itemscope itemtype="https://schema.org/State">
     <span itemprop="name">{{state}}</span>
@@ -24,15 +24,16 @@
       <tbody itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
         <tr itemprop="itemOffered" itemscope itemtype="https://schema.org/SelfStorage" *ngFor="let uniTtypes of uniTtypes" >
           <td  colspan="2" style="width: 15%;" class="px-4 border text-center">
-            
+            <!-- <span hidden itemprop="name">{{lstUnitType.Description}} unit Type </span>  -->
+              
               {{uniTtypes.uniTtypes}}
+
           </td>
-          
-          <td  colspan="2" class="px-4 border text-center" >
+          <td  colspan="2" style="width: 15%;" class="px-4 border text-center" >
               <span>$</span>{{uniTtypes.unitRate}}  
           </td>
+         
         </tr> 
-        
 
       </tbody>
   </table>
@@ -43,9 +44,8 @@
     
     </div>
       <div class="col-6 d-flex justify-content-center" >
-        
         <div  class="text-center"  >
-          <b>Rate</b>
+          <b>Monthly Rate</b>
           <p class="card-text ">${{uniTtypes.unitRate}}</p>
         </div>
     </div>

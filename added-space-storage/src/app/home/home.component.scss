@@ -118,6 +118,10 @@
 
   .btn-outline-primary {
     margin-right: 10px;
+    color:$white !important;
+  }
+  .btn-outline-primary:hover {
+    color:$black !important;
   }
 }
 

@@ -72,12 +72,12 @@ export const MilitaryBranch = [
 export const th = [
   {
     id: 'size',
-    data: `Size`,
+    data: `Unit Size`,
     state: true,
   },
   {
     id: 'rate',
-    data: `Rate`,
+    data: `Monthly Rate`,
     state: objSIMSetting.objUnitSizesSetting.blnShowRate
   },
   // {
