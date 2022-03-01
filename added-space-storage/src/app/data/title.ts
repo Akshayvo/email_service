@@ -13,8 +13,8 @@ export const payRentPageContent = ``;
 export const storageTipsTitle = `Storage Tips  | Added Space Self Storage`;
 export const storageTipsContent = `Follow these easy self storage tips to make your stay with Added Space Self Storage a breeze! Have questions? Call today!`;
 
-export const unitSizerPageTitle = ``;
-export const unitSizerPageContent = ``;
+export const unitSizerPageTitle = `Unit Sizer | Added Space Self Storage`;
+export const unitSizerPageContent = `Take a moment to check out what will fit in our storage unit sizes. If you have any questions, give our friendly team a call!`;
 
 export const contactPageTitle = `Contact Us  | Added Space Self Storage`;
 export const contactPageContent = `If you have questions about your account or the services we offer, take a moment to fill our out form, or use the contact information to speak with us!`;
