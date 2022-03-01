@@ -5,23 +5,23 @@ import { Injectable } from '@angular/core';
 })
 export class DataSharingService {
 
-  // locationAPIKey = {
-  //   loc1: 'dzJ0OFczSjQqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 28343 chillicothe
-  //   loc2: 'bTh+MW41eTQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 8154 grove-city
-  //   loc3: '', // 20766 barnwell
-  //   loc4: '', // 27456 belforest
-  //   loc5: '', // 27457 Fairhope
-  //   loc6: '', // 21257 robertsdale
-  // };
-
- locationAPIKey = {                                                     // demo north
-    loc1: 'XjJ7OEY0VzZHNUk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',   // 28464
-    loc2: 'XjJ7OEY0VzZHNUk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28464
-    loc3: 'XjJ7OEY0VzZHNUk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28465
-    loc4: 'aDJLOGk0KzZBNng6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28466
-    loc5: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',   // 28463
-    loc6: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28464
+  locationAPIKey = {
+    loc1: 'dzJ0OFczSjQqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 28343 chillicothe
+    loc2: 'bTh+MW41eTQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 8154 grove-city
+    loc3: '', // 20766 barnwell
+    loc4: '', // 27456 belforest
+    loc5: '', // 27457 Fairhope
+    loc6: '', // 21257 robertsdale
   };
+
+//  locationAPIKey = {                                                     // demo north
+//     loc1: 'XjJ7OEY0VzZHNUk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',   // 28464
+//     loc2: 'XjJ7OEY0VzZHNUk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28464
+//     loc3: 'XjJ7OEY0VzZHNUk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28465
+//     loc4: 'aDJLOGk0KzZBNng6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28466
+//     loc5: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',   // 28463
+//     loc6: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28464
+//   };
 
   locationName: string;
   strConfirmation: string;
