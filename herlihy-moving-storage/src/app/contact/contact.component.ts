@@ -154,7 +154,7 @@ public fetchMetaData() {
   }
 
   public fetchContactDetailsLocation2() {
-    this.heading = `U Stor 104 Self-Storage`;
+    this.heading = `Herlihy Self Storage`;
     this.contactDetails = contactsLocation2;
     this.hoursDetails = hoursLocation2;
   }

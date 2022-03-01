@@ -157,7 +157,7 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.fetchLoginDetail1();
     } else  if (this.router.url.includes('grove-city')) {
       this.id = 2;
-      this.name = 'U Stor 104 Self-Storage';
+      this.name = 'Herlihy Self Storage';
       this.contact = contactsLocation2;
       this.titleService.setTitle(`${this.location2PayrentPageTitle}`);
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;

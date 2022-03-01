@@ -48,7 +48,7 @@ export class PayRentComponent implements OnInit {
     if (this.router.url.includes('chillicothe')) {
       this.name = 'Herlihy Self Storage';
   } else if (this.router.url.includes('grove-city')) {
-    this.name = 'U Stor 104 Self-Storage';
+    this.name = 'Herlihy Self Storage';
   } else if (this.router.url.includes('barnwell')) {
     this.name = 'Barnwell';
   } else if (this.router.url.includes('belforest')) {

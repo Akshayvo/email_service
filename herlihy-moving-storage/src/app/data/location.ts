@@ -145,7 +145,7 @@ export const headingLocation6 = ``;
 
 export const headingReservePageLocation1 = `Herlihy Self Storage`;
 
-export const headingReservePageLocation2 = `U Stor 104 Self-Storage`;
+export const headingReservePageLocation2 = `Herlihy Self Storage`;
 
 export const headingReservePageLocation3 = ``;
 
@@ -157,7 +157,7 @@ export const headingReservePageLocation6 = ``;
 
 export const heading1 = `Herlihy Self Storage`;
 
-export const heading2 = `Herlihy Self-Storage`;
+export const heading2 = `Herlihy Self Storage`;
 
 export const heading3 = ``;
 

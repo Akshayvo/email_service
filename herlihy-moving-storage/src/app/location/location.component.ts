@@ -126,7 +126,7 @@ export class LocationComponent implements OnInit {
              content: `${this.location2PageContent}`
     });
     this.titleService.setTitle(`${this.location2PageTitle}`);
-           this.locationName = `U Stor 104 Self-Storage`;
+           this.locationName = `Herlihy Self Storage`;
            this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
            this.dataSharingService.locationName = this.locationName;
            this.script = Location2Script;

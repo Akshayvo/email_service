@@ -75,7 +75,7 @@ const emailIndex5 = contactsLocation5.findIndex(x => x.label === 'Email: ');
 const emailIndex6 = contactsLocation6.findIndex(x => x.label === 'Email: ');
   
 export const nameLocation1 = `Herlihy Self Storage`;
-export const nameLocation2 = `U Stor 104 Self-Storage`;
+export const nameLocation2 = `Herlihy Self Storage`;
 export const nameLocation3 = ``;
 export const nameLocation4 = ``;
 export const nameLocation5 = ``;
