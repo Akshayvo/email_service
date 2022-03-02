@@ -125,10 +125,10 @@ export const contactsLocation2 = [
     {
         id: 2,
         label: 'Email: ',
-        data: 'storagetownchester@gmail.com',
-        email: `storagetownchester@gmail.com`,
+        data: 'aaronsspacestation@gmail.com',
+        email: `aaronsspacestation@gmail.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:storagetownchester@gmail.com'
+        redirect: 'mailto:aaronsspacestation@gmail.com'
     },
     {
         id: 3,
