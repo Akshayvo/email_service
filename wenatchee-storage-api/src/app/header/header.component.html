@@ -1,0 +1,60 @@
+<!-- <div style="background-color: #be2926; color: white; font-size: 1rem;" class="py-2 contact-bar"  id="site-header">
+  <div class="container text-center">
+    <div class="px-3">
+      In regards to the current Coronavirus [COVID 19] situation we are following the CDC guidelines in regards to keeping everyone healthy. We ask that when you come to visit you think of others by practicing social distancing and wearing a mask.  Thank you for your understanding.
+    </div>  
+  </div>
+</div> -->
+<div class="col-md-12 display text-center bg-color py-2">
+  <div class="container">
+    <div class="contact-header">
+      <div class="row header-center">
+        <div class="col-md-12" class = "rows">
+          <span class="contact-links" *ngFor="let contact of contactDetails">
+            <span class="contact-link1" *ngIf="contact?.label=== 'Emergency Number: '">
+              <span><b> {{contact.label}}</b></span>
+              <a [href]="contact?.redirect">&nbsp;{{contact.data}}</a>&nbsp;
+            </span>
+            <span class="contact-link2" *ngIf="contact?.label === 'Phone: '">
+              <span><b> {{contact.label}}</b></span>
+              <a [href]="contact?.redirect">&nbsp;{{contact.data}}</a>&nbsp;
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<nav class="navbar navbar-expand-lg bg-primary" id="nav-header">
+  <div class="container">
+    <a class="navbar-brand" (click)="navigate('/')">
+      <!-- <img src="" width="auto" height="70px" alt=""> -->
+      <b class="desktop-view">South Wenatchee Self Storage/Leo’s Self Storage</b>
+      <span class="mobile-view"><b>South Wenatchee Self Storage<br>Leo’s Self Storage</b></span>
+    </a>
+    <button class="navbar-toggler py-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" #menu>
+      <ul class="navbar-nav ml-auto nav-scroll">
+        <li class="nav-item mx-1" *ngFor="let nav of navLinks">
+          <span *ngIf="nav?.type === 'link'">
+            <a class="nav-link text-center" [routerLink]="nav?.path" [routerLinkActive]="'nav-link-active'" [routerLinkActiveOptions]="{exact: true}" (click)="onClick(menu)">{{nav.label}}</a>
+          </span>
+
+          <span *ngIf="nav?.type === 'dropdown'">
+              <div class="dropdown show">  
+                <a class="dropdown-toggle nav-link" role="button" id="dropdownMenuLink" [class.nav-link-active]="router.isActive('/wa/south-wenatchee') || router.isActive('/wa/leos-self-storage')" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{nav.label}}</a>
+                <ul class="dropdown-menu location-list" aria-labelledby="dropdownMenuLink">
+                  <li *ngFor="let sub of nav.sublinks text-center">
+                    <a class="dropdown-item" [routerLinkActive]="'location-active'" [routerLink]="sub?.path" (click)="onClick(menu)">{{sub.label}}</a></li>
+                </ul>
+              </div>
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
