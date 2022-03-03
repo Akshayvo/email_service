@@ -29,7 +29,7 @@ export const militaryData = [
     },
     {
         td1: '10\' x 20\'',
-        td2: '$150'
+        td2: '$120'
     },
     {
         td1: '10\' x 30\'',
