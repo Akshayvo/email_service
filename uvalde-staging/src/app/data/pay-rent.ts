@@ -102,11 +102,11 @@ export const tableDataContactPage = [
 export const loginDetail = [
   {
       userName: `Tenant's First Initial + Last Name`,
-      password: `Tenant's Unit Number`,
+      password: `Tenant's Access Code`,
       example: {
-          code: `Unit Number is 123`,
+          code: `Access Code is 1234`,
           userName: 'jsmith',
-          password: '0123'
+          password: '1234'
       },
       example1:{
           code: `Unit Number is RC23`,
