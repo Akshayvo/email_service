@@ -57,25 +57,25 @@ const emailIndex2 = contactsLocation2.findIndex(x => x.label === 'Email: ');
 const emailIndex3 = contactsLocation3.findIndex(x => x.label === 'Email: ');
 
   
-export const nameLocation1 = `Self Storage Facility - Location-1`;
-export const nameLocation2 = `Self Storage Facility - Location-2`;
+export const nameLocation1 = `Self Storage Facility - south-wenatchee`;
+export const nameLocation2 = `Self Storage Facility - leos-self-storage`;
 export const nameLocation3 = `Self Storage Facility - Location-3`;
 
 
 
-export const location1 = `location-1`;
-export const location2 = `location-2`;
+export const location1 = `south-wenatchee`;
+export const location2 = `leos-self-storage`;
 export const location3 = `location-3`;
 
 
-export const urlLocation1 = `${environment.websiteUrl}/${environment.locationName}/location-1/storage-units`;
-export const urlLocation2 = `${environment.websiteUrl}/${environment.locationName}/location-2/storage-units`;
+export const urlLocation1 = `${environment.websiteUrl}/${environment.locationName}/south-wenatchee/storage-units`;
+export const urlLocation2 = `${environment.websiteUrl}/${environment.locationName}/leos-self-storage/storage-units`;
 export const urlLocation3 = `${environment.websiteUrl}/${environment.locationName}/location-3/storage-units`;
 
 export const description1 = `brick self storage facility front office with a green lawn
                              in the front and blue sky above`;
 
-export const description2 = `Our Location-2 location has a number of regular and climate controlled unit types `;
+export const description2 = `Our leos-self-storage location has a number of regular and climate controlled unit types `;
 
 export const description3 = `Our Location-3 location has a number of regular and climate controlled unit types ideal
                              for just about any self storage need at an affordable price!  Our 24-hour access policy

@@ -13,38 +13,38 @@ export const tableHeader = [
 
 export const tableData = [
   {
-    facility: ' Location-1',
-    address: '',
-    url: 'location-1'
+    facility: ' south-wenatchee',
+    address: '1536 S Wenatchee Ave, Wenatchee, WA 98801',
+    url: 'south-wenatchee'
   },
   {
-    facility: 'Location-2',
-    address: '',
-    url: 'location-2'
+    facility: 'leos-self-storage',
+    address: '1313 N Wenatchee Ave, Wenatchee, WA, 98801',
+    url: 'leos-self-storage'
   },
-  {
-    facility: 'Location-3',
-    address: '',
-    url: 'location-3'
-  }
+  // {
+  //   facility: 'Location-3',
+  //   address: '',
+  //   url: 'location-3'
+  // }
 ];
 
 export const tableDataContactPage = [
   {
-    facility: ' Location-1',
-    address: '',
-    url: 'location-1'
+    facility: ' south-wenatchee',
+    address: '1536 S Wenatchee Ave, Wenatchee, WA 98801',
+    url: 'south-wenatchee'
   },
   {
-    facility: 'Location-2',
-    address: '',
-    url: 'location-2'
+    facility: 'leos-self-storage',
+    address: '1313 N Wenatchee Ave, Wenatchee, WA, 98801',
+    url: 'leos-self-storage'
   },
-  {
-    facility: 'Location-3',
-    address: '',
-    url: 'location-3'
-  },
+  // {
+  //   facility: 'Location-3',
+  //   address: '',
+  //   url: 'location-3'
+  // },
 ];
 
 

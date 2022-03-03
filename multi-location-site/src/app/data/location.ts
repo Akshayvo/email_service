@@ -51,9 +51,9 @@ export const headingLocation6 = ``;
 
 
 
-export const headingReservePageLocation1 = `Are you ready to rent a unit at Location-1`;
+export const headingReservePageLocation1 = `Are you ready to rent a unit at south-wenatchee`;
 
-export const headingReservePageLocation2 = `Are you ready to rent a unit at Location-2`;
+export const headingReservePageLocation2 = `Are you ready to rent a unit at leos-self-storage`;
 
 export const headingReservePageLocation3 = `Are you ready to rent a unit at Location-3`;
 
@@ -63,9 +63,9 @@ export const headingReservePageLocation5 = `Are you ready to rent a unit at Fair
 
 export const headingReservePageLocation6 = `Are you ready to rent a unit at Robertsdale`;
 
-export const heading1 = `Self Storage Facility - Location-1`;
+export const heading1 = `Self Storage Facility - south-wenatchee`;
 
-export const heading2 = `Self Storage Facility - Location-2`;
+export const heading2 = `Self Storage Facility - leos-self-storage`;
 
 export const heading3 = `Self Storage Facility - Location-3`;
 

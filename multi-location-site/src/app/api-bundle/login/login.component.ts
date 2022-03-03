@@ -130,15 +130,15 @@ export class LoginComponent implements OnInit, OnDestroy {
 
   public fetchContactDetail() {
 
-    if (this.router.url.includes('location-1')) {
+    if (this.router.url.includes('south-wenatchee')) {
       this.id = 1;
-      this.name = 'Self Storage Facility - Location-1';
+      this.name = 'Self Storage Facility - south-wenatchee';
       this.contact = contactsLocation1;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc1);
-    } else  if (this.router.url.includes('location-2')) {
+    } else  if (this.router.url.includes('leos-self-storage')) {
       this.id = 2;
-      this.name = 'Self Storage Facility - Location-2';
+      this.name = 'Self Storage Facility - leos-self-storage';
       this.contact = contactsLocation2;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc2);
@@ -160,9 +160,9 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   public fetchOg() {
-    if (this.router.url.includes('location-1')) {
+    if (this.router.url.includes('south-wenatchee')) {
       this.og = ogPayRentPageLocation1;
-    } else  if (this.router.url.includes('location-2')) {
+    } else  if (this.router.url.includes('leos-self-storage')) {
       this.og = ogPayRentPageLocation2;
     } else if (this.router.url.includes('location-3')) {
       this.og = ogPayRentPageLocation3;
@@ -170,9 +170,9 @@ export class LoginComponent implements OnInit, OnDestroy {
     }
 
 public fetchTwitter() {
-  if (this.router.url.includes('location-1')) {
+  if (this.router.url.includes('south-wenatchee')) {
     this.twitter = twitterPayRentPageLocation1;
-  } else if (this.router.url.includes('location-2')) {
+  } else if (this.router.url.includes('leos-self-storage')) {
       this.twitter = twitterPayRentPageLocation2;
   } else if (this.router.url.includes('location-3')) {
         this.twitter = twitterPayRentPageLocation3;

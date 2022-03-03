@@ -93,13 +93,13 @@ id = 3;
       if (this.activatedRoute.snapshot.url[1].path) {
         this.dataSharingService.facilityLocation = this.activatedRoute.snapshot.url[1].path;
       }
-      if (this.router.url.includes(`${environment.locationName}/location-1`)) {
+      if (this.router.url.includes(`${environment.locationName}/south-wenatchee`)) {
             this.meta.addTag({
               name: 'description',
               content: `${this.location1PageContent}`
     });
     this.titleService.setTitle(`${this.location1PageTitle}`);
-            this.locationName = `Self Storage Facility - Location-1`;
+            this.locationName = `Self Storage Facility - south-wenatchee`;
             this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
             this.dataSharingService.locationName = this.locationName;
             this.script = Location1Script;
@@ -117,13 +117,13 @@ id = 3;
                 content: element.content
               })
             });
-    } else if (this.router.url.includes(`${environment.locationName}/location-2`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/leos-self-storage`)) {
            this.meta.addTag({
              name: 'description',
              content: `${this.location2PageContent}`
     });
     this.titleService.setTitle(`${this.location2PageTitle}`);
-           this.locationName = `Self Storage Facility - Location-2`;
+           this.locationName = `Self Storage Facility - leos-self-storage`;
            this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
            this.dataSharingService.locationName = this.locationName;
            this.script = Location2Script;
@@ -203,9 +203,9 @@ id = 3;
 
   
   public fetchOg() {
-    if (this.router.url.includes(`${environment.locationName}/location-1`)) {
+    if (this.router.url.includes(`${environment.locationName}/south-wenatchee`)) {
       this.og = ogLocation1;
-    } else if (this.router.url.includes(`${environment.locationName}/location-2`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/leos-self-storage`)) {
       this.og = ogLocation2;
     } else if (this.router.url.includes(`${environment.locationName}/location-3`)) {
       this.og = ogLocation3;
@@ -213,9 +213,9 @@ id = 3;
   }
 
   public fetchTwitter() {
-    if (this.router.url.includes(`${environment.locationName}/location-1`)) {
+    if (this.router.url.includes(`${environment.locationName}/south-wenatchee`)) {
         this.twitter = twitterLocation1;
-    } else if (this.router.url.includes(`${environment.locationName}/location-2`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/leos-self-storage`)) {
       this.twitter = twitterLocation2;
     } else if (this.router.url.includes(`${environment.locationName}/location-3`)) {
       this.twitter = twitterLocation3;
@@ -223,9 +223,9 @@ id = 3;
   }
 
   public isSomePage() {
-    if (this.router.url.includes(`${environment.locationName}/location-1`)) {
+    if (this.router.url.includes(`${environment.locationName}/south-wenatchee`)) {
         this.fetchDetailsLocation1();
-    } else if (this.router.url.includes(`${environment.locationName}/location-2`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/leos-self-storage`)) {
       this.fetchDetailsLocation2();
     } else if (this.router.url.includes(`${environment.locationName}/location-3`)) {
       this.fetchDetailsLocation3();
@@ -234,10 +234,10 @@ id = 3;
 
  public navigateToReserve() {
   if ( this.locationId === 1 ) {
-    this.router.navigate([`${environment.locationName}/location-1/reserve-unit`],
+    this.router.navigate([`${environment.locationName}/south-wenatchee/reserve-unit`],
           );
   } else if ( this.locationId === 2 ) {
-    this.router.navigate([`${environment.locationName}/location-2/reserve-unit`],
+    this.router.navigate([`${environment.locationName}/leos-self-storage/reserve-unit`],
           );
   }  else if ( this.locationId === 3 ) {
     this.router.navigate([`${environment.locationName}/location-3/reserve-unit`],

@@ -1,24 +1,24 @@
 /* tslint:disable:max-line-length */
 export const featuresHead = [
     {
-        label: '6 Convenient Locations',
+        label: '2 Convenient Locations',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
         alt: 'Icon art displaying a location pin'
     },
     {
-        label: '24 Hour Facility Access',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/24-hours.svg',
-        alt: 'Icon art displaying clock hands and the number 24'
+        label: 'Stellar Customer Service',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg',
+        alt: 'Customer Service Representative Icon'
     },
     {
-        label: 'Climate Controlled',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/thermometer.svg',
-        alt: 'Icon of thermometer indicating climate-controlled units'
+        label: 'Affordable Self Storage Rates',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/hand.svg',
+        alt: 'Icon of a hand holding money'
     },
     {
-        label: 'Online Bill Pay',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/online.svg',
-        alt: 'Icon art displaying a screen with cursor'
+        label: 'Security Cameras on Premises',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/cctv.svg',
+        alt: 'Icon of a security camera'
     },
 ];
 
@@ -160,7 +160,7 @@ export const location6FeaturesHead = [
 
 export const serviceOffered = [
     {
-        p: `Self Storage Facility has been serving the communities of Baldwin County with clean, well-maintained, and affordable self storage services since 1997. Our 6 self storage facilities are located in Location-1, Fairhope, Daphne/Belforest, Location-3, Sivlerhill, and Robertsdale. Self Storage Facility is locally owned and operated, and provides a wide range of self storage unit sizes including climate controlled types. We also have boat, recreational vehicle, and trailer storage at select locations!`,
+        p: `Self Storage Facility has been serving the communities of Baldwin County with clean, well-maintained, and affordable self storage services since 1997. Our 6 self storage facilities are located in south-wenatchee, Fairhope, Daphne/Belforest, Location-3, Sivlerhill, and Robertsdale. Self Storage Facility is locally owned and operated, and provides a wide range of self storage unit sizes including climate controlled types. We also have boat, recreational vehicle, and trailer storage at select locations!`,
     },
     {
         p: `Take advantage of our decades of self storage experience to make your next move, renovation, or spring cleaning easier! At Self Storage Facility, you’ll get 24-hour access to our well-lit facilities and you'll have access to your account to pay your rent online or update your information with us. We understand the value of working on your own schedule and give you the freedom to come and go as your time allows.`,
@@ -201,7 +201,7 @@ export const featuresList = [
 
 export const jumbotron = [
     {
-        h2: `Affordable Self Storage in Baldwinsville`,
-        blurb: `Self Storage Facility is a locally owned and operated business serving Baldwinsville, New York, and the surrounding communities with clean, well-maintained self storage units, friendly service, and many conveniences all at affordable rates. Our storage units come in a variety of sizes including climate controlled varieties. Take a moment to review the pricing and storage unit or vehicle parking availability at any of our three convenient locations, then give us a call or rent your unit online!`,
+        h2: `Self Storage Units in Wenatchee`,
+        blurb: `We are a locally owned & operated self storage facility serving the Wenatchee, community! We offer affordable self storage units in a variety of sizes, and our service always comes with a smile. Take a moment to review our pricing and availability, then call, or reserve online to start de-cluttering today!`,
     }
 ];

@@ -31,9 +31,9 @@ export class UaParserService {
       }
     }
     if (this.typeOfImages === 'WEBP') {
-      this.baseUrl = `https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Sample_Self_Storage_Multi/webp`;
+      this.baseUrl = `https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/South_Wenatchee_Multi/webp`;
     } else {
-      this.baseUrl = 'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Sample_Self_Storage_Multi/jpg';
+      this.baseUrl = 'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/South_Wenatchee_Multi/jpg';
     }
   }
 }

@@ -13,18 +13,13 @@ export const navLinks = [
         sublinks: [
             {
                 id: '1',
-                label: 'Location 1',
-                path: `${environment.locationName}/location-1`,
+                label: 'South Wenatchee Self Storage',
+                path: `${environment.locationName}/south-wenatchee`,
               },
             {
                 id: '2',
-                label: 'Location 2',
-                path: `${environment.locationName}/location-2`,
-            },
-              {
-                id: '3',
-                label: 'Location 3',
-                path: `${environment.locationName}/location-3`,
+                label: `Leo's Self Storage`,
+                path: `${environment.locationName}/leos-self-storage`,
             },
         ]
     },

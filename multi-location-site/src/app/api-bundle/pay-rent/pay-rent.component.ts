@@ -45,10 +45,10 @@ export class PayRentComponent implements OnInit {
       })
     });
     this.canonical.create();
-    if (this.router.url.includes('location-1')) {
-      this.name = ' Location-1';
-  } else if (this.router.url.includes('location-2')) {
-    this.name = ' Location-2';
+    if (this.router.url.includes('south-wenatchee')) {
+      this.name = ' south-wenatchee';
+  } else if (this.router.url.includes('leos-self-storage')) {
+    this.name = ' leos-self-storage';
   } else if (this.router.url.includes('location-3')) {
     this.name = 'Location-3';
   }
@@ -65,9 +65,9 @@ export class PayRentComponent implements OnInit {
   }
 
   public fetchOg() {
-    if (this.router.url.includes('location-1')) {
+    if (this.router.url.includes('south-wenatchee')) {
       this.og = ogPayRentPageLocation1;
-    } else if (this.router.url.includes('location-2')) {
+    } else if (this.router.url.includes('leos-self-storage')) {
       this.og = ogPayRentPageLocation2;
     } else if (this.router.url.includes('location-3')) {
       this.og = ogPayRentPageLocation3;
@@ -75,9 +75,9 @@ export class PayRentComponent implements OnInit {
 }
 
 public fetchTwitter() {
-  if (this.router.url.includes('location-1')) {
+  if (this.router.url.includes('south-wenatchee')) {
     this.twitter = twitterPayRentPageLocation1;
-  } else if (this.router.url.includes('location-2')) {
+  } else if (this.router.url.includes('leos-self-storage')) {
     this.twitter = twitterPayRentPageLocation2;
   } else if (this.router.url.includes('location-3')) {
     this.twitter = twitterPayRentPageLocation3;

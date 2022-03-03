@@ -74,7 +74,6 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     this.getData();
     this.fetchThData();
     this.dataSharingService.initMyNavLinks('viewRates', this.router.url);
-    this.facilityLocation = this.dataSharingService.facilityLocation;
     this.facilityName = environment.facilityName;
     this.state = environment.locationName;
   }
@@ -84,12 +83,14 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   }
 
   receiveMessage() {
-    if (this.router.url.includes(`${environment.locationName}/location-1`)) {
+    if (this.router.url.includes(`${environment.locationName}/south-wenatchee`)) {
+      this.facilityLocation = 'south-wenatchee'
       this.locationId = 1;
       this.locationReserve = "location1reserve";
       this.locationMovein = "location1movein";
   } 
-else if (this.router.url.includes(`${environment.locationName}/location-2`)) {
+else if (this.router.url.includes(`${environment.locationName}/leos-self-storage`)) {
+  this.facilityLocation = 'leos-self-storage'
   this.locationId = 2;
   this.locationReserve = "location2reserve";
   this.locationMovein = "location2movein";

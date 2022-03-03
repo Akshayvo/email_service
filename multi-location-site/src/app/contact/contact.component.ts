@@ -139,13 +139,13 @@ public fetchMetaData() {
   }
   
   public fetchContactDetailsLocation1() {
-    this.heading = `Self Storage Facility - Location-1`;
+    this.heading = `Self Storage Facility - south-wenatchee`;
     this.contactDetails = contactsLocation1;
     this.hoursDetails = hoursLocation1;
   }
 
   public fetchContactDetailsLocation2() {
-    this.heading = `Self Storage Facility - Location-2`;
+    this.heading = `Self Storage Facility - leos-self-storage`;
     this.contactDetails = contactsLocation2;
     this.hoursDetails = hoursLocation2;
   }

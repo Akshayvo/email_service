@@ -3,12 +3,13 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class DataSharingService {
 
- locationAPIKey = {                                                    
-    loc1: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28464
-    loc2: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28466
-    loc3: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28466
+export class DataSharingService {
+  locationAPIKey = {
+    // loc1: "XjJ7OEY0VzZHM0k6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", //    only for staging
+    loc1: "dTJXOUQzUDdINE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", // 29374 south wenatchee
+    loc2: "dTJXOUQzUDlIOU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O",  // 29399 Leo's self storage
+    loc3: ""
   };
 
 //  locationAPIKey = {                                                    

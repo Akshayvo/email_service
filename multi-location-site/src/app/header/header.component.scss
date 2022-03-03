@@ -1,29 +1,36 @@
 @import "../../styles.scss";
 
 
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+img {
+  width: 200px;
 }
-
-a {
-  cursor: pointer;
+.iconColor {
   color: $white;
 }
-.dropdown:hover .dropdown-menu{
-  display: block;
+.bg-color{
+  background-color: white;
 }
-
 .contact-header {
   display: inline;
 
   .contact-details {
-    color: $white !important;
+    color: $white;
     font-size: 0.82em;
     font-weight: 500;
     width: 100%;
+    
+  }
+}
+
+.header-center{
+color: $primary;
+display: block;
+text-align: center;
+}
+
+.navbar {
+  button {
+    border-color: #fff;
   }
 }
 
@@ -36,12 +43,38 @@ a {
   i {
     font-size: 1.2rem;
   }
+  
 }
+
+
 
 .social :hover {
   color: $white;
 }
 
+.contact-links {
+  padding-right: 48px;
+  a {
+    color: $primary;
+    
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+a {
+  cursor: pointer;
+  b { 
+    color: $white;
+  }
+}
+.dropdown:hover .dropdown-menu{
+  display: block;
+}
 .navbar {
   padding-bottom: 0;
   .dropdown-menu {
@@ -55,8 +88,8 @@ a {
   }
 
   .nav-link-active {
-    border-bottom: 5px $primary solid;
-    color: $primary !important;
+    border-bottom: 5px $secondary solid;
+    color: $white !important;
   }
 
   .location-active {
@@ -72,7 +105,7 @@ a {
   }
 
   .nav-link {
-    color: $dark;
+    color: $white;
     font-size: 1.2rem;
     font-weight: 400;
     padding-top: 25px;
@@ -81,8 +114,8 @@ a {
   }
 
   button {
-    border: 1px $dark solid;
-    margin-right: 20px;
+    border-color: white;
+    color: #fff;
   }
 
   button:focus {
@@ -91,18 +124,18 @@ a {
 }
 
 .nav-link:hover {
-  color: $primary;
+  color: $white;
 }
 
 .display {
-  display: block;
-  background-color: $primary;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-toggler {
-  margin-top: 10px;
-  margin-bottom: 10px;
-
+  // margin-top: 10px;
+  // margin-bottom: 10px;
+  border-color: #fff;
   i {
     color: #4e4848;
   }
@@ -113,16 +146,35 @@ a {
   border: 1px #efefef solid;
 }
 
-@media screen and (max-width: 991px) {
-  .display {
+@media screen and (min-width:992px) and (max-width:1199px) {
+  .navbar {
+  .nav-link {
+    font-size: 1rem;
+  }
+}
+
+}
+
+@media screen and (min-width: 992px) {
+  .mobile-view {
     display: none;
   }
+}
 
+
+@media screen and (max-width: 991px) {
+  // .display {
+  //   display: none;
+  // }
+    .desktop-view {
+      display: none;
+    }
   .nav-link {
     padding-top: 10px !important;
     padding-bottom: 10px !important;
   }
 
+  
 
   .dropdown {
     ul {
@@ -131,7 +183,7 @@ a {
   } 
 
   .dropdown-menu {
-    left: -60px;
+    left: -100px;
   }
 
   .navbar {
@@ -162,25 +214,26 @@ a {
       line-height: 1rem !important;
     }
 
-    #site-header {
-      position: relative;
-      height: auto;
-      background: #fff;
-      top: 0;
-      width: 100%;
-      z-index: 100;
-      transition: all .3s ease;
-      box-shadow: 0 1px 25px rgba(0,0,0, .1);
-    }
-    #site-header.hide {
-      top: -64px;
-    }
+    // #site-header {
+    //   position: relative;
+    //   height: auto;
+    //   background: #fff;
+    //   top: 0;
+    //   width: 100%;
+    //   z-index: 100;
+    //   transition: all .3s ease;
+    //   box-shadow: 0 1px 25px rgba(0,0,0, .1);
+    // }
+    // #site-header.hide {
+    //   top: -64px;
+    // }
     
     #nav-header {
       // position: fixed;
       transition: all .3s ease;
       box-shadow: 0 1px 25px rgba(0,0,0, .1);
     }
+    
     
     #nav-header.customClass {
       top: -64px;
@@ -190,36 +243,102 @@ a {
 
   @media screen and (max-width: 460px) {
 
-    #site-header {
-      position: relative;
-      height: auto;
-      background: #fff;
-      top: 0;
-      width: 100%;
-      z-index: 100;
-      transition: all .3s ease;
-      box-shadow: 0 1px 25px rgba(0,0,0, .1);
-    }
-    #site-header.hide {
-      top:-101px;
-    }
+    // #site-header {
+    //   position: relative;
+    //   height: auto;
+    //   background: #fff;
+    //   top: 0;
+    //   width: 100%;
+    //   z-index: 100;
+    //   transition: all .3s ease;
+    //   box-shadow: 0 1px 25px rgba(0,0,0, .1);
+    // }
+    // #site-header.hide {
+    //   top:-101px;
+    // }
     
     #nav-header {
       // position: fixed;
       transition: all .3s ease;
       box-shadow: 0 1px 25px rgba(0,0,0, .1);
+      
     }
     
     #nav-header.customClass {
       top: -101px;
     }
+    .navbar-brand {
+      font-size: 16px;
+    }
+      
     
   }
+
+  @media only screen and (max-width: 767px) and (min-width: 601px){
+    .contact-links {
+      padding-right: 14px ;
+      display: inline-block;
+    }
+  }
+
+  @media only screen and (max-width: 600px) and (min-width: 420px){
+  .contact-links {
+    padding-right: 7px ;
+    display: inline-block;
+  }
+  
+  // .contact-link1{
+  //   display:none;
+  // }
+}
 
   @media screen and (max-height: 476px) {
     .nav-scroll {
       overflow-y: auto;
     }
+    
+    .contact-links {
+      padding-right: 0px ;
+      display: inline-block;
+    }
+    // .contact-link1{
+    //   display:none;
+    // }
+    .display{
+      height:55px;
+    }
+   
   }
   
+  @media only screen and (max-width: 429px) {
+    
+    .navbar-brand {
+      font-size: 16px;
+    }
+      
+    .rows{
+      padding-bottom: 5px;
+      font-size: 15px;
+      text-align: center;
+    }
+    
+    .nav-scroll {
+      overflow-y: auto;
+    }
+    
+    .contact-links {
+      padding-right: 0px ;
+      display: inline-block;
+    }
+    // .contact-link1{
+    //   display:none;
+    // }
+    .display{
+      height:55px;
+      padding-right: 12px;
+    padding-left: 12px;
+    
+    }
 
+  
+  }  

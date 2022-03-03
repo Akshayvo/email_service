@@ -1,11 +1,11 @@
 export const homePageTitle = `Affordable Self Storage Units in Baldwinsville, New York`;
 export const homePageContent = `Self Storage Facility has 6 conveniently located self storage facilities with a variety of affordable self storage unit types and vehicle parking options.`;
 
-export const location1PageTitle = `Location-1 | Self Storage Facility`;
-export const location1PageContent = `We offer a number of affordable self storage options in Location-1, Alabama. Check out our prices, then give us a call to start clearing up your home, office, or garage!`;
+export const location1PageTitle = `south-wenatchee | Self Storage Facility`;
+export const location1PageContent = `We offer a number of affordable self storage options in south-wenatchee, Alabama. Check out our prices, then give us a call to start clearing up your home, office, or garage!`;
 
-export const location2PageTitle = `Location-2 | Self Storage Facility`;
-export const location2PageContent = `Our Location-2 location offers a large variety of regular and climate controlled storage units in a number of sizes, and all of our units are priced competitively!`;
+export const location2PageTitle = `leos-self-storage | Self Storage Facility`;
+export const location2PageContent = `Our leos-self-storage location offers a large variety of regular and climate controlled storage units in a number of sizes, and all of our units are priced competitively!`;
 
 export const location3PageTitle = `Location-3 | Self Storage Facility`;
 export const location3PageContent = `Our Location-3 location offers a number of regular and climate controlled self storage units, and all of our units are economically priced!`;

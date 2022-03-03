@@ -99,9 +99,9 @@ export class ContactUsComponent implements OnInit {
   }
 
   public fetchOg() {
-    if (this.router.url.includes('location-1')) {
+    if (this.router.url.includes('south-wenatchee')) {
       this.og = ogContactPageLocation1;
-    } else if (this.router.url.includes('location-2')) {
+    } else if (this.router.url.includes('leos-self-storage')) {
       this.og = ogContactPageLocation2;
     } else if (this.router.url.includes('location-3')) {
       this.og = ogContactPageLocation3;
@@ -114,9 +114,9 @@ public fetchMetaData() {
 }
 
 public fetchTwitter() {
-  if (this.router.url.includes('location-1')) {
+  if (this.router.url.includes('south-wenatchee')) {
     this.twitter = twitterContactPageLocation2;
-  } else if (this.router.url.includes('location-2')) {
+  } else if (this.router.url.includes('leos-self-storage')) {
     this.twitter = twitterContactPageLocation1;
   } else if (this.router.url.includes('location-3')) {
     this.twitter = twitterContactPageLocation3;
@@ -153,9 +153,9 @@ public fetchTwitter() {
   // }
 
   public fetchLocationDetails() {
-    if (this.router.url.includes('location-1')) {
+    if (this.router.url.includes('south-wenatchee')) {
       this.fetchContactDetailsLocation1();
-    } else if (this.router.url.includes('location-2')) {
+    } else if (this.router.url.includes('leos-self-storage')) {
       this.fetchContactDetailsLocation2();
     } else if (this.router.url.includes('location-3')) {
       this.fetchContactDetailsLocation3();
@@ -163,7 +163,7 @@ public fetchTwitter() {
   }
 
   public fetchContactDetailsLocation1() {
-    this.heading = `Self Storage Facility - Location-1`;
+    this.heading = `Self Storage Facility - south-wenatchee`;
     this.locationId = '1'
     this.contactDetails = contactsLocation1;
     this.hoursDetails = hoursLocation1;
@@ -171,7 +171,7 @@ public fetchTwitter() {
   
   public fetchContactDetailsLocation2() {
     this.locationId = '2'
-    this.heading = `Self Storage Facility - Location-2`;
+    this.heading = `Self Storage Facility - leos-self-storage`;
     this.contactDetails = contactsLocation2;
     this.hoursDetails = hoursLocation2;
   }

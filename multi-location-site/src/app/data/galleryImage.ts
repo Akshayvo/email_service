@@ -1,10 +1,10 @@
 export const galleryHome = [
   {
     // tslint:disable-next-line: max-line-length
-    url: `sample-self-storage-north-jumbotron`,
+    url: `south-wenatchee-self-storage`,
     // tslint:disable-next-line:max-line-length
-    thumb: `sample-self-storage-north-jumbotron`,
-    alt: `sample-self-storage-north-jumbotron`
+    thumb: ``,
+    alt: ``
   },
   {
     // tslint:disable-next-line: max-line-length

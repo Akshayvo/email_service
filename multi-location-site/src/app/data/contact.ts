@@ -1,3 +1,20 @@
+export const contactHeader = [
+    {
+        id: 1,
+        label: 'Phone: ',
+        data: '(509) 662-2600',
+        class: 'fas fa-phone mr-2 iconColor',
+        redirect: 'tel:5096622600'
+    },
+    {
+        id: 1,
+        label: 'Emergency Number: ',
+        data: '(509) 293-1800',
+        class: 'fas fa-phone mr-2 iconColor',
+        redirect: 'tel:5092931800'
+    },
+];
+
 export const contactsHomePage = [
     {
         id: 1,
@@ -37,40 +54,49 @@ export const contactsLocation1 = [
     {
         id: 1,
         label: 'Address: ',
-        data: '6 Canton St, Baldwinsville, NY 13027',
+        data: '1536 S Wenatchee Ave, Wenatchee, WA 98801',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/MZ2bUNFNT1HWfDfw5'
+        redirect: 'https://goo.gl/maps/PMWQVbx27THYbTMT8'
     },
     {
         id: 2,
         label: 'Email: ',
-        data: `syrasoftsoftware@gmail.com`,
+        email: 'selfstorageinc@hotmail.com',
+        data: `selfstorageinc@hotmail.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`syrasoftsoftware@gmail.com`'
+        redirect: 'mailto:selfstorageinc@hotmail.com'
     },
     {
         id: 3,
         label: 'Phone: ',
-        data: '(505) 555-5555',
+        data: '(509) 662-2600',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:5055555555'
+        redirect: 'tel:5096622600'
+    },
+    {
+        id: 4,
+        label: 'Emergency Number: ',
+        data: '(509) 293-1800',
+        class: 'fas fa-phone mr-2 iconColor',
+        redirect: 'tel:5092931800'
     },
 ];
 
 export const hoursLocation1 = [
     {
-        label: 'Monday - Friday: ',
-        data: '8:30AM to 5:00PM',
+        label: '7 Days a Week: ',
+        data: '9:00AM to 5:00PM'
     },
-    {
-        label: 'Saturday - Sunday: ',
-        data: 'CLOSED',
-    },
+    // {
+    //     label: 'Saturday - Sunday: ',
+    //     data: 'CLOSED',
+    // },
 ];
 
 export const hoursLocation1AcessHours = [
     {
-        data: '24 Hours a Day 7 Days a Week'
+        label: '7 Days a Week: ',
+        data: '6:30AM to 9:00PM'
     },
 ];
 
@@ -78,23 +104,31 @@ export const contactsLocation2 = [
     {
         id: 1,
         label: 'Address: ',
-        data: '6 Canton St, Baldwinsville, NY 13027',
+        data: '1313 N Wenatchee Ave, Wenatchee, WA, 98801',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/MZ2bUNFNT1HWfDfw5'
+        redirect: 'https://goo.gl/maps/BaiNCYwtcMK3LZP88'
     },
     {
         id: 2,
         label: 'Email: ',
-        data: `syrasoftsoftware@gmail.com`,
+        data: 'selfstorageinc@hotmail.com',
+        email: `selfstorageinc@hotmail.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`syrasoftsoftware@gmail.com`'
+        redirect: 'mailto:selfstorageinc@hotmail.com'
     },
     {
         id: 3,
         label: 'Phone: ',
-        data: '(505) 555-5555',
+        data: '(509) 662-2600',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:5055555555'
+        redirect: 'tel:509662-2600'
+    },
+    {
+        id: 4,
+        label: 'Emergency Number: ',
+        data: '(509) 293-1800',
+        class: 'fas fa-phone mr-2 iconColor',
+        redirect: 'tel:5092931800'
     },
 ];
 
