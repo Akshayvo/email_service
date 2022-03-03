@@ -3,29 +3,22 @@ import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule, ErrorHandler } from '@angular/core';
-
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
-// import { ViewRatesComponent } from './view-rates/view-rates.component';
 import { TablesComponent } from './tables/tables.component';
 import { ErrorComponent } from './error/error.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { Angulartics2Module } from 'angulartics2';
 import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 import { StorageTipsComponent } from './storage-tips/storage-tips.component';
-import { ContactButtonComponent } from './contact-button/contact-button.component';
-import { PayRentComponent } from './pay-rent/pay-rent.component';
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
-import { ReserveUnitComponent } from './reserve-unit/reserve-unit.component';
 import { ErrorHandlerService } from './services/error-handler.service';
-import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
 import { ReserveComponent } from './api-bundle/reserve/reserve.component';
 import { ViewRatesComponent } from './api-bundle/view-rates/view-rates.component';
 import { ViewRatesIframePageComponent } from './iframe-bundle/view-rates-iframe-page/view-rates-iframe-page.component';
@@ -34,7 +27,6 @@ import { ReserveUnitFormComponent } from './api-bundle/reserve-unit-form/reserve
 import { ReserveUnitIframePageComponent } from './iframe-bundle/reserve-unit-iframe-page/reserve-unit-iframe-page.component';
 import { ConfirmationDataComponent } from './api-bundle/confirmation-data/confirmation-data.component';
 import { PayRentFormComponent } from './api-bundle/pay-rent-form/pay-rent-form.component';
-import { RentNowComponent } from './api-bundle/rent-now/rent-now.component';
 import { PaymentComponent } from './api-bundle/payment/payment.component';
 import { PaymentIframePageComponent } from './iframe-bundle/payment-iframe-page/payment-iframe-page.component';
 import { LoginComponent } from './api-bundle/login/login.component';
@@ -51,9 +43,29 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './modules/material/material.module';
 import { ResetPasswordComponent } from './api-bundle/reset-password/reset-password.component';
 import { RequestInterceptorService } from './api-bundle/services/request-interceptor.service';
+import { CanDeactivateGuard } from './preventRouteChange.guard';
+import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
+// import { UnitSizesComponent } from './unit-sizes/unit-sizes.component'; 
+import { PhotosComponent } from './photos/photos.component';
+import { ScriptHackComponent } from './script-hack/script-hack.component';
+import { RentSubComponent } from './api-bundle/rent-sub/rent-sub.component';
+import { AutoPayComponent } from './api-bundle/auto-pay/auto-pay.component';
+import { PayRentComponent } from './api-bundle/pay-rent/pay-rent.component';
+import { SignUpComponent } from './api-bundle/sign-up/sign-up.component';
+import { TabsComponent } from './tabs/tabs.component';
+import { ThankYouComponent } from './api-bundle/thank-you/thank-you.component';
+import { ThankYouGuard } from './thank-you.guard';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { AlternateDetailsComponent } from './alternate-details/alternate-details.component';
+import { ContactButtonComponent } from './contact-button/contact-button.component';
+import { UpdateDetailsComponent } from './api-bundle/update-details/update-details.component';
+import { UpdateComponent } from './api-bundle/update/update.component';
+import { ReserveUnitComponent } from './reserve-unit/reserve-unit.component';
+import { RentNowComponent } from './api-bundle/rent-now/rent-now.component';
 import { RentNowIframePageComponent } from './iframe-bundle/rent-now-iframe-page/rent-now-iframe-page.component';
 import { UnitSizerIframePageComponent } from './iframe-bundle/unit-sizer-iframe-page/unit-sizer-iframe-page.component';
-import { CanDeactivateGuard } from './preventRouteChange.guard';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -67,9 +79,8 @@ import { CanDeactivateGuard } from './preventRouteChange.guard';
     ErrorHandlerComponent,
     StorageTipsComponent,
     AccordionComponent,
-    ContactButtonComponent,
-    PayRentComponent,
-    ReserveUnitComponent,
+    ContactButtonComponent, 
+    ReserveUnitComponent, 
     UnitSizerComponent,
     ReserveComponent,
     ViewRatesComponent,
@@ -90,6 +101,19 @@ import { CanDeactivateGuard } from './preventRouteChange.guard';
     ResetPasswordComponent,
     RentNowIframePageComponent,
     UnitSizerIframePageComponent,
+    PhotosComponent,
+    ScriptHackComponent,
+    AutoPayComponent,
+    RentSubComponent,
+    PayRentComponent,
+    SignUpComponent,
+    TabsComponent,
+    ThankYouComponent,
+    PrivacyPolicyComponent,
+    AlternateDetailsComponent,
+    UpdateDetailsComponent,
+    UpdateComponent,
+    
   ],
   imports: [
     CommonModule,

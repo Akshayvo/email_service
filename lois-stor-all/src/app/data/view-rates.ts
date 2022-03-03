@@ -1,3 +1,4 @@
+import { objSIMSetting } from './configuration';
 
 export const grid = `A $10 reservation fee is required to hold a unit.  Upon move-in,
 each unit will require a security deposit equal to one month's rent, which is returned
@@ -18,16 +19,75 @@ export const dataViewRates = [
             make your stay with Lois Stor-All an easy one, so call today and learn how we can help you!`,
     }
 ];
+export const MilitaryTypes = [
+  {
+    Description: `NA`,
+    Value: 0 
+  },
+  {
+    Description: `Active`,
+    Value: `Active`
+  },
+  {
+    Description: `Reserve`,
+    Value:  `Reserve` 
+  },
+  {
+    Description: `Veteran`,
+    Value: `Veteran` 
+  },
+  {
+    Description: `Retired`,
+    Value: `Retired`
+  },
+  {
+    Description: `Deployed`,
+    Value: `Deployed` 
+  },
+]
+
+export const MilitaryBranch = [
+  {
+    Description: `NA`,
+    Value: 0 
+  },
+  {
+    Description: `Army`,
+    Value: `Army`
+  },
+  {
+    Description: `Navy`,
+    Value: `Navy` 
+  },
+  {
+    Description: `AirForce`,
+    Value: `AirForce` 
+  },
+  {
+    Description: `Marines`,
+    Value: `Marines`
+  },
+  {
+    Description: `CoastGuard`,
+    Value: `CoastGuard` 
+  },
+]
 
 export const th = [
-    {
-      data: `Size`
+    { 
+      id: 'size',
+      data: `Size`,
+      state: true,
     },
     {
-      data: `Rate`
+      id: 'rate',
+      data: `Rate`,
+      state: objSIMSetting.objUnitSizesSetting.blnShowRate
     },
     {
-      data: `Reserve a Unit`
+      id: 'reserve',
+      data: `Reserve a Unit`,
+      state: objSIMSetting.objActionSetting.blnAllowReservation
     },
     // {
     //   data: `Move In`
@@ -327,3 +387,57 @@ export const th = [
       id: 'YT'
     },
   ];
+  export const option1 =  [
+    {
+      description: 'Alberta',
+      id: 'AB'
+    },
+    {
+      description: 'British Columbia',
+      id: 'BC'
+    },
+    {
+      description: 'Manitoba',
+      id: 'MB'
+    },
+    { 
+      description: 'New Brunswick',
+      id: 'NB'
+    },
+    {
+      description: 'Newfoundland and Labrador',
+      id: 'NL'
+    },
+    {
+      description: 'Northwest Territories',
+      id: 'NT'
+    },
+    {
+      description: 'Nova Scotia',
+      id: 'NS'
+    },
+    {
+      description: 'Nunavut',
+      id: 'NU'
+    },
+    {
+      description: 'Ontario',
+      id: 'ON'
+    },
+    {
+      description: 'Prince Edward Island',
+      id: 'PE'
+    },
+    {
+      description: 'Quebec',
+      id: 'QC'
+    },
+    {
+      description: 'Saskatchewan',
+      id: 'SK'
+    },
+    {
+      description: 'Yukon',
+      id: 'YT'
+    },
+    ];

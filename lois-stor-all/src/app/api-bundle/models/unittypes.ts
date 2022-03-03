@@ -57,9 +57,10 @@ export class RentalPeriod {
 
 export class LstRentalPeriods {
     PeriodDescription: string;
-
-    constructor(PeriodDescription: string) {
+    PeriodID: number;
+    constructor(PeriodDescription: string, PeriodID: number) {
         this.PeriodDescription = PeriodDescription;
+        this.PeriodID = PeriodID;
     }
 }
 

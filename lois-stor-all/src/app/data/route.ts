@@ -26,73 +26,223 @@ import { ResetPasswordComponent } from '../api-bundle/reset-password/reset-passw
 import { VerifictionCodeGuard } from '../auth-guard/verificationCode.guard';
 import { UnitSizerComponent } from '../unit-sizer/unit-sizer.component';
 import { UnitSizerIframePageComponent } from '../iframe-bundle/unit-sizer-iframe-page/unit-sizer-iframe-page.component';
+import { environment } from '../../environments/environment';
+import { ThankYouComponent } from '../api-bundle/thank-you/thank-you.component';
+import { ThankYouGuard } from '../thank-you.guard';
+import { RentSubComponent } from '../api-bundle/rent-sub/rent-sub.component';
+import { AutoPayComponent } from '../api-bundle/auto-pay/auto-pay.component';
+import { SignUpComponent } from '../api-bundle/sign-up/sign-up.component';
+import { PayRentComponent } from '../api-bundle/pay-rent/pay-rent.component';
+import { PrivacyPolicyComponent } from '../privacy-policy/privacy-policy.component';
+import { UpdateDetailsComponent } from '../api-bundle/update-details/update-details.component';
+import { UpdateComponent } from '../api-bundle/update/update.component';
 
-
- export const apiRoutes = [
-    // Fallback when no prior route is matched
-    { path: '', component: HomeComponent },
-    { path: 'unit-sizer', component: UnitSizerComponent},
-    { path: 'storage-tips', component: StorageTipsComponent },
-    { path: 'reserve-unit', component: ReserveComponent },
-    { path: 'storageTips', component: StorageTipsComponent },
-    { path: 'contact-us', component: ContactComponent },
-    {
-      path: 'view-rates',
-      component: ViewRatesComponent,
-      children: [
-        { path: '', component: ViewRatesPageComponent },
-        { path: 'reserve', component: ReserveUnitFormComponent },
-        { path: 'move-in', component: ReserveUnitFormComponent },
-        { path: 'confirmation', component: ConfirmationDataComponent },
-        { path: 'payReservationCharges', component: PayRentFormComponent },
-        { path: 'payMoveInCharges', component: PayRentFormComponent },
-      ]
-     },
-    {
-      path: 'pay-rent', component: PaymentComponent,
-      children: [
-        {path: '', redirectTo: 'login', pathMatch: 'full'},
+const withoutTab = [
+  {path: '', redirectTo: 'login', pathMatch: 'full'},
         {path: 'login', component: LoginComponent },
         {path: 'forgotPassword', component: ForgotPasswordComponent },
         {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
         {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
         { path: 'verifyCode', component: VerifyCodeComponent },
+        { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]},
+        { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
+        // canActivate: [VerifictionCodeGuard]
+];
+
+const withTab = [
+  { path: '', redirectTo: 'rent-sub', pathMatch: 'full'},
+      { path: 'rent-sub', component: RentSubComponent,
+        children: [
+          {path: '', redirectTo: 'login', pathMatch: 'full'},
+          {path: 'login', component: LoginComponent },
+          {path: 'forgotPassword', component: ForgotPasswordComponent },
+          {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+          {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
+          { path: 'verifyCode', component: VerifyCodeComponent },
+          { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]},
+          { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
+          // canActivate: [VerifictionCodeGuard]
+        ]
+      },
+      { path: 'sign-up', component: SignUpComponent,
+        children: [
+          {path: '', redirectTo: 'login', pathMatch: 'full'},
+          {path: 'login', component: LoginComponent },
+          {path: 'forgotPassword', component: ForgotPasswordComponent },
+          {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+          {path: 'auto-pay', component: AutoPayComponent, canActivate: [AuthGuard]},
+          { path: 'verifyCode', component: VerifyCodeComponent },
+          { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
+          // canActivate: [VerifictionCodeGuard]
+        ]
+      },
+      { path: `update`, component: UpdateComponent,
+      children: [
+        {path: '', redirectTo: 'login', pathMatch: 'full'},
+        {path: 'login', component: LoginComponent },
+        {path: 'forgotPassword', component: ForgotPasswordComponent },
+        {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+        {path: 'update-information', component: UpdateDetailsComponent, canActivate: [AuthGuard]},
+        { path: 'verifyCode', component: VerifyCodeComponent },
         { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
         // canActivate: [VerifictionCodeGuard]
       ]
+    }
+];
+
+// const reservationForm = environment
+const childroute = environment.signUpForAuotoPay ? withTab : withoutTab;
+
+
+const reviewURL = `http://search.google.com/local/writereview?placeid=ChIJu81QPs_6wogRwrH8unQ4YvU`;
+
+export const apiRoutes = [
+  // Fallback when no prior route is matched
+  { path: '', component: HomeComponent },
+  { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
+  { path: `${environment.locationName}/reserve-unit`, component: ReserveComponent },
+  { path: 'contact-us', component: ContactComponent },
+  { path: 'unit-sizer', component: UnitSizerComponent },
+  { path: 'privacy-policy', component: PrivacyPolicyComponent },
+  {
+    path: `${environment.locationName}/view-rates`,
+    component: ViewRatesComponent,
+    children: [
+      { path: '', component: ViewRatesPageComponent },
+      { path: 'reserve', component: ReserveUnitFormComponent },
+      { path: 'move-in', component: ReserveUnitFormComponent },
+      { path: 'confirmation', component: ConfirmationDataComponent },
+      { path: 'payReservationCharges', component: PayRentFormComponent },
+      { path: 'payMoveInCharges', component: PayRentFormComponent },
+      { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
+    ]
+   },
+   {
+    path: `${environment.locationName}/rent-now`,
+    component: ViewRatesComponent,
+    children: [
+      { path: '', component: ViewRatesPageComponent },
+      { path: 'reserve', component: ReserveUnitFormComponent },
+      { path: 'move-in', component: ReserveUnitFormComponent },
+      { path: 'confirmation', component: ConfirmationDataComponent },
+      { path: 'payReservationCharges', component: PayRentFormComponent },
+      { path: 'payMoveInCharges', component: PayRentFormComponent },
+      { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
+    ]
+   },
+  {
+    path: 'pay-rent', component: PayRentComponent,
+    children: childroute
+  },
+  { path: 'forgot-password', component: ForgotPasswordComponent },
+  { path: 'review', component: HomeComponent,
+    resolve: {
+        url: 'externalUrlRedirectResolver'
     },
-    { path: 'forgot-password', component: ForgotPasswordComponent },
-    { path: 'review', component: HomeComponent,
-      resolve: {
-          url: 'externalUrlRedirectResolver'
-      },
-      data: {
-          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJu81QPs_6wogRwrH8unQ4YvU'
-      }
-    },
-    { path: 'error', component: ErrorHandlerComponent },
-    { path: '**', component: ErrorComponent }
-  ];
+    data: {
+        externalUrl: `${reviewURL}`
+    }
+  },
+  { path: 'error', component: ErrorHandlerComponent },
+  { path: '**', component: ErrorComponent }
+];
+
 
 export const iFrameRoutes = [
-    // Fallback when no prior route is matched
-    { path: '', component: HomeComponent },
-    { path: 'rent-now', component: RentNowIframePageComponent },
-    { path: 'pay-rent', component: PaymentIframePageComponent },
-    { path: 'storage-tips', component: StorageTipsComponent },
-    { path: 'view-rates', component: ViewRatesIframePageComponent },
-    { path: 'reserve-unit', component: ReserveUnitIframePageComponent },
-    { path: 'storageTips', component: StorageTipsComponent },
-    { path: 'contact-us', component: ContactComponent },
-    { path: 'unit-sizer', component: UnitSizerIframePageComponent},
-    { path: 'review', component: HomeComponent,
-      resolve: {
-          url: 'externalUrlRedirectResolver'
-      },
-      data: {
-          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJu81QPs_6wogRwrH8unQ4YvU'
-      }
+  // Fallback when no prior route is matched
+  { path: '', component: HomeComponent },
+  { path: 'pay-rent', component: PaymentIframePageComponent },
+  { path:  `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
+  { path: `${environment.locationName}/view-rates`, component: ViewRatesIframePageComponent },
+  { path: `${environment.locationName}/reserve-unit`, component: ReserveUnitIframePageComponent },    
+  { path: 'contact-us', component: ContactComponent },
+  { path: 'unit-sizer', component: UnitSizerComponent },
+  { path: 'privacy-policy', component: PrivacyPolicyComponent },
+  { path: 'review', component: HomeComponent,
+    resolve: {
+        url: 'externalUrlRedirectResolver'
     },
-    { path: 'error', component: ErrorHandlerComponent },
-    { path: '**', component: ErrorComponent }
-  ];
+    data: {
+        externalUrl: `${reviewURL}`
+    }
+  },
+  { path: 'error', component: ErrorHandlerComponent },
+  { path: '**', component: ErrorComponent }
+];
+
+//  export const apiRoutes = [
+//     // Fallback when no prior route is matched
+//     { path: '', component: HomeComponent },
+//     { path: 'unit-sizer', component: UnitSizerComponent},
+//     { path: 'storage-tips', component: StorageTipsComponent },
+//     { path: 'reserve-unit', component: ReserveComponent },
+//     { path: 'storageTips', component: StorageTipsComponent },
+//     { path: 'contact-us', component: ContactComponent },
+//     {
+//       path: 'view-rates',
+//       component: ViewRatesComponent,
+//       children: [
+//         { path: '', component: ViewRatesPageComponent },
+//         { path: 'reserve', component: ReserveUnitFormComponent },
+//         { path: 'move-in', component: ReserveUnitFormComponent },
+//         { path: 'confirmation', component: ConfirmationDataComponent },
+//         { path: 'payReservationCharges', component: PayRentFormComponent },
+//         { path: 'payMoveInCharges', component: PayRentFormComponent },
+//       ]
+//      },
+//     {
+//       path: 'pay-rent', component: PaymentComponent,
+//       children: [
+//         {path: '', redirectTo: 'login', pathMatch: 'full'},
+//         {path: 'login', component: LoginComponent },
+//         {path: 'forgotPassword', component: ForgotPasswordComponent },
+//         {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+//         {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
+//         { path: 'verifyCode', component: VerifyCodeComponent },
+//         { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
+//         // canActivate: [VerifictionCodeGuard]
+//       ]
+//     },
+//     { path: 'forgot-password', component: ForgotPasswordComponent },
+//     { path: 'review', component: HomeComponent,
+//       resolve: {
+//           url: 'externalUrlRedirectResolver'
+//       },
+//       data: {
+//           externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJu81QPs_6wogRwrH8unQ4YvU'
+//       }
+//     },
+//     { path: 'error', component: ErrorHandlerComponent },
+//     { path: '**', component: ErrorComponent }
+//   ];
+
+
+
+
+
+
+
+
+
+// export const iFrameRoutes = [
+//     // Fallback when no prior route is matched
+//     { path: '', component: HomeComponent },
+//     { path: 'rent-now', component: RentNowIframePageComponent },
+//     { path: 'pay-rent', component: PaymentIframePageComponent },
+//     { path: 'storage-tips', component: StorageTipsComponent },
+//     { path: 'view-rates', component: ViewRatesIframePageComponent },
+//     { path: 'reserve-unit', component: ReserveUnitIframePageComponent },
+//     { path: 'storageTips', component: StorageTipsComponent },
+//     { path: 'contact-us', component: ContactComponent },
+//     { path: 'unit-sizer', component: UnitSizerIframePageComponent},
+//     { path: 'review', component: HomeComponent,
+//       resolve: {
+//           url: 'externalUrlRedirectResolver'
+//       },
+//       data: {
+//           externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJu81QPs_6wogRwrH8unQ4YvU'
+//       }
+//     },
+//     { path: 'error', component: ErrorHandlerComponent },
+//     { path: '**', component: ErrorComponent }
+//   ];

@@ -1,12 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 import { unitSizer } from '../data/unitSizer';
 import { Title, Meta } from '@angular/platform-browser';
+import { CanonicalService } from "../services/canonical.service";
+import { unitSizerPageTitle, unitSizerPageContent } from "../data/title";
+import { unitSizerHeading } from "../data/heading";
+
+
 @Component({
   selector: 'app-unit-sizer',
   templateUrl: './unit-sizer.component.html',
   styleUrls: ['./unit-sizer.component.scss']
 })
 export class UnitSizerComponent implements OnInit {
+  unitSizerHeading: string;
+  unitSizerPageTitle: string;
+  unitSizerPageContent: string;
+
   unitsizers: any;
   selectedUnit: any;
   h: number;
@@ -15,13 +24,16 @@ export class UnitSizerComponent implements OnInit {
 
   constructor(
     private titleService: Title,
-    private meta: Meta
+    private meta: Meta,
+    private canonical: CanonicalService
   ) {
-    this.meta.addTag({
+    this.fetchMetaData();
+    this.meta.updateTag({
       name: 'description',
-      content: `Take a moment to review our unit sizes, and what will fit inside with this easy visual guide!`
+      content: `${this.unitSizerPageContent}`
     });
-    this.titleService.setTitle(`Unit Sizer | Lois Stor-All`);
+    this.titleService.setTitle(`${this.unitSizerPageTitle}`);
+    this.canonical.create();
   }
 
   ngOnInit() {
@@ -30,8 +42,18 @@ export class UnitSizerComponent implements OnInit {
     this.j = this.i + 1;
     this.fetchUnitSizer();
     window.scrollTo(0, 0);
+    this.fetchContactHeading();
   }
 
+
+  public fetchMetaData() {
+    this.unitSizerPageTitle = unitSizerPageTitle;
+    this.unitSizerPageContent = unitSizerPageContent;
+  }
+
+  public fetchContactHeading() {
+    this.unitSizerHeading = unitSizerHeading;
+  }
 
   /**
    * fetchUnitSizer

@@ -4,7 +4,10 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class DataSharingService {
-
+  paymentSuccess: boolean;
+  navigateToPayment: boolean;
+  strTenantToken: string;
+  strTempTenantToken: string;
   verificationCode: string;
   navigateToPrevious: string;
   navigateToReserve: boolean;
@@ -12,6 +15,32 @@ export class DataSharingService {
   isValueUpdated: boolean;
   changePassword: boolean;
   insuranceChoiceId: number;
+  showLogin: boolean;
+  periodID: number;
+  strAccessCode: string;
+  strConfirmation: string;
+  addingTenant = false;
+  period: string;
+  apiKey = '';
+  paymentNavigation: string;
+  isDataUpdated: boolean;
+  isDataSaved: boolean;
+  PaymentAmount: number;
+  CCApprovalCode: string;
+  eventName: string;
+  signUpForAutoPay: boolean;
+  showAltDetails: boolean;
+  showMilitaryDetails: boolean;
+  amountToPayThankYou: number;
+
+  cardDetailsObject = {
+    CCNumber: '',
+    CCBillingAccountName: '',
+    CCExpirationMonth: '',
+    CCExpirationYear: '',
+    CCBillingAddress: '',
+    CCBillingZIP: '',
+  };
 
 
   MoveInData = {
@@ -59,6 +88,23 @@ export class DataSharingService {
     City: '',
     State: '',
     ZIP: '',
+    DriversLicense: ' ',
+    DriversLicenseExpDate: ' ',
+    DateOfBirth: ' ',
+    MilitaryType: 0,
+    MilitaryBranch: 0,
+    MilitaryID: ' ',
+    DeployedUntil: ' ',
+    MilitaryDivision: ' ',
+    CommandingOfficer: ' ',
+    CommandingOfficerPhone: ' ',
+    AlternateName: '',
+    AlternatePhone: '',
+    AlternateAddressLine1: '',
+    AlternateAddressLine2: '',
+    AlternateCity: '',
+    AlternateState: '',
+    AlternateZIP: ''
   };
 
 
@@ -67,7 +113,7 @@ export class DataSharingService {
     intUnitTypeID: 0,
   };
 
-  period: string;
+  // period: string; 
 
 constructor() {
  this.getUnitData();

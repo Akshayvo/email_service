@@ -79,6 +79,7 @@ export class UnpaidAR {
   Description: string;
   Amount: number;
   AmountOwed: number;
+  amountOwed: number;
   demoAmountOwed: number;
   Comments: string;
 
@@ -88,6 +89,7 @@ export class UnpaidAR {
     Description: string,
     Amount: number,
     AmountOwed: number,
+    // amountOwed: number; 
     demoAmountOwed: number,
     Comments: string
   ) {
@@ -96,6 +98,7 @@ export class UnpaidAR {
     this.Description = Description;
     this.Amount = Amount;
     this.AmountOwed = AmountOwed;
+    // amountOwed: number; 
     this.demoAmountOwed = demoAmountOwed;
     this.Comments = Comments;
   }
@@ -104,6 +107,7 @@ export class UnpaidAR {
 
 export class StrTempTenantToken {
   strTempTenantToken: string;
+  intErrorCode: number;
 
   constructor(strTempTenantToken: string) {
     this.strTempTenantToken = strTempTenantToken;

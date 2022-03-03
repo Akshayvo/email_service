@@ -6,6 +6,14 @@ import { FetchDataService } from '../services/fetch-data.service';
 import { UnitTypes, LstUnitTypes } from '../models/unittypes';
 import { UaParserService } from '../../services/ua-parser.service';
 import { Subscription } from 'rxjs';
+import { viewRatesPageTitle, viewRatesPageContent } from "../../data/title";
+import { Router } from "@angular/router";
+import { CanonicalService } from "../../services/canonical.service";
+import { script } from "../../data/script";
+import { environment } from "../../../environments/environment";
+
+
+
 @Component({
   selector: 'app-view-rates',
   templateUrl: './view-rates.component.html',
@@ -24,6 +32,9 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
   openComponent = false;
   imagetype: any;
   imageBaseUrl: any;
+  viewRatesPageContent: string;
+  viewRatesPageTitle: string;
+  state: string;
 
  private isUnsubscribe$: Subscription;
 
@@ -33,13 +44,22 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
     private metaService: MetaService,
     private fetchDataService: FetchDataService,
     private uaParserService: UaParserService,
+    private canonical: CanonicalService,
+    private router: Router,
   ) {
-    this.meta.addTag({
-      name: 'description',
-      content: `Take a moment to review our affordable storage unit rates
-      and see if we have the right unit for your needs available!`
+    // this.meta.addTag({
+    //   name: 'description',
+    //   content: `Take a moment to review our affordable storage unit rates
+    //   and see if we have the right unit for your needs available!`
+    // });
+    this.state = script.state;
+    this.fetchMetaData();
+    this.meta.updateTag({
+      name: "description",
+      content: `${this.viewRatesPageContent}`,
     });
-    this.titleService.setTitle('View Rates | Lois Stor-All');
+    this.titleService.setTitle(`${this.viewRatesPageTitle}`);
+    this.canonical.create();
     this.metaService.createCanonicalURL();
     this.metaService.createCanonicalURL();
     this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
@@ -52,8 +72,31 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
     this.fetchViewRates();
     // this.getData();
   }
+
+  public navigate(location: any) {
+    if (
+      location === "/view-rates" ||
+      location === "/storage-tips" ||
+      location === "/reserve-unit"
+    ) {
+      this.router.navigate([`${environment.locationName}/${location}`]);
+    } else {
+      this.router.navigate([`${location}`]);
+    }
+  }
+
+  
   public fetchViewRates() {
     this.viewRates = dataViewRates;  }
+
+
+
+    public fetchMetaData() {
+      this.viewRatesPageContent = viewRatesPageContent;
+      this.viewRatesPageTitle = viewRatesPageTitle;
+    }
+
+
   /**
    *
    * @param event

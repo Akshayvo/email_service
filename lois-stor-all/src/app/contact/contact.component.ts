@@ -1,9 +1,20 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { WINDOW } from '@ng-toolkit/universal';
+import { Router } from "@angular/router";
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { Title, Meta } from '@angular/platform-browser';
 import { EmailService } from '../services/email.service';
 import { contact, hours } from '../data/contact';
+import { MetaService } from "../services/link.service";
+import { contactPageTitle, contactPageContent } from "../data/title";
+import { contactHeading } from "../data/heading";
+import { CanonicalService } from "../services/canonical.service";
+import {
+  contactPageScript,
+  ogContactPage,
+  twitterContactPage,
+} from "../data/script";
+
 
 
 @Component({
@@ -27,20 +38,46 @@ export class ContactComponent implements OnInit {
   submitted = false;
   mailSent = false;
   subject: string;
+  contactPageTitle: string;
+  contactPageContent: string;
+  contactHeading: string;
+  og: any;
+  twitter: any;
+  script: any;
 
   constructor(
     @Inject(WINDOW) private window: Window,
     private emailService: EmailService,
     private titleService: Title,
     private meta: Meta,
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
+    private router: Router,
+    private canonical: CanonicalService
   ) {
-    this.meta.addTag({
-      name: 'description',
-      content: `Do you have a question about our services or your account with us? Use
-      this form or call our office today!`
+    this.fetchScript();
+    this.loadScript();
+    this.fetchOg();
+    this.fetchTwitter();
+    this.og.forEach((element) => {
+      this.meta.updateTag({
+        property: element.property,
+        content: element.content,
+      });
     });
-    this.titleService.setTitle('Contact Us | Lois Stor-All');
+
+    this.twitter.forEach((element) => {
+      this.meta.updateTag({
+        name: element.name,
+        content: element.content,
+      });
+    });
+    this.fetchMetaData();
+    this.meta.updateTag({
+      name: 'description',
+      content: `${this.contactPageContent}`
+    });
+    this.titleService.setTitle(`${this.contactPageTitle}`);
+    this.canonical.create();
 
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
@@ -59,6 +96,38 @@ export class ContactComponent implements OnInit {
   }
 
   get f() { return this.contactForm.controls; }
+
+  public fetchOg() {
+    this.og = ogContactPage;
+  }
+
+  public fetchScript() {
+    this.script = contactPageScript;
+  }
+
+  public loadScript() {
+    const node = document.createElement("script"); // creates the script tag
+    node.type = "application/ld+json"; // set the script type
+    node.async = false; // makes script run asynchronously
+    // node.charset = 'utf-8';
+    node.innerHTML = JSON.stringify(this.script);
+    // append to head of document
+    document.getElementsByTagName("head")[0].appendChild(node);
+  }
+
+  public fetchTwitter() {
+    this.twitter = twitterContactPage;
+  }
+
+  public navigate(location: any) {
+    this.router.navigate([location]);
+  }
+
+  public fetchMetaData() {
+    this.contactPageTitle = contactPageTitle;
+    this.contactPageContent = contactPageContent;
+  }
+
   public fetchContactDetails() {
     this.contactInfo = contact;
   }
