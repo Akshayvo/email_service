@@ -103,7 +103,7 @@ export const apiRoutes = [
             { path: 'confirmation', component: ConfirmationDataComponent },
             { path: 'payReservationCharges', component: PayRentFormComponent },
             { path: 'payMoveInCharges', component: PayRentFormComponent },
-            { path: 'rent-sub/thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
+            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
           ]
         },
         // { path: 'move-in', component: ReserveComponent,
@@ -138,7 +138,7 @@ export const apiRoutes = [
             { path: 'confirmation', component: ConfirmationDataComponent },
             { path: 'payReservationCharges', component: PayRentFormComponent },
             { path: 'payMoveInCharges', component: PayRentFormComponent },
-            { path: 'rent-sub/thank-you', component: ThankYouComponent,  canActivate: [ThankYouGuard] }
+            { path: 'thank-you', component: ThankYouComponent,  canActivate: [ThankYouGuard] }
           ]
         },
         // { path: 'move-in', component: ReserveComponent,

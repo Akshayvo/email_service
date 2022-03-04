@@ -6,16 +6,15 @@ import { Injectable } from '@angular/core';
 
 export class DataSharingService {
   locationAPIKey = {
-    // loc1: "XjJ7OEY0VzZHM0k6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", //    only for staging
     loc1: "dTJXOUQzUDdINE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", // 29374 south wenatchee
     loc2: "dTJXOUQzUDlIOU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O",  // 29399 Leo's self storage
     loc3: ""
   };
 
 //  locationAPIKey = {                                                    
-//     loc1: 'UDIoOEQ0YzZ2NDw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28464
-//     loc2: 'XjJ7OEY0VzZHNUk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28465
-//     loc3: 'aDJLOGk0KzZBNng6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28466
+//     loc1: 'dzJ0OVc0SjYqMk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 28465
+//     loc2: 'dzJ0OVc0SjYqMk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28465
+//     loc3: 'dzJ0OVc0SjYqMk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28466
 //   };
 
   paymentSuccess: boolean;

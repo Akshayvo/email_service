@@ -6,14 +6,14 @@ export const featuresHead = [
         alt: 'Icon art displaying a location pin'
     },
     {
-        label: 'Stellar Customer Service',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg',
-        alt: 'Customer Service Representative Icon'
-    },
-    {
         label: 'Affordable Self Storage Rates',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/hand.svg',
         alt: 'Icon of a hand holding money'
+    },
+    {
+        label: 'Locally Owned and Operated',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/team.svg',
+        alt: 'Icon of people standing together'
     },
     {
         label: 'Security Cameras on Premises',

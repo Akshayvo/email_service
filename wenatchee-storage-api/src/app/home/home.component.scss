@@ -43,9 +43,9 @@
 
 .jumbotorn-skew-text {
   transform: skew(0deg);
-  width: 400px;
+  width: 530px;
   position: absolute;
-  top: 20%;
+  top: 18%;
   color: $white;
 
   p {
@@ -75,6 +75,10 @@
     min-width: 200px;
   }
   
+}
+
+h2{
+  font-size: 2.5rem;
 }
 
 .service {
