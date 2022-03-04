@@ -1,10 +1,10 @@
-
 import { Component, OnInit , OnDestroy } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { DataSharingService } from '../services/data-sharing.service';
 import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { SignOutService } from '../services/sign-out.service';
+import { environment } from '../../../environments/environment';
 
 
 @Component({
@@ -29,6 +29,7 @@ export class ThankYouComponent implements OnInit, OnDestroy {
   eventName: string;
   paymentNavigationUrl: string;
   locationName: string;
+  facilityName:string;
   paymentSuccess = false;
 
   MoveIn = {
@@ -47,12 +48,13 @@ export class ThankYouComponent implements OnInit, OnDestroy {
     public router: Router,
     private signOutService: SignOutService,
   ) {
+    this.fetchData();
     this.meta.addTag({
       name: 'description',
       content: `We've received your reservation! One of our friendly staff will be in touch!`
     });
     this.titleService.setTitle('Thank You For Reserving Your Unit at Self Storage Facility!');
-  }
+  } 
 
   ngOnInit() {
     this.strConfirmation = this.dataSharingService.strConfirmation;
@@ -91,6 +93,10 @@ export class ThankYouComponent implements OnInit, OnDestroy {
 
   public navigate(location: any) {
     this.router.navigate([location]);
+  }
+
+  public fetchData(){
+    this.facilityName = environment.facilityName;
   }
 
   signOut(logOut: any) {
