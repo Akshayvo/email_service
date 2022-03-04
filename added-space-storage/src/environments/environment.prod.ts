@@ -14,7 +14,7 @@ export const environment = {
   facilityName: 'Added Space Self Storage',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: 'https://added-space-storage-staging.netlify.app',
+  websiteUrl: 'http://www.storageturlock.com',
   // APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north
   APIKey: ``, // 
 

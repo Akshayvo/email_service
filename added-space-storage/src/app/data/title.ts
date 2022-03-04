@@ -24,3 +24,6 @@ export const thankYouPageContent = `We've received your reservation! One of our 
 
 export const privacyPolicyPageTitle = ``;
 export const privacyPolicyPageContent = ``;
+
+export const faqPageTitle = `Frequently Asked Questions`;
+export const faqPagecontent = `Have questions about the services offered at Added Space Self Storage? Use our FAQ page to learn more about us!`;

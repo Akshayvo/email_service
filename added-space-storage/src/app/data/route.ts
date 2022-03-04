@@ -29,6 +29,7 @@ import { environment } from '../../environments/environment';
 import { ThankYouComponent } from '../api-bundle/thank-you/thank-you.component';
 import { ThankYouGuard } from '../thank-you.guard';
 import { PrivacyPolicyComponent } from '../privacy-policy/privacy-policy.component';
+import { FaqComponent } from "../faq/faq.component";
 
 const withoutTab = [
   {path: '', redirectTo: 'login', pathMatch: 'full'},
@@ -81,6 +82,7 @@ const reviewURL = ``
     // Fallback when no prior route is matched
     { path: '', component: HomeComponent },
     { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
+    { path: "frequently-asked-questions", component: FaqComponent },
     { path: `${environment.locationName}/reserve-unit`, component: ReserveComponent },
     { path: 'contact-us', component: ContactComponent },
     { path: 'unit-sizer', component: UnitSizerComponent },

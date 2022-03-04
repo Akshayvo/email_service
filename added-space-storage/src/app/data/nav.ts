@@ -22,15 +22,20 @@ export const navLinks = [
     //     path: '/pay-rent'
     // },
     {
-        label: 'STORAGE TIPS',
-        path: `${environment.locationName}/storage-tips`
-    },
-    {
         label: 'UNIT SIZER',
         path: '/unit-sizer'
     },
     {
+        label: 'STORAGE TIPS',
+        path: `${environment.locationName}/storage-tips`
+    },
+   
+    {
         label: 'CONTACT US',
         path: '/contact-us'
+    },
+    {
+        label: "FAQ",
+        path: "/frequently-asked-questions",
     },
 ];

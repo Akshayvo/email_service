@@ -32,3 +32,30 @@
   from = "/*"
   to = "/index.html"
   status = 200
+[[redirects]]
+  from = "http://www.storageturlock.com/mobile/"
+  to = "https://www.storageturlock.com/"
+[[redirects]]
+  from = "http://www.storageturlock.com/check-availability.html"
+  to = "https://www.storageturlock.com/"
+[[redirects]]
+  from = "http://www.storageturlock.com/directions.html"
+  to = "https://www.storageturlock.com/"
+[[redirects]]
+  from = "http://www.storageturlock.com/mobile/directions.html"
+  to = "https://www.storageturlock.com/"
+[[redirects]]
+  from = "http://www.storageturlock.com/storage-units.html"
+  to = "https://www.storageturlock.com/california/turlock/view-rates"
+[[redirects]]
+  from = "http://www.storageturlock.com/mobile/specials.html"
+  to = "https://www.storageturlock.com/"
+[[redirects]]
+  from = "http://www.storageturlock.com/mobile/sizes.html"
+  to = "https://www.storageturlock.com/california/turlock/view-rates"
+[[redirects]]
+  from = "http://www.storageturlock.com/contact.html"
+  to = " https://www.storageturlock.com/contact-us"
+[[redirects]]
+  from = "http://www.storageturlock.com/mobile/contact.html"
+  to = "https://www.storageturlock.com/contact-us"

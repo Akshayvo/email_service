@@ -15,16 +15,16 @@ export const uniTtypess=[
     uniTtypes:'10 X 20',
     unitRate:155
   },{
-    uniTtypes:'11 X 27(297 sq ft)',
+    uniTtypes:'11 X 27',
     unitRate:235
   },{
-    uniTtypes:'12 X 33(396 sq ft)',
+    uniTtypes:'12 X 33',
     unitRate:317
   },{
-    uniTtypes:"Covered RV Parking - 22' Long ",
+    uniTtypes:"Covered RV Parking - 12' x 22' ",
     unitRate:90
   },{
-    uniTtypes:'Covered RV Parking - 44" long space',
+    uniTtypes:"Covered RV Parking - 12' x 44'",
     unitRate:180
   }
 ]
@@ -68,7 +68,7 @@ export const unitSizer = [
       heading: '8\' x 12\' Storage Unit',
       alt: '8\' x 12\' Storage Unit Graphic ',
       unitImg: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x10.png',
-      data: `This unit is approximately 100 sq feet of space that can hold the contents of two rooms, such as:`,
+      data: `This unit is approximately 96 sq feet of space that can hold the contents of two rooms, such as:`,
       amenities: [
         { content: 'Chairs', },
         { content: 'Small desks', },
@@ -117,7 +117,7 @@ export const unitSizer = [
       heading: '11\' x 27\' Storage Unit',
       alt: '11\' x 27\' Storage Unit Graphic ',
       unitImg: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x30.png',
-      data: `This unit is approximately 300 sq feet of space that can hold the contents of a small house.`,
+      data: `This unit is approximately 297 sq feet of space that can hold the contents of a small house.`,
       amenities: [
         { content: 'Appliances', },
         { content: 'Car or Small Boat', },
@@ -133,7 +133,7 @@ export const unitSizer = [
       heading: '12\' x 33\' Storage Unit',
       alt: '12\' x 33\' Storage Unit Graphic ',
       unitImg: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x30.png',
-      data: `This unit is approximately 300 sq feet of space that can hold the contents of a small house.`,
+      data: `This unit is approximately 396 sq feet of space that can hold the contents of a small house.`,
       amenities: [
         { content: 'Appliances', },
         { content: 'Car or Small Boat', },

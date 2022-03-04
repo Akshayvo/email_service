@@ -1,25 +1,25 @@
-<div class="">
+<div class=""> 
   <div class="jumbotron-container">
     <div class="jumbotron-top">
     <div class="jumbotron px-0 m-0" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
       <div class=" jumbotorn-skew-style" [ngClass]="template === 'darkTheme' ? 'bg-translucent-dark' : 'bg-translucent-light'">
-      </div>
-      <div class="container">
-        <div class="jumbotorn-skew-text">
+      <!-- </div>
+      <div class="container"> -->
+        <div class="jumbotorn-skew-text container p-4">
           <div class="disp" *ngFor="let jumbotron of jumbotron">
-            <h2  class="my-4">
+            <h2  class="my-4 text-center">
               {{jumbotron.h2}}
             </h2>
-          <p class="text-justify">{{jumbotron.blurb}}</p>
+          <p class="text-center">{{jumbotron.blurb}}</p>
           </div>
-          <div class="jumbotorn-button">
+          <div class="jumbotorn-button text-center">
             <a class="btn btn-lg btn-outline-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>
             <a class="btn btn-lg btn-primary" (click)="navigate('/contact-us')" role="button">Contact Us</a>
           </div>
           </div>
         </div>
       </div>
-      </div>
+      </div> 
     <div class="jumbotron-bottom">
       <div class="container">
         <div class="feature row">
@@ -79,7 +79,7 @@
                 </div>
                 <!-- <ng-template #other_content>&nbsp;<h4>{{contact.data}}</h4></ng-template><br> -->
               </div>
-              <!-- <h4><b>Facility Hours:</b></h4> -->
+              <h4><b>Business Hours:</b></h4> 
               <div class="display-contact" *ngFor="let hour of hours">
                 <h4 *ngIf="hour.label">
                   <b>{{ hour.label }}</b
@@ -126,7 +126,7 @@
             <div class="col-md-12 py-3">
               <h2 class="heading pb-4">Getting Started</h2>
               <p class="pb-4">{{gettingStarted}}</p>
-              <a class="btn btn-lg btn-primary" (click)="navigate('/view-rates')" role="button">View Unit Now!</a>
+              <a class="btn btn-lg btn-primary"  role="button" href="tel:2096320107">Click to Call and Reserve Your Unit</a>
             </div>
           </div>
         </div>

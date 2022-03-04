@@ -60,10 +60,10 @@ img {
   }
 
   button {
-    border-color: $primary;
+    border-color: $black;
 
     .iconColor {
-      color: $primary;
+      color: $black;
     }
   }
 
@@ -82,6 +82,9 @@ img {
     color: $black;
   }
 }
+
+
+
 
 @media screen and (max-width: 1199px) and (min-width: 992px) {
   .navbar {
