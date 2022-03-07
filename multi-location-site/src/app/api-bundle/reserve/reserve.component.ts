@@ -17,6 +17,7 @@ export class ReserveComponent implements OnInit {
   tabs: any;
   navTo: any;
   heading: string;
+  Name: string;
 
   constructor(private router: Router,
     private dataSharingService: DataSharingService,
@@ -32,6 +33,7 @@ export class ReserveComponent implements OnInit {
   }
 
   public isSomePage() {
+    this.Name = environment.facilityName;
     if (this.router.url.includes(`${environment.locationName}/location-1`)) {
       this.id = 1;
       this.heading = headingReservePageLocation1;

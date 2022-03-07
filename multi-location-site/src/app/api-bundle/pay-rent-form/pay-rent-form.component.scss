@@ -16,7 +16,7 @@
 
 .modal-position {
   position: absolute;
-  left: 225px;
+  left: 285px;
 }
 
 table {
@@ -145,5 +145,13 @@ table {
   .modal-dialog {
     max-width: 650px;
     margin: 1.75rem auto;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+  .modal-position{
+    top: 23%;
+    left: 180px;
   }
 }
