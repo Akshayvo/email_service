@@ -38,7 +38,7 @@ export const aboutUs = [
         p: `Added Space Self Storage has been serving Turlock and the surrounding communities with clean, well-lit, and affordable self storage and vehicle parking since 1988. As a family owned and operated business, we understand the value of customer service. That's why we go the extra mile every day to make your stay with us a convenient one.`,
     },
     {
-        p: `Our facility offers all of the conveniences you've come to expect from our easy rental terms and auto-pay services to a fully-paved and well-lit facility to reduce dust and make loading or unloading outside of regular hours. The commercial units at Added Space Self Storage are accessible 24 hours a day(on request). After over 30 years of experience with self storage, our friendly and knowledgeable staff are always happy to help!`,
+        p: `Our facility offers all of the conveniences you've come to expect from our easy rental terms and auto-pay services to a fully-paved and well-lit facility to reduce dust and make loading or unloading easier. The commercial units at Added Space Self Storage are accessible 24 hours a day. After over 30 years of experience with self storage, our friendly and knowledgeable staff are always happy to help!`,
     },
     {
         p: `We also understand that security is also a top priority for self storage users. That's why our facility is fully-fenced, well-lit, and has security cameras placed around the grounds. Our staff also perform routine lot inspections to keep an eye on the facility.`,

@@ -104,10 +104,10 @@ export const unitSizer = [
       data: `This unit is approximately 200 sq feet of space that can hold the contents of about five rooms.`,
       amenities: [
         { content: 'Appliances', },
-        { content: 'Car or Small Boat', },
+        // { content: 'Car or Small Boat', },
         { content: 'Furniture', },
         { content: 'Bookcases', },
-        { content: 'Tow Trailer', },
+        // { content: 'Tow Trailer', },
       ],
     },
   
@@ -120,11 +120,11 @@ export const unitSizer = [
       data: `This unit is approximately 297 sq feet of space that can hold the contents of a small house.`,
       amenities: [
         { content: 'Appliances', },
-        { content: 'Car or Small Boat', },
+        // { content: 'Car or Small Boat', },
         { content: 'Furniture', },
         { content: 'Mattresses', },
         { content: 'Bookcases', },
-        { content: 'Tow Trailer', },
+        // { content: 'Tow Trailer', },
       ],
     },
     {
