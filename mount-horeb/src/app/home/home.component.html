@@ -8,9 +8,9 @@
             <div class="disp" *ngFor="let jumbotron of jumbotron">
               <h1 class="my-4 text-center">{{jumbotron.h1}}</h1>
               <h2  class="my-4 text-center">{{jumbotron.h2}}</h2> 
-              <!-- <h1 class="my-4 text-center">NOW OPEN!</h1>
-              <h2  class="my-4 text-center">24-Hour Access Self Storage Units</h2>  -->
+      
             <p class="text-center">{{jumbotron.blurb}}</p>
+            <p class="text-center">{{jumbotron.blurbTwo}}</p>
             </div>
             <div class="jumbotorn-button text-center">
               <a class="btn btn-lg btn-outline-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>

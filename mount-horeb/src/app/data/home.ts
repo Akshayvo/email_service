@@ -92,8 +92,7 @@ export const jumbotron = [
     h1: `NOW OPEN!`,
     h2: `24-Hour Access Self Storage Units`,
     blurb: `Mount Horeb Self Storage is Mount Horeb's newest self storage. Our self storage facility uses top-of-the-line technology and self storage management experience to make your next storage project fast, easy, and affordable. Check out our current pricing, then give our team a call to make a reservation!`,
+    blurbTwo:`Regular, drive up access, ambient temperature, indoor and outdoor access climate control(drive up access climate control). oversized units are for boats, RVs and campers.`
   },
-  {
-    blurb: `Regular, drive up access, ambient temperature, indoor and outdoor access climate control(drive up access climate control). oversized units are for boats, RVs and campers.`,
-  },
+  
 ];
