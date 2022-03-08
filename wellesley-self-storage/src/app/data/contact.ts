@@ -23,9 +23,9 @@ export const contact = [
     {
         id: 3,
         label: 'Phone:',
-        data: '',
-        class: '',
-        redirect: 'tel:',
+        data: '(519) 503-2889',
+        class: 'fas fa-phone mx-2 iconColor',
+        redirect: 'tel:5195032889',
     }
 ];
 
