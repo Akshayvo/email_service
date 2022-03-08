@@ -74,6 +74,7 @@ const withTab = [
       { path: 'login', component: LoginComponent },
       { path: 'forgotPassword', component: ForgotPasswordComponent },
       { path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+      { path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
       { path: 'auto-pay', component: AutoPayComponent, canActivate: [AuthGuard]},
       { path: 'verifyCode', component: VerifyCodeComponent },
       { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
@@ -120,9 +121,15 @@ export const apiRoutes = [
             { path: 'confirmation', component: ConfirmationDataComponent },
             { path: 'payReservationCharges', component: PayRentFormComponent },
             { path: 'payMoveInCharges', component: PayRentFormComponent },
-            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
-
+            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] },
+            { path: 'rent-sub', component: RentSubComponent,
+            children: 
+            [
+            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] },
+            ]
+          },
           ]
+          
         },
         // { path: 'photos', component: PhotosComponent },
         { path: 'about', component: AboutUsComponent },
@@ -161,8 +168,13 @@ export const apiRoutes = [
             { path: 'confirmation', component: ConfirmationDataComponent },
             { path: 'payReservationCharges', component: PayRentFormComponent },
             { path: 'payMoveInCharges', component: PayRentFormComponent },
-            { path: 'thank-you', component: ThankYouComponent,  canActivate: [ThankYouGuard] }
-
+            { path: 'thank-you', component: ThankYouComponent,  canActivate: [ThankYouGuard] },
+            { path: 'rent-sub', component: RentSubComponent,
+            children: 
+            [
+            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] },
+            ]
+          },
           ]
         },
         // { path: 'photos', component: PhotosComponent },
@@ -202,7 +214,13 @@ export const apiRoutes = [
             { path: 'confirmation', component: ConfirmationDataComponent },
             { path: 'payReservationCharges', component: PayRentFormComponent },
             { path: 'payMoveInCharges', component: PayRentFormComponent },
-            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
+            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] },
+            { path: 'rent-sub', component: RentSubComponent,
+            children: 
+            [
+            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] },
+            ]
+          },
           ]
         },
         // { path: 'photos', component: PhotosComponent },
