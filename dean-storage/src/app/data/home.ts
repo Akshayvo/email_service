@@ -16,7 +16,7 @@ export const featuresList = [
 
 export const aboutUsAlt = `A row of self storage units with metal roll up doors, one door is open to reveal personal belongings`;
 
-export const aboutUsHeading = `Affordable Self Storage Units in Lyon's N.Y.`;
+export const aboutUsHeading = `Affordable Self Storage Units in Lyons N.Y.`;
 
 export const aboutUs = [
     {
@@ -30,7 +30,7 @@ export const aboutUs = [
         p: `Whether you're a local business that understands the value of affordable storage space, or a residential storage user seeking some extra elbow room in the garage, attic, or basement, Dean Storage has you covered!`,
     },
     {
-        p: `Take a moment to check out our current inventory and reserve your unit today. Still have questions? Give us a call and learn more about how Dean Storage can help take care of all your storage needs!`,
+        p: `Take a moment to check out our current inventory and rent your unit today. Still have questions? Give us a call and learn more about how Dean Storage can help take care of all your storage needs!`,
     }
     
 ];
@@ -60,14 +60,14 @@ export const feature = [
     {
         // tslint:disable-next-line:max-line-length
         path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/hand.svg`,
-        label: 'Icon of a hand holding money',
+        label: 'Affordable Rates',
         alt: 'Icon of a hand holding money'
     },
 ];
 
 export const jumbotron = [
     {
-        h2: `Affordable Self Storage Units in Lyon's`,
-        blurb: `Whether you're a residential user seeking a little extra elbow room during a move, or renovation, or if you're a business in need of 24 hour access to equipment and supplies, Dean Storage has you covered! Our well-lit, modern facility has all of the amenities you need for a convenient self storage experience from online tenant portal to an easy to use autopay service. Check our available inventory, and give us a call today!`,
+        h2: `Affordable Self Storage Units in Lyons`,
+        blurb: `Whether you're a residential user seeking a little extra elbow room during a move, or renovation, or if you're a business in need of 24 hour access to equipment and supplies, Dean Storage has you covered! Our brand new, modern facility has all of the amenities you need for a convenient self storage experience from online tenant portal to an easy to use autopay service. Check our available inventory, and give us a call today!`,
     }
 ];

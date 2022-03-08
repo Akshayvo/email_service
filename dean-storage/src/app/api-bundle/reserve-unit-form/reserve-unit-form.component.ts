@@ -202,49 +202,67 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
           (() => this.showMilitaryDetails === false),
           Validators.required
         )],
-        DateOfBirth: ['', conditionalValidator(
-          (() => this.showMilitaryDetails === false),
-          Validators.required
-        )],
-        MilitaryBranch: ['', conditionalValidator(
-          (() => this.showMilitaryDetails === false),
-          Validators.required
-        )],
-        MilitaryDivision: ['', conditionalValidator(
-          (() => this.showMilitaryDetails === false),
-          Validators.required
-        )],
-        MilitaryType: ['', conditionalValidator(
-          (() => this.showMilitaryDetails === false),
-          Validators.required
-        )],
-        MilitaryID: ['', conditionalValidator(
-          (() => this.showMilitaryDetails === false),
-          Validators.required
-        )],
-        DeployedUntil: ['', conditionalValidator(
-          (() => this.showMilitaryDetails === false),
-          Validators.required
-        )],
-        CommandingOfficer: ['', conditionalValidator(
-          (() => this.showMilitaryDetails === false),
-          Validators.required
-        )],
-        CommandingOfficerPhone: ['', conditionalValidator(
-          (() => this.showMilitaryDetails === false),
+        // DateOfBirth: ['', conditionalValidator(
+        //   (() => this.showMilitaryDetails === false),
+        //   Validators.required
+        // )],
+        // MilitaryBranch: ['', conditionalValidator(
+        //   (() => this.showMilitaryDetails === false),
+        //   Validators.required
+        // )],
+        // MilitaryDivision: ['', conditionalValidator(
+        //   (() => this.showMilitaryDetails === false),
+        //   Validators.required
+        // )],
+        // MilitaryType: ['', conditionalValidator(
+        //   (() => this.showMilitaryDetails === false),
+        //   Validators.required
+        // )],
+        // MilitaryID: ['', conditionalValidator(
+        //   (() => this.showMilitaryDetails === false),
+        //   Validators.required
+        // )],
+        // DeployedUntil: ['', conditionalValidator(
+        //   (() => this.showMilitaryDetails === false),
+        //   Validators.required
+        // )],
+        // CommandingOfficer: ['', conditionalValidator(
+        //   (() => this.showMilitaryDetails === false),
+        //   Validators.required
+        // )],
+        // CommandingOfficerPhone: ['', conditionalValidator(
+        //   (() => this.showMilitaryDetails === false),
+        //   Validators.required
+        // ),],
+        AlternateName: ['', conditionalValidator(
+          (() => this.showAltDetails === false),
           Validators.required
         ),],
-        AlternateName: [''],
-        AlternatePhone:   ['',
+        AlternatePhone:   ['', [  conditionalValidator(
+          (() => this.showAltDetails === false),
+          Validators.required
+        ),
           Validators.pattern(
             '^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$'
             )
-        ],
-        AlternateAddressLine1: [''],
+        ]],
+        AlternateAddressLine1: ['', conditionalValidator(
+          (() => this.showAltDetails === false),
+          Validators.required
+        ),],
         AlternateAddressLine2: [''],
-        AlternateCity: [''],
-        AlternateState: [''],
-        AlternateZIP: [''],
+        AlternateCity: ['', conditionalValidator(
+          (() => this.showAltDetails === false),
+          Validators.required
+        ),],
+        AlternateState: ['', conditionalValidator(
+          (() => this.showAltDetails === false),
+          Validators.required
+        ),],
+        AlternateZIP: ['', conditionalValidator(
+          (() => this.showAltDetails === false),
+          Validators.required
+        ),],
       }),
 
 
