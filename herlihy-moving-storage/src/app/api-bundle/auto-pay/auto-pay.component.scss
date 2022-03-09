@@ -126,6 +126,12 @@ table {
   }
 }
 
+.align-items-center{
+  a{
+    color:#000 !important;
+  }
+}
+
 @media only screen and (max-width: 991px) and (min-width: 768px) {
   .btn-link {
     font-size: 0.7rem;
