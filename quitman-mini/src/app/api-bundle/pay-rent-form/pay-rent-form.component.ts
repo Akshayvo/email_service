@@ -482,10 +482,15 @@ public navigateToPrevious() {
       });
   }
 
-  public navigateToConfirmation(location: any) {
-    this.router.navigate([`${environment.locationName}/reserve-unit/${location}`]);
-    // this.router.navigate([`${environment.locationName}/${this.facilityLocation}/reserve-unit/${location}`]);
-  }
+    public navigateToConfirmation_moveIn(location: any) {
+        // this.router.navigate([`${environment.locationName}/reserve-unit/${location}`]); 
+        this.router.navigate([`${environment.locationName}/${this.facilityLocation}/move-in/${location}`]);
+      }
+    
+      public navigateToConfirmation_reserveUnit(location: any) {
+        // this.router.navigate([`${environment.locationName}/reserve-unit/${location}`]); 
+         this.router.navigate([`${environment.locationName}/${this.facilityLocation}/reserve-unit/${location}`]);
+       }
 
   getPayMethods() {
    this.getPayMethodsSubscribe$ = this.fetchDataService.getPayMethods()

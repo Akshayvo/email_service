@@ -9,8 +9,8 @@ export class DataSharingService {
     loc2: "dzV0OVc0SjQqTjoyMnwlODc4NzckKDg9Ylcwc2hkZDlrZW9jXk4=", //5944 heber-springs,
   };
   // locationAPIKey = {
-  //   loc1: "Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", //28464 
-  //   loc2: "Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", //28464
+  //   loc1: "Mjg0NjU6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", //28465
+  //   loc2: "Mjg0NjU6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", //28465
   // };
 
   showMilitaryDetails: boolean;
