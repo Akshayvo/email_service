@@ -55,7 +55,7 @@
                   <!-- *ngIf="balance == null" -->
                   <span>Balance Due</span> &nbsp; <span class="custom-balance-width" *ngIf="balance < 0 ; else other"> (${{displayBalance}}) </span>
                   <ng-template #other ><span *ngIf="balance >= 0">$</span>{{displayBalance}}</ng-template>
-                </label><br/>
+                </label><br/><br/>
   
                 <label>&nbsp;
                   <input type="radio" [value]="otherValue" id="2" (change)="handleChange($event)"  name="radio-btn" [checked]="balance <= 0">

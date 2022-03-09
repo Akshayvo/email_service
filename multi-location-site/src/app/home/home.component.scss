@@ -738,7 +738,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 50vh;
+    height: 45vh;
   }
 
   .jumbotron-bottom {
@@ -762,23 +762,28 @@
     position: absolute;
   }
 
-  .jumbotorn-skew-text {
-    width: 100%;
-    left: 0;
-    top: auto;
-    bottom: 2px;
-
-    .btn-outline-primary {
-      margin-right: 0;
-      margin-bottom: 8px;
-    }
-
-    .btn-primary {
-      margin-top: 8px;
-    }
-
-    .jumbotorn-button {
-      padding: 15px;
-    }
+  .bg-light{
+    position: relative;
+    top: -12%; 
   }
+
+  // .jumbotorn-skew-text {
+  //   width: 100%;
+  //   left: 0;
+  //   top: auto;
+  //   bottom: 2px;
+
+  //   .btn-outline-primary {
+  //     margin-right: 0;
+  //     margin-bottom: 8px;
+  //   }
+
+  //   .btn-primary {
+  //     margin-top: 8px;
+  //   }
+
+  //   .jumbotorn-button {
+  //     padding: 15px;
+  //   }
+  // }
 }

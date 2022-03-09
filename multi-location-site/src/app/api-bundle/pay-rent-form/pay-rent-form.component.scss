@@ -17,6 +17,7 @@
 .modal-position {
   position: absolute;
   left: 285px;
+  text-decoration: underline;
 }
 
 table {
@@ -151,7 +152,8 @@ table {
 
 @media only screen and (max-width: 500px) {
   .modal-position{
-    top: 23%;
-    left: 180px;
+    top: 21%;
+    left: 120px;
+    text-decoration: underline;
   }
 }
