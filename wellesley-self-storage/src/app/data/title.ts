@@ -1,7 +1,7 @@
 export const homePageTitle = `Affordable Self Storage Units in Wellesley, ON`;
 export const homePageContent = `Wellesley Self Storage provides clean, affordable self storage units and vehicle parking in  Wellesley and the surrounding communities. As a locally owned self storage facility, we are proud to offer a wide selection of sizes and services to make your self storage experience a hassle free one!`;
 
-export const viewRatesPageTitle = `HTML Title: View Rates | Wellesley Self Storage`;
+export const viewRatesPageTitle = `View Rates | Wellesley Self Storage`;
 export const viewRatesPageContent = `Check out our current rates, then reserve or rent your unit online in minutes with our easy online application!`;
 
 export const reservePageTitle = ``;
