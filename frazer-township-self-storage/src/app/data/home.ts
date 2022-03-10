@@ -27,7 +27,7 @@ export const featuresList = [
 
 export const aboutUsAlt = `a row of blue roll up self storage doors`;
 
-export const aboutUsHeading = `Affordable Self Storage in Tarentum`;
+export const aboutUsHeading = `Affordable Self Storage in Frazer Township`;
 
 export const aboutUs = [
     {
@@ -79,7 +79,7 @@ export const feature = [
 
 export const jumbotron = [
     {
-        h2: `Affordable Self Storage Units in Tarentum`,
+        h2: `Affordable Self Storage Units in Frazer Township`,
         blurb: `Frazer Township Self Storage is locally owned and operated, and provides high-quality, well-maintained self storage units in Tarentum, Springdale, Cheswick, and the surrounding communities! We are conveniently located on Butler Logan Road, just a stone's throw from the Pittsburgh Mills Mall and just off of Route 28 (exit 12A)Take a moment to review our availability, then rent your unit online in minutes with our easy online rental application.`,
     }
 ];
