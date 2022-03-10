@@ -3,8 +3,8 @@ export const environment = {
   type: 0,  // { API: 0, iframe: 1 }
   locationName: 'Ohio/arcanum',  // state/city   **Remeber to update locationName in sitemap.xml as well
   signUpForAuotoPay: 1, // { Yes: 1, No: 0 }
-  alternateType: { moveIn: true, reserve: true }, // { moveIn: true, reserve: true },
-  military: true, // set true for Military and Driver's Details 
+  alternateType: { moveIn: false, reserve: false }, // { moveIn: true, reserve: true },
+  military: false, // set true for Military and Driver's Details 
   template: 'darkTheme', // { darkTheme, lightTheme, withoutJumbotron}
   cards: ['Visa', 'Master Card', 'Amex', 'Discover', 'test'],
   errorsMails: ['website.dev@codeparva.in'],
@@ -16,6 +16,6 @@ export const environment = {
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   websiteUrl: 'https://hokestorenlock.com',
   // APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north
-  APIKey: `dzJ0OVc1SjQqMk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29462
+  APIKey: `dzJ0OVc1SjQqMk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29542
   // APIKey: `dzJ0OVc1SjQqMk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29542
 };

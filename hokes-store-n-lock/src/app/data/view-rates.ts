@@ -15,6 +15,10 @@ export const dataViewRates = [
     },
 ];
 
+export const addOnTextViewRates=`Enter facility off of High Street by RJ Warner Insurance Company. Exit onto South Main Street.
+Please note that the maximum length of your vehicle and trailer can't exceed 40 feet! `;
+
+
 export const viewRatesAltText = `a row of outdoor metal self storage units with roll-up doors.`;
 
 export const MilitaryTypes = [

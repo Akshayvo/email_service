@@ -10,6 +10,7 @@ import {
   jumbotron,
   aboutUsAlt,
   aboutUsHeading,
+  addOnTextForAboutUs
 } from "../data/home";
 import { MetaService } from "../services/link.service";
 import { DOCUMENT } from "@angular/common";
@@ -51,6 +52,7 @@ export class HomeComponent implements OnInit {
   data: any;
   aboutUsAlt: string;
   aboutUsHeading: string;
+  addOnTextForAboutUs:string;
   objSIMSetting: any;
   template: string;
   ogHomePage: any;
@@ -198,6 +200,7 @@ twitterHomePage: any
     this.aboutUs = aboutUs;
     this.aboutUsAlt = aboutUsAlt;
     this.aboutUsHeading = aboutUsHeading;
+    this.addOnTextForAboutUs= addOnTextForAboutUs;
     this.gettingStarted = gettingStarted;
   }
 

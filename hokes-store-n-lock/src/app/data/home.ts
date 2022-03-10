@@ -29,6 +29,8 @@ export const aboutUsAlt = `a row of outdoor metal self storage units with roll-u
 
 export const aboutUsHeading = `Affordable Self Storage in Arcanum, Ohio`;
 
+export const addOnTextForAboutUs = `Note: Enter facility off of High Street by RJ Werner Insurance Company. Exit onto South Main Street.`;
+
 export const aboutUs = [
     {
         p1: `Hoke’s Store-N-Lock is proud to be Arcanum’s newest self storage facility providing 
