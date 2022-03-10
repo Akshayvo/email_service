@@ -46,9 +46,9 @@ export class PayRentComponent implements OnInit {
     });
     this.canonical.create();
     if (this.router.url.includes('south-wenatchee')) {
-      this.name = ' south-wenatchee';
+      this.name = 'South Wenatchee Self Storage';
   } else if (this.router.url.includes('leos-self-storage')) {
-    this.name = ' leos-self-storage';
+    this.name = `Leo's Self Storage`;
   } else if (this.router.url.includes('location-3')) {
     this.name = 'Location-3';
   }
