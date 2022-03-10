@@ -2,7 +2,21 @@
 
 .contact-details {
   background-color: $light;
-  padding-top: 172px;
+  padding-top: 140px;
+}
+
+.jumbotorn-button {
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.header{
+  margin-right: -50px;
+  margin-left: -20px;
 }
 
 .feature-block {
@@ -24,7 +38,7 @@
 
 .social-content {
   .each-contact {
-  font-size: 0.75rem;
+  font-size: .78rem;
   }
 }
 
@@ -75,87 +89,34 @@
 .img-box-1-jpg {
   background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/jpg/leos-self-storage-location.jpg");
   background-size: cover;
-  height: 500px;
+  height: 550px;
   background-position: center right;
 }
-
 .img-box-1-webp {
   background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/webp/leos-self-storage-location.webp");
   background-size: cover;
-  height: 500px;
+  height: 550px;
   background-position: center right;
+  position: relative;
 }
 
 .img-box-2-jpg {
   background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/jpg/leos-self-storage-location.jpg");
   background-size: cover;
   height: 390px;
-  background-position: center;
+  background-position: center right;
 }
-
 .img-box-2-webp {
   background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/webp/leos-self-storage-location.webp");
   background-size: cover;
   height: 390px;
-  background-position: center;
+  background-position: center right;
+  position: relative;
 }
 
-.img-box-3-jpg {
-  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Sample_Self_Storage_Multi/jpg/sample-self-storage-north-jumbotron.jpg");
-  background-size: cover;
-  height: 390px;
-  background-position: center right;
-}
 
-.img-box-3-webp {
-  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Sample_Self_Storage_Multi/webp/sample-self-storage-north-jumbotron.webp");
-  background-size: cover;
-  height: 390px;
-  background-position: center right;
-  
-}
 
-.img-box-4-jpg {
-  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Sample_Self_Storage_Multi/jpg/sample-self-storage-north-jumbotron.jpg");
-  background-size: cover;
-  height: 390px;
-  background-position: center right;
-}
 
-.img-box-4-webp {
-  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Sample_Self_Storage_Multi/webp/sample-self-storage-north-jumbotron.webp");
-  background-size: cover;
-  height: 390px;
-  background-position: center right;
-}
-
-.img-box-5-jpg {
-  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Sample_Self_Storage_Multi/jpg/sample-self-storage-north-jumbotron.jpg");
-  background-size: cover;
-  height: 390px;
-  background-position: center right;
-}
-
-.img-box-5-webp {
-  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Sample_Self_Storage_Multi/webp/sample-self-storage-north-jumbotron.webp");
-  background-size: cover;
-  height: 390px;
-  background-position: center right;
-}
-
-.img-box-6-jpg {
-  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Sample_Self_Storage_Multi/jpg/sample-self-storage-north-jumbotron.jpg");
-  background-size: cover;
-  height: 390px;
-  background-position: center right;
-}
-
-.img-box-6-webp {
-  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Sample_Self_Storage_Multi/webp/sample-self-storage-north-jumbotron.webp");
-  background-size: cover;
-  height: 390px;
-  background-position: center right;
-}
 
 .hours-data {
   .col-lg-4 {
@@ -182,9 +143,10 @@
 @media only screen and (min-width: 992px) {
   .contact-details {
     .btn-area {
+      padding-top: 20px;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: initial;
     }
   }
 }
@@ -311,7 +273,7 @@
   }
 
   .btn {
-    width: 30%;
+    width: 250px;
     margin-left: 5px;
   }
 
@@ -324,16 +286,14 @@
   }
 }
 
-// @media only screen and (max-width: 767px) and (min-width: 601px) {
-//   .contact-details {
-//     padding-top: 174px;
-//   }
-// }
+
+
+
 
 @media only screen and (max-width: 600px) {
   .contact-details {
     background-color: $light;
-    padding-top: 115px;
+    // padding-top: 30px;
 
     .row {
       margin-left: 1px;
@@ -381,7 +341,10 @@
   .sub-components {
     padding: 0 16px;
   }
+
+
 }
+
 
 // @media only screen and (max-width: 600px) and (min-width: 576px) {
 //   .contact-details {
@@ -411,5 +374,24 @@
       font-size: 1rem;
       line-height: 1.5rem;
     }
+
   }
+
+
+  .btn{
+    width:100px;
+  }
+  
+}
+
+@media only screen and (max-width: 429px) {
+
+    .btn{
+      width:250px;
+    }
+
+  //     .contact-details {
+  //   padding-top: 70px;
+  // }
+
 }
