@@ -22,5 +22,5 @@ export const contactPageContent = `Do you have a question about our services, or
 export const thankYouPageTitle = `Thank You For Reserving Your Unit at Dean Storage`;
 export const thankYouPageContent = `We've received your reservation! One of our friendly staff will be in touch!`;
 
-export const privacyPolicyPageTitle = ``;
-export const privacyPolicyPageContent = ``;
+export const privacyPolicyPageTitle = `Privacy Policy | Dean Storage`;
+export const privacyPolicyPageContent = `This page contains this website's privacy policy. For more information, please contact the business directly.`;

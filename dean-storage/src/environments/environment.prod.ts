@@ -14,7 +14,7 @@ export const environment = {
   facilityName: 'Dean Storage',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: 'https://dean-storage-staging.netlify.app',
+  websiteUrl: 'https://deanstorage.com',
   // APIKey: `Mjg0NjU6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28465
   APIKey: `dzJ0OVc1SjcqNk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29576
 

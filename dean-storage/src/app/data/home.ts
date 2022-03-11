@@ -68,6 +68,6 @@ export const feature = [
 export const jumbotron = [
     {
         h2: `Affordable Self Storage Units in Lyons`,
-        blurb: `Whether you're a residential user seeking a little extra elbow room during a move, or renovation, or if you're a business in need of 24 hour access to equipment and supplies, Dean Storage has you covered! Our brand new, modern facility has all of the amenities you need for a convenient self storage experience from online tenant portal to an easy to use autopay service. Check our available inventory, and give us a call today!`,
+        blurb: `Whether you're a residential user seeking a little extra elbow room during a move, or renovation, or if you're a business in need of 24 hour access to equipment and supplies, Dean Storage has you covered! Our modern facility has all of the amenities you need for a convenient self storage experience from online tenant portal to an easy to use autopay service. Check our available inventory, and give us a call today!`,
     }
 ];
