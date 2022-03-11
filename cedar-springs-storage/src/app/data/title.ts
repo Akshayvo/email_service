@@ -30,8 +30,8 @@ export const contactPageContent = `If you have questions about your account or t
 export const thankYouPageTitle = `Thank You For Reserving Your Unit at Cedar Springs Self Storage`;
 export const thankYouPageContent = `We've received your reservation! One of our friendly staff will be in touch!`;
 
-export const privacyPolicyPageTitle = ``;
-export const privacyPolicyPageContent = ``;
+export const privacyPolicyPageTitle = `Privacy Policy | Cedar Springs Self Storage`;
+export const privacyPolicyPageContent = `This page contains this website's privacy policy. For more information, please contact the business directly.`;
 
 export const faqPageTitle = ``;
 export const faqPagecontent = ``;

@@ -46,6 +46,12 @@ export const tabs = [
     },
     // {
     //     id: '3',
+    //     name: 'Gallery',
+    //     path: './photos',
+    //     active: false,
+    // },
+    // {
+    //     id: '3',
     //     name: 'Reserve Unit',
     //     path: './reserve-unit',
     //     active: false,
@@ -115,6 +121,7 @@ export const tabs3 = [
         path: './reserve-unit',
         active: false,
     },
+    
     // {
     //     id: '4',
     //     name: 'About Us',

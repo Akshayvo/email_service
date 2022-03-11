@@ -102,15 +102,15 @@ export const addressLoaction2 = {
 
 
 export const imageLocation1 = [
-  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Cedar_Springs_Self_storage/jpg/stock-self-storage-11.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Cedar_Springs_Self_storage/jpg/stock-self-storage-43.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Cedar_Springs_Self_storage/jpg/stock-self-storage-169.jpg'
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Cedar_Springs_Self_storage/jpg/cedar-springs-self-storage-11.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Cedar_Springs_Self_storage/jpg/cedar-springs-self-storage-43.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Cedar_Springs_Self_storage/jpg/cedar-springs-self-storage-169.jpg'
  ]
 
  export const imageLocation2 = [
-      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Cedar_Springs_Self_storage/jpg/stock-self-storage-11.jpg',
-      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Cedar_Springs_Self_storage/jpg/stock-self-storage-43.jpg',
-      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Cedar_Springs_Self_storage/jpg/stock-self-storage-169.jpg'
+      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Cedar_Springs_Self_storage/jpg/cedar-springs-self-storage-11.jpg',
+      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Cedar_Springs_Self_storage/jpg/cedar-springs-self-storage-43.jpg',
+      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Cedar_Springs_Self_storage/jpg/cedar-springs-self-storage-169.jpg'
  ]
 
 
