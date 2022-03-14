@@ -1,0 +1,170 @@
+/* You can add global styles to this file, and also import other style files */
+
+// For Date Picker
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import "~@angular/material/theming";
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$AffordableSecureStorage-primary: mat-palette($mat-indigo);
+$AffordableSecureStorage-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$AffordableSecureStorage-warn: mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$AffordableSecureStorage-theme: mat-light-theme($AffordableSecureStorage-primary, $AffordableSecureStorage-accent, $AffordableSecureStorage-warn);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($AffordableSecureStorage-theme);
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+//Basic color and font styles
+$primary: #12448c;
+$primaryDark: rgb(20, 63, 107);
+$primaryLight: rgb(58, 131, 204);
+$secondary: #e9b720;
+$dark: #4e4848;
+$light: #f1f0ed;
+$white: #fff;
+$border: #4e4848;
+$shadow: rgb(2, 2, 2);
+$fontColor: #707070;
+$primaryFont: "Lato", sans-serif;
+
+// Different Background colors
+.bg-primary {
+  background: $primary !important;
+}
+
+.bg-secondary {
+  background: $secondary !important;
+}
+
+.bg-dark {
+  background: $dark !important;
+}
+
+.bg-light {
+  background: $light !important;
+}
+
+.bg-translucent-dark {
+  background: rgba(0, 0, 0, 0.6);
+  // position: relative;
+}
+
+.bg-translucent-light {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+// Content Holder Styles
+.contentHolder {
+  min-height: 94vh;
+}
+
+.btn-primary {
+  background-color: $primary !important;
+  border: 1px solid $primary !important;
+  color: $white !important;
+  min-width: 120px;
+  border-radius: 3px;
+  text-transform: none;
+  box-shadow: none;
+}
+
+.btn-primary-light {
+  background-color: $primaryLight;
+  border: 1px solid $primaryLight;
+  color: $white;
+  min-width: 120px;
+  border-radius: 3px;
+  text-transform: none;
+  box-shadow: none;
+}
+
+.btn-primary-light:hover,
+.btn-primary-light:focus,
+.btn-primary-light:active {
+  background-color: $primaryDark;
+  border-color: $primaryDark;
+  color: $white;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:not([disabled]):not(.disabled):active {
+  background-color: $primaryDark !important;
+  border-color: $primaryDark !important;
+  color: $white !important;
+  box-shadow: none;
+}
+
+.btn-outline-primary {
+  background-color: transparent;
+  border: 1px solid $primary !important;
+  color: $primary !important;
+  min-width: 120px;
+  border-radius: 3px;
+  text-transform: none;
+  box-shadow: none;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:active,
+.btn-outline-primary:focus,
+.btn-outline-primary:not([disabled]):not(.disabled):active {
+  background-color: $primaryDark !important;
+  border-color: $primaryDark !important;
+  color: $white !important;
+  box-shadow: none;
+}
+
+.section-headings {
+  font-weight: 200;
+}
+
+.contact-map {
+  width: 100%;
+}
+
+.heading {
+  font-weight: 400;
+}
+
+.sectionImage {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 600;
+  line-height: 2.5rem;
+}
+
+h5 {
+  line-height: 2rem;
+}
+
+h1 {
+  font-size: 1.9rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
