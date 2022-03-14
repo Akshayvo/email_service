@@ -1,24 +1,50 @@
-export const contactsHomePage = [
+export const headerHomePage = [
     {
         id: 1,
         label: 'Address: ',
-        data: '6 Canton St, Baldwinsville, NY 13027',
+        data: '204 Purdytown Turnpike, Lakeville, PA 18438',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/MZ2bUNFNT1HWfDfw5'
+        redirect: 'https://www.google.com/maps/place/Wallenpaupack+Self+Storage,+204+Purdytown+Turnpike,+Lakeville,+PA+18438,+United+States/@41.427774,-75.281754,15z/data=!4m2!3m1!1s0x89c4b9c615c3a081:0x4ab43978c9491515'
     },
     {
         id: 2,
         label: 'Email: ',
-        data: `syrasoftsoftware@gmail.com`,
+        email: 'andy@wallenpaupackselfstorage.com',
+        data: `andy@wallenpaupackselfstorage.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`syrasoftsoftware@gmail.com`'
+        redirect: 'mailto:andy@wallenpaupackselfstorage.com'
     },
     {
         id: 3,
         label: 'Phone: ',
-        data: '(505) 555-5555',
+        data: '(570) 226-1901',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:5055555555'
+        redirect: 'tel:5702261901'
+    },
+]
+
+export const contactsHomePage = [
+    {
+        id: 1,
+        label: 'Address: ',
+        data: '204 Purdytown Turnpike, Lakeville, PA 18438',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://www.google.com/maps/place/Wallenpaupack+Self+Storage,+204+Purdytown+Turnpike,+Lakeville,+PA+18438,+United+States/@41.427774,-75.281754,15z/data=!4m2!3m1!1s0x89c4b9c615c3a081:0x4ab43978c9491515'
+    },
+    {
+        id: 2,
+        label: 'Email: ',
+        email: 'andy@wallenpaupackselfstorage.com',
+        data: `andy@wallenpaupackselfstorage.com`,
+        class: 'fas fa-envelope-open mr-2 iconColor',
+        redirect: 'mailto:andy@wallenpaupackselfstorage.com'
+    },
+    {
+        id: 3,
+        label: 'Phone: ',
+        data: '(570) 226-1901',
+        class: 'fas fa-phone mr-2 iconColor',
+        redirect: 'tel:5702261901'
     },
 ];
 
@@ -34,43 +60,54 @@ export const hoursHomePage = [
 ];
 
 export const contactsLocation1 = [
+    // {
+    //     id: 1,
+    //     label: 'Facility Address: ',
+    //     data: '116 Ehrgood Rd, Greentown, PA 18426',
+    //     class: 'fas fa-map-marker-alt mr-2 iconColor',
+    //     redirect: 'https://goo.gl/maps/qQ3uAvaGjHbfer5J9'
+    // },
     {
         id: 1,
-        label: 'Address: ',
-        data: '6 Canton St, Baldwinsville, NY 13027',
+        label: 'Office Address: ',
+        data: '204 Purdytown Turnpike, Lakeville, PA 18438',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/MZ2bUNFNT1HWfDfw5'
+        redirect: 'https://www.google.com/maps/place/Wallenpaupack+Self+Storage,+204+Purdytown+Turnpike,+Lakeville,+PA+18438,+United+States/@41.427774,-75.281754,15z/data=!4m2!3m1!1s0x89c4b9c615c3a081:0x4ab43978c9491515'
     },
     {
         id: 2,
         label: 'Email: ',
-        data: `syrasoftsoftware@gmail.com`,
+        email: 'andy@wallenpaupackselfstorage.com',
+        data: `andy@wallenpaupackselfstorage.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`syrasoftsoftware@gmail.com`'
+        redirect: 'mailto:andy@wallenpaupackselfstorage.com'
     },
     {
         id: 3,
+        label: 'Facility Address: ',
+        data: '116 Ehrgood Rd, Greentown, PA 18426',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/qQ3uAvaGjHbfer5J9'
+    },
+    {
+        id: 4,
         label: 'Phone: ',
-        data: '(505) 555-5555',
+        data: '(570) 676-0851',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:5055555555'
+        redirect: 'tel:5706760851'
     },
 ];
 
 export const hoursLocation1 = [
     {
-        label: 'Monday - Friday: ',
-        data: '8:30AM to 5:00PM',
-    },
-    {
-        label: 'Saturday - Sunday: ',
-        data: 'CLOSED',
-    },
+        label: 'Monday - Sunday: ',
+        data: '9:00AM to 5:00PM'
+    }
 ];
 
 export const hoursLocation1AcessHours = [
     {
-        data: '24 Hours a Day 7 Days a Week'
+        data: '6:00AM to 8:00PM 7 Days a Week'
     },
 ];
 

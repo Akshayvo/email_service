@@ -84,17 +84,17 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   }
 
   receiveMessage() {
-    if (this.router.url.includes(`${environment.locationName}/location-1`)) {
+    if (this.router.url.includes(`${environment.locationName}/hawley`)) {
       this.locationId = 1;
       this.locationReserve = "location1reserve";
       this.locationMovein = "location1movein";
   } 
-else if (this.router.url.includes(`${environment.locationName}/location-2`)) {
+else if (this.router.url.includes(`${environment.locationName}/lakeville`)) {
   this.locationId = 2;
   this.locationReserve = "location2reserve";
   this.locationMovein = "location2movein";
   } 
-  else if (this.router.url.includes(`${environment.locationName}/location-3`)) {
+  else if (this.router.url.includes(`${environment.locationName}/lake-ariel`)) {
     this.locationId = 3;
     this.locationReserve = "location3reserve";
     this.locationMovein = "location3movein";

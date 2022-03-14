@@ -22,13 +22,13 @@ export class ReserveUnitComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes(`${environment.locationName}/location-1`)) {
+    if (this.router.url.includes(`${environment.locationName}/hawley`)) {
       this.id = 1;
       this.heading = headingLocation1;
-    } else if (this.router.url.includes(`${environment.locationName}/location-2`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/lakeville`)) {
       this.id = 2;
       this.heading = headingLocation2;
-    } else if (this.router.url.includes(`${environment.locationName}/location-3`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/lake-ariel`)) {
       this.id = 3;
       this.heading = headingLocation3;
     } else if (this.router.url.includes(`${environment.locationName}/belforest`)) {

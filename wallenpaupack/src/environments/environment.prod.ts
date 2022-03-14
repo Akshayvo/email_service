@@ -11,7 +11,7 @@ export const environment = {
   senderEmail: 'errors@codeparva.in',
   appId: 'Self Storage Facility - Production',
   facilityName: 'Self Storage Facility',
-  emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
+  emailBaseUrl: '',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   websiteUrl: `https://sample-site-multilocation.netlify.app`

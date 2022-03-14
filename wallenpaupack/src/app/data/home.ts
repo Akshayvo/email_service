@@ -1,14 +1,14 @@
 /* tslint:disable:max-line-length */
 export const featuresHead = [
     {
-        label: '6 Convenient Locations',
+        label: '4 Convenient Locations',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
         alt: 'Icon art displaying a location pin'
     },
     {
-        label: '24 Hour Facility Access',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/24-hours.svg',
-        alt: 'Icon art displaying clock hands and the number 24'
+        label: 'Online Rental & Bill Pay',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/online.svg',
+        alt: 'Icon art displaying a screen with cursor'
     },
     {
         label: 'Climate Controlled',
@@ -16,9 +16,9 @@ export const featuresHead = [
         alt: 'Icon of thermometer indicating climate-controlled units'
     },
     {
-        label: 'Online Bill Pay',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/online.svg',
-        alt: 'Icon art displaying a screen with cursor'
+        label: 'Stellar Customer Service',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg',
+        alt: 'Customer Service Representative Icon'
     },
 ];
 
@@ -160,16 +160,7 @@ export const location6FeaturesHead = [
 
 export const serviceOffered = [
     {
-        p: `Self Storage Facility has been serving the communities of Baldwin County with clean, well-maintained, and affordable self storage services since 1997. Our 6 self storage facilities are located in Location-1, Fairhope, Daphne/Belforest, Location-3, Sivlerhill, and Robertsdale. Self Storage Facility is locally owned and operated, and provides a wide range of self storage unit sizes including climate controlled types. We also have boat, recreational vehicle, and trailer storage at select locations!`,
-    },
-    {
-        p: `Take advantage of our decades of self storage experience to make your next move, renovation, or spring cleaning easier! At Self Storage Facility, you’ll get 24-hour access to our well-lit facilities and you'll have access to your account to pay your rent online or update your information with us. We understand the value of working on your own schedule and give you the freedom to come and go as your time allows.`,
-    },
-    {
-        p: `Whether you’re a residential storage user looking for a place to put seasonal decorations, and yard equipment or you’re preparing for a move and need a long-term storage solution, one of our 6 conveniently located storage facilities is sure to have a unit that meets your needs. We also serve a number of growing local businesses that recognize the value of inexpensive storage space for tools, supplies, and inventory.`,
-    },
-    {
-        p: `Take a moment to review the availability and pricing at our locations, then give the friendly staff at Self Storage Facility a call to rent your unit! We look forward to meeting you!`,
+        p: `Wallenpaupack Self Storage provides quality self storage and vehicle storage in the Lake Wallenpaupack region with our 4 well maintained self storage facilities. Our facilities have a wide range of self storage unit sizes, including climate controlled units. Check out our current availability, then rent your unit online, or give our friendly team a call!`,
     },
 ];
 

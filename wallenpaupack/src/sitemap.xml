@@ -5,7 +5,7 @@
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
-    <loc> https://sample-site-multilocation.netlify.app/location/location-1/reserve-unit </loc>
+    <loc> https://sample-site-multilocation.netlify.app/location/hawley/reserve-unit </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
 
@@ -15,7 +15,7 @@
   </url>
   <url>
     <loc> 
-      https://sample-site-multilocation.netlify.app/location/location-3/storage-units
+      https://sample-site-multilocation.netlify.app/location/lake-ariel/storage-units
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
@@ -27,7 +27,7 @@
   </url>
   <url>
     <loc> 
-      https://sample-site-multilocation.netlify.app/location/location-3
+      https://sample-site-multilocation.netlify.app/location/lake-ariel
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
@@ -45,7 +45,7 @@
   </url>
   <url>
     <loc> 
-      https://sample-site-multilocation.netlify.app/location/location-2/storage-units
+      https://sample-site-multilocation.netlify.app/location/lakeville/storage-units
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
@@ -57,7 +57,7 @@
   </url>
   <url>
     <loc> 
-      https://sample-site-multilocation.netlify.app/location/location-1
+      https://sample-site-multilocation.netlify.app/location/hawley
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
@@ -75,7 +75,7 @@
   </url>
   <url>
     <loc> 
-      https://sample-site-multilocation.netlify.app/location/location-2/reserve-unit
+      https://sample-site-multilocation.netlify.app/location/lakeville/reserve-unit
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
@@ -86,7 +86,7 @@
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
-    <loc> https://sample-site-multilocation.netlify.app/location/location-2 </loc>
+    <loc> https://sample-site-multilocation.netlify.app/location/lakeville </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
@@ -97,7 +97,7 @@
   </url>
   <url>
     <loc> 
-      https://sample-site-multilocation.netlify.app/location/location-1/storage-units
+      https://sample-site-multilocation.netlify.app/location/hawley/storage-units
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
@@ -121,19 +121,19 @@
   </url>
   <url>
     <loc> 
-      https://sample-site-multilocation.netlify.app/location/location-3/reserve-unit
+      https://sample-site-multilocation.netlify.app/location/lake-ariel/reserve-unit
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://sample-site-multilocation.netlify.app/contact-location-2
+      https://sample-site-multilocation.netlify.app/contact-lakeville
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://sample-site-multilocation.netlify.app/contact-location-3
+      https://sample-site-multilocation.netlify.app/contact-lake-ariel
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
@@ -145,7 +145,7 @@
   </url>
   <url>
     <loc>
-      https://sample-site-multilocation.netlify.app/contact-location-1
+      https://sample-site-multilocation.netlify.app/contact-hawley
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
@@ -163,19 +163,19 @@
   </url>
   <url>
     <loc>
-      https://sample-site-multilocation.netlify.app/pay-rent/location-3
+      https://sample-site-multilocation.netlify.app/pay-rent/lake-ariel
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://sample-site-multilocation.netlify.app/contact-location-3
+      https://sample-site-multilocation.netlify.app/contact-lake-ariel
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://sample-site-multilocation.netlify.app/pay-rent/location-2
+      https://sample-site-multilocation.netlify.app/pay-rent/lakeville
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
@@ -187,13 +187,13 @@
   </url>
   <url>
     <loc> 
-      https://sample-site-multilocation.netlify.app/pay-rent/location-3/rent-sub/login
+      https://sample-site-multilocation.netlify.app/pay-rent/lake-ariel/rent-sub/login
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc>
-      https://sample-site-multilocation.netlify.app/pay-rent/location-2/rent-sub/login
+      https://sample-site-multilocation.netlify.app/pay-rent/lakeville/rent-sub/login
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>

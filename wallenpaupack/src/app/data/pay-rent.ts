@@ -15,17 +15,17 @@ export const tableData = [
   {
     facility: ' Location-1',
     address: '',
-    url: 'location-1'
+    url: 'hawley'
   },
   {
     facility: 'Location-2',
     address: '',
-    url: 'location-2'
+    url: 'lakeville'
   },
   {
     facility: 'Location-3',
     address: '',
-    url: 'location-3'
+    url: 'lake-ariel'
   }
 ];
 
@@ -33,17 +33,17 @@ export const tableDataContactPage = [
   {
     facility: ' Location-1',
     address: '',
-    url: 'location-1'
+    url: 'hawley'
   },
   {
     facility: 'Location-2',
     address: '',
-    url: 'location-2'
+    url: 'lakeville'
   },
   {
     facility: 'Location-3',
     address: '',
-    url: 'location-3'
+    url: 'lake-ariel'
   },
 ];
 

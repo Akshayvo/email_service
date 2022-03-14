@@ -90,7 +90,7 @@ export const apiRoutes = [
     { path: '', component: HomeComponent  },
     { path: 'privacy-policy', component: PrivacyPolicyComponent },
     { path: 'frequently-asked-questions', component: FaqComponent},
-    { path: `${environment.locationName}/location-1`,
+    { path: `${environment.locationName}/hawley`,
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -137,7 +137,7 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-    { path: `${environment.locationName}/location-2`,
+    { path: `${environment.locationName}/lakeville`,
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -183,7 +183,7 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-    { path: `${environment.locationName}/location-3`,
+    { path: `${environment.locationName}/lake-ariel`,
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -337,7 +337,7 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-    { path: 'review/location-1', component: HomeComponent,
+    { path: 'review/hawley', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -345,7 +345,7 @@ export const apiRoutes = [
         externalUrl: ''
     }
   },
-  { path: 'review/location-2', component: HomeComponent,
+  { path: 'review/lakeville', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -353,7 +353,7 @@ export const apiRoutes = [
         externalUrl: ''
     }
   },
-  { path: 'review/location-3', component: HomeComponent,
+  { path: 'review/lake-ariel', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -364,22 +364,22 @@ export const apiRoutes = [
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentComponent },
   {
-    path: 'pay-rent/location-1', component: PayRentComponent,
+    path: 'pay-rent/hawley', component: PayRentComponent,
     children: childroute
   },
   {
-    path: 'pay-rent/location-2', component: PayRentComponent,
+    path: 'pay-rent/lakeville', component: PayRentComponent,
     children: childroute
   },
   {
-    path: 'pay-rent/location-3', component: PayRentComponent,
+    path: 'pay-rent/lake-ariel', component: PayRentComponent,
     children: childroute
   },
   { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
-  { path: 'contact-location-1', component: ContactUsComponent},
-  { path: 'contact-location-2', component: ContactUsComponent},
-  { path: 'contact-location-3', component: ContactUsComponent},
+  { path: 'contact-hawley', component: ContactUsComponent},
+  { path: 'contact-lakeville', component: ContactUsComponent},
+  { path: 'contact-lake-ariel', component: ContactUsComponent},
   { path: '**', component: ErrorComponent },
   { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
 ];
@@ -388,7 +388,7 @@ export const apiRoutes = [
 export const iFrameRoutes = [
   { path: '', component: HomeComponent },
   { path: 'privacy-policy', component: PrivacyPolicyComponent },
-  { path: `${environment.locationName}/location-1`,
+  { path: `${environment.locationName}/hawley`,
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -399,7 +399,7 @@ export const iFrameRoutes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: `${environment.locationName}/location-2`,
+  { path: `${environment.locationName}/lakeville`,
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -410,7 +410,7 @@ export const iFrameRoutes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: `${environment.locationName}/location-3`,
+  { path: `${environment.locationName}/lake-ariel`,
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -421,7 +421,7 @@ export const iFrameRoutes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: 'review/location-1', component: HomeComponent,
+  { path: 'review/hawley', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -429,7 +429,7 @@ export const iFrameRoutes = [
         externalUrl: ''
     }
   },
-  { path: 'review/location-2', component: HomeComponent,
+  { path: 'review/lakeville', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -437,7 +437,7 @@ export const iFrameRoutes = [
         externalUrl: ''
     }
   },
-  { path: 'review/location-3', component: HomeComponent,
+  { path: 'review/lake-ariel', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -447,9 +447,9 @@ export const iFrameRoutes = [
   },
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentIframeComponent },
-  { path: 'pay-rent-location-1', component: PayRentFloridaComponent },
-  { path: 'pay-rent-location-2', component: PayRentChesterComponent},
-  { path: 'pay-rent-location-3', component: PayRentMontgomeryComponent},
+  { path: 'pay-rent-hawley', component: PayRentFloridaComponent },
+  { path: 'pay-rent-lakeville', component: PayRentChesterComponent},
+  { path: 'pay-rent-lake-ariel', component: PayRentMontgomeryComponent},
   { path: 'pay-rent-belforest', component: PayRentMiddletownComponent},
   { path: 'pay-rent-fairhope', component: PayRentMontgomeryComponent},
   { path: 'pay-rent-robertsdale', component: PayRentMiddletownComponent},

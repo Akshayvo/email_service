@@ -99,11 +99,11 @@ export class ContactUsComponent implements OnInit {
   }
 
   public fetchOg() {
-    if (this.router.url.includes('location-1')) {
+    if (this.router.url.includes('hawley')) {
       this.og = ogContactPageLocation1;
-    } else if (this.router.url.includes('location-2')) {
+    } else if (this.router.url.includes('lakeville')) {
       this.og = ogContactPageLocation2;
-    } else if (this.router.url.includes('location-3')) {
+    } else if (this.router.url.includes('lake-ariel')) {
       this.og = ogContactPageLocation3;
     }
 }
@@ -114,11 +114,11 @@ public fetchMetaData() {
 }
 
 public fetchTwitter() {
-  if (this.router.url.includes('location-1')) {
+  if (this.router.url.includes('hawley')) {
     this.twitter = twitterContactPageLocation2;
-  } else if (this.router.url.includes('location-2')) {
+  } else if (this.router.url.includes('lakeville')) {
     this.twitter = twitterContactPageLocation1;
-  } else if (this.router.url.includes('location-3')) {
+  } else if (this.router.url.includes('lake-ariel')) {
     this.twitter = twitterContactPageLocation3;
   }
 }
@@ -153,11 +153,11 @@ public fetchTwitter() {
   // }
 
   public fetchLocationDetails() {
-    if (this.router.url.includes('location-1')) {
+    if (this.router.url.includes('hawley')) {
       this.fetchContactDetailsLocation1();
-    } else if (this.router.url.includes('location-2')) {
+    } else if (this.router.url.includes('lakeville')) {
       this.fetchContactDetailsLocation2();
-    } else if (this.router.url.includes('location-3')) {
+    } else if (this.router.url.includes('lake-ariel')) {
       this.fetchContactDetailsLocation3();
     }
   }

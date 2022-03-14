@@ -63,7 +63,7 @@ export const headingReservePageLocation5 = `Are you ready to rent a unit at Fair
 
 export const headingReservePageLocation6 = `Are you ready to rent a unit at Robertsdale`;
 
-export const heading1 = `Self Storage Facility - Location-1`;
+export const heading1 = `Wallenpaupack Self Storage - Hawley`;
 
 export const heading2 = `Self Storage Facility - Location-2`;
 

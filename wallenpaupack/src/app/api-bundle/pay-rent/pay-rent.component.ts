@@ -45,11 +45,11 @@ export class PayRentComponent implements OnInit {
       })
     });
     this.canonical.create();
-    if (this.router.url.includes('location-1')) {
+    if (this.router.url.includes('hawley')) {
       this.name = ' Location-1';
-  } else if (this.router.url.includes('location-2')) {
+  } else if (this.router.url.includes('lakeville')) {
     this.name = ' Location-2';
-  } else if (this.router.url.includes('location-3')) {
+  } else if (this.router.url.includes('lake-ariel')) {
     this.name = 'Location-3';
   }
     if (!!localStorage.getItem('APIKey')) {
@@ -65,21 +65,21 @@ export class PayRentComponent implements OnInit {
   }
 
   public fetchOg() {
-    if (this.router.url.includes('location-1')) {
+    if (this.router.url.includes('hawley')) {
       this.og = ogPayRentPageLocation1;
-    } else if (this.router.url.includes('location-2')) {
+    } else if (this.router.url.includes('lakeville')) {
       this.og = ogPayRentPageLocation2;
-    } else if (this.router.url.includes('location-3')) {
+    } else if (this.router.url.includes('lake-ariel')) {
       this.og = ogPayRentPageLocation3;
     }
 }
 
 public fetchTwitter() {
-  if (this.router.url.includes('location-1')) {
+  if (this.router.url.includes('hawley')) {
     this.twitter = twitterPayRentPageLocation1;
-  } else if (this.router.url.includes('location-2')) {
+  } else if (this.router.url.includes('lakeville')) {
     this.twitter = twitterPayRentPageLocation2;
-  } else if (this.router.url.includes('location-3')) {
+  } else if (this.router.url.includes('lake-ariel')) {
     this.twitter = twitterPayRentPageLocation3;
   }
 }

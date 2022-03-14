@@ -130,19 +130,19 @@ export class LoginComponent implements OnInit, OnDestroy {
 
   public fetchContactDetail() {
 
-    if (this.router.url.includes('location-1')) {
+    if (this.router.url.includes('hawley')) {
       this.id = 1;
       this.name = 'Self Storage Facility - Location-1';
       this.contact = contactsLocation1;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc1);
-    } else  if (this.router.url.includes('location-2')) {
+    } else  if (this.router.url.includes('lakeville')) {
       this.id = 2;
       this.name = 'Self Storage Facility - Location-2';
       this.contact = contactsLocation2;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc2);
-    } else  if (this.router.url.includes('location-3')) {
+    } else  if (this.router.url.includes('lake-ariel')) {
       this.id = 3;
       this.name = 'Self Storage Facility - Location-3';
       this.contact = contactsLocation3;
@@ -160,21 +160,21 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   public fetchOg() {
-    if (this.router.url.includes('location-1')) {
+    if (this.router.url.includes('hawley')) {
       this.og = ogPayRentPageLocation1;
-    } else  if (this.router.url.includes('location-2')) {
+    } else  if (this.router.url.includes('lakeville')) {
       this.og = ogPayRentPageLocation2;
-    } else if (this.router.url.includes('location-3')) {
+    } else if (this.router.url.includes('lake-ariel')) {
       this.og = ogPayRentPageLocation3;
     }
     }
 
 public fetchTwitter() {
-  if (this.router.url.includes('location-1')) {
+  if (this.router.url.includes('hawley')) {
     this.twitter = twitterPayRentPageLocation1;
-  } else if (this.router.url.includes('location-2')) {
+  } else if (this.router.url.includes('lakeville')) {
       this.twitter = twitterPayRentPageLocation2;
-  } else if (this.router.url.includes('location-3')) {
+  } else if (this.router.url.includes('lake-ariel')) {
         this.twitter = twitterPayRentPageLocation3;
   }
 }

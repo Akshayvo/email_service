@@ -89,8 +89,26 @@
   }
 }
 
-.jumbotron-background-jpg {
-  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Sample_Self_Storage_Multi/jpg/sample-self-storage-north-jumbotron.jpg");
+// .jumbotron-background-jpg {
+//   background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/jpg/storage-plus-jumbotron.jpg");
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   height: 80vh;
+// }
+
+
+// .jumbotron-background-webp {
+//   background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/webp/storage-plus-jumbotron.webp");
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   height: 80vh;
+// }
+
+
+.jumbotron-top {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Wallenpaupack/jpg/wallenpaupack-self-storage-jumbotron.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -98,20 +116,48 @@
 }
 
 
-.jumbotron-background-webp {
-  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Sample_Self_Storage_Multi/webp/sample-self-storage-north-jumbotron.webp");
+// .jumbotron-top1 {
+//   background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Wallenpaupack/jpg/100_1120.jpg");
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   height: 80vh;
+// }
+
+.jumbotron-top1 {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Wallenpaupack/webp/100_0366.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 80vh;
 }
 
+.jumbotron-top2 {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Wallenpaupack/jpg/100_4399.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
+
+.jumbotron-top3 {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Wallenpaupack/jpg/G%204.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
 
 .jumbotron-top {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height:80vh;
+}
+
+.prev{
+  color: white;
+  font-weight: 900;
 }
 
 // .jumbotron-top1 {
@@ -140,6 +186,7 @@
 .contact-links {
   a {
     color: black !important;
+    margin-bottom: 28px;
   }
 }
 
@@ -180,6 +227,11 @@
   display: block;
 }
 
+.special{
+  font-size: 20px;
+  font-weight: 500;
+}
+
 .testimonial {
   background: $light;
   height: auto;
@@ -187,6 +239,7 @@
   h1 {
     font-size: 2rem;
   }
+
 
   .carousel-indicators {
     li {
@@ -729,16 +782,8 @@
   .jumbotron {
     text-align: center;
     background-attachment: unset;
-    background-size: contain;
     background-position: center left;
     height: 100vh;
-  }
-
-  .jumbotron-top {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 45vh;
   }
 
   .jumbotron-bottom {
@@ -753,19 +798,14 @@
     display: none;
   }
 
-  .jumbotorn-skew-style {
-    transform: skew(0deg);
-    width: 100%;
-    left: auto;
-    height: 150px;
-    bottom: 0;
-    position: absolute;
-  }
-
-  .bg-light{
-    position: relative;
-    top: -12%; 
-  }
+  // .jumbotorn-skew-style {
+  //   transform: skew(0deg);
+  //   width: 100%;
+  //   left: auto;
+  //   height: 150px;
+  //   bottom: 0;
+  //   position: absolute;
+  // }
 
   // .jumbotorn-skew-text {
   //   width: 100%;

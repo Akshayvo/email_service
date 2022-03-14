@@ -93,7 +93,7 @@ id = 3;
       if (this.activatedRoute.snapshot.url[1].path) {
         this.dataSharingService.facilityLocation = this.activatedRoute.snapshot.url[1].path;
       }
-      if (this.router.url.includes(`${environment.locationName}/location-1`)) {
+      if (this.router.url.includes(`${environment.locationName}/hawley`)) {
             this.meta.addTag({
               name: 'description',
               content: `${this.location1PageContent}`
@@ -117,7 +117,7 @@ id = 3;
                 content: element.content
               })
             });
-    } else if (this.router.url.includes(`${environment.locationName}/location-2`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/lakeville`)) {
            this.meta.addTag({
              name: 'description',
              content: `${this.location2PageContent}`
@@ -141,7 +141,7 @@ id = 3;
               content: element.content
             })
           });
-      } else if (this.router.url.includes(`${environment.locationName}/location-3`)) {
+      } else if (this.router.url.includes(`${environment.locationName}/lake-ariel`)) {
         this.meta.addTag({
           name: 'description',
           content: `${this.location3PageContent}`
@@ -203,44 +203,44 @@ id = 3;
 
   
   public fetchOg() {
-    if (this.router.url.includes(`${environment.locationName}/location-1`)) {
+    if (this.router.url.includes(`${environment.locationName}/hawley`)) {
       this.og = ogLocation1;
-    } else if (this.router.url.includes(`${environment.locationName}/location-2`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/lakeville`)) {
       this.og = ogLocation2;
-    } else if (this.router.url.includes(`${environment.locationName}/location-3`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/lake-ariel`)) {
       this.og = ogLocation3;
     }
   }
 
   public fetchTwitter() {
-    if (this.router.url.includes(`${environment.locationName}/location-1`)) {
+    if (this.router.url.includes(`${environment.locationName}/hawley`)) {
         this.twitter = twitterLocation1;
-    } else if (this.router.url.includes(`${environment.locationName}/location-2`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/lakeville`)) {
       this.twitter = twitterLocation2;
-    } else if (this.router.url.includes(`${environment.locationName}/location-3`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/lake-ariel`)) {
       this.twitter = twitterLocation3;
     }
   }
 
   public isSomePage() {
-    if (this.router.url.includes(`${environment.locationName}/location-1`)) {
+    if (this.router.url.includes(`${environment.locationName}/hawley`)) {
         this.fetchDetailsLocation1();
-    } else if (this.router.url.includes(`${environment.locationName}/location-2`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/lakeville`)) {
       this.fetchDetailsLocation2();
-    } else if (this.router.url.includes(`${environment.locationName}/location-3`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/lake-ariel`)) {
       this.fetchDetailsLocation3();
     }
  }
 
  public navigateToReserve() {
   if ( this.locationId === 1 ) {
-    this.router.navigate([`${environment.locationName}/location-1/reserve-unit`],
+    this.router.navigate([`${environment.locationName}/hawley/reserve-unit`],
           );
   } else if ( this.locationId === 2 ) {
-    this.router.navigate([`${environment.locationName}/location-2/reserve-unit`],
+    this.router.navigate([`${environment.locationName}/lakeville/reserve-unit`],
           );
   }  else if ( this.locationId === 3 ) {
-    this.router.navigate([`${environment.locationName}/location-3/reserve-unit`],
+    this.router.navigate([`${environment.locationName}/lake-ariel/reserve-unit`],
          );
   }
  }
