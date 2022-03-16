@@ -1,9 +1,10 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { contactsLocation1, hoursLocation1, hoursLocation1AcessHours,
-          contactsLocation2, hoursLocation2, hoursLocation3, contactsLocation3,
+          contactsLocation2, hoursLocation2, hoursLocation3, contactsLocation3, 
+          contactsLocation4, hoursLocation4, contactsLocation5, hoursLocation5
           } from '../data/contact';
-import { heading1, heading2, tabs, heading3  } from '../data/location';
+import { heading1, heading2, tabs, heading3, heading4, heading5  } from '../data/location';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { DataSharingService } from '../api-bundle/services/data-sharing.service';
@@ -166,6 +167,55 @@ id = 3;
           })
         });
    }
+   else if (this.router.url.includes(`${environment.locationName}/greentown`)) {
+    this.meta.addTag({
+      name: 'description',
+      content: `${this.location3PageContent}`
+});
+this.titleService.setTitle(`${this.location3PageTitle}`);
+    this.locationName = `Self Storage Facility - Location-3 Location`;
+    this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
+    this.dataSharingService.locationName = this.locationName;
+    this.script = Location3Script;
+    this.loadScript();
+    this.og.forEach(element => {
+      this.meta.addTag({
+        property: element.property,
+        content: element.content
+      })
+    });
+
+    this.twitter.forEach(element => {
+      this.meta.addTag({
+        name: element.name,
+        content: element.content
+      })
+    });
+} else if (this.router.url.includes(`${environment.locationName}/greentown1`)) {
+  this.meta.addTag({
+    name: 'description',
+    content: `${this.location3PageContent}`
+});
+this.titleService.setTitle(`${this.location3PageTitle}`);
+  this.locationName = `Self Storage Facility - Location-3 Location`;
+  this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
+  this.dataSharingService.locationName = this.locationName;
+  this.script = Location3Script;
+  this.loadScript();
+  this.og.forEach(element => {
+    this.meta.addTag({
+      property: element.property,
+      content: element.content
+    })
+  });
+
+  this.twitter.forEach(element => {
+    this.meta.addTag({
+      name: element.name,
+      content: element.content
+    })
+  });
+}
 }
 
   ngOnInit() {
@@ -209,7 +259,11 @@ id = 3;
       this.og = ogLocation2;
     } else if (this.router.url.includes(`${environment.locationName}/lake-ariel`)) {
       this.og = ogLocation3;
-    }
+    } else if (this.router.url.includes(`${environment.locationName}/greentown`)) {
+      this.og = ogLocation3;
+    } else if (this.router.url.includes(`${environment.locationName}/greentown1`)) {
+      this.og = ogLocation3;
+    } 
   }
 
   public fetchTwitter() {
@@ -218,6 +272,10 @@ id = 3;
     } else if (this.router.url.includes(`${environment.locationName}/lakeville`)) {
       this.twitter = twitterLocation2;
     } else if (this.router.url.includes(`${environment.locationName}/lake-ariel`)) {
+      this.twitter = twitterLocation3;
+    } else if (this.router.url.includes(`${environment.locationName}/greentown`)) {
+      this.twitter = twitterLocation3;
+    } else if (this.router.url.includes(`${environment.locationName}/greentown1`)) {
       this.twitter = twitterLocation3;
     }
   }
@@ -229,6 +287,10 @@ id = 3;
       this.fetchDetailsLocation2();
     } else if (this.router.url.includes(`${environment.locationName}/lake-ariel`)) {
       this.fetchDetailsLocation3();
+    } else if (this.router.url.includes(`${environment.locationName}/greentown`)) {
+      this.fetchDetailsLocation4();
+    } else if (this.router.url.includes(`${environment.locationName}/greentown1`)) {
+      this.fetchDetailsLocation5();
     }
  }
 
@@ -272,4 +334,23 @@ id = 3;
     this.tabs = tabs;
     this.features = location3FeaturesHead;
   }
+
+  public fetchDetailsLocation4() {
+    this.name = heading4;
+    this.locationId = 4;
+    this.contacts = contactsLocation4;
+    this.hours = hoursLocation4;
+    this.tabs = tabs;
+    this.features = location3FeaturesHead;
+  }
+
+  public fetchDetailsLocation5() {
+    this.name = heading5;
+    this.locationId = 5;
+    this.contacts = contactsLocation5;
+    this.hours = hoursLocation5;
+    this.tabs = tabs;
+    this.features = location3FeaturesHead;
+  }
+
 }

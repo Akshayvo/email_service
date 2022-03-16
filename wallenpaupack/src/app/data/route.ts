@@ -229,6 +229,98 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
+    { path: `${environment.locationName}/greentown`,
+      component: LocationComponent,
+      children: [
+        {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
+        { path: 'storage-units', component: ViewRatesComponent },
+        { path: 'unit-sizer', component: UnitSizerComponent },
+        { path: 'reserve-unit', component: ReserveComponent,
+          children: [
+            { path: '', component: ReserveUnitFormComponent },
+            // { path: 'reserve', component: ReserveUnitFormComponent },
+            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+            { path: 'confirmation', component: ConfirmationDataComponent },
+            { path: 'payReservationCharges', component: PayRentFormComponent },
+            { path: 'payMoveInCharges', component: PayRentFormComponent },
+            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] },
+            { path: 'rent-sub', component: RentSubComponent,
+            children: 
+            [
+            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] },
+            ]
+          },
+          ]
+        },
+        { path: 'move-in', component: ReserveComponent,
+          children: [
+            { path: '', component: ReserveUnitFormComponent },
+            // { path: 'move-in', component: ReserveUnitFormComponent },
+            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+            { path: 'confirmation', component: ConfirmationDataComponent },
+            { path: 'payReservationCharges', component: PayRentFormComponent },
+            { path: 'payMoveInCharges', component: PayRentFormComponent },
+            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] },
+            { path: 'rent-sub', component: RentSubComponent,
+            children: 
+            [
+            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] },
+            ]
+          },
+          ]
+        },
+        // { path: 'photos', component: PhotosComponent },
+        { path: 'about', component: AboutUsComponent },
+        { path: 'directions', component: DirectionsComponent },
+      ],
+      resolve: { data: AppResolver }
+    },
+    { path: `${environment.locationName}/greentown1`,
+      component: LocationComponent,
+      children: [
+        {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
+        { path: 'storage-units', component: ViewRatesComponent },
+        { path: 'unit-sizer', component: UnitSizerComponent },
+        { path: 'reserve-unit', component: ReserveComponent,
+          children: [
+            { path: '', component: ReserveUnitFormComponent },
+            // { path: 'reserve', component: ReserveUnitFormComponent },
+            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+            { path: 'confirmation', component: ConfirmationDataComponent },
+            { path: 'payReservationCharges', component: PayRentFormComponent },
+            { path: 'payMoveInCharges', component: PayRentFormComponent },
+            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] },
+            { path: 'rent-sub', component: RentSubComponent,
+            children: 
+            [
+            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] },
+            ]
+          },
+          ]
+        },
+        { path: 'move-in', component: ReserveComponent,
+          children: [
+            { path: '', component: ReserveUnitFormComponent },
+            // { path: 'move-in', component: ReserveUnitFormComponent },
+            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+            { path: 'confirmation', component: ConfirmationDataComponent },
+            { path: 'payReservationCharges', component: PayRentFormComponent },
+            { path: 'payMoveInCharges', component: PayRentFormComponent },
+            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] },
+            { path: 'rent-sub', component: RentSubComponent,
+            children: 
+            [
+            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] },
+            ]
+          },
+          ]
+        },
+        // { path: 'photos', component: PhotosComponent },
+        { path: 'about', component: AboutUsComponent },
+        { path: 'directions', component: DirectionsComponent },
+      ],
+      resolve: { data: AppResolver }
+    },
     { path: `${environment.locationName}/belforest`,
       component: LocationComponent,
       children: [
@@ -361,6 +453,22 @@ export const apiRoutes = [
         externalUrl: ''
     }
   },
+  { path: 'review/greentown', component: HomeComponent,
+    resolve: {
+        url: 'externalUrlRedirectResolver'
+    },
+    data: {
+        externalUrl: ''
+    }
+  },
+  { path: 'review/greentown1', component: HomeComponent,
+    resolve: {
+        url: 'externalUrlRedirectResolver'
+    },
+    data: {
+        externalUrl: ''
+    }
+  },
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentComponent },
   {
@@ -375,11 +483,21 @@ export const apiRoutes = [
     path: 'pay-rent/lake-ariel', component: PayRentComponent,
     children: childroute
   },
+  {
+    path: 'pay-rent/greentown', component: PayRentComponent,
+    children: childroute
+  },
+  {
+    path: 'pay-rent/greentown1', component: PayRentComponent,
+    children: childroute
+  },
   { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
   { path: 'contact-hawley', component: ContactUsComponent},
   { path: 'contact-lakeville', component: ContactUsComponent},
   { path: 'contact-lake-ariel', component: ContactUsComponent},
+  { path: 'contact-greentown', component: ContactUsComponent},
+  { path: 'contact-greentown1', component: ContactUsComponent},
   { path: '**', component: ErrorComponent },
   { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
 ];
@@ -421,6 +539,28 @@ export const iFrameRoutes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
+  { path: `${environment.locationName}/greentown`,
+    component: LocationComponent,
+    children: [
+      {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
+      { path: 'storage-units', component: StorageUnitComponent },
+      { path: 'unit-sizer', component: UnitSizerComponent },
+      { path: 'reserve-unit', component: ReserveUnitComponent },
+      { path: 'about', component: AboutUsComponent },
+      { path: 'directions', component: DirectionsComponent },
+    ]
+  },
+  { path: `${environment.locationName}/greentown1`,
+    component: LocationComponent,
+    children: [
+      {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
+      { path: 'storage-units', component: StorageUnitComponent },
+      { path: 'unit-sizer', component: UnitSizerComponent },
+      { path: 'reserve-unit', component: ReserveUnitComponent },
+      { path: 'about', component: AboutUsComponent },
+      { path: 'directions', component: DirectionsComponent },
+    ]
+  },
   { path: 'review/hawley', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
@@ -445,11 +585,29 @@ export const iFrameRoutes = [
         externalUrl: ''
     }
   },
+  { path: 'review/greentown', component: HomeComponent,
+    resolve: {
+        url: 'externalUrlRedirectResolver'
+    },
+    data: {
+        externalUrl: ''
+    }
+  },
+  { path: 'review/greentown1', component: HomeComponent,
+    resolve: {
+        url: 'externalUrlRedirectResolver'
+    },
+    data: {
+        externalUrl: ''
+    }
+  },
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentIframeComponent },
   { path: 'pay-rent-hawley', component: PayRentFloridaComponent },
   { path: 'pay-rent-lakeville', component: PayRentChesterComponent},
   { path: 'pay-rent-lake-ariel', component: PayRentMontgomeryComponent},
+  { path: 'pay-rent-greentown', component: PayRentMontgomeryComponent},
+  { path: 'pay-rent-greentown1', component: PayRentMontgomeryComponent},
   { path: 'pay-rent-belforest', component: PayRentMiddletownComponent},
   { path: 'pay-rent-fairhope', component: PayRentMontgomeryComponent},
   { path: 'pay-rent-robertsdale', component: PayRentMiddletownComponent},

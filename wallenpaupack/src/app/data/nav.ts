@@ -26,6 +26,16 @@ export const navLinks = [
                 label: 'Lake Ariel',
                 path: `${environment.locationName}/lake-ariel`,
             },
+            {
+                id: '4',
+                label: 'Greentown',
+                path: `${environment.locationName}/greentown`,
+            },
+            {
+                id: '4',
+                label: 'Greentown1',
+                path: `${environment.locationName}/greentown1`,
+            },
         ]
     },
     {

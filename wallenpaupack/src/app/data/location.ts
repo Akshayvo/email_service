@@ -65,13 +65,13 @@ export const headingReservePageLocation6 = `Are you ready to rent a unit at Robe
 
 export const heading1 = `Wallenpaupack Self Storage - Hawley`;
 
-export const heading2 = `Self Storage Facility - Location-2`;
+export const heading2 = `Wallenpaupack Self Storage - Lakeville`;
 
-export const heading3 = `Self Storage Facility - Location-3`;
+export const heading3 = `Wallenpaupack Self Storage - Lake Ariel`;
 
-export const heading4 = `Self Storage Facility - Belforest`;
+export const heading4 = `Wallenpaupack Self Storage - Greentown`;
 
-export const heading5 = `Self Storage Facility - Fairhope`;
+export const heading5 = `Wallenpaupack Self Storage - Greentown`;
 
 export const heading6 = `Self Storage Facility - Robertsdale`;
 

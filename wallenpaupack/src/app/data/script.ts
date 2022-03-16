@@ -66,11 +66,16 @@ export const nameLocation3 = `Self Storage Facility - Location-3`;
 export const location1 = `hawley`;
 export const location2 = `lakeville`;
 export const location3 = `lake-ariel`;
+export const location4 = `greentown`;
+export const location5 = `greentown1`;
 
 
 export const urlLocation1 = `${environment.websiteUrl}/${environment.locationName}/hawley/storage-units`;
 export const urlLocation2 = `${environment.websiteUrl}/${environment.locationName}/lakeville/storage-units`;
 export const urlLocation3 = `${environment.websiteUrl}/${environment.locationName}/lake-ariel/storage-units`;
+export const urlLocation4 = `${environment.websiteUrl}/${environment.locationName}/greentown/storage-units`;
+export const urlLocation5 = `${environment.websiteUrl}/${environment.locationName}/greentown1/storage-units`;
+
 
 export const description1 = `brick self storage facility front office with a green lawn
                              in the front and blue sky above`;

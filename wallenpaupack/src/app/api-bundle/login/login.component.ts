@@ -5,9 +5,9 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { TenantInfo } from '../models/tenant';
 import { DataSharingService } from '../services/data-sharing.service';
-import { contactsLocation1, contactsLocation2, contactsLocation3 } from '../../data/contact';
+import { contactsLocation1, contactsLocation2, contactsLocation3, contactsLocation4, contactsLocation5 } from '../../data/contact';
 import { loginDetail } from '../../data/pay-rent';
-import { ogPayRentPageLocation1, ogPayRentPageLocation2, ogPayRentPageLocation3,
+import { ogPayRentPageLocation1, ogPayRentPageLocation2, ogPayRentPageLocation3, 
    twitterPayRentPageLocation1, twitterPayRentPageLocation2, twitterPayRentPageLocation3 } from '../../data/script';
 import { Meta } from '@angular/platform-browser';
 
@@ -148,6 +148,18 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.contact = contactsLocation3;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc3);
+    } else  if (this.router.url.includes('greentown')) {
+      this.id = 3;
+      this.name = 'Self Storage Facility - Location-3';
+      this.contact = contactsLocation4;
+      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc4;
+      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc4);
+    } else  if (this.router.url.includes('greentown1')) {
+      this.id = 3;
+      this.name = 'Self Storage Facility - Location-3';
+      this.contact = contactsLocation5;
+      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc5;
+      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc5);
     }
   }
 
@@ -166,6 +178,10 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.og = ogPayRentPageLocation2;
     } else if (this.router.url.includes('lake-ariel')) {
       this.og = ogPayRentPageLocation3;
+    } else if (this.router.url.includes('greentown')) {
+      this.og = ogPayRentPageLocation3;
+    } else if (this.router.url.includes('greentown1')) {
+      this.og = ogPayRentPageLocation3;
     }
     }
 
@@ -176,7 +192,11 @@ public fetchTwitter() {
       this.twitter = twitterPayRentPageLocation2;
   } else if (this.router.url.includes('lake-ariel')) {
         this.twitter = twitterPayRentPageLocation3;
-  }
+  } else if (this.router.url.includes('greentown')) {
+    this.twitter = twitterPayRentPageLocation3;
+  } else if (this.router.url.includes('greentown1')) {
+    this.twitter = twitterPayRentPageLocation3;
+}
 }
 
   handleForgotPassword() {

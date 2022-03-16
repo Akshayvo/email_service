@@ -4,7 +4,7 @@ import { Title, Meta } from '@angular/platform-browser';
 import { EmailService } from '../services/email.service';
 import { contactsLocation1, hoursLocation1,
           contactsLocation2, hoursLocation2, contactsLocation3,
-          hoursLocation3 } from '../data/contact';
+          hoursLocation3, contactsLocation4, hoursLocation4, contactsLocation5, hoursLocation5 } from '../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { LocationService } from '../services/location.service';
@@ -105,6 +105,10 @@ export class ContactUsComponent implements OnInit {
       this.og = ogContactPageLocation2;
     } else if (this.router.url.includes('lake-ariel')) {
       this.og = ogContactPageLocation3;
+    } else if (this.router.url.includes('greentown')) {
+      this.og = ogContactPageLocation3;
+    } else if (this.router.url.includes('greentown1')) {
+      this.og = ogContactPageLocation3;
     }
 }
 
@@ -119,6 +123,10 @@ public fetchTwitter() {
   } else if (this.router.url.includes('lakeville')) {
     this.twitter = twitterContactPageLocation1;
   } else if (this.router.url.includes('lake-ariel')) {
+    this.twitter = twitterContactPageLocation3;
+  } else if (this.router.url.includes('greentown')) {
+    this.twitter = twitterContactPageLocation3;
+  } else if (this.router.url.includes('greentown1')) {
     this.twitter = twitterContactPageLocation3;
   }
 }
@@ -159,6 +167,10 @@ public fetchTwitter() {
       this.fetchContactDetailsLocation2();
     } else if (this.router.url.includes('lake-ariel')) {
       this.fetchContactDetailsLocation3();
+    } else if (this.router.url.includes('greentown')) {
+      this.fetchContactDetailsLocation4();
+    } else if (this.router.url.includes('greentown1')) {
+      this.fetchContactDetailsLocation5();
     }
   }
 
@@ -181,6 +193,20 @@ public fetchTwitter() {
     this.locationId = '3'
     this.contactDetails = contactsLocation3;
     this.hoursDetails = hoursLocation3;
+  }
+
+  public fetchContactDetailsLocation4() {
+    this.heading = `Self Storage Facility - Location-3`;
+    this.locationId = '4'
+    this.contactDetails = contactsLocation4;
+    this.hoursDetails = hoursLocation4;
+  }
+
+  public fetchContactDetailsLocation5() {
+    this.heading = `Self Storage Facility - Location-3`;
+    this.locationId = '5'
+    this.contactDetails = contactsLocation5;
+    this.hoursDetails = hoursLocation5;
   }
 
 onSubmit() {

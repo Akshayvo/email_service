@@ -13,37 +13,57 @@ export const tableHeader = [
 
 export const tableData = [
   {
-    facility: ' Location-1',
+    facility: 'Hawley',
     address: '',
     url: 'hawley'
   },
   {
-    facility: 'Location-2',
+    facility: 'Lakeville',
     address: '',
     url: 'lakeville'
   },
   {
-    facility: 'Location-3',
+    facility: 'Lake Arial',
     address: '',
     url: 'lake-ariel'
+  },
+  {
+    facility: 'Greentown',
+    address: '',
+    url: 'greentown'
+  },
+  {
+    facility: 'Greentown1',
+    address: '',
+    url: 'greentown1'
   }
 ];
 
 export const tableDataContactPage = [
   {
-    facility: ' Location-1',
+    facility: 'Hawley',
     address: '',
     url: 'hawley'
   },
   {
-    facility: 'Location-2',
+    facility: 'Lakeville',
     address: '',
     url: 'lakeville'
   },
   {
-    facility: 'Location-3',
+    facility: 'Lake-Arial',
     address: '',
     url: 'lake-ariel'
+  },
+  {
+    facility: 'Greentown',
+    address: '',
+    url: 'greentown'
+  },
+  {
+    facility: 'Greentown1',
+    address: '',
+    url: 'greentown1'
   },
 ];
 

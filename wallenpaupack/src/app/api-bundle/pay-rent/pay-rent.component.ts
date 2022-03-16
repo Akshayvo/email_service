@@ -51,6 +51,10 @@ export class PayRentComponent implements OnInit {
     this.name = ' Location-2';
   } else if (this.router.url.includes('lake-ariel')) {
     this.name = 'Location-3';
+  } else if (this.router.url.includes('greentown')) {
+    this.name = 'Location-4';
+  } else if (this.router.url.includes('greentown')) {
+    this.name = 'Location-5';
   }
     if (!!localStorage.getItem('APIKey')) {
       this.dataSharingService.apiKey = localStorage.getItem('APIKey');
@@ -71,6 +75,10 @@ export class PayRentComponent implements OnInit {
       this.og = ogPayRentPageLocation2;
     } else if (this.router.url.includes('lake-ariel')) {
       this.og = ogPayRentPageLocation3;
+    } else if (this.router.url.includes('greentown')) {
+      this.og = ogPayRentPageLocation3;
+    } else if (this.router.url.includes('greentown1')) {
+      this.og = ogPayRentPageLocation3;
     }
 }
 
@@ -80,6 +88,10 @@ public fetchTwitter() {
   } else if (this.router.url.includes('lakeville')) {
     this.twitter = twitterPayRentPageLocation2;
   } else if (this.router.url.includes('lake-ariel')) {
+    this.twitter = twitterPayRentPageLocation3;
+  } else if (this.router.url.includes('greentown')) {
+    this.twitter = twitterPayRentPageLocation3;
+  } else if (this.router.url.includes('greentown1')) {
     this.twitter = twitterPayRentPageLocation3;
   }
 }
