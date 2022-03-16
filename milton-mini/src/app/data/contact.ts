@@ -29,9 +29,38 @@ export const contact = [
     }
 ];
 
+
+export const Homehours = [
+    {
+        label: '',
+        data: 'By Appointment Only'
+    },
+    {
+        label: '',
+        data: '24-Hour Kiosk Available On-Site'
+    },
+    // {
+    //     label: 'Saturday: ',
+    //     data: '10:00 am - 2:00 pm'
+    // },
+    // {
+    //     label: 'Sunday: ',
+    //     data: 'CLOSED'
+    // },
+    {
+        label: 'Storage Access Hours: ',
+        data: '24 hours a day, 7 days a week'
+    }
+];
+
+
 export const hours = [
     {
-        label: 'By Appointment Only',
+        label: 'Facility Hours:',
+        data: 'By Appointment Only'
+    },
+    {
+        label: '',
         data: '24-Hour Kiosk Available On-Site'
     },
     // {

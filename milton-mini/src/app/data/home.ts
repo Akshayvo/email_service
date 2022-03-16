@@ -89,9 +89,6 @@ export const feature = [
 export const jumbotron = [
     {
         h2: `Affordable Storage Units in Milton, WV`,
-        blurb: `Milton Mini Storage is locally owned and operated, and we provide high-quality, 
-        well-maintained self storage services in Milton, Ona, Culloden and the surrounding communities! 
-        Take a moment to review our availability, then rent your unit online in minutes with our easy 
-        online rental application.`,
+        blurb: `Milton Mini Storage is locally owned and operated. We provide high-quality, well-maintained self storage services for Milton, Ona, Culloden and the surrounding communities! Take a moment to review our availability, then rent your unit online in minutes with our easy online rental application.`,
     }
 ];
