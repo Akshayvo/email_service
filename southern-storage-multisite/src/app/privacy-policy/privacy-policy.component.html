@@ -1,0 +1,39 @@
+<div class="privacy-policy mb-5">
+  <div class="container">
+    <h1 class="py-5 text-center">Self Storage Facility Privacy Policy</h1>
+    <div class="bg-light">
+        <div *ngFor="let privacy of privacyPolicy">
+          {{privacy.content}}
+          <ol>
+            <li *ngFor="let list of privacy.list">{{list.li}}</li>
+          </ol>
+          <div *ngFor="let information of privacy.information">
+            <h2 >{{information.heading}}</h2>
+            <p *ngFor="let list of information.list">{{list.p}}</p>
+          </div>
+          <div *ngFor="let access of privacy.access">
+            <h2>{{access.heading}}</h2>
+            <p>{{access.content}}</p>
+            <ul><li *ngFor="let list of access.list">{{list.li}}</li></ul>
+          </div>
+          <div *ngFor="let security of privacy.security">
+            <h2>{{security.heading}}</h2>
+              <p *ngFor="let content of security.content">{{content.p}}</p>
+          </div>
+          <!-- <div *ngFor="let registration of privacy.registration">
+            <h2>{{registration.heading}}</h2>
+            <p>{{registration.content}}</p>
+          </div> -->
+          <div *ngFor="let cookies of privacy.cookies">
+            <h2>{{cookies.heading}}</h2>
+            <p *ngFor="let content of cookies.content">{{content.p}}</p>
+          </div>
+          <p class="note" [innerHTML]="privacy.note"></p>
+          <!-- <div *ngFor="let sharing of privacy.sharing">
+            <h2>{{sharing.heading}}</h2>
+            <p *ngFor="let content of sharing.content">{{content.p}}</p>
+          </div> -->
+        </div>
+      </div>
+  </div>
+</div>

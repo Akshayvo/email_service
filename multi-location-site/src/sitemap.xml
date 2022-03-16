@@ -5,7 +5,7 @@
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
-    <loc> https://sample-site-multilocation.netlify.app/location/location-1/reserve-unit </loc>
+    <loc> https://sample-site-multilocation.netlify.app/location/rocky-creek/reserve-unit </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
 
@@ -15,7 +15,7 @@
   </url>
   <url>
     <loc> 
-      https://sample-site-multilocation.netlify.app/location/location-3/storage-units
+      https://sample-site-multilocation.netlify.app/location/barton/storage-units
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
@@ -27,7 +27,7 @@
   </url>
   <url>
     <loc> 
-      https://sample-site-multilocation.netlify.app/location/location-3
+      https://sample-site-multilocation.netlify.app/location/barton
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
@@ -45,19 +45,19 @@
   </url>
   <url>
     <loc> 
-      https://sample-site-multilocation.netlify.app/location/location-2/storage-units
+      https://sample-site-multilocation.netlify.app/location/agricola/storage-units
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://sample-site-multilocation.netlify.app/location/belforest/storage-units
+      https://sample-site-multilocation.netlify.app/location/wade/storage-units
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://sample-site-multilocation.netlify.app/location/location-1
+      https://sample-site-multilocation.netlify.app/location/rocky-creek
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
@@ -75,18 +75,18 @@
   </url>
   <url>
     <loc> 
-      https://sample-site-multilocation.netlify.app/location/location-2/reserve-unit
+      https://sample-site-multilocation.netlify.app/location/agricola/reserve-unit
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc>
-      https://sample-site-multilocation.netlify.app/location/belforest
+      https://sample-site-multilocation.netlify.app/location/wade
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
-    <loc> https://sample-site-multilocation.netlify.app/location/location-2 </loc>
+    <loc> https://sample-site-multilocation.netlify.app/location/agricola </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
@@ -97,7 +97,7 @@
   </url>
   <url>
     <loc> 
-      https://sample-site-multilocation.netlify.app/location/location-1/storage-units
+      https://sample-site-multilocation.netlify.app/location/rocky-creek/storage-units
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
@@ -115,37 +115,37 @@
   </url>
   <url>
     <loc> 
-      https://sample-site-multilocation.netlify.app/location/belforest/reserve-unit
+      https://sample-site-multilocation.netlify.app/location/wade/reserve-unit
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://sample-site-multilocation.netlify.app/location/location-3/reserve-unit
+      https://sample-site-multilocation.netlify.app/location/barton/reserve-unit
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://sample-site-multilocation.netlify.app/contact-location-2
+      https://sample-site-multilocation.netlify.app/contact-agricola
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://sample-site-multilocation.netlify.app/contact-location-3
+      https://sample-site-multilocation.netlify.app/contact-barton
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://sample-site-multilocation.netlify.app/pay-rent/belforest
+      https://sample-site-multilocation.netlify.app/pay-rent/wade
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc>
-      https://sample-site-multilocation.netlify.app/contact-location-1
+      https://sample-site-multilocation.netlify.app/contact-rocky-creek
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
@@ -163,37 +163,37 @@
   </url>
   <url>
     <loc>
-      https://sample-site-multilocation.netlify.app/pay-rent/location-3
+      https://sample-site-multilocation.netlify.app/pay-rent/barton
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://sample-site-multilocation.netlify.app/contact-location-3
+      https://sample-site-multilocation.netlify.app/contact-barton
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://sample-site-multilocation.netlify.app/pay-rent/location-2
+      https://sample-site-multilocation.netlify.app/pay-rent/agricola
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc>
-      https://sample-site-multilocation.netlify.app/pay-rent/belforest/rent-sub/login
+      https://sample-site-multilocation.netlify.app/pay-rent/wade/rent-sub/login
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://sample-site-multilocation.netlify.app/pay-rent/location-3/rent-sub/login
+      https://sample-site-multilocation.netlify.app/pay-rent/barton/rent-sub/login
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc>
-      https://sample-site-multilocation.netlify.app/pay-rent/location-2/rent-sub/login
+      https://sample-site-multilocation.netlify.app/pay-rent/agricola/rent-sub/login
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
