@@ -114,24 +114,32 @@ export const hoursLocation1AcessHours = [
 export const contactsLocation2 = [
     {
         id: 1,
-        label: 'Address: ',
-        data: '6 Canton St, Baldwinsville, NY 13027',
+        label: 'Office Address: ',
+        data: '204 Purdytown Turnpike, Lakeville, PA 18438',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/MZ2bUNFNT1HWfDfw5'
+        redirect: 'https://www.google.com/maps/place/Wallenpaupack+Self+Storage,+204+Purdytown+Turnpike,+Lakeville,+PA+18438,+United+States/@41.427774,-75.281754,15z/data=!4m2!3m1!1s0x89c4b9c615c3a081:0x4ab43978c9491515'
     },
     {
         id: 2,
         label: 'Email: ',
-        data: `syrasoftsoftware@gmail.com`,
+        data: 'andy@wallenpaupackselfstorage.com',
+        email: `andy@wallenpaupackselfstorage.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`syrasoftsoftware@gmail.com`'
+        redirect: 'mailto:andy@wallenpaupackselfstorage.com'
     },
     {
         id: 3,
+        label: 'Facility Address: ',
+        data: '54 Texas Palmyra Hwy, Hawley, PA 18428',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/jnSFyA6ivmkt1LEE6'
+    },
+    {
+        id: 4,
         label: 'Phone: ',
-        data: '(505) 555-5555',
+        data: '(570) 226-4481',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:5055555555'
+        redirect: 'tel:5702264481'
     },
 ];
 
@@ -145,31 +153,40 @@ export const hoursLocation2 = [
     //     data: 'CLOSED',
     // },
     {
-        data: '24-Hours a Day 7 Days a Week',
+        data: '6:00AM to 8:00PM 7 Days a Week'
     },
 ];
 
 export const contactsLocation3 = [
     {
         id: 1,
-        label: 'Address: ',
-        data: '6 Canton St, Baldwinsville, NY 13027',
+        label: 'Office Address: ',
+        data: '204 Purdytown Turnpike, Lakeville, PA 18438',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/MZ2bUNFNT1HWfDfw5'
+        redirect: 'https://www.google.com/maps/place/Wallenpaupack+Self+Storage,+204+Purdytown+Turnpike,+Lakeville,+PA+18438,+United+States/@41.427774,-75.281754,15z/data=!4m2!3m1!1s0x89c4b9c615c3a081:0x4ab43978c9491515'
     },
     {
         id: 2,
         label: 'Email: ',
-        data: `syrasoftsoftware@gmail.com`,
+        data: 'andy@wallenpaupackselfstorage.com',
+        email: `andy@wallenpaupackselfstorage.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`syrasoftsoftware@gmail.com`'
+        redirect: 'mailto:andy@wallenpaupackselfstorage.com'
     },
     {
         id: 3,
+        label: 'Facility Address: ',
+        data: '80 Miller Rd, Lake Ariel, PA 18436',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/Sk3d1U3orZAmZjcQ7'
+    },
+    
+    {
+        id: 4,
         label: 'Phone: ',
-        data: '(505) 555-5555',
+        data: '(570) 698-7867',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:5055555555'
+        redirect: 'tel:5706987867'
     },
 ];
 
@@ -183,7 +200,7 @@ export const hoursLocation3 = [
     //     data: 'CLOSED',
     // },
     {
-        data: '24-Hours a Day 7 Days a Week',
+        data: '6:00AM to 8:00PM 7 Days a Week'
     },
 ];
 
