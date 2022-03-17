@@ -80,13 +80,16 @@ export const urlLocation3 = `${environment.websiteUrl}/${environment.locationNam
 export const urlLocation4 = `${environment.websiteUrl}/${environment.locationName}/wade/storage-units`;
 
 
-export const description1 = ``;
+export const description1 = `Conveniently located in Agricola, Southern Storage has regular and climate
+controlled storage units perfect for your needs! Reserve online or call today!`;
 
-export const description2 = ``;
+export const description2 = `24/7 access to your unit and free online bill pay service! Southern
+Storage at Rocky Creek offers units from 5' x 10' to 10' x 15'! Call or reserve today!`;
 
-export const description3 = ``;
+export const description3 = `Southern Storage now offers a fully fenced self storage facility in Lucedale,
+MS! Free online bill pay and the same stellar customer service!`;
 
-export const description4 = ``;                            
+export const description4 = `Take a moment to review our selection of self storage units at our Wade location, then give our friendly staff a call!`;                            
 
 export const maplocation1 = 'https://goo.gl/maps/QK2Q6wtPWihsTq7N9';
 export const maplocation2 = 'https://goo.gl/maps/Nkass6k1HNXCXrkF8';
