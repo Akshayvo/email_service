@@ -1,5 +1,5 @@
 # www.robotstxt.org/
 # Allow crawling of all content
-Sitemap: https://best-wenatchee-staging.netlify.app/sitemap.xml
+Sitemap: https://bestwenatcheestorage.com/sitemap.xml
 User-agent: *
 Disallow:/privacy-policy

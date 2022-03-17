@@ -18,7 +18,7 @@ export const environment = {
   facilityName: 'South Wenatchee Self Storage',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: `https://best-wenatchee-staging.netlify.app`
+  websiteUrl: `https://bestwenatcheestorage.com`
 };
 
 /*
