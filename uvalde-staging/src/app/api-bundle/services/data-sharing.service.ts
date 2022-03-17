@@ -5,17 +5,17 @@ import { Injectable } from '@angular/core';
 })
 export class DataSharingService {
 
-//  locationAPIKey = {      
-//   //  loc1:'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O'      ,                                        
-//   loc1: 'dzJ0OVcwSjMqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
-//   loc2: 'dzJ0OVcwSjMqNE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
-//   loc3: 'dzJ0OVcwSjMqNU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
-//   loc4: 'dzJ0OVcwSjMqNk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
-//   loc5: 'dzJ0OVcwSjMqN046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
-//   loc6: 'dzJ0OVczSjkqNk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29396
-//   loc7: 'dzJ0OVcySjgqOU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29289
-//   loc8: 'dzJ0OVczSjcqOE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O'  // 29378
-//   };
+ locationAPIKey = {      
+  //  loc1:'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O'      ,                                        
+  loc1: 'dzJ0OVcwSjMqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
+  loc2: 'dzJ0OVcwSjMqNE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
+  loc3: 'dzJ0OVcwSjMqNU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
+  loc4: 'dzJ0OVcwSjMqNk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
+  loc5: 'dzJ0OVcwSjMqN046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
+  loc6: 'dzJ0OVczSjkqNk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29396
+  loc7: 'dzJ0OVcySjgqOU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29289
+  loc8: 'dzJ0OVczSjcqOE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O'  // 29378
+  };
 
 //  locationAPIKey = {                                                    
 //     loc1: 'UDIoOEQ0YzZ2NDw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28464
@@ -24,16 +24,16 @@ export class DataSharingService {
 //   };
 
 
- locationAPIKey = {                                                    
-    loc1: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28463
-    loc2: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28464
-    loc3: 'Mjg0NjU6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28465
-    loc4: 'Mjg0NjU6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28465
-    loc5: 'Mjg0NjU6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28465
-    loc6: 'Mjg0NjU6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28465
-    loc7: 'Mjg0NjU6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28465
-    loc8: 'Mjg0NjU6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28465
-  };
+//  locationAPIKey = {                                                    
+//     loc1: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28463
+//     loc2: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28464
+//     loc3: 'Mjg0NjU6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28465
+//     loc4: 'Mjg0NjU6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28465
+//     loc5: 'Mjg0NjU6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28465
+//     loc6: 'Mjg0NjU6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28465
+//     loc7: 'Mjg0NjU6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28465
+//     loc8: 'Mjg0NjU6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28465
+//   };
 
   paymentSuccess: boolean;
   locationName: string;
