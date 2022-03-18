@@ -13,14 +13,14 @@ export const environment = {
   cards: ['Visa', 'Master Card', 'Amex', 'Discover', 'test'],
   errorsMails: [ 'sanghmitra.v@codeparva.in' ],
   senderEmail: 'errors@codeparva.in',
-  emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
+  emailBaseUrl: '',
   appId: 'store-a-way',
   facilityName: 'store-a-way',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   websiteUrl: 'https://storeawayllc.com',
-  // APIKey: `dzJ0OVc1SjUqMk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29552
-  APIKey: `Mjg0NjU6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28465
+  APIKey: `dzJ0OVc1SjUqMk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29552 
+  // APIKey: `Mjg0NjU6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28465 
   
 };
 

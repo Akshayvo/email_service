@@ -100,6 +100,7 @@ twitterHomePage: any
 
   public navigate(location: any) {
     if (
+      location === "/view-rates/move-in" ||
       location === "/view-rates" ||
       location === "/storage-tips" ||
       location === "/reserve-unit"
