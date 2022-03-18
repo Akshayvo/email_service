@@ -53,7 +53,7 @@ export class ThankYouComponent implements OnInit, OnDestroy {
       name: 'description',
       content: `We've received your reservation! One of our friendly staff will be in touch!`
     });
-    this.titleService.setTitle('Thank You For Reserving Your Unit at Self Storage Facility!');
+    this.titleService.setTitle('Thank You For Reserving Your Unit at Wallenpaupack Self Storage Facility!');
   } 
 
   ngOnInit() {

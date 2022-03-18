@@ -175,7 +175,7 @@ public fetchTwitter() {
   }
 
   public fetchContactDetailsLocation1() {
-    this.heading = `Self Storage Facility - Location-1`;
+    this.heading = `Wallenpaupack Self Storage Facility - Hawley`;
     this.locationId = '1'
     this.contactDetails = contactsLocation1;
     this.hoursDetails = hoursLocation1;
@@ -183,27 +183,27 @@ public fetchTwitter() {
   
   public fetchContactDetailsLocation2() {
     this.locationId = '2'
-    this.heading = `Self Storage Facility - Location-2`;
+    this.heading = `Wallenpaupack Self Storage Facility - Lakeville`;
     this.contactDetails = contactsLocation2;
     this.hoursDetails = hoursLocation2;
   }
 
   public fetchContactDetailsLocation3() {
-    this.heading = `Self Storage Facility - Location-3`;
+    this.heading = `Wallenpaupack Self Storage Facility - Lake Ariel`;
     this.locationId = '3'
     this.contactDetails = contactsLocation3;
     this.hoursDetails = hoursLocation3;
   }
 
   public fetchContactDetailsLocation4() {
-    this.heading = `Self Storage Facility - Location-3`;
+    this.heading = `Wallenpaupack Self Storage - Greentown`;
     this.locationId = '4'
     this.contactDetails = contactsLocation4;
     this.hoursDetails = hoursLocation4;
   }
 
   public fetchContactDetailsLocation5() {
-    this.heading = `Self Storage Facility - Location-3`;
+    this.heading = `Wallenpaupack Self Storage - Greentown`;
     this.locationId = '5'
     this.contactDetails = contactsLocation5;
     this.hoursDetails = hoursLocation5;

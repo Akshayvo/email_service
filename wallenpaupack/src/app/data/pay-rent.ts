@@ -14,27 +14,27 @@ export const tableHeader = [
 export const tableData = [
   {
     facility: 'Hawley',
-    address: '',
+    address: '54 Texas Palmyra Hwy, Hawley, PA 18428',
     url: 'hawley'
   },
   {
     facility: 'Lakeville',
-    address: '',
+    address: '204 Purdytown Turnpike, Lakeville, PA 18438',
     url: 'lakeville'
   },
   {
     facility: 'Lake Arial',
-    address: '',
+    address: '80 Miller Rd, Lake Ariel, PA 18436',
     url: 'lake-ariel'
   },
   {
     facility: 'Greentown',
-    address: '',
+    address: '116 Ehrgood Rd, Greentown, PA 18426',
     url: 'greentown'
   },
   {
     facility: 'Greentown1',
-    address: '',
+    address: '116 Ehrgood Rd, Greentown, PA 18426',
     url: 'greentown1'
   }
 ];
@@ -42,27 +42,27 @@ export const tableData = [
 export const tableDataContactPage = [
   {
     facility: 'Hawley',
-    address: '',
+    address: '54 Texas Palmyra Hwy, Hawley, PA 18428',
     url: 'hawley'
   },
   {
     facility: 'Lakeville',
-    address: '',
+    address: '204 Purdytown Turnpike, Lakeville, PA 18438',
     url: 'lakeville'
   },
   {
     facility: 'Lake-Arial',
-    address: '',
+    address: '80 Miller Rd, Lake Ariel, PA 18436',
     url: 'lake-ariel'
   },
   {
     facility: 'Greentown',
-    address: '',
+    address: '116 Ehrgood Rd, Greentown, PA 18426',
     url: 'greentown'
   },
   {
     facility: 'Greentown1',
-    address: '',
+    address: '116 Ehrgood Rd, Greentown, PA 18426',
     url: 'greentown1'
   },
 ];

@@ -4,7 +4,7 @@ import { homePageContent, homePageTitle, payRentPageContent,
 contactPageContent, contactPageTitle,
 location1PageContent, location2PageTitle,
 location2PageContent, location1PageTitle,
-location3PageContent, location3PageTitle,
+location3PageContent, location3PageTitle, location4PageContent, location5PageContent,
 location1PayrentPageTitle, location1PayrentPageContent,
 location2PayrentPageTitle, location2PayrentPageContent,
 location3PayrentPageTitle, location3PayrentPageContent,
@@ -13,7 +13,7 @@ location2ContactPageTitle, location2ContactPageContent,
 location3ContactPageTitle, location3ContactPageContent } from '../data/title';
 import { contactsLocation1,
   contactsLocation2,
-  contactsLocation3
+  contactsLocation3, contactsLocation4, contactsLocation5
  } from '../data/contact';
 
 //  const openingHoursLocation1 = [];
@@ -50,16 +50,25 @@ import { contactsLocation1,
 const contactIndex1 = contactsLocation1.findIndex(x => x.label === 'Phone: ');
 const contactIndex2 = contactsLocation2.findIndex(x => x.label === 'Phone: ');
 const contactIndex3 = contactsLocation3.findIndex(x => x.label === 'Phone: ');
+const contactIndex4 = contactsLocation4.findIndex(x => x.label === 'Phone: ');
+const contactIndex5 = contactsLocation5.findIndex(x => x.label === 'Phone: ');
 
 
 const emailIndex1 = contactsLocation1.findIndex(x => x.label === 'Email: ');
 const emailIndex2 = contactsLocation2.findIndex(x => x.label === 'Email: ');
 const emailIndex3 = contactsLocation3.findIndex(x => x.label === 'Email: ');
+const emailIndex4 = contactsLocation4.findIndex(x => x.label === 'Email: ');
+const emailIndex5 = contactsLocation4.findIndex(x => x.label === 'Email: ');
+
+
 
   
-export const nameLocation1 = `Self Storage Facility - Location-1`;
-export const nameLocation2 = `Self Storage Facility - Location-2`;
-export const nameLocation3 = `Self Storage Facility - Location-3`;
+export const nameLocation1 = `Wallenpaupack Self Storage Facility - Hawley`;
+export const nameLocation2 = `Wallenpaupack Self Storage Facility - Lakeville`;
+export const nameLocation3 = `Wallenpaupack Self Storage Facility - Lake Ariel`;
+export const nameLocation4 = `Wallenpaupack Self Storage - Greentown`;
+export const nameLocation5 = `Wallenpaupack Self Storage - Greentown`;
+
 
 
 
@@ -80,11 +89,15 @@ export const urlLocation5 = `${environment.websiteUrl}/${environment.locationNam
 export const description1 = `brick self storage facility front office with a green lawn
                              in the front and blue sky above`;
 
-export const description2 = `Our Location-2 location has a number of regular and climate controlled unit types `;
+export const description2 = `Our Lakeville location has a number of regular and climate controlled unit types `;
 
-export const description3 = `Our Location-3 location has a number of regular and climate controlled unit types ideal
+export const description3 = `Our Lake Ariel location has a number of regular and climate controlled unit types ideal
                              for just about any self storage need at an affordable price!  Our 24-hour access policy
                              makes coming and going on your schedule a breeze!`;
+
+export const description4 = `Are you in search of affordable self storage or vehicle parking? Wallenpaupack Self Storage has a wide variety of convenient sizes and excellent customer service!`;
+
+export const description5 = `Take a moment to view our affordable self storage unit rates, then make your reservation by filling out our form or calling our office today!`
 
 export const maplocation1 = 'https://goo.gl/maps/MZ2bUNFNT1HWfDfw5';
 export const maplocation2 = 'https://goo.gl/maps/MZ2bUNFNT1HWfDfw5';
@@ -117,6 +130,24 @@ export const addressLoaction3 = {
   'addressCountry': ''
 } 
 
+export const addressLoaction4 = {
+  '@type': '',
+  'streetAddress': '',
+  'addressLocality': '',
+  'addressRegion': '',
+  'postalCode': '',
+  'addressCountry': ''
+}
+
+export const addressLoaction5 = {
+  '@type': '',
+  'streetAddress': '',
+  'addressLocality': '',
+  'addressRegion': '',
+  'postalCode': '',
+  'addressCountry': ''
+}
+
 
 
 
@@ -133,6 +164,18 @@ export const imageLocation1 = [
  ]
 
  export const imageLocation3 = [
+  '',
+  '',
+  ''
+ ]
+
+ export const imageLocation4 = [
+  '',
+  '',
+  ''
+ ]
+
+ export const imageLocation5 = [
   '',
   '',
   ''
@@ -286,6 +329,80 @@ export const Location3Script = {
 
 
 };
+
+export const Location4Script = {
+  '@context': 'https://schema.org',
+  '@type': 'SelfStorage',
+  'image': imageLocation4,
+  '@id': environment.websiteUrl,
+  'name': nameLocation4,
+   'description': description4 || location4PageContent,
+  'address': addressLoaction4,
+ 'aggregateRating': {
+'@type': 'AggregateRating',
+'ratingValue': '5',
+'bestRating': '5',
+'reviewCount': ''
+},
+  'geo': {
+    '@type': 'GeoCoordinates',
+    'latitude': 30.4222526,
+    'longitude':  -87.8864467
+  },
+  'url': urlLocation4,
+  'telephone': contactsLocation4[contactIndex4].data,
+
+  'priceRange': '$30 - $175',
+  'openingHours': [],
+  'currenciesAccepted': 'USD',
+'paymentAccepted': 'Cash, Check, Credit Card, Debit Card, Online Credit Card, Online Debit Card',
+   'areaServed': {
+'@type': 'State',
+'name': 'New York'
+ },
+'hasMap': maplocation3,
+  'acceptsReservations': 'True'
+
+
+};
+
+export const Location5Script = {
+  '@context': 'https://schema.org',
+  '@type': 'SelfStorage',
+  'image': imageLocation5,
+  '@id': environment.websiteUrl,
+  'name': nameLocation5,
+   'description': description5 || location5PageContent,
+  'address': addressLoaction5,
+ 'aggregateRating': {
+'@type': 'AggregateRating',
+'ratingValue': '5',
+'bestRating': '5',
+'reviewCount': ''
+},
+  'geo': {
+    '@type': 'GeoCoordinates',
+    'latitude': 30.4222526,
+    'longitude':  -87.8864467
+  },
+  'url': urlLocation5,
+  'telephone': contactsLocation5[contactIndex5].data,
+
+  'priceRange': '$30 - $175',
+  'openingHours': [],
+  'currenciesAccepted': 'USD',
+'paymentAccepted': 'Cash, Check, Credit Card, Debit Card, Online Credit Card, Online Debit Card',
+   'areaServed': {
+'@type': 'State',
+'name': 'New York'
+ },
+'hasMap': maplocation3,
+  'acceptsReservations': 'True'
+
+
+};
+
+
 
 
 export const contactPageLocation1Script = {

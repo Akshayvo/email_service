@@ -9,7 +9,7 @@ import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { DataSharingService } from '../api-bundle/services/data-sharing.service';
 import { CanonicalService } from '../services/canonical.service';
-import { Location1Script, Location2Script, Location3Script,
+import { Location1Script, Location2Script, Location3Script, Location4Script, Location5Script,
   ogLocation1, ogLocation2, ogLocation3, twitterLocation1,
   twitterLocation2, twitterLocation3 } from '../data/script';
 import { featuresHead, featuresList, location1FeaturesHead, location2FeaturesHead,
@@ -100,7 +100,7 @@ id = 3;
               content: `${this.location1PageContent}`
     });
     this.titleService.setTitle(`${this.location1PageTitle}`);
-            this.locationName = `Self Storage Facility - Location-1`;
+            this.locationName = `Wallenpaupack Self Storage Facility - Hawley`;
             this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
             this.dataSharingService.locationName = this.locationName;
             this.script = Location1Script;
@@ -124,7 +124,7 @@ id = 3;
              content: `${this.location2PageContent}`
     });
     this.titleService.setTitle(`${this.location2PageTitle}`);
-           this.locationName = `Self Storage Facility - Location-2`;
+           this.locationName = `Wallenpaupack Self Storage Facility - Lakeville`;
            this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
            this.dataSharingService.locationName = this.locationName;
            this.script = Location2Script;
@@ -148,7 +148,7 @@ id = 3;
           content: `${this.location3PageContent}`
     });
     this.titleService.setTitle(`${this.location3PageTitle}`);
-        this.locationName = `Self Storage Facility - Location-3 Location`;
+        this.locationName = `Wallenpaupack Self Storage Facility - Lake Ariel`;
         this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
         this.dataSharingService.locationName = this.locationName;
         this.script = Location3Script;
@@ -173,10 +173,10 @@ id = 3;
       content: `${this.location3PageContent}`
 });
 this.titleService.setTitle(`${this.location3PageTitle}`);
-    this.locationName = `Self Storage Facility - Location-3 Location`;
-    this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
+    this.locationName = `Wallenpaupack Self Storage - Greentown`;
+    this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc4;
     this.dataSharingService.locationName = this.locationName;
-    this.script = Location3Script;
+    this.script = Location4Script;
     this.loadScript();
     this.og.forEach(element => {
       this.meta.addTag({
@@ -197,10 +197,10 @@ this.titleService.setTitle(`${this.location3PageTitle}`);
     content: `${this.location3PageContent}`
 });
 this.titleService.setTitle(`${this.location3PageTitle}`);
-  this.locationName = `Self Storage Facility - Location-3 Location`;
-  this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
+  this.locationName = `Wallenpaupack Self Storage - Greentown`;
+  this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc5;
   this.dataSharingService.locationName = this.locationName;
-  this.script = Location3Script;
+  this.script = Location5Script;
   this.loadScript();
   this.og.forEach(element => {
     this.meta.addTag({

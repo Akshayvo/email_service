@@ -51,11 +51,11 @@ export const headingLocation6 = ``;
 
 
 
-export const headingReservePageLocation1 = `Are you ready to rent a unit at Location-1`;
+export const headingReservePageLocation1 = `Are you ready to rent a unit at Hawley`;
 
-export const headingReservePageLocation2 = `Are you ready to rent a unit at Location-2`;
+export const headingReservePageLocation2 = `Are you ready to rent a unit at Lakeville`;
 
-export const headingReservePageLocation3 = `Are you ready to rent a unit at Location-3`;
+export const headingReservePageLocation3 = `Are you ready to rent a unit at Lake Ariel`;
 
 export const headingReservePageLocation4 = ``;
 
@@ -73,7 +73,7 @@ export const heading4 = `Wallenpaupack Self Storage - Greentown`;
 
 export const heading5 = `Wallenpaupack Self Storage - Greentown`;
 
-export const heading6 = `Self Storage Facility - Robertsdale`;
+export const heading6 = `Wallenpaupack Self Storage Facility - Robertsdale`;
 
 
 export const unitSizerLocation1 = [

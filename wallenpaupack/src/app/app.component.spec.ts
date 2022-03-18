@@ -14,15 +14,15 @@ describe('AppComponent', () => {
     const app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();
   }));
-  it(`should have as title 'Self Storage Facility'`, async(() => {
+  it(`should have as title 'Wallenpaupack Self Storage Facility'`, async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('Self Storage Facility');
+    expect(app.title).toEqual('Wallenpaupack Self Storage Facility');
   }));
   it('should render title in a h1 tag', async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to Self Storage Facility Website!');
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to Wallenpaupack Self Storage Facility Website!');
   }));
 });

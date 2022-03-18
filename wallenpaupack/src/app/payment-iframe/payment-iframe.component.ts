@@ -22,10 +22,10 @@ export class PaymentIframeComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Pay your rent for any of the 4 Self Storage Facility right here!
+      content: `Pay your rent for any of the 4 Wallenpaupack Self Storage Facility right here!
       Simply follow the instructions or call your facility to learn how!`
     });
-    this.titleService.setTitle('Pay Rent | Self Storage Facility');
+    this.titleService.setTitle('Pay Rent | Wallenpaupack Self Storage Facility');
   }
 
   ngOnInit() {

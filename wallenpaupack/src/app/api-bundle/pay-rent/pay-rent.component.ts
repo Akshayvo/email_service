@@ -46,15 +46,15 @@ export class PayRentComponent implements OnInit {
     });
     this.canonical.create();
     if (this.router.url.includes('hawley')) {
-      this.name = ' Location-1';
+      this.name = ' Hawley';
   } else if (this.router.url.includes('lakeville')) {
-    this.name = ' Location-2';
+    this.name = ' Lakeville';
   } else if (this.router.url.includes('lake-ariel')) {
-    this.name = 'Location-3';
+    this.name = 'Lake Ariel';
   } else if (this.router.url.includes('greentown')) {
-    this.name = 'Location-4';
-  } else if (this.router.url.includes('greentown')) {
-    this.name = 'Location-5';
+    this.name = 'greentown';
+  } else if (this.router.url.includes('greentown1')) {
+    this.name = 'greentown1';
   }
     if (!!localStorage.getItem('APIKey')) {
       this.dataSharingService.apiKey = localStorage.getItem('APIKey');

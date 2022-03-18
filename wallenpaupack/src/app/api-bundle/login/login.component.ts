@@ -132,31 +132,31 @@ export class LoginComponent implements OnInit, OnDestroy {
 
     if (this.router.url.includes('hawley')) {
       this.id = 1;
-      this.name = 'Self Storage Facility - Location-1';
+      this.name = 'Wallenpaupack Self Storage Facility - Hawley';
       this.contact = contactsLocation1;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc1);
     } else  if (this.router.url.includes('lakeville')) {
       this.id = 2;
-      this.name = 'Self Storage Facility - Location-2';
+      this.name = 'Wallenpaupack Self Storage Facility - Lakeville';
       this.contact = contactsLocation2;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc2);
     } else  if (this.router.url.includes('lake-ariel')) {
       this.id = 3;
-      this.name = 'Self Storage Facility - Location-3';
+      this.name = 'Wallenpaupack Self Storage Facility - Lake Ariel';
       this.contact = contactsLocation3;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc3);
     } else  if (this.router.url.includes('greentown')) {
-      this.id = 3;
-      this.name = 'Self Storage Facility - Location-3';
+      this.id = 4;
+      this.name = 'Wallenpaupack Self Storage - Greentown';
       this.contact = contactsLocation4;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc4;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc4);
     } else  if (this.router.url.includes('greentown1')) {
-      this.id = 3;
-      this.name = 'Self Storage Facility - Location-3';
+      this.id = 5;
+      this.name = 'Wallenpaupack Self Storage - Greentown';
       this.contact = contactsLocation5;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc5;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc5);

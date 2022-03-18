@@ -83,6 +83,7 @@ const withTab = [
   }
 ];
 
+
 // const reservationForm = environment
 const childroute = environment.signUpForAuotoPay ? withTab : withoutTab;
 
@@ -491,6 +492,7 @@ export const apiRoutes = [
     path: 'pay-rent/greentown1', component: PayRentComponent,
     children: childroute
   },
+
   { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
   { path: 'contact-hawley', component: ContactUsComponent},

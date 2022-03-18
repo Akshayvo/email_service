@@ -193,6 +193,6 @@ export const featuresList = [
 export const jumbotron = [
     {
         h2: `Affordable Self Storage in Baldwinsville`,
-        blurb: `Self Storage Facility is a locally owned and operated business serving Baldwinsville, New York, and the surrounding communities with clean, well-maintained self storage units, friendly service, and many conveniences all at affordable rates. Our storage units come in a variety of sizes including climate controlled varieties. Take a moment to review the pricing and storage unit or vehicle parking availability at any of our three convenient locations, then give us a call or rent your unit online!`,
+        blurb: `Wallenpaupack Self Storage Facility is a locally owned and operated business serving Baldwinsville, New York, and the surrounding communities with clean, well-maintained self storage units, friendly service, and many conveniences all at affordable rates. Our storage units come in a variety of sizes including climate controlled varieties. Take a moment to review the pricing and storage unit or vehicle parking availability at any of our three convenient locations, then give us a call or rent your unit online!`,
     }
 ];
