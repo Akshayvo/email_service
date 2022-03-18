@@ -38,6 +38,33 @@ export const hoursHomePage = [
     }
 ];
 
+
+export const contactsForHeader = [
+    // {
+    //     id: 1,
+    //     label: 'Address: ',
+    //     data: '',
+    //     class: '',
+    //     redirect: ''
+    // },
+    {
+        id: 2,
+        label: 'Email: ',
+        email: 'Cedarspringsstorage@gmail.com',
+        data: `Cedarspringsstorage@gmail.com`,
+        class: 'fas fa-envelope-open mr-2 iconColor',
+        redirect: 'mailto:Cedarspringsstorage@gmail.com'
+    },
+    {
+        id: 3,
+        label: 'Phone: ',
+        data: '(717) 367-6300',
+        class: 'fas fa-phone mr-2 iconColor',
+        redirect: 'tel:7173676300'
+    },
+];
+
+
 export const contactsLocation1 = [
     {
         id: 1,
@@ -125,7 +152,7 @@ export const contactsLocation2 = [
 
 export const hoursLocation2 = [
     {
-        label: 'No office on-site',
+        label: 'Our office is located just down the street at 2140 N Market St, Elizabethtown, PA 17022',
         // data: '', 
     },
     // {

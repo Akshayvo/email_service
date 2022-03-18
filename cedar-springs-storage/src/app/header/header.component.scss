@@ -113,16 +113,25 @@ a {
   border: 1px #efefef solid;
 }
 
-@media screen and (max-width: 991px) {
-  .display {
+@media screen and (min-width: 768px) {
+  .payment-button {
     display: none;
   }
+}
+
+@media screen and (max-width: 991px) {
+  // .display {
+  //   display: none;
+  // }
 
   .nav-link {
     padding-top: 10px !important;
     padding-bottom: 10px !important;
   }
 
+  .contact-details {
+    display: block;
+  }
 
   .dropdown {
     ul {
@@ -157,6 +166,13 @@ a {
 }
 
   @media screen and (max-width: 600px) {
+
+
+    .payment-button{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     .contact-bar {
       font-size: 0.8rem !important;
       line-height: 1rem !important;
@@ -165,7 +181,7 @@ a {
     #site-header {
       position: relative;
       height: auto;
-      background: #fff;
+      background: #12448c;
       top: 0;
       width: 100%;
       z-index: 100;
@@ -193,7 +209,7 @@ a {
     #site-header {
       position: relative;
       height: auto;
-      background: #fff;
+      background: #12448c;
       top: 0;
       width: 100%;
       z-index: 100;

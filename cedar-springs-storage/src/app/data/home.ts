@@ -164,10 +164,10 @@ export const serviceOffered = [
         p: `Cedar Springs Self Storage provides providing clean, well-maintained self storage units,   and the kind of hometown service you've come to expect from a locally owned and operated self storage facility. All of this is available at extremely competitive rates! Our 2 locations serve local residents, and growing businesses in and around Elizabethtown, PA. Searching for parking for your boat, recreational vehicle, or camper? We also offer both indoor and outdoor parking spaces!`,
     },
     {
-        p: `Our facilities have all of the modern conveniences to make your stay with us a hassle-free experience. Start your next self storage project by checking our our live inventory at our main location or the auxiliary lot just down the road! Once you’ve found a regular or climate controlled self storage unit that fits you needs and is conveniently located for you, rent or reserve your unit online in seconds with our easy tenant portal. `,
+        p: `Our facilities have all of the modern conveniences to make your stay with us a hassle-free experience. Start your next self storage project by checking out our inventory at our main location or the auxiliary lot just down the road. Please call 717-367-6300 to check on availability or e-mail cedarspringsstorage@gmail.com  and we will be glad to show you our available options so you can rent the size that is best for your needs.`,
     },
     {
-        p: `Once you arrive at your unit, you’ll find our well-lit, fully paved grounds covered by security cameras and access controlled by your unique pin-code. Even our climate-controlled units are behind pin-code controlled doors and gates. Load and unload your storage unit at your convenience, then log online to pay your rent 24-hours a day with our new tenant portal.`,
+        p: `Once you arrive at your unit, you’ll find our well-lit, fully paved grounds covered by security cameras and access controlled by your unique pin-code. Even our climate-controlled units are behind pin-code controlled gates. Load and unload your storage unit at your convenience, then log online to pay your rent 24-hours a day with our new tenant portal.`,
     },
     
 ];
