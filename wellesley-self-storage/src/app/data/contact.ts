@@ -10,15 +10,15 @@ export const contact = [
         id: 1,
         label: 'Mailing Address:',
         data: '1214 Queens Bush Rd, Wellesley, ON N0B 2T0, Canada',
-        class: 'fas fa-map-marker-alt mx-2 iconColor',
+        class: '',
         redirect: ''
     },
     {
         id: 2,
         label: 'Email:',
-        data: 'gregj@leisfeed.ca',
+        data: 'info@wellesleystorage.ca',
         class: 'fas fa-envelope mx-2 iconColor',
-        redirect: 'mailto:gregj@leisfeed.ca'
+        redirect: 'mailto:info@wellesleystorage.ca'
     },
     {
         id: 3,
@@ -34,10 +34,13 @@ export const hours = [
         label: 'Monday - Friday: ',
         data: '8:00AM to 6:00PM'
     },
-   
     {
-        label: 'Saturday & Sunday: ',
-        data: 'CLOSED'
+        label: 'Saturday',
+        data: '9:00AM to 4:00PM'
+    },
+    {
+        label: 'Sunday',
+        data: '11:00AM to 3:00PM'
     },
     {
         label: 'Storage Access Hours: ',

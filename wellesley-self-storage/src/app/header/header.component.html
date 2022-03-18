@@ -7,7 +7,7 @@
             <i [class]="contact?.class"></i>
             <span class="contact-links" *ngIf="contact?.label === 'Facility Address:' || contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
               <a [href]="contact?.redirect" target="{{(contact?.label === 'Facility Address:') ? '_blank' : '_self'}}">&nbsp;{{contact.data}}</a></span>
-            <ng-template #other_content>&nbsp;{{contact.data}}</ng-template>
+            <!-- <ng-template #other_content>&nbsp;{{contact.data}}</ng-template> -->
           </span>
         </div>
         <!-- <div class="col-md-2 ml-auto text-right">
@@ -18,6 +18,9 @@
           </span>
         </div> -->
       </div>
+      <div class="payment-button">
+        <a class="btn btn-payment p-2" [routerLink]="['/pay-rent']" role="button">Pay Rent</a>
+       </div>
     </div>
   </div>
 </div>
