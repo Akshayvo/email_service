@@ -346,6 +346,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         Description: this.description,
       }])
     });
+    window.scrollTo(0, 0);
   }
     public fetchUSState() {
     this.option = option;
