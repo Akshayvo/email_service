@@ -29,9 +29,9 @@ export const contact = [
     },
     {
         id: 4,
-        redirect: 'mailto:liz@cranberrystorage.com',
+        redirect: 'mailto:customerservice@cranberrystorage.com',
         label: 'Email: ',
-        data: 'liz@cranberrystorage.com',
+        data: 'customerservice@cranberrystorage.com',
         // tslint:disable-next-line: max-line-length
         altrenateContact: 'You may also contact us via <strong><a class="altrenateContact" href="https://www.facebook.com/Cranberry-Storage-2060303874186177/" target="_blank">Facebook!</a><strong>',
         class: 'fas fa-envelope mr-2 iconColor',
