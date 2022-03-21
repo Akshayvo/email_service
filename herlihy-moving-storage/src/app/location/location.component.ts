@@ -1,7 +1,7 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { contactsLocation1, hoursLocation1, hoursLocation1AcessHours,
-          contactsLocation2, hoursLocation2,hoursLocation2AcessHours, hoursLocation3, contactsLocation3, contactsLocation4, hoursLocation4,
+import { contactLocationPage1, hoursLocation1, hoursLocation1AcessHours,
+          contactLocationPage2, hoursLocation2,hoursLocation2AcessHours, hoursLocation3, contactsLocation3, contactsLocation4, hoursLocation4,
           contactsLocation5, hoursLocation5, contactsLocation6, hoursLocation6,
           } from '../data/contact';
 import { heading1, heading2, tabs, tabs1, tabs2, heading3, tabs3, heading4, heading5, heading6  } from '../data/location';
@@ -357,7 +357,7 @@ this.titleService.setTitle(`${this.location6PageTitle}`);
   public fetchDetailsLocation1() {
       this.name = heading1;
       this.locationId = 1;
-      this.contacts = contactsLocation1;
+      this.contacts = contactLocationPage1;
       this.hours = hoursLocation1;
       this.access = hoursLocation1AcessHours;
       this.tabs = tabs;
@@ -367,7 +367,7 @@ this.titleService.setTitle(`${this.location6PageTitle}`);
    public fetchDetailsLocation2() {
      this.name = heading2;
      this.locationId = 2;
-     this.contacts = contactsLocation2;
+     this.contacts = contactLocationPage2;
      this.hours = hoursLocation2;
      this.tabs = tabs;
      this.features = location2FeaturesHead;

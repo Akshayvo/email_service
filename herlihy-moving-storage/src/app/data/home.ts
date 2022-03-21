@@ -160,9 +160,6 @@ export const location6FeaturesHead = [
 
 export const serviceOffered = [
     {
-        p: `Herlihy Self Storage is Chillicothe and Grove City's most trusted self storage facility name. We have been serving Chillicothe, Grove City, and the surrounding communities since 1920. With nearly a century of experience and two convenient locations, we are your one-stop self storage solution in Chillicothe.`,
-    },
-    {
         p: `Whether you’re looking for climate controlled self storage units, outdoor recreational vehicle parking, or a traditional self storage unit, Herlihy Self Storage has you covered at one of our locally owned facilities. Our family owned and operated storage facility also offers modern amenities such as online rentals and a tenant portal to manage your account 24/7.`,
     },
     {
