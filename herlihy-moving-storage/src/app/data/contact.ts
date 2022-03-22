@@ -45,10 +45,10 @@ export const contactsLocation1 = [
     {
         id: 2,
         label: 'Email: ',
-        email: 'joe@herlihymoving.com',
-        data: `joe@herlihymoving.com`,
+        email: 'selfstorage@herlihymoving.com',
+        data: `selfstorage@herlihymoving.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:joe@herlihymoving.com'
+        redirect: 'mailto:selfstorage@herlihymoving.com'
     },
     {
         id: 3,
@@ -65,6 +65,16 @@ export const contactsLocation1 = [
         redirect: 'tel:7402532203'
     },
 ];
+
+export const contactLocationPage1 = [
+    {
+        id: 1,
+        label: 'Address: ',
+        data: '747 Marietta Rd, Chillicothe, OH 45601',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/WNfE3oDkb4oZftqeA'
+    },
+]
 
 export const hoursLocation1 = [
     {
@@ -108,10 +118,10 @@ export const contactsLocation2 = [
     {
         id: 2,
         label: 'Email: ',
-        data: 'UStor104@herlihymoving.com',
-        email: `UStor104@herlihymoving.com`,
+        data: 'selfstorage@herlihymoving.com',
+        email: `selfstorage@herlihymoving.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:UStor104@herlihymoving.com'
+        redirect: 'mailto:selfstorage@herlihymoving.com'
     },
     {
         id: 3,
@@ -121,6 +131,16 @@ export const contactsLocation2 = [
         redirect: 'tel:6148714040'
     },
 ];
+
+export const contactLocationPage2 = [
+    {
+        id: 1,
+        label: 'Address: ',
+        data: '3759 Jackson Pike, Grove City, OH 43123',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://g.page/Herlihymoving?share'
+    },
+]
 
 export const hoursLocation2 = [
     {
@@ -154,10 +174,10 @@ export const contactsLocation3 = [
     {
         id: 2,
         label: 'Email: ',
-        data: 'accounts@storageplusbaldwin.com',
-        email: `accounts@storageplusbaldwin.com`,
+        data: 'selfstorage@herlihymoving.com',
+        email: `selfstorage@herlihymoving.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:accounts@storageplusbaldwin.com'
+        redirect: 'mailto:selfstorage@herlihymoving.com'
     },
     {
         id: 3,
