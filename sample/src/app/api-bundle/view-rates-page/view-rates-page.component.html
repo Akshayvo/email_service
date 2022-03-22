@@ -48,9 +48,9 @@
                 <meta itemprop="priceRange" content="{{lstUnitType.MonthlyRate}}" />
               </div>
           </div>
-          <div class="text-center" *ngIf="lstUnitType.ReservationFee != null">
-            <p>Rental Deposit</p>
-            <div class="custom-font"><strong><span>$</span>{{lstUnitType.ReservationFee | number : '1.2-2'}}</strong></div>
+          <div class="text-center" *ngIf="lstUnitType.DepositAmount != null">
+            <p>Deposit</p>
+            <div class="custom-font"><strong><span>$</span>{{lstUnitType.DepositAmount | number : '1.2-2'}}</strong></div>
           </div>
         </div>
       </div>
