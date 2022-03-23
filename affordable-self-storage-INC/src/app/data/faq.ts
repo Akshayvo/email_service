@@ -5,7 +5,7 @@ export const faq = [
     },
     {
         h2: `What are your office hours? `,
-        paragraph: `Monday: 11:00AM to 4:00PM<br>Tuesday - Wednesday: 9:00AM to 4:00PM <br> Thursday:  9:00AM to 2:00PM<br><b>*Tuesday the office is closed mid-morning from 10:00AM to 12:00PM </b>
+        paragraph: `Monday: 9:00AM to 2:00PM<br>Tuesday - Wednesday: 9:00AM to 4:00PM <br> Thursday:  9:00AM to 2:00PM<br><b>*Tuesday the office is closed mid-morning from 10:00AM to 12:00PM </b>
         <br>Friday: 11:00AM to 4:00PM 
         <br>After Hours: By Appointment `
     },
