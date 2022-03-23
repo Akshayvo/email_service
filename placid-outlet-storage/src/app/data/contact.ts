@@ -24,7 +24,7 @@ export const contact = [
 
 export const hours = [
     {
-        label: '7 Days a Week 9:00AM to 5:00PM Or By Appointment',
+        data: '7 Days a Week 9:00AM to 5:00PM Or By Appointment',
         
     },
     // {
