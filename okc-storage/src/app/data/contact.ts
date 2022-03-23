@@ -44,6 +44,7 @@ export const contactsLocation1 = [
     {
         id: 2,
         label: 'Email: ',
+        email: 'info@okcstorage.com',
         data: `info@okcstorage.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
         redirect: 'mailto:`info@okcstorage.com`'

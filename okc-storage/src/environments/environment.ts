@@ -13,9 +13,9 @@ export const environment = {
   cards: ['Visa', 'Master Card', 'Amex', 'Discover'],
   errorsMails: ['sanghmitra.v@codeparva.in'],
   senderEmail: 'errors@codeparva.in',
-  emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
-  appId: 'Self Storage Facility - Testing',
-  facilityName: 'Self Storage Facility',
+  emailBaseUrl: '',
+  appId: 'OKC Storage - Testing',
+  facilityName: 'OKC Storage',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   websiteUrl: `https://okcstorage-staging.netlify.app`

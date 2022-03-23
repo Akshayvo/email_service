@@ -182,6 +182,7 @@ onSubmit() {
   }
 
   this.receiveremail = this.contactDetails[1].email;
+  console.log(this.contactDetails[1].email);
   this.completeMessage = `<strong>Phone:</strong> ${this.contactForm.value.phone}, <br/>
                           <strong>Message:</strong> ${this.contactForm.value.message}`;
 
