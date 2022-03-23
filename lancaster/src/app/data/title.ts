@@ -1,5 +1,5 @@
-export const homePageTitle = `24-Hour Access Self Storage Units & Vehicle Parking`;
-export const homePageContent = `Lancaster Self Storage offers convenient 24/7 access to your belongings or vehicle, and a variety of storage solutions available at affordable rates!`;
+export const homePageTitle = `Affordable Self Storage Units & Vehicle Parking in Lancaster, P.A`;
+export const homePageContent = `Lancaster Self Storage offers convenient access to your belongings or vehicle, and a variety of storage solutions available at affordable rates!`;
 
 export const viewRatesPageTitle = `View Rates | Lancaster Self Storage`;
 export const viewRatesPageContent = `Take a moment to view our affordable self storage unit rates, then make your reservation by filling out our form or calling our office today!`;
