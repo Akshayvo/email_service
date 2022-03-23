@@ -1,0 +1,25 @@
+import { Component, OnInit } from '@angular/core';
+import { contactsLocation1,  } from '../data/contact';
+
+@Component({
+  selector: 'app-pay-rent-florida',
+  templateUrl: './pay-rent-florida.component.html',
+  styleUrls: ['./pay-rent-florida.component.scss']
+})
+export class PayRentFloridaComponent implements OnInit {
+
+  locationId: any;
+  contact: any;
+
+  constructor() { }
+
+  ngOnInit() {
+    this.dataupdate();
+  }
+
+  public dataupdate() {
+    if ( this.locationId === '1' || this.locationId === 1 ) {
+      this.contact = contactsLocation1;
+    } 
+  }
+}
