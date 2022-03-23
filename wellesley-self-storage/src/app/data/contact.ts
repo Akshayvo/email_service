@@ -2,14 +2,14 @@ export const contact = [
     {
         id: 0,
         label: 'Facility Address:',
-        data: '1287 Hutchison RdWellesley, ON N0B 2T0, Canada',
+        data: '1287 Hutchison Rd Wellesley, Ontario',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
         redirect: 'https://goo.gl/maps/nTLdsUyLrJBX2A6e8'
     },
     {
         id: 1,
         label: 'Mailing Address:',
-        data: '1214 Queens Bush Rd, Wellesley, ON N0B 2T0, Canada',
+        data: '1214 Queens Bush Rd, PO Box 250, Wellesley, ON N0B 2T0',
         class: '',
         redirect: ''
     },
@@ -32,7 +32,7 @@ export const contact = [
 export const hours = [
     {
         label: 'Monday - Friday: ',
-        data: '8:00AM to 6:00PM'
+        data: ' 8:00AM to 7:00PM'
     },
     {
         label: 'Saturday',

@@ -19,7 +19,17 @@ export const storageTip = [
     },
     {
         data: `Place heavier items in the bottom of the box and lighter items on top.`
-    }
+    },
+    {
+        data: `Outdoor Parking Tip - Tip up vehicle, so rain drains off.`
+    },
+    {
+        data: `Outdoor Parking Tip - Put on wheel covers`
+    },
+    {
+        data: `Outdoor Parking Tip - Disconnect batter`
+    },
+    
 ];
 
 export const storageTipAccordion = [
