@@ -4,6 +4,7 @@ export const contactsHomePage = [
         label: 'Address: ',
         data: '260 N Grove St, Uvalde, TX 78801',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://www.google.com/maps?ll=29.210523,-99.795143&z=15&t=m&hl=en&gl=US&mapclient=embed&cid=16660834089548576271'
     },
     {
         id: 1,
@@ -42,7 +43,7 @@ export const contactsLocation1 = [
         label: 'Address: ',
         data: '260 N Grove St, Uvalde, TX 78801',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/HU5MKpFAg1AbAiSi9'
+        redirect: 'https://www.google.com/maps?ll=29.210523,-99.795143&z=15&t=m&hl=en&gl=US&mapclient=embed&cid=16660834089548576271'
     },
     {
         id: 1,

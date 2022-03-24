@@ -31,6 +31,18 @@
   }
 }
 
+.heading{
+  h2{
+    font-size: 32px;
+  }
+}
+
+.locHeading{
+  font-size: 24px;
+}
+
+
+
 .form-control {
   font-size: 0.8rem;
 }
@@ -41,6 +53,11 @@ a {
 
 button {
   float: right;
+}
+
+.contact-links{
+  line-height: 1.9;
+  
 }
 
 @media only screen and (max-width: 600px) {

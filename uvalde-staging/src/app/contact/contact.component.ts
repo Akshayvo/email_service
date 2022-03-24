@@ -24,6 +24,13 @@ import {
 } from '../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
+import { CanonicalService } from "../services/canonical.service";
+import {
+  
+  ogContactPage,
+  twitterContactPage,
+} from "../data/script";
+import { contactPageTitle, contactPageContent } from '../data/title';
 
 @Component({
   selector: 'app-contact',
@@ -94,6 +101,10 @@ export class ContactComponent implements OnInit {
   contact: any;
   hours: any;
   completeMessage: string;
+  og: any;
+  twitter: any;
+  contactPageTitle: string;
+  contactPageContent: string;
 
 
   contactForm: FormGroup;
@@ -108,14 +119,37 @@ export class ContactComponent implements OnInit {
     private route: ActivatedRoute,
     private titleService: Title,
     private meta: Meta,
+    private canonical: CanonicalService,
     private formBuilder: FormBuilder
   ) {
+    // this.meta.addTag({
+    //   name: 'description',
+    //   content: `Do you have a question about your account, or our self storage, boat and
+    //   recreational vehicle storage? Use our contact form, or call us today!`
+    // });
+    // this.titleService.setTitle('Contact Us  | Affordable Storages');
+    this.fetchMetaData();
+    this.fetchOg();
+    this.fetchTwitter();
+    this.og.forEach(element => {
+      this.meta.addTag({
+        property: element.property,
+        content: element.content
+      })
+    });
+
+    this.twitter.forEach(element => {
+      this.meta.addTag({
+        name: element.name,
+        content: element.content
+      })
+    });
+    this.canonical.create();
     this.meta.addTag({
       name: 'description',
-      content: `Do you have a question about your account, or our self storage, boat and
-      recreational vehicle storage? Use our contact form, or call us today!`
+      content: `${this.contactPageContent}`
     });
-    this.titleService.setTitle('Contact Us  | Affordable Storage');
+    this.titleService.setTitle(`${this.contactPageTitle}`);
 
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
@@ -139,6 +173,20 @@ export class ContactComponent implements OnInit {
   }
 
   get f() { return this.contactForm.controls; }
+
+  public fetchOg() {
+    this.og = ogContactPage;
+}
+
+public fetchTwitter() {
+    this.twitter = twitterContactPage;
+}
+
+
+public fetchMetaData() {
+  this.contactPageTitle = contactPageTitle;
+  this.contactPageContent = contactPageContent;
+}
 
   public fetchContactDetails() {
     this.contact = contactsHomePage;

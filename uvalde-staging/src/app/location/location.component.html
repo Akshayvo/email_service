@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-lg-8 py-0 px-0 header-background">
         <div class="social-content px-3 py-4">
-          <h1> {{name}}</h1>
+          <h2> {{name}}</h2>
           <div class="row">
             <div class="col-lg-12 px-0 contact-data">
               <span *ngFor="let contact of contacts" class="py-2 each-contact">
@@ -81,7 +81,7 @@
             <div class="col-lg-8">
               <h4 class="pt-3" *ngIf="locationId !== 1;then content else other_content" >Access Hours</h4>
               <ng-template #content><h4 class="pt-3">Access Hours</h4><app-tables [tBody]="hours" ></app-tables></ng-template>
-              <ng-template #other_content><h4 class="pt-3">Office Hours</h4><app-tables [tBody]="hours" > </app-tables>
+              <ng-template #other_content><h2 class="pt-3 officeHours">Office Hours</h2><app-tables [tBody]="hours" > </app-tables>
                 <!-- <h4 class="pt-3">Access Hours</h4><app-tables [tBody]="access" ></app-tables> -->
             </ng-template> 
             </div>
@@ -104,9 +104,9 @@
         <p class="text-center f-block-img"> 
           <img src="{{feature.data}}" class="f-img" alt="{{feature.alt}}" >
         </p>
-        <h2 class="text-center f-text">
+        <h3 class="text-center f-text">
           {{feature.label}}
-        </h2>
+        </h3>
       </div>
     </div>
   </div>

@@ -16,7 +16,7 @@
   color: $dark;
   text-align: left;
 
-  h1 {
+  h3 {
     line-height: 2.5rem;
     font-size: 2rem;
   }
@@ -73,7 +73,7 @@
   .feature-block {
     height: 20vh;
 
-    h2 {
+    h3 {
       line-height: 1.5rem;
     
     }
@@ -138,8 +138,13 @@
 // }
 
 .contact-links {
+  
   a {
     color: black !important;
+   
+  }
+  div{
+    margin:5px;
   }
 }
 
@@ -178,6 +183,9 @@
 
 .disp {
   display: block;
+  h2{
+    font-size: 30px;
+  }
 }
 
 .testimonial {
@@ -221,6 +229,12 @@
   }
 }
 
+.section{
+  h3{
+    font-size: 24px;
+  }
+}
+
 // @media screen and (max-height: 700px) and (min-width: 600px) {
 //   .carousel-caption {
 //     bottom: 40px;
@@ -238,6 +252,7 @@
 //     // }
 //   }
 // }
+
 
 
 

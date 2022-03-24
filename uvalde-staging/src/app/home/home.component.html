@@ -10,9 +10,9 @@
       <div class="container">
         <div class="jumbotorn-skew-text">
           <div class="disp" *ngFor="let jumbotron of jumbotron">
-            <h1  class="my-4">
+            <h2  class="my-4">
               {{jumbotron.h2}}
-            </h1>
+            </h2>
           <p class="text-justify">{{jumbotron.blurb}}</p>
           </div>
           <!-- <div class="jumbotorn-button">
@@ -67,9 +67,9 @@
           <p class="text-center f-block-img"> 
             <img src="{{feature.data}}" class="f-img" alt="{{feature.alt}}" >
           </p>
-          <h2 class="text-center f-text">
+          <h3 class="text-center f-text">
             {{feature.label}}
-          </h2>
+          </h3>
         </div>
       </div>
     </div>
@@ -103,12 +103,12 @@
 
         <div class="col-lg-6 py-3">
           <div class="mb-4">
-            <h2> Visit the Affordable Storage Main Office Below</h2>
+            <h3> Visit the Affordable Storage Main Office Below</h3>
             <p>
               <span class="contact-links" *ngFor="let contact of contactHomeDetails">
                 <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
                   <a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
-                  <ng-template #other_content >&nbsp;<a [href]="contact?.redirect" target="_blank" rel="noopener">&nbsp;{{contact.data}}</a></ng-template><br>
+                  <ng-template #other_content >&nbsp;<a [href]="contact?.redirect" target="_blank" rel="noopener">&nbsp;{{contact.data}}</a></ng-template><div></div>
               </span>
             </p>
             <b>Office Hours:</b>
@@ -136,12 +136,12 @@
       <div class="container py-5">
         <div class="row">
           <div class="col-lg-6 pt-2">
-            <h1  class="pb-4">Clean, Easily Accessible Self Storage Units in Uvalde!</h1>
+            <h3  class="pb-4">Clean, Easily Accessible Self Storage Units in Uvalde!</h3>
             <div *ngFor="let para of serviceOffered">
               <p>{{ para.p }}</p>
             </div>
           </div>
-          <div class="col-lg-6 text-center">
+          <div class="col-lg-6 text-center aboutUsImg">
             <!-- <app-photos></app-photos> -->
             <img src="{{imageBaseUrl}}/affordable-storage-uvalde.{{imagetype}}" alt="climate controlled indoor self storage units">
           </div>

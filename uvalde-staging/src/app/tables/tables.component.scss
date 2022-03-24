@@ -5,7 +5,11 @@ p {
   margin: 0;
   color: $dark;
 }
-
+.table-responsive{
+  h4{
+    font-size: 16px;
+  }
+}
 table {
   border: 2px solid #dee2e6;
 }

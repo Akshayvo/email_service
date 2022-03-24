@@ -1,7 +1,7 @@
 <div class="contentHolder">
   <div class="container">
       <div class="heading pb-5">
-        <h1 class="text-center pt-5">Contact Our Locations</h1>
+        <h2 class="text-center pt-5">Contact Our Locations</h2>
       </div>
       <div class="contact-data p-5">
         <div class="row">
@@ -97,7 +97,7 @@
           
           <div class="col-md-4">
             <div class="">
-             <h2> AFFORDABLE STORAGE #1 - 260 N GROVE</h2>
+             <h3 class="locHeading"> AFFORDABLE STORAGE #1 - 260 N GROVE</h3>
               <div class="py-2">
                   <span *ngFor="let contact of contactsLocation1">
                     <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.id === 0 || contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>

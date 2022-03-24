@@ -4,6 +4,7 @@ export const tabs = [
         name: 'Pay Rent',
         path: './rent-sub',
         active: true,
+        
     },
     {
       id: '2',
