@@ -14,7 +14,7 @@ export const environment = {
   facilityName: 'Mathis Mini Storage',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: 'https://https://mathisministorage.com/',
+  websiteUrl: 'https://mathisministorage.com/',
   // APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north
   APIKey: `dzF0OFcwSjAqOU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 18009
 
