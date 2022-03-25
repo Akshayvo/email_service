@@ -25,9 +25,9 @@ socialLinks.forEach(links => {
 
 export const script = {               // Please fill this script according to facility's information
     imagesHomePage: [
-      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Placid_Outlet/jpg/stock-self-storage-11.jpg", // 1:1
-      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Placid_Outlet/jpg/stock-self-storage-43.jpg", // 4:3
-      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Placid_Outlet/jpg/stock-self-storage-169.jpg" // 16:9
+      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Placid_Outlet/jpg/placid-outlet-11.jpg", // 1:1
+      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Placid_Outlet/jpg/placid-outlet-42.jpg", // 4:3
+      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Placid_Outlet/jpg/placid-outlet-169.jpg" // 16:9
      ],
      telephone: contact[contactIndex].data,
      map: "https://goo.gl/maps/vwRT2vVjwpec6RbMA",
