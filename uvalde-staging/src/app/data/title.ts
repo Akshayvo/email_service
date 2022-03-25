@@ -2,28 +2,28 @@ export const homePageTitle = `Affordable Self Storage Units in Uvalde, Texas`;
 export const homePageContent = `Affordable Storage has 8 conveniently located self storage facilities with a variety of affordable self storage unit types and vehicle parking options.`;
 
 export const location1PageTitle = `AFFORDABLE STORAGE #1 - 260 N GROVE | Affordable Storage`;
-export const location1PageContent = `We offer a number of affordable self storage options in AFFORDABLE STORAGE #1 - 260 N GROVE, Alabama. Check out our prices, then give us a call to start clearing up your home, office, or garage!`;
+export const location1PageContent = `We offer a number of affordable self storage options at our 260 North Grove Street location. Check out our prices, then give us a call to start clearing up your home, office, or garage!`;
 
 export const location2PageTitle = `AFFORDABLE STORAGE #2 - 201 N GROVE | Affordable Storage`;
-export const location2PageContent = `Our AFFORDABLE STORAGE #2 - 201 N GROVE location offers a large variety of regular and climate controlled storage units in a number of sizes, and all of our units are priced competitively!`;
+export const location2PageContent = `Our 201 North Grove Street location offers a variety of storage units in a number of sizes, and all of our units are priced competitively!`;
 
 export const location3PageTitle = `AFFORDABLE STORAGE #3 - 246 W. SOUTH LANE | Affordable Storage`;
-export const location3PageContent = `Our AFFORDABLE STORAGE #3 - 246 W. SOUTH LANE location offers a number of regular and climate controlled self storage units, and all of our units are economically priced!`;
+export const location3PageContent = `Our West South Lane location has all of the storage unit sizes you need to make your next space-saving project a breeze.  Rent online or call today!`;
 
 export const location4PageTitle = `AFFORDABLE STORAGE #4 - 817 S. GETTY | Affordable Storage`;
-export const location4PageContent = `Our Belforest location offers a number of affordable regular and climate controlled self storage units, perfect for any self storage project!`;
+export const location4PageContent = `Our South Getty Street location has all of the unit sizes and conveniences you need to make your stay at Affordable Storage of Uvalde a pleasant experience. Check online or call today!`;
 
 export const location5PageTitle = `AFFORDABLE STORAGE #5 - 430 S HWY 83 | Affordable Storage`;
-export const location5PageContent = `Our Fairhope location offers a number of regular and climate controlled self storage units, and all of our units are economically priced!`;
+export const location5PageContent = `Check out the rates and availability at our Highway 83 South location to get started on your next move or renovation! Rent online or call today!`;
 
 export const location6PageTitle = `AFFORDABLE STORAGE #6 - 500 E. GARDEN | Affordable Storage`;
-export const location6PageContent = `Our Robertsdale location offers a number of regular and climate controlled self storage units, and all of our units are economically priced!`;
+export const location6PageContent = `Affordable Storage's East Garden Street location has all of the units you need to clean out that attic, garage, or basement and store your belongings at affordable rates!`;
 
 export const location7PageTitle = `AFFORDABLE STORAGE #7 - 2633 E. MAIN ST | Affordable Storage`;
-export const location7PageContent = `Our Robertsdale location offers a number of regular and climate controlled self storage units, and all of our units are economically priced!`;
+export const location7PageContent = `Our East Main Street location provides clean, well-maintained storage unit space for your next decluttering project. Rent online or call today to get started!`;
 
 export const location8PageTitle = `AFFORDABLE STORAGE #8 - 244 N. GROVE | Affordable Storage`;
-export const location8PageContent = `Our Robertsdale location offers a number of regular and climate controlled self storage units, and all of our units are economically priced!`;
+export const location8PageContent = `Our 244 North Grove Street location has a number of unit sizes all competitively priced to make your next move, renovation, or downsizing project affordable and convenient.`;
 
 export const viewRatesPageTitle = ``;
 export const viewRatesPageContent = ``;
@@ -34,8 +34,8 @@ export const reservePageContent = ``;
 export const payRentPageTitle = `Pay Rent | Affordable Storage`;
 export const payRentPageContent = `Pay your bill online 24 hours a day, 7 days a week with our easy tenant portal! Just follow these instructions, or you can call our offices to learn more!`;
 
-export const storageTipsTitle = `Storage Tips | Storage Plus of Baldwin`;
-export const storageTipsContent = `Take advantage of our decades of self storage experience and follow these easy storage tips! You'll be glad you did!`;
+export const storageTipsTitle = `Storage Tips | Affordable Storage`;
+export const storageTipsContent = `Don't move in without checking our storage tips. These tips will make your stay at any of the Affordable Storage locations easier and more enjoyable!`;
 
 export const unitSizerPageTitle = ``;
 export const unitSizerPageContent = ``;
@@ -55,27 +55,28 @@ export const faqPagecontent = `Have some questions about the services at Self St
 
 
 export const location1PayrentPageTitle = `Pay Rent | Affordable Storage`;
-export const location1PayrentPageContent = `Follow the simple instructions on this page and you'll have access to our tenant portal 24 hours a day!`;
+export const location1PayrentPageContent = `Pay your bill online 24 hours a day, 7 days a week with our easy tenant portal! Just follow these instructions, or you can call our offices to learn more!`;
 
 export const location2PayrentPageTitle = `Pay Rent | Affordable Storage`;
-export const location2PayrentPageContent = `Follow the instructions on this page to log into your account with us, and pay your bill online 24/7! Call our office for more information!`;
+export const location2PayrentPageContent = `Pay your bill online 24 hours a day, 7 days a week with our easy tenant portal! Just follow these instructions, or you can call our offices to learn more!`;
 
 export const location3PayrentPageTitle = `Pay Rent | Affordable Storage`;
-export const location3PayrentPageContent = `Follow the instructions on this page to log into your account with us, and pay your bill online 24/7! Call our office for more information!`;
+export const location3PayrentPageContent = `Pay your bill online 24 hours a day, 7 days a week with our easy tenant portal! Just follow these instructions, or you can call our offices to learn more!`;
 
 export const location4PayrentPageTitle = `Pay Rent | Affordable Storage`;
-export const location4PayrentPageContent = `Follow the instructions on this page to log into your account with us, and pay your bill online 24/7! Call our office for more information!`;
+export const location4PayrentPageContent = `Pay your bill online 24 hours a day, 7 days a week with our easy tenant portal! Just follow these instructions, or you can call our offices to learn more!`;
 
 export const location5PayrentPageTitle = `Pay Rent | Affordable Storage`;
-export const location5PayrentPageContent = `Follow the instructions on this page to log into your account with us, and pay your bill online 24/7! Call our office for more information!`;
+export const location5PayrentPageContent = `Pay your bill online 24 hours a day, 7 days a week with our easy tenant portal! Just follow these instructions, or you can call our offices to learn more!`;
 
 export const location6PayrentPageTitle = `Pay Rent | Affordable Storage`;
-export const location6PayrentPageContent = `Follow the instructions on this page to log into your account with us, and pay your bill online 24/7! Call our office for more information!`;
+export const location6PayrentPageContent = `Pay your bill online 24 hours a day, 7 days a week with our easy tenant portal! Just follow these instructions, or you can call our offices to learn more!`;
 
 export const location7PayrentPageTitle = `Pay Rent | Affordable Storage`;
-export const location7PayrentPageContent = `Follow the instructions on this page to log into your account with us, and pay your bill online 24/7! Call our office for more information!`;
+export const location7PayrentPageContent = `Pay your bill online 24 hours a day, 7 days a week with our easy tenant portal! Just follow these instructions, or you can call our offices to learn more!`;
+
 export const location8PayrentPageTitle = `Pay Rent | Affordable Storage`;
-export const location8PayrentPageContent = `Follow the instructions on this page to log into your account with us, and pay your bill online 24/7! Call our office for more information!`;
+export const location8PayrentPageContent = `Pay your bill online 24 hours a day, 7 days a week with our easy tenant portal! Just follow these instructions, or you can call our offices to learn more!`;
 
 
 export const location1ContactPageTitle = `Contact Us | Self Storage Facility`;

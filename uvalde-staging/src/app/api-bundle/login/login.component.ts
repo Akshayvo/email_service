@@ -7,9 +7,10 @@ import { TenantInfo } from '../models/tenant';
 import { DataSharingService } from '../services/data-sharing.service';
 import { contactsLocation1, contactsLocation2, contactsLocation3 , contactsLocation4,contactsLocation5,contactsLocation6,contactsLocation7,contactsLocation8} from '../../data/contact';
 import { loginDetail } from '../../data/pay-rent';
+import { location1PayrentPageTitle, location2PayrentPageTitle,location3PayrentPageTitle ,location4PayrentPageTitle,location5PayrentPageTitle,location6PayrentPageTitle,location7PayrentPageTitle,location8PayrentPageTitle  } from '../../data/title';
 import { ogPayRentPageLocation1, ogPayRentPageLocation2, ogPayRentPageLocation3,ogPayRentPageLocation4,ogPayRentPageLocation5,ogPayRentPageLocation6,ogPayRentPageLocation7,ogPayRentPageLocation8,
    twitterPayRentPageLocation1, twitterPayRentPageLocation2, twitterPayRentPageLocation3,twitterPayRentPageLocation4,twitterPayRentPageLocation5,twitterPayRentPageLocation6,twitterPayRentPageLocation7,twitterPayRentPageLocation8 } from '../../data/script';
-import { Meta } from '@angular/platform-browser';
+import { Title,Meta } from '@angular/platform-browser';
 
 
 @Injectable()
@@ -44,6 +45,14 @@ export class LoginComponent implements OnInit, OnDestroy {
   loginDetail = [];
 
   contact: any;
+    location1PayrentPageTitle: any;
+    location2PayrentPageTitle: any;
+    location3PayrentPageTitle: any;
+    location4PayrentPageTitle: any;
+    location5PayrentPageTitle: any;
+    location6PayrentPageTitle: any;
+    location7PayrentPageTitle: any;
+    location8PayrentPageTitle: any;
   name: string;
   id: number;
   paymentTab: string;
@@ -57,11 +66,13 @@ export class LoginComponent implements OnInit, OnDestroy {
     private formBuilder: FormBuilder,
     private authService: AuthService,
     public router: Router,
+    private titleService: Title,
     private meta: Meta,
     private  dataSharingService: DataSharingService,
   ) {
     this.fetchOg();
     this.fetchTwitter();
+    this.fetchMetaData();
     this.og.forEach(element => {
       this.meta.addTag({
         property: element.property,
@@ -118,6 +129,17 @@ export class LoginComponent implements OnInit, OnDestroy {
 
   }
 
+  fetchMetaData(){
+    this.location1PayrentPageTitle = location1PayrentPageTitle;
+    this.location2PayrentPageTitle = location2PayrentPageTitle;
+    this.location3PayrentPageTitle = location3PayrentPageTitle;
+    this.location4PayrentPageTitle = location4PayrentPageTitle;
+    this.location5PayrentPageTitle = location5PayrentPageTitle;
+    this.location6PayrentPageTitle = location6PayrentPageTitle;
+    this.location7PayrentPageTitle = location7PayrentPageTitle;
+    this.location8PayrentPageTitle = location8PayrentPageTitle;
+  }
+
   get f() { return this.loginForm.controls; }
 
   openBox() {
@@ -134,18 +156,21 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.id = 1;
       this.name = 'AFFORDABLE STORAGE #1 - 260 N GROVE';
       this.contact = contactsLocation1;
+      this.titleService.setTitle(`${this.location1PayrentPageTitle}`);
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc1);
     } else  if (this.router.url.includes('201-n-grove')) {
       this.id = 2;
       this.name = 'AFFORDABLE STORAGE #2 - 201 N GROVE';
       this.contact = contactsLocation2;
+      this.titleService.setTitle(`${this.location2PayrentPageTitle}`);
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc2);
     } else  if (this.router.url.includes('246-w-south-lane')) {
       this.id = 3;
       this.name = 'AFFORDABLE STORAGE #3 - 246 W. SOUTH LANE';
       this.contact = contactsLocation3;
+      this.titleService.setTitle(`${this.location3PayrentPageTitle}`);
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc3);
     }
@@ -153,6 +178,7 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.id = 4;
       this.name = 'AFFORDABLE STORAGE #4 - 817 S. GETTY';
       this.contact = contactsLocation4;
+      this.titleService.setTitle(`${this.location4PayrentPageTitle}`);
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc4;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc4);
     }
@@ -160,6 +186,7 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.id = 5;
       this.name = 'AFFORDABLE STORAGE #5 - 430 S HWY 83';
       this.contact = contactsLocation5;
+      this.titleService.setTitle(`${this.location5PayrentPageTitle}`);
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc5;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc5);
     }
@@ -167,6 +194,7 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.id = 6;
       this.name = 'AFFORDABLE STORAGE #6 - 500 E. GARDEN';
       this.contact = contactsLocation6;
+      this.titleService.setTitle(`${this.location6PayrentPageTitle}`);
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc6;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc6);
     }
@@ -174,6 +202,7 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.id = 7;
       this.name = 'AFFORDABLE STORAGE #7 - 2633 E. MAIN ST';
       this.contact = contactsLocation7;
+      this.titleService.setTitle(`${this.location7PayrentPageTitle}`);
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc7;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc7);
     }
@@ -181,6 +210,7 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.id = 8;
       this.name = 'AFFORDABLE STORAGE #8 - 244 N. GROVE';
       this.contact = contactsLocation8;
+      this.titleService.setTitle(`${this.location8PayrentPageTitle}`);
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc8;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc8);
     }
