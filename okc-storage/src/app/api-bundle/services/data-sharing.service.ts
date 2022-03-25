@@ -12,9 +12,9 @@ export class DataSharingService {
 //   };
 
  locationAPIKey = {                                                    
-    loc1: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28465
+    loc3: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28465
     loc2: 'dzJ0OFc5SjcqMU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28465
-    loc3: 'dzJ0OFc5SjcqMU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28971 OKC Storage
+    loc1: 'dzJ0OFc5SjcqMU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28971 OKC Storage
   };
 
   paymentSuccess: boolean;
