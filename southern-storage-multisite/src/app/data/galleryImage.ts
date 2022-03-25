@@ -50,57 +50,57 @@ export const galleryLocation1 = [
     url: `southern-storage-rocky-creek-10-by-15-units`,
     // tslint:disable-next-line:max-line-length
     thumb: `southern-storage-rocky-creek-10-by-15-units-thumb`,
-    alt: ``
+    alt: `a row of self storage unit doors surrounded by paved parking areas under a blue sky`
   },
   {
     // tslint:disable-next-line: max-line-length
     url: `southern-storage-rocky-creek-5-by-10-units`,
     // tslint:disable-next-line:max-line-length
     thumb: `southern-storage-rocky-creek-5-by-10-units-thumb`,
-    alt: ``
+    alt: `a row of self storage unit doors surrounded by paved parking areas under a blue sky`
   },
   {
     // tslint:disable-next-line: max-line-length
     url: `southern-storage-rocky-creek-buildings`,
     // tslint:disable-next-line:max-line-length
     thumb: `southern-storage-rocky-creek-buildings-thumb`,
-    alt: ``
+    alt: `a row of self storage unit doors surrounded by paved parking areas under a blue sky`
   },{
     // tslint:disable-next-line: max-line-length
     url: `southern-storage-rocky-creek-10-by-10-units`,
     // tslint:disable-next-line:max-line-length
     thumb: `southern-storage-rocky-creek-10-by-10-units-thumb`,
-    alt: ``
+    alt: `a row of self storage unit doors surrounded by paved parking areas under a blue sky`
   },{
     // tslint:disable-next-line: max-line-length
     url: `southern-storage-rocky-creek-green-buildings`,
     // tslint:disable-next-line:max-line-length
     thumb: `southern-storage-rocky-creek-green-buildings-thumb`,
-    alt: ``
+    alt: `a row of self storage unit doors surrounded by paved parking areas under a blue sky`
   },{
     // tslint:disable-next-line: max-line-length
     url: `southern-storage-rocky-creek-road`,
     // tslint:disable-next-line:max-line-length
     thumb: `southern-storage-rocky-creek-road-thumb`,
-    alt: ``
+    alt: `a row of self storage unit doors surrounded by paved parking areas under a blue sky`
   },{
     // tslint:disable-next-line: max-line-length
     url: `southern-storage-rocky-creek-self-storage-building`,
     // tslint:disable-next-line:max-line-length
     thumb: `southern-storage-rocky-creek-self-storage-building-thumb`,
-    alt: ``
+    alt: `a row of self storage unit doors surrounded by paved parking areas under a blue sky`
   },{
     // tslint:disable-next-line: max-line-length
     url: `southern-storage-rocky-creek-signs`,
     // tslint:disable-next-line:max-line-length
     thumb: `southern-storage-rocky-creek-signs-thumb`,
-    alt: ``
+    alt: `a row of self storage unit doors surrounded by paved parking areas under a blue sky`
   },{
     // tslint:disable-next-line: max-line-length
     url: `southern-storage-rocky-creek-units`,
     // tslint:disable-next-line:max-line-length
     thumb: `southern-storage-rocky-creek-units-thumb`,
-    alt: ``
+    alt: `a row of self storage unit doors surrounded by paved parking areas under a blue sky`
   },
 ]
 
@@ -112,48 +112,48 @@ export const galleryLocation2 = [
     url: `southern-storage-argicola-climate-control-entrance`,
     // tslint:disable-next-line:max-line-length
     thumb: `southern-storage-argicola-climate-control-entrance-thumb`,
-    alt: ``
+    alt: `a single self storage building surrounded by wide concrete parking spaces`
   },
   {
     // tslint:disable-next-line: max-line-length
     url: `southern-storage-argicola-02`,
     // tslint:disable-next-line:max-line-length
     thumb: `southern-storage-argicola-02-thumb`,
-    alt: ``
+    alt: `a single self storage building surrounded by wide concrete parking spaces`
   }, 
   {
     // tslint:disable-next-line: max-line-length
     url: `southern-storage-argicola-outdoor-unitse`,
     // tslint:disable-next-line:max-line-length
     thumb: `southern-storage-argicola-outdoor-unitse-thumb`,
-    alt: ``
+    alt: `a single self storage building surrounded by wide concrete parking spaces`
   },  
   {
     // tslint:disable-next-line: max-line-length
     url: `southern-storage-argicola-outdoor-units`,
     // tslint:disable-next-line:max-line-length
     thumb: `southern-storage-argicola-outdoor-units-thumb`,
-    alt: ``
+    alt: `a single self storage building surrounded by wide concrete parking spaces`
   },  {
     // tslint:disable-next-line: max-line-length
     url: `southern-storage-argicola-inside-units`,
     // tslint:disable-next-line:max-line-length
     thumb: `southern-storage-argicola-inside-units-thumb`,
-    alt: ``
+    alt: `a single self storage building surrounded by wide concrete parking spaces`
   },  
   {
     // tslint:disable-next-line: max-line-length
     url: `southern-storage-argicola-inside-unit`,
     // tslint:disable-next-line:max-line-length
     thumb: `southern-storage-argicola-inside-unit-thumb`,
-    alt: ``
+    alt: `a single self storage building surrounded by wide concrete parking spaces`
   },  
   {
     // tslint:disable-next-line: max-line-length
     url: `southern-storage-argicola-climate-controlled`,
     // tslint:disable-next-line:max-line-length
     thumb: `southern-storage-argicola-climate-controlled-thumb`,
-    alt: ``
+    alt: `a single self storage building surrounded by wide concrete parking spaces`
   },  
   
 ]

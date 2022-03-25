@@ -136,27 +136,27 @@ export const addressLoaction4 = {
 
 
 export const imageLocation1 = [
-  '',
-  '',
-  ''
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Southern_Self_Storage/jpg/southern-storage-rocky-creek-11.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Southern_Self_Storage/jpg/southern-storage-rocky-creek-43.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Southern_Self_Storage/jpg/southern-storage-rocky-creek-169.jpg'
  ]
 
  export const imageLocation2 = [
-      '',
-      '',
-      ''
+      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Southern_Self_Storage/jpg/southern-storage-agricola-11.jpg',
+      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Southern_Self_Storage/jpg/southern-storage-agricola-43.jpg',
+      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Southern_Self_Storage/jpg/southern-storage-agricola-169.jpg'
  ]
 
  export const imageLocation3 = [
-  '',
-  '',
-  ''
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Southern_Self_Storage/jpg/stock-self-storage-11.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Southern_Self_Storage/jpg/stock-self-storage-43.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Southern_Self_Storage/jpg/stock-self-storage-169.jpg'
  ]
 
  export const imageLocation4 =  [
-  '',
-  '',
-  ''
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Southern_Self_Storage/jpg/southern-storage-wade-11.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Southern_Self_Storage/jpg/southern-storage-wade-43.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Southern_Self_Storage/jpg/southern-storage-wade-169.jpg'
  ]
 
  
