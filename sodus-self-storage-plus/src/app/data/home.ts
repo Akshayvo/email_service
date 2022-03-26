@@ -87,7 +87,7 @@ export const feature = [
 
 export const jumbotron = [
     {
-        h2: `Affordable Self Storage Units and Vehicle Parking in Sodus`,
-        blurb: `Sodus Self Storage Plus is Sodus' newest self storage and vehicle parking facility. We offer a range of regular and climate controlled self storage units and vehicle or boat parking. We are a locally owned and operated facility that goes the extra mile to make your stay with us an affordable and convenient one!`,
+        h2: `Climate Control Storage Sale`,
+        blurb: `For 3 months, get our for the same price as unheated storage!`,
     }
 ];
