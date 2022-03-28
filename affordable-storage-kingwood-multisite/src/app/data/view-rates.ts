@@ -113,9 +113,9 @@ export const th = [
     {
       heading: 'Discount      Annual Rental with 10% discount',
       size: `42 Footer (12'x42'x14')`,
-      monthlyRental: '$230.00',
-      semiAnnualRental: '$1,311.00',
-      discountAnnualRental: '$2,484.00'
+      monthlyRental: '$240.00',
+      semiAnnualRental: '$1,515.00',
+      discountAnnualRental: '$2,592.00'
     }
   ];
 
