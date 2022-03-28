@@ -5,6 +5,11 @@ a {
   cursor: pointer;
 }
 
+.additionalTopBar{
+  display: none;
+}
+
+
 img {
   width: 200px;
 }
@@ -116,5 +121,21 @@ img {
   .navbar-nav-scroll {
     height: 200px;
     overflow-y: scroll;
+  }
+}
+
+@media only screen and (max-width: 426px){
+  .additionalTopBar{
+    padding: 5px;
+    display: block;
+    text-align: center;
+    color:	#fff;
+    background-color: #FF0000 !important;
+  }
+}
+
+@media only screen and (max-width: 375px) and (min-width:330px){
+  .additionalTopBar b{
+    font-size: 14px;
   }
 }
