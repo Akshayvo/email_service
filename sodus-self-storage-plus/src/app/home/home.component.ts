@@ -10,6 +10,7 @@ import {
   jumbotron,
   aboutUsAlt,
   aboutUsHeading,
+  jumbotronText
 } from "../data/home";
 import { MetaService } from "../services/link.service";
 import { DOCUMENT } from "@angular/common";
@@ -43,6 +44,7 @@ export class HomeComponent implements OnInit {
   feature: any;
   year = [];
   jumbotron: any;
+  jumbotronText:any;
   authData: string;
   imageBaseUrl: any;
   imagetype: any;
@@ -207,6 +209,7 @@ twitterHomePage: any
 
   public fetchJumbotron() {
     this.jumbotron = jumbotron;
+    this.jumbotronText = jumbotronText;
   }
 
   public getImageUrl(imageName: string) {

@@ -11,6 +11,9 @@
               {{jumbotron.h2}}
             </h2>
           <p class="text-justify">{{jumbotron.blurb}}</p>
+          <span class="text-justify">{{jumbotron.paraText}}</span>
+          <li class='mb-md-1'*ngFor="let jumbotronText of jumbotronText">{{jumbotronText.li}}</li>
+          <span class="text-justify ">{{jumbotron.paraTextEnd}}</span>
           </div>
           <div class="jumbotorn-button">
             <a class="btn btn-lg btn-outline-primary" (click)="navigate('/view-rates')" role="button">Rent Now</a>
@@ -80,6 +83,7 @@
         <div class="col-lg-6 py-3">
           <h1 class="heading pb-4">{{aboutUsHeading}}</h1>
           <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p>
+          
         </div>
       </div>
     </div>
