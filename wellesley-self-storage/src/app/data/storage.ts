@@ -27,7 +27,7 @@ export const storageTip = [
         data: `Outdoor Parking Tip - Put on wheel covers`
     },
     {
-        data: `Outdoor Parking Tip - Disconnect batter`
+        data: `Outdoor Parking Tip - Disconnect battery`
     },
     
 ];

@@ -23,7 +23,7 @@ export const contact = [
     {
         id: 3,
         label: 'Phone:',
-        data: '(548) 483-5958',
+        data: '(548) 483-5958 (Text or Call)',
         class: 'fas fa-phone mx-2 iconColor',
         redirect: 'tel:5195032889',
     }
