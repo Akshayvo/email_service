@@ -1,9 +1,9 @@
 export const contact = [
     {
         id: 0,
-        redirect: 'mailto:michael@lakemartindev.com',
+        redirect: 'mailto:lanettstorage@gmail.com',
         label: 'Email:',
-        data: 'michael@lakemartindev.com',
+        data: 'lanettstorage@gmail.com',
         class: 'fas fa-envelope mx-2 iconColor',
     },
     {
