@@ -31,6 +31,10 @@
   border-radius: 0;
 }
 
+.jumbotorn-button{
+  margin: 10px;
+}
+
 .home-map {
   iframe {
     border: 2px solid white;
@@ -110,7 +114,7 @@
   transform: skew(0deg);
   width: 500px;
   position: absolute;
-  top: 20%;
+  top: 17%;
 
   .btn-outline-primary {
     background-color: $primary !important;
@@ -143,6 +147,11 @@
       font-size: 1rem;
     }
   }
+
+  .jumbotorn-button{
+    margin: 10px;
+  }
+
 }
 
 @media only screen and (min-width: 1200px) and (max-height: 639px) and (min-height: 480px) {
@@ -166,6 +175,10 @@
 
   .jumbotron-bottom {
     height: 150px;
+  }
+
+  .jumbotorn-button{
+    margin: 10px;
   }
 
   .jumbotorn-skew-text {
