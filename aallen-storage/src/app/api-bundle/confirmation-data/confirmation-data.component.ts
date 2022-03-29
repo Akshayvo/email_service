@@ -121,6 +121,7 @@ constructor(
 ngOnInit() {
   this.getTenantUnitData();
   this.showAltDetails = this.dataSharingService.showAltDetails;
+  window.scrollTo(0, 0);
 }
 
 fetchSharedData() {

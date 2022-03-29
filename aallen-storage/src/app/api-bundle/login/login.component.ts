@@ -58,6 +58,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.fetchLoginDetail();
     this.fetchContactDetails();
+    window.scrollTo(0, 0);
 
     this.loginForm = this.formBuilder.group({
       strUserName: ['', Validators.required],

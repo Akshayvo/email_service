@@ -257,6 +257,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     this.description  = this.dataSharingService.getReservationData().Description;
     this.monthlyRate = this.dataSharingService.getReservationData().MonthlyRate;
     this.unitTypeId = this.dataSharingService.getReservationData().UnitTypeID;
+    window.scrollTo(0, 0);
 
     this.getData();
     this.getRentalPeriod();
