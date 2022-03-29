@@ -75,6 +75,7 @@ const withTab = [
       { path: 'forgotPassword', component: ForgotPasswordComponent },
       { path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
       { path: 'auto-pay', component: AutoPayComponent, canActivate: [AuthGuard]},
+      { path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
       { path: 'verifyCode', component: VerifyCodeComponent },
       { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
       // canActivate: [VerifictionCodeGuard]
