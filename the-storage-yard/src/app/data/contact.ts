@@ -17,9 +17,9 @@ export const contact = [
     {
         id: 2,
         label: 'Phone:',
-        data: '(860) 889-2344',
+        data: '(860) 949-9160',
         class: 'fas fa-phone mx-2 iconColor',
-        redirect: 'tel:8608892344',
+        redirect: 'tel:8609499160',
     }
 ];
 
@@ -38,7 +38,7 @@ export const hours = [
     },
     {
         label: 'Access Hours: ',
-        data: '24 Hours a Day 7 Days a Week'
+        data: 'by appointment, online 24/7'
     }
 ];
 
