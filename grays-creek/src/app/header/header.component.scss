@@ -39,8 +39,14 @@ img {
   color: $white;
 }
 
+
+
 .navbar {
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.09);
+
+  .navbar-brand{
+    font-size: 20px !important;
+  }
 
   .nav-link {
     color: $black;
@@ -117,4 +123,10 @@ img {
     height: 200px;
     overflow-y: scroll;
   }
+}
+
+@media screen and (max-width: 320pxpx) {
+.navbar-brand{
+  font-size: 18px !important;
+}
 }

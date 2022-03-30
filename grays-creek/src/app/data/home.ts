@@ -34,15 +34,10 @@ export const aboutUs = [
         p: `Do you need some extra elbow room around the home, office, or work site?`,
     },
     {
-        p: `We offer clean, well-lit self storage units that cater to a variety of local residential and 
-        business needs. You can find us right off Route 87 on Sand Hill Road in Fayetteville, 
-        North Carolina.`,
+        p: `We offer clean, well-lit self storage units that cater to a variety of local residential and business needs. You can find us right off Route 87 on Sand Hill Road in Fayetteville, North Carolina.`,
     },
     {
-        p: `Gray's Creek Self Storage makes your next move, renovation, or spring cleaning project 
-        convenient with our online services, friendly management team, and 24/7 access through our pin-code 
-        activated gate. We also have onsite managers who are available to assist you during office hours or 
-        after hours via phone or email.`,
+        p: `Gray's Creek Self Storage makes your next move, renovation, or spring cleaning project convenient with our online services, friendly management team, and 24/7 access through our pin-code activated gate. We also have onsite managers who are available to assist you during office hours or after hours via phone or email.`,
     },
     {
         p: `If you’re looking for an affordable solution for storing your belongings, 
@@ -50,9 +45,7 @@ export const aboutUs = [
         seeking space for the `,
     },
     {
-        p: `Take a moment to check out our current availability(coming soon!) and reserve your unit online 
-        in minutes! One of our friendly managers will be in touch to complete your contactless rental process, 
-        and assist you with finding your new storage unit. We look forward to meeting you!`,
+        p: `Take a moment to check out our current availability(coming soon!) and reserve your unit online in minutes! One of our friendly managers will be in touch to complete your contactless rental process and assist you with finding your new storage unit. We look forward to meeting you!`,
     }
     
 ];
