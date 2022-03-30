@@ -9,10 +9,10 @@ export const contact = [
     {
         id: 1,
         label: 'Email:',
-        data: 'thestorageyardct@gmail.com',
+        data: ' storageyardct@gmail.com',
         class: 'fas fa-envelope mx-2 iconColor',
-        email: 'thestorageyardct@gmail.com',
-        redirect: 'mailto:`thestorageyardct@gmail.com`'
+        email: ' storageyardct@gmail.com',
+        redirect: 'mailto:` storageyardct@gmail.com`'
     },
     {
         id: 2,
@@ -26,15 +26,15 @@ export const contact = [
 export const hours = [
     {
         label: 'Monday - Friday: ',
-        data: '8:00AM to 5:00PM'
+        data: 'Appointment Only.'
     },
     {
         label: 'Saturday: ',
-        data: '8:00AM to 5:00PM'
+        data: 'Appointment Only.'
     },
     {
         label: 'Sunday: ',
-        data: '9:00AM to 4:00PM'
+        data: 'Appointment Only.'
     },
     {
         label: 'Access Hours: ',
