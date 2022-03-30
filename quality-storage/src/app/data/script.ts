@@ -30,24 +30,24 @@ export const script = {               // Please fill this script according to fa
       "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Quality_Storage/jpg/stock-self-storage-169.jpg" // 16:9
      ],
      telephone: contact[contactIndex].data,
-     map: "https://goo.gl/maps/MZ2bUNFNT1HWfDfw5",
-     description: "A superb collection of fine gifts and clothing to accent your stay in Mexico Beach.",
-     streetAddress: "148 W 51st St",
-     state: "New York",
-     addressLocality: "New York",
-     addressRegion: "NY",
-     postalCode: "10019",
+     map: "https://goo.gl/maps/3XA9xqGhYpQcRRjZA",
+     description: "Quality Storage is locally owned and operated and provides high-quality, well-maintained self storage services in Thibodaux, and the surrounding communities! Our hometown service and affordable rates make us Thibodaux's one stop self storage solution. Take a moment to review our availability, then give us a call to complete your rental application.",
+     streetAddress: "1463 Tiger Dr",
+     state: "Louisiana",
+     addressLocality: "Thibodaux",
+     addressRegion: "LA",
+     postalCode: "70301",
      addressCountry: "US",
      id: environment.websiteUrl || "",
-     paymentAccepted:  "Cash, Check, Credit Card, Debit Card, Online Credit Card, Online Debit Card",
+     paymentAccepted:  "Cash,Check,Credit Card,Debit Card",
      currenciesAccepted: "USD",
-     ratingValue: "4",
+     ratingValue: "",
      bestRating: "5",
-     reviewCount: "250",
-     latitude: 40.761293,
-     longitude: -73.982294,
-     openingHours: [],
-     priceRange: ''
+     reviewCount: "",
+     latitude: 29.7660813,
+     longitude: -90.8443118,
+     openingHours: ["Mon-Fri 9:00AM-6:00PM"],
+     priceRange: '65-80'
 };
 
 export const homePageScript = [ {

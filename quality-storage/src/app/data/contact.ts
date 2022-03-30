@@ -23,9 +23,9 @@ export const contact = [
     {
         id: 2,
         label: 'Phone:',
-        data: '(505) 555-5555',
+        data: '(985) 227-2194',
         class: 'fas fa-phone mx-2 iconColor',
-        redirect: 'tel:5055555555',
+        redirect: 'tel:9852272194',
     }
 ];
 

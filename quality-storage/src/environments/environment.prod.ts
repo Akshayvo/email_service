@@ -1,7 +1,7 @@
 export const environment = {
   production: true,
   type: 0,  // { API: 0, iframe: 1 }
-  locationName: 'new-york/baldwinsville',  // state/city   **Remeber to update locationName in sitemap.xml as well
+  locationName: 'louisiana/thibodaux',  // state/city   **Remeber to update locationName in sitemap.xml as well
   signUpForAuotoPay: 1, // { Yes: 1, No: 0 }
   alternateType: { moveIn: false, reserve: false }, // { moveIn: true, reserve: true },
   military: false, // set true for Military and Driver's Details 
@@ -10,8 +10,8 @@ export const environment = {
   errorsMails: ['website.dev@codeparva.in'],
   senderEmail: 'errors@codeparva.in',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
-  appId: 'Self Storage Facility - Location 1',
-  facilityName: 'Self Storage Facility - Location 1',
+  appId: 'Quality Storage',
+  facilityName: 'Quality Storage',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   websiteUrl: 'https://quality-storage-staging.netlify.app',
