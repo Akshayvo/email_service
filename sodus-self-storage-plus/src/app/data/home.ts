@@ -88,7 +88,7 @@ export const feature = [
 export const jumbotron = [
     {
         h2: `Climate Control Storage Sale`,
-        blurb: `For 3 months, get our for the same price as unheated storage!`,
+        blurb: `For 3 months, get our climate controlled storage for the same price as unheated storage!`,
         paraText:`Why choose our climate-controlled storage units?`,
         paraTextEnd:`Offer good through April 15, 2022 only.`
     }
