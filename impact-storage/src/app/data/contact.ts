@@ -78,10 +78,10 @@ export const contactsLocation1 = [
     {
         id: 2,
         label: 'Email: ',
-        email: 'andy@wallenpaupackselfstorage.com',
-        data: `andy@wallenpaupackselfstorage.com`,
+        email: 'info@impactselfstorage.net',
+        data: `info@impactselfstorage.net`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:andy@wallenpaupackselfstorage.com'
+        redirect: 'mailto:info@impactselfstorage.net'
     },
     
     {
