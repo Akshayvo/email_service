@@ -4,42 +4,34 @@ export const galleryHome = [
     url: `cedar-springs-self-storage-1`,
     // tslint:disable-next-line:max-line-length
     thumb: `cedar-springs-self-storage-1-thumb`,
-    alt: `storage unit facility as seen from their air surrounded by wide parking lanes with dedicated outdoor parking for recreational vehicles`
+    alt: `several single story metal buildings with large paved parking spaces between the buildings`
   },
   {
     // tslint:disable-next-line: max-line-length
     url: `cedar-springs-self-storage-2`,
     // tslint:disable-next-line:max-line-length
     thumb: `cedar-springs-self-storage-2-thumb`,
-    alt: `aerial photograph of many self storage buildings surrounded by large parking lanes`
+    alt: `single story self storage buildings with paved parking areas between the metal buildings`
   },
   {
     // tslint:disable-next-line: max-line-length
     url: `cedar-springs-self-storage-3`,
     // tslint:disable-next-line:max-line-length
     thumb: `cedar-springs-self-storage-3-thumb`,
-    alt: `aerial photograph of a self storage facility with boat and RV outdoor parking plus large storage unit buildings`
+    alt: `multiple single story metal buildings surrounded by parking spaces and fencing`
   },
   {
     // tslint:disable-next-line: max-line-length
     url: `cedar-springs-self-storage-4`,
     // tslint:disable-next-line:max-line-length
     thumb: `cedar-springs-self-storage-4-thumb`,
-    alt: `aerial photography of a large self storage facility with many single story metal buildings and vehicle parking spots`
+    alt: `metal self storage buildings surrounded by parking spaces for loading and unloading units`
   },
   {
     // tslint:disable-next-line: max-line-length
     url: `cedar-springs-self-storage-5`,
     // tslint:disable-next-line:max-line-length
     thumb: `cedar-springs-self-storage-5-thumb`,
-    alt: `an aerial image of a self storage facility that also has outdoor parking for trailers and campers`
+    alt: `storage unit buildings surrounded by parking spaces`
   },
-  {
-    // tslint:disable-next-line: max-line-length
-    url: `cedar-springs-self-storage-11`,
-    // tslint:disable-next-line:max-line-length
-    thumb: `cedar-springs-self-storage-11-thumb`,
-    alt: `an aerial photo of a storage unit facility that has metal single story buildings and recreational vehicles parked`
-  },
-  
 ];
