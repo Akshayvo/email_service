@@ -2,10 +2,10 @@ import { objSIMSetting } from './configuration';
 
 export const dataViewRates = [
     {
-      p: `Placid Outlet LLC is the perfect place to store your belongings. We offer clean, well-lit units with easy access and security cameras throughout our facility. Our location is also close to major highways so it’s easy to get in and out of town. You can even reserve your unit online!`,
+      p: `Placid Outlet, LLC is the perfect place to store your belongings. We offer clean units with easy access and security cameras throughout our facility. We are conveniently located in Lake Placid. You can even reserve your unit online!`,
     },
     {
-      p: `When you choose us as your storage solution, we promise that you will have an exceptional experience every step of the way. We are committed to providing friendly service and ensuring that all of our customers feel safe storing their items at our facility. If there’s anything else we can do for you, please don’t hesitate to ask!`
+      p: `We are committed to providing friendly service and ensuring that all of our customers feel safe storing their items at our facility. If there’s anything else we can do for you, please don’t hesitate to ask!`
     },
     
 ];

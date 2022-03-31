@@ -16,9 +16,9 @@ export const contact = [
     {
         id: 2,
         label: 'Phone:',
-        data: '(518) 8377-7079',
+        data: '(518) 837-7079',
         class: 'fas fa-phone mx-2 iconColor',
-        redirect: 'tel:51883777079',
+        redirect: 'tel:5188377079',
     }
 ];
 

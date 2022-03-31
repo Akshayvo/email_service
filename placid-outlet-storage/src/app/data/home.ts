@@ -34,10 +34,10 @@ export const aboutUs = [
         p: `Are you looking for a storage unit or outdoor vehicle storage in Lake Placid?`,
     },
     {
-        p: `We offer clean, well-lit self storage units that cater to a variety of local residential and business needs. Our facility is conveniently located near Mirror Lake, Whiteface Mountain Ski Resort, the Olympic Center and more. Whether you’re moving or just need some extra space, we have what you need!`,
+        p: `We offer clean self storage units that cater to a variety of local residential and business needs. Our facility is conveniently located near Lake Placid Lake boat launches, the Olympic Center and more. Whether you’re moving or just need some extra space, we have what you need!`,
     },
     {
-        p: `You’ll be able to find the perfect size unit for your needs right here at Placid Outlet LLC. Whether it’s just one room or an entire home, we have the space you need! We also have plenty of outdoor vehicle parking for your recreational vehicle, boat, or trailer! And with our convenient location near downtown Lake Placid, getting to us is easy no matter where you live in town. We look forward to helping you get organized today!`,
+        p: `You’ll be able to find the perfect size unit for your needs right here at Placid Outlet, LLC. Whether it’s just one room or an entire home, we have the space you need! We also have plenty of outdoor vehicle parking for your recreational vehicle, boat, or trailer! And with our convenient location near downtown Lake Placid, getting to us is easy no matter where you live in town. We look forward to helping you get organized today!`,
     },
     {
         p: `Contact us today to learn more about our self storage units and parking or reserve online!`,
@@ -78,6 +78,6 @@ export const feature = [
 export const jumbotron = [
     {
         h2: `Affordable Self Storage Units & Vehicle Parking in Lake Placid`,
-        blurb: `Placid Outlet LLC is a locally owned and operated storage facility that offers and a host of modern amenities that make storing your unit or parking your boat, RV, camper, or trailer in the off-season a breeze! Reserve online, or call our management team today!`,
+        blurb: `Placid Outlet, LLC is a locally owned and operated storage facility that makes storing your belongings, parking your boat, RV camper, or trailer a breeze! Reserve online, or call us today!`,
     }
 ];
