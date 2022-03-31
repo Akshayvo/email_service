@@ -26,19 +26,19 @@ export const contact = [
 export const hours = [
     {
         label: 'Monday - Friday: ',
-        data: 'Appointment Only.'
+        data: 'By appointment, or online 24/7'
     },
     {
         label: 'Saturday: ',
-        data: 'Appointment Only.'
+        data: 'By appointment, or online 24/7'
     },
     {
         label: 'Sunday: ',
-        data: 'Appointment Only.'
+        data: 'By appointment, or online 24/7'
     },
     {
         label: 'Access Hours: ',
-        data: 'by appointment, online 24/7'
+        data: 'by appointment, or online 24/7'
     }
 ];
 
