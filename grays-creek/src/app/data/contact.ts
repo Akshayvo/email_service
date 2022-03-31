@@ -9,16 +9,16 @@ export const contact = [
     {
         id: 1,
         label: 'Email:',
-        data: 'sharigroov@gmail.com.com',
+        data: 'grayscreeksafestorage@gmail.com',
         class: 'fas fa-envelope mx-2 iconColor',
-        redirect: 'mailto:sharigroov@gmail.com.com'
+        redirect: 'mailto:grayscreeksafestorage@gmail.com'
     },
     {
         id: 2,
         label: 'Phone:',
-        data: '(910) 237-9234',
+        data: '(910) 745-9120',
         class: 'fas fa-phone mx-2 iconColor',
-        redirect: 'tel:9102379234',
+        redirect: 'tel:9107459120',
     }
 ];
 
