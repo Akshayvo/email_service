@@ -39,7 +39,13 @@
 }
 
 .contact-data {
-  margin:8px; 
+  
+    span{
+      
+      margin:10px;
+
+    }
+  
   a {
     color: white;
   }
@@ -408,6 +414,17 @@
 //   } 
 // }
 
+
+@media only screen and (max-width:425px){
+  .contact-data {
+    
+    span{
+      
+      margin-bottom:10px;
+
+    }
+  }
+}
 @media only screen and (max-width: 340px) {
   .social-content {
     .each-contact {
