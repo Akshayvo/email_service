@@ -56,6 +56,61 @@ export const state = {
   climateControl: objSIMSetting.objUnitSizesSetting.blnClimateControl,
 };
 
+
+export const MilitaryTypes = [
+  {
+    Description: `NA`,
+    Value: 0 
+  },
+  {
+    Description: `Active`,
+    Value: `Active`
+  },
+  {
+    Description: `Reserve`,
+    Value:  `Reserve` 
+  },
+  {
+    Description: `Veteran`,
+    Value: `Veteran` 
+  },
+  {
+    Description: `Retired`,
+    Value: `Retired`
+  },
+  {
+    Description: `Deployed`,
+    Value: `Deployed` 
+  },
+]
+
+export const MilitaryBranch = [
+  {
+    Description: `NA`,
+    Value: 0 
+  },
+  {
+    Description: `Army`,
+    Value: `Army`
+  },
+  {
+    Description: `Navy`,
+    Value: `Navy` 
+  },
+  {
+    Description: `AirForce`,
+    Value: `AirForce` 
+  },
+  {
+    Description: `Marines`,
+    Value: `Marines`
+  },
+  {
+    Description: `CoastGuard`,
+    Value: `CoastGuard` 
+  },
+]
+
 export const option =  [
     {
       description: 'Alabama',

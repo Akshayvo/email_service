@@ -7,8 +7,9 @@ export const environment = {
   type: 0,  // { API: 0, iframe: 1 }
   locationName: 'connecticut/narwich', // state/city
   signUpForAuotoPay: 0, // { Yes: 1, No: 0 }
-  alternateType: { moveIn: false, reserve: true }, // { moveIn: true, reserve: true },
+  alternateType: { moveIn: true, reserve: true }, // { moveIn: true, reserve: true },
   template: 'darkTheme', // { darkTheme, lightTheme, withoutJumbotron}
+  military: true, // set true for Military and Driver's Details
   cards: ['Visa', 'Master Card', 'Amex', 'Discover', 'test'],
   errorsMails: [ 'sanghmitra.v@codeparva.in' ],
   senderEmail: 'errors@codeparva.in',
@@ -18,7 +19,7 @@ export const environment = {
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   websiteUrl: 'https://thestorageyardct.com',
-  APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28463
+  APIKey: `Mjg0NjU6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28463
   // APIKey: `dzJ0N1c4SjAqOU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O` // 27809 the storage yard
 };
 

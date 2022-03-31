@@ -11,6 +11,8 @@ import { Subscription, Subject } from 'rxjs';
 import { option, option1 } from '../../data/view-rates';
 import { SignOutService } from '../services/sign-out.service';
 import { environment } from '../../../environments/environment';
+import { DatePipe } from '@angular/common';
+
 @Component({
   selector: 'app-confirmation-data',
   templateUrl: './confirmation-data.component.html',
@@ -110,6 +112,7 @@ constructor(
   private addTenantService: AddTenantService,
   private tenantInfoService: TenantInfoService,
   private signOutService: SignOutService,
+  private datePipe: DatePipe,
 ) {
   this.fetchOption();
   this.fetchSharedData();
@@ -119,12 +122,14 @@ constructor(
 ngOnInit() {
   this.getTenantUnitData();
   this.showAltDetails = this.dataSharingService.showAltDetails;
+  this.showMilitaryDetails = this.dataSharingService.showMilitaryDetails;
 }
 
 fetchSharedData() {
   this.navigateToMoveIn = this.dataSharingService.navigateToMoveIn;
   this.navigateToReserve  = this.dataSharingService.navigateToReserve;
   this.tenantData.objTenant = this.dataSharingService.objTenant;
+  console.log('this.dataSharingService.objTenant',this.dataSharingService.objTenant );
   this.unitData = this.dataSharingService.LstUnitTypes;
   this.MoveIn.dteMoveIn = this.dataSharingService.MoveIn.dteMoveIn;
   this.MoveIn.intUnitTypeID = this.dataSharingService.LstUnitTypes.UnitTypeID;
@@ -201,6 +206,17 @@ getTenantUnitData() {
   this.reservationFeeTax = this.dataSharingService.LstUnitTypes.ReservationFeeTax;
   this.description = this.dataSharingService.LstUnitTypes.Description;
   this.monthlyRate = this.dataSharingService.LstUnitTypes.MonthlyRate;
+  this.driversLicense = this.dataSharingService.objTenant.DriversLicense;
+  this.driversLicenseExpDate = this.datePipe.transform(this.dataSharingService.objTenant.DriversLicenseExpDate, 'MM/dd/yyyy');
+  this.dateOfBirth = this.datePipe.transform(this.dataSharingService.objTenant.DateOfBirth, 'MM/dd/yyyy');
+  this.militaryType = this.dataSharingService.objTenant.MilitaryType;
+  this.militaryBranch = this.dataSharingService.objTenant.MilitaryBranch;
+  this.militaryID = this.dataSharingService.objTenant.MilitaryID;
+  this.deployedUntil = this.datePipe.transform(this.dataSharingService.objTenant.DeployedUntil, 'MM/dd/yyyy');
+  this.militaryDivision = this.dataSharingService.objTenant.MilitaryDivision;
+  this.commandingOfficer = this.dataSharingService.objTenant.CommandingOfficer;
+  this.commandingOfficerPhone = this.dataSharingService.objTenant.CommandingOfficerPhone;
+
 }
 
   addTenant(data: any): void {
@@ -251,6 +267,9 @@ getTenantUnitData() {
         if (strConfirmationResponse.intErrorCode === 1) {
           this.dataSharingService.strConfirmation = strConfirmationResponse.strConfirmation;
           this.dataSharingService.eventName = 'reservation';
+          if (localStorage.getItem('strTempTenantToken')) {
+            localStorage.removeItem('strTempTenantToken');
+          }
           // this.showConfirmation = false;
           this.router.navigate([`${environment.locationName}/view-rates/thank-you`]);
           this.reservationInProgress = false;
@@ -282,10 +301,15 @@ getTenantUnitData() {
       this.MoveIn['blnGenerateDocuments'] = true;
       this.makeAReservationSubscribe$ =  this.moveInService.moveIn(strAccessCode)
         .subscribe(strConfirmationResponse => {
-          this.dataSharingService.strAccessCode = strConfirmationResponse.strAccessCode;
-          this.dataSharingService.eventName = 'MoveIn';
-          this.router.navigate([`${environment.locationName}/view-rates/thank-you`]);
-          this.reservationInProgress = false;
+          if (strConfirmationResponse.intErrorCode === 1) {
+            this.dataSharingService.strAccessCode = strConfirmationResponse.strAccessCode;
+            this.dataSharingService.eventName = 'MoveIn';
+            if (localStorage.getItem('strTempTenantToken')) {
+              localStorage.removeItem('strTempTenantToken');
+            }
+            this.router.navigate([`${environment.locationName}/view-rates/thank-you`]);
+            this.reservationInProgress = false;
+          }
         }, (err: any) => {
           if (err.status === 403) {
             this.showConfirmation = false;

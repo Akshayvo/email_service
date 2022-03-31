@@ -1,9 +1,12 @@
 import { Injectable } from '@angular/core';
 
+
 @Injectable({
   providedIn: 'root'
 })
 export class DataSharingService {
+  paymentSuccess: boolean;
+  navigateToPayment: boolean;
   strTenantToken: string;
   strTempTenantToken: string;
   verificationCode: string;
@@ -28,6 +31,8 @@ export class DataSharingService {
   eventName: string;
   signUpForAutoPay: boolean;
   showAltDetails: boolean;
+  showMilitaryDetails: boolean;
+  amountToPayThankYou: number;
 
   cardDetailsObject = {
     CCNumber: '',
@@ -84,6 +89,16 @@ export class DataSharingService {
     City: '',
     State: '',
     ZIP: '',
+    DriversLicense: ' ',
+    DriversLicenseExpDate: ' ',
+    DateOfBirth: ' ',
+    MilitaryType: 0,
+    MilitaryBranch: 0,
+    MilitaryID: ' ',
+    DeployedUntil: ' ',
+    MilitaryDivision: ' ',
+    CommandingOfficer: ' ',
+    CommandingOfficerPhone: ' ',
     AlternateName: '',
     AlternatePhone: '',
     AlternateAddressLine1: '',
