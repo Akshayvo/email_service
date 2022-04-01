@@ -91,7 +91,7 @@ export const feature = [
 
 export const jumbotron = [
     {
-        h2: `Self Storage Units in Norwich, C.T.`,
+        h2: `Self Storage Units in Norwich, CT`,
         blurb: `The Storage Yard is a family owned & operated self storage facility serving Norwich, Bozrah,
         Franklin, and the surrounding communities with clean, affordable self storage units and amazing customer
         service. Check out our unit rates and availability, then reserve your unit online seconds! We can't wait
