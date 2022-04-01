@@ -64,6 +64,9 @@
               <link *ngIf="lstUnitType.IsUnitsAvailable" itemprop="availability" href="https://schema.org/InStock" />
           </div>
         </div>
+        <div *ngIf="!lstUnitType.IsUnitsAvailable" >
+          <p>Currently Unavailable. Please call us for more information.</p>
+        </div>
       </div>  
     </div>
   </div>
