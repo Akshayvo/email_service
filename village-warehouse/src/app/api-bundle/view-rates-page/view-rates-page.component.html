@@ -9,8 +9,9 @@
   </div>
   <div [class.loader]="showLoader" class="loader-position"> 
   </div>
+  <h2 class="mt-4 mb-2" [class.display]="!showTable">Self-Storage Units</h2><br>  
   <table  class="viewrates-desktop" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
-      <tHead [class.display]="!showTable">
+    <tHead [class.display]="!showTable">
           <tr>
             <th colspan="2"  class="px-4 py-1 text-center" *ngFor="let th of th" id={{th.id}}>
               <div *ngIf="th.data != 'Climate Control'">{{th.data}}</div>
@@ -35,9 +36,9 @@
               <span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate | number : '1.2-2'}}
               <meta itemprop="priceRange" content="{{lstUnitType.MonthlyRate}}" />
           </td>
-          <td  colspan="2" class="px-4 border text-center" *ngIf="showDeposit" >
+          <!-- <td  colspan="2" class="px-4 border text-center" *ngIf="showDeposit" >
             <span *ngIf="lstUnitType.DepositAmount != null">$</span>{{lstUnitType.DepositAmount | number : '1.2-2'}}
-          </td>
+          </td> -->
           <td colspan="2" class="px-4 border text-center">
             <span *ngIf="lstUnitType.ReservationFee != null">$</span>{{lstUnitType.ReservationFee | number : '1.2-2'}}
           </td>
@@ -102,7 +103,6 @@
 
   <br>
 <div [class.display]="!showTable">
-  <h2 class="mt-4 mb-2 ">Outdoor Parking Units</h2><br>
   <!-- <p *ngFor="let details of extrainfo">{{details.p}}</p><br> -->
   <table  class="viewrates-desktop">
 <tHead [class.display]="!showTable">
@@ -120,9 +120,9 @@
     <td colspan="2" class="px-4 border text-center">
         <span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate | number : '1.2-2'}}
     </td>
-    <td colspan="2" class="px-4 border text-center">
+    <!-- <td colspan="2" class="px-4 border text-center">
       <span *ngIf="lstUnitType.DepositAmount != null">$</span>{{lstUnitType.DepositAmount | number : '1.2-2'}}
-    </td>
+    </td> -->
     <td colspan="2" class="px-4 border text-center">
       <span *ngIf="lstUnitType.ReservationFee != null">$</span>{{lstUnitType.ReservationFee | number : '1.2-2'}}
     </td>

@@ -77,11 +77,11 @@ export const th = [
     data: `Rate`,
     state: objSIMSetting.objUnitSizesSetting.blnShowRate
   },
-  {
-    id: 'deposit',
-    data: 'Rental Deposit',
-    state: objSIMSetting.objUnitSizesSetting.blnShowDeposit
-  },
+  // {
+  //   id: 'deposit',
+  //   data: 'Rental Deposit',
+  //   state: objSIMSetting.objUnitSizesSetting.blnShowDeposit
+  // },
   {
     id: 'reservation-fee',
     data: 'Reservation Fee',
@@ -120,11 +120,11 @@ export const th1 = [
     data: `Rate`,
     state: objSIMSetting.objUnitSizesSetting.blnShowRate
   },
-  {
-    id: 'deposit',
-    data: 'Rental Deposit',
-    state: objSIMSetting.objUnitSizesSetting.blnShowDeposit
-  },
+  // {
+  //   id: 'deposit',
+  //   data: 'Rental Deposit',
+  //   state: objSIMSetting.objUnitSizesSetting.blnShowDeposit
+  // },
   {
     id: 'reservation-fee',
     data: 'Reservation Fee',
