@@ -16,9 +16,9 @@ export const contactsHomePage = [
     {
         id: 3,
         label: 'Phone: ',
-        data: '',
+        data: '(405) 301-9818',
         class: '',
-        redirect: 'tel:'
+        redirect: 'tel:4053019818'
     },
 ];
 
