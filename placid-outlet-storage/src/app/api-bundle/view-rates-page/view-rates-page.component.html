@@ -55,7 +55,7 @@
         </div>
       </div>
       <div class="col-4 d-flex justify-content-center" >
-        <div *ngIf="lstUnitType.IsUnitsAvailable" >
+        <div *ngIf="lstUnitType.IsUnitsAvailable; else ifNoUnits" >
           <div [id]="locationReserve" class=" py-1 buttons" >
               <button class="btn  btn-primary" (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
           </div>
@@ -64,6 +64,9 @@
               <link *ngIf="lstUnitType.IsUnitsAvailable" itemprop="availability" href="https://schema.org/InStock" />
           </div> -->
         </div>
+        <ng-template #ifNoUnits>
+          <b class="text-center noUnitstext">Currently unavailable. Please call us for more information.</b>
+         </ng-template>
       </div>  
     </div>
   </div>
