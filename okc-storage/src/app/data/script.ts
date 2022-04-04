@@ -82,9 +82,9 @@ export const addressLoaction1 = {
 
 
 export const imageLocation1 = [
-  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Okc_Storage/jpg/okc-storage-11.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Okc_Storage/jpg/okc-storage-43.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Okc_Storage/jpg/okc-storage-169.jpg'
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Okc_Storage/jpg/okc-self-storage-11.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Okc_Storage/jpg/okc-self-storage-43.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Okc_Storage/jpg/okc-self-storage-169.jpg'
  ]
 
 
