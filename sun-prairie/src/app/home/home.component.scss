@@ -470,6 +470,13 @@
 }
 
 @media only screen and (max-width: 575px) {
+  .jumbotron {
+    text-align: center;
+    
+    height: 100vh;
+  }
+  
+
   .disp {
     display: none;
   }
@@ -484,23 +491,21 @@
     height: 92vh;
 
     .button-width {
-      // padding: 0 15px;
-      bottom: 10px;
+      bottom: 150px;
       width: 100%;
-      // text-align: center !important;
-      
       left:25%;
-      
-
-      
     }
 
     .jumbotron {
       height: 92vh;
-      background-position: 70%;
+      // background-position: 70%;
+      // background-attachment: unset;
+      background-position: center center;
+      background-size: contain;
 
       .jumbotron-skew-style {
-        display: none;
+        display: none ;
+        
       }
 
       .jumbotron-skew-text {
@@ -515,4 +520,14 @@
     }
   
   }
+  .bg-light{
+    position: relative;
+    bottom: 100px;
+  }
+
+  .font-xs-device{
+    font-size: 14px;
+    
+  }
 }
+

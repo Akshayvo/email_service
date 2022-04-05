@@ -32,7 +32,7 @@
                       <p class="text-justify">{{blurbText}}
                       </p>
                     </div>
-                    <div class="button-width ">
+                    <div class="button-width">
                         <div class="row mx-0 px-0">
                           <!-- <div class="col-6 mx-0 px-0">
                            <a class="contact-btn btn btn-primary mr-2" (click)="navigate('/reserve-unit')" role="button">Reserve Unit</a>
@@ -75,7 +75,7 @@
           <div class="mb-4">
             <p>
               <span class="font-xs-device" *ngFor="let contact of contactDetails">
-                <b>{{contact.label}}</b><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+                <b>{{contact.label}}</b><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect" class="contact-links">&nbsp;{{contact.data}}</a></span>
                 <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
               </span>
             </p>
@@ -100,7 +100,7 @@
 
 
   <!--About Us Section-->
-  <div class="container py-5">
+  <div class="container py-md-5">
     <div class="row">
       <div class="col-lg-6 py-2">
         <!-- <img src="" width="100%" alt="storage unit picture" class="sectionImage"> -->
