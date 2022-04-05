@@ -233,7 +233,7 @@ export const unitSizerLocation1 = [
     },
     {
         text: '10\' x 10\'',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x15.png',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x10.png',
         data: `Perfectly holds the contents of a one or two bedroom apartment. This
                 unit size is also well suited for file storage or for your four-wheeler.`,
         amenities: [
@@ -321,7 +321,7 @@ export const unitSizerLocation3 = [
     },
     {
         text: '10\' x 10\'',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x15.png',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x10.png',
         data: `Perfectly holds the contents of a one or two bedroom apartment. This
                 unit size is also well suited for file storage or for your four-wheeler.`,
         amenities: [
@@ -409,7 +409,7 @@ export const unitSizerLocation4 = [
     },
     {
         text: '10\' x 10\'',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x15.png',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x10.png',
         data: `Perfectly holds the contents of a one or two bedroom apartment. This
                 unit size is also well suited for file storage or for your four-wheeler.`,
         amenities: [
@@ -497,7 +497,7 @@ export const unitSizerLocation5 = [
     },
     {
         text: '10\' x 10\'',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x15.png',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x10.png',
         data: `Perfectly holds the contents of a one or two bedroom apartment. This
                 unit size is also well suited for file storage or for your four-wheeler.`,
         amenities: [
@@ -585,7 +585,7 @@ export const unitSizerLocation2 = [
     },
     {
         text: '10\' x 10\'',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x15.png',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x10.png',
         data: `Perfectly holds the contents of a one or two bedroom apartment. This
                 unit size is also well suited for file storage or for your four-wheeler.`,
         amenities: [
