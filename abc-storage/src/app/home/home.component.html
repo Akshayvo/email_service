@@ -12,9 +12,11 @@
             </h2>
           <p class="text-justify">{{jumbotron.blurb}}</p>
           </div>
-          <div class="jumbotorn-button">
-            <a class="btn btn-lg btn-outline-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>
-            <a class="btn btn-lg btn-primary" (click)="navigate('/contact-us')" role="button">Contact Us</a>
+          <div class="jumbotorn-button" *ngFor="let contact of contactDetails">
+            <!-- <a class="btn btn-lg btn-outline-primary" (click)="navigate('/view-rates')" role="button">View Rates</a> -->
+            <span *ngIf="contact?.label === 'Phone:'">
+              <a class="btn btn-lg btn-primary" [href]="contact?.redirect" role="button">Call Us</a>
+            </span>
           </div>
           </div>
         </div>
