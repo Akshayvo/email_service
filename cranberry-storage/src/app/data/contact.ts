@@ -20,9 +20,9 @@ export const contact = [
     },
     {
         id: 2,
-        redirect: 'mailto:liz@cranberrystorage.com',
+        redirect: 'mailto:customerservice@cranberrystorage.com',
         label: 'Email: ',
-        data: 'liz@cranberrystorage.com',
+        data: 'customerservice@cranberrystorage.com',
         class: 'fas fa-envelope mr-2 iconColor',
     }
 ];
