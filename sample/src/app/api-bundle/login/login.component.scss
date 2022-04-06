@@ -17,6 +17,9 @@
     color: black;
     line-height: 1.8;
   }
+  div{
+    margin-bottom: 3px;
+  }
 }
 
 h2 {
@@ -30,6 +33,7 @@ h2 {
 }
 
 .forgot-link {
+  margin-bottom: 3px;
   a {
     color: $primary;
     text-decoration: underline;
