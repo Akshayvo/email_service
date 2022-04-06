@@ -133,9 +133,13 @@ export class FreeEstimateComponent implements OnInit {
       }
 
       this.receiveremail = this.contactInfo[1].data;
+      
 
       this.completeMessage = `phone: ${this.contactForm.value.phone}, <br/>
-                                message: ${this.contactForm.value.message}`;
+                              message: ${this.contactForm.value.message} <br/>
+                              address1:${this.contactForm.value.AddressLine1}<br/>
+                              address2:${this.contactForm.value.AddressLine2}
+                                `;
 
       const body = {
         name: this.contactForm.value.name,
@@ -143,6 +147,8 @@ export class FreeEstimateComponent implements OnInit {
         receiveremail: this.receiveremail,
         message: this.completeMessage,
         subject: this.contactForm.value.subject,
+        // AddressLine1:this.contactForm.value.AddressLine1
+
       };
       this.emailService.sendEmail(body).subscribe(
         (response: any) => {
