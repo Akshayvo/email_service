@@ -10,6 +10,7 @@ import { DataSharingService } from '../services/data-sharing.service';
 import { environment } from '../../../environments/environment';
 import { objSIMSetting } from '../../data/configuration';
 import { script } from '../../data/script';
+import { contact, hours } from "../../data/contact";
 @Component({
   selector: 'app-view-rates-page',
   templateUrl: './view-rates-page.component.html',
@@ -41,7 +42,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   defaultTotalChargesAmount: number;
   defaultTotalTaxAmount: number;
   defaultClimateString = ' ';
-
+  contactDetails: any;
   showPaymentForMoveIn = false;
   showPaymentForReserve = false;
   objCharges: ObjCharges;
@@ -72,6 +73,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.getData();
     this.fetchThData();    
+    this.fetchContactDetails();
     this.state = script.state;
   }
 
@@ -82,6 +84,10 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     this.showReserve = objSIMSetting.objActionSetting.blnAllowReservation;
     this.showMovein = objSIMSetting.objActionSetting.blnAllowMoveIn;
     this.showClimateControl = objSIMSetting.objUnitSizesSetting.blnClimateControl;
+  }
+
+  public fetchContactDetails() {
+    this.contactDetails = contact;
   }
 
 

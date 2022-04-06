@@ -6,13 +6,7 @@ export const contact = [
         class: 'fas fa-map-marker-alt mx-2 iconColor',
         redirect: 'https://goo.gl/maps/3XA9xqGhYpQcRRjZA'
     },
-    {
-        id: 1,
-        label: 'Mailing Address:',
-        data: '400 Hale Dr, Thibodaux, LA 70301',
-        class: 'fas fa-map-marker-alt mx-2 iconColor',
-        redirect: ''
-    },
+   
     {
         id: 1,
         label: 'Email:',
@@ -35,7 +29,11 @@ export const hours = [
         data: '9:00AM to 6:00PM'
     },
     {
-        label: 'Saturday-Sunday: ',
+        label: 'Saturday: ',
+        data: '9:00AM to 12:00PM'
+    },
+    {
+        label: 'Sunday: ',
         data: 'CLOSED'
     },
     {

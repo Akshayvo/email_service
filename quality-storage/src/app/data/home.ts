@@ -19,9 +19,7 @@ export const featuresList = [
         td1: 'Affordable Rates',
         td2: 'Fully-Paved Facility',
     },
-    {
-        td1:`Single-Level Facility`
-    }
+    
     
 ];
 

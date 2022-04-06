@@ -42,6 +42,10 @@ img {
 .navbar {
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.09);
 
+  .navbar-brand b{
+    font-size: 20px;
+  }
+
   .nav-link {
     color: $black;
     font-weight: 600;
@@ -87,10 +91,7 @@ img {
       font-size: 12px;
     }
   
-    .nav-link {
-      // padding: 10px;
-      // font-size: 1rem;
-    }
+    
   }
 }
 
