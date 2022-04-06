@@ -1,5 +1,12 @@
 @import "../../styles.scss";
 
+
+
+.mobile{
+  display: none;
+}
+
+
 .jumbotron-background-webp {
   background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Sun_Prairie/webp/sun-prairie-self-storage-jumbotron.webp");
 }
@@ -52,7 +59,7 @@
       left: -20%;
       position: relative;
       transform: skew(15deg);
-      min-height: 100%;
+      height: 100%;
     }
 
     .jumbotron-skew-text {
@@ -469,65 +476,229 @@
   }
 }
 
-@media only screen and (max-width: 575px) {
+// @media only screen and (max-width: 575px) {
+//   .jumbotron {
+//     text-align: center;
+    
+//     height: 100vh;
+//   }
+
+//   .mobile{
+//     display: block;
+//   }
+  
+
+//   .disp {
+//     display: none;
+//   }
+
+//   .jumbotron-container {
+//     .jumbotron-bottom {
+//       display: none;
+//     }
+//   }
+
+//   .jumbotron-top {
+//     height: 92vh;
+
+//     .button-width {
+//       bottom: 150px;
+//       width: 100%;
+//       left:25%;
+//     }
+
+//     .jumbotron {
+//       height: 92vh;
+//       // background-position: 70%;
+//       // background-attachment: unset;
+//       background-position: center center;
+//       background-size: contain;
+
+//       .jumbotron-skew-style {
+//         display: none ;
+        
+//       }
+
+//       .jumbotron-skew-text {
+//         width: 100%;
+//         bottom: 0;
+//         left: 0;
+//         top: auto;
+//         height: 80px;
+//         background: rgba(0, 0, 0, 0.6);
+        
+//       }
+//     }
+  
+//   }
+//   .bg-light{
+//     position: relative;
+//     bottom: 100px;
+//   }
+
+//   .font-xs-device{
+//     font-size: 14px;
+    
+//   }
+// }
+
+@media only screen and (max-width: 600px) and (min-width: 420px) {
   .jumbotron {
     text-align: center;
-    
-    height: 100vh;
-  }
+    background-attachment: unset;
+    background-position: center left;
+    height: 60vh !important;
+
   
+  }
+
+  .feature {
+    display: none;
+  }
 
   .disp {
     display: none;
   }
 
-  .jumbotron-container {
-    .jumbotron-bottom {
-      display: none;
+  // .jumbotron-bottom{
+  //   height: 25vh !important;
+  // }
+
+  .jumbotorn-skew-text {
+    width: 100% !important;
+    left: 0;
+    top: auto;
+    bottom: 10px;
+    
+  }
+      .button-width {
+      width:50%;
+      left:25% !important;
+      top:130px;
     }
+
+  .jumbotorn-button {
+    padding: 10px;
+  }
+
+      
+
+  // .bg-light{
+  //   margin-top:15vh;
+  // }
+
+  .bg-translucent{
+    background-color: rgba(0,0,0,0);}
+}
+
+@media only screen and (max-width: 429px) {
+  
+  .jumbotron {
+    text-align: center;
+    background-attachment: unset;
+    // background-position: right 37% top 10px;
+    background-size: cover;
+    height: 60vh !important;
+    border-radius: 0px;
   }
 
   .jumbotron-top {
-    height: 92vh;
+    height: 40vh;
+  }
 
-    .button-width {
-      bottom: 150px;
-      width: 100%;
-      left:25%;
-    }
-
-    .jumbotron {
-      height: 92vh;
-      // background-position: 70%;
-      // background-attachment: unset;
-      background-position: center center;
-      background-size: contain;
-
-      .jumbotron-skew-style {
-        display: none ;
-        
-      }
-
-      .jumbotron-skew-text {
-        width: 100%;
-        bottom: 0;
-        left: 0;
-        top: auto;
-        height: 80px;
-        background: rgba(0, 0, 0, 0.6);
-        
-      }
-    }
   
-  }
-  .bg-light{
-    position: relative;
-    bottom: 100px;
+
+  .video-style {
+    iframe {
+      width: 100%;
+      height: 300px;
+    }
   }
 
-  .font-xs-device{
-    font-size: 14px;
-    
+  .feature{
+    display: none;
+  }
+
+  .disp {
+    display: none;
+  }
+
+  .mobile{
+    display: block;
+    padding-top: 145px;
+  }
+
+  .jumbotorn-skew-style {
+    // transform: skew(0deg);
+    // width: 100%;
+    // left: auto;
+    // height: 150px;
+    // bottom: 0;
+    // position: absolute;
+    // top: 35.5vh;
+    display: none;
+  }
+
+  // .jumbotron-bottom{
+  //   height: 7vh;
+  // }
+
+  .jumbotorn-skew-text {
+    width: 100% !important;
+    left: 0;
+    // top: auto;
+    bottom: 2px;
+    text-align: center;
+    top:65vh;
+    color: white;
+
+    .btn-outline-primary {
+      margin-right: 0;
+      margin-bottom: 8px;
+      color: #154121 !important;
+    }
+
+    .btn-primary {
+      margin-top: 25px;
+      
+    }
+
+   
+
+    .jumbotorn-button {
+      padding: 6px;
+      
+    }
+  }
+
+  .button-width {
+
+    width:50%;
+    top:115px;
+    left:25%;
+  }
+
+  // .bg-light{
+  //   margin-top:15vh;
+  // }
+  .getStarted{
+    h1{
+      font-size: 30px;
+    }
+    p{
+      font-size: 18px;
+    }
+  }
+  .bg-translucent{
+    background-color: rgba(0,0,0,0);}
+}
+
+@media only screen and (max-width: 320px) {
+    .font-xs-device{
+      font-size: 14px;
+  }
+  .button-width {
+    left:20%;
   }
 }
 
