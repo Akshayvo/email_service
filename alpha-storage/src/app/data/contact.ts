@@ -6,13 +6,13 @@ export const contact = [
         class: 'fas fa-map-marker-alt mx-2 iconColor',
         redirect: ''
     },
-    {
-        id: 1,
-        label: 'Mailing Address:',
-        data: '61 Kipling Ave, Woodbridge, ON L4L 2A3, Canada',
-        class: 'fas fa-map-marker-alt mx-2 iconColor',
-        redirect: ''
-    },
+    // {
+    //     id: 1,
+    //     label: 'Mailing Address:',
+    //     data: '61 Kipling Ave, Woodbridge, ON L4L 2A3, Canada',
+    //     class: 'fas fa-map-marker-alt mx-2 iconColor',
+    //     redirect: ''
+    // },
     {
         id: 2,
         label: 'Email:',
