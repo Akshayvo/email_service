@@ -20,6 +20,8 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   showTable = false;
   unitTypes: UnitTypes;
   LstUnitTypes: LstUnitTypes[];
+  regularUnits: LstUnitTypes[];
+  climateControl: LstUnitTypes[];
 
   descriptionVR: string;
   monthlyRateVR: number;
@@ -41,8 +43,9 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   defaultTotalChargesAmount: number;
   defaultTotalTaxAmount: number;
   defaultClimateString = ' ';
-  showBtnG:boolean;
-  showBtnC:boolean;
+  showBtnG: boolean;
+  location: number;
+  showBtnC: boolean;
   showPaymentForMoveIn = false;
   showPaymentForReserve = false;
   objCharges: ObjCharges;
@@ -63,7 +66,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     private eRef: ElementRef
   ) {
     this.windowLocation = window.location;
-   }
+  }
 
 
   ngOnInit() {
@@ -71,19 +74,21 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     this.fetchThData();
     this.dataSharingService.initMyNavLinks('viewRates', this.router.url);
     this.facilityLocation = this.dataSharingService.facilityLocation;
-    
+
   }
 
   public fetchThData() {
     this.th = th;
 
-    if((this.router.url.includes('chillicothe'))){
-      this.showBtnG=false;
-      this.showBtnC=true;
-   }else{
-    this.showBtnG=true;
-    this.showBtnC=false;
-   }
+    if ((this.router.url.includes('chillicothe'))) {
+      this.showBtnG = false;
+      this.location = 1;
+      this.showBtnC = true;
+    } else {
+      this.showBtnG = true;
+      this.location = 2;
+      this.showBtnC = false;
+    }
 
   }
 
@@ -108,19 +113,19 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
       intUnitTypeID
     }).subscribe(result => {
       this.showLoader = false;
-      const {objCharges: {
+      const { objCharges: {
         ProrateAmt = 0,
         Deposit = 0,
         DepositTax = 0,
         Rate = 0,
-        RateTax= 0,
+        RateTax = 0,
         ProrateTax = 0,
         OthDeposit = 0,
         Setup = 0,
         SetupTax = 0,
         TotalTaxAmount = 0,
         TotalChargesAmount = 0,
-      }} = result;
+      } } = result;
       this.prorateAmt = ProrateAmt;
       this.deposit = Deposit;
       this.depositTax = DepositTax;
@@ -137,21 +142,27 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
       this.monthlyRateVR = monthlyRate;
       this.unitTypeIdVR = intUnitTypeID;
       this.curStage = 2;
-      }, err => {
-      });
+    }, err => {
+    });
 
-      
-       
-     
+
+
+
 
   }
 
   getData() {
-  this.getDataSubscribe$ = this.fetchDataService.getData( )
-    .subscribe(unitTypesResponse => {
-      this.showTable =  true;
-      this.LstUnitTypes = unitTypesResponse.lstUnitTypes;
-    });
+    this.getDataSubscribe$ = this.fetchDataService.getData()
+      .subscribe(unitTypesResponse => {
+        if ((this.router.url.includes('chillicothe'))) {
+          this.showTable = true;
+          this.regularUnits = unitTypesResponse.lstUnitTypes.filter(x => x.IsClimateControlled !== true);
+          this.climateControl = unitTypesResponse.lstUnitTypes.filter(x => x.IsClimateControlled === true && x.IsAutomobile === false && x.IsMobile === false && x.IsOutdoor === false);
+        } else {
+          this.showTable = true;
+          this.LstUnitTypes = unitTypesResponse.lstUnitTypes;
+        }
+      });
   }
 
   public ngOnDestroy(): void {
