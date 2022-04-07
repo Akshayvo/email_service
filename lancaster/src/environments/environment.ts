@@ -19,8 +19,8 @@ export const environment = {
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   websiteUrl: 'https://lancasterscselfstorage.com',
-  // APIKey: `bTJUMW4yTDVbOFs6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`,
-  APIKey: `Mjg0NjU6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // testing
+  APIKey: `bTJUOW40TDhbNls6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`,
+  // APIKey: `Mjg0NjU6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // testing 
 };
 
 /*

@@ -9,6 +9,7 @@ export class UnitTypes {
 export class LstUnitTypes {
     Description: string;
     MonthlyRate: number;
+    SetupFee:number;
     DailyRate: number;
     AnnualRate: number;
     BiAnnualRate: number;
@@ -22,6 +23,7 @@ export class LstUnitTypes {
     constructor(
         Description: string,
         MonthlyRate: number,
+        SetupFee:number,
         DailyRate: number,
         AnnualRate: number,
         BiAnnualRate: number,
@@ -34,6 +36,7 @@ export class LstUnitTypes {
         ) {
         this.Description = Description,
         this.MonthlyRate = MonthlyRate;
+        this.SetupFee=SetupFee;
         this.DailyRate = DailyRate;
         this.AnnualRate = AnnualRate;
         this.BiAnnualRate = BiAnnualRate;

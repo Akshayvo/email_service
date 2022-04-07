@@ -17,6 +17,7 @@ export const objSIMSetting = {
         blnClimateControl: false,
         blnShowDeposit: false,
         blnShowRate: true,
+        blnShowSetupFee: true,
         blnShowUnavailableUnitTypes: true,
         blnShowUnitAvailability: false
     },
