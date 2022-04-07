@@ -2,21 +2,21 @@ import { objSIMSetting } from './configuration';
 
 export const dataViewRates = [
     {
-      p: ``,
+      p: `Are you searching for storage space for that move, renovation, or spring cleaning job you've been putting off? Lalor Storage has the storage solutions for you!`,
     },
     {
-      p: ``
+      p: `We have a variety of storage units to choose from, starting with our 5-foot-by-5-foot units and going up to our oversized 20-foot-by-20-foot units. Rest easy knowing that our facility is fully-fenced, well-lit, and covered by plenty of security cameras to maintain a sense of safety at all times.`
     },
     {
-      p: `
+      p: `Our rates are affordable, and we offer month-to-month leases so you can easily adjust your storage needs as they change. Plus, we provide local service so you can always count on us when you need assistance.
       `
     },
     {
-      p: ``
+      p: `Contact us or reserve online in minutes with our easy online reservation form!`
     }
 ];
 
-export const viewRatesAltText = `two rows of roll-up metal self storage unit doors inside a climate controlled self storage building`;
+export const viewRatesAltText = ` a family standing behind a stack of packing boxes smiling for the camera`;
 
 export const MilitaryTypes = [
   {
@@ -83,11 +83,11 @@ export const th = [
     data: `Rate`,
     state: objSIMSetting.objUnitSizesSetting.blnShowRate
   },
-  {
-    id: 'deposit',
-    data: 'Deposit',
-    state: objSIMSetting.objUnitSizesSetting.blnShowDeposit
-  },
+  // {
+  //   id: 'deposit',
+  //   data: 'Deposit',
+  //   state: objSIMSetting.objUnitSizesSetting.blnShowDeposit
+  // },
   {  id: 'reserve',
     data: `Reserve a Unit`,
     state: objSIMSetting.objActionSetting.blnAllowReservation

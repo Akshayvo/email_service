@@ -33,22 +33,22 @@ export const featuresList = [
     }
 ];
 
-export const aboutUsAlt = `indoor climate controlled storage units with roll-up doors inside of a clean, well-lit building`;
+export const aboutUsAlt = `a family standing behind a stack of packing boxes smiling for the camera`;
 
 export const aboutUsHeading = `Affordable Self Storage in Baldwinsville`;
 
 export const aboutUs = [
     {
-        p: ``,
+        p: `Lalor Storage is the perfect storage solution for Trenton area residents and local businesses!`,
     },
     {
-        p: ``,
+        p: `Our locally owned and operated self storage facility has a variety of storage unit sizes to choose from, so you can find the perfect fit for your needs. Plus, our facility is well-maintained, well-lit, and covered by plenty of security cameras to ensure a sense of safety at all times.`,
     },
     {
-        p: ``,
+        p: `At Lalor storage, we make sure our rates are very competitive, making us one of the most cost-effective self storage options in Trenton. You won't find a better deal anywhere else!`,
     },
     {
-        p: ``,
+        p: `Give us a call or visit our View Rates page to reserve your storage unit today!`,
     }
     
 ];

@@ -19,8 +19,8 @@ export const environment = {
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   websiteUrl: 'https://lalor-storage-staging.netlify.app',
-  // APIKey: `bTh+Nm4weTE6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29462
-  APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28463
+  APIKey: `bTh+Nm4weTE6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 8601
+  // APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28463
   
 };
 
