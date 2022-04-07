@@ -543,13 +543,12 @@
 // }
 
 @media only screen and (max-width: 600px) and (min-width: 420px) {
+  
   .jumbotron {
     text-align: center;
     background-attachment: unset;
     background-position: center left;
     height: 60vh !important;
-
-  
   }
 
   .feature {
@@ -574,7 +573,7 @@
       .button-width {
       width:50%;
       left:25% !important;
-      top:130px;
+      top:140px;
     }
 
   .jumbotorn-button {
@@ -600,10 +599,13 @@
     background-size: cover;
     height: 60vh !important;
     border-radius: 0px;
+   
   }
 
   .jumbotron-top {
     height: 40vh;
+   
+
   }
 
   
@@ -674,7 +676,7 @@
   .button-width {
 
     width:50%;
-    top:115px;
+    top:140px;
     left:25%;
   }
 
@@ -702,3 +704,31 @@
   }
 }
 
+@media only screen and (max-width:540px) and (min-width:359px) and (max-height:916px) and (min-height:666px){
+  .jumbotron-top {
+    height: 35vh;
+  }
+
+  .jumbotron {
+    height:35vh !important;
+  }
+  .jumbotron-bottom{
+    height:0vh !important;
+  }
+  // .bg-light{
+  //   margin-top:15vh;
+  // }
+}
+
+@media only screen and (max-width:376px) and (min-width:359px) and (max-height:740px) and (min-height:666px){
+
+  .jumbotron {
+    height:44vh !important;
+  }
+
+  .jumbotron-top {
+    height: 42vh;
+  }
+
+ 
+}
