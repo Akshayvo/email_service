@@ -96,16 +96,16 @@ export const th = [
     data: `Move In`,
     state: objSIMSetting.objActionSetting.blnAllowMoveIn
   },
-  {
-    id: 'climate-control',
-    data: `Climate Control`,
-    state: objSIMSetting.objUnitSizesSetting.blnClimateControl
-  },
-  {
-    id: 'Temperature Control',
-    data: `Temperature Control`,
-    state: objSIMSetting.objUnitSizesSetting.blnClimateControl
-  },
+  // {
+  //   id: 'climate-control',
+  //   data: `Climate Control`,
+  //   state: objSIMSetting.objUnitSizesSetting.blnClimateControl
+  // },
+  // {
+  //   id: 'Temperature Control',
+  //   data: `Temperature Control`,
+  //   state: objSIMSetting.objUnitSizesSetting.blnClimateControl
+  // },
 ];
 
 
