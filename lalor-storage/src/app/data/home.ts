@@ -35,7 +35,7 @@ export const featuresList = [
 
 export const aboutUsAlt = `a family standing behind a stack of packing boxes smiling for the camera`;
 
-export const aboutUsHeading = `Affordable Self Storage in Baldwinsville`;
+export const aboutUsHeading = `Affordable Self Storage Units In Trenton`;
 
 export const aboutUs = [
     {
