@@ -40,3 +40,15 @@
   from = "/*"
   to = "/index.html"
   status = 200
+[[redirects]]
+  from = "http://www.qualitystoragethibodaux.com/contact.html"
+  to = "https://www.qualitystoragethibodaux.com/contact-us"
+  status = 200
+  [[redirects]]
+  from = "http://www.qualitystoragethibodaux.com/photo.html"
+  to = "https://www.qualitystoragethibodaux.com/"
+  status = 200
+  [[redirects]]
+  from = "http://www.qualitystoragethibodaux.com/storage.html"
+  to = "https://www.qualitystoragethibodaux.com/"
+  status = 200
