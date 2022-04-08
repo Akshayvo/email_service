@@ -17,7 +17,7 @@ export const environment = {
   facilityName: 'Herlirhy Storage',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: `https://herlihy-storage-multisite-staging.netlify.app`
+  websiteUrl: `https://herlihyselfstorage.com`
 };
 
 /*
