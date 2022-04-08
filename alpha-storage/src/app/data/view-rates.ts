@@ -14,7 +14,7 @@ export const dataViewRates = [
     
 ];
 
-export const viewRatesAltText = `two rows of roll-up metal self storage unit doors inside a climate controlled self storage building`;
+export const viewRatesAltText = `a single story metal self storage building with metal roll up doors under a blue sky`;
 
 export const MilitaryTypes = [
   {

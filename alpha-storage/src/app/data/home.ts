@@ -22,7 +22,7 @@ export const featuresList = [
     
 ];
 
-export const aboutUsAlt = `indoor climate controlled storage units with roll-up doors inside of a clean, well-lit building`;
+export const aboutUsAlt = `a single story metal self storage building with metal roll up doors under a blue sky`;
 
 export const aboutUsHeading = `Affordable Storage Units and Recreational Vehicle Parking in Mulmur`;
 
