@@ -37,8 +37,8 @@ export const hours = [
         data: 'By appointment, or online 24/7'
     },
     {
-        label: 'Access Hours: ',
-        data: 'By appointment, or online 24/7'
+        label: 'Occupant Access: ',
+        data: '24/7'
     }
 ];
 
