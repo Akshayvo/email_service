@@ -1,4 +1,5 @@
 export const homePageTitle = `Affordable Self Storage Units in Uvalde, Texas`;
+
 export const homePageContent = `Affordable Storage has 8 conveniently located self storage facilities with a variety of affordable self storage unit types and vehicle parking options.`;
 
 export const location1PageTitle = `AFFORDABLE STORAGE #1 - 260 N GROVE | Affordable Storage`;
@@ -55,28 +56,28 @@ export const faqPagecontent = `Have some questions about the services at Self St
 
 
 export const location1PayrentPageTitle = `Pay Rent | Affordable Storage`;
-export const location1PayrentPageContent = `Pay your bill online 24 hours a day, 7 days a week with our easy tenant portal! Just follow these instructions, or you can call our offices to learn more!`;
+export const location1PayrentPageContent = `Follow the instructions on this page to learn how to log into your account and pay your rent. Have questions? Call us today!`;
 
 export const location2PayrentPageTitle = `Pay Rent | Affordable Storage`;
-export const location2PayrentPageContent = `Pay your bill online 24 hours a day, 7 days a week with our easy tenant portal! Just follow these instructions, or you can call our offices to learn more!`;
+export const location2PayrentPageContent = `Follow the instructions on this page to learn how to log into your account and pay your rent. Have questions? Call us today!`;
 
 export const location3PayrentPageTitle = `Pay Rent | Affordable Storage`;
-export const location3PayrentPageContent = `Pay your bill online 24 hours a day, 7 days a week with our easy tenant portal! Just follow these instructions, or you can call our offices to learn more!`;
+export const location3PayrentPageContent = `Follow the instructions on this page to learn how to log into your account and pay your rent. Have questions? Call us today!`;
 
 export const location4PayrentPageTitle = `Pay Rent | Affordable Storage`;
-export const location4PayrentPageContent = `Pay your bill online 24 hours a day, 7 days a week with our easy tenant portal! Just follow these instructions, or you can call our offices to learn more!`;
+export const location4PayrentPageContent = `Follow the instructions on this page to learn how to log into your account and pay your rent. Have questions? Call us today!`;
 
 export const location5PayrentPageTitle = `Pay Rent | Affordable Storage`;
-export const location5PayrentPageContent = `Pay your bill online 24 hours a day, 7 days a week with our easy tenant portal! Just follow these instructions, or you can call our offices to learn more!`;
+export const location5PayrentPageContent = `Follow the instructions on this page to learn how to log into your account and pay your rent. Have questions? Call us today!`;
 
 export const location6PayrentPageTitle = `Pay Rent | Affordable Storage`;
-export const location6PayrentPageContent = `Pay your bill online 24 hours a day, 7 days a week with our easy tenant portal! Just follow these instructions, or you can call our offices to learn more!`;
+export const location6PayrentPageContent = `Follow the instructions on this page to learn how to log into your account and pay your rent. Have questions? Call us today!`;
 
 export const location7PayrentPageTitle = `Pay Rent | Affordable Storage`;
-export const location7PayrentPageContent = `Pay your bill online 24 hours a day, 7 days a week with our easy tenant portal! Just follow these instructions, or you can call our offices to learn more!`;
+export const location7PayrentPageContent = `Follow the instructions on this page to learn how to log into your account and pay your rent. Have questions? Call us today!`;
 
 export const location8PayrentPageTitle = `Pay Rent | Affordable Storage`;
-export const location8PayrentPageContent = `Pay your bill online 24 hours a day, 7 days a week with our easy tenant portal! Just follow these instructions, or you can call our offices to learn more!`;
+export const location8PayrentPageContent = `Follow the instructions on this page to learn how to log into your account and pay your rent. Have questions? Call us today!`;
 
 
 export const location1ContactPageTitle = `Contact Us | Self Storage Facility`;
