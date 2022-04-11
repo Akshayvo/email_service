@@ -1,4 +1,3 @@
-
 # Settings in the [build] context are global and are applied to all contexts
 # unless otherwise overridden by more specific contexts.
 [build]
@@ -27,62 +26,71 @@
   compress = true
 # A basic redirect rule
 [[redirects]]
-  from = "http://www.glenmontselfstorage.com/index.html"
-  to = "http://www.glenmontselfstorage.com/"
+  from = "https://www.glenmontselfstorage.com/self_storage_tips_albany_glenmont_bethlehem_slingerlands_delmar_selkirk.html"
+  to = "https://www.glenmontselfstorage.com/new-york/glenmont/storage-tips"
   status = 301
+
 [[redirects]]
-  from = "http://www.glenmontselfstorage.com/albany_self_storage_glenmont_bethlehem_slingerlands_delmar_ravena_selkirk.html"
-  to = "http://www.glenmontselfstorage.com/"
+  from = "https://www.glenmontselfstorage.com/glenmont_self_storage_albany_bethlehem_slingerlands_delmar_selkirk.html"
+  to = "https://www.glenmontselfstorage.com/contact-us"
   status = 301
+
 [[redirects]]
-  from = "http://www.glenmontselfstorage.com/moving_supplies_albany_glenmont_bethlehem_slingerlands_delmar_coeymans_selkirk_ravena.html"
-  to = "http://www.glenmontselfstorage.com/"
+  from = "https://www.glenmontselfstorage.com/moving_supplies_albany_glenmont_bethlehem_slingerlands_delmar_coeymans_selkirk_ravena.html"
+  to = "https://www.glenmontselfstorage.com/"
   status = 301
-[[redirects]] 
-  from = "http://www.glenmontselfstorage.com/self_storage_tips_albany_glenmont_bethlehem_slingerlands_delmar_selkirk.html"
-  to = "http://www.glenmontselfstorage.com/storage-tips"
-  status = 301
-[[redirects]]  
-  from = "http://www.glenmontselfstorage.com/self_storage_sizes_albany_glenmont_bethlehem_slingerlands_delmar_selkirk.html"
-  to = " http://www.glenmontselfstorage.com/unit-sizer"
-  status = 301
+
 [[redirects]]
-  from = "http://www.glenmontselfstorage.com/rental_trucks_albany_glenmont_bethlehem_slingerlands_delmar_selkirk_coeymans.html"
-  to = " http://www.glenmontselfstorage.com/"
+  from = "https://www.glenmontselfstorage.com/glenmont_self_storage_offers_albany_bethlehem_slingerlands_delmar_selkirk.html"
+  to = "https://www.glenmontselfstorage.com/"
   status = 301
+
 [[redirects]]
-  from = "http://www.glenmontselfstorage.com/glenmont_self_storage_offers_albany_bethlehem_slingerlands_delmar_selkirk.html"
-  to = "http://www.glenmontselfstorage.com/"
+  from = "https://www.glenmontselfstorage.com/albany_self_storage_glenmont_bethlehem_slingerlands_delmar_ravena_selkirk.html"
+  to = "https://www.glenmontselfstorage.com/"
   status = 301
+
 [[redirects]]
-  from = "http://www.glenmontselfstorage.com/glenmont_self_storage_albany_bethlehem_slingerlands_delmar_selkirk.html"
-  to = "http://www.glenmontselfstorage.com/contact-us"
+  from = "https://www.glenmontselfstorage.com/rental_trucks_albany_glenmont_bethlehem_slingerlands_delmar_selkirk_coeymans.html"
+  to = "https://www.glenmontselfstorage.com/"
   status = 301
+
 [[redirects]]
-  from = "http://www.glenmontselfstorage.com/RentalUnit.aspx?ui=16"
-  to = "http://www.glenmontselfstorage.com/new-york/glenmont/view-rates"
+  from = "https://www.glenmontselfstorage.com/self_storage_sizes_albany_glenmont_bethlehem_slingerlands_delmar_selkirk.html"
+  to = "https://www.glenmontselfstorage.com/unit-sizer"
   status = 301
+
 [[redirects]]
-  from = "http://www.glenmontselfstorage.com/RentalUnit.aspx?ui=24"
-  to = "http://www.glenmontselfstorage.com/new-york/glenmont/view-rates"
+  from = "https://www.glenmontselfstorage.com/RentalUnit.aspx?ui=16"
+  to = "https://www.glenmontselfstorage.com/new-york/glenmont/view-rates"
   status = 301
-  [[redirects]]
-  from = "http://www.glenmontselfstorage.com/RentalUnit.aspx?ui=22"
-  to = "http://www.glenmontselfstorage.com/new-york/glenmont/view-rates"
+
+[[redirects]]
+  from = "https://www.glenmontselfstorage.com/RentalUnit.aspx?ui=24"
+  to = "https://www.glenmontselfstorage.com/new-york/glenmont/view-rates"
   status = 301
-  [[redirects]]
-  from = "http://www.glenmontselfstorage.com/RentalUnit.aspx?ui=21"
-  to = "http://www.glenmontselfstorage.com/new-york/glenmont/view-rates"
+
+[[redirects]]
+  from = "https://www.glenmontselfstorage.com/RentalUnit.aspx?ui=22"
+  to = "https://www.glenmontselfstorage.com/new-york/glenmont/view-rates"
   status = 301
-  [[redirects]]
-  from = "http://www.glenmontselfstorage.com/RentalUnit.aspx?ui=19"
-  to = "http://www.glenmontselfstorage.com/new-york/glenmont/view-rates"
+
+[[redirects]]
+  from = "https://www.glenmontselfstorage.com/RentalUnit.aspx?ui=21"
+  to = "https://www.glenmontselfstorage.com/new-york/glenmont/view-rates"
   status = 301
-  [[redirects]]
-  from = "http://www.glenmontselfstorage.com/RentalUnit.aspx?ui=15"
-  to = "http://www.glenmontselfstorage.com/new-york/glenmont/view-rates"
+
+[[redirects]]
+  from = "https://www.glenmontselfstorage.com/RentalUnit.aspx?ui=19"
+  to = "https://www.glenmontselfstorage.com/new-york/glenmont/view-rates"
   status = 301
-  [[redirects]]
+
+[[redirects]]
+  from = "https://www.glenmontselfstorage.com/RentalUnit.aspx?ui=15"
+  to = "https://www.glenmontselfstorage.com/new-york/glenmont/view-rates"
+  status = 301
+
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
