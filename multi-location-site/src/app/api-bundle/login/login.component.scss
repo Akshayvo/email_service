@@ -3,10 +3,16 @@
 
 .forgot-link {
   a {
+    display: inline-block;
+    margin-bottom: 10px;
     color: $primary;
     text-decoration: underline;
     cursor: pointer;
   }
+}
+
+h3{
+  font-size: 1rem;
 }
 
 .coming-soon {
@@ -22,6 +28,8 @@
   padding-left: 50px;
 
   a {
+    display: inline-block;
+    margin-bottom: 10px;
     color: black;
   }
 }

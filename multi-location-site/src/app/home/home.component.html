@@ -67,9 +67,9 @@
           <p class="text-center f-block-img"> 
             <img src="{{feature.data}}" class="f-img" alt="{{feature.alt}}" >
           </p>
-          <h2 class="text-center f-text">
+          <h3 class="text-center f-text">
             {{feature.label}}
-          </h2>
+          </h3>
         </div>
       </div>
     </div>
@@ -103,18 +103,18 @@
 
         <div class="col-lg-6 py-3">
           <div class="mb-4">
-            <h2> Visit the Main Office at the Address Below</h2>
+            <h4> Visit the Main Office at the Address Below</h4>
             <p>
               <span class="contact-links" *ngFor="let contact of contactHomeDetails">
                 <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
-                  <a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+                  <a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span><br>
                   <ng-template #other_content >&nbsp;<a [href]="contact?.redirect" target="_blank" rel="noopener">&nbsp;{{contact.data}}</a></ng-template><br>
               </span>
             </p>
-            <b>Office Hours:</b>
+            <h4>Office Hours:</h4>
             <p>
               <span *ngFor="let hour of hoursHomeDetails">
-                <b>{{hour.label}}</b>&nbsp;{{hour.data}}<br>
+                <b>{{hour.label}}</b>&nbsp;{{hour.data}}<br><br>
               </span>
             </p>
           </div>
