@@ -278,7 +278,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     if (this.cardType) {
       const index = this.lstPayTypes.findIndex(x => x.PayTypeDescription === this.cardType);
       // tslint:disable-next-line: max-line-length
-      const cardTypeId = ((index > -1 ) ? this.lstPayTypes[index].PayTypeID : this.lstPayTypes[0].PayTypeID);
+      const cardTypeId = ((index >=0 ) ? this.lstPayTypes[index].PayTypeID : this.lstPayTypes[0].PayTypeID);
       this.paytypeid =  cardTypeId;
       this.surchargeService.getIdPaytype(this.paytypeid);
       this.payRentForm.patchValue({
@@ -437,7 +437,7 @@ public navigateToPrevious() {
           this.defaultCardType = ((Tenant.CCNumber) ? this.getCardType(Tenant.CCNumber) : this.lstPayTypes[0].PayTypeDescription);
           const index = this.lstPayTypes.findIndex(x => x.PayTypeDescription === this.defaultCardType);
           // tslint:disable-next-line: max-line-length
-          const defaultCardPayTypeId = ((index > -1 ) ? this.lstPayTypes[index].PayTypeID : this.lstPayTypes[0].PayTypeID);
+          const defaultCardPayTypeId = ((index!=null && index > -1 ) ? this.lstPayTypes[index].PayTypeID : this.lstPayTypes[0].PayTypeID);
 
 
             if (localStorage.getItem('strTenantToken')) {
@@ -481,20 +481,27 @@ public navigateToPrevious() {
       });
   }
 
-  public navigateToConfirmation(location: any) {
-    this.router.navigate([`${environment.locationName}/${this.facilityLocation}/reserve-unit/${location}`]);
-  }
+
+
+    public navigateToConfirmation_moveIn(location: any) {
+        
+        this.router.navigate([`${environment.locationName}/${this.facilityLocation}/move-in/${location}`]);
+      }
+    
+      public navigateToConfirmation_reserveUnit(location: any) {
+        
+         this.router.navigate([`${environment.locationName}/${this.facilityLocation}/reserve-unit/${location}`]);
+       }
 
   getPayMethods() {
    this.getPayMethodsSubscribe$ = this.fetchDataService.getPayMethods()
       .subscribe(payTypesResponse => {
         this.cards.forEach(element => {
-          if (payTypesResponse.lstPayTypes.findIndex(x => x.PayTypeDescription === element)) {
-            const index = payTypesResponse.lstPayTypes.findIndex(x => x.PayTypeDescription === element);
-             if (index > -1) {
-                this.lstPayTypes.push(payTypesResponse.lstPayTypes[index]);
-              }
-          }
+          const index = payTypesResponse.lstPayTypes.findIndex(x => x.PayTypeDescription === element);
+              if (index!=null && index > -1) {
+                 this.lstPayTypes.push(payTypesResponse.lstPayTypes[index]);
+                
+               }
         });
         if ((!!localStorage.getItem('strTenantToken')) && (this.router.url.includes(`${this.loginUrl}`))) {
           this.tenantTokenExist = true;
