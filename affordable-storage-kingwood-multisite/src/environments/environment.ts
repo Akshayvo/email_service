@@ -18,7 +18,7 @@ export const environment = {
   facilityName: 'Affordable Storage of Kingwood',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: `https://affordable-storage-kingwood-staging.netlify.app`
+  websiteUrl: `https://affordablestorageofkingwood.com`
 };
 
 /*
