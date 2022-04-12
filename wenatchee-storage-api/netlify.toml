@@ -25,6 +25,12 @@
 [build.processing.images]
   compress = true
 # A basic redirect rule
+
+[[redirects]]
+  from = "https://www.bestwenatcheestorage.com/view-rates"
+  to = "https://www.bestwenatcheestorage.com"
+  status = 301
+
 [[redirects]]
   from = "/*"
   to = "/index.html"

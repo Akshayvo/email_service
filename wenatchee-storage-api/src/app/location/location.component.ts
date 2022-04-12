@@ -272,4 +272,8 @@ id = 3;
     this.tabs = tabs;
     this.features = location3FeaturesHead;
   }
+  
+  public scroll(el: any) {
+    el.scrollIntoView();
+}
 }

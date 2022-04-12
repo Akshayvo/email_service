@@ -13,7 +13,7 @@ export const environment = {
   cards: ['Visa', 'Master Card', 'Amex', 'Discover'],
   errorsMails: ['sanghmitra.v@codeparva.in'],
   senderEmail: 'errors@codeparva.in',
-  emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
+  emailBaseUrl: '',
   appId: 'South Wenatchee Self Storage - Testing',
   facilityName: 'South Wenatchee Self Storage',
   VERSION: require('../../package.json').version,
