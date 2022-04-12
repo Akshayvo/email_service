@@ -3,6 +3,8 @@
 
 .forgot-link {
   a {
+    display: inline-block;
+    margin: 5px;
     color: $primary;
     text-decoration: underline;
     cursor: pointer;
@@ -22,8 +24,14 @@
   padding-left: 50px;
 
   a {
+    display: inline-block;
+    margin: 5px;
     color: black;
   }
+}
+
+h3{
+  font-size: 1rem;
 }
 
 .display-none {

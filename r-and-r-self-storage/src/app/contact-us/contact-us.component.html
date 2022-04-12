@@ -113,7 +113,7 @@
             <span class="contact-links" *ngIf="contact?.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
                 <a [href]="contact?.redirect" target="{{(contact?.label === 'Address:') ? '_blank' : '_self'}}">&nbsp;{{contact.data}}</a>
             </span>
-            <ng-template #other_content>&nbsp;<h6>{{contact.data}}</h6></ng-template><br>
+            <ng-template #other_content>&nbsp;<b>{{contact.data}}</b></ng-template><br>
           </span>
         </p>
                 <div class="py-2">
