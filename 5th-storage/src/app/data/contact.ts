@@ -8,24 +8,35 @@ export const contact = [
     },
     {
         id: 1,
-        label: 'Email:',
-        data: 'syrasoftsoftware@gmail.com',
-        class: 'fas fa-envelope mx-2 iconColor',
-        redirect: 'mailto:syrasoftsoftware@gmail.com'
+        label: 'Mailing Address:',
+        data: 'P.O. Bix 1691 Bemidji, MN 56619',
+        class: 'fas fa-map-marker-alt mx-2 iconColor',
+        redirect: ''
     },
     {
         id: 2,
+        label: 'Email:',
+        data: 'rent@5thstreetstorage.com',
+        class: 'fas fa-envelope mx-2 iconColor',
+        redirect: 'mailto:rent@5thstreetstorage.com'
+    },
+    {
+        id: 3,
         label: 'Phone:',
-        data: '(218) 206-8155',
+        data: '(218) 444-5277',
         class: 'fas fa-phone mx-2 iconColor',
-        redirect: 'tel:2182068155',
+        redirect: 'tel:2184445277',
     }
 ];
 
 export const hours = [
     {
-        label: 'Monday - Sunday: ',
-        data: '7 Days a Week, 8:00AM to 4:30PM'
+        label: 'Monday - Friday: ',
+        data: '9:00AM to 5:00PM'
+    },
+    {
+        label: 'Saturday - Sunday: ',
+        data: 'CLOSED'
     },
     
     {

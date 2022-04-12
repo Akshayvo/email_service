@@ -60,7 +60,7 @@ export const feature = [
     {
         // tslint:disable-next-line:max-line-length
         path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/thermometer.svg`,
-        label: 'Climate Controlled',
+        label: 'Temperature Controlled',
         alt: 'Icon of thermometer indicating climate-controlled units'
 
     },
