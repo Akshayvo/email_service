@@ -56,12 +56,12 @@ export const loginDetail1 = [
 
 export const loginDetail2 = [
   {
-      userName: `Tenant's First Initial + Last Name`,
-      password: `Tenant's Full Phone Number`,
+      userName: `Tenant's Email address`,
+      password: `Tenant's gate access code + last 4 of the phone number`,
       example: {
           code: `John Smith's Access Code is 1234 and Phone Number is 555-555-5555`,
-          userName: 'jsmith',
-          password: '5555555555'
+          userName: 'jsmith@email.com',
+          password: '12345555'
       }
       
   }
