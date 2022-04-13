@@ -31,7 +31,7 @@ export const script = {               // Please fill this script according to fa
      ],
      telephone: contact[contactIndex].data,
      map: "https://g.page/AbcStorageKingston?share",
-     description: "ABC Storage is a self-storage facility centrally located in Kingston, Ontario, Canada, one minute north of Highway 401 and only 10 minutes from downtown Kingston. There are many available units, ranging in size from 5' x 5' to 10' x 20'. All self-storage units are guaranteed to be dry, clean, and secure. ",
+     description: "ABC Storage is a family-owned and operated self-storage facility centrally located in Kingston, Ontario, Canada, one minute north of Highway 401 and only 10 minutes from downtown Kingston. We offer a number of unit sizes ranging from 5' x 5' to 10' x 20'. All self-storage units are guaranteed to be dry and clean. Outdoor storage is also available. Our gates are open 8 am-8 pm 7 days a week. The office is open 8am-3 pm Monday-Friday. Our facility is equipped with security cameras and plenty of lighting, and our on-site manager also performs routine lot inspections to ensure a sense of safety at all times.",
      streetAddress: "1414 Audrey St",
      state: "Ontario",
      addressLocality: "Kingston",

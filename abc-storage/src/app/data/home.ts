@@ -77,7 +77,7 @@ export const feature = [
 
 export const jumbotron = [
     {
-        h2: `Affordable Self Storage Units and Parking in Kingston`,
-        blurb: `Our state-of-the-art self storage and vehicle storage facility offers pin-code activated gates for your security, and a host of modern amenities that make storing your belongings or parking your boat, RV, camper, or trailer in the off-season a breeze! Check out our prices and call our friendly management team today!`,
+        h2: `Affordable Self Storage Units in Kingston`,
+        blurb: `We are a locally owned and operated self storage and vehicle storage facility with pin-code activated gates for your security, and a host of amenities that make storing your belongings or parking your boat, RV, camper, or trailer in the off-season a breeze! Check out our prices and call our friendly management team today!`,
     }
 ];
