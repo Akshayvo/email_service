@@ -32,6 +32,41 @@
   status = 301
 
 [[redirects]]
+  from = "https://www.bestwenatcheestorage.com/wa/south-wenatchee/storage-units"
+  to = "https://www.bestwenatcheestorage.com/wa/south-wenatchee/south-wenatchee/storage-units"
+  status = 301
+
+[[redirects]]
+  from = "https://www.bestwenatcheestorage.com/wa/south-wenatchee/about"
+  to = "https://www.bestwenatcheestorage.com/wa/south-wenatchee/south-wenatchee/storage-units"
+  status = 301
+
+[[redirects]]
+  from = "https://www.bestwenatcheestorage.com/wa/south-wenatchee/unit-sizer"
+  to = "https://www.bestwenatcheestorage.com/wa/south-wenatchee/leos-self-storage/storage-units"
+  status = 301
+
+[[redirects]]
+  from = "https://www.bestwenatcheestorage.com/wa/south-wenatchee"
+  to = "https://www.bestwenatcheestorage.com/wa/south-wenatchee/south-wenatchee/storage-units"
+  status = 301
+
+[[redirects]]
+  from = "https://www.bestwenatcheestorage.com/wa/leos-self-storage/storage-units"
+  to = "https://www.bestwenatcheestorage.com/wa/south-wenatchee/leos-self-storage/storage-units"
+  status = 301
+
+[[redirects]]
+  from = "https://www.bestwenatcheestorage.com/wa/leos-self-storage/unit-sizer"
+  to = "https://www.bestwenatcheestorage.com/wa/south-wenatchee/leos-self-storage/unit-sizer"
+  status = 301
+
+[[redirects]]
+  from = "https://www.bestwenatcheestorage.com/pay-rent/payment"
+  to = "https://www.bestwenatcheestorage.com/pay-rent"
+  status = 301
+
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
