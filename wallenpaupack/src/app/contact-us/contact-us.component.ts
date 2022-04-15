@@ -107,9 +107,11 @@ export class ContactUsComponent implements OnInit {
       this.og = ogContactPageLocation3;
     } else if (this.router.url.includes('greentown')) {
       this.og = ogContactPageLocation3;
-    } else if (this.router.url.includes('greentown1')) {
-      this.og = ogContactPageLocation3;
-    }
+    } 
+    // else if (this.router.url.includes('greentown1')) {
+    //   this.og = ogContactPageLocation3;
+    // }
+   
 }
 
 public fetchMetaData() {
@@ -126,9 +128,10 @@ public fetchTwitter() {
     this.twitter = twitterContactPageLocation3;
   } else if (this.router.url.includes('greentown')) {
     this.twitter = twitterContactPageLocation3;
-  } else if (this.router.url.includes('greentown1')) {
-    this.twitter = twitterContactPageLocation3;
-  }
+  } 
+  // else if (this.router.url.includes('greentown1')) {
+  //   this.twitter = twitterContactPageLocation3;
+  // }
 }
 
   public loadScript() {
@@ -169,9 +172,10 @@ public fetchTwitter() {
       this.fetchContactDetailsLocation3();
     } else if (this.router.url.includes('greentown')) {
       this.fetchContactDetailsLocation4();
-    } else if (this.router.url.includes('greentown1')) {
-      this.fetchContactDetailsLocation5();
-    }
+    } 
+    // else if (this.router.url.includes('greentown1')) {
+    //   this.fetchContactDetailsLocation5();
+    // }
   }
 
   public fetchContactDetailsLocation1() {
@@ -202,12 +206,12 @@ public fetchTwitter() {
     this.hoursDetails = hoursLocation4;
   }
 
-  public fetchContactDetailsLocation5() {
-    this.heading = `Wallenpaupack Self Storage - Greentown`;
-    this.locationId = '5'
-    this.contactDetails = contactsLocation5;
-    this.hoursDetails = hoursLocation5;
-  }
+  // public fetchContactDetailsLocation5() {
+  //   this.heading = `Wallenpaupack Self Storage - Greentown`;
+  //   this.locationId = '5'
+  //   this.contactDetails = contactsLocation5;
+  //   this.hoursDetails = hoursLocation5;
+  // }
 
 onSubmit() {
   this.submitted = true;

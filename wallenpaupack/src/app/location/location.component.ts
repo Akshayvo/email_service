@@ -191,31 +191,32 @@ this.titleService.setTitle(`${this.location3PageTitle}`);
         content: element.content
       })
     });
-} else if (this.router.url.includes(`${environment.locationName}/greentown1`)) {
-  this.meta.addTag({
-    name: 'description',
-    content: `${this.location3PageContent}`
-});
-this.titleService.setTitle(`${this.location3PageTitle}`);
-  this.locationName = `Wallenpaupack Self Storage - Greentown`;
-  this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc5;
-  this.dataSharingService.locationName = this.locationName;
-  this.script = Location5Script;
-  this.loadScript();
-  this.og.forEach(element => {
-    this.meta.addTag({
-      property: element.property,
-      content: element.content
-    })
-  });
+} 
+// else if (this.router.url.includes(`${environment.locationName}/greentown1`)) {
+//   this.meta.addTag({
+//     name: 'description',
+//     content: `${this.location3PageContent}`
+// });
+// this.titleService.setTitle(`${this.location3PageTitle}`);
+//   this.locationName = `Wallenpaupack Self Storage - Greentown`;
+//   this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc5;
+//   this.dataSharingService.locationName = this.locationName;
+//   this.script = Location5Script;
+//   this.loadScript();
+//   this.og.forEach(element => {
+//     this.meta.addTag({
+//       property: element.property,
+//       content: element.content
+//     })
+//   });
 
-  this.twitter.forEach(element => {
-    this.meta.addTag({
-      name: element.name,
-      content: element.content
-    })
-  });
-}
+//   this.twitter.forEach(element => {
+//     this.meta.addTag({
+//       name: element.name,
+//       content: element.content
+//     })
+//   });
+// }
 }
 
   ngOnInit() {
@@ -261,9 +262,10 @@ this.titleService.setTitle(`${this.location3PageTitle}`);
       this.og = ogLocation3;
     } else if (this.router.url.includes(`${environment.locationName}/greentown`)) {
       this.og = ogLocation3;
-    } else if (this.router.url.includes(`${environment.locationName}/greentown1`)) {
-      this.og = ogLocation3;
     } 
+    // else if (this.router.url.includes(`${environment.locationName}/greentown1`)) {
+    //   this.og = ogLocation3;
+    // } 
   }
 
   public fetchTwitter() {
@@ -275,9 +277,10 @@ this.titleService.setTitle(`${this.location3PageTitle}`);
       this.twitter = twitterLocation3;
     } else if (this.router.url.includes(`${environment.locationName}/greentown`)) {
       this.twitter = twitterLocation3;
-    } else if (this.router.url.includes(`${environment.locationName}/greentown1`)) {
-      this.twitter = twitterLocation3;
-    }
+    } 
+    // else if (this.router.url.includes(`${environment.locationName}/greentown1`)) {
+    //   this.twitter = twitterLocation3;
+    // }
   }
 
   public isSomePage() {
@@ -289,9 +292,10 @@ this.titleService.setTitle(`${this.location3PageTitle}`);
       this.fetchDetailsLocation3();
     } else if (this.router.url.includes(`${environment.locationName}/greentown`)) {
       this.fetchDetailsLocation4();
-    } else if (this.router.url.includes(`${environment.locationName}/greentown1`)) {
-      this.fetchDetailsLocation5();
-    }
+    } 
+    // else if (this.router.url.includes(`${environment.locationName}/greentown1`)) {
+    //   this.fetchDetailsLocation5();
+    // }
  }
 
  public navigateToReserve() {
@@ -344,13 +348,13 @@ this.titleService.setTitle(`${this.location3PageTitle}`);
     this.features = location3FeaturesHead;
   }
 
-  public fetchDetailsLocation5() {
-    this.name = heading5;
-    this.locationId = 5;
-    this.contacts = contactsLocation5;
-    this.hours = hoursLocation5;
-    this.tabs = tabs;
-    this.features = location3FeaturesHead;
-  }
+  // public fetchDetailsLocation5() {
+  //   this.name = heading5;
+  //   this.locationId = 5;
+  //   this.contacts = contactsLocation5;
+  //   this.hours = hoursLocation5;
+  //   this.tabs = tabs;
+  //   this.features = location3FeaturesHead;
+  // }
 
 }

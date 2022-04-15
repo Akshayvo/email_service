@@ -104,11 +104,11 @@ else if (this.router.url.includes(`${environment.locationName}/lakeville`)) {
     this.locationReserve = "location4reserve";
     this.locationMovein = "location4movein";
   } 
-  else if (this.router.url.includes(`${environment.locationName}/greentown1`)) {
-    this.locationId = 5;
-    this.locationReserve = "location5reserve";
-    this.locationMovein = "location5movein";
-  } 
+  // else if (this.router.url.includes(`${environment.locationName}/greentown1`)) {
+  //   this.locationId = 5;
+  //   this.locationReserve = "location5reserve";
+  //   this.locationMovein = "location5movein";
+  // } 
 }
 
   public navigate(location: any, unitData: any) {

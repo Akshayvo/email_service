@@ -34,9 +34,11 @@ export class DirectionsComponent implements OnInit {
        this.fetchDetailsLocation3();
     }  else  if (this.router.url.includes(`${environment.locationName}/greentown`))  {
       this.fetchDetailsLocation4();
-    } else  if (this.router.url.includes(`${environment.locationName}/greentown1`))  {
-      this.fetchDetailsLocation5();
-    } else  if (this.router.url.includes(`${environment.locationName}/robertsdale`))  {
+    } 
+    // else  if (this.router.url.includes(`${environment.locationName}/greentown1`))  {
+    //   this.fetchDetailsLocation5();
+    // } 
+    else  if (this.router.url.includes(`${environment.locationName}/robertsdale`))  {
       this.fetchDetailsLocation6();
     }
  }
@@ -64,11 +66,11 @@ export class DirectionsComponent implements OnInit {
     this.id = 4;
   }
 
-  public fetchDetailsLocation5() {
-    // this.directionPoints = directionLocation4;
-    this.directionHeading = ``;
-    this.id = 5;
-  }
+  // public fetchDetailsLocation5() {
+  //   // this.directionPoints = directionLocation4;
+  //   this.directionHeading = ``;
+  //   this.id = 5;
+  // }
 
   public fetchDetailsLocation6() {
     // this.directionPoints = directionLocation4;

@@ -31,11 +31,11 @@ export const navLinks = [
                 label: 'Greentown',
                 path: `${environment.locationName}/greentown`,
             },
-            {
-                id: '4',
-                label: 'Greentown1',
-                path: `${environment.locationName}/greentown1`,
-            },
+            // {
+            //     id: '4',
+            //     label: 'Greentown1',
+            //     path: `${environment.locationName}/greentown1`,
+            // },
         ]
     },
     {

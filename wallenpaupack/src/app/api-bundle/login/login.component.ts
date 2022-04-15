@@ -154,13 +154,14 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.contact = contactsLocation4;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc4;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc4);
-    } else  if (this.router.url.includes('greentown1')) {
-      this.id = 5;
-      this.name = 'Wallenpaupack Self Storage - Greentown';
-      this.contact = contactsLocation5;
-      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc5;
-      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc5);
-    }
+    } 
+    // else  if (this.router.url.includes('greentown1')) {
+    //   this.id = 5;
+    //   this.name = 'Wallenpaupack Self Storage - Greentown';
+    //   this.contact = contactsLocation5;
+    //   this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc5;
+    //   localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc5);
+    // }
   }
 
   public navigate (location: any) {
@@ -180,9 +181,10 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.og = ogPayRentPageLocation3;
     } else if (this.router.url.includes('greentown')) {
       this.og = ogPayRentPageLocation3;
-    } else if (this.router.url.includes('greentown1')) {
-      this.og = ogPayRentPageLocation3;
-    }
+    } 
+    // else if (this.router.url.includes('greentown1')) {
+    //   this.og = ogPayRentPageLocation3;
+    // }
     }
 
 public fetchTwitter() {
@@ -194,9 +196,10 @@ public fetchTwitter() {
         this.twitter = twitterPayRentPageLocation3;
   } else if (this.router.url.includes('greentown')) {
     this.twitter = twitterPayRentPageLocation3;
-  } else if (this.router.url.includes('greentown1')) {
-    this.twitter = twitterPayRentPageLocation3;
-}
+  } 
+  // else if (this.router.url.includes('greentown1')) {
+  //   this.twitter = twitterPayRentPageLocation3;
+  // }
 }
 
   handleForgotPassword() {

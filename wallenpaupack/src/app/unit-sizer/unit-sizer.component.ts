@@ -36,9 +36,10 @@ export class UnitSizerComponent implements OnInit {
     this.fetchDetailsLocation3();
   } else if (this.router.url.includes(`${environment.locationName}/greentown`)) {
     this.fetchDetailsLocation4();
-  } else if (this.router.url.includes(`${environment.locationName}/greentown1`)) {
-    this.fetchDetailsLocation5();
   } 
+  // else if (this.router.url.includes(`${environment.locationName}/greentown1`)) {
+  //   this.fetchDetailsLocation5();
+  // } 
 }
 
   public fetchDetailsLocation1() {
@@ -70,12 +71,12 @@ export class UnitSizerComponent implements OnInit {
     this.unitSizer = unitSizerLocation4;
   } 
 
-  public fetchDetailsLocation5() {
-    this.h2tag = 'Storage Unit Sizer ';
-    this.description = `Not sure what size unit you need for your belongings? Use our handy unit sizing guide to figure that
-    out! Still have questions? Call (251) 970-3168`;
-    this.unitSizer = unitSizerLocation5;
-  }
+  // public fetchDetailsLocation5() {
+  //   this.h2tag = 'Storage Unit Sizer ';
+  //   this.description = `Not sure what size unit you need for your belongings? Use our handy unit sizing guide to figure that
+  //   out! Still have questions? Call (251) 970-3168`;
+  //   this.unitSizer = unitSizerLocation5;
+  // }
 
   public fetchDetailsLocation6() {
     this.h2tag = 'Storage Unit Sizer ';

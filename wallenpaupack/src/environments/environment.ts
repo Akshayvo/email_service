@@ -13,7 +13,7 @@ export const environment = {
   cards: ['Visa', 'Master Card', 'Amex', 'Discover'],
   errorsMails: ['sanghmitra.v@codeparva.in'],
   senderEmail: 'errors@codeparva.in',
-  emailBaseUrl: '',
+  emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
   appId: 'Wallenpaupack Self Storage Facility - Testing',
   facilityName: 'Wallenpaupack Self Storage Facility',
   VERSION: require('../../package.json').version,

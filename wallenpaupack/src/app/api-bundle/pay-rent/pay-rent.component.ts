@@ -53,9 +53,10 @@ export class PayRentComponent implements OnInit {
     this.name = 'Lake Ariel';
   } else if (this.router.url.includes('greentown')) {
     this.name = 'greentown';
-  } else if (this.router.url.includes('greentown1')) {
-    this.name = 'greentown1';
-  }
+  } 
+  // else if (this.router.url.includes('greentown1')) {
+  //   this.name = 'greentown1';
+  // }
     if (!!localStorage.getItem('APIKey')) {
       this.dataSharingService.apiKey = localStorage.getItem('APIKey');
     }
@@ -77,9 +78,10 @@ export class PayRentComponent implements OnInit {
       this.og = ogPayRentPageLocation3;
     } else if (this.router.url.includes('greentown')) {
       this.og = ogPayRentPageLocation3;
-    } else if (this.router.url.includes('greentown1')) {
-      this.og = ogPayRentPageLocation3;
-    }
+    } 
+    // else if (this.router.url.includes('greentown1')) {
+    //   this.og = ogPayRentPageLocation3;
+    // }
 }
 
 public fetchTwitter() {
@@ -91,9 +93,10 @@ public fetchTwitter() {
     this.twitter = twitterPayRentPageLocation3;
   } else if (this.router.url.includes('greentown')) {
     this.twitter = twitterPayRentPageLocation3;
-  } else if (this.router.url.includes('greentown1')) {
-    this.twitter = twitterPayRentPageLocation3;
-  }
+  } 
+  // else if (this.router.url.includes('greentown1')) {
+  //   this.twitter = twitterPayRentPageLocation3;
+  // }
 }
 
   public fetchContactDetails() {

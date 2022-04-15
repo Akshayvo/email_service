@@ -32,11 +32,11 @@ export const tableData = [
     address: '116 Ehrgood Rd, Greentown, PA 18426',
     url: 'greentown'
   },
-  {
-    facility: 'Greentown1',
-    address: '116 Ehrgood Rd, Greentown, PA 18426',
-    url: 'greentown1'
-  }
+  // {
+  //   facility: 'Greentown1',
+  //   address: '116 Ehrgood Rd, Greentown, PA 18426',
+  //   url: 'greentown1'
+  // }
 ];
 
 export const tableDataContactPage = [
@@ -60,11 +60,11 @@ export const tableDataContactPage = [
     address: '116 Ehrgood Rd, Greentown, PA 18426',
     url: 'greentown'
   },
-  {
-    facility: 'Greentown1',
-    address: '116 Ehrgood Rd, Greentown, PA 18426',
-    url: 'greentown1'
-  },
+  // {
+  //   facility: 'Greentown1',
+  //   address: '116 Ehrgood Rd, Greentown, PA 18426',
+  //   url: 'greentown1'
+  // },
 ];
 
 
