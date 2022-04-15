@@ -62,6 +62,11 @@
   status = 301
 
 [[redirects]]
+  from = "https://www.bestwenatcheestorage.com/wa/leos-self-storage"
+  to = "https://www.bestwenatcheestorage.com/wa/south-wenatchee/leos-self-storage/storage-units"
+  status = 301
+
+[[redirects]]
   from = "https://www.bestwenatcheestorage.com/pay-rent/payment"
   to = "https://www.bestwenatcheestorage.com/pay-rent"
   status = 301
