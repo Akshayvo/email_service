@@ -124,7 +124,7 @@ export const privacyPolicy = [
       }
     ],
     note: `If you feel that we are not abiding by this privacy policy, you should contact us immediately via telephone
-    at  <a href="tel:5708721899" style="color: #000;">(570) 872-1899</a> or via email at <a href="mailto:info@impactselfstorage.net" style="color:#000;">info@impactselfstorage.net</a>.`,
+    at  <a href="tel:5708721899" style="color: #000;">(570) 872-1899</a> or via email at <a href="mailto:Daniel@ImpactPropertyGroup.us" style="color:#000;">Daniel@ImpactPropertyGroup.us</a>.`,
     // sharing: [
     //   {
     //     heading: `Sharing`

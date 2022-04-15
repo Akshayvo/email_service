@@ -40,7 +40,7 @@ export const contactPageContent = `Have questions about any of our 6 locations o
 export const thankYouPageTitle = `Thank You For Reserving Your Unit at Impact Self Storage!`;
 export const thankYouPageContent = `We've received your reservation! One of our friendly staff will be in touch!`;
 
-export const privacyPolicyPageTitle = `Privacy Policy | Impact Self Storage`;
+export const privacyPolicyPageTitle = `Privacy Policy | Impact Storage`;
 export const privacyPolicyPageContent = `This page contains this website's privacy policy. For more information, please contact the business directly.`;
 
 export const faqPageTitle = `Frequently Asked Questions | Impact Self Storage`;

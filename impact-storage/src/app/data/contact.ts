@@ -10,10 +10,10 @@ export const headerHomePage = [
     {
         id: 2,
         label: 'Email: ',
-        email: 'info@impactselfstorage.net',
-        data: `info@impactselfstorage.net`,
+        email: 'Daniel@ImpactPropertyGroup.us',
+        data: `Daniel@ImpactPropertyGroup.us`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:info@impactselfstorage.net'
+        redirect: 'mailto:Daniel@ImpactPropertyGroup.us'
     },
     {
         id: 3,
@@ -34,7 +34,7 @@ export const contactsHomePage = [
     },
     {
         id: 2,
-        label: 'Facility Address: ',
+        label: 'Mailing Address: ',
         data: 'PO Box 164, Mount Pocono, PA 18344',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: ''
@@ -78,10 +78,10 @@ export const contactsLocation1 = [
     {
         id: 2,
         label: 'Email: ',
-        email: 'info@impactselfstorage.net',
-        data: `info@impactselfstorage.net`,
+        email: 'Daniel@ImpactPropertyGroup.us',
+        data: `Daniel@ImpactPropertyGroup.us`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:info@impactselfstorage.net'
+        redirect: 'mailto:Daniel@ImpactPropertyGroup.us'
     },
     
     {

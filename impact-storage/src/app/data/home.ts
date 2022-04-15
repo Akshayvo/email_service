@@ -1,48 +1,53 @@
 /* tslint:disable:max-line-length */
 export const featuresHead = [
     {
-        label: 'Conveniently Located',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
-        alt: 'Icon art displaying a location pin'
-    },
-    {
         label: 'Online Rental & Bill Pay',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/online.svg',
         alt: 'Icon art displaying a screen with cursor'
-    },
-    {
-        label: 'Affordable Self Storage Rates',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/hand.svg',
-        alt: 'Icon of a hand holding money'
-    },
-    {
-        label: 'Stellar Customer Service',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg',
-        alt: 'Customer Service Representative Icon'
-    },
-];
-
-export const location1FeaturesHead = [
-    {
-        label: '4 Convenient Locations',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
-        alt: 'Icon art displaying a location pin'
-    },
-    {
-        label: 'Online Rental & Bill Pay',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/online.svg',
-        alt: 'Icon art displaying a screen with cursor'
-    },
-    {
-        label: 'Stellar Customer Service',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg',
-        alt: 'Customer Service Representative Icon'
     },
     {
         label: 'Secure Storage',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/lock.svg',
         alt: 'Icon of a locked padlock'
     },
+    {
+        label: 'Conveniently Located',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
+        alt: 'Icon art displaying a location pin'
+    },
+    {
+        label: 'Stellar Customer Service',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg',
+        alt: 'Customer Service Representative Icon'
+    },
+
+
+    
+];
+
+export const location1FeaturesHead = [
+    {
+        label: 'Online Rental & Bill Pay',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/online.svg',
+        alt: 'Icon art displaying a screen with cursor'
+    },
+    {
+        label: 'Secure Storage',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/lock.svg',
+        alt: 'Icon of a locked padlock'
+    },
+    {
+        label: 'Conveniently Located',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
+        alt: 'Icon art displaying a location pin'
+    },
+    {
+        label: 'Stellar Customer Service',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg',
+        alt: 'Customer Service Representative Icon'
+    },
+
+
 ];
 export const location2FeaturesHead = [
     {
