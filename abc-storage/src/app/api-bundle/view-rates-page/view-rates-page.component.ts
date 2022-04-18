@@ -10,13 +10,14 @@ import { DataSharingService } from '../services/data-sharing.service';
 import { environment } from '../../../environments/environment';
 import { objSIMSetting } from '../../data/configuration';
 import { script } from '../../data/script';
+import { contact} from '../../data/contact';
 @Component({
   selector: 'app-view-rates-page',
   templateUrl: './view-rates-page.component.html',
   styleUrls: ['./view-rates-page.component.scss']
 })
 export class ViewRatesPageComponent implements OnInit, OnDestroy {
-
+  contactDetails: any;
   showTable = false;
   unitTypes: UnitTypes;
   LstUnitTypes: LstUnitTypes[];
@@ -72,7 +73,12 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.getData();
     this.fetchThData();    
+    this.fetchContactDetails();
     this.state = script.state;
+  }
+
+  public fetchContactDetails() {
+    this.contactDetails = contact;
   }
 
   public fetchThData() {

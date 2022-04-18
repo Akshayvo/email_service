@@ -65,7 +65,12 @@
           </div>
         </div>
         <ng-template #ifNoUnits>
-          <b class="text-center noUnitstext">Currently unavailable. Please call us for more information.</b>
+          <span *ngFor="let contact of contactDetails">
+            <span *ngIf="contact?.label === 'Phone:'">
+              <a class="btn btn-lg btn-primary" [href]="contact?.redirect" role="button">Call Us</a>
+            </span>
+          </span>
+          
          </ng-template>
       </div>  
     </div>

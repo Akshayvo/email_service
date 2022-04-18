@@ -27,7 +27,7 @@ export const featuresList = [
 
 export const aboutUsAlt = `indoor climate controlled storage units with roll-up doors inside of a clean, well-lit building`;
 
-export const aboutUsHeading = `Self Storage and Vehicle Parking in Kingston`;
+export const aboutUsHeading = `Affordable Self Storage and Friendly Service in Kingston`;
 
 export const aboutUs = [
     {
