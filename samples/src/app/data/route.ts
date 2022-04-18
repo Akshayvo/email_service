@@ -30,6 +30,7 @@ import { ThankYouComponent } from '../api-bundle/thank-you/thank-you.component';
 import { ThankYouGuard } from '../thank-you.guard';
 import { PrivacyPolicyComponent } from '../privacy-policy/privacy-policy.component';
 
+
 const withoutTab = [
   {path: '', redirectTo: 'login', pathMatch: 'full'},
         {path: 'login', component: LoginComponent },
@@ -82,7 +83,7 @@ const reviewURL = ``
     { path: '', component: HomeComponent },
     { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
     { path: `${environment.locationName}/reserve-unit`, component: ReserveComponent },
-    { path: 'contact-us', component: ContactComponent },
+    { path: 'contact-us', loadChildren: './contact/contact.module#ContactModule' },
     { path: 'unit-sizer', component: UnitSizerComponent },
     { path: 'privacy-policy', component: PrivacyPolicyComponent },
     {
@@ -135,7 +136,7 @@ export const iFrameRoutes = [
     { path:  `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
     { path: `${environment.locationName}/view-rates`, component: ViewRatesIframePageComponent },
     { path: `${environment.locationName}/reserve-unit`, component: ReserveUnitIframePageComponent },    
-    { path: 'contact-us', component: ContactComponent },
+    { path: 'contact-us',  loadChildren: './contact/contact.module#ContactModule'},
     { path: 'unit-sizer', component: UnitSizerComponent },
     { path: 'privacy-policy', component: PrivacyPolicyComponent },
     { path: 'review', component: HomeComponent,

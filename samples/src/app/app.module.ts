@@ -8,7 +8,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
-import { ContactComponent } from './contact/contact.component';
+// import { ContactComponent } from './contact/contact.component'; 
 import { FooterComponent } from './footer/footer.component';
 import { TablesComponent } from './tables/tables.component';
 import { ErrorComponent } from './error/error.component';
@@ -63,7 +63,7 @@ import { AlternateDetailsComponent } from './alternate-details/alternate-details
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    ContactComponent,
+    // ContactComponent,
     FooterComponent,
     ViewRatesComponent,
     TablesComponent,
@@ -112,6 +112,7 @@ import { AlternateDetailsComponent } from './alternate-details/alternate-details
     SelectDropDownModule,
     BrowserAnimationsModule,
     MaterialModule,
+    
   ],
   providers: [
     DatePipe,
