@@ -20,7 +20,7 @@ export class UaParserService {
       const { browser: { name = 'Chrome', major = '32 '} } = this.browserDetails;
       switch (name) {
         case 'Chrome':
-          this.typeOfImages = (major && major < 32) ? 'JPG' : 'WEBP';
+          this.typeOfImages = (major && major > 32) ? 'JPG' : 'WEBP';
           break;
         case 'Firefox':
             this.typeOfImages = (major && major < 65) ? 'JPG' : 'WEBP';
