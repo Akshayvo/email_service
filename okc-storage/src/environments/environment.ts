@@ -18,7 +18,7 @@ export const environment = {
   facilityName: 'OKC Storage',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: `https://okcstorage-staging.netlify.app`
+  websiteUrl: `https://okcstorage.com`
 };
 
 /*
