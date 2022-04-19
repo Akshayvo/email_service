@@ -36,8 +36,8 @@
               <meta itemprop="priceRange" content="{{lstUnitType.MonthlyRate}}" />
           </td>
           <td  colspan="2" class="px-4 border text-center" *ngIf="showDeposit" >
-            <span *ngIf="lstUnitType.DepositAmount != null">$</span>$15
-            <!-- {{lstUnitType.DepositAmount | number : '1.2-2'}} -->
+            <span *ngIf="lstUnitType.DepositAmount != null">$</span>
+            {{lstUnitType.DepositAmount | number : '1.2-2'}} 
             
           </td>
           <td id="reserve" colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable && showReserve; else other_reserve" >
