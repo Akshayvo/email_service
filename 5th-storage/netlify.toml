@@ -27,13 +27,13 @@
   compress = true
 # A basic redirect rule
 [[redirects]]
-  from = "https://5th-street-storage-staging.netlify.app/pay-rent/units-199/sign-up/payment"
-  to = "https://5th-street-storage-staging.netlify.app/pay-rent/units-199/rent-sub/payment"
+  from = "https://5thstreetstorage.com/pay-rent/units-199/sign-up/payment"
+  to = "https://5thstreetstorage.com/pay-rent/units-199/rent-sub/payment"
   status = 301
 
 [[redirects]]
-  from = "https://5th-street-storage-staging.netlify.app/pay-rent/units-199/rent-sub/auto-pay"
-  to = "https://5th-street-storage-staging.netlify.app/pay-rent/units-199/sign-up/auto-pay"
+  from = "https://5thstreetstorage.com/pay-rent/units-199/rent-sub/auto-pay"
+  to = "https://5thstreetstorage.com/pay-rent/units-199/sign-up/auto-pay"
   status = 301
 
 [[redirects]]

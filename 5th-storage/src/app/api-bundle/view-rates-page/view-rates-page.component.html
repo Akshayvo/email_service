@@ -56,16 +56,33 @@
       </div>
       <div class="col-4 d-flex justify-content-center" >
         <div *ngIf="lstUnitType.IsUnitsAvailable; else ifNoUnits" >
-          <div [id]="locationReserve" class=" py-1 buttons" >
-              <button class="btn  btn-primary" (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
+          <div 
+              [id]="locationReserve" 
+              class=" py-1 buttons" 
+             *ngFor="let contact of contactDetails">
+             <span *ngIf="contact?.label === 'Phone:'">
+              <a class="btn btn-lg btn-primary" [href]="contact?.redirect" role="button">Call Us</a>
+             </span>
+              <!-- <button class="btn  btn-primary" (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button> -->
           </div>
-          <div [id]="locationMovein" class="py-1 buttons">
-              <button class=" btn btn-primary" (click)="navigate('/view-rates/move-in', lstUnitType)">Rent Now</button>
+          <div 
+          [id]="locationMovein" 
+          class="py-1 buttons"
+          *ngFor="let contact of contactDetails"
+          >
+          <span *ngIf="contact?.label === 'Phone:'">
+            <a class="btn btn-lg btn-primary" [href]="contact?.redirect" role="button">Call Us</a>
+           </span>
+              <!-- <button class=" btn btn-primary" (click)="navigate('/view-rates/move-in', lstUnitType)">Rent Now</button> -->
               <link *ngIf="lstUnitType.IsUnitsAvailable" itemprop="availability" href="https://schema.org/InStock" />
           </div>
         </div>
         <ng-template #ifNoUnits>
-          <b class="text-center noUnitstext">Currently unavailable. Please call us for more information.</b>
+          <span *ngFor="let contact of contactDetails">
+                        <span *ngIf="contact?.label === 'Phone:'">
+                          <a class="btn btn-lg btn-primary" [href]="contact?.redirect" role="button">Call Us</a>
+                        </span>
+                     </span>
          </ng-template>
       </div>  
     </div>

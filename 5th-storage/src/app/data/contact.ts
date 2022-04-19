@@ -9,7 +9,7 @@ export const contact = [
     {
         id: 1,
         label: 'Mailing Address:',
-        data: 'P.O. Bix 1691 Bemidji, MN 56619',
+        data: 'P.O. Box 1691 Bemidji, MN 56619',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
         redirect: ''
     },
