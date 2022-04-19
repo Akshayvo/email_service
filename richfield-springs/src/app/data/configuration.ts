@@ -8,7 +8,7 @@ export const objSIMSetting = {
         blnAllowAutoPay: false,
         blnAllowCCPayments: true,
         blnAllowCancelAutoPay: false,
-        blnAllowPartialPayments: false
+        blnAllowPartialPayments: true
     },
     objReservationSetting: {
         blnHideGateAccessCode: true,
