@@ -1,0 +1,132 @@
+<!-- <app-script-hack type="application/ld+json">
+  {{ script | json }}
+</app-script-hack> -->
+<div class="contentHolder">
+  <div class="container">
+      <div class="heading pb-5">
+        <h1 class="text-center pt-5">Contact Us</h1>
+      </div>
+      <div class="contact-data p-5">
+        <!-- <div class="location-selection">
+          <app-select-location (click)="receiveMessage()"></app-select-location>
+        </div> -->
+        <div class="row">
+          <div class="col-md-8">
+            <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+                <div [hidden]="" *ngIf="submitted && !this.contactForm.valid" class="alert alert-danger alert-dismissible fade show">
+                    Please fill out all the required fields!
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                 </div>
+                 <div [hidden]="" *ngIf="mailSent" class="alert alert-success alert-dismissible fade show">
+                   Thank You for contacting us, we will get back to you soon.
+                   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                 </div>
+                 <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Name*</label>
+                            <input type="text" formControlName="name" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.name.errors }" placeholder="Enter Name"/>
+                            <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+                               <small class="form-text text-muted" *ngIf="f.name.errors.required">Please fill out this field</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Phone Number*</label>
+                            <input type="tel" formControlName="phone" placeholder="Enter Phone Number" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.phone.errors }" />
+                            <div *ngIf="submitted && f.phone.errors" class="invalid-feedback">
+                                <small class="form-text text-muted" *ngIf="f.phone.errors.required">Please fill out this field</small>
+                            </div>
+                            <div *ngIf="f.phone.errors" >
+                              <small class="form-text text-muted" *ngIf="f.phone.errors.pattern">Please enter valid number</small>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+
+                 <div class="row py-3">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Email Address*</label>
+                            <input type="text" formControlName="email" placeholder="Enter Email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                            <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                                <small class="form-text text-muted" *ngIf="f.email.errors.required">Please fill out this field</small>                                  
+                            </div>
+                            <div *ngIf="f.email.errors" >
+                                <small class="form-text text-muted" *ngIf="f.email.errors.email">Please enter a valid email</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                          <label>Subject</label>
+                          <input type="text" formControlName="subject" placeholder="Enter subject" class="form-control" />
+                      </div>
+                  </div>
+                   </div>
+
+                   <div class="form-group">
+                      <label>Message*</label>
+                      <textarea type="text" formControlName="message" placeholder="Enter Message" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.message.errors }" ></textarea>
+                      <div *ngIf="submitted && f.message.errors" class="invalid-feedback">
+                          <small class="form-text text-muted" *ngIf="f.message.errors.required">Please fill out this field</small>
+                      </div>
+                  </div>
+
+                   <button type="submit" class="btn btn-primary px-4">Submit</button>
+                   <button type="button" class="btn btn-outline-primary px-4" (click)="contactForm.reset()">Clear</button>
+
+            </form>
+          </div>
+          
+          <div class="col-md-4"> 
+              <div class="for-mall">
+                <div class="map-responsive">
+                  <span *ngIf="locationId == 1">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.757296995752!2d-77.20754668451582!3d43.23554797913789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d6d80fdaa53a55%3A0xd0b9285aec9b418c!2s6519%20Tuckahoe%20Rd%2C%20Williamson%2C%20NY%2014589!5e0!3m2!1sen!2sus!4v1649882251531!5m2!1sen!2sus" width="100%" height="220" frameborder="0" title="Facility Google Map"  allowfullscreen></iframe>
+                  </span>
+                  <span *ngIf="locationId == 2">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.640347651375!2d-77.10573538451571!3d43.237999679137694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d726763bf93075%3A0x1cd24b780c94356e!2s5840%20NY-104%2C%20Williamson%2C%20NY%2014589!5e0!3m2!1sen!2sus!4v1649970815457!5m2!1sen!2sus" width="100%" height="230" frameborder="0" title="Facility Google Map" allowfullscreen></iframe>
+                  </span>
+                  <span *ngIf="locationId == 3">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.635916093406!2d-77.09402378451564!3d43.23809257913767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d725dadacddaff%3A0x82041602eac1f0ba!2s6588%20Pratt%20Rd%2C%20Williamson%2C%20NY%2014589!5e0!3m2!1sen!2sus!4v1649971028116!5m2!1sen!2sus" width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                  </span>
+                  <span *ngIf="locationId == 4">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2908.235679079795!2d-76.98573388451678!3d43.20454587913925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d73a993b8523d5%3A0xdca49d7b7716d2d2!2s5587%20NY-14%2C%20Sodus%2C%20NY%2014551!5e0!3m2!1sen!2sus!4v1649971133776!5m2!1sen!2sus" width="100%" height="220" frameborder="0" title="Facility Google Map"  allowfullscreen></iframe>
+                  </span> 
+                  <span *ngIf="locationId == 5">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2910.9937287839116!2d-76.99182068451856!3d43.14666097914204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d731c0d068d833%3A0x8a1f8b3f41dcc295!2s3913%20NY-14%2C%20Lyons%2C%20NY%2014489!5e0!3m2!1sen!2sus!4v1649971355151!5m2!1sen!2sus" width="100%" height="220" frameborder="0" title="Facility Google Map" allowfullscreen></iframe>
+                  </span> 
+                  <span *ngIf="locationId == 6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2908.051555413014!2d-76.82058768451664!3d43.20840797913907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d747858a27ef65%3A0x7dd18940a2d63209!2s5802%20Limekiln%20Rd%2C%20Wolcott%2C%20NY%2014590!5e0!3m2!1sen!2sus!4v1649971525587!5m2!1sen!2sus" width="100%" height="220" frameborder="0" title="Facility Google Map" allowfullscreen></iframe>
+                  </span> 
+                </div>
+                <h5 class="pt-3"> {{heading}} </h5>
+                <div class="py-2">
+                  <span class="contact-links" *ngFor="let contact of contactDetails">
+                    <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.label=== 'Email: ' || contact?.label === 'Phone: ' else other_content">
+                      <a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+                    <ng-template #other_content >&nbsp;<a [href]="contact?.redirect" target="_blank" rel="noopener">&nbsp;{{contact.data}}</a></ng-template><br>
+                  </span>
+                </div>
+                <div class="py-2">
+                  <span *ngFor="let hour of hoursDetails">
+                    <b>{{hour.label}}</b><span *ngIf="hour?.id === 1 else other_content ">&nbsp;{{hour.data}}</span>
+                    <ng-template #other_content>&nbsp;{{hour.data}}</ng-template><br>
+                  </span>             
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+
+  </div>
+</div>
+

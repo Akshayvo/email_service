@@ -1,0 +1,110 @@
+<section class="contact-details">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-lg-8 py-0 px-0 header-background">
+        <div class="social-content px-3 py-4">
+          <h1> {{name}}</h1>
+          <div class="row">
+            <div class="col-lg-12 px-0 contact-data">
+              <span *ngFor="let contact of contacts" class="py-2 each-contact">
+                <span class="pl-3"><i class="{{contact.class}}"></i></span><span *ngIf="contact?.id === 2 || contact?.id === 3 || contact?.id === 4 else other_content"><a [href]="contact?.redirect" rel="noopener" target="_blank">{{contact.label}}{{contact.data}}</a></span>
+                <ng-template #other_content >&nbsp;<a [href]="contact?.redirect" target="_blank" rel="noopener">{{contact.label}}{{contact.data}}</a></ng-template>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-img">
+          <span *ngIf="locationId == 1" title="Aerial Photograph of self storage units surrounded by a fence."> 
+            <div class="img-box-1" [ngClass]="imagetype === 'jpg' ? 'img-box-1-jpg' : 'img-box-1-webp'">
+            </div>
+          </span>
+          <span *ngIf="locationId == 2" title="Aerial photograph of self storage facility with recreational vehicles and boats parked next to the buildings"> 
+            <div class="img-box-2" [ngClass]="imagetype === 'jpg' ? 'img-box-2-jpg' : 'img-box-2-webp'">
+            </div>
+            
+          </span>
+          <span *ngIf="locationId == 3" title="Aerial photograph of self storage units running alongside a highway"> 
+            <div class="img-box-3" [ngClass]="imagetype === 'jpg' ? 'img-box-3-jpg' : 'img-box-3-webp'">
+            </div>
+          </span>
+          <span *ngIf="locationId == 4" title="Aerial photograph of a self storage facility and recreational vehicle parking spots"> 
+            <div class="img-box-4" [ngClass]="imagetype === 'jpg' ? 'img-box-4-jpg' : 'img-box-4-webp'">
+            </div>
+          </span>
+          <span *ngIf="locationId == 5" title="a row of self storage unit doors in a single story metal storage building"> 
+            <div class="img-box-4" [ngClass]="imagetype === 'jpg' ? 'img-box-5-jpg' : 'img-box-5-webp'">
+            </div>
+          </span>
+          <span *ngIf="locationId == 6" title="single story self storage unit buildings with green metal roll up doors"> 
+            <div class="img-box-4" [ngClass]="imagetype === 'jpg' ? 'img-box-6-jpg' : 'img-box-6-webp'">
+            </div>
+          </span>
+        </div>
+      </div>
+      <div class="col-lg-4 pt-3 tab-background" >
+        <div class="map-responsive">
+          <span *ngIf="locationId == 1"> 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.757296995752!2d-77.20754668451582!3d43.23554797913789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d6d80fdaa53a55%3A0xd0b9285aec9b418c!2s6519%20Tuckahoe%20Rd%2C%20Williamson%2C%20NY%2014589!5e0!3m2!1sen!2sus!4v1649882251531!5m2!1sen!2sus" width="100%" height="220" frameborder="0" title="Facility Google Map"  allowfullscreen></iframe>
+          </span>
+            <span *ngIf="locationId == 2">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.640347651375!2d-77.10573538451571!3d43.237999679137694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d726763bf93075%3A0x1cd24b780c94356e!2s5840%20NY-104%2C%20Williamson%2C%20NY%2014589!5e0!3m2!1sen!2sus!4v1649970815457!5m2!1sen!2sus" width="100%" height="230" frameborder="0" title="Facility Google Map" allowfullscreen></iframe>
+            </span>
+            <span *ngIf="locationId == 3">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.635916093406!2d-77.09402378451564!3d43.23809257913767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d725dadacddaff%3A0x82041602eac1f0ba!2s6588%20Pratt%20Rd%2C%20Williamson%2C%20NY%2014589!5e0!3m2!1sen!2sus!4v1649971028116!5m2!1sen!2sus" width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </span>
+            <span *ngIf="locationId == 4">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2908.235679079795!2d-76.98573388451678!3d43.20454587913925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d73a993b8523d5%3A0xdca49d7b7716d2d2!2s5587%20NY-14%2C%20Sodus%2C%20NY%2014551!5e0!3m2!1sen!2sus!4v1649971133776!5m2!1sen!2sus" width="100%" height="220" frameborder="0" title="Facility Google Map"  allowfullscreen></iframe>
+            </span>
+            <span *ngIf="locationId == 5">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2910.9937287839116!2d-76.99182068451856!3d43.14666097914204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d731c0d068d833%3A0x8a1f8b3f41dcc295!2s3913%20NY-14%2C%20Lyons%2C%20NY%2014489!5e0!3m2!1sen!2sus!4v1649971355151!5m2!1sen!2sus" width="100%" height="220" frameborder="0" title="Facility Google Map"  allowfullscreen></iframe>
+            </span>
+            <span *ngIf="locationId == 6">
+              <iframe title="Facility Google Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2908.051555413014!2d-76.82058768451664!3d43.20840797913907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d747858a27ef65%3A0x7dd18940a2d63209!2s5802%20Limekiln%20Rd%2C%20Wolcott%2C%20NY%2014590!5e0!3m2!1sen!2sus!4v1649971525587!5m2!1sen!2sus" width="100%" height="220" frameborder="0"  allowfullscreen></iframe>
+            </span>
+        </div>
+        <div class="hours-data w-100">
+          <div class="row">
+            <div class="col-lg-8">
+              <h4 class="pt-3" *ngIf="locationId !== 1;then content else other_content" >Access Hours</h4>
+              <ng-template #content><h4 class="pt-3">Access Hours</h4><app-tables [tBody]="hours" ></app-tables></ng-template>
+              <ng-template #other_content><h4 *ngIf="locationId !== 1" class="pt-3">Office Hours</h4><app-tables *ngIf="locationId !== 1" [tBody]="hours" >
+              </app-tables><h4 class="pt-3">Access Hours</h4><app-tables [tBody]="access" ></app-tables>
+            </ng-template> 
+            </div>
+            </div>
+            <div class="col-lg-4 btn-area text-center">
+              <a class="btn btn-outline-primary p-2" [routerLink]="['/contact-us']" role="button">Contact Us</a> 
+              <a class="btn btn-primary-light p-2" [routerLink]="['/pay-rent']" role="button">Pay Rent</a> 
+              <!-- <a class="btn btn-primary p-2" (click)='navigateToReserve()' role="button">Reserve Unit</a>                                        -->
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sub-components">
+  <div class="container feature-block mt-3">
+    <div class="row">
+      <div class="col-md-3 col-6 p-3" *ngFor= "let feature of features">
+        <p class="text-center f-block-img"> 
+          <img src="{{feature.data}}" class="f-img" alt="{{feature.alt}}" >
+        </p>
+        <h2 class="text-center f-text">
+          {{feature.label}}
+        </h2>
+      </div>
+    </div>
+  </div>
+  <div  class="container px-0 pt-2 mt-3">
+      <app-tabs [tabs]='tabs' [name]='name' class="sub-component-background" [currentActiveTab]='currentTab' ></app-tabs>
+  </div>
+</section>
+
+<!-- Data preloading Starts-->
+<div hidden>
+  <app-unit-sizer></app-unit-sizer>
+  <app-about-us></app-about-us>
+  <app-directions></app-directions>
+</div>
+<!-- Data preloading Ends-->
