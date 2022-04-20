@@ -10,6 +10,7 @@ import { Subscription } from 'rxjs';
 import { option } from '../../data/view-rates';
 import { SignOutService } from '../services/sign-out.service';
 import { environment } from '../../../environments/environment';
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-confirmation-data',
@@ -120,6 +121,7 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
     private addTenantService: AddTenantService,
     private tenantInfoService: TenantInfoService,
     private signOutService: SignOutService,
+    private datePipe: DatePipe,
   ) {
     this.navigateToMoveIn = this.dataSharingService.navigateToMoveIn;
     this.navigateToReserve = this.dataSharingService.navigateToReserve;
@@ -196,12 +198,12 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
     this.showAltDetails = this.dataSharingService.showAltDetails;
     this.showMilitaryDetails = this.dataSharingService.showMilitaryDetails;
     this.driversLicense = this.dataSharingService.objTenant.DriversLicense;
-    this.driversLicenseExpDate = this.dataSharingService.objTenant.DriversLicenseExpDate;
-    this.dateOfBirth = this.dataSharingService.objTenant.DateOfBirth;
+    this.driversLicenseExpDate = this.datePipe.transform(this.dataSharingService.objTenant.DriversLicenseExpDate, 'MM/dd/yyyy');;
+    this.dateOfBirth = this.datePipe.transform(this.dataSharingService.objTenant.DateOfBirth, 'MM/dd/yyyy');
     this.militaryType = this.dataSharingService.objTenant.MilitaryType;
     this.militaryBranch = this.dataSharingService.objTenant.MilitaryBranch;
     this.militaryID = this.dataSharingService.objTenant.MilitaryID;
-    this.deployedUntil = this.dataSharingService.objTenant.DeployedUntil;
+    this.deployedUntil = this.datePipe.transform(this.dataSharingService.objTenant.DeployedUntil, 'MM/dd/yyyy');
     this.militaryDivision = this.dataSharingService.objTenant.MilitaryDivision;
     this.commandingOfficer = this.dataSharingService.objTenant.CommandingOfficer;
     this.commandingOfficerPhone = this.dataSharingService.objTenant.CommandingOfficerPhone;
