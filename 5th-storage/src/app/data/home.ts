@@ -74,7 +74,7 @@ export const feature = [
 
 export const jumbotron = [
     {
-        h2: `Affordable Self Storage Units in Bemidji`,
-        blurb: `5th Street Storage serves Bemidji and the surrounding communities in with clean, well-maintained storage units! Our facility has a wide variety of temperature-controlled and regular unit sizes that are ideal solutions to anyone looking for a little extra elbow-room around the home, office, or worksite!`,
+        h2: `Temperature Controlled Indoor Storage Units In Bemjidi`,
+        blurb: `Bemidji’s only storage facility where you drive indoors to load & unload. No wind, rain or snow you are protected from the weather.Clean & well maintained with a variety of storage unit sizes available.`,
     }
 ];
