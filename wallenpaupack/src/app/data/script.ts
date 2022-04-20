@@ -99,8 +99,8 @@ export const description4 = `Are you in search of affordable self storage or veh
 
 export const description5 = `Take a moment to view our affordable self storage unit rates, then make your reservation by filling out our form or calling our office today!`
 
-export const maplocation1 = 'https://goo.gl/maps/MZ2bUNFNT1HWfDfw5';
-export const maplocation2 = 'https://goo.gl/maps/MZ2bUNFNT1HWfDfw5';
+export const maplocation1 = 'https://goo.gl/maps/VkBGKt4Hbp6rb3F36';
+export const maplocation2 = 'https://goo.gl/maps/yfPnpb1MJ9Fz9Kue6';
 export const maplocation3 = 'https://goo.gl/maps/MZ2bUNFNT1HWfDfw5';
 
 export const addressLoaction1 = {

@@ -18,7 +18,7 @@ export const environment = {
   facilityName: 'Wallenpaupack Self Storage Facility',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: `https://wallenpaupackselfstorage.com`
+  websiteUrl: `https://wallenpaupackselfstorage.com` 
 };
 
 /*
