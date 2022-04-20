@@ -75,6 +75,6 @@ export const feature = [
 export const jumbotron = [
     {
         h2: `Temperature Controlled Indoor Storage Units In Bemjidi`,
-        blurb: `Bemidji’s only storage facility where you drive indoors to load & unload. No wind, rain or snow you are protected from the weather.Clean & well maintained with a variety of storage unit sizes available.`,
+        blurb: `Bemidji’s only storage facility where you drive indoors to load & unload. No wind, rain or snow you are protected from the weather. Clean & well maintained with a variety of storage unit sizes available.`,
     }
 ];
