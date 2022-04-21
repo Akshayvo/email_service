@@ -6,14 +6,14 @@ export const environment = {
   production: true,
   type: 0,  // { API: 0, iframe: 1 }
   locationName: 'minnesota/bemidji', // state/city  **Remeber to update locationName in sitemap.xml as well
-  signUpForAuotoPay: 0, // { Yes: 1, No: 0 }
+  signUpForAuotoPay: 1, // { Yes: 1, No: 0 }
   alternateType: { moveIn: false, reserve: false }, // { moveIn: true, reserve: true },
   military: false, // set true for Military and Driver's Details 
   template: 'darkTheme', // { darkTheme, lightTheme, withoutJumbotron}
   cards: ['Visa', 'Master Card', 'Amex', 'Discover', 'test'],
   errorsMails: [ 'sanghmitra.v@codeparva.in' ],
   senderEmail: 'errors@codeparva.in',
-  emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
+  emailBaseUrl: '',
   appId: '5th Street Storage',
   facilityName: '5th Street Storage',
   VERSION: require('../../package.json').version,

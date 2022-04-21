@@ -92,10 +92,22 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     this.showClimateControl = objSIMSetting.objUnitSizesSetting.blnClimateControl;
   }
 
+  public navigates(location: any) {
+    if (
+      location === "/view-rates" ||
+      location === "/storage-tips" ||
+      location === "/reserve-unit"
+    ) {
+      this.router.navigate([`${environment.locationName}/${location}`]);
+    } else {
+      this.router.navigate([`${location}`]);
+    }
+  }
+
 
   public navigate(location: any, unitData: any) {
     this.dataSharingService.setReservationData(unitData);
-    this.router.navigate([`${environment.locationName}/${location}`]);
+    // this.router.navigate([`${environment.locationName}/${location}`]); 
     this.dataSharingService.LstUnitTypes = unitData;
   }
 
