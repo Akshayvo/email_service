@@ -10,10 +10,11 @@ export const environment = {
   errorsMails: ['sanghmitra.dev@codeparva.in'],
   senderEmail: 'errors@codeparva.in',
   appId: 'Storage World - Testing',
+  facilityName: 'Storage World ',
   VERSION: require('../../package.json').version,
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: 'https://storage-world-staging.netlify.app',
+  websiteUrl: 'https://www.storageworldmn.com',
   APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28463
   // APIKey: `dzJ0OFc0SjYqNE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28464 (For 0 reservetion charges)
   // APIKey: 'ZjJWMHc5UDM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O' // 2093

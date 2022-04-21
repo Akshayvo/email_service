@@ -6,9 +6,10 @@ export const environment = {
   errorsMails: ['website.dev@codeparva.in'],
   senderEmail: 'errors@codeparva.in',
   appId: 'Storag eWorld - Production',
+  facilityName: 'Storage World - Production',
   VERSION: require('../../package.json').version,
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: 'https://storage-world-staging.netlify.app',
+  websiteUrl: 'https://www.storageworldmn.com',
   APIKey: 'ZjJWMHc5UDM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O' // 2093
 };

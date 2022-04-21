@@ -22,6 +22,8 @@ import { ResetPasswordComponent } from '../api-bundle/reset-password/reset-passw
 import { VerifictionCodeGuard } from '../auth-guard/verificationCode.guard';
 import { UnitSizerComponent } from '../unit-sizer/unit-sizer.component';
 import { ConfirmationPageComponent } from '../api-bundle/confirmation-page/confirmation-page.component';
+import { PrivacyPolicyComponent } from '../privacy-policy/privacy-policy.component';
+
 
  export const apiRoutes = [
     // Fallback when no prior route is matched
@@ -31,6 +33,7 @@ import { ConfirmationPageComponent } from '../api-bundle/confirmation-page/confi
     { path: 'storageTips', component: StorageTipsComponent },
     { path: 'contact-us', component: ContactComponent },
     { path: 'unit-sizer', component: UnitSizerComponent },
+    { path: 'privacy-policy', component: PrivacyPolicyComponent },
     {
       path: 'view-rates',
       component: ViewRatesComponent,
@@ -80,6 +83,7 @@ export const iFrameRoutes = [
     { path: 'storageTips', component: StorageTipsComponent },
     { path: 'contact-us', component: ContactComponent },
     { path: 'unit-sizer', component: UnitSizerComponent },
+    { path: 'privacy-policy', component: PrivacyPolicyComponent },
     { path: 'review', component: HomeComponent,
       resolve: {
           url: 'externalUrlRedirectResolver'

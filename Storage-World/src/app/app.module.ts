@@ -45,6 +45,7 @@ import { MaterialModule } from './modules/material/material.module';
 import { RequestInterceptorService } from './api-bundle/services/request-interceptor.service';
 import { ViewRatesComponent } from './api-bundle/view-rates/view-rates.component';
 import { PaymentComponent } from './api-bundle/payment/payment.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 
 @NgModule({
   declarations: [
@@ -76,6 +77,7 @@ import { PaymentComponent } from './api-bundle/payment/payment.component';
     UnitSizerComponent,
     ConfirmationPageComponent,
     ViewRatesComponent,
+    PrivacyPolicyComponent,
   ],
   imports: [
     CommonModule,

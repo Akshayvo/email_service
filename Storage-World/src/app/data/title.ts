@@ -25,3 +25,6 @@ export const unitSizerPageContent = ``;
 
 export const contactPageTitle = ``;
 export const contactPageContent = ``;
+
+export const privacyPolicyPageTitle = `Privacy Policy | Storage World`;
+export const privacyPolicyPageContent = `This page contains this website's privacy policy. For more information, please contact the business directly.`;
