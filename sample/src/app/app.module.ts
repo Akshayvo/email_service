@@ -57,20 +57,27 @@ import { ThankYouComponent } from './api-bundle/thank-you/thank-you.component';
 import { ThankYouGuard } from './thank-you.guard';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { AlternateDetailsComponent } from './alternate-details/alternate-details.component';
+import { ContactModule } from './contact/contact.module';
+import { HomeModule } from './home/home.module';
+import { UnitSizerModule } from './unit-sizer/unit-sizer.module';
+import { HeaderModule } from './header/header.module';
+import { StorageTipsModule } from './storage-tips/storage-tips.module';
+import { PrivacyPolicyModule } from './privacy-policy/privacy-policy.module';
+import { PayRentModule } from './api-bundle/pay-rent/pay-rent.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HeaderComponent,
-    HomeComponent,
-    ContactComponent,
-    FooterComponent,
+    // AppComponent,
+    // HeaderComponent,
+    // HomeComponent,
+    // ContactComponent,
+    // FooterComponent,
     ViewRatesComponent,
-    TablesComponent,
+    // TablesComponent,
     ErrorComponent,
     ErrorHandlerComponent,
-    StorageTipsComponent,
-    AccordionComponent,
+    // StorageTipsComponent,
+    // AccordionComponent,
     ReserveComponent,
     ViewRatesComponent,
     ViewRatesIframePageComponent,
@@ -87,17 +94,17 @@ import { AlternateDetailsComponent } from './alternate-details/alternate-details
     ChangePasswordComponent,
     VerifyCodeComponent,
     ResetPasswordComponent,
-    UnitSizerComponent,
-    UnitSizesComponent,
+    // UnitSizerComponent,
+    // UnitSizesComponent,
     PhotosComponent,
     ScriptHackComponent,
     AutoPayComponent,
     RentSubComponent,
-    PayRentComponent,
+    // PayRentComponent,
     SignUpComponent,
-    TabsComponent,
+    // TabsComponent,
     ThankYouComponent,
-    PrivacyPolicyComponent,
+    // PrivacyPolicyComponent,
     AlternateDetailsComponent,
   ],
   imports: [
@@ -112,6 +119,13 @@ import { AlternateDetailsComponent } from './alternate-details/alternate-details
     SelectDropDownModule,
     BrowserAnimationsModule,
     MaterialModule,
+    HomeModule,
+    HeaderModule,
+    PayRentModule
+    // PrivacyPolicyModule,
+    // StorageTipsModule
+    // ContactModule,
+    // UnitSizerModule,
   ],
   providers: [
     DatePipe,

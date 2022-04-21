@@ -79,12 +79,12 @@ const reviewURL = ``
 
  export const apiRoutes = [
     // Fallback when no prior route is matched
-    { path: '', component: HomeComponent },
-    { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
+    { path: '', loadChildren: './home/home.module#HomeModule' },
+    { path: `${environment.locationName}/storage-tips`, loadChildren: './storage-tips/storage-tips.module#StorageTipsModule' },
     { path: `${environment.locationName}/reserve-unit`, component: ReserveComponent },
-    { path: 'contact-us', component: ContactComponent },
-    { path: 'unit-sizer', component: UnitSizerComponent },
-    { path: 'privacy-policy', component: PrivacyPolicyComponent },
+    { path: 'contact-us', loadChildren: './contact/contact.module#ContactModule' },
+    { path: 'unit-sizer', loadChildren: './unit-sizer/unit-sizer.module#UnitSizerModule'},
+    { path: 'privacy-policy', loadChildren: './privacy-policy/privacy-policy.module#PrivacyPolicyModule' },
     {
       path: `${environment.locationName}/view-rates`,
       component: ViewRatesComponent,
