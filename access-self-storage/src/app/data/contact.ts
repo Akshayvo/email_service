@@ -45,7 +45,7 @@ export const socialLinks = [
     // },
     {
         label: 'facebook',
-        path: 'https://www.facebook.com/accessselfstoragenb',
+        path: '',
         class: 'fab fa-facebook-square',
     },
 ];
