@@ -17,11 +17,11 @@ export const featuresList = [
     },
     {
         td1: 'Pin-Pad Activated Security Gate',
-        td2: 'Recreational Vehicle Storage',
+        td2: 'Boat Storage',
     },
     {
-        td1: 'Boat Storage',
-        td2: 'Fully-Fenced Facility',
+        td1: 'Fully-Fenced Facility',
+       
     }
 ];
 
@@ -31,17 +31,12 @@ export const aboutUsHeading = `Affordable Self Storage and Friendly Service in K
 
 export const aboutUs = [
     {
-        p: `After many years in this business, we’ve built a reputation for integrity, great value, and excellent service. This reputation is the result of hard work and dedication to our loyal customers.`,
+        p: `ABC Storage is a self-storage facility centrally located in Kingston, Ontario, Canada, one minute north of Highway 401 and only 10 minutes from downtown Kingston. There are many available units, ranging in size from 5' x 5' to 10' x 20'. All self-storage units are guaranteed to be dry, and dry.`,
     },
     {
-        p: `Many of our customers have stored their belongings or parked their boats and campers with us for a long time, and that is why we treat each and every customer who comes through our doors like a friend.`,
-    },
-    {
-        p: `We want you to be sure that your belongings will be safe and secure in our hands, and we want to make sure that every aspect of your experience with us is as positive as possible.`,
-    },
-    {
-        p: `If you have any questions about our services or pricing, or if you just want to know how we can make your life a little less stressful by providing great storage service, please feel free to give us a call or email us. We can’t wait to meet you!`,
+        p: `Our facility is well-lit and completely fenced to ensure a sense of security at all times. Outdoor storage is also available. Our gates are open 8 am-8pm 7 days a week. The office is open 8am-3pm Monday-Friday. ABC Storage is a family-run business with an On-Site Manager to meet your needs.`,
     }
+   
     
 ];
 
@@ -78,6 +73,6 @@ export const feature = [
 export const jumbotron = [
     {
         h2: `Affordable Self Storage Units in Kingston`,
-        blurb: `We are a locally owned and operated self storage and vehicle storage facility with pin-code activated gates for your security, and a host of amenities that make storing your belongings or parking your boat, RV, camper, or trailer in the off-season a breeze! Check out our prices and call our friendly management team today!`,
+        blurb: `Our self storage and vehicle storage facility offers pin-code activated gates for your security, and a host of modern amenities that make storing your belongings or parking your boat, RV, camper, or trailer in the off-season a breeze! Check out our prices and call our friendly management team today!`,
     }
 ];

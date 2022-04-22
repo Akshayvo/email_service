@@ -60,7 +60,12 @@
               <button class="btn  btn-primary" (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
           </div> -->
           <div [id]="locationMovein" class="py-1 buttons">
-              <button class=" btn btn-primary" (click)="navigate('/view-rates/move-in', lstUnitType)">Rent Now</button>
+              <!-- <button class=" btn btn-primary" (click)="navigate('/view-rates/move-in', lstUnitType)">Rent Now</button> -->
+              <span *ngFor="let contact of contactDetails">
+                <span *ngIf="contact?.label === 'Phone:'">
+                  <a class="btn btn-lg btn-primary" [href]="contact?.redirect" role="button">Call Us</a>
+                </span>
+              </span>
               <link *ngIf="lstUnitType.IsUnitsAvailable" itemprop="availability" href="https://schema.org/InStock" />
           </div>
         </div>
