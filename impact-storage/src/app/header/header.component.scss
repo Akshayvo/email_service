@@ -139,6 +139,10 @@ a {
 
   .navbar {
 
+    button{
+      border: 1px solid #ffff;
+    }
+
     .navbar-nav {
       overflow-y: auto;
       overflow-x: hidden;
@@ -157,13 +161,15 @@ a {
     }
   }
 
+  
   .navbar-toggler{
-    color:#ff6426;
+    color:#ffff;
+   
   }
 
   .navbar-toggler:focus,
 .navbar-toggler:hover {
-  border: 1px #ff6426 solid;
+  border: 1px #ffff solid;
 }
 
 
