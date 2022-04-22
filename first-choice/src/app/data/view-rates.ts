@@ -2,12 +2,12 @@ import { objSIMSetting } from './configuration';
 
 export const dataViewRates = [
     {
-      p: `Self Storage Facility - Location 1 has been serving Baldwinsville, and the surrounding communities
+      p: `First Choice Storage has been serving Baldwinsville, and the surrounding communities
       with quality regular and climate controlled self storage units for nearly two decades. We have
       the experience and commitment to modern conveniences you need to make your next storage project an easy one`,
     },
     {
-      p: `At Self Storage Facility - Location 1, you'll have access to our services with an online tenant portal
+      p: `At First Choice Storage, you'll have access to our services with an online tenant portal
       for contactless rentals, and online payments. If you're here after hours and want to make a payment,
       stop into the office's foyer and use our 24-hour kiosk!`
     },
