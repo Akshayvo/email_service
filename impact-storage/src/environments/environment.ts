@@ -18,7 +18,7 @@ export const environment = {
   facilityName: 'Impact Self Storage',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: `https://impact-self-storage-staging.netlify.app`
+  websiteUrl: `https://impactselfstorage.net`
 };
 
 /*

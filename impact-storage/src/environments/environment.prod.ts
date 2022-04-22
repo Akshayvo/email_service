@@ -14,5 +14,5 @@ export const environment = {
   emailBaseUrl: '',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: `https://impact-self-storage-staging.netlify.app`
+  websiteUrl: `https://impactselfstorage.net`
 };
