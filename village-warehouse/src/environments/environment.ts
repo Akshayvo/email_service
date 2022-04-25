@@ -13,14 +13,14 @@ export const environment = {
   cards: ['Visa', 'Master Card', 'Amex', 'Discover', 'test'],
   errorsMails: [ 'sanghmitra.v@codeparva.in' ],
   senderEmail: 'errors@codeparva.in',
-  emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
+  emailBaseUrl: '',
   appId: 'Village Warehouse Inc.',
   facilityName: 'Village Warehouse Inc.',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   websiteUrl: 'https://www.eastrochesterstorage.com',
-  // APIKey: `Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 28464
-  APIKey: `dzJ0OVc1SjQqOE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29548
+  APIKey: `Mjg0NjU6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 28465 
+  // APIKey: `dzJ0OVc1SjQqOE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29548
   
 };
 

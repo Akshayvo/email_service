@@ -21,6 +21,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   unitTypes: UnitTypes;
   LstUnitTypes: LstUnitTypes[];
   RegularUnitTypes: LstUnitTypes[];
+  RegularStorageTypes:LstUnitTypes[];
 
   descriptionVR: string;
   monthlyRateVR: number;
@@ -58,6 +59,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   showClimateControl: boolean; 
   facilityName: string;
   state: string;
+  
 
   private getDataSubscribe$: Subscription;
   constructor(
@@ -73,6 +75,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.getData();
+    
     this.fetchThData();    
     this.state = script.state;
   }
@@ -85,6 +88,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     this.showReserve = objSIMSetting.objActionSetting.blnAllowReservation;
     this.showMovein = objSIMSetting.objActionSetting.blnAllowMoveIn;
     this.showClimateControl = objSIMSetting.objUnitSizesSetting.blnClimateControl;
+    
   }
 
 
@@ -128,6 +132,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
       this.descriptionVR = description;
       this.monthlyRateVR = monthlyRate;
       this.unitTypeIdVR = intUnitTypeID;
+      
       this.curStage = 2;
       }, err => {
       });
@@ -137,11 +142,14 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   this.getDataSubscribe$ = this.fetchDataService.getData()
     .subscribe(unitTypesResponse => {
       this.showTable =  true;
-      this.RegularUnitTypes = unitTypesResponse.lstUnitTypes.filter(x => x.IsMobile === true);
-      this.LstUnitTypes = unitTypesResponse.lstUnitTypes;
+      this.RegularUnitTypes = unitTypesResponse.lstUnitTypes.filter(x => x.IsOutdoor === true );
+     
+      this.LstUnitTypes = unitTypesResponse.lstUnitTypes.filter(x => x.IsOutdoor === false);
+      
     });
   }
 
+  
   public ngOnDestroy(): void {
     if (this.getDataSubscribe$ && this.getDataSubscribe$.closed) {
       this.getDataSubscribe$.unsubscribe();

@@ -22,11 +22,11 @@
 
       <meta itemprop="name" content="{{facilityName}}" />
 
-      <tbody itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+      <tbody itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer" >
         <tr itemprop="itemOffered" itemscope itemtype="https://schema.org/SelfStorage" *ngFor="let lstUnitType of RegularUnitTypes" >
-          <td  colspan="2" style="width: 15%;" class="px-4 border text-center">
-            <span hidden itemprop="name">{{lstUnitType.Description}} unit Type </span>
-              {{lstUnitType.Description}}
+          <td  colspan="2" style="width: 15%;" class="px-4 border text-center" >
+            <span hidden itemprop="name" >{{lstUnitType.Description}} unit Type </span>
+             {{lstUnitType.Description}}
               <meta itemprop="description" 
               content="{{lstUnitType.Description}}" />
               <link itemprop="image" href="https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/village_warehouse_inc/jpg/village-warehouse-inc-7.jpg" />
@@ -115,7 +115,7 @@
 </tHead>
 <tbody>
   <tr *ngFor="let lstUnitType of LstUnitTypes">
-    <td colspan="2" class="px-4 border text-center">
+    <td colspan="2" class="px-4 border text-center" >
         {{lstUnitType.Description}}
     </td>
     <td colspan="2" class="px-4 border text-center">
