@@ -8,7 +8,10 @@ import { unitSizerRoutingModule } from './unit-sizer-routing.module';
 console.warn("unit sizer module is loaded")
 
 @NgModule({
-  declarations: [UnitSizerComponent, UnitSizesComponent],
+  declarations: [
+    UnitSizerComponent, 
+    UnitSizesComponent
+  ],
   imports: [
     CommonModule,
     ReactiveFormsModule,

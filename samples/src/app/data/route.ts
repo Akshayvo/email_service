@@ -36,10 +36,10 @@ const withoutTab = [
         {path: 'login', component: LoginComponent },
         {path: 'forgotPassword', component: ForgotPasswordComponent },
         {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
-        {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
+        // {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
         { path: 'verifyCode', component: VerifyCodeComponent },
         { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]},
-        { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
+        // { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  } 
         // canActivate: [VerifictionCodeGuard]
 ];
 
@@ -51,10 +51,10 @@ const withTab = [
           {path: 'login', component: LoginComponent },
           {path: 'forgotPassword', component: ForgotPasswordComponent },
           {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
-          {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
+          // {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
           { path: 'verifyCode', component: VerifyCodeComponent },
           { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]},
-          { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
+          // { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
           // canActivate: [VerifictionCodeGuard]
         ]
       },
@@ -82,37 +82,38 @@ const reviewURL = ``
     // Fallback when no prior route is matched
     { path: '', loadChildren: './home/home.module#HomeModule' },
     { path: `${environment.locationName}/storage-tips`, loadChildren: './storage-tips/storage-tips.module#StorageTipsModule' },
-    { path: `${environment.locationName}/reserve-unit`, component: ReserveComponent },
+    { path: `${environment.locationName}/reserve-unit`, loadChildren:'./api-bundle/reserve/reserve.module#ReserveModule'}, 
     { path: 'contact-us', loadChildren: './contact/contact.module#ContactModule' },
     { path: 'unit-sizer', loadChildren: './unit-sizer/unit-sizer.module#UnitSizerModule'},
     { path: 'privacy-policy', loadChildren: './privacy-policy/privacy-policy.module#PrivacyPolicyModule' },
-   
-    {
-      path: `${environment.locationName}/view-rates`,
-      component: ViewRatesComponent,
-      children: [
-        { path: '', component: ViewRatesPageComponent },
-        { path: 'reserve', component: ReserveUnitFormComponent },
-        { path: 'move-in', component: ReserveUnitFormComponent },
-        { path: 'confirmation', component: ConfirmationDataComponent },
-        { path: 'payReservationCharges', component: PayRentFormComponent },
-        { path: 'payMoveInCharges', component: PayRentFormComponent },
-        { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
-      ]
-     },
-     {
-      path: `${environment.locationName}/rent-now`,
-      component: ViewRatesComponent,
-      children: [
-        { path: '', component: ViewRatesPageComponent },
-        { path: 'reserve', component: ReserveUnitFormComponent },
-        { path: 'move-in', component: ReserveUnitFormComponent },
-        { path: 'confirmation', component: ConfirmationDataComponent },
-        { path: 'payReservationCharges', component: PayRentFormComponent },
-        { path: 'payMoveInCharges', component: PayRentFormComponent },
-        { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
-      ]
-     },
+    { path:`${environment.locationName}/view-rates`,loadChildren:'./api-bundle/view-rates/view-rates.module#ViewRatesModule'},
+    { path:`${environment.locationName}/rent-now`,loadChildren:'./api-bundle/view-rates/view-rates.module#ViewRatesModule'},
+    // {
+    //   path: `${environment.locationName}/view-rates`,
+    //   component: ViewRatesComponent,
+    //   children: [
+    //     { path: '', component: ViewRatesPageComponent },
+    //     { path: 'reserve', component: ReserveUnitFormComponent },
+    //     { path: 'move-in', component: ReserveUnitFormComponent },
+    //     { path: 'confirmation', component: ConfirmationDataComponent },
+    //     { path: 'payReservationCharges', component: PayRentFormComponent },
+    //     { path: 'payMoveInCharges', component: PayRentFormComponent },
+    //     { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
+    //   ]
+    //  },
+    //  {
+    //   path: `${environment.locationName}/rent-now`,
+    //   component: ViewRatesComponent,
+    //   children: [
+    //     { path: '', component: ViewRatesPageComponent },
+    //     { path: 'reserve', component: ReserveUnitFormComponent },
+    //     { path: 'move-in', component: ReserveUnitFormComponent },
+    //     { path: 'confirmation', component: ConfirmationDataComponent },
+    //     { path: 'payReservationCharges', component: PayRentFormComponent },
+    //     { path: 'payMoveInCharges', component: PayRentFormComponent },
+    //     { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
+    //   ]
+    //  },
     {
       path: 'pay-rent', component: PayRentComponent,
       children: childroute
