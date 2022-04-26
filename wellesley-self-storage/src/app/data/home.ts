@@ -85,6 +85,6 @@ export const feature = [
 export const jumbotron = [
     {
         h2: `Affordable Storage Units and Vehicle Parking in Wellesley - COMING SOON!`,
-        blurb: `Whether you're a residential user seeking a little extra elbow room during a move, or renovation, or if you're a business in need of 24 hour access to equipment and supplies, Wellesley Self Storage has you covered! Our well-lit. fully-fenced, modern facility has all of the amenities you need for a convenient self storage experience. We also have both indoor and outdoor parking for boats, campers, and recreational vehicles.`,
+        blurb: `Whether you're a residential user seeking a little extra elbow room during a move, or renovation, or if you're a business in need of 24 hour access to equipment and supplies, Wellesley Self Storage has you covered! Our well-lit. fully-fenced, modern facility has all of the amenities you need for a convenient self storage experience. We also have secure outdoor parking for boats, campers, and recreational vehicles.`,
     }
 ];
