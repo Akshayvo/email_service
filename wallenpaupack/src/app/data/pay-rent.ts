@@ -70,17 +70,17 @@ export const tableDataContactPage = [
 
 export const loginDetail = [
   {
-      userName: `Tenant's First Initial + Last Name`,
-      password: `Tenant's Unit Number`,
+      userName: `Email Address`,
+      password: `Tenant's Phone Number`,
       example: {
-          code: `Unit Number is 123`,
-          userName: 'jsmith',
-          password: '0123'
+          code: `Phone Number is 555-555-5555`,
+          userName: 'jsmithemail@email.com',
+          password: '5555555555'
       },
-      example1:{
-          code: `Unit Number is RC23`,
-          userName: 'jsmith',
-          password: 'RC23'
-      }
+      // example1:{
+      //     code: `Unit Number is RC23`,
+      //     userName: 'jsmith',
+      //     password: 'RC23'
+      // }
   }
 ];

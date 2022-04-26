@@ -70,9 +70,9 @@ export const contactsLocation1 = [
     {
         id: 1,
         label: 'Office Address: ',
-        data: '54 Texas Palmyra Hwy, Hawley, PA 18428',
+        data: '204 Purdytown Turnpike, Lakeville, PA 18438',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/VkBGKt4Hbp6rb3F36'
+        redirect: 'https://www.google.com/maps/place/Wallenpaupack+Self+Storage,+204+Purdytown+Turnpike,+Lakeville,+PA+18438,+United+States/@41.427774,-75.281754,15z/data=!4m2!3m1!1s0x89c4b9c615c3a081:0x4ab43978c9491515'
     },
     {
         id: 2,
@@ -85,16 +85,16 @@ export const contactsLocation1 = [
     {
         id: 3,
         label: 'Facility Address: ',
-        data: '116 Ehrgood Rd, Greentown, PA 18426',
+        data: '54 Texas Palmyra Hwy, Hawley, PA 18428',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/qQ3uAvaGjHbfer5J9'
+        redirect: 'https://goo.gl/maps/VkBGKt4Hbp6rb3F36'
     },
     {
         id: 4,
         label: 'Phone: ',
-        data: '(570) 676-0851',
+        data: '(570) 226-4481',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:5706760851'
+        redirect: 'tel:5702264481'
     },
 ];
 
@@ -137,9 +137,9 @@ export const contactsLocation2 = [
     {
         id: 4,
         label: 'Phone: ',
-        data: '(570) 226-4481',
+        data: '(570) 226-1901',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:5702264481'
+        redirect: 'tel:5702261901'
     },
 ];
 
