@@ -52,7 +52,7 @@ export class PayRentComponent implements OnInit {
   } else if (this.router.url.includes('lake-ariel')) {
     this.name = 'Lake Ariel';
   } else if (this.router.url.includes('greentown')) {
-    this.name = 'greentown';
+    this.name = 'Greentown';
   } 
   // else if (this.router.url.includes('greentown1')) {
   //   this.name = 'greentown1';

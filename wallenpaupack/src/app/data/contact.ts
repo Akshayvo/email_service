@@ -114,7 +114,7 @@ export const hoursLocation1AcessHours = [
 export const contactsLocation2 = [
     {
         id: 1,
-        label: 'Office Address: ',
+        label: 'Facility Address: ',
         data: '204 Purdytown Turnpike, Lakeville, PA 18438',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: 'https://goo.gl/maps/yfPnpb1MJ9Fz9Kue6'
@@ -127,15 +127,15 @@ export const contactsLocation2 = [
         class: 'fas fa-envelope-open mr-2 iconColor',
         redirect: 'mailto:andy@wallenpaupackselfstorage.com'
     },
+    // {
+    //     id: 3,
+    //     label: 'Facility Address: ',
+    //     data: '54 Texas Palmyra Hwy, Hawley, PA 18428',
+    //     class: 'fas fa-map-marker-alt mr-2 iconColor',
+    //     redirect: 'https://goo.gl/maps/jnSFyA6ivmkt1LEE6'
+    // },
     {
         id: 3,
-        label: 'Facility Address: ',
-        data: '54 Texas Palmyra Hwy, Hawley, PA 18428',
-        class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/jnSFyA6ivmkt1LEE6'
-    },
-    {
-        id: 4,
         label: 'Phone: ',
         data: '(570) 226-1901',
         class: 'fas fa-phone mr-2 iconColor',
