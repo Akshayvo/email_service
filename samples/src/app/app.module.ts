@@ -20,7 +20,7 @@ import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { ErrorHandlerService } from './services/error-handler.service';
 import { ReserveComponent } from './api-bundle/reserve/reserve.component';
-// import { ViewRatesComponent } from './api-bundle/view-rates/view-rates.component'; 
+import { ViewRatesComponent } from './api-bundle/view-rates/view-rates.component'; 
 import { ViewRatesIframePageComponent } from './iframe-bundle/view-rates-iframe-page/view-rates-iframe-page.component';
 import { ViewRatesPageComponent } from './api-bundle/view-rates-page/view-rates-page.component';
 import { ReserveUnitFormComponent } from './api-bundle/reserve-unit-form/reserve-unit-form.component';
@@ -60,7 +60,7 @@ import { AlternateDetailsComponent } from './alternate-details/alternate-details
 import { HomeModule } from './home/home.module';
 import { HeaderModule } from './header/header.module';
 import { PayRentModule } from './api-bundle/pay-rent/pay-rent.module';
-import { ViewRatesComponent } from './api-bundle/view-rates/view-rates.component';
+// import { ViewRatesComponent } from './api-bundle/view-rates/view-rates.component'; 
 
 @NgModule({
   declarations: [
@@ -69,20 +69,20 @@ import { ViewRatesComponent } from './api-bundle/view-rates/view-rates.component
     // HomeComponent,
     // ContactComponent,
     // FooterComponent, 
-    // ViewRatesComponent, 
+    ViewRatesComponent, 
     // TablesComponent, 
     ErrorComponent,
     ErrorHandlerComponent,
     // StorageTipsComponent,
     // AccordionComponent,
     // ReserveComponent, 
-    // ViewRatesComponent, 
+    ViewRatesComponent, 
     ViewRatesIframePageComponent,
-    // ViewRatesPageComponent, 
-    // ReserveUnitFormComponent, 
+    ViewRatesPageComponent, 
+    ReserveUnitFormComponent, 
     ReserveUnitIframePageComponent,
-    // ConfirmationDataComponent, 
-    // PayRentFormComponent, 
+    ConfirmationDataComponent, 
+    PayRentFormComponent, 
     PaymentComponent,
     PaymentIframePageComponent,
     LoginComponent,
@@ -100,7 +100,7 @@ import { ViewRatesComponent } from './api-bundle/view-rates/view-rates.component
     // PayRentComponent,
     SignUpComponent,
     // TabsComponent,
-    // ThankYouComponent,  
+    ThankYouComponent,  
     // PrivacyPolicyComponent,
     AlternateDetailsComponent,
   ],
