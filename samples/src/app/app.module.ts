@@ -75,7 +75,7 @@ import { PayRentModule } from './api-bundle/pay-rent/pay-rent.module';
     ErrorHandlerComponent,
     // StorageTipsComponent,
     // AccordionComponent,
-    // ReserveComponent, 
+    ReserveComponent,
     ViewRatesComponent, 
     ViewRatesIframePageComponent,
     ViewRatesPageComponent, 
