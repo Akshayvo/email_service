@@ -31,6 +31,7 @@
     "@ng-toolkit/universal": "^8.0.3",
     "@nguniversal/express-engine": "^6.0.0",
     "@nguniversal/module-map-ngfactory-loader": "^6.0.0",
+    "@ngx-builders/analyze": "^3.0.1",
     "@types/ua-parser-js": "^0.7.33",
     "angulartics2": "^6.3.1",
     "bootstrap-select-v4": "^1.12.4",

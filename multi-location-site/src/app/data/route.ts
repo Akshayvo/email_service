@@ -87,7 +87,7 @@ const withTab = [
 const childroute = environment.signUpForAuotoPay ? withTab : withoutTab;
 
 export const apiRoutes = [
-    { path: '', component: HomeComponent  },
+    { path: '', loadChildren: './home/home.module#HomeModule'  },
     { path: 'privacy-policy', component: PrivacyPolicyComponent },
     { path: 'frequently-asked-questions', component: FaqComponent},
     { path: `${environment.locationName}/location-1`,
@@ -292,7 +292,6 @@ export const apiRoutes = [
             { path: 'payReservationCharges', component: PayRentFormComponent },
             { path: 'payMoveInCharges', component: PayRentFormComponent },
             { path: 'thank-you', component: ThankYouComponent,  canActivate: [ThankYouGuard] }
-
           ]
         },
         // { path: 'photos', component: PhotosComponent },
@@ -337,7 +336,7 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-    { path: 'review/location-1', component: HomeComponent,
+    { path: 'review/location-1', loadChildren: './home/home.module#HomeModule',
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -345,7 +344,7 @@ export const apiRoutes = [
         externalUrl: ''
     }
   },
-  { path: 'review/location-2', component: HomeComponent,
+  { path: 'review/location-2', loadChildren: './home/home.module#HomeModule',
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -353,7 +352,7 @@ export const apiRoutes = [
         externalUrl: ''
     }
   },
-  { path: 'review/location-3', component: HomeComponent,
+  { path: 'review/location-3', loadChildren: './home/home.module#HomeModule',
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -362,7 +361,7 @@ export const apiRoutes = [
     }
   },
   { path: 'error', component: ErrorHandlerComponent },
-  { path: 'pay-rent', component: PaymentComponent },
+  { path: 'pay-rent', component:  PaymentComponent },
   {
     path: 'pay-rent/location-1', component: PayRentComponent,
     children: childroute
@@ -375,18 +374,18 @@ export const apiRoutes = [
     path: 'pay-rent/location-3', component: PayRentComponent,
     children: childroute
   },
-  { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
-  { path: 'contact-us', component: ContactComponent },
-  { path: 'contact-location-1', component: ContactUsComponent},
-  { path: 'contact-location-2', component: ContactUsComponent},
-  { path: 'contact-location-3', component: ContactUsComponent},
+  { path: `${environment.locationName}/storage-tips`, loadChildren: './storage-tips/storage-tips.module#StorageTipsModule' },
+  { path: 'contact-us', loadChildren: './contact/contact.module#ContactModule' },
+  { path: 'contact-location-1', loadChildren: './contact-us/contact-us.module#ContactUsModule'},
+  { path: 'contact-location-2', loadChildren: './contact-us/contact-us.module#ContactUsModule'},
+  { path: 'contact-location-3', loadChildren: './contact-us/contact-us.module#ContactUsModule'},
   { path: '**', component: ErrorComponent },
-  { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
+  { path: `${environment.locationName}/storage-tips`, loadChildren: './storage-tips/storage-tips.module#StorageTipsModule' },
 ];
 
 
 export const iFrameRoutes = [
-  { path: '', component: HomeComponent },
+  { path: '', loadChildren: './home/home.module#HomeModule' },
   { path: 'privacy-policy', component: PrivacyPolicyComponent },
   { path: `${environment.locationName}/location-1`,
     component: LocationComponent,
@@ -421,7 +420,7 @@ export const iFrameRoutes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: 'review/location-1', component: HomeComponent,
+  { path: 'review/location-1', loadChildren: './home/home.module#HomeModule',
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -429,7 +428,7 @@ export const iFrameRoutes = [
         externalUrl: ''
     }
   },
-  { path: 'review/location-2', component: HomeComponent,
+  { path: 'review/location-2', loadChildren: './home/home.module#HomeModule',
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -437,7 +436,7 @@ export const iFrameRoutes = [
         externalUrl: ''
     }
   },
-  { path: 'review/location-3', component: HomeComponent,
+  { path: 'review/location-3', loadChildren: './home/home.module#HomeModule',
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -446,7 +445,7 @@ export const iFrameRoutes = [
     }
   },
   { path: 'error', component: ErrorHandlerComponent },
-  { path: 'pay-rent', component: PaymentIframeComponent },
+  { path: 'pay-rent', component: PayRentComponent },
   { path: 'pay-rent-location-1', component: PayRentFloridaComponent },
   { path: 'pay-rent-location-2', component: PayRentChesterComponent},
   { path: 'pay-rent-location-3', component: PayRentMontgomeryComponent},

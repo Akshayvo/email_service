@@ -67,18 +67,22 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { ThankYouGuard } from './thank-you.guard';
 import { PhotosComponent } from './photos/photos.component';
 import { FaqComponent } from './faq/faq.component';
+import { ContactModule } from './contact/contact.module';
+import { ContactUsModule } from './contact-us/contact-us.module';
+import { StorageTipsModule } from './storage-tips/storage-tips.module';
+import { HomeModule } from './home/home.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    HomeComponent,
-    ContactComponent,
+    // HomeComponent,
+    // ContactComponent,
     FooterComponent,
     TablesComponent,
     ErrorComponent,
     LocationComponent,
-    StorageTipsComponent,
+    // StorageTipsComponent,
     SafePipe,
     StorageUnitComponent,
     UnitSizerComponent,
@@ -86,7 +90,7 @@ import { FaqComponent } from './faq/faq.component';
     AboutUsComponent,
     DirectionsComponent,
     TabsComponent,
-    AccordionComponent,
+    // AccordionComponent,
     SelectLocationComponent,
     ErrorHandlerComponent,
     PayRentComponent,
@@ -118,8 +122,8 @@ import { FaqComponent } from './faq/faq.component';
     ThankYouComponent,
     ScriptHackComponent,
     PrivacyPolicyComponent,
-    ContactUsComponent,
-    PhotosComponent,
+    // ContactUsComponent,
+    // PhotosComponent,
     FaqComponent,
   ],
   schemas: [
@@ -134,8 +138,13 @@ import { FaqComponent } from './faq/faq.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    MaterialModule,
+    // MaterialModule,
     BrowserAnimationsModule,
+    // StorageTipsModule,
+    // HomeModule,
+    // HomeModule,
+    // ContactModule,
+    // ContactUsModule,
     // NgxJsonLdModule
     ],
   providers: [
