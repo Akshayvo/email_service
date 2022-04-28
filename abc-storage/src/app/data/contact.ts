@@ -30,7 +30,7 @@ export const hours = [
     
     {
         label: 'Saturday-Sunday: ',
-        data: 'CLOSED'
+        data: 'Office Closed'
     },
     {
         label: 'Storage Access Hours: ',

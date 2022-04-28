@@ -58,21 +58,21 @@ export const feature = [
     {
         // tslint:disable-next-line:max-line-length
         path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/online.svg`,
-        label: 'Online Reservation & Bill Pay',
+        label: 'Online Bill Pay',
         alt: 'Icon art displaying a screen with cursor'
 
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/24-hours.svg`,
-        label: '24 Hour Facility Access',
-        alt: 'Icon art displaying clock hands and the number 24'
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg`,
+        label: 'Stellar Customer Service',
+        alt: 'Customer Service Representative Icon'
     },
 ];
 
 export const jumbotron = [
     {
         h2: `Affordable Self Storage Units in Kingston`,
-        blurb: `Our self storage and vehicle storage facility offers pin-code activated gates for your security, and a host of modern amenities that make storing your belongings or parking your boat, RV, camper, or trailer in the off-season a breeze! Check out our prices and call our friendly management team today!`,
+        blurb: `Our self storage and vehicle storage facility offers pin-code activated gates for your security, and a host of modern amenities that make storing your belongings in the off-season a breeze! Check out our prices and call our friendly management team today!`,
     }
 ];

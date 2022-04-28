@@ -11,6 +11,7 @@ import { environment } from '../../../environments/environment';
 import { objSIMSetting } from '../../data/configuration';
 import { script } from '../../data/script';
 import { contact} from '../../data/contact';
+import { unitTypes } from 'src/app/data/unitSizer';
 @Component({
   selector: 'app-view-rates-page',
   templateUrl: './view-rates-page.component.html',
@@ -21,6 +22,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   showTable = false;
   unitTypes: UnitTypes;
   LstUnitTypes: LstUnitTypes[];
+  Description:any;
 
   descriptionVR: string;
   monthlyRateVR: number;
@@ -75,6 +77,8 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     this.fetchThData();    
     this.fetchContactDetails();
     this.state = script.state;
+    this.Description=unitTypes;
+
   }
 
   public fetchContactDetails() {
@@ -141,6 +145,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     .subscribe(unitTypesResponse => {
       this.showTable =  true;
       this.LstUnitTypes = unitTypesResponse.lstUnitTypes;
+
     });
   }
 

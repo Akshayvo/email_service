@@ -18,8 +18,8 @@ export const unitSizer = [
       id: 1,
       size: '5\' x 10\'',
       heading: '5\' x 10\' Storage Unit',
-      alt: '5\' x 10\' Storage Unit Graphic',
-      unitImg: 'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Abc_Storage/jpg/5x10.png',
+      alt: 'the interior of a self storage unit with a man standing inside to provide a sense of scale',
+      unitImg: 'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Abc_Storage/jpg/5x10.jpg',
       data: `This unit is approximately 50 sq feet of space that can hold the contents of one small room, such as:`,
       amenities: [
         { content: 'Chairs', },
@@ -84,8 +84,8 @@ export const unitSizer = [
       id: 5,
       size: '8\' x 20\'',
       heading: '8\' x 20\' Storage Unit',
-      alt: '8\' x 20\' Storage Unit Graphic ',
-      unitImg: 'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Syrasoft_Poweredby/unit-sizer/8x20.png',
+      alt: 'the interior of a storage unit with a man standing inside to provide a sense of scale',
+      unitImg: 'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Abc_Storage/jpg/8x20.png',
       data: `This unit is approximately 160 sq feet of space that can hold the contents of about five rooms.`,
       amenities: [
         { content: 'Appliances', },
@@ -99,8 +99,8 @@ export const unitSizer = [
       id: 6,
       size: '9.5\' x 7.5\'',
       heading: '9.5\' x 7.5\' Storage Unit',
-      alt: '9.5\' x 7.5\' Storage Unit Graphic ',
-      unitImg: 'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Syrasoft_Poweredby/unit-sizer/10x10.png',
+      alt: 'the interior of a self storage unit with a man standing in the unit to provide a sense of scale',
+      unitImg: 'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Abc_Storage/jpg/9x7.png',
       data: `This unit is approximately 71 sq feet of space that can hold the contents of two rooms, such as:`,
       amenities: [
         { content: 'Chairs', },
@@ -114,3 +114,8 @@ export const unitSizer = [
     },
     
 ];
+
+export const unitTypes=[
+  {id:0,size:'05 X 05'},
+  {id:1,size:'05 X 10'},
+]
