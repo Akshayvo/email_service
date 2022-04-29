@@ -115,7 +115,3 @@ export const unitSizer = [
     
 ];
 
-export const unitTypes=[
-  {id:0,size:'05 X 05'},
-  {id:1,size:'05 X 10'},
-]

@@ -11,7 +11,8 @@ import { environment } from '../../../environments/environment';
 import { objSIMSetting } from '../../data/configuration';
 import { script } from '../../data/script';
 import { contact} from '../../data/contact';
-import { unitTypes } from 'src/app/data/unitSizer';
+
+
 @Component({
   selector: 'app-view-rates-page',
   templateUrl: './view-rates-page.component.html',
@@ -77,7 +78,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     this.fetchThData();    
     this.fetchContactDetails();
     this.state = script.state;
-    this.Description=unitTypes;
+    
 
   }
 
