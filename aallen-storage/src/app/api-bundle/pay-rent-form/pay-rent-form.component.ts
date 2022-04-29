@@ -186,7 +186,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     if (!!this.dataSharingService.MoveInData.TotalChargesAmount) {
       this.totalMoveInAmount =
       // tslint:disable-next-line: max-line-length
-      currencyPipe.transform((this.dataSharingService.MoveInData.TotalChargesAmount + this.dataSharingService.MoveInData.TotalTaxAmount), 'USD');
+      parseFloat((this.dataSharingService.MoveInData.TotalChargesAmount + this.dataSharingService.MoveInData.TotalTaxAmount).toFixed(2));
       if (!!this.totalMoveInAmount && this.totalMoveInAmount > 0) {
         this.surchargeService.setAmt(this.totalMoveInAmount);
         // this.getSurCharge();
@@ -198,6 +198,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         // this.getSurCharge();
       }
     }
+
 
 
 
@@ -593,7 +594,11 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         }
         this.dataSharingService.CCApprovalCode = paymentDataResponse.PayTypeForResult.CCApprovalCode;
         if ( paymentDataResponse.intErrorCode === 1 ) {
+
           this.makePaymentForUnit = false;
+          if (this.router.url.includes('/payment')){
+            this.dataSharingService.navigateToPayment = true
+          }
           if (this.navigateToReserve) {
             this.MoveIn.intUnitTypeID = this.dataSharingService.LstUnitTypes.UnitTypeID;
             this.makeAReservation(this.MoveIn);
@@ -616,7 +621,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
           this.showloaderForPayment = false;
           this.invalidPayment = 'Unable to make the payment. Please check your card detail.';
         }
-
 
       }, (err: any) => {
         this.makePaymentForUnit = false;
