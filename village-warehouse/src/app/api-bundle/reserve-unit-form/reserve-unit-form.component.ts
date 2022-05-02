@@ -210,17 +210,35 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         DeployedUntil: [''],
         CommandingOfficer: [''],
         CommandingOfficerPhone: [''],
-        AlternateName: [''],
-        AlternatePhone:   ['',
+        AlternateName: ['' ,conditionalValidator(
+          (() => this.showAltDetails === false),
+          Validators.required
+        ),],
+        AlternatePhone:   ['', [  conditionalValidator(
+          (() => this.showAltDetails === false),
+          Validators.required
+        ),
           Validators.pattern(
             '^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$'
             )
-        ],
-        AlternateAddressLine1: [''],
+        ]],
+        AlternateAddressLine1: ['',conditionalValidator(
+          (() => this.showAltDetails === false),
+          Validators.required
+        ),],
         AlternateAddressLine2: [''],
-        AlternateCity: [''],
-        AlternateState: [''],
-        AlternateZIP: [''],
+        AlternateCity: ['', conditionalValidator(
+          (() => this.showAltDetails === false),
+          Validators.required
+        ),],
+        AlternateState: ['', conditionalValidator(
+          (() => this.showAltDetails === false),
+          Validators.required
+        ),],
+        AlternateZIP: ['', conditionalValidator(
+          (() => this.showAltDetails === false),
+          Validators.required
+        ),],
       }),
 
 
