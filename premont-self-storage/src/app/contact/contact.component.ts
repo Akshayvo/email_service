@@ -2,7 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
 import { Title, Meta } from "@angular/platform-browser";
 import { FormGroup, FormBuilder, Validators } from "@angular/forms";
-import { contact, hours } from "../data/contact";
+import { contact, hours, moveInHours  } from "../data/contact";
 import { EmailService } from "../services/email.service";
 import { MetaService } from "../services/link.service";
 import { contactPageTitle, contactPageContent } from "../data/title";
@@ -24,6 +24,7 @@ export class ContactComponent implements OnInit {
   hours: any;
   name: string;
   email: any;
+  moveinhours: any;
   message: string;
   contactInfo: any;
   receiveremail: string;
@@ -141,6 +142,7 @@ export class ContactComponent implements OnInit {
 
   public fetchHours() {
     this.hours = hours;
+    this.moveinhours = moveInHours;
   }
 
   onSubmit() {
