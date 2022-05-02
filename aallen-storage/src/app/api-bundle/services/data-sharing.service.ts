@@ -30,6 +30,7 @@ export class DataSharingService {
   eventName: string;
   signUpForAutoPay: boolean;
   showAltDetails: boolean;
+  amountToPayThankYou: number;
 
   cardDetailsObject = {
     CCNumber: '',
