@@ -13,6 +13,9 @@
 }
 
 .contact-links {
+  div{
+    margin-bottom: 5px;
+  }
   a {
     color: black;
     line-height: 1.8;
@@ -30,6 +33,7 @@ h2 {
 }
 
 .forgot-link {
+  margin-bottom: 5px;
   a {
     color: $primary;
     text-decoration: underline;
