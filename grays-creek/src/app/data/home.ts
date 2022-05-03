@@ -37,10 +37,10 @@ export const aboutUs = [
         p: `We offer clean, well-lit self storage units that cater to a variety of local residential and business needs. You can find us right off Route 87 on Sand Hill Road in Fayetteville, North Carolina.`,
     },
     {
-        p: `Gray's Creek Self Storage makes your next move, renovation, or spring cleaning project convenient with our online services, friendly management team, and access through our pin-code activated gate. We also have on-site managers who are available to assist you during office hours or after hours via phone or email.`,
+        p: `Gray's Creek Safe Storage makes your next move, renovation, or spring cleaning project convenient with our online services, friendly management team, and access through our pin-code activated gate. We also have on-site managers who are available to assist you during office hours or after hours via phone or email.`,
     },
     {
-        p: `If you’re looking for an affordable solution for storing your belongings, Gray's Creek Self Storage is here for you! So whether you are a local resident preparing for a move or a business owner that understands the value of off-site storage, Gray's Creek Self Storage has a unit perfect for your needs.`,
+        p: `If you’re looking for an affordable solution for storing your belongings, Gray's Creek Safe Storage is here for you! So whether you are a local resident preparing for a move or a business owner that understands the value of off-site storage, Gray's Creek Safe Storage has a unit perfect for your needs.`,
     },
     {
         p: `Take a moment to check out our current availability(coming soon!) and reserve your unit online in minutes! One of our friendly managers will be in touch to complete your contactless rental process and assist you with finding your new storage unit. We look forward to meeting you!`,

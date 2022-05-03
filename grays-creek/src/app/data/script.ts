@@ -31,7 +31,7 @@ export const script = {               // Please fill this script according to fa
      ],
      telephone: contact[contactIndex].data,
      map: "https://goo.gl/maps/MZ2bUNFNT1HWfDfw5",
-     description: "Gray's Creek Self Storage is Fayetteville's newest self storage facility. Our variety of unit sizes and our many modern amenities to make your stay easier are conveniently located on Sandhill Road. Our facility was built from the ground up to provide the best self storage experience possible, and our security features provide a sense of safety at all times.",
+     description: "Gray's Creek Safe Storage is Fayetteville's newest self storage facility. Our variety of unit sizes and our many modern amenities to make your stay easier are conveniently located on Sandhill Road. Our facility was built from the ground up to provide the best self storage experience possible, and our security features provide a sense of safety at all times.",
      streetAddress: "148 W 51st St",
      state: "New York",
      addressLocality: "New York",

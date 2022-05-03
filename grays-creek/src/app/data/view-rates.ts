@@ -4,7 +4,7 @@ export const dataViewRates = [
     {
       p: `We offer clean, well-lit self storage units that cater to a variety of local residential and 
       business needs. You can find us right off Route 87 on Sand Hill Road in Fayetteville, North Carolina. 
-      Unit access is available 7 days a week with 24/7 access for all our customers. `,
+      `,
     },
     {
       p: `We also have onsite managers who are available to assist you during office hours or after hours 
@@ -13,7 +13,7 @@ export const dataViewRates = [
     {
       p: `Whether you're a local resident with an upcoming move, renovation, or downsizing project to 
       tackle, or if you're a growing business that values the savings a storage unit can offer for 
-      off-site inventory and supplies, Gray's Creek Self Storage has your storage needs covered.`
+      off-site inventory and supplies, Gray's Creek Safe Storage has your storage needs covered.`
     },
 ];
 
