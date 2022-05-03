@@ -111,10 +111,10 @@ const reviewURL = ``
         { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
       ]
      },
-    {
-      path: 'pay-rent', component: PayRentComponent,
-      children: childroute
-    },
+    // {
+    //   path: 'pay-rent', component: PayRentComponent,
+    //   children: childroute
+    // },
     { path: 'forgot-password', component: ForgotPasswordComponent },
     { path: 'review', component: HomeComponent,
       resolve: {

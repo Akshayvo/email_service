@@ -57,10 +57,9 @@ export const feature = [
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/online.svg`,
-        label: 'Online Bill Pay',
-        alt: 'Icon art displaying a screen with cursor'
-
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/hand.svg`,
+        label: 'Affordable Self Storage Rates',
+        alt: 'Icon of a hand holding money'
     },
     {
         // tslint:disable-next-line:max-line-length

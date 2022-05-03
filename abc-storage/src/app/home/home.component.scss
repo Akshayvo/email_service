@@ -15,6 +15,10 @@
   background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Abc_Storage/jpg/abc-storage-169.jpg");
 }
 
+.set-height{
+  height: 300px;
+}
+
 .display-contact {
   display: flex;
 }
@@ -598,6 +602,10 @@
     // background-position: right 37% top 10px;
     background-size: contain;
     height: 44vh;
+  }
+
+  .set-height{
+    height: 400px;
   }
 
   .jumbotron-top {
