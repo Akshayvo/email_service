@@ -25,13 +25,13 @@ export class ErrorComponent implements OnInit {
     this.currentTimeInSeconds= new Date();
 
     this.completeMessage = `Domain Name: ${environment.websiteUrl}, <br/>
-     Timestamp: ${this.currentTimeInSeconds}, <br />
-     URL:  ${environment.websiteUrl}${this.router.url}`;
+    Effected URL:  ${environment.websiteUrl}${this.router.url} <br />
+    Timestamp: ${this.currentTimeInSeconds}`;
 
       const body = {
         name: "404 Error Occured",
         email: 'Marketing@syrasoft.com',
-        receiveremail: 'darshanhegde5@gmail.com',
+        receiveremail: 'bizapps@codeparva.in',
         message: this.completeMessage,
         subject: "Error - 404",
       };
