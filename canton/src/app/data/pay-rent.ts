@@ -23,7 +23,7 @@ export const loginFoul = [
     password: `Tenant's Unit Number`,
     example: {
         code: 'Unit is 1234',
-        userName: 'smith',
+        userName: 'Smith',
         password: '1234'
     }
 }
@@ -35,7 +35,7 @@ export const loginLouisville = [
     password: `Tenant's Unit Number`,
     example: {
         code: 'Unit is 1234',
-        userName: 'jsmith',
+        userName: 'JSmith',
         password: '1234'
     }
 }
@@ -47,7 +47,7 @@ export const loginLincoln = [
     password: `Tenant's Unit Number`,
     example: {
         code: 'Unit Number is 1234',
-        userName: 'smith',
+        userName: 'Smith',
         password: '1234'
     }
 }
