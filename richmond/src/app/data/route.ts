@@ -30,7 +30,7 @@ import { UnitSizerComponent } from '../unit-sizer/unit-sizer.component';
     { path: '', component: HomeComponent },
     { path: 'unit-sizer', component: UnitSizerComponent},
     { path: 'storage-tips', component: StorageTipsComponent },
-    { path: 'reserve-unit', component: ReserveComponent },
+    // { path: 'reserve-unit', component: ReserveComponent },
     { path: 'storageTips', component: StorageTipsComponent },
     { path: 'contact-us', component: ContactComponent },
     {
@@ -38,7 +38,7 @@ import { UnitSizerComponent } from '../unit-sizer/unit-sizer.component';
       component: ViewRatesComponent,
       children: [
         { path: '', component: ViewRatesPageComponent },
-        { path: 'reserve', component: ReserveUnitFormComponent },
+        // { path: 'reserve', component: ReserveUnitFormComponent },
         { path: 'move-in', component: ReserveUnitFormComponent },
         { path: 'confirmation', component: ConfirmationDataComponent },
         { path: 'payReservationCharges', component: PayRentFormComponent },
@@ -77,7 +77,7 @@ export const iFrameRoutes = [
     { path: 'pay-rent', component: PaymentIframePageComponent },
     { path: 'storage-tips', component: StorageTipsComponent },
     { path: 'view-rates', component: ViewRatesIframePageComponent },
-    { path: 'reserve-unit', component: ReserveUnitIframePageComponent },
+    // { path: 'reserve-unit', component: ReserveUnitIframePageComponent },
     { path: 'unit-sizer', component: UnitSizerComponent},
     { path: 'storageTips', component: StorageTipsComponent },
     { path: 'contact-us', component: ContactComponent },
