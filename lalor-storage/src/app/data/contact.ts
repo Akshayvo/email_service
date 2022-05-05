@@ -4,7 +4,7 @@ export const contact = [
         label: 'Address:',
         data: '40 Mott Pl, Trenton, NJ 08611',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
-        redirect: 'https://goo.gl/maps/ScSX1WrUto6JgrcT6'
+        redirect: 'https://goo.gl/maps/WiUbFph1R42pbemp6'
     },
     {
         id: 1,
