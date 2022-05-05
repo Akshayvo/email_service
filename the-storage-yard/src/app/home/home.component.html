@@ -25,7 +25,7 @@
         <div class="feature row">
           <div class="col-md-3 col-3 feature-icon-style" *ngFor="let feature of feature">
             <img [src]="feature?.path" [alt]="feature?.alt" />
-              <h2 class="feature-text">{{feature.label}}</h2>
+              <h3 class="feature-text">{{feature.label}}</h3>
           </div>
         </div>
       </div>
@@ -71,7 +71,7 @@
     <div class="section py-5 m-0">
       <div class="row">
         <div class="col-lg-6 py-3">
-          <img src="{{imageBaseUrl}}/the-storage-yard.{{imagetype}}" width="100%" alt="{{aboutUsAlt}}" class="sectionImage">
+          <img src="{{imageBaseUrl}}/the-storage-yard.{{imagetype}}" width="100%" height='540px'alt="{{aboutUsAlt}}" class="sectionImage">
         </div>
         <div class="col-lg-6 py-3">
           <h1 class="heading pb-4">{{aboutUsHeading}}</h1>
