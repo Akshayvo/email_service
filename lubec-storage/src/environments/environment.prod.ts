@@ -15,4 +15,5 @@ export const environment = {
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   websiteUrl: 'https://lubecselfstorage.com',
   APIKey: `bTFUOG4xTDJbOVs6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north
+    // APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28463 
 };
