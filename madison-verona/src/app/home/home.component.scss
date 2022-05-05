@@ -17,6 +17,9 @@
 .display-contact {
   display: flex;
   flex-wrap: wrap;
+  h3 {
+    font-size: 16px;
+  }
 }
 
 .jumbotron {
@@ -116,8 +119,18 @@
   position: absolute;
   top: 17%;
 
+  b {
+    font-size: 20px;
+  }
+
   .btn-outline-primary {
     margin-right: 10px;
+  }
+}
+
+.about-us{
+  h4 {
+    font-size: 28px;
   }
 }
 

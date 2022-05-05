@@ -14,7 +14,7 @@ export const storageTipsTitle = `Storage Tips  | Madison Verona Self Storage`;
 export const storageTipsContent = `Follow these easy self storage tips to make your stay with Madison Verona Self Storage a breeze! Have questions? Call today!`;
 
 export const unitSizerPageTitle = `Unit Sizer | Madison Verona Self Storage`;
-export const unitSizerPageContent = ``;
+export const unitSizerPageContent = `Are you not sure what size unit you require? Use this guide to help you figure out what fits inside the units offered at Madison Verona Self Storage!`;
 
 export const contactPageTitle = `Contact Us  | Madison Verona Self Storage`;
 export const contactPageContent = `Do you have a question about your account, or our self storage, boat, and recreational vehicle storage? Use our contact form, or call us today!`;

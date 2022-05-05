@@ -10,9 +10,7 @@
             <h2  class="my-4">
               {{jumbotron.h2}}
             </h2>
-            <h5 class="my-4">
-              <b>{{jumbotron.h6}}</b>
-            </h5>
+              <b class="my-4 d-block">{{jumbotron.h6}}</b>
           <p class="text-justify">{{jumbotron.blurb}}</p>
           </div>
           <div class="jumbotorn-button text-center">
@@ -50,7 +48,7 @@
               
               <p>
                 <span *ngFor="let contact of contactDetails" class="display-contact">
-                  <span><h4><b>{{contact.label}}</b></h4></span><span class="contact-links" *ngIf="contact?.label === 'Address:' || contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
+                  <span><h3><b>{{contact.label}}</b></h3></span><span class="contact-links" *ngIf="contact?.label === 'Address:' || contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
                     <h4><a [href]="contact?.redirect" target="{{(contact?.label === 'Address:') ? '_blank' : '_self'}}" rel="noreferrer">&nbsp;{{contact.data}}</a></h4>
                   </span>
                   <ng-template #other_content>&nbsp;<h4>{{contact.data}}</h4></ng-template><br>
@@ -79,14 +77,14 @@
           <!-- <img src="{{imageBaseUrl}}/madison-verona-self-storage-photo.{{imagetype}}" width="100%" alt="{{aboutUsAlt}}" class="sectionImage"> -->
           <app-photos></app-photos>
         </div>
-        <div class="col-lg-6 py-3">
+        <div class="col-lg-6 py-3 about-us">
           <h1 class="heading pb-4">{{aboutUsHeading}}</h1>
           <!-- <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p> -->
           <p>Madison Verona Self Storage is the premier self storage facility serving Madison, Fitchburg, Verona, and the surrounding communities with clean, high-quality self storage units at affordable rates. Our brand new self storage facility offers units in a wide variety of sizes including a number of climate controlled units! Madison Verona Storage also provides outdoor uncovered parking for your camper, recreational vehicle, or trailer. Take a moment to check out our current availability and rates, then rent online or give us a call!
           </p>
-          <h3>Convenience</h3>
+          <h4>Convenience</h4>
           <p>We are conveniently located on Maple Grove Dr off of Cross Country Rd and Nesbitt Rd on the Northeast side of Verona. Our on-site manager is ready and able to assist you with top-notch customer service during business hours, and with our 24-hour on-site kiosk plus online tenant portal give you around the clock account access.</p>
-          <h3>Security</h3>
+          <h4>Security</h4>
           <p>Madison Verona Storage knows you’re looking for more than just conveniences when searching for a self storage unit. We are well-lit, and access is controlled by a pin-code activated gate. Security cameras are also strategically placed around the facility to maximize coverage, and our staff perform routine lot checks to keep an eye on the facility.</p>
         </div>
       </div>
