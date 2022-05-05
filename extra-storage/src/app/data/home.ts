@@ -4,7 +4,7 @@ export const featuresList = [
         td2: 'Online Bill Pay',
     },
     {
-        td1: 'Security Cameras',
+        td1: 'Fully-Fenced Facility',
         td2: 'Well-Lit Facility',
     },
     {
@@ -21,7 +21,7 @@ export const featuresList = [
     },
     {
         td1: 'Retail Store On-Premises',
-        td2: 'Fully-Fenced Facility',
+       
     }
 ];
 
