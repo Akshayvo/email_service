@@ -59,6 +59,7 @@
 }
 
 .contact-links {
+  margin-bottom:5px;
   a {
     color: black;
   }
@@ -84,8 +85,8 @@
   text-align: left;
   color: $white;
 
-  h2 {
-    font-size: 2.3rem;
+  h1 {
+    font-size: 28px;
     font-weight: 600;
   }
 }
@@ -129,8 +130,11 @@
 }
 
 .about-us{
-  h4 {
-    font-size: 28px;
+  .heading{
+    font-size: 40px;
+  }
+  h5 {
+    font-size: 28px; 
   }
 }
 
@@ -227,6 +231,8 @@
       font-size: 1.25rem;
       min-width: 200px;
     }
+
+    
   }
 
   .jumbotorn-button {
@@ -251,7 +257,7 @@
     }
 
     .disp {
-      h2 {
+      h1 {
         font-size: 2.1rem;
       }
 
@@ -277,7 +283,7 @@
     top: 15%;
 
     .disp {
-      h2 {
+      h1 {
         font-size: 2rem;
       }
     }
@@ -291,7 +297,7 @@
 
   .jumbotorn-skew-text {
     .disp {
-      h2 {
+      h1 {
         font-size: 2rem;
       }
     }
@@ -387,7 +393,7 @@
     }
 
     .disp {
-      h2 {
+      h1 {
         font-size: 1.8rem;
       }
 
@@ -499,7 +505,7 @@
         font-size: 0.8rem;
       }
 
-      h2 {
+      h1 {
         font-size: 1.6rem;
       }
     }

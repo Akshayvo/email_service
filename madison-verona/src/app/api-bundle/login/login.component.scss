@@ -16,6 +16,10 @@
 }
 
 .contact-links {
+  div{
+    margin-bottom: 5px;
+  }
+  margin-bottom: 5px;
   a {
     color: black;
   }
@@ -28,6 +32,7 @@
 }
 
 .forgot-link {
+  margin-bottom: 5px;
   a {
     color: $primary;
     text-decoration: underline;
