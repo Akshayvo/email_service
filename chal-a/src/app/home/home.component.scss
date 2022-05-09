@@ -20,6 +20,13 @@
   background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Chal-A/Jpg/chal-a-storage-169.jpg");
 }
 
+.jumbotron-stamp{
+  display: inline;
+  position: relative;
+  top: 300px;
+  right: 195px;
+}
+
 .display-contact {
   display: flex;
   flex-wrap: wrap;
@@ -122,7 +129,6 @@
   }
 }
 
-
 @media only screen and (min-width: 1200px) and (max-height: 750px) and (min-height: 640px) {
   .disp {
     h2 {
@@ -139,6 +145,7 @@
       font-size: 1rem;
     }
   }
+
 }
 
 @media only screen and (min-width: 1200px) and (max-height: 639px) and (min-height: 480px) {
@@ -608,6 +615,10 @@
     display: none;
   }
 
+  .jumbotron-stamp {
+    display: none;
+  }
+
   .jumbotorn-skew-style {
     transform: skew(0deg);
     width: 100%;
@@ -637,3 +648,42 @@
     }
   }
 }
+
+@media  screen and (max-width: 2560px) {
+  .jumbotron-stamp{
+    top: 200px;
+  }
+}
+
+@media  screen and (min-width: 1880px) and (max-width: 2540px) {
+  .jumbotron-stamp{
+    top: 300px;
+  }
+}
+
+@media  screen and (min-width: 1440px) and (max-width: 1875px) {
+  .jumbotron-stamp{
+    top: 200px;
+  }
+}
+
+@media  screen and (min-width: 1024px) and (max-width: 1435px) {
+  .jumbotron-stamp{
+    top: 200px;
+    right: 100px;
+  }
+}
+
+@media  screen and (min-width: 768px) and (max-width: 1020px) {
+  .jumbotron-stamp{
+    top: -400px;
+    right: -500px;
+  }
+
+  img {
+    height: 240;
+    width: 240;
+  }
+
+}
+

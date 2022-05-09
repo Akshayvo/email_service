@@ -1,16 +1,16 @@
 <div class="">
   <div class="jumbotron-container">
     <div class="jumbotron-top">
-    <div class="jumbotron px-0 m-0" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
+      <div class="jumbotron px-0 m-0" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
       <div class=" jumbotorn-skew-style" [ngClass]="template === 'darkTheme' ? 'bg-translucent-dark' : 'bg-translucent-light'">
       </div>
-      <div class="container">
+      <div class="container jumbotron-top-elements">
         <div class="jumbotorn-skew-text">
           <div class="disp" *ngFor="let jumbotron of jumbotron">
             <h2  class="my-4">
               {{jumbotron.h2}}
             </h2>
-          <p class="text-justify">{{jumbotron.blurb}}</p>
+            <p class="text-justify">{{jumbotron.blurb}}</p>
           </div>
           <div class="jumbotorn-button">
             <a class="btn btn-lg btn-outline-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>
@@ -18,8 +18,11 @@
           </div>
           </div>
         </div>
+        <div class="jumbotron-stamp">
+          <img [src]="imagetype === 'jpg' ? 'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Chal-A/Jpg/helping-hands.jpg' : 'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Chal-A/Webp/helping-hands.webp'">
+        </div>
       </div>
-      </div>
+    </div>
     <div class="jumbotron-bottom">
       <div class="container">
         <div class="feature row">

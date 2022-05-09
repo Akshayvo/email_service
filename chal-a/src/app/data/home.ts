@@ -45,7 +45,8 @@ export const aboutUs = [
         p: `We understand that the need for self storage tends to come at stressful times in life. That’s why we go 
         out of our way to make your experience at Chal-A Apartments and Climate Controlled Storage a simple and easy one. 
         Start your next storage project by checking out our affordable rates and current availability, then complete your 
-        online application in minutes with our tenant portal. `,
+        online application in minutes with our tenant portal. Need help moving? Our customers can give us a call and we'll 
+        dispatch our Helping Hands Mover to act as a second pair of hands loading and unloading your vehicle into your unit!`
     },
     {
         p: `The team Chal-A Apartments and Climate Controlled Storage knows that when you pick out a self storage facility, 
