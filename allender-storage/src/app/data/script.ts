@@ -65,7 +65,7 @@ export const script = {               // Please fill this script according to fa
       "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Allender_Storage/jpg/self-storage-unit-1x1.jpg",
      ],
      telephone: contact[contactIndex].data,
-     map: "https://g.page/allender-storage?share",
+     map: "https://www.google.com/maps?ll=39.400295,-76.405361&z=16&t=m&hl=en&gl=US&mapclient=embed&cid=3422009235041573512",
      description: "Allender Storage is a locally owned and operated self storage facility located in White Marsh, Maryland. We offer a number of unit sizes that serve both residential and commercial storage users." || homePageContent,
      streetAddress: "5808 Allender Rd",
      state: "Maryland",

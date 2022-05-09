@@ -4,6 +4,9 @@
 .vertical-line {
   border-left: 1px solid black;
   padding-left: 50px;
+  h2{
+    font-size: 28px;
+  }
 }
 
 .alert-text {
@@ -19,6 +22,9 @@
   a {
     color: black;
   }
+  div{
+    margin-bottom: 5px;
+  }
 }
 
 .modal-open {
@@ -33,6 +39,7 @@
     text-decoration: underline;
     cursor: pointer;
   }
+  margin-bottom: 5px;
 }
 
 .loader {

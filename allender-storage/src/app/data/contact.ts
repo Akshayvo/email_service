@@ -4,7 +4,7 @@ export const contact = [
         label: 'Address:',
         data: '5808 Allender Rd, White Marsh, MD 21162',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
-        redirect: 'http://search.google.com/local/writereview?placeid=ChIJJTzgxrPjx4kRiFrCyERrfS8'
+        redirect: 'https://www.google.com/maps?ll=39.400295,-76.405361&z=16&t=m&hl=en&gl=US&mapclient=embed&cid=3422009235041573512'
     },
     {
         id: 1,

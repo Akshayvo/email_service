@@ -4,11 +4,11 @@ export const homePageContent = `Allender Storage offers convenient 24/7 access t
 export const viewRatesPageTitle = `View Rates  | Allender Storage`;
 export const viewRatesPageContent = `Review our current rates and availability, then reserve your unit or rent online in minutes with our easy online form!`;
 
-export const reservePageTitle = ``;
-export const reservePageContent = ``;
+export const reservePageTitle = `Pay Rent | Allender Storage`;
+export const reservePageContent = `Take a moment to review our easy login instructions, or call our friendly management team and start paying your rent online 24 hours a day!`;
 
-export const payRentPageTitle = `Pay Rent | Allender Storage`;
-export const payRentPageContent = `Take a moment to review our easy login instructions, or call our friendly management team and start paying your rent online 24 hours a day!`;
+export const payRentPageTitle = `Reserve a Unit| Allender Storage`;
+export const payRentPageContent = `Simply fill out our easy reservation form and one of our friendly self storage associates will be ready and waiting for your arrival!`;
 
 export const storageTipsTitle = `Storage Tips | Allender Storage`;
 export const storageTipsContent = `Follow these easy self storage tips to make your stay with Allender Storage a breeze! Have questions? Call , today!`;
