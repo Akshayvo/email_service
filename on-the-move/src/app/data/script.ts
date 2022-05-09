@@ -64,7 +64,7 @@ export const script = {               // Please fill this script according to fa
       "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/inside-self-storage-unit.jpg",
      ],
      telephone: contact[contactIndex].data,
-     map: "https://goo.gl/maps/N98qNzndd3P4xnV36",
+     map: "https://www.google.com/maps/place/200+Piedmont+Rd,+Charleston,+WV+25301,+USA/@38.3566505,-81.630598,17z/data=!3m1!4b1!4m5!3m4!1s0x8848d33455808083:0x2301467b7a42de82!8m2!3d38.3566505!4d-81.6284093",
      description: "Our self storage facility has served the Charleston area with quality temperature controlled self storage units since 2000, and we are eager to continue serving our loyal customers with the same emphasis on friendly customer service and affordable self storage options you’ve come to know and love." || homePageContent,
      streetAddress: "200 Piedmont Road",
      state: "West Virginia",
