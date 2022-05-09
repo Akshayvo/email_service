@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy, ViewChild } from "@angular/core";
 import { Title, Meta } from "@angular/platform-browser";
-import { dataViewRates, viewRatesAltText } from "../../data/view-rates";
+import { dataViewRates, viewRatesAltText,viewRatesDataGrid1,viewRatesDataGrid2 } from "../../data/view-rates";
 import { MetaService } from "../../services/link.service";
 import { FetchDataService } from "../services/fetch-data.service";
 import { UnitTypes, LstUnitTypes } from "../models/unittypes";
@@ -19,6 +19,8 @@ import { script } from "../../data/script";
 })
 export class ViewRatesComponent implements OnInit, OnDestroy {
   viewRates: any;
+  viewRatesDataGrid1:any;
+  viewRatesDataGrid2:any;
   showTable = false;
   unitTypes: UnitTypes;
   LstUnitTypes: LstUnitTypes[];
@@ -60,6 +62,7 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
     window.scrollTo(0, 0);
     this.fetchViewRates();
     this.fetchViewRatesHeading();
+
   }
 
   public navigate(location: any) {
@@ -77,6 +80,9 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
   public fetchViewRates() {
     this.viewRates = dataViewRates;
     this.viewRatesAltText = viewRatesAltText;
+    this.viewRatesDataGrid1 = viewRatesDataGrid1;
+    this.viewRatesDataGrid2 = viewRatesDataGrid2;
+
   }
 
   public fetchViewRatesHeading() {

@@ -1,6 +1,6 @@
 <div class="">
   <div class="jumbotron-container">
-    <div class="jumbotron-top">
+    <!-- <div class="jumbotron-top">
     <div class="jumbotron px-0 m-0" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
       <div class=" jumbotorn-skew-style" [ngClass]="template === 'darkTheme' ? 'bg-translucent-dark' : 'bg-translucent-light'">
       </div>
@@ -19,8 +19,42 @@
           </div>
         </div>
       </div>
+      </div> -->
+      <div id="carouselJumbo" class="carousel slide  jumbotron-top-style" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselJumbo" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselJumbo" data-slide-to="1"></li>
+          <!-- <li data-target="#carouselJumbo" data-slide-to="2"></li>
+          <li data-target="#carouselJumbo" data-slide-to="3"></li> -->
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="jumbotron-top jumbotron-top-style" title="Aerial photo of outdoor self storage units and parking spaces">
+              <div class="carousel-caption">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="jumbotron-top1 jumbotron-top-style" title="Aerial photograph of an outdoor self storage facility">
+              <div class="carousel-caption">
+              </div>
+            </div>
+          </div>
+          <!-- <div class="carousel-item">
+            <div class="jumbotron-top2 jumbotron-top-style" title="Aerial photograph of self storage units">
+              <div class="carousel-caption">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="jumbotron-top3 jumbotron-top-style" title="Aerial self storage photograph displaying outdoor units and RV parking spaces">
+              <div class="carousel-caption">
+              </div>
+            </div>
+          </div> -->
+        </div>
       </div>
-    <div class="jumbotron-bottom">
+      <div class="jumbotron-bottom">
       <div class="container">
         <div class="feature row">
           <div class="col-md-3 col-3 feature-icon-style" *ngFor="let feature of feature">
