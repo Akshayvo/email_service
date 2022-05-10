@@ -10,9 +10,10 @@
 
 .viewRates {
   background-color: $white;
-  h3 {
+  h2 {
     color: $white;
     background-color: $primary;
+    font-size: 28px;
   }
 
   .unitDetail:nth-child(odd) {

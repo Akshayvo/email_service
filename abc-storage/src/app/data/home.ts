@@ -31,10 +31,10 @@ export const aboutUsHeading = `Affordable Self Storage and Friendly Service in K
 
 export const aboutUs = [
     {
-        p: `ABC Storage is a self-storage facility centrally located in Kingston, Ontario, Canada, one minute north of Highway 401 and only 10 minutes from downtown Kingston. There are many available units, ranging in size from 5' x 5' to 10' x 20'. All self-storage units are guaranteed to be dry, and dry.`,
+        p: `ABC Storage is a self-storage facility centrally located in Kingston, Ontario, Canada, one minute north of Highway 401 and only 10 minutes from downtown Kingston. There are many available units, ranging in size from 5' x 5' to 10' x 20'. All self-storage units are guaranteed to be clean, dry and secure.`,
     },
     {
-        p: `Our facility is well-lit and completely fenced to ensure a sense of security at all times. Outdoor storage is also available. Our gates are open 8 am-8pm 7 days a week. The office is open 8am-3pm Monday-Friday. ABC Storage is a family-run business with an On-Site Manager to meet your needs.`,
+        p: `Our facility is well-lit and completely fenced to ensure a sense of security at all times.Our gates are open 8 am-8pm 7 days a week. The office is open 8am-3pm Monday-Friday. ABC Storage is a family-run business with an On-Site Manager to meet your needs.`,
     }
    
     

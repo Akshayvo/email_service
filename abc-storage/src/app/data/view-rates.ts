@@ -2,7 +2,7 @@ import { objSIMSetting } from './configuration';
 
 export const dataViewRates = [
     {
-      p: `ABC Storage is a locally owned Kingston Ontario storage unit and vehicle parking company. we offer a wide range of storage solutions to fit the needs of any individual, family, or business.`,
+      p: `Abc Storage is locally owned and operated.  We offer a wide range of storage solutions to fit the need of any individual, family or business.`,
     },
     {
       p: `There are a variety of reasons that someone might need to store their belongings with us buying or selling a home, changing jobs, remodeling, combining households, going away to school or to a military deployment.`
