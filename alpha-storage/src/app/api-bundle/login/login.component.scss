@@ -16,6 +16,7 @@
   a {
     color: black;
     line-height: 1.8;
+    margin-bottom: 8px;
   }
 }
 
@@ -35,6 +36,7 @@ h2 {
     text-decoration: underline;
     cursor: pointer;
     line-height: 1.8;
+    margin-bottom: 5px;
   }
 }
 
@@ -50,6 +52,10 @@ h2 {
   top: 25%;
   left: 15%;
   z-index: 1;
+}
+
+.extra-margin {
+  margin-bottom: 5px;
 }
 
 @keyframes spin {
