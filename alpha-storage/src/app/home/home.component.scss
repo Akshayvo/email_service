@@ -4,19 +4,18 @@
   h4 {
     font-size: 1rem;
   }
+  h3 {
+    font-size: 1rem;
+  }
 }
 
 
 .jumbotron-background-webp {
-  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Alpha_Storage/webp/alpha-storage-building-169.webp");
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Alpha_Storage/webp/alpha-storage-jumbotron.webp");
 }
 
 .jumbotron-background-jpg {
-  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Alpha_Storage/jpg/alpha-storage-building-169.jpg");
-}
-
-.display-contact {
-  display: flex;
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Alpha_Storage/jpg/alpha-storage-jumbotron.jpg");
 }
 
 .jumbotron {
@@ -59,6 +58,7 @@
   a {
     color: black;
   }
+
 }
 
 .content-align {

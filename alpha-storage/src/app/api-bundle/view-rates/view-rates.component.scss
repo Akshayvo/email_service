@@ -72,11 +72,16 @@ table {
 
 .view-rate-heading {
   display: none;
+  font-size: 1.75rem;
 }
 
 .contentHolder {
   h1 {
     margin-block-end: 0;
+  }
+  h2 {
+    margin-block-end: 0;
+    font-size: 40px;
   }
 }
 
