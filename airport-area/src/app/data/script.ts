@@ -20,7 +20,7 @@ featuresList.forEach(
 socialLinks.forEach(links => {
   links.path ? sameAs.push(links.path) : sameAs.push(' ')
 }
-);
+);  
   
 
 export const script = {               // Please fill this script according to facility's information
@@ -41,9 +41,9 @@ export const script = {               // Please fill this script according to fa
      id: environment.websiteUrl || "",
      paymentAccepted:  "Cash, Check, Credit Card, Debit Card",
      currenciesAccepted: "USD",
-     ratingValue: "",
+     ratingValue: "4.5",
      bestRating: "5",
-     reviewCount: "",
+     reviewCount: "5",
      latitude: 42.613914,
      longitude:-89.0309383,
      openingHours: [],
