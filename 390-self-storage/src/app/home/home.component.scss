@@ -31,6 +31,9 @@
 .display-contact {
   display: flex;
   flex-wrap: wrap;
+  h3{
+    font-size: 16px;
+  }
 }
 
 .jumbotron {
@@ -68,6 +71,7 @@
   a {
     color: black;
   }
+  margin-bottom: 5px;
 }
 
 .content-align {
@@ -152,6 +156,12 @@
   .btn {
     min-width: 250px;
     font-size: 1.2rem;
+  }
+}
+
+.aboutUs{
+  h2{
+    font-size: 28px;
   }
 }
 
@@ -702,7 +712,7 @@
     }
   }
   .getStarted{
-    h1{
+    h2{
       font-size: 30px;
     }
     p{

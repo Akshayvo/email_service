@@ -49,7 +49,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 py-3 map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11645.999576071761!2d-77.6635809!3d43.136031!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbf49b7cc3b35925b!2s390%20Self%20Storage!5e0!3m2!1sen!2sus!4v1588195227672!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11645.999576071761!2d-77.6635809!3d43.136031!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbf49b7cc3b35925b!2s390%20Self%20Storage!5e0!3m2!1sen!2sus!4v1588195227672!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen title="homepage map"></iframe>
         </div>
         
         <div class="col-lg-6 py-3">
@@ -57,7 +57,7 @@
               
             <p>
               <span *ngFor="let contact of contactDetails" class="display-contact">
-                <span><h4><b>{{contact.label}}</b></h4></span><span class="contact-links" *ngIf="contact?.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
+                <span><h3><b>{{contact.label}}</b></h3></span><span class="contact-links" *ngIf="contact?.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
                   <h4><a [href]="contact?.redirect" target="{{(contact?.label === 'Address: ') ? '_blank' : '_self'}}">&nbsp;{{contact.data}}</a></h4>
                 </span>
                 <ng-template #other_content>&nbsp;<h4>{{contact.data}}</h4></ng-template><br>
@@ -89,7 +89,7 @@
 
 
   <!--About Us Section-->
-  <div class="container py-5">
+  <div class="container aboutUs py-5">
     <div class="row">
       <div class="col-lg-6 py-3">
         <app-photos></app-photos>
@@ -103,18 +103,18 @@
         <div  *ngFor="let data of aboutUs">
           <h1 class="pb-1">{{data.mainHeading}}</h1>
           <p [innerHTML]="data.mainParagraph"></p>
-          <h3 class="py-1"><b>{{data.subHeading2.heading}}</b></h3>
+          <h2 class="py-1"><b>{{data.subHeading2.heading}}</b></h2>
           <p>{{data.subHeading2.p}}</p>
-          <h3 class="py-1"><b>{{data.subHeading4.heading}}</b></h3>
+          <h2 class="py-1"><b>{{data.subHeading4.heading}}</b></h2>
           <p>{{data.subHeading4.p1}}</p>
           <ul>
             <li [innerHTML]="data.subHeading4.l1"></li>
             <li [innerHTML]="data.subHeading4.l2"></li>
             <li [innerHTML]="data.subHeading4.l3"></li>
           </ul>
-          <h3 class="py-1"><b>{{data.subHeading3.heading}}</b></h3>
+          <h2 class="py-1"><b>{{data.subHeading3.heading}}</b></h2>
           <p>{{data.subHeading3.p}}</p>
-          <h3 class="pb-1"><b>{{data.subHeading1.heading}}</b></h3>
+          <h2 class="pb-1"><b>{{data.subHeading1.heading}}</b></h2>
           <p >{{data.subHeading1.p1}}</p>
           <p [innerHTML]="data.subHeading1.p2"></p>
           <p [innerHTML]="data.subHeading1.p3"></p>
@@ -142,7 +142,7 @@
        <div class="py-5 m-0">
          <div class="row">
            <div class="col-md-12">
-             <h1 class="heading pb-4">Getting Started</h1>
+             <h2 class="heading pb-4">Getting Started</h2>
              <p class="pb-4">{{gettingStarted}}</p>
              <!-- <a class="btn btn-lg btn-primary" (click)="navigate('/reserve-unit')" role="button">Reserve Your Unit!</a> -->
            </div>
