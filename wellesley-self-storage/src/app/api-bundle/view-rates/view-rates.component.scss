@@ -11,11 +11,14 @@
   padding: 64px;
 }
 
+h2{
+  font-size: 24px;
+}
 table {
   width: -webkit-fill-available;
 
   thead {
-    background: $secondary;
+    background: $primary;
     th {
       color: $white;
       font-size: 1rem;

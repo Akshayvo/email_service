@@ -4,20 +4,20 @@
     <div class="row bg-light background-padding">
       <div class=" col-lg-12 col-md-12 coming p-3" >
         <!-- <router-outlet></router-outlet> -->
-        <h4>Season Special Notes</h4>
-        <p>6 Months from start date.Must be paid in advance</p>
+        <h2><b>Season Special Notes</b></h2>
+        <p>6 Months from start date. Must be paid in advance</p>
         
         <table class="table-bordered table-striped">
           <tHead >
               <tr >
                 <th colspan="2" class="px-4 py-1" >Indoor</th>
                 <th colspan="2" class="px-4 py-1" >Per Week</th>
-                <th colspan="2" class="px-4 py-1" >Per 4 Week</th>
+                <th colspan="2" class="px-4 py-1" >Per 4 Weeks</th>
               </tr>
             </tHead>
         <tbody>
           <tr *ngFor="let viewRatesDataGrid1 of viewRatesDataGrid1">
-            <td  colspan="2" class="px-4 py-1"   >
+            <td  colspan="2" class="px-4 py-1 "   >
              {{viewRatesDataGrid1.td1}}
             </td>
             <td colspan="2" class="px-4 py-1" >
@@ -31,18 +31,18 @@
       </table>
 
 
-      <h4 class="mt-2">Annual Special Notes:</h4>
-      <p>12 months from start date.Must be paid in advance</p>
+      <h2 class="mt-2"><b>Annual Special Notes:</b></h2>
+      <p>12 months from start date. Must be paid in advance</p>
 
 
       <table class="table-bordered table-striped">
         <tHead >
             <tr >
-              <th colspan="2" class="px-3 py-1" >Indoor</th>
-              <th colspan="2" class="px-3 py-1" ></th>
-              <th colspan="2" class="px-3 py-1" ></th>
+              <th colspan="2" class="px-3 py-1" >Outdoor Parking</th>
               <th colspan="2" class="px-3 py-1" >Per Week</th>
-              <th colspan="2" class="px-md-3 px-sm-1 py-1" >Per 4 Week</th>
+              <th colspan="2" class="px-3 py-1" >Per 4 Weeks</th>
+              <th colspan="2" class="px-3 py-1" >Seasonal Special</th>
+              <th colspan="2" class="px-md-3 px-sm-1 py-1" >Annual Special</th>
             </tr>
           </tHead>
       <tbody>
