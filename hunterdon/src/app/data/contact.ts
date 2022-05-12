@@ -37,7 +37,7 @@ export const hours = [
     },
     {
         label: 'Access Hours: ',
-        data: '7 Days a Week 7:00AM to 8:00PM'
+        data: '7 Days a Week 6:00AM to 9:00PM'
     },
 ];
 
@@ -85,7 +85,7 @@ export const hoursLocation1 = [
     },
     {
         label: 'Access Hours: ',
-        data: '7 Days a Week 7:00AM to 8:00PM'
+        data: '7 Days a Week 6:00AM to 9:00PM'
     },
 ];
 
@@ -133,7 +133,7 @@ export const hoursLocation2 = [
     },
     {
         label: 'Access Hours:',
-        data: '7 Days a Week 7:00AM to 8:00PM'
+        data: '7 Days a Week 6:00AM to 9:00PM'
     },
 ];
 
@@ -181,7 +181,7 @@ export const hoursLocation3 = [
     },
     {
         label: 'Access Hours:',
-        data: '7 Days a Week 7:00AM to 8:00PM'
+        data: '7 Days a Week 6:00AM to 9:00PM'
     },
 ];
 
