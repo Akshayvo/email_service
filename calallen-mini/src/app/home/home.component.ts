@@ -5,7 +5,14 @@ import { contact, hours } from '../data/contact';
 import { featuresList, aboutUs, gettingStarted, feature, jumbotron} from '../data/home';
 import { MetaService } from '../services/link.service';
 import { DOCUMENT } from '@angular/common';
+import { homePageTitle, homePageContent } from "../data/title";
 import { UaParserService } from '../services/ua-parser.service';
+import {
+  homePageScript,
+  ogHomePage,
+  script,
+  twitterHomePage,
+} from "../data/script";
 
 
 @Component({
@@ -21,11 +28,16 @@ export class HomeComponent implements OnInit {
   featuresHead: any;
   featuresList: any;
   aboutUs: any;
+  script: any;
+  homePageContent: string;
+  homePageTitle: string;
   serviceOffered: any;
   gettingStarted: any;
   feature: any;
   year = [];
   jumbotron: any;
+  ogHomePage: any;
+twitterHomePage: any
   authData: string;
   currentActive: any = 'HOME';
   imageBaseUrl: any;
@@ -43,7 +55,27 @@ export class HomeComponent implements OnInit {
     private metaService: MetaService,
     private uaParserService: UaParserService,
     @Inject(DOCUMENT) private _document: any,
-  ) {
+  )
+   {
+    this.fetchScript();
+    this.loadScript();
+    this.fetchMetaData();
+    this.fetchOgHomePage();
+    this.fetchTwitterHomePage();
+    this.ogHomePage.forEach((element) => {
+      this.meta.updateTag({
+        property: element.property,
+        content: element.content,
+      });
+    });
+
+    this.twitterHomePage.forEach((element) => {
+      this.meta.updateTag({
+        name: element.name,
+        content: element.content,
+      });
+    });
+
     this.meta.addTag({
       name: 'description',
       content: `We have a large variety of clean, affordable, and well-maintained self storage
@@ -66,6 +98,7 @@ export class HomeComponent implements OnInit {
     this.fetchFeatures();
     this.fetchStaticContent();
     this.fetchFeature();
+    this.fetchScript();
     this.fetchJumbotron();
     window.scrollTo(0, 0);
   }
@@ -98,4 +131,31 @@ export class HomeComponent implements OnInit {
     return `${this.imageBaseUrl}/${imageName}.${this.imagetype}`;
   }
 
+  public loadScript() {
+    const node = document.createElement("script"); // creates the script tag
+    node.type = "application/ld+json"; // set the script type
+    node.async = false; // makes script run asynchronously
+    // node.charset = 'utf-8';
+    node.innerHTML = JSON.stringify(this.script);
+    // append to head of document
+    // document.getElementsByTagName('head')[0].appendChild(node);
+    document.head.appendChild(node);
+  }
+
+  public fetchScript() {
+    this.script = homePageScript;
+  }
+
+  public fetchOgHomePage() {
+    this.ogHomePage = ogHomePage;
+  }
+
+  public fetchTwitterHomePage() {
+    this.twitterHomePage = twitterHomePage;
+  }
+
+  public fetchMetaData() {
+    this.homePageTitle = homePageTitle;
+    this.homePageContent = homePageContent;
+  }
 }

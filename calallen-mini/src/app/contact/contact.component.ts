@@ -5,6 +5,12 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { contact, hours } from '../data/contact';
 import { EmailService } from '../services/email.service';
 import { MetaService } from '../services/link.service';
+import { contactPageTitle, contactPageContent } from "../data/title";
+import {
+  contactPageScript,
+  ogContactPage,
+  twitterContactPage,
+} from "../data/script";
 
 @Component({
   selector: 'app-contact',
@@ -27,6 +33,12 @@ export class ContactComponent implements OnInit {
   mailSent = false;
   head: any;
   phone: any;
+  contactPageTitle: string;
+  contactPageContent: string;
+  contactHeading: string;
+  og: any;
+  twitter: any;
+  script: any;
 
   constructor(
     private router: Router,
@@ -37,6 +49,25 @@ export class ContactComponent implements OnInit {
     private metaService: MetaService,
 
   ) {
+    this.fetchScript();
+    this.loadScript();
+    this.fetchOg();
+    this.fetchTwitter();
+    this.og.forEach((element) => {
+      this.meta.updateTag({
+        property: element.property,
+        content: element.content,
+      });
+    });
+
+    this.twitter.forEach((element) => {
+      this.meta.updateTag({
+        name: element.name,
+        content: element.content,
+      });
+    });
+
+
     this.meta.addTag({
       name: 'description',
       content: `If you have questions about your account or the services we offer,
@@ -70,6 +101,33 @@ export class ContactComponent implements OnInit {
 
   public fetchHours() {
     this.hours = hours;
+  }
+
+  public loadScript() {
+    const node = document.createElement("script"); // creates the script tag
+    node.type = "application/ld+json"; // set the script type
+    node.async = false; // makes script run asynchronously
+    // node.charset = 'utf-8';
+    node.innerHTML = JSON.stringify(this.script);
+    // append to head of document
+    document.getElementsByTagName("head")[0].appendChild(node);
+  }
+
+  // public fetchMetaData() {
+  //   this.contactPageTitle = contactPageTitle;
+  //   this.contactPageContent = contactPageContent;
+  // }
+
+  public fetchOg() {
+    this.og = ogContactPage;
+  }
+
+  public fetchScript() {
+    this.script = contactPageScript;
+  }
+
+  public fetchTwitter() {
+    this.twitter = twitterContactPage;
   }
 
 
