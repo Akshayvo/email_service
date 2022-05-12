@@ -17,9 +17,9 @@
                 </div>
                 <div class="row">
                     <div class="form-group col-lg-6 col-12">
-                        <label>User Name</label> &nbsp;
+                        <label for="name">User Name</label> &nbsp;
                         <input type="text" formControlName="strUserName" class="form-control"
-                            [ngClass]="{ 'is-invalid': submitted && f.strUserName.errors }" />
+                            [ngClass]="{ 'is-invalid': submitted && f.strUserName.errors }" id="name"/>
                         <div *ngIf="submitted && f.strUserName.errors" class="invalid-feedback">
                             <small class="form-text text-muted" *ngIf="f.strUserName.errors.required">Please fill out
                                 this field</small>
@@ -28,9 +28,9 @@
                 </div>
                 <div class="row">
                     <div class="form-group col-lg-6 col-12">
-                        <label>Password</label> &nbsp;
+                        <label for="password">Password</label> &nbsp;
                         <input type="password" formControlName="strPassword" class="form-control"
-                            [ngClass]="{ 'is-invalid': submitted && f.strPassword.errors }" />
+                            [ngClass]="{ 'is-invalid': submitted && f.strPassword.errors }" id="password"/>
                         <div *ngIf="submitted && f.strPassword.errors" class="invalid-feedback">
                             <small class="form-text text-muted" *ngIf="f.strPassword.errors.required">Please fill out
                                 this field</small>
@@ -71,13 +71,12 @@
             <p>John Smith's {{loginDetail.example.code}}</p>
             <p>John's Username: {{loginDetail.example.userName}}<br>
                 John's Password: {{loginDetail.example.password}}</p>
-            <p><strong>Have questions about your account?</strong><br>
+            <p><strong>Have questions about your account?</strong>
                 <span *ngFor="let contact of contact" class="contact-links" [class.display-none]="contact?.id == 0">
                     <a *ngIf="contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content"
                         [href]="contact?.redirect">
                         {{contact.data}}
                     </a>
-                    <br>
                 </span>
             </p>
         </div>
