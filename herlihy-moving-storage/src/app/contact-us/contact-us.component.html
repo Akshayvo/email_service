@@ -106,14 +106,14 @@
                     <iframe src="" width="100%" height="220" frameborder="0" title="Facility Google Map" allowfullscreen></iframe>
                   </span> 
                 </div>
-                <h5 class="pt-3"> {{heading}} </h5>
+                <h2 class="pt-3"> {{heading}} </h2>
                 <p>
           <span *ngFor="let contact of contactDetails" class="display-contact">
-            <span><h6><b>{{contact.label}}</b></h6></span>
+            <span><b>{{contact.label}}</b></span>
             <span class="contact-links" *ngIf="contact?.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Business Hours: ' || contact?.label === 'Phone: ' else other_content">
-                <h6><a [href]="contact?.redirect" target="{{(contact?.label === 'Address:') ? '_blank' : '_self'}}">&nbsp;{{contact.data}}</a></h6>
+                <b><a [href]="contact?.redirect" target="{{(contact?.label === 'Address:') ? '_blank' : '_self'}}">&nbsp;{{contact.data}}</a></b>
             </span>
-            <ng-template #other_content>&nbsp;<h6>{{contact.data}}</h6></ng-template><br>
+            <ng-template #other_content>&nbsp;<b>{{contact.data}}</b></ng-template><br>
           </span>
         </p>
                 <div class="py-2">

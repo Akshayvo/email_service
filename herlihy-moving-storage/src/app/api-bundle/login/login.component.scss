@@ -43,6 +43,20 @@
   left: 15%;
   z-index: 1;
 }
+h2{
+  font-size: 28px;
+}
+.contact-links{
+  div{
+  
+    margin-bottom: 5px;
+  }
+  
+}
+
+.forgot-link{
+  margin-bottom: 5px;
+}
 
 @keyframes spin {
   0% { transform: rotate(0deg); }

@@ -5,12 +5,11 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { TenantInfo } from '../models/tenant';
 import { DataSharingService } from '../services/data-sharing.service';
-import { contactsLocation1, contactsLocation2, contactsLocation3, contactsLocation4, contactsLocation5, contactsLocation6, } from '../../data/contact';
+import { contactsLocation1, contactsLocation2, } from '../../data/contact';
 import { loginDetail1,loginDetail2 } from '../../data/pay-rent';
 import { location1PayrentPageTitle, location2PayrentPageTitle } from '../../data/title';
-import { ogPayRentPageLocation1, ogPayRentPageLocation2, ogPayRentPageLocation3, ogPayRentPageLocation4, ogPayRentPageLocation5,
-   twitterPayRentPageLocation1, twitterPayRentPageLocation2, twitterPayRentPageLocation3, twitterPayRentPageLocation4,ogPayRentPageLocation6,
-   twitterPayRentPageLocation5, twitterPayRentPageLocation6 } from '../../data/script';
+import { ogPayRentPageLocation1, ogPayRentPageLocation2,
+   twitterPayRentPageLocation1, twitterPayRentPageLocation2,   } from '../../data/script';
 import { Title, Meta } from '@angular/platform-browser';
 
 
@@ -163,31 +162,8 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc2);
       this.fetchLoginDetail2();
-    } else  if (this.router.url.includes('')) {
-      this.id = 3;
-      this.name = '';
-      this.contact = contactsLocation3;
-      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
-      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc3);
-    } else  if (this.router.url.includes('')) {
-      this.id = 4;
-      this.name = '';
-      this.contact = contactsLocation4;
-      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc4;
-      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc4);
-    } else  if (this.router.url.includes('')) {
-      this.id = 5;
-      this.name = '';
-      this.contact = contactsLocation5;
-      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc5;
-      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc5);
-    } else  if (this.router.url.includes('')) {
-      this.id = 6;
-      this.name = '';
-      this.contact = contactsLocation6;
-      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc6;
-      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc6);
-    }
+    } 
+
   }
 
   public navigate (location: any) {
@@ -203,15 +179,9 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.og = ogPayRentPageLocation1;
     } else  if (this.router.url.includes('grove-city')) {
       this.og = ogPayRentPageLocation2;
-    } else if (this.router.url.includes('')) {
-      this.og = ogPayRentPageLocation3;
-    } else if (this.router.url.includes('')) {
-      this.og = ogPayRentPageLocation4;
-    } else if (this.router.url.includes('')) {
-      this.og = ogPayRentPageLocation5;
-    } else if (this.router.url.includes('')) {
-      this.og = ogPayRentPageLocation6;
-    }
+    } 
+    
+
     }
 
 public fetchTwitter() {
@@ -219,15 +189,9 @@ public fetchTwitter() {
     this.twitter = twitterPayRentPageLocation1;
   } else if (this.router.url.includes('grove-city')) {
       this.twitter = twitterPayRentPageLocation2;
-  } else if (this.router.url.includes('')) {
-        this.twitter = twitterPayRentPageLocation3;
-  } else if (this.router.url.includes('')) {
-        this.twitter = twitterPayRentPageLocation4;
-  } else if (this.router.url.includes('')) {
-    this.twitter = twitterPayRentPageLocation5;
-  } else if (this.router.url.includes('')) {
-    this.twitter = twitterPayRentPageLocation6;
-  }
+  } 
+  
+
 }
 
   handleForgotPassword() {

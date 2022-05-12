@@ -52,17 +52,17 @@ export const location1PayrentPageContent = `Take a moment to review our easy log
 export const location2PayrentPageTitle = `Pay Rent | Herlihy Self Storage`;
 export const location2PayrentPageContent = `Take a moment to review our easy login instructions, or call our friendly management team and start paying your rent online 24 hours a day!`;
 
-export const location3PayrentPageTitle = ``;
-export const location3PayrentPageContent = ``;
+export const location3PayrentPageTitle = `Pay Rent | Herlihy Self Storage`;
+export const location3PayrentPageContent = `Take a moment to review our easy login instructions, or call our friendly management team and start paying your rent online 24 hours a day!`;
 
-export const location4PayrentPageTitle = ``;
-export const location4PayrentPageContent = ``;
+export const location4PayrentPageTitle = `Pay Rent | Herlihy Self Storage`;
+export const location4PayrentPageContent = `Take a moment to review our easy login instructions, or call our friendly management team and start paying your rent online 24 hours a day!`;
 
-export const location5PayrentPageTitle = ``;
-export const location5PayrentPageContent = ``;
+export const location5PayrentPageTitle = `Pay Rent | Herlihy Self Storage`;
+export const location5PayrentPageContent = `Take a moment to review our easy login instructions, or call our friendly management team and start paying your rent online 24 hours a day!`;
 
-export const location6PayrentPageTitle = ``;
-export const location6PayrentPageContent = ``;
+export const location6PayrentPageTitle = `Pay Rent | Herlihy Self Storage`;
+export const location6PayrentPageContent = `Take a moment to review our easy login instructions, or call our friendly management team and start paying your rent online 24 hours a day!`;
 
 
 

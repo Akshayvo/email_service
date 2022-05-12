@@ -3,7 +3,7 @@
   <div class=" grid text-center mx-0 horizontal-scroll-wrapper tab desktop-view">
     <span *ngFor="let tab of tabData" class="grid-item" >
       <span>
-          <a [routerLink]="tab?.path"  [id]="tab?.id" class=" px-3 py-2 btn"
+          <a [routerLink]="tab?.path"  [id]="tab?.path" class=" px-3 py-2 btn"
           [routerLinkActive]="'tab-active'" [routerLinkActiveOptions]="{exact:true}" 
           [ngClass]="{'active-tab': selectedTab == tab?.name}">{{tab.name}}</a>
       </span>
