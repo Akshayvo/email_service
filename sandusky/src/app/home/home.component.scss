@@ -1,5 +1,9 @@
 @import "../../styles.scss";
 
+.feature-text {
+  font-size: 16px;
+}
+
 .carousel-indicators li {
   background-color: black;
   border-radius: 50%;
@@ -28,6 +32,7 @@
   a {
     color: black;
   }
+  margin-bottom: 5px;
 }
 
 // Get started Section

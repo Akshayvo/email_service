@@ -4,6 +4,9 @@
 .vertical-line {
   border-left: 1px solid black;
   padding-left: 50px;
+  h2 {
+    font-size: 19.2px;
+  }
 }
 
 
@@ -12,10 +15,16 @@
   visibility: hidden;
 }
 
+.extra-margin{
+  margin-bottom: 8px;
+}
+
 .contact-links {
   a {
     color: black;
   }
+  display: block;
+  margin-bottom: 8px;
 }
 
 .modal-open {
@@ -29,6 +38,13 @@
     color: $primary;
     text-decoration: underline;
     cursor: pointer;
+  }
+  margin-bottom: 8px;
+}
+
+.loginDetail{
+  strong {
+    margin-bottom: 8px;
   }
 }
 
