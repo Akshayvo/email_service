@@ -18,8 +18,9 @@
 .contact-links {
   a {
     color: black;
-    margin-bottom: 5px;
   }
+  display: block;
+  margin-bottom: 8px;
 }
 
 .modal-open {
@@ -33,8 +34,8 @@
     color: $primary;
     text-decoration: underline;
     cursor: pointer;
-    margin-bottom: 5px;
   }
+  margin-bottom: 8px;
 }
 
 .loader {
