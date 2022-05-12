@@ -75,7 +75,7 @@ import { FaqComponent } from './faq/faq.component';
     HomeComponent,
     ContactComponent,
     FooterComponent,
-    TablesComponent,
+    TablesComponent, 
     ErrorComponent,
     LocationComponent,
     StorageTipsComponent,
