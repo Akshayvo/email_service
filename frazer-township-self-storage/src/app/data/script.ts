@@ -41,12 +41,12 @@ export const script = {               // Please fill this script according to fa
      id: environment.websiteUrl || "",
      paymentAccepted:  "Cash, Check, Credit Card, Debit Card",
      currenciesAccepted: "USD",
-     ratingValue: "none",
+     ratingValue: "1",
      bestRating: "5",
-     reviewCount: "none",
+     reviewCount: "1",
      latitude: 40.5902647,
      longitude: -79.8155761,
-     openingHours: [],
+     openingHours: ["8:00AM-8:00PM"],
      priceRange: '120 (only 1 unit type)'
 };
 
