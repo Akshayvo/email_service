@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ReserveRoutingModule } from './reserve-routing.module';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -9,6 +10,7 @@ import { ReserveRoutingModule } from './reserve-routing.module';
   imports: [
     CommonModule,
     ReserveRoutingModule,
+    SharedModule
     
   ]
 })

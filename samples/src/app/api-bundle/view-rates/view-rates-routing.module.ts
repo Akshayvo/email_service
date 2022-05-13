@@ -11,31 +11,31 @@ import { ViewRatesComponent } from './view-rates.component';
 
 const routes: Routes = [
 
-{
-      path: '',
-      component: ViewRatesComponent,
-      children: [
-        { path: '', component: ViewRatesPageComponent }, 
-        { path: 'reserve', component: ReserveUnitFormComponent },
-        { path: 'move-in', component: ReserveUnitFormComponent },
-        { path: 'confirmation', component: ConfirmationDataComponent },
-        { path: 'payReservationCharges', component: PayRentFormComponent },
-        { path: 'payMoveInCharges', component: PayRentFormComponent },
-        { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
-      ]
-     },
+// {
+//       path: '',
+//       component: ViewRatesComponent,
+//       children: [
+//         { path: '', component: ViewRatesPageComponent }, 
+//         { path: 'reserve', component: ReserveUnitFormComponent },
+//         { path: 'move-in', component: ReserveUnitFormComponent },
+//         { path: 'confirmation', component: ConfirmationDataComponent },
+//         { path: 'payReservationCharges', component: PayRentFormComponent },
+//         { path: 'payMoveInCharges', component: PayRentFormComponent },
+//         // { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  } 
+//       ]
+//      },
 
 
 
 
   
-      // { path: '', component: ViewRatesComponent },
-      // { path: '', component: ViewRatesPageComponent },
-      // { path: 'reserve', component: ReserveUnitFormComponent }, 
-      // { path: 'move-in', component: ReserveUnitFormComponent }, 
-      // { path: 'confirmation', component: ConfirmationDataComponent },
-      // { path: 'payReservationCharges', component: PayRentFormComponent },
-      // { path: 'payMoveInCharges', component: PayRentFormComponent },
+      { path: '', component: ViewRatesComponent },
+      { path: '', component: ViewRatesPageComponent },
+      { path: 'reserve', component: ReserveUnitFormComponent }, 
+      { path: 'move-in', component: ReserveUnitFormComponent }, 
+      { path: 'confirmation', component: ConfirmationDataComponent },
+      { path: 'payReservationCharges', component: PayRentFormComponent },
+      { path: 'payMoveInCharges', component: PayRentFormComponent },
       // { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
    
 ];
