@@ -80,10 +80,7 @@ export const location2 = `grove-city`;
 
 export const urlLocation1 = `${environment.websiteUrl}/${environment.locationName}/chillicothe/storage-units`;
 export const urlLocation2 = `${environment.websiteUrl}/${environment.locationName}/grove-city/storage-units`;
-export const urlLocation3 = `${environment.websiteUrl}/${environment.locationName}/barnwell/storage-units`;
-export const urlLocation4 = `${environment.websiteUrl}/${environment.locationName}/belforest/storage-units`;
-export const urlLocation5 = `${environment.websiteUrl}/${environment.locationName}/fairhope/storage-units`;
-export const urlLocation6 = `${environment.websiteUrl}/${environment.locationName}/robertsdale/storage-units`;
+
 
 
 export const description1 = `Herlihy Self Storage is Chillicothe's most trusted self storage facility and moving services company. Our 90 years of experience make us your one-stop self storage and moving stop. We offer a wide selection of self storage units with online rentals for quick and easy!`;
