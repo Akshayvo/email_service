@@ -4,7 +4,7 @@
     <h1 class="py-5 text-center">{{contactHeading}}</h1>
     <div class="row bg-light background-padding">
       <div class="col-lg-7 col-md-6 col-12 px-4">
-        <h3 class="heading py-3">Contact Form</h3>
+        <h2 class="heading py-3">Contact Form</h2>
         <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
           <div class="form-group">
               <div [hidden]="" *ngIf="submitted && !this.contactForm.valid" class="alert alert-danger alert-dismissible fade show">
@@ -84,7 +84,7 @@
         </div>
         <p>
           <span *ngFor="let contact of contactDetails" class="display-contact">
-            <span><h4><b>{{contact.label}}</b></h4></span>
+            <span><h3><b>{{contact.label}}</b></h3></span>
             <span class="contact-links" *ngIf="contact?.label === 'Address:' || contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
                 <h4><a [href]="contact?.redirect" target="{{(contact?.label === 'Address:') ? '_blank' : '_self'}}" rel="noopener">&nbsp;{{contact.data}}</a></h4>
             </span>

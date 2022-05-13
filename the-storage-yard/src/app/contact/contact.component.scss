@@ -12,6 +12,9 @@
   // h4 {
   //   width: 100%;
   // }
+  h3{
+    font-size: 16px;
+  }
 }
 
 .btn-outline-primary {
@@ -34,6 +37,7 @@
   a {
     color: black;
   }
+  margin-bottom: 5px;
 }
 
 .contact-map {
@@ -63,6 +67,10 @@
 
 .form-control {
   font-size: 0.8rem;
+}
+
+.heading{
+  font-size: 28px;
 }
 
 @media only screen and (max-width: 600px) {
