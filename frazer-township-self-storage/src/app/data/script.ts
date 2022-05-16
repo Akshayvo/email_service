@@ -41,9 +41,9 @@ export const script = {               // Please fill this script according to fa
      id: environment.websiteUrl || "",
      paymentAccepted:  "Cash, Check, Credit Card, Debit Card",
      currenciesAccepted: "USD",
-    
+     ratingValue: "",
      bestRating: "5",
-     
+     reviewCount: "",
      latitude: 40.5902647,
      longitude: -79.8155761,
      openingHours: ["8:00AM-8:00PM"],
@@ -67,9 +67,9 @@ export const homePageScript = [ {
     },
    "aggregateRating": {
       "@type": "AggregateRating",
-      
+      "ratingValue": script.ratingValue,
       "bestRating": script.bestRating,
-     
+      "reviewCount": script.reviewCount
     },
     "geo": {
       "@type": "GeoCoordinates",
