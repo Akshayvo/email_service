@@ -46,6 +46,16 @@
   align-items: end;
 }
 
+.contact-links{
+  div{
+    margin-bottom: 8px;
+  }
+}
+
+.forgot-link{
+  margin-bottom: 5px;
+}
+
 @media only screen and (max-width: 991px) {
   .rent-example {
     border-left: none;
