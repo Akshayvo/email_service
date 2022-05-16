@@ -1,32 +1,19 @@
 export const galleryHome = [
   {
     // tslint:disable-next-line: max-line-length
-    url: `frazer-township-self-storage-13`,
+    url: `IMG_1768`,
     // tslint:disable-next-line:max-line-length
-    thumb: `frazer-township-self-storage-13-thumb`,
-    alt: `a single story metal self storage building with green doors under a blue sky`
+    thumb: `IMG_1768-thumb`,
+    alt: ``
   },
   {
     // tslint:disable-next-line: max-line-length
-    url: `frazer-township-self-storage-14`,
+    url: `IMG_2098`,
     // tslint:disable-next-line:max-line-length
-    thumb: `frazer-township-self-storage-14-thumb`,
-    alt: `several green metal storage units side by side under a blue sky`
+    thumb: `IMG_2098-thumb`,
+    alt: ``
   },
-  {
-    // tslint:disable-next-line: max-line-length
-    url: `frazer-township-self-storage-12`,
-    // tslint:disable-next-line:max-line-length
-    thumb: `frazer-township-self-storage-12-thumb`,
-    alt: `several self storage units with green metal roll up doors`
-  },
-  {
-    // tslint:disable-next-line: max-line-length
-    url: `frazer-township-self-storage-15`,
-    // tslint:disable-next-line:max-line-length
-    thumb: `frazer-township-self-storage-15-thumb`,
-    alt: `storage units in a row with brand new green metal doors`
-  },
+ 
   {
     // tslint:disable-next-line: max-line-length
     url: `frazer-township-self-storage-17`,
