@@ -1,0 +1,36 @@
+@import "../../styles.scss";
+
+p {
+  padding: 0;
+  margin: 0;
+  color: $fontColor;
+}
+
+table {
+  border: 1px solid rgb(222, 226, 230);
+  margin-bottom: 0;
+}
+
+.table-head {
+  background: $primary;
+  color: $white;
+}
+
+td {
+  padding-left: 5%;
+  color: #2e36d1;
+}
+
+// .table-striped tbody tr:nth-of-type(odd) {
+//   background-color: $white;
+// }
+
+.text-align-right {
+  text-align: right;
+}
+
+
+ul {
+  margin-bottom: 0;
+  padding-inline-start: 10px;
+}

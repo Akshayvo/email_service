@@ -1,0 +1,185 @@
+@import "../../styles.scss";
+
+.contentHolder {
+  display: flex;
+  min-height: 98vh;
+}
+
+// .padding-top {
+//   padding-top: 90px;
+// }
+
+.background-padding {
+  height: 750px;
+  padding: 34px 18px;
+}
+
+h1 {
+  margin-block-end: 0;
+}
+
+.unit-sizer-container {
+  .unit-sizer-box {
+    padding: 64px;
+  }
+
+  .unit-dimention {
+    span {
+      cursor: pointer;
+    }
+
+    .active-unit {
+      color: $primary;
+      font-size: 1.2rem;
+      font-weight: 900;
+    }
+  }
+}
+
+.image-carosel {
+  .col-3 {
+    img {
+      opacity: 0.4;
+      filter: alpha(opacity=40);
+      cursor: pointer;
+      padding-top: 25%;
+    }
+  }
+
+  .col-1 {
+    img {
+      width: 50%;
+      cursor: pointer;
+      padding-top: 25%;
+      height: 100%;
+    }
+  }
+}
+
+.unit-data {
+  width: 100%;
+  margin: auto;
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  ul {
+    list-style-type: none;
+    display: inline-table;
+
+    li::before {
+      content: "• ";
+      color: $primary;
+      padding-right: 10px;
+    }
+  }
+}
+
+
+.active-unit-border {
+  background-color: $primary;
+  // height: 300px;
+}
+
+.disp {
+  display: block;
+}
+
+.disp-mob {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  .col-1 {
+    img {
+      width: 100%;
+    }
+  }
+
+  // .padding-top {
+  //   padding-top: 90px;
+  // }
+
+  .unit-dimention {
+    .active-unit {
+      color: $primary;
+      font-size: 1.1rem;
+    }
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .disp {
+    display: none;
+  }
+
+  .disp-mob {
+    display: block;
+
+    .active-unit {
+      color: $primary;
+      font-size: 1.4rem;
+    }
+  }
+
+  .unit-data {
+    h3 {
+      padding-top: 20px;
+    }
+  }
+
+  .unit-sizer-box {
+    padding: 16px;
+  }
+
+  .col-1 {
+    img {
+      width: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .background-padding {
+    padding: 24px 0;
+    height: 600px;
+  }
+
+  .unit-sizer-top {
+    height: 40vh;
+
+    .bg-translucent {
+      h2 {
+        padding-top: 30px;
+        font-size: 2rem;
+      }
+
+      p {
+        padding: 7px 5% 0;
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  .unit-sizer-container {
+    .unit-sizer-box {
+      padding: 16px;
+    }
+
+    .col-3 {
+      img {
+        width: 90%;
+      }
+    }
+
+    .col-1 {
+      padding: 5px;
+
+      img {
+        width: 10px;
+      }
+    }
+  }
+}

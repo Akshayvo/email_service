@@ -1,0 +1,110 @@
+@import "../../styles.scss";
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
+
+
+.currentActive {
+  border-bottom: 3px solid $light;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.storage-tip-holder {
+  padding-top: 135px;
+  min-height: 86vh;
+
+  .storage-content {
+    .padding {
+      min-height: 630px;
+      padding: 48px;
+    }
+
+    ul {
+      padding-left: 15px;
+    }
+  }
+}
+
+.special-row {
+  // position: absolute;
+  // bottom: 0;
+  background-color: $primary;
+  color: white;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.getStarted {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/390_Self_Storage/390-self-storage-office.jpg") center top no-repeat fixed;
+  background-size: cover;
+  background-position: top;
+
+  .get-started {
+    left: 0;
+    right: 0;
+    top: 10;
+    background: rgba(238, 238, 238, 0.7);
+    z-index: 9;
+  }
+  p {
+    font-size: 2rem;
+  }
+
+  .btn {
+    min-width: 250px;
+    font-size: 1.2rem;
+  }
+  h2{
+    font-size: 28px;
+  }
+}
+
+// Sticky Buttons
+.contact-button {
+  position: fixed;
+  right: 0;
+  top: 12%;
+  z-index: 16;
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .storage-tip-holder {
+    .storage-content {
+      .padding {
+        min-height: 735px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 601px) {
+  .storage-tip-holder {
+    .storage-content {
+      .padding {
+        min-height: 1014px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .storage-tip-holder {
+    .storage-content {
+      .padding {
+        padding: 0;
+        min-height: 930px;
+      }
+    }
+  }
+
+  .contact-button {
+    position: fixed;
+    right: 0;
+    top: 15%;
+    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 16;
+  }
+}

@@ -1,0 +1,17 @@
+.contentHolder {
+  .padding {
+    padding: 48px;
+  }
+
+  .scroll-wrapper {
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+
+    iframe {
+      width: 100%;
+      overflow: auto;
+      min-width: 100%;
+    }
+  }
+}
+
