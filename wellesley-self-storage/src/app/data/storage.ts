@@ -3,7 +3,7 @@ export const storageTip = [
         data: `Use smaller boxes for books and heavy items.`
     },
     {
-        data: `Use larger boxes for lighter items`
+        data: `Use larger boxes for lighter items.`
     },
     {
         data: `Reinforce the bottom of boxes with at least one strip of packing tape.`
@@ -24,10 +24,10 @@ export const storageTip = [
         data: `Outdoor Parking Tip - Tip up vehicle, so rain drains off.`
     },
     {
-        data: `Outdoor Parking Tip - Put on wheel covers`
+        data: `Outdoor Parking Tip - Put on wheel covers.`
     },
     {
-        data: `Outdoor Parking Tip - Disconnect battery`
+        data: `Outdoor Parking Tip - Disconnect battery.`
     },
     
 ];
@@ -118,7 +118,7 @@ export const storageTipAccordion = [
         status: false,
         data : [
             {
-                p: `Wrap each fragile item separately with bubble wrap and packing tape`
+                p: `Wrap each fragile item separately with bubble wrap and packing tape.`
             },
             {
                 p: `Layer wrapped items in sturdy cardboard box using large peanuts or wadded paper between.`

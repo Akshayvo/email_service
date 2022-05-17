@@ -8,11 +8,11 @@ export const dataViewRates = [
       p: `Wellesley Self Storage is your one stop storage solution. We offer clean, well-lit storage units and parking space in a fully-fenced storage and parking facility. Our local management team is here to help make your life easier. Whether you're a residential storage user or a growing local business that understands the savings a storage unit can provide versus storing inventory, documents, or equipment in a commercial property.`
     },
     {
-      p: `When it comes to self storage, there are many things you need to consider before making a decision about where you want to store your belongings. At Wellesley Self Storage, our priority is providing our customers with the best possible experience from start-to-finish – whether they’re renting one unit or several.
+      p: `When it comes to self storage, there are many things you need to consider before making a decision about where you want to store your belongings.  To start, have a look at our storage tips page to better understand what might fit with your needs.
       `
     },
     {
-      p: `That’s why we provide 24/7 access so you can get in whenever works best for you. We also provide a full online tenant portal to make your life easier. Start by picking out your unit or parking space above, then rent or reserve your unit in minutes with our contactless application(don't forget to sign up for automatic payments!). Once you've signed your electronic lease agreement, we'll email you your access code. That's it! You're a tenant at Wellesley Self Storage!`
+      p: `At Wellesley Self Storage, our priority is providing our customers with the best possible experience from start-to-finish – whether they’re renting one unit or several.  That’s why we provide 24/7 access so you can get in whenever works best for you. We also provide a full online tenant portal to make your life easier. Start by picking out your unit or parking space above, then rent or reserve your unit in minutes with our contactless application(don't forget to sign up for automatic payments!). Once you've signed your electronic lease agreement, we'll email you your access code. That's it! You're a tenant at Wellesley Self Storage!`
     },
     {
       p: `Still have questions? Give our team a call today, and learn how Wellesley Self Storage can help you reclaim your space around the home, office, or work site!`
@@ -22,7 +22,7 @@ export const dataViewRates = [
 export const viewRatesDataGrid1 = [
   {
       td1: '5\' x 10\'',
-      td2: '$22.5',
+      td2: '$22.50',
       td3:'$90'
   },
   {
@@ -32,7 +32,7 @@ export const viewRatesDataGrid1 = [
   },
   {
       td1: '10\' x 15\'',
-      td2: '$42.5',
+      td2: '$42.50',
       td3:'$170'
   },
   {
@@ -46,7 +46,7 @@ export const viewRatesDataGrid1 = [
 export const viewRatesDataGrid2 = [
   {
       td1:'Under 20\'',
-      td2:'$17.5',
+      td2:'$17.50',
       td3:'$70',
       td4:'$420',
       td5:'$800'
@@ -60,7 +60,7 @@ export const viewRatesDataGrid2 = [
 },
 {
   td1:'30\' and over',
-  td2:'$22.5',
+  td2:'$22.50',
   td3:'$90',
   td4:'$540',
   td5:'$1000'
