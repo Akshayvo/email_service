@@ -4,16 +4,139 @@ import { homePageContent, homePageTitle, payRentPageContent,
   payRentPageTitle, storageTipsContent, storageTipsTitle,
 contactPageContent, contactPageTitle } from '../data/title';
 import { HomeComponent } from '../home/home.component';
+import { featuresList } from '../data/home';
+import { contact, socialLinks } from '../data/contact';
 
-export const script = {
-    // Put your script here
+
+const amenityFeature = [];
+const sameAs = [];
+
+featuresList.forEach(
+  feature => 
+  (amenityFeature.push({ "@type": "LocationFeatureSpecification",  "name": feature.td1}),
+  amenityFeature.push({ "@type": "LocationFeatureSpecification",  "name": feature.td2}))
+)
+
+socialLinks.forEach(links => {
+  links.path ? sameAs.push(links.path) : sameAs.push(' ')
+}
+);
+
+export const script = {               // Please fill this script according to facility's information
+  imagesHomePage: [
+    "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/inside-self-storage-unit.jpg", // 1:1
+    "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg", // 4:3
+    "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg" // 16:9
+   ],
+   telephone: '8158930072',
+   map: "https://g.page/Pursue-ServiceStorage?share",
+   description: "A superb collection of fine gifts and clothing to accent your stay in Mexico Beach.",
+   streetAddress: "410 Sands Rd",
+   state: "New York",
+   addressLocality: "New York",
+   addressRegion: "NY",
+   postalCode: "10019",
+   addressCountry: "US",
+   id: environment.websiteUrl || "",
+   paymentAccepted:  "Cash, Check, Credit Card, Debit Card, Online Credit Card, Online Debit Card",
+   currenciesAccepted: "USD",
+   ratingValue: "4.5",
+   bestRating: "5",
+   reviewCount: "10",
+   latitude: 42.486670594577056,
+   longitude: -88.07477277926161,
+   openingHours: [],
+   priceRange: '56 - 600'
 };
 
-export const homePageScript = [ ];
+export const homePageScript = [ {
+  "@context": "https://schema.org",
+  "@type": ["Organization","SelfStorage","Place","LocalBusiness"],
+  "image": script.imagesHomePage,
+  "@id": script.id,
+  "name": environment.facilityName,
+   "description": script.description || homePageContent,
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": script.streetAddress,
+    "addressLocality": script.addressLocality,
+    "addressRegion": script.addressRegion,
+    "postalCode": script.postalCode,
+    "addressCountry": script.addressCountry
+  },
+ "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": script.ratingValue,
+    "bestRating": script.bestRating,
+    "reviewCount": script.reviewCount
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": script.latitude,
+    "longitude": script.longitude
+  },
+  "url": environment.websiteUrl,
+  "telephone": script.telephone,
+  
+  "priceRange": script.priceRange,
+  "openingHours": script.openingHours,
+  "currenciesAccepted": script.currenciesAccepted,
+  "paymentAccepted": script.paymentAccepted,
+   "areaServed": {
+  "@type": "State",
+  "name": script.state
+ },
+ 
+"hasMap": script.map,
+"amenityFeature": amenityFeature,
+"acceptsReservations": "True"
+}];
 
 
-  export const contactPageScript = [
-  ];
+export const contactPageScript = [
+  {
+    "@context": "https://schema.org",
+    "@type": ["Organization","SelfStorage","Place","LocalBusiness"],
+    "image": script.imagesHomePage,
+    "@id": script.id,
+    "name": environment.facilityName,
+     "description": script.description || homePageContent,
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": script.streetAddress,
+      "addressLocality": script.addressLocality,
+      "addressRegion": script.addressRegion,
+      "postalCode": script.postalCode,
+      "addressCountry": script.addressCountry
+    },
+   "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": script.ratingValue,
+      "bestRating": script.bestRating,
+      "reviewCount": script.reviewCount
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": script.latitude,
+      "longitude": script.longitude
+    },
+    "url": `${environment.websiteUrl}/contact-us`,
+    "telephone": script.telephone,
+    
+    "priceRange": script.priceRange,
+    "openingHours": script.openingHours,
+    "currenciesAccepted": script.currenciesAccepted,
+    "paymentAccepted": script.paymentAccepted,
+     "areaServed": {
+    "@type": "State",
+    "name": script.state
+   },
+   
+  "hasMap": script.map,
+  "amenityFeature": amenityFeature,
+  "acceptsReservations": "True"
+    }
+];
 
 
 export const ogHomePage = [

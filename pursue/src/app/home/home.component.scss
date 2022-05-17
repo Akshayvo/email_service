@@ -53,8 +53,14 @@
   }
 }
 
+h3{
+  font-size: 1rem;
+}
+
 .contact-links {
   a {
+    display: inline-block;
+    margin-bottom: 5px;
     color: black;
   }
 }

@@ -4,7 +4,7 @@
     <h1 class="py-5 text-center">{{contactHeading}}</h1>
     <div class="row bg-light background-padding">
       <div class="col-lg-7 col-md-6 col-12 px-4">
-        <h3 class="heading py-3">Contact Form</h3>
+        <h2 class="heading py-3">Contact Form</h2>
         <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
           <div class="form-group">
               <div [hidden]="" *ngIf="submitted && !this.contactForm.valid" class="alert alert-danger alert-dismissible fade show">
@@ -80,7 +80,7 @@
       <div class="col-lg-5 col-md-6 col-12 px-4 contact-details">
         <div class="my-4 contact-map">
              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d378153.33779793774!2d-88.283513!3d42.228913000000006!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x55de60f1247750f2!2sPursue%20SeRVice%20%26%20Storage!5e0!3m2!1sen!2sus!4v1607900959805!5m2!1sen!2sus" 
-              width="100%" height="250" frameborder="0" allowfullscreen rel="noopener"></iframe> 
+              title="Google map" width="100%" height="250" frameborder="0" allowfullscreen rel="noopener"></iframe> 
         </div>
         <p>
           <span *ngFor="let contact of contactDetails" class="display-contact">
@@ -91,7 +91,7 @@
             <ng-template #other_content>&nbsp;<h4>{{contact.data}}</h4></ng-template><br>
           </span>
         </p>
-        <h4><b>Facility Hours:</b></h4>
+        <h3><b>Facility Hours:</b></h3>
         <p>
           <span class="display-contact" *ngFor="let hour of hours">
             <h4><strong>{{hour.label}}</strong></h4>&nbsp;<h4>{{hour.data}}</h4><br>

@@ -20,6 +20,8 @@
 
 .contact-links {
   a {
+    display: inline-block;
+    margin-bottom: 5px;
     color: black;
   }
 }
@@ -32,6 +34,8 @@
 
 .forgot-link {
   a {
+    display: inline-block;
+    margin: 5px;
     color: $primary;
     text-decoration: underline;
     cursor: pointer;

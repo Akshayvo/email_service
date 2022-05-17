@@ -14,6 +14,10 @@
   // }
 }
 
+h3{
+  font-size: 1rem;
+}
+
 .btn-outline-primary {
   color: $primary !important;
 }
@@ -32,6 +36,8 @@
 
 .contact-links {
   a {
+    display: inline-flex;
+    margin-bottom: 5px;
     color: black;
   }
 }

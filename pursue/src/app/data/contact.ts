@@ -4,6 +4,7 @@ export const contact = [
         label: 'Address:',
         data: '410 Sands Rd, Crystal Lake, IL 60014',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
+        redirect: 'https://g.page/Pursue-ServiceStorage?share'
     },
     {
         id: 1,
