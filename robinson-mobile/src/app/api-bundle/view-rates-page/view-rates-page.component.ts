@@ -10,6 +10,8 @@ import { DataSharingService } from '../services/data-sharing.service';
 import { environment } from '../../../environments/environment';
 import { objSIMSetting } from '../../data/configuration';
 import { script } from '../../data/script';
+import { CanonicalService } from '../../services/canonical.service';
+
 @Component({
   selector: 'app-view-rates-page',
   templateUrl: './view-rates-page.component.html',
@@ -63,9 +65,12 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     private fetchDataService: FetchDataService,
     private router: Router,
     private dataSharingService: DataSharingService,
+    private canonical: CanonicalService,
     private eRef: ElementRef
   ) {
     this.facilityName = environment.facilityName;
+    this.canonical.create();
+
    }
 
 

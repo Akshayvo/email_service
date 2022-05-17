@@ -136,11 +136,11 @@
             </div>
             <div class="col-md-6 form-group ">
                 
-                  <label>Rental Start Date*</label>&nbsp;
-                <mat-form-field class="example-full-width " class="form-control" placeholder="select your date" 
+                  <label for="rental">Rental Start Date*</label>&nbsp;
+                <mat-form-field class="example-full-width " id="rental" class="form-control" placeholder="select your date" 
                 [ngClass]="{ 'is-invalid': submitted && f.dteMoveIn.errors }"
                 >
-                <input matInput [matDatepicker]="picker" formControlName="dteMoveIn" readonly (click)="picker.open()">
+                <input matInput [matDatepicker]="picker" id="rental" formControlName="dteMoveIn" readonly (click)="picker.open()">
 
                 <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                 <mat-datepicker  #picker></mat-datepicker>

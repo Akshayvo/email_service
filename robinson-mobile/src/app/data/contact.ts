@@ -4,7 +4,7 @@ export const contact = [
         label: 'Address:',
         data: '586 Robinson Rd, Ennismore, ON K0L 1T0, Canada',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
-        redirect: 'https://goo.gl/maps/6tmSchz4VW6yYZnM6'
+        redirect: 'https://g.page/robinson-storage?share'
     },
     {
         id: 1,

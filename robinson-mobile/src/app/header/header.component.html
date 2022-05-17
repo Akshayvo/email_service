@@ -21,7 +21,7 @@
           <span class="contact-details pr-4" *ngFor="let contact of contactDetails" >
               <span class="spantext" style="display: inline-block;"> 
               <!-- <i [class]="contact?.class"></i> -->
-              <span class="contact-links" *ngIf="contact?.id === 2 || contact?.id === 1 else other_content"><i [class]="contact?.class"></i>
+              <span class="contact-links" *ngIf="contact?.id === 0 ||contact?.id === 2 || contact?.id === 1 else other_content"><i [class]="contact?.class"></i>
                 <a style="white-space: nowrap;" [href]="contact?.redirect" rel="noopener">&nbsp;{{contact.data}}</a></span>
             </span>
       

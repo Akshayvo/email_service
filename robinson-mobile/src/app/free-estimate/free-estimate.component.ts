@@ -3,6 +3,8 @@ import { Component, OnInit, Inject } from "@angular/core";
 import { Title, Meta } from "@angular/platform-browser";
 import { dataViewRates, rates, option, option1 } from "../data/view-rates";
 import { contact, hours } from "../data/contact";
+import { CanonicalService } from "../services/canonical.service";
+
 import {
   FormGroup,
   FormBuilder,
@@ -48,13 +50,15 @@ export class FreeEstimateComponent implements OnInit {
     private titleService: Title,
     private emailService: EmailService,
     private meta: Meta,
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
+    private canonical: CanonicalService
   ) {
     this.meta.addTag({
       name: "description",
       content: `Check out our affordable recreational vehicle storage rates and start
                 the reservation process right here! Have a question? Call (951) 603-5133!`,
     });
+    this.canonical.create();
     this.titleService.setTitle("Rates | Robinson Storage Box");
     this.contactForm = this.formBuilder.group({
       name: ["", Validators.required],
