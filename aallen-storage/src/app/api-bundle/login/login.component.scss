@@ -5,6 +5,9 @@
   border-left: 1px solid white;
   padding-left: 50px;
   color: white;
+  h2{
+    font-size: 28px;
+  }
 }
 
 .userdata {
@@ -21,6 +24,9 @@
   a {
     color: white;
   }
+  div{
+    margin-bottom: 5px;
+  }
 }
 
 .modal-open {
@@ -35,6 +41,7 @@
     text-decoration: underline;
     cursor: pointer;
   }
+  margin-bottom: 5px;
 }
 
 .loader {
