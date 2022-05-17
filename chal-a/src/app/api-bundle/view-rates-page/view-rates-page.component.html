@@ -193,4 +193,100 @@
   </div>
 </div>
 </div>
+
+<div [class.display]="!showTable">
+  <h2 class="mt-3">Mobile Storage</h2> 
+  <table  class="viewrates-desktop w-auto" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+    <tHead [class.display]="!showTable">
+        <tr>
+          <th colspan="2"  class="px-4 py-1 text-center" *ngFor="let th of th1" id={{th.id}}>
+            {{th.data}}
+          </th>
+        </tr>
+    </tHead>
+    <span hidden itemprop="name">{{facilityName}}</span>
+
+    <meta itemprop="name" content="{{facilityName}}" />
+
+    <tbody itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+      <tr itemprop="itemOffered" itemscope itemtype="https://schema.org/SelfStorage" *ngFor="let lstUnitType of mobileUnitTypes">
+        <td  colspan="2" style="width: 15%;" class="px-4 border text-center" *ngIf="lstUnitType.UnitTypeID === 15 || lstUnitType.UnitTypeID === 16">
+          <span hidden itemprop="name">{{lstUnitType.Description}} unit Type </span>
+            {{lstUnitType.Description}}
+            <meta itemprop="description" 
+            content="{{lstUnitType.Description}}" />
+            <link itemprop="image" href="https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Chal-A/Jpg/chal-a-storage-169.jpg" />
+
+        </td>
+        <td  colspan="2" class="px-4 border text-center" *ngIf="showRate">
+            <span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate | number : '1.2-2'}}
+            <meta itemprop="priceRange" content="{{lstUnitType.MonthlyRate}}" />
+        </td>
+        <td  colspan="2" class="px-4 border text-center" *ngIf="showDeposit" >
+          <span *ngIf="lstUnitType.DepositAmount != null">$</span>{{lstUnitType.DepositAmount | number : '1.2-2'}}
+        </td>
+        <td id="reserve" colspan="2" class="py-2 px-4 border text-center">
+            <!-- <button (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button> -->
+            <button class="ml-2 py-1 buttons" (click)="navigate('/contact-us', lstUnitType )">Click To Be Added To Our Waiting List</button>
+        </td>
+        <!-- <td id="move-in" colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable && showMovein; else other_moveIn" >
+          <button (click)="navigate('/view-rates/move-in', lstUnitType)"> Move In</button>
+          <link *ngIf="lstUnitType.IsUnitsAvailable" itemprop="availability" href="https://schema.org/InStock" />
+        </td> -->
+        <!-- <td  colspan="2" class="px-4 border text-center" *ngIf="lstUnitType.IsClimateControlled && showClimateControl; else other_climate">
+          <strong> Yes</strong>
+        </td> -->
+        <ng-template #other_climate >
+          <td  colspan="2"  class="px-4 border text-center" *ngIf="showClimateControl">
+            <div>Currently unavailable. Please call us for more information.</div>
+          </td>
+        </ng-template>
+        <ng-template #other_reserve >
+          <td   id="reserve" colspan="2" class="py-2 px-4 border" *ngIf="showReserve">
+            <div class="text-center">Currently unavailable. Please call us for more information.</div>
+          </td>
+        </ng-template>
+        <ng-template #other_moveIn >
+          <td  id="move-in"  colspan="2" class="py-2 px-4 border" *ngIf="showMovein">
+          <div  class="text-center">Currently unavailable. Please call us for more information.</div>
+        </td>
+        </ng-template>
+      </tr> 
+
+    </tbody>
+</table>
+<div class="row viewrates-mobile py-2 border" *ngFor="let lstUnitType of mobileUnitTypes">
+  <div class="col-6 text-center ">  
+    <strong>Unit Size</strong>
+  <div class=" py-1 ">{{lstUnitType.Description}}</div>
+  <div class="row">
+      <div class="col-6 text-center " *ngIf="showRate">
+          <p class=" "><b><u>Rate</u></b></p>
+          <div class=" "><span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate | number : '1.2-2'}}</div>
+      </div>
+      <div   class="col-6 "[class.ClimateBorder]="lstUnitType.IsClimateControlled" *ngIf="showClimateControl" >
+          <div class=" ClimateControlled" *ngIf="lstUnitType.IsClimateControlled" >Climate Controlled</div>
+      </div>
+    </div>
+  </div>
+    <div class="col-6 d-flex justify-content-center" >
+      <div  >
+        <div id="reserve"   class=" py-1 buttons" *ngIf="showReserve">
+            <button class="btn btn-primary" (click)="navigate('/contact-us', lstUnitType )">Click To Be Added<br>To Our Waiting List</button>
+        </div>
+        <!-- <div id="move-in"   class="py-1 buttons" *ngIf="showMovein"> 
+            <button class=" btn btn-outline-primary" (click)="navigate('/view-rates/move-in', lstUnitType)"> Move In</button>
+        </div> -->
+      </div>
+      
+      <ng-template #other> 
+        <div  class="text-right" *ngIf="showMovein || showReserve" ><p class="card-text ">Currently unavailable. Please call us for more information.</p></div>
+      </ng-template>
+  </div>
 </div>
+</div>
+
+</div>
+
+
+<!-- *ngIf="lstUnitType.UnitTypeID === 15||16" -->
