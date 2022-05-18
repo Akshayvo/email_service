@@ -9,9 +9,9 @@
   <div [class.loader]="showLoader" class="loader-position"> 
   </div>
   <div class="viewRates" [class.display]="!showTable" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
-    <h3 class="text-center">
+    <h2 class="text-center">
       <strong>Unit Availability</strong>
-    </h3>
+    </h2>
     <span hidden itemprop="name">{{facilityName}}</span>
     <meta itemprop="name" content="{{facilityName}}" />
     <div class="row py-2 my-2 unitDetail" itemprop="itemOffered" itemscope itemtype="https://schema.org/SelfStorage" *ngFor="let lstUnitType of LstUnitTypes">
