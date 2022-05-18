@@ -1,15 +1,49 @@
-export const contactsHomePage = [
+export const headerInfo = [
     {
         id: 0,
-        label: 'Address:',
-        data: '1687 US-441, Dublin, GA 31021',
+        label: 'Address1:',
+        data: '1321 N Jefferson St, Dublin 31021',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/AoSqpUzpEAmR5xy98'
     },
     {
         id: 1,
-        label: 'Address:',
-        data: '1321 N Jefferson St, Dublin, GA 31021',
+        label: 'Address2:',
+        data: '1687 US-441, Dublin, GA 31021',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/eH2heoNKgVAzkaEC7'
+    },
+    {
+        id: 2,
+        label: 'Phone:',
+        data: '(478) 272-3724',
+        class: 'fas fa-phone mr-2 iconColor',
+        redirect: 'tel:4782723724'
+    },
+    // {
+    //     id: 2,
+    //     label: 'Phone:',
+    //     data: '(478) 697-9570',
+    //     class: 'fas fa-phone mr-2 iconColor',
+    //     redirect: 'tel:4786979570'
+    // },
+    {
+        id: 3,
+        label: 'Email:',
+        data: 'info@garnersustore.com',
+        class: 'fas fa-envelope-open mr-2 iconColor',
+        redirect: 'mailto:info@garnersustore.com'
+    },
+];
+
+export const contactsHomePage = [
+    {
+        id: 1,
+        label: 'Address:',
+        data: '1687 US-441, Dublin, GA 31021',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/eH2heoNKgVAzkaEC7'
+
     },
     {
         id: 2,

@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { navLinks } from '../data/nav';
-import { contactsHomePage } from '../data/contact';
+import { headerInfo } from '../data/contact';
 import { UaParserService } from '../services/ua-parser.service';
 
 @Component({
@@ -58,7 +58,7 @@ data: any;
     menu.classList.remove('show');
   }
   public fetchContactDetails() {
-    this.contactDetails = contactsHomePage;
+    this.contactDetails = headerInfo;
   }
 
 }
