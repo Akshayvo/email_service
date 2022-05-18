@@ -44,7 +44,7 @@ export const hours = [
     
     {
         label: 'Monday - Friday: ',
-        data: `8:00AM to 3:30PM`
+        data: `8:00AM to 4:00PM`
     },
     {
         label: 'Access Hours: ',
