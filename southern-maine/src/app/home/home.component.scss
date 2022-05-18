@@ -29,6 +29,10 @@ h1 {
   }
 }
 
+.heading {
+  font-size: 36px;
+}
+
 .feature-icon-style {
   padding: 24px;
   text-align: center;
@@ -42,6 +46,11 @@ h1 {
   a {
     color: black;
   }
+}
+
+.contact-details {
+  display: block;
+  margin-bottom: 5px;
 }
 
 .content-align {
@@ -99,6 +108,10 @@ h1 {
   .btn-outline-primary {
     margin-right: 10px;
   }
+}
+
+.feature-text {
+  font-size: 16px;
 }
 
 @media only screen and (min-width: 1200px) {

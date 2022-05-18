@@ -4,6 +4,12 @@
 .vertical-line {
   border-left: 1px solid black;
   padding-left: 50px;
+  span:first-of-type {
+    margin-top: -25px;
+  }
+  h2 {
+    font-size: 28px
+  }
 }
 
 
@@ -16,6 +22,8 @@
   a {
     color: black;
   }
+  display: block;
+  margin-bottom: 10px;
 }
 
 .modal-open {
@@ -30,6 +38,7 @@
     text-decoration: underline;
     cursor: pointer;
   }
+  margin-bottom: 10px;
 }
 
 .loader {

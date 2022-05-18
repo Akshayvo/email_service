@@ -4,7 +4,7 @@ export const contact = [
         label: 'Address:',
         data: '1030 Portland Rd, Saco, ME 04072',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
-        redirect: 'https://www.google.com/maps/place/1030+Portland+Rd,+Saco,+ME+04072,+USA/data=!4m2!3m1!1s0x4cb2a25685c94037:0x156715ee510b8820?sa=X&ved=2ahUKEwib_YGO2bLvAhVAyjgGHVViCc0Q8gEwAHoECAYQAQ'
+        redirect: 'https://www.google.com/maps?ll=43.558072,-70.402578&z=15&t=m&hl=en&gl=US&mapclient=embed&cid=4204498317009612037'
     },
     {
         id: 1,

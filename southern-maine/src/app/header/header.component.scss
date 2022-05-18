@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 @import "../../styles.scss";
 
 a {
@@ -89,6 +89,10 @@ img {
   a {
     color: black;
   }
+}
+
+.closedOnText{
+  font-size: 20px;
 }
 
 @media screen and (max-width: 1199px) and (min-width: 992px) {

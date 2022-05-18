@@ -25,7 +25,7 @@
         <div class="feature row">
           <div class="col-md-3 col-3 feature-icon-style" *ngFor="let feature of feature">
             <img [src]="feature?.path" [alt]="feature?.alt" height="100px"/>
-              <h6 class="feature-text">{{feature.label}}</h6>
+              <h3 class="feature-text">{{feature.label}}</h3>
           </div>
         </div>
       </div>
@@ -45,7 +45,7 @@
             <div class="mb-4">
               
               <p>
-                <span *ngFor="let contact of contactDetails">
+                <span *ngFor="let contact of contactDetails" class="contact-details">
                   <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.label === 'Address:' || contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
                     <a [href]="contact?.redirect" target="{{(contact?.label === 'Address:') ? '_blank' : '_self'}}" rel="noopener">&nbsp;{{contact.data}}</a></span>
                  <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
