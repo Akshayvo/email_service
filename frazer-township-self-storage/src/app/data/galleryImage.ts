@@ -1,10 +1,17 @@
 export const galleryHome = [
   {
     // tslint:disable-next-line: max-line-length
+    url: `images`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `images-thumb`,
+    alt: `Frontal View of exterior green units`
+  },
+  {
+    // tslint:disable-next-line: max-line-length
     url: `IMG_1768`,
     // tslint:disable-next-line:max-line-length
     thumb: `IMG_1768-thumb`,
-    alt: `Frontal View of exterior green units`
+    alt: `View of an "L" shape exterior section of green units`
   },
   {
     // tslint:disable-next-line: max-line-length
