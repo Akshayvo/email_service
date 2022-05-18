@@ -42,7 +42,7 @@ export const hours = [
     },
     {
         label: 'Access Hours: ',
-        data: '6:00AM - 10:00PM 7 Days a Week'
+        data: '5:00AM - 10:00PM 7 Days a Week'
     }
 ];
 

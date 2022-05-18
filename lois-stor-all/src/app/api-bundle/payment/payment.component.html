@@ -23,9 +23,8 @@
               <p class="pt-3"><b>Have questions about your account?</b><br>
               
               <span *ngFor="let contact of contact"  [class.display-none]="contact?.id == 0 || contact?.id == 1"><span class="contact-data" 
-               
                 *ngIf="contact?.id == 2 || contact?.id == 3">
-                <a [href]="contact?.redirect">{{contact.data}}</a></span><br>
+                <a [href]="contact?.redirect">{{contact.data}}</a></span><br> 
             </span>
             </div>
         </div>

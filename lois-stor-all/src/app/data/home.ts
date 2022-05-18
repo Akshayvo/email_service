@@ -5,16 +5,15 @@ export const featuresList = [
         td2: 'Fully-Fenced',
     },
     {
-        td1: '24 Hour Access',
-        td2: 'Online Bill-Pay',
+        td1: 'Online Bill-Pay',
+        td2: 'Convenient Location',
     },
     {
-        td1: 'Convenient Location',
-        td2: 'Online Reservations',
+        td1: 'Online Reservations',
+        td2: 'Pin-Code Secured Gate',
     },
     {
-        td1: 'Pin-Code Secured Gate',
-        td2: 'Managers Available 6 Days a Week'
+        td1: 'Managers Available 6 Days a Week'
     }
 ];
 

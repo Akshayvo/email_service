@@ -28,6 +28,14 @@
   a {
     color: black;
   }
+  margin-bottom: 5px;
+  .hour-data {
+    margin-bottom: 5px;
+  }
+}
+
+.hour-data:last-child {
+  margin-top: 10px;
 }
 
 // Get started Section
@@ -106,6 +114,11 @@
   display: flex;
   align-items: center;
   height: 20vh;
+
+  .feature-text {
+    font-size: 16px;
+  }
+
 }
 
 @media only screen and (min-width: 1200px) {
