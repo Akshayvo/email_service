@@ -59,6 +59,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   showClimateControl: boolean; 
   facilityName: string;
   state: string;
+  mobile: any;
 
   private getDataSubscribe$: Subscription;
   constructor(
@@ -144,7 +145,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
       this.LstUnitTypes = unitTypesResponse.lstUnitTypes;
       this.mobileUnitTypes = this.LstUnitTypes.filter(x => x.IsMobile === true);
       this.regularUnitTypes = this.LstUnitTypes.filter(x => x.IsMobile === false);
-
+      this.mobile = this.LstUnitTypes.filter(x => x.UnitTypeID ===  15 || x.UnitTypeID === 16)
     });
   }
 
