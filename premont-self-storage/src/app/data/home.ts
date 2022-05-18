@@ -31,11 +31,11 @@ export const aboutUsHeading = `Affordable Self Storage and Parking in Premont, T
 
 export const aboutUs = [
     {
-        p: `Premont Self Storage is Premont’s one stop self storage solution. Our locally owned and operated self storage facility is conveniently located just south of Premont off of 281 on County Route 422. Our clean, well maintained self storage units come in both 10-foot-by-10-foot, 10-foot-by-20-foot unit types, and outdoor boat, RV, and vehicle storage`,
+        p: `Premont Self Storage is Premont’s one stop self storage solution. The self storage facility is conveniently located just south of Premont off of 281 on County Route 422 Our clean, well maintained self storage units come in both 10-foot-by-10-foot, 10-foot-by-20-foot unit types, and outdoor boat, RV, and vehicle storage`,
     },
     {
         h:`Convenience`,
-        p: `We understand that the need for self storage often comes at stressful times, so at Premont Self Storage, we go the extra mile to make your experience a convenient one. You can check out our rates and availability, then move into your unit online in minutes! Once you’re a Premont Self Storage customer, you’ll have access to your unit during our facility hours, and you can pay your rent through our website 24 hours a day. Our knowledgeable and friendly staff are available during office hours to answer any questions and assist you in making your stay with us an easy one.`,
+        p: `We understand that the need for self storage often comes at stressful times, so at Premont Self Storage, we go the extra mile to make your experience a convenient one. You can check out our rates and availability, then move into your unit online in minutes! Once you’re a Premont Self Storage customer, you’ll have access to your unit during our facility hours, and you can pay your rent through our website 24 hours a day. Our knowledgeable and friendly staff are available to answer any questions and assist you in making your stay with us an easy one.`,
     },
     {
         h:`Security`,
