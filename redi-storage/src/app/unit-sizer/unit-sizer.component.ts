@@ -19,7 +19,7 @@ export class UnitSizerComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `390 Self Storage offers clean and secure storage facility.
+      content: `Redi Storage - Windham offers clean and secure storage facility.
       We offer storage space from 25 sq feet to 300 sq feet. Serving Rochester, Gates and Brighton NY.`
     });
     this.titleService.setTitle(`Storage Facility Rochester NY, Size Estimator Gates, Brighton NY`);

@@ -21,11 +21,11 @@
 
 
 .jumbotron-background-webp {
-  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/390_Self_Storage/390-self-storage-homepage-169.webp");
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Redi_Storage/webp/redi-storage-jumbotron.webp");
 }
 
 .jumbotron-background-jpg {
-  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/390_Self_Storage/390-self-storage-homepage-169.jpg");
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Redi_Storage/jpg/redi-storage-jumbotron.jpg");
 }
 
 .display-contact {
@@ -45,6 +45,11 @@
   color: $white;
   overflow: hidden;
   border-radius: 0;
+}
+
+
+.btn-primary{
+  background-color: #FF0000 !important;
 }
 
 .home-map {
@@ -263,7 +268,9 @@
 
   .jumbotorn-button {
     padding: 10px;
+    
   }
+  
 
   .jumbotron-top {
     height: 100vh;

@@ -1,55 +1,57 @@
 export const faq = [
   {
-    h2: `How do I rent a unit?`,
-    paragraph: `Call the office or stop in to make sure we have a unit available for you - Bring 
-    your drivers license. We will not rent to someone that we don't have required identification 
-    from to aid in security of all our tenants. If you're not sure what size unit you need and 
-    want to take a look at a couple different size units to make sure you get the right sized 
-    unit ask the manager for the keys and go out and take a look. After you decide, come back 
-    to the office and we'll get you signed up. `,
+    h2: `What sets your facility apart from the competition?`,
+    paragraph: `Redi Storage - Windham is located inside the former Dollar General store, located off North Main Street in Windham, OH.  All of your units are climate-controlled, and each unit is armed with an alarm to provide enhanced security for your belongings being stored with us.  By using our easy-to-use online rentals, you can begin moving into your new, secure, and clean unit in a matter of minutes!`,
   },
   {
-    h2: `Is there a deposit required?`,
-    paragraph: `Yes we require a one-month deposit plus a clean out fee and lock deposit.`,
+    h2: `What communities do you serve?`,
+    paragraph: `Windham, Warren, Freedom, Lordstown, Garrettsville, Braceville, Newton Falls.`,
   },
   {
-    h2: `Is there a minimum requirement for renting a unit?`,
-    paragraph: `Yes! We do not charge an account setup fee but we have a full two-month minimum rental period.`,
+    h2: `Do I get a lock when I rent the unit?`,
+    paragraph: `Yes, locks are already provided on units.`,
   },
   {
-    h2: `How do I pay for my unit? `,
-    paragraph: `Rent is due the first of the month. You can pay by check, credit card, debit card or cash. 
-    You can send a check by mail or stop at the office and pay by any of the listed methods. 
-    You can pay online with a credit card, debit card or we can set you up on auto-pay. Auto-pay provides 
-    you with the convenience of knowing that your rent is paid on time and the assurance of avoiding any late fees. `,
+    h2: `What are the vacating requirements?`,
+    paragraph: `Give written notice at least ten days prior to vacating, remove all items from the unit, leave unit broom-clean, inform Redi Storage staff via phone or email at 833-900-7334 or windham@redistorage.com.`,
   },
   {
-    h2: `Do I need to provide ID?`,
-    paragraph: `Yes! We will not rent to someone that we don’t have required identification from to aid in security of all our tenants.`,
-  // bold: `If you do not come in and finalize the rental process for the unit by the 7th day you will forfeit your deposit amounts and we will mark the unit as available to rent.`,
-  // paragraph1: `When you do come in, the first month will be prorated and you will pay the specific prorated amount, and then rent will be due the first of the next month. You can pay ahead if you wish.`,
+    h2: `What are my payment options?`,
+    paragraph: `Online payments via credit or debit card, Auto-pay, contacting our facility managers via phone or email at 833-900-7334 x110 or Windham@RediStorage.com, and lastly by mailing a check or money order to our corporate office at 10121 Northfield Rd, Northfield, OH 44067.`,
+  
   },
   {
-    h2: `Is my rent prorated on move-in and move-out?`,
-    paragraph: `We pro-rate the month you move in but we do not pro-rate when you move out.`,
+    h2: `Do you provide insurance?`,
+    paragraph: `No. When you sign for a unit you will also be signing a release form that holds you completely responsible for the well being of your belongings. However, we do offer an insurance brochure at every office. Also, keep in mind that some Home Owners/Renter’s insurance will cover your unit as well. Whatever form of insurance you choose is up to you. But remember, insurance is always good to have!`,
   },
   {
-    h2: `Do I need to bring my own lock? `,
-    paragraph: `We provide you with a cylinder lock similar to the lock on soda machines. 
-    We give you two keys for the cylinder lock and you can provide your own padlock in addition, 
-    if you wish. The cylinder lock is spring loaded so you have to push in on the key and turn 
-    to open it and then pull the cylinder out. `,
+    h2: `Do you have moving carts available?`,
+    paragraph: `We do not offer any moving services only moving supplies.`,
   },
   {
-    h2: `What if I move? `,
-    paragraph: `You are responsible for letting us know your new address.`,
+    h2: `What type of security do you provide?`,
+    paragraph: `Each facility is fenced in allowing access through a PTI gate system. At each facility, security cameras are recording Monday-Sunday, 24 hours a day.
+
+    *Note security cameras do not cover the entire facility*`,
   },
   {
-    h2: `What do I do when it is time to move out? `,
-    paragraph: `We ask that you give us a 10-day notice prior to moving out. 
-    You must fill out a move-out form to verify when you are moving out and to 
-    assure us that we send your deposit to the correct address. You must also 
-    return the two keys and sweep the unit clean when you move out to get your 
-    full deposit back. It can take up to two weeks for us to process your deposit refund.`,
+    h2: `Do you intend to offer online reservations?`,
+    paragraph: `No`,
+  },
+  {
+    h2: `Do you intend to offer online move ins?`,
+    paragraph: `Yes`,
+  },
+  {
+    h2: `Do you want to allow tenants to turn automatic payments on and off from the website?`,
+    paragraph: `Yes`,
+  },
+  {
+    h2: `Do you want to allow tenants the option of turning on automatic payments during the online rental process?`,
+    paragraph: `Yes`,
+  },
+  {
+    h2: `Do you accept credit cards?`,
+    paragraph: `All of our locations accept Master Card/VISA/Discover.`,
   },
 ];

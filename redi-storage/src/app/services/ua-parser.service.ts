@@ -31,9 +31,9 @@ export class UaParserService {
       }
     }
     if (this.typeOfImages === 'WEBP') {
-      this.baseUrl = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Macedon/webp`;
+      this.baseUrl = `https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Redi_Storage/webp`;
     } else {
-      this.baseUrl = 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Macedon/jpg';
+      this.baseUrl = 'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Redi_Storage/jpg';
     }
   }
 }

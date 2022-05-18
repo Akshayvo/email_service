@@ -2,6 +2,6 @@
   "universal": {
     "skipInstall": false,
     "directory": ".",
-    "project": "390-self-storage"
+    "project": "redi-storage"
   }
 }

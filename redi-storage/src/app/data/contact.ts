@@ -4,7 +4,7 @@ export const contact = [
     label: 'Address: ',
     data: '9143 N. Main Street, Windham, OH 44288',
     class: 'fas fa-map-marker-alt mr-2 iconColor',
-    redirect: ''
+    redirect: 'https://goo.gl/maps/dLMmKGyXdoAui3Ss9'
   },
   {
     id: 1,
@@ -15,9 +15,9 @@ export const contact = [
   },
   {
     id: 2,
-    redirect: 'tel:1833900',
+    redirect: 'tel:8339007334',
     label: 'Phone: ',
-    data: '1-833-900',
+    data: '833-900-7334',
     class: 'fas fa-phone mr-2 iconColor',
   },
   {
@@ -32,7 +32,7 @@ export const contact = [
 export const hours = [
 
   {
-    label: 'Please call 1-833-900-REDI to schedule appointment',
+    label: 'Please call 833-900-7334 to schedule appointment',
     data: ''
   },
   // {
@@ -52,3 +52,5 @@ export const socialLinks = [
   //     class: 'fab fa-facebook-square',
   // }
 ];
+
+

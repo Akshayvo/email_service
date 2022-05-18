@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "390-self-storage": {
+    "redi-storage": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -57,18 +57,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "390-self-storage:build"
+            "browserTarget": "redi-storage:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "390-self-storage:build:production"
+              "browserTarget": "redi-storage:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "390-self-storage:build"
+            "browserTarget": "redi-storage:build"
           }
         },
         "test": {
@@ -110,7 +110,7 @@
         }
       }
     },
-    "390-self-storage-e2e": {
+    "redi-storage-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -118,11 +118,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "390-self-storage:serve"
+            "devServerTarget": "redi-storage:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "390-self-storage:serve:production"
+              "devServerTarget": "redi-storage:serve:production"
             }
           }
         },
@@ -138,5 +138,5 @@
       }
     }
   },
-  "defaultProject": "390-self-storage"
+  "defaultProject": "redi-storage"
 }

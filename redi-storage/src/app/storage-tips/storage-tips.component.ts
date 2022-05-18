@@ -26,7 +26,7 @@ export class StorageTipsComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Storage tips by - 390 Self Storage. Use smaller boxes for books and heavy items,
+      content: `Storage tips by - Redi Storage - Windham. Use smaller boxes for books and heavy items,
       use larger boxes for lighter items, visit the URL for more useful information. `
     });
     this.titleService.setTitle('Self Storage Tips For Bedroom And Clothing, Rochester NY, Gates');

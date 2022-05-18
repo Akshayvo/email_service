@@ -21,7 +21,7 @@ export class TestimonialsComponent implements OnInit {
       content: `Visit the URL and find out what customers are saying about our unbeatable service
       and quality. Serving Rochester Gates and Brighton NY.`
     });
-    this.titleService.setTitle('390 Self Storage Rochester NY - Testimonials |  Gates, Brighton NY');
+    this.titleService.setTitle('Redi Storage - Windham Rochester NY - Testimonials |  Gates, Brighton NY');
    }
 
   ngOnInit() {

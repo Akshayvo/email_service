@@ -1,13 +1,10 @@
 import { objSIMSetting } from './configuration';
 export const dataViewRates = [
     {
-        p: `390 Self Storage is Rochester's newest self storage facility. Our brand new facility is state-of-the art with ample 
-            security camera coverage, fully-paved parking, electronic pin-code activated gate, and all the modern amenities you need! `,
+        p: `Redi Storage is a family-owned business that was founded in 1986. We know how important your belongings are which is why we make sure each of our facilities is equipped with surveillance cameras, wired fencing around the entire facility, and a computerized coded gate system.`,
     },
     {
-        p: `Our friendly management staff are always ready to help answer your questions, fill out a lease, and get you settled 
-            in with our regular storage units or the climate-controlled variety. You can call or email anytime with questions 
-            about our services  or your account. We can't wait to meet you!`,
+        p: `So whether you are between houses, need extra space for your business, or need somewhere to store your car, boat, RV, or trailer for the winter; Redi Storage is the place for you!`,
     },
     
 ];

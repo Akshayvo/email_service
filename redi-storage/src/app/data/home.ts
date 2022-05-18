@@ -74,9 +74,9 @@ export const feature = [
      // for staging purpose changed location icon to lock
     {
         // tslint:disable-next-line:max-line-length
-        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Syrasoft_Poweredby/icons/lock.svg',
-        label: 'Secure Storage',
-        alt: 'Icon of a locked padlock'
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Syrasoft_Poweredby/icons/cctv.svg',
+        label: 'Security Cameras on Premises',
+        alt: 'Icon of a security camera'
     },
     {
         // tslint:disable-next-line:max-line-length
@@ -92,9 +92,9 @@ export const feature = [
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/390_Self_Storage/team.svg',
-        label: 'Locally Owned and Operated',
-        alt: 'Icon of people standing together '
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/hand.svg',
+        label: ' Affordable Self Storage Rates',
+        alt: 'Icon of a hand holding money'
     },
 ];
 
@@ -172,33 +172,22 @@ export const aboutUs = [
 
 export const testimonials = [
     {
-        p: `I've rented a storage unit here for about 7 years.  The units and area around them are clean
-            and well kept and the people in the office are nice and pleasant to work with.  They also offer
-            climate controlled units and the prices are very reasonable.  They are convenient to where I
-            live so are readily accessible.`,
-        name: '- Porlebeke'
+        p: `This is my first experience in renting a storage unit. I am so pleased with the facility. The location, cleanliness, security, and top-notch customer service is the best!`,
+        name: '- JODY'
     },
     {
-        p: `Very friendly staff and a great, safe location to store your things!`,
-        name: `- Z Daily`
+        p: `Good location, squeaky clean! Great customer service. No issues getting moved in. Very helpful.`,
+        name: `- GERALD`
     },
     {
-        p: `Rented a space here for over a year. Very clean and safe place to store your items.
-            They offer climate-controlled storage as well.`,
-        name: `- SF`
+        p: `Signing up was a breeze and friendly staff nice clean place`,
+        name: `- WILLIAM`
     },
     {
-        p: `Clean and well-managed`,
-        name: '- Fred Dewey'
+        p: `I needed a climate-controlled unit to move my stuff into, this was clean, reasonable, and close. Just what I needed.`,
+        name: '- ROSANNA'
     },
-    {
-        p: `Great place. Customer service seems to be a priority. Clean and maintained.`,
-        name: `- Andy Dickason`
-    },
-    {
-        p: `Great service. Secure and clean.`,
-        name: `- Lisa D`
-    }
+    
 ];
 
 export const aboutUsAlt = `indoor climate controlled storage units with roll-up doors inside of a clean, well-lit building`;
@@ -219,7 +208,7 @@ export const blurb = [
 
 export const jumbotron = [
     {
-        h2: `Single Story - Easy, 24 Hour Access! No Struggling with Elevators Or Stairs!`,
-        blurb: `390 Self Storage is conveniently located minutes away from the universities and colleges in Rochester and the Greater Rochester International Airport. Take a moment to review our rates, and rent your self storage unit in minutes with our simple, online rental process!`,
+        h2: `Affordable Climate Controlled Units in Windham`,
+        blurb: `Redi Storage - Windham is located inside the former Dollar General store, located off North Main Street in Windham, OH.  All of your units are climate-controlled, and each unit is armed with an alarm to provide enhanced security for your belongings being stored with us.  By using our easy-to-use online rentals, you can begin moving into your new, secure, and clean unit in a matter of minutes!`,
     }
 ];
