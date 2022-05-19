@@ -56,7 +56,8 @@
                 <b>{{contact.label}}</b><span class="contact-links" *ngIf="contact?.id === 2 || contact?.id === 3 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
                 <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
               </div>
-              <div class="pt-3 font-xs-device">
+              <h3 class="office-hours">Office Hours:</h3>
+              <div class="pt-3 font-xs-device access-hours">
                   <div *ngFor="let hour of hours" class="hour-data">
                       <b>{{hour.label}}</b>{{hour.data}}<br>
                     </div>    
@@ -64,7 +65,7 @@
               </div>
           </div>
           
-          <div>
+          <div class="features-table">
               <app-tables [tBody]="featuresList"></app-tables>
           </div>
         </div>

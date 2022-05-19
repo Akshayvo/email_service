@@ -52,7 +52,7 @@ export const aboutUs = [
     },
     {
         p: `Our facility is conveniently located on Droster Ave, off of Milwaukee Ave behind Otter Sales & Service. Our customers love the 
-            personal pin-code secured gate access and our daily 6:00AM to 10:00PM access hours! You can even reserve your unit or pay your 
+            personal pin-code secured gate access and our daily 5:00AM to 10:00PM access hours! You can even reserve your unit or pay your 
             rent online.`,
     },
     {
