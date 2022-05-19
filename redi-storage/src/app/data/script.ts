@@ -43,11 +43,11 @@ export const script = {               // Please fill this script according to fa
      currenciesAccepted: "USD",
      ratingValue: "4",
      bestRating: "5",
-     reviewCount: "250",
+     reviewCount: "1",
      latitude: 41.240339,
      longitude: -81.0489571,
      openingHours: [],
-     priceRange: ''
+     priceRange: '$8-$60'
 };
 
 export const homePageScript = [ {
