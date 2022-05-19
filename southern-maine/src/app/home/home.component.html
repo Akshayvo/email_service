@@ -53,14 +53,14 @@
               </p>
               <b>Office Hours:</b>
               <p>
-                <span *ngFor="let hour of hours">
-                  <b>{{hour.label}}</b>&nbsp;{{hour.data}}<br>
+                <span *ngFor="let hour of hours" class="details">
+                  <b>{{hour.label}}</b>&nbsp;<h4>{{hour.data}}</h4><br>
                 </span>
               </p>
               <b>Access Hours:</b>
               <p>
-                <span *ngFor="let hour of accessHours">
-                  <b>{{hour.label}}</b>&nbsp;{{hour.data}}<br>
+                <span *ngFor="let hour of accessHours" class="details">
+                  <b>{{hour.label}}</b>&nbsp;<h4>{{hour.data}}</h4><br>
                 </span>
               </p>
             </div>
