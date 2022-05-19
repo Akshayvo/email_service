@@ -34,7 +34,7 @@ export const unitSizer = [
         size: '10\' x 15\'',
         heading: '10\' x 15\' Storage Unit',
         unitImg: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x15.png',
-        data: `This unit is approximately 160 sq feet of space that can hold the
+        data: `This unit is approximately 150 sq feet of space that can hold the
                 contents of a single bedroom apartment. `,
         amenities: [
             { content: 'Mattress sets', },
