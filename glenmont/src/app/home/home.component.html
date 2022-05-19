@@ -24,7 +24,7 @@
       <div class="container">
         <div class="feature row">
           <div class="col-md-3 col-3 feature-icon-style" *ngFor="let feature of feature">
-            <img [src]="feature?.path" [alt]="feature?.alt" />
+            <img [src]="feature?.path" [alt]="feature?.alt" height="100%" width="100%" />
               <h2 class="feature-text">{{feature.label}}</h2>
           </div>
         </div>
@@ -38,7 +38,7 @@
       <div class="section py-4 m-0">
         <div class="row">
           <div class="col-lg-6 py-3 home-map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8307.825850000905!2d-73.79530419572531!3d42.59222691574576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc611c6df6612d793!2sGlenmont%20Self%20Storage!5e0!3m2!1sen!2sus!4v1611542679707!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen rel="noopener" ></iframe> 
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8307.825850000905!2d-73.79530419572531!3d42.59222691574576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc611c6df6612d793!2sGlenmont%20Self%20Storage!5e0!3m2!1sen!2sus!4v1611542679707!5m2!1sen!2sus" width="100%" height="100%" title="Google Map" frameborder="0" allowfullscreen rel="noopener" ></iframe> 
           </div>
 
           <div class="col-lg-6 py-3">
@@ -46,7 +46,7 @@
               
               <p>
                 <span *ngFor="let contact of contactDetails" class="display-contact">
-                  <span><h4><b>{{contact.label}}</b></h4></span><span class="contact-links" *ngIf="contact?.label === 'Address:' || contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
+                  <span><h3><b>{{contact.label}}</b></h3></span><span class="contact-links" *ngIf="contact?.label === 'Address:' || contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
                     <h4><a rel="noreferrer" [href]="contact?.redirect" target="{{(contact?.label === 'Address:') ? '_blank' : '_self'}}">&nbsp;{{contact.data}}</a></h4>
                   </span>
                   <ng-template #other_content>&nbsp;<h4>{{contact.data}}</h4></ng-template><br>

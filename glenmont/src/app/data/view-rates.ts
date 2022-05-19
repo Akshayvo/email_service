@@ -45,7 +45,7 @@ export const tiles = [
     temperature: `Temp. Control`,
     price: `Please call for price`,
     discount: `50% off 1st and 2nd months`,
-    discount1: ``,
+    // discount1: ``,
   },
   {
     size: `5 x 5`,
