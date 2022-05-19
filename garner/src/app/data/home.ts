@@ -110,11 +110,11 @@ export const grid = [
     },
     {
         description: `Open St, Elec Rec`,
-        rate: '30.00'
+        rate: '60.00'
     },
     {
         description: `Open Storage`,
-        rate: '60.00'
+        rate: '50.00'
     },
 
 

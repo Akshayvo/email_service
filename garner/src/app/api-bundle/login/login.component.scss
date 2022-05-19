@@ -13,6 +13,10 @@
   border-left: 1px solid black;
   padding-left: 50px;
 
+  h2{
+    font-size: 25px;
+  }
+
   a {
     color: black;
   }
@@ -44,4 +48,14 @@
 .button-display {
   display: flex;
   align-items: end;
+}
+
+.forgot-link{
+  margin-bottom: 8px;
+}
+
+.contact-links{
+  div{
+    margin-bottom: 8px;
+  }
 }
