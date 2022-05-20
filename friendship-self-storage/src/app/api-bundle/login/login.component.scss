@@ -10,11 +10,18 @@
 .display-none {
   display: none;
   visibility: hidden;
+
+  h2{
+    font-size: 28px;
+  }
 }
 
 .contact-links {
   a {
     color: black;
+  }
+  div{
+    margin-bottom: 5px;
   }
 }
 
@@ -30,6 +37,7 @@
     text-decoration: underline;
     cursor: pointer;
   }
+  margin-bottom: 5px;
 }
 
 .loader {
