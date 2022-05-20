@@ -106,18 +106,18 @@ export const apiRoutes = [
             { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
           ]
         },
-        { path: 'move-in', component: ReserveComponent,
-          children: [
-            { path: '', component: ReserveUnitFormComponent },
-            // { path: 'move-in', component: ReserveUnitFormComponent },
-            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
-            { path: 'confirmation', component: ConfirmationDataComponent },
-            { path: 'payReservationCharges', component: PayRentFormComponent },
-            { path: 'payMoveInCharges', component: PayRentFormComponent },
-            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
+        // { path: 'move-in', component: ReserveComponent,
+        //   children: [
+        //     { path: '', component: ReserveUnitFormComponent },
+        //     // { path: 'move-in', component: ReserveUnitFormComponent },
+        //     // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+        //     { path: 'confirmation', component: ConfirmationDataComponent },
+        //     { path: 'payReservationCharges', component: PayRentFormComponent },
+        //     { path: 'payMoveInCharges', component: PayRentFormComponent },
+        //     { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
 
-          ]
-        },
+        //   ]
+        // },
         // { path: 'photos', component: PhotosComponent },
         { path: 'about', component: AboutUsComponent },
         { path: 'directions', component: DirectionsComponent },
