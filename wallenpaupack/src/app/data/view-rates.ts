@@ -79,7 +79,7 @@ export const th = [
       id: 'AK'
     },
     {
-      description: 'Alabama',
+      description: 'pennsylvania',
       id: 'AL'
     },
     {
