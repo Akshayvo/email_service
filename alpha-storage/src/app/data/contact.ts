@@ -4,7 +4,7 @@ export const contact = [
         label: 'Address:',
         data: 'Mulmur, ON L0N 1M0, Canada',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
-        redirect: ''
+        redirect: 'https://goo.gl/maps/PZf7q6w2VGFNY3k97'
     },
     // {
     //     id: 1,
