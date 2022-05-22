@@ -9,7 +9,7 @@ import { messages } from './data/message';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 
 export class AppComponent implements OnInit {
@@ -17,6 +17,9 @@ export class AppComponent implements OnInit {
   flag: boolean;
   public offsets: number[];
   x: any;
+  previousUrl: string;
+  currentUrl: string;
+  refferURL: string;
 
   // Routing code
   previousUrlViaNavigationEnd$ = new BehaviorSubject<string>(null);
@@ -37,6 +40,15 @@ export class AppComponent implements OnInit {
     private routerHistoryService: NavigationService,
     @Inject(WINDOW) private window: Window,
   ) {
+    this.router.events.pipe(
+      filter((event) => event instanceof NavigationEnd)
+    ).subscribe((event: NavigationEnd) => {
+      this.previousUrl = this.currentUrl;
+      this.currentUrl = event.url;
+      console.log(this.currentUrl, this.previousUrl)
+      sessionStorage.setItem("refferURL",this.currentUrl);
+    });
+
     // Event logging only
     router.events.subscribe(event => {
       if (event instanceof NavigationStart) {
@@ -78,7 +90,9 @@ export class AppComponent implements OnInit {
         }
       );
   }
+
   ngOnInit() {
+    this.refferURL = this.previousUrl;
     this.x = window.matchMedia('(max-width: 600px)');
     this.flag = false;
     this.angulatics.eventTrack('Dev', { category: 'App initialized' });
