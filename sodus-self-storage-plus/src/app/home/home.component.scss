@@ -31,9 +31,9 @@
   border-radius: 0;
 }
 
-.jumbotorn-button{
-  margin: 10px;
-}
+// .jumbotorn-button{
+//   margin: 10px;
+// }
 
 .home-map {
   iframe {
@@ -114,7 +114,7 @@
   transform: skew(0deg);
   width: 500px;
   position: absolute;
-  top: 16%;
+  top: 50%;
 
   .btn-outline-primary {
     background-color: $primary !important;
