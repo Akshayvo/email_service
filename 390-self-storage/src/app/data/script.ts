@@ -41,13 +41,13 @@ export const script = {               // Please fill this script according to fa
      id: environment.websiteUrl || "",
      paymentAccepted:  "Cash, Check, Credit Card, Debit Card, Online Credit Card, Online Debit Card",
      currenciesAccepted: "USD",
-     ratingValue: "4",
+     ratingValue: "4.8",
      bestRating: "5",
-     reviewCount: "250",
+     reviewCount: "6",
      latitude: 43.136031,
      longitude: 77.663581,
-     openingHours: [],
-     priceRange: ''
+     openingHours: ["9AM-4PM"],
+     priceRange: '$5-$200'
 };
 
 export const homePageScript = [ {
