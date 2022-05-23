@@ -29,7 +29,7 @@ export class ErrorComponent implements OnInit {
     this.completeMessage = `Domain Name: ${environment.websiteUrl}, <br/>
     Effected URL:  ${environment.websiteUrl}${this.router.url} <br />
     Timestamp: ${this.currentTimeInSeconds} <br />
-    Refference URL: ${environment.websiteUrl}${this.refferURL}`;
+    Refferring URL: ${environment.websiteUrl}${this.refferURL}`;
 
       const body = {
         name: "404 Error Occured",
