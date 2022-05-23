@@ -30,7 +30,7 @@ export const script = {               // Please fill this script according to fa
       "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Friendship_Self_Storage/jpg/friendship-self-storage-169.jpg" // 16:9
      ],
      telephone: contact[contactIndex].data,
-     map: "https://www.google.com/maps/place/Friendship+Self+Storage,+50+Friendship+St,+Westerly,+RI+02891/@41.3839364,-71.8274584,17z/data=!4m6!1m3!3m2!1s0x89e5e71481052259:0x324bd420a67e6f62!2sFriendship+Self+Storage,+50+Friendship+St,+Westerly,+RI+02891!3m1!1s0x89e5e71481052259:0x324bd420a67e6f62?hl=en-US&gl=us",
+     map: "https://goo.gl/maps/d8DaKyzY3P15zEMA6",
      description: "Friendship Self Storage is Westerly’s one stop self storage solution. We provide a number of self storage unit sizes and vehicle parking spaces to accommodate all of your self storage or parking needs! Our friendly service and many amenities all come at extremely affordable rates. Give our friendly management team a call today!",
      streetAddress: "50 Friendship St",
      state: "Rhode",
@@ -43,10 +43,10 @@ export const script = {               // Please fill this script according to fa
      currenciesAccepted: "USD",
      ratingValue: "4.4",
      bestRating: "5",
-     reviewCount: "250",
+     reviewCount: "5",
      latitude: 41.3839364,
      longitude: -71.8274584,
-     openingHours: [],
+     openingHours: ["9AM-4PM"],
      priceRange: '$65-$200'
 };
 

@@ -4,7 +4,7 @@ export const contact = [
         label: 'Address:',
         data: '50 Friendship St, Westerly, RI 02891',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
-        redirect: 'https://goo.gl/maps/t9U424FPvWa9ipLt5'
+        redirect: 'https://goo.gl/maps/d8DaKyzY3P15zEMA6'
     },
     {
         id: 1,
