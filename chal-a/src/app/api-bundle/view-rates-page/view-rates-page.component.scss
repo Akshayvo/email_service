@@ -143,9 +143,12 @@ p {
   }
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 991px) and (min-width: 766px) {
   .viewrates-desktop {
     display: none;
+  }
+  .mobile-storage-info {
+    flex-direction: column;
   }
 }
 
@@ -155,6 +158,9 @@ p {
       min-width: 150px;
     }
   }
+  .mobile-storage-info {
+    flex-direction: column;
+  }
 }
 
 @media only screen and (max-width: 380px) {
@@ -162,5 +168,8 @@ p {
     .btn {
       min-width: auto;
     }
+  }
+  .mobile-storage-info {
+    flex-direction: column;
   }
 }
