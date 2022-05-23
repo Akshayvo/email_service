@@ -44,16 +44,16 @@
       <div class="col-lg-4 pt-3 tab-background" >
         <div class="map-responsive">
           <span *ngIf="locationId == 1"> 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d23673.963698965803!2d-75.31996932762276!3d41.344527935053144!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x53f6f6b8c678ad4d!2sWallenpaupack%20Self%20Storage!5e0!3m2!1sen!2sus!4v1650418006748!5m2!1sen!2sus" width="100%" height="220" frameborder="0" title="Facility Google Map"  allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11955.07332034584!2d-75.186852!3d41.487622!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd651019d6e5c8f1!2sWallenpaupack%20Self%20Storage%20-%20Hawley!5e0!3m2!1sen!2sin!4v1653285456508!5m2!1sen!2sin" width="100%" height="220" frameborder="0" title="Facility Google Map"  allowfullscreen></iframe>
           </span>
             <span *ngIf="locationId == 2">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11967.701827207262!2d-75.3370162!3d41.4191368!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x56f80e7d20de09e2!2sWallenpaupack%20Self%20Storage!5e0!3m2!1sen!2sus!4v1631556798635!5m2!1sen!2sus" width="100%" height="230" frameborder="0" title="Facility Google Map" allowfullscreen></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d47864.44036028962!2d-75.281754!3d41.427774!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4ab43978c9491515!2sWallenpaupack%20Self%20Storage!5e0!3m2!1sen!2sin!4v1653285576306!5m2!1sen!2sin" width="100%" height="230" frameborder="0" title="Facility Google Map" allowfullscreen></iframe>
             </span>
             <span *ngIf="locationId == 3">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4106.431999627227!2d-75.18773147024652!3d41.487577462835766!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd651019d6e5c8f1!2sWallenpaupack%20Self%20Storage%20-%20Hawley!5e0!3m2!1sen!2sus!4v1632942446755!5m2!1sen!2sus" width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d47870.80716141079!2d-75.337016!3d41.419137!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x56f80e7d20de09e2!2sWallenpaupack%20Self%20Storage!5e0!3m2!1sen!2sin!4v1653286033442!5m2!1sen!2sin" width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </span>
             <span *ngIf="locationId == 4">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11966.110090072405!2d-75.281754!3d41.427774!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4ab43978c9491515!2sWallenpaupack%20Self%20Storage!5e0!3m2!1sen!2sus!4v1631559226025!5m2!1sen!2sus" width="100%" height="220" frameborder="0" title="Facility Google Map"  allowfullscreen></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d95857.0402183037!2d-75.319535!3d41.340778!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x53f6f6b8c678ad4d!2sWallenpaupack%20Self%20Storage!5e0!3m2!1sen!2sin!4v1653286149892!5m2!1sen!2sin" width="100%" height="220" frameborder="0" title="Facility Google Map"  allowfullscreen></iframe>
             </span>
             <span *ngIf="locationId == 5">
               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11982.130064085359!2d-75.3195352!3d41.3407778!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x53f6f6b8c678ad4d!2sWallenpaupack%20Self%20Storage!5e0!3m2!1sen!2sus!4v1631557731977!5m2!1sen!2sus" width="100%" height="220" frameborder="0" title="Facility Google Map"  allowfullscreen></iframe>
@@ -65,10 +65,10 @@
         <div class="hours-data w-100">
           <div class="row">
             <div class="col-lg-8">
-              <h4 class="pt-3" *ngIf="locationId !== 1;then content else other_content" >Access Hours</h4>
-              <ng-template #content><h4 class="pt-3">Access Hours</h4><app-tables [tBody]="hours" ></app-tables></ng-template>
+              <h2 class="pt-3" *ngIf="locationId !== 1;then content else other_content" >Access Hours</h2>
+              <ng-template #content><h2 class="pt-3">Access Hours</h2><app-tables [tBody]="hours" ></app-tables></ng-template>
               <ng-template #other_content><h4 *ngIf="locationId !== 1" class="pt-3">Office Hours</h4><app-tables *ngIf="locationId !== 1" [tBody]="hours" >
-              </app-tables><h4 class="pt-3">Access Hours</h4><app-tables [tBody]="access" ></app-tables>
+              </app-tables><h2 class="pt-3">Access Hours</h2><app-tables [tBody]="access" ></app-tables>
             </ng-template> 
             </div>
             </div>
@@ -108,3 +108,6 @@
   <app-directions></app-directions>
 </div>
 <!-- Data preloading Ends-->
+
+
+

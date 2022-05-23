@@ -15,9 +15,9 @@
             </div>
             <div class="row">
                 <div class="form-group col-lg-6 col-12">
-                    <label>UserName</label> &nbsp;
+                    <label for="username">UserName</label> &nbsp;
                     <input type="text" formControlName="strUserName"  
-                    class="form-control" 
+                    class="form-control" id="username"
                     [ngClass]="{ 'is-invalid': submitted && f.strUserName.errors }"
                     />
                     <div *ngIf="submitted && f.strUserName.errors" class="invalid-feedback">
@@ -27,8 +27,8 @@
             </div>
             <div class="row">
                 <div class="form-group col-lg-6 col-12">
-                    <label>Password</label> &nbsp;
-                    <input type="password" formControlName="strPassword" class="form-control" 
+                    <label for="password">Password</label> &nbsp;
+                    <input type="password" formControlName="strPassword" class="form-control" id="password"
                     [ngClass]="{ 'is-invalid': submitted && f.strPassword.errors }"  
                     />
                     <div *ngIf="submitted && f.strPassword.errors" class="invalid-feedback">
@@ -60,7 +60,7 @@
     </div>
     </div>
     <div class="col-lg-4 rent-example p-4" >
-        <h3>How to Login</h3>
+        <h2>How to Login</h2>
         <div *ngFor="let loginDetail of loginDetail">
           <p><b>Username: </b>&nbsp;{{loginDetail.userName}}<br>
           <b>Password: </b>&nbsp;{{loginDetail.password}}</p>
@@ -75,7 +75,7 @@
               <a  *ngIf="contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content" [href]="contact?.redirect">
                 {{contact.data}}
               </a>
-            <br>
+            <div></div>
           </span>
           </p>
     </div> 

@@ -99,44 +99,45 @@ export const description4 = `Are you in search of affordable self storage or veh
 
 export const description5 = `Take a moment to view our affordable self storage unit rates, then make your reservation by filling out our form or calling our office today!`
 
-export const maplocation1 = 'https://goo.gl/maps/VkBGKt4Hbp6rb3F36';
-export const maplocation2 = 'https://goo.gl/maps/yfPnpb1MJ9Fz9Kue6';
-export const maplocation3 = 'https://goo.gl/maps/MZ2bUNFNT1HWfDfw5';
+export const maplocation1 = 'https://goo.gl/maps/dBNmYxSyc43HR9ey7';
+export const maplocation2 = 'https://goo.gl/maps/9mLA6oH6jbbJcH6Z8';
+export const maplocation3 = 'https://goo.gl/maps/4xcc8TGnpwTkK3Xm9';
+export const maplocation4 = 'https://goo.gl/maps/zfgTnPnK5EfB4i7o6';
 
 export const addressLoaction1 = {
   '@type': 'PostalAddress',
-      'streetAddress': '',
-      'addressLocality': '',
-      'addressRegion': '',
-      'postalCode': '',
+      'streetAddress': '204 Purdytown Turnpike',
+      'addressLocality': 'Lakeville',
+      'addressRegion': 'Lakeville',
+      'postalCode': '18438',
       'addressCountry': 'United state'
 };
 
 export const addressLoaction2 = {
   '@type': 'PostalAddress',
-  'streetAddress': '',
-  'addressLocality': '',
-  'addressRegion': '',
-  'postalCode': '',
+  'streetAddress': '204 Purdytown Turnpike',
+  'addressLocality': 'Lakeville',
+  'addressRegion': 'Lakeville',
+  'postalCode': '18438',
   'addressCountry': 'United state'
 }
 
 export const addressLoaction3 = {
-  '@type': '',
-  'streetAddress': '',
-  'addressLocality': '',
-  'addressRegion': '',
-  'postalCode': '',
-  'addressCountry': ''
+  '@type': 'PostalAddress',
+  'streetAddress': '204 Purdytown Turnpike',
+  'addressLocality': 'Lakeville',
+  'addressRegion': 'Lakeville',
+  'postalCode': '18438',
+  'addressCountry': 'United state'
 } 
 
 export const addressLoaction4 = {
-  '@type': '',
-  'streetAddress': '',
-  'addressLocality': '',
-  'addressRegion': '',
-  'postalCode': '',
-  'addressCountry': ''
+  '@type': 'PostalAddress',
+  'streetAddress': '204 Purdytown Turnpike',
+  'addressLocality': 'Lakeville',
+  'addressRegion': 'Lakeville',
+  'postalCode': '18438',
+  'addressCountry': 'United state'
 }
 
 export const addressLoaction5 = {
@@ -233,14 +234,14 @@ export const Location1Script = {
     'address': addressLoaction1,
     'aggregateRating': {
     '@type': 'AggregateRating',
-    'ratingValue': '4.7',
+    'ratingValue': '4.8',
     'bestRating': '5',
-    'reviewCount': '3'
-  },
+    'reviewCount': '5'
+  }, 
     'geo': {
       '@type': 'GeoCoordinates',
-      'latitude': 30.4089297,
-      'longitude': -87.7331084,
+      'latitude': 41.48930973,
+      'longitude': -75.182946,
     },
     'url': urlLocation1,
     'telephone': contactsLocation1[contactIndex1].data,
@@ -268,14 +269,14 @@ export const Location2Script = {
     'address': addressLoaction2,
    'aggregateRating': {
   '@type': 'AggregateRating',
-  'ratingValue': '4.7',
+  'ratingValue': '4.0',
   'bestRating': '5',
-  'reviewCount': '12'
+  'reviewCount': '4'
 },
     'geo': {
       '@type': 'GeoCoordinates',
-      'latitude': 30.5445247,
-      'longitude': -87.7604384
+      'latitude':41.4181843,
+      'longitude': -75.281067
     },
     'url': urlLocation2,
     'telephone': contactsLocation2[contactIndex2].data,
@@ -304,14 +305,14 @@ export const Location3Script = {
     'address': addressLoaction3,
    'aggregateRating': {
   '@type': 'AggregateRating',
-  'ratingValue': '5',
+  'ratingValue': '4.4',
   'bestRating': '5',
-  'reviewCount': ''
+  'reviewCount': '8'
 },
     'geo': {
       '@type': 'GeoCoordinates',
-      'latitude': 30.4222526,
-      'longitude':  -87.8864467
+      'latitude': 41.4148244,
+      'longitude':   -75.329291
     },
     'url': urlLocation3,
     'telephone': contactsLocation3[contactIndex3].data,
@@ -340,9 +341,9 @@ export const Location4Script = {
   'address': addressLoaction4,
  'aggregateRating': {
 '@type': 'AggregateRating',
-'ratingValue': '5',
+'ratingValue': '3.7',
 'bestRating': '5',
-'reviewCount': ''
+'reviewCount': '12'
 },
   'geo': {
     '@type': 'GeoCoordinates',
