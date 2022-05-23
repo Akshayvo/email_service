@@ -59,7 +59,7 @@ import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.componen
 import { AlternateDetailsComponent } from './alternate-details/alternate-details.component';
 import { HomeModule } from './home/home.module';
 import { HeaderModule } from './header/header.module';
-import { PayRentModule } from './api-bundle/pay-rent/pay-rent.module';
+// import { PayRentModule } from './api-bundle/pay-rent/pay-rent.module';
 // import { ViewRatesComponent } from './api-bundle/view-rates/view-rates.component'; 
 
 @NgModule({
@@ -97,9 +97,9 @@ import { PayRentModule } from './api-bundle/pay-rent/pay-rent.module';
     ScriptHackComponent,
     AutoPayComponent,
     RentSubComponent,
-    // PayRentComponent,
+    PayRentComponent,
     SignUpComponent,
-    // TabsComponent,
+    TabsComponent,
     ThankYouComponent,  
     // PrivacyPolicyComponent,
     AlternateDetailsComponent,
@@ -118,7 +118,7 @@ import { PayRentModule } from './api-bundle/pay-rent/pay-rent.module';
     MaterialModule,   
     HomeModule,
     HeaderModule,
-    PayRentModule
+   
     
   ],
   providers: [
