@@ -23,6 +23,37 @@
   // z-index: 1;
 }
 
+.mobile-storage-info {
+  display: flex;
+  text-align: justify;
+  width: 100%;
+}
+
+.extra-padding{
+  padding: 10px;
+}
+
+.ms-table {
+  h4 {
+    margin: 15px;
+    font-size: 20px;
+    color: #1E4F2C;
+    font-weight: bold;
+    strong {
+      margin-right: 10px;
+      color: initial;
+      font-weight: initial;
+    }
+  }
+}
+
+.chal {
+  color: #1E4F2C;
+}
+
+.points {
+  margin-bottom: 10px;
+}
 
 table {
   width: -webkit-fill-available;
