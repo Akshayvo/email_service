@@ -102,7 +102,7 @@ export const feature = [
 export const aboutUs = [
     {
         mainHeading: `Family Owned Self-Storage Since 1986`,
-        mainParagraph: `Redi Storage is a family-owned business that was founded in 1986. We know how important your belongings are which is why we make sure each of our facilities is equipped with surveillance cameras, wired fencing around the entire facility, and a computerized coded gate system.`,
+        mainParagraph: `Redi Storage is a family-owned business that was founded in 1986. We know how important your belongings are, which is why we make sure all of our facilities are equipped with surveillance cameras and access control security to assist with the protection of your belongings.`,
         subHeading1: {
             heading: `Conveniently Located`,
             p1: `Just a couple minutes from the Greater Rochester Airport.`,
@@ -113,10 +113,7 @@ export const aboutUs = [
         },
         subHeading2: {
             heading: `Security for Your Possessions`,
-            p: `Beyond the standard padlock, 390 Self Storage offers additional security for your possessions. The entire
-            facility is fenced in with additional barbed wire installed to mitigate areas that might be more accessible.
-            The security gate is controlled by your unique personal access code. State-of-the-art security cameras record 24 hours a day,
-            and the facility is well-lit.`
+            p: `Beyond the standard lock, our Windham location of Redi Storage offers unique security for your possessions. Our state of the art facility is only accessible by two doors that is controlled by your unique, personal access code and our state-of-the-art security cameras record 24 hours, a day.`
         },
         subHeading3: {
             heading: `For Your Convenience`,
