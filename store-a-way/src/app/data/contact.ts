@@ -16,9 +16,9 @@ export const contact = [
     {
         id: 2,
         label: 'Phone:',
-        data: '(315) 264-9208',
+        data: '(315) 630-8170',
         class: 'fas fa-phone mx-2 iconColor',
-        redirect: 'tel:3152649208',
+        redirect: 'tel:3156308170',
     }
 ];
 
