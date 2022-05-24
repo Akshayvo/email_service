@@ -25,7 +25,7 @@ socialLinks.forEach(links => {
 
 export const script = {               // Please fill this script according to facility's information
     imagesHomePage: [
-      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/390_Self_Storage/390-self-storage-front-office.jpg", // 1:1
+      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/390_Self_Storage/netlify unlink390-self-storage-front-office.jpg", // 1:1
       "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/390_Self_Storage/390-self-storage-front-office.jpg", // 4:3
       "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/390_Self_Storage/390-self-storage-front-office.jpg" // 16:9
      ],
