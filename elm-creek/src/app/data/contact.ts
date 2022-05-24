@@ -4,7 +4,7 @@ export const contact = [
     label: "Address:",
     data: "8500 N 128th E Ave, Owasso, OK 74055",
     class: "fas fa-map-marker-alt mx-2 iconColor",
-    redirect: "https://goo.gl/maps/YdxJxvSvpPTJXuzU6",
+    redirect: "https://goo.gl/maps/7naKumhfQHmwbaCQ9",
   },
   {
     id: 1,
