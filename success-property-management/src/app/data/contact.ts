@@ -4,7 +4,7 @@ export const contactsHomePage = [
         label: 'Office Address: ',
         data: 'Office: 605 Baltimore St, Martinsburg, WV 25401',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/ZGensJTvKYhCiG9C8'
+        redirect: 'https://goo.gl/maps/NDRSM2BmBNcp9KzY8'
     },
     {
         id: 2,

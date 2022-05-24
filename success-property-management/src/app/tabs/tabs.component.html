@@ -3,7 +3,7 @@
   <div class=" grid text-center mx-0 horizontal-scroll-wrapper tab desktop-view">
     <span *ngFor="let tab of tabData" class="grid-item" >
       <span>
-          <a [routerLink]="tab?.path"  [id]="tab?.id" class=" px-3 py-2 btn"
+          <a [routerLink]="tab?.path" class=" px-3 py-2 btn"
           [routerLinkActive]="'tab-active'" [routerLinkActiveOptions]="{exact:true}" 
           [ngClass]="{'active-tab': selectedTab == tab?.name}">{{tab.name}}</a>
       </span>
@@ -12,7 +12,7 @@
   <div class=" row grid text-center mx-0 tab text-center mobile-view">
     <span *ngFor="let tab of tabData; let i=index"  class="grid-item col-6 px-0" [ngClass]="{'col-12': (i+1) === tabData.length && tabData.length % 2 !== 0}" >
       <span class="fullwidth">
-          <a [routerLink]="tab?.path"  [id]="tab?.id" class=" px-3 py-2 btn"
+          <a [routerLink]="tab?.path" class=" px-3 py-2 btn"
           [routerLinkActive]="'tab-active'" [routerLinkActiveOptions]="{exact:true}" 
           >{{tab.name}}</a>
       </span>
