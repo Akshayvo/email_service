@@ -4,7 +4,7 @@ export const contact = [
         label: 'Address:',
         data: '2535 Sand Hill Rd, Fayetteville, NC 28306',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
-        redirect: ''
+        redirect: 'https://goo.gl/maps/fRAvzXvW7o3sJ5GN8'
     },
     {
         id: 1,
