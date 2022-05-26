@@ -4,7 +4,7 @@ export const contact = [
     label: "Address:",
     data: "972 Hannastown Rd, New Alexandria, PA 15670",
     class: "fas fa-map-marker-alt mx-2 iconColor",
-    redirect: "https://goo.gl/maps/kVeDU4mNJfsBYJ13A",
+    redirect: "https://goo.gl/maps/f7Sxhpct6ypAgZhS7",
   },
   // {
   //   id: 1,

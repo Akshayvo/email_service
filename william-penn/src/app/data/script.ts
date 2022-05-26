@@ -42,7 +42,7 @@ export const script = {
     'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/William_Penn/jpg/william-penn-self-storage-169.jpg', // 16:9
   ],
   telephone: contact[contactIndex].data,
-  map: 'https://goo.gl/maps/GvHi24NqQeyeKRPq5',
+  map: 'https://goo.gl/maps/f7Sxhpct6ypAgZhS7',
   description:
     'William Penn Self Storage is New Alexandria’s newest self storage facility! Our facility offers a large number of affordable storage units in both outdoor and climate controlled varieties. We provide a variety of unit sizes from our walk-in closet-sized 5-foot-by-5-foot units through our 10-foot-by-25 foot units that are an ideal solution for multi-bedroom homes during a move or renovation.',
   streetAddress: '972 Hannastown Rd, New Alexandria',
@@ -54,12 +54,12 @@ export const script = {
   id: environment.websiteUrl || '',
   paymentAccepted: 'Cash, Check, Credit Card, Debit Card',
   currenciesAccepted: 'USD',
-  ratingValue: '',
-  bestRating: '',
-  reviewCount: '',
+  ratingValue: '5',
+  bestRating: '5',
+  reviewCount: '4',
   latitude: 40.3952912,
   longitude: -79.4815133,
-  openingHours: [],
+  openingHours: ["By Appointment"],
   priceRange: '$85-$299',
 };
 
