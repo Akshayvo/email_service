@@ -11,7 +11,7 @@ import { ResetPasswordComponent } from '../reset-password/reset-password.compone
 import { RentSubComponent } from '../rent-sub/rent-sub.component';
 import { AutoPayComponent } from '../auto-pay/auto-pay.component';
 import { SignUpComponent } from '../sign-up/sign-up.component';
-import { TabsComponent } from 'src/app/tabs/tabs.component';
+import { TabsComponent } from '../../tabs/tabs.component';
 import { LoginModalComponent } from '../login-modal/login-modal.component';
 import { PaymentComponent } from '../payment/payment.component';
 import { SharedModule } from '../../shared/shared.module';

@@ -82,7 +82,7 @@ const reviewURL = ``
     // Fallback when no prior route is matched
     { path: '', loadChildren: './home/home.module#HomeModule' },
     { path: `${environment.locationName}/storage-tips`, loadChildren: './storage-tips/storage-tips.module#StorageTipsModule' },
-    { path: `${environment.locationName}/reserve-unit`, loadChildren: 'src/app/api-bundle/reserve/reserve.module#ReserveModule' },
+    { path: `${environment.locationName}/reserve-unit`, loadChildren: './api-bundle/reserve/reserve.module#ReserveModule' },
     { path: 'contact-us', loadChildren: './contact/contact.module#ContactModule' },
     { path: 'unit-sizer', loadChildren: './unit-sizer/unit-sizer.module#UnitSizerModule'},
     { path: 'privacy-policy', loadChildren: './privacy-policy/privacy-policy.module#PrivacyPolicyModule' },

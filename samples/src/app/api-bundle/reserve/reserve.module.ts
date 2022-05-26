@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ReserveRoutingModule } from './reserve-routing.module';
 import { ReserveComponent } from './reserve.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { SharedModule } from 'src/app/shared/shared.module';
+import { SharedModule } from '../../shared/shared.module';
 
 
 
