@@ -1,7 +1,7 @@
 
 import { Component, OnInit , OnDestroy } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
-import { script } from '../../data/script';
+// import { script } from '../../data/script';
 import { DataSharingService } from '../services/data-sharing.service';
 import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';

@@ -3,6 +3,8 @@
 
 .forgot-link {
   a {
+    display: inline-block;
+    margin-bottom: 8px;
     color: $primary;
     text-decoration: underline;
     cursor: pointer;
@@ -44,4 +46,9 @@
 .button-display {
   display: flex;
   align-items: end;
+}
+
+.contact-links{
+  display: inline-block;
+  margin-bottom: 8px;
 }

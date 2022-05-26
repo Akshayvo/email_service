@@ -10,6 +10,9 @@ import { WINDOW } from '@ng-toolkit/universal';
 import { DataSharingService } from '../api-bundle/services/data-sharing.service';
 import { CanonicalService } from '../services/canonical.service';
 import { UaParserService } from '../services/ua-parser.service';
+import { homePageTitle, homePageContent } from '../data/title';
+import { homePageScript, ogHomePage, twitterHomePage } from '../data/script';
+
 
 
 @Component({
@@ -30,6 +33,11 @@ export class LocationComponent implements OnInit {
   locationName: string;
   imagetype: any;
   imageBaseUrl: any;
+  script: any;
+  ogHomePage: any;
+  twitterHomePage: any;
+  homePageContent: string;
+  homePageTitle: string;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -42,6 +50,31 @@ export class LocationComponent implements OnInit {
     private uaParserService: UaParserService,
     ) {
       
+      this.fetchScript();
+    this.loadScript();
+    this.fetchMetaData();
+    this.fetchOgHomePage();
+    this.fetchTwitterHomePage();
+    this.canonical.create();
+    this.ogHomePage.forEach(element => {
+      this.meta.addTag({
+        property: element.property,
+        content: element.content
+      })
+    });
+
+    this.twitterHomePage.forEach(element => {
+      this.meta.addTag({
+        name: element.name,
+        content: element.content
+      })
+    });
+
+    this.meta.addTag({
+      name: 'description',
+      content: `${this.homePageContent}`
+    });
+
       if (this.activatedRoute.snapshot.url[1].path) {
         this.dataSharingService.facilityLocation = this.activatedRoute.snapshot.url[1].path;
       }
@@ -139,4 +172,38 @@ export class LocationComponent implements OnInit {
     this.hours = hoursLocation3;
     this.tabs = tabs;
   }
+
+
+  public loadScript() {
+    const node = document.createElement('script'); // creates the script tag
+    node.type = 'application/ld+json'; // set the script type
+    node.async = false; // makes script run asynchronously
+    // node.charset = 'utf-8';
+    node.innerHTML = JSON.stringify(this.script);
+    // append to head of document
+    // document.getElementsByTagName('head')[0].appendChild(node);
+    document.head.appendChild(node);
+
+  }
+
+  public fetchScript() {
+    this.script = homePageScript;
+  }
+
+  public fetchTwitterHomePage() {
+    this.twitterHomePage = twitterHomePage;
+  }
+
+  public fetchMetaData() {
+    this.homePageTitle = homePageTitle;
+    this.homePageContent = homePageContent;
+  }
+
+  public fetchOgHomePage() {
+    this.ogHomePage = ogHomePage;
+  }
+
+  
+
+
 }

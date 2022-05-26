@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-lg-6">
         <div id="selectedImageM" class="text-center selectedImageM">
-          <img *ngIf="selectedImage" src="{{selectedImage.url}}" alt="{{selectedImage.alt}}" height="auto" width="100%">
+          <img *ngIf="selectedImage" src="{{selectedImage.url}}" alt="{{selectedImage.alt}}" height="100%" width="100%">
         </div>
       </div>
 
@@ -14,7 +14,7 @@
           <div id="thumbnailsList" class="thumbnailsList">
             <span *ngFor="let image of galleryImages; let i = index" class="m-1">
              <img src="{{image.thumb}}" class="tn"  
-              data-toggle="image.url" alt="{{image.alt}}"   data-target="#selectedImageM"
+              data-toggle="image.url" alt="{{image.alt}}" height="100%" width="100%"  data-target="#selectedImageM"
               (click)=setSelectedImage(image)>
             </span>
           </div>

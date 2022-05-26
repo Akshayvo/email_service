@@ -8,6 +8,8 @@ import { contactsLocation1, hoursLocation1,
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { LocationService } from '../services/location.service';
+import { ogContactPage, twitterContactPage } from '../data/script';
+import { contactPageTitle, contactPageContent } from '../data/title';
 import { CanonicalService } from '../services/canonical.service';
 
 @Component({
@@ -33,10 +35,15 @@ export class ContactComponent implements OnInit {
   hoursLocation1: any;
   hoursLocation2: any;
   hoursLocation3: any;
+  og: any;
+  script: any;
+  twitter: any;
   contactForm: FormGroup;
   submitted = false;
   mailSent = false;
   eventName: string;
+  contactPageTitle: string;
+  contactPageContent: string;
   places = [
     {
       id: 1,
@@ -64,6 +71,23 @@ export class ContactComponent implements OnInit {
     private canonical: CanonicalService
 
   ) {
+    this.fetchMetaData();
+    this.fetchOg();
+    this.loadScript();
+    this.fetchTwitter();
+    this.og.forEach(element => {
+      this.meta.addTag({
+        property: element.property,
+        content: element.content
+      })
+    });
+
+    this.twitter.forEach(element => {
+      this.meta.addTag({
+        name: element.name,
+        content: element.content
+      })
+    });
     this.canonical.create();
     this.meta.addTag({
       name: 'description',
@@ -109,6 +133,31 @@ export class ContactComponent implements OnInit {
     this.contactsLocation2 = contactsLocation2;
     this.contactsLocation3 = contactsLocation3;
   }
+
+  public fetchOg() {
+    this.og = ogContactPage;
+}
+
+public fetchTwitter() {
+    this.twitter = twitterContactPage;
+}
+
+public loadScript() {
+  const node = document.createElement('script'); // creates the script tag
+  node.type = 'application/ld+json'; // set the script type
+  node.async = false; // makes script run asynchronously
+  // node.charset = 'utf-8';
+  node.innerHTML = JSON.stringify(this.script);
+  // append to head of document
+  // document.getElementsByTagName('head')[0].appendChild(node);
+  document.head.appendChild(node);
+
+}
+
+public fetchMetaData() {
+  this.contactPageTitle = contactPageTitle;
+  this.contactPageContent = contactPageContent;
+}
 
   public fetchHours() {
     this.hoursLocation1 = hoursLocation1;

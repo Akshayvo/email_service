@@ -7,6 +7,8 @@ import { featuresHead, serviceOffered } from '../data/home';
 import { CanonicalService } from '../services/canonical.service';
 import { LocationService } from '../services/location.service';
 import { UaParserService } from '../services/ua-parser.service';
+import { homePageTitle, homePageContent } from '../data/title';
+import { homePageScript, ogHomePage, twitterHomePage } from '../data/script';
 
 @Component({
   selector: 'app-home',
@@ -21,6 +23,11 @@ export class HomeComponent implements OnInit {
   features: any;
   imageBaseUrl: any;
   imagetype: any;
+  script: any;
+  ogHomePage: any;
+  twitterHomePage: any;
+  homePageContent: string;
+  homePageTitle: string;
   serviceOffered: any;
 
   constructor(
@@ -33,13 +40,33 @@ export class HomeComponent implements OnInit {
   ) {
     this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
     this.imageBaseUrl = this.uaParserService.baseUrl;
+    this.fetchScript();
+    this.loadScript();
+    this.fetchMetaData();
+    this.fetchOgHomePage();
+    this.fetchTwitterHomePage();
     this.canonical.create();
+    this.ogHomePage.forEach(element => {
+      this.meta.addTag({
+        property: element.property,
+        content: element.content
+      })
+    });
+
+    this.twitterHomePage.forEach(element => {
+      this.meta.addTag({
+        name: element.name,
+        content: element.content
+      })
+    });
+
     this.meta.addTag({
       name: 'description',
-      content: `Are you in search of affordable self storage units and
-      awesome customer service? Check out our 3 convenient locations and call for your quote today!`
+      content: `${this.homePageContent}`
     });
-    this.titleService.setTitle('Self Storage in Carroll County | Carroll County Storage');
+    this.titleService.setTitle(`${this.homePageTitle}`);
+    this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
+    this.imageBaseUrl = this.uaParserService.baseUrl;
   }
 
   ngOnInit() {
@@ -83,6 +110,38 @@ export class HomeComponent implements OnInit {
       this.contactDetails = contactsLocation3;
       this.hoursDetails = hoursLocation3;
     }
+
+    public loadScript() {
+      const node = document.createElement('script'); // creates the script tag
+      node.type = 'application/ld+json'; // set the script type
+      node.async = false; // makes script run asynchronously
+      // node.charset = 'utf-8';
+      node.innerHTML = JSON.stringify(this.script);
+      // append to head of document
+      // document.getElementsByTagName('head')[0].appendChild(node);
+      document.head.appendChild(node);
+  
+    }
+
+    public fetchScript() {
+      this.script = homePageScript;
+    }
+
+    public fetchTwitterHomePage() {
+      this.twitterHomePage = twitterHomePage;
+    }
+  
+    public fetchMetaData() {
+      this.homePageTitle = homePageTitle;
+      this.homePageContent = homePageContent;
+    }
+
+    public fetchOgHomePage() {
+      this.ogHomePage = ogHomePage;
+    }
+
+  
+  
 
     public fetchFeatureHead() {
       this.features = featuresHead;
