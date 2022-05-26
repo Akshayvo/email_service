@@ -1,9 +1,10 @@
 @import "../../styles.scss";
 
 .contact-details {
-  h4 {
+  h3,h4 {
     font-size: 1rem;
   }
+  
 }
 
 .jumbotron-background-webp {
@@ -53,6 +54,7 @@
   a {
     color: black;
   }
+  margin-bottom: 5px;
 }
 
 .content-align {
@@ -119,6 +121,10 @@
   color: $secondary;
 }
 
+
+.sectionImage{
+  height: auto;
+}
 @media only screen and (min-width: 1200px) {
   .jumbotorn-skew-text {
     top: 25%;
