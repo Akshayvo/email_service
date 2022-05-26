@@ -5,8 +5,8 @@
         <div class="col-md-12">
           <span class="contact-details pr-4" *ngFor="let contact of contactDetails">
             <i [class]="contact?.class"></i>
-            <span class="contact-links" *ngIf="contact?.label === 'Address:' || contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
-              <a [href]="contact?.redirect" target="{{(contact?.label === 'Address:') ? '_blank' : '_self'}}">&nbsp;{{contact.data}}</a></span>
+            <span class="contact-links" *ngIf="contact?.label === 'Facility Address:' || contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
+              <a [href]="contact?.redirect" target="{{(contact?.label === 'Facility Address:') ? '_blank' : '_self'}}">&nbsp;{{contact.data}}</a></span>
             <ng-template #other_content>&nbsp;{{contact.data}}</ng-template>
           </span>
         </div>

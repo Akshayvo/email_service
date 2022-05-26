@@ -4,7 +4,7 @@ export const contact = [
         label: 'Facility Address:',
         data: '50 Sova Rd, Harpursville, NY 13787',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
-        redirect: 'https://goo.gl/maps/mymZM7ugdR2qKbP86'
+        redirect: 'https://goo.gl/maps/J6fF3ntKB3TL4nz49'
     },
     {
         id: 1,
