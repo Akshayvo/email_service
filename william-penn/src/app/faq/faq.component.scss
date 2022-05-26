@@ -66,7 +66,7 @@ ul.dashed > li:before {
     line-height: 2;
   }
 
-  h2 {
+  h1 {
     color: black;
     border-bottom: 1px solid $secondary;
     width: 450px;
@@ -133,7 +133,7 @@ ul.dashed > li:before {
   }
 
   .content-Holder {
-    h2 {
+    h1 {
       font-size: 2rem;
       width: auto;
     }
@@ -142,7 +142,7 @@ ul.dashed > li:before {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) and (max-height: 767px) {
   .content-Holder {
-    h2 {
+    h1 {
       font-size: 2rem;
       width: auto;
     }
@@ -162,7 +162,7 @@ ul.dashed > li:before {
 
 @media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 900px) and (min-height: 768px) {
   .content-Holder {
-    h2 {
+    h1 {
       font-size: 2rem;
       width: auto;
     }
@@ -188,7 +188,7 @@ ul.dashed > li:before {
 
 @media only screen and (max-width: 991px) and (min-width: 768px) {
   .content-Holder {
-    h2 {
+    h1 {
       width: auto;
     }
   }
