@@ -88,9 +88,7 @@ export const feature = [
 export const jumbotron = [
     {
         h2: `NOW AVAILABLE, CLIMATE CONTROLLED UNITS`,
-        blurb: ``,
-        paraText:``,
-        paraTextEnd:``
+        
     }
 ];
 

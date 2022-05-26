@@ -13,7 +13,12 @@
         
           
           <li class='mb-md-1'*ngFor="let jumbotronText of jumbotronText">{{jumbotronText.li}}</li>
-          <span class="text-justify ">{{jumbotron.paraTextEnd}}</span>
+          <span class="text-justify ">Call for special pricing @
+            <span *ngFor="let contact of contactDetails">
+              <span *ngIf="contact?.id === 3 || contact?.id === 4">
+                <a [href]="contact?.redirect"  rel="noopener">&nbsp;{{contact.data}} </a> </span>
+              </span> through June 30th
+          </span>
           </div>
           <div class="jumbotorn-button">
             <a class="btn btn-lg btn-outline-primary" (click)="navigate('/view-rates')" role="button">Rent Now</a>
