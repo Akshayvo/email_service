@@ -87,32 +87,21 @@ export const feature = [
 
 export const jumbotron = [
     {
-        h2: `Climate Control Storage Sale`,
-        blurb: `For 3 months, get our climate controlled storage for the same price as unheated storage!`,
-        paraText:`Why choose our climate-controlled storage units?`,
-        paraTextEnd:`Offer good through April 15, 2022 only.`
+        h2: `NOW AVAILABLE, CLIMATE CONTROLLED UNITS`,
+        blurb: ``,
+        paraText:``,
+        paraTextEnd:``
     }
 ];
 
 export const jumbotronText = [
     {
-        li:`Heated in the cold winter`
+        li:`Moisture Control`
     },
     {
-        li:`Air conditioned in the hot summer`
+        li:`Heated  &  Air Conditioned `
     },
-    {
-        li:`Air moisture content management`
-    },
-    {
-        li:`Well-lit`
-    },
-    {
-        li:`Security cameras`
-    },
-    {
-        li:`Blacktop Driveway`
-    },
+    
 ]
 
 
