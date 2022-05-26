@@ -20,10 +20,12 @@ export class ReserveComponent implements OnInit {
       content: `${this.reservePageContent}`,
     });
     this.titleService.setTitle(`${this.reservePageTitle}`);
+    
   }
 
   ngOnInit() {
     window.scrollTo(0, 0);
+    
   }
 
   public fetchMetaData() {

@@ -51,6 +51,7 @@ export class PaymentComponent implements OnInit {
     this.fetchContactDetails();
     this.fetchpayRentHeading();
     window.scrollTo(0, 0);
+   
   }
 
   // public fetchOg() {

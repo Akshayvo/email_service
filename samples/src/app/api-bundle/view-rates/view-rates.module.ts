@@ -1,19 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { ViewRatesRoutingModule } from './view-rates-routing.module';
-import { ViewRatesComponent } from './view-rates.component';
 import { SharedModule } from 'src/app/shared/shared.module'; 
-import { ReactiveFormsModule } from '@angular/forms';
-import { ViewRatesPageComponent } from '../view-rates-page/view-rates-page.component';
+import { RouterModule } from '@angular/router';
+import { ViewRatesComponent } from './view-rates.component';
+
 
 @NgModule({
   declarations: [
-    
+    ViewRatesComponent,
   ],
   imports: [
     CommonModule,
     ViewRatesRoutingModule,
+    RouterModule,
     SharedModule,
     
   ]
