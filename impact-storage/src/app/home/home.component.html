@@ -77,9 +77,9 @@
           <p class="text-center f-block-img"> 
             <img src="{{feature.data}}" class="f-img" alt="{{feature.alt}}" >
           </p>
-          <h2 class="text-center f-text">
+          <h3 class="text-center f-text jumbotron-features">
             {{feature.label}}
-          </h2>
+          </h3>
         </div>
       </div>
     </div>
@@ -101,7 +101,7 @@
 <!--For individual location-->
 
 <!--location information-->
-<div class="">
+<div class="location-information">
   <div class="container py-md-4">
     <div class="section py-md-4 m-0">
       <div class="row">
@@ -112,11 +112,11 @@
         <div class="col-lg-6 py-3">
           <div class="mb-4">
             <h2> Visit the Main Office at the Address Below</h2>
-            <b>Find Impact Self Storage with the details below!</b>
+            <b class="details">Find Impact Self Storage with the details below!</b>
             <p>
               <span class="contact-links" *ngFor="let contact of contactHomeDetails">
                 
-                <span><b>{{contact.label}}</b></span><span class="contact-links my-5" *ngIf="contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
+                <span><b>{{contact.label}}</b></span><span class="contact-link" *ngIf="contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
                   <a [href]="contact?.redirect" rel="noopener">&nbsp;{{contact.data}}</a></span>
                   <ng-template #other_content >&nbsp;<a [href]="contact?.redirect" target="_blank" rel="noopener">&nbsp;{{contact.data}}</a></ng-template><br>
               </span>

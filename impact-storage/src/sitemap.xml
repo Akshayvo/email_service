@@ -1,200 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
+
   <url>
     <loc> https://impactselfstorage.net/</loc>
     <lastmod>2020-09-21</lastmod>
   </url>
+
   <url>
-    <loc> https://impactselfstorage.net/location/scotrun/reserve-unit </loc>
+    <loc> 
+      https://impactselfstorage.net/pennsylvania/scotrun/storage-units
+    </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
 
   <url>
-    <loc> https://impactselfstorage.net/storage-tips </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
     <loc> 
-      https://impactselfstorage.net/location/lake-ariel/storage-units
+      https://impactselfstorage.net/pennsylvania/scotrun/unit-sizer
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
-  <url>
-    <loc> 
-      https://impactselfstorage.net/contact-us
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://impactselfstorage.net/location/lake-ariel
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://impactselfstorage.net/location/fairhope
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://impactselfstorage.net/location/robertsdale
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://impactselfstorage.net/location/lakeville/storage-units
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://impactselfstorage.net/location/belforest/storage-units
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://impactselfstorage.net/location/scotrun
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://impactselfstorage.net/location/fairhope
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://impactselfstorage.net/location/robertsdale
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://impactselfstorage.net/location/lakeville/reserve-unit
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc>
-      https://impactselfstorage.net/location/belforest
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> https://impactselfstorage.net/location/lakeville </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
+
   <url>
     <loc> 
       https://impactselfstorage.net/pay-rent
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
+
   <url>
-    <loc> 
-      https://impactselfstorage.net/location/scotrun/storage-units
+    <loc>
+      https://impactselfstorage.net/pay-rent/scotrun/rent-sub/login
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
+
   <url>
-    <loc> 
-      https://impactselfstorage.net/location/fairhope/storage-units
+    <loc>
+      https://impactselfstorage.net/pay-rent/scotrun/sign-up/login
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
+  
+  <url>
+    <loc> https://impactselfstorage.net/pennsylvania/storage-tips </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  
   <url>
     <loc> 
-      https://impactselfstorage.net/location/robertsdale/storage-units
+      https://impactselfstorage.net/contact-us
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
-  <url>
-    <loc> 
-      https://impactselfstorage.net/location/belforest/reserve-unit
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://impactselfstorage.net/location/lake-ariel/reserve-unit
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://impactselfstorage.net/contact-lakeville
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://impactselfstorage.net/contact-lake-ariel
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://impactselfstorage.net/pay-rent/belforest
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
+
   <url>
     <loc>
       https://impactselfstorage.net/contact-scotrun
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
-  <url>
-    <loc>
-      https://impactselfstorage.net/contact-fairhope
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc>
-      https://impactselfstorage.net/contact-robertsdale
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc>
-      https://impactselfstorage.net/pay-rent/lake-ariel
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://impactselfstorage.net/contact-lake-ariel
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://impactselfstorage.net/pay-rent/lakeville
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc>
-      https://impactselfstorage.net/pay-rent/belforest/rent-sub/login
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://impactselfstorage.net/pay-rent/lake-ariel/rent-sub/login
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc>
-      https://impactselfstorage.net/pay-rent/lakeville/rent-sub/login
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
+
 </urlset>

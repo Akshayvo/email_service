@@ -1,3 +1,5 @@
+
+
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 @Component({
@@ -29,6 +31,7 @@ export class TabsComponent implements OnInit {
 
     public fetchTabs() {
       this.tabData = this.tabs;
+      console.log(this.tabData);
       this.sub = this.route.queryParams.subscribe(params => {
              this.name = params['name'],
              this.currentActiveTab = params['currentTab'];
