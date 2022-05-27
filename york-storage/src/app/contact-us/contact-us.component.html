@@ -96,9 +96,9 @@
                   <span *ngIf="locationId == 3">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d386072.7603299949!2d-97.59290154672549!3d40.88957143952419!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87974fea7bc76fa9%3A0x1b56d35d2b393c84!2s2700%20N%20Lincoln%20Ave%2C%20York%2C%20NE%2068467!5e0!3m2!1sen!2sus!4v1616948468111!5m2!1sen!2sus" width="100%" height="220" frameborder="0" allowfullscreen></iframe>
                   </span> -->
-                  <h5>Self Storage of York Locations</h5>
+                  <h2>Self Storage of York Locations</h2>
                 </div>
-                <h6 class="pt-3"><b> {{heading1}}</b> </h6>
+                <h3 class="pt-3"><b> {{heading1}}</b> </h3>
                 <div>
                   <span class="contact-links " *ngFor="let contact of contactDetails1">
                     <span *ngIf="contact?.label=== 'Address: '">{{contact.label}}</span><span class="contact-links" *ngIf="contact?.label=== 'Address: '">
@@ -106,7 +106,7 @@
                     <!-- <ng-template #other_content >&nbsp;<a [href]="contact?.redirect" target="_blank" rel="noopener">&nbsp;{{contact.data}}</a></ng-template><br> -->
                   </span>
                 </div>
-                <h6 class="pt-3"><b> {{heading2}}</b> </h6>
+                <h3 class="pt-3"><b> {{heading2}}</b> </h3>
                 <div >
                   <span class="contact-links" *ngFor="let contact of contactDetails2">
                     <span *ngIf="contact?.label=== 'Address: '">{{contact.label}}</span><span class="contact-links" *ngIf="contact?.label=== 'Address: '">
@@ -114,7 +114,7 @@
                     <!-- <ng-template #other_content >&nbsp;<a [href]="contact?.redirect" target="_blank" rel="noopener">&nbsp;{{contact.data}}</a></ng-template><br> -->
                   </span>
                 </div>
-                <h6 class="pt-3"> <b>{{heading3}}</b> </h6>
+                <h3 class="pt-3"> <b>{{heading3}}</b> </h3>
                 <div>
                   <span class="contact-links" *ngFor="let contact of contactDetails3">
                     <span *ngIf="contact?.label=== 'Address: '">{{contact.label}}</span><span class="contact-links" *ngIf="contact?.label=== 'Address: '">
@@ -122,7 +122,7 @@
                     <!-- <ng-template #other_content >&nbsp;<a [href]="contact?.redirect" target="_blank" rel="noopener">&nbsp;{{contact.data}}</a></ng-template><br> -->
                   </span>
                 </div>
-                <h6 class="pt-3"><b>Contact Information</b></h6>
+                <h3 class="pt-3"><b>Contact Information</b></h3>
                 <div class="py-2 contact-links">
                   <div *ngFor="let hour of contactHomePage" [class.mb-2]="hour?.label === 'Billing Address: '">
                     {{hour.label}}<div  *ngIf="hour?.label === 'Billing Address: ' else other_content ">&nbsp;{{hour.data}}</div>

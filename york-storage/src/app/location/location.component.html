@@ -44,9 +44,9 @@
         <div class="hours-data w-100">
           <div class="row">
             <div class="col-lg-8">
-              <h4 class="pt-3" *ngIf="locationId !== 1;then content else other_content" >Access Hours</h4>
+              <h2 class="pt-3" *ngIf="locationId !== 1;then content else other_content" >Access Hours</h2>
               <ng-template #content><h4 class="pt-3">Access Hours</h4><app-tables [tBody]="access" ></app-tables></ng-template>
-              <ng-template #other_content><h4 class="pt-3">Office Hours</h4><app-tables [tBody]="hours" >
+              <ng-template #other_content><h2 class="pt-3">Office Hours</h2><app-tables [tBody]="hours" >
               </app-tables><h4 class="pt-3">Access Hours</h4><app-tables [tBody]="access" ></app-tables>
             </ng-template> 
             </div>
@@ -67,11 +67,11 @@
     <div class="row">
       <div class="col-md-3 col-6 p-3"  *ngFor= "let feature of features" [class.col-md-4]="locationId === 2">
         <p class="text-center f-block-img"> 
-          <img src="{{feature.data}}" class="f-img" alt="{{feature.alt}}" >
+          <img src="{{feature.data}}" class="f-img" alt="{{feature.alt}}" height="100%" width="100%">
         </p>
-        <h2 class="text-center f-text">
+        <h3 class="text-center f-text">
           {{feature.label}}
-        </h2>
+        </h3>
       </div>
     </div>
   </div>

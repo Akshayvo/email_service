@@ -1,23 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" > 
+  
   <url>
     <loc> https://selfstorageofyork.com/</loc>
     <lastmod>2020-09-21</lastmod>
   </url>
+
   <url>
     <loc> https://selfstorageofyork.com/new-york/platte-ave/reserve-unit </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
+
   <url>
     <loc> https://selfstorageofyork.com/storage-tips </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
+
   <url>
     <loc> 
       https://selfstorageofyork.com/new-york/lincoln-ave/storage-units
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
+
   <url>
     <loc> 
       https://selfstorageofyork.com/contact-us
@@ -31,35 +36,41 @@
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
+
   <url>
     <loc> 
       https://selfstorageofyork.com/new-york/marquis-ave/reserve-unit
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
+  <url>
     <loc> 
       https://selfstorageofyork.com/pay-rent
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
+
   <url>
     <loc> 
       https://selfstorageofyork.com/new-york/platte-ave/storage-units
     </loc>
     <lastmod>2020-09-21</lastmod>
-  </url>  
+  </url> 
+
   <url>
     <loc> 
       https://selfstorageofyork.com/new-york/lincoln-ave/reserve-unit
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
+
   <url>
     <loc> 
       https://selfstorageofyork.com/contact-marquis-ave
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
+
   <url>
     <loc> 
       https://selfstorageofyork.com/contact-lincoln-ave
@@ -81,12 +92,14 @@
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
+
   <url>
     <loc> 
       https://selfstorageofyork.com/contact-lincoln-ave
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
+
   <url>
     <loc> 
       https://selfstorageofyork.com/pay-rent/rent-sub/login
@@ -100,10 +113,12 @@
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
+
   <url>
     <loc>
       https://selfstorageofyork.com/pay-rent/marquis-ave/rent-sub/login
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
+  
 </urlset>
