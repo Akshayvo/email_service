@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { unitSizer } from '../data/unitSizer';
 import { Title, Meta } from '@angular/platform-browser';
+import { CanonicalService } from "../services/canonical.service";
 @Component({
   selector: 'app-unit-sizer',
   templateUrl: './unit-sizer.component.html',
@@ -15,13 +16,15 @@ export class UnitSizerComponent implements OnInit {
 
   constructor(
     private titleService: Title,
-    private meta: Meta
+    private meta: Meta,
+    private canonical: CanonicalService,
   ) {
     this.meta.addTag({
       name: 'description',
       content: `390 Self Storage offers clean and secure storage facility.
       We offer storage space from 25 sq feet to 300 sq feet. Serving Rochester, Gates and Brighton NY.`
     });
+    this.canonical.create();
     this.titleService.setTitle(`Storage Facility Rochester NY, Size Estimator Gates, Brighton NY`);
   }
 
