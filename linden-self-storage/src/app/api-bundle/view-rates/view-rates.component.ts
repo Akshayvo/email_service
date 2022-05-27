@@ -11,7 +11,10 @@ import { viewRatesPageTitle, viewRatesPageContent } from "../../data/title";
 import { Router } from "@angular/router";
 import { CanonicalService } from "../../services/canonical.service";
 import { environment } from "../../../environments/environment";
-import { script } from "../../data/script";
+import { script,contactPageScript,ogContactPage,twitterContactPage, } from "../../data/script";
+import { FormGroup, FormBuilder, Validators } from "@angular/forms";
+
+
 @Component({
   selector: "app-view-rates",
   templateUrl: "./view-rates.component.html",
@@ -25,7 +28,7 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
 
   DescriptionVR: string;
   MonthlyRateVR: number;
-
+  contactForm: FormGroup;
   openComponent = false;
   imagetype: any;
   imageBaseUrl: any;
@@ -34,6 +37,13 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
   viewRatesPageTitle: string;
   viewRatesAltText: string;
   state: string;
+  contactPageTitle: string;
+  contactPageContent: string;
+  contactHeading: string;
+  og: any;
+  twitter: any;
+  script: any;
+
   private isUnsubscribe$: Subscription;
 
   constructor(
@@ -42,8 +52,34 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
     private meta: Meta,
     private metaService: MetaService,
     private uaParserService: UaParserService,
-    private canonical: CanonicalService
+    private canonical: CanonicalService,
+    private formBuilder: FormBuilder,
+    
   ) {
+    this.fetchScript();
+    this.loadScript();
+    this.fetchOg();
+    this.fetchTwitter();
+    this.og.forEach((element) => {
+      this.meta.updateTag({
+        property: element.property,
+        content: element.content,
+      });
+    });
+
+    this.twitter.forEach((element) => {
+      this.meta.updateTag({
+        name: element.name,
+        content: element.content,
+      });
+    });
+    this.fetchMetaData();
+    this.meta.updateTag({
+      name: "description",
+      content: `${this.contactPageContent}`,
+    });
+    this.titleService.setTitle(`${this.contactPageTitle}`);
+    this.canonical.create();
     this.state = script.state;
     this.fetchMetaData();
     this.meta.updateTag({
@@ -60,6 +96,24 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
     window.scrollTo(0, 0);
     this.fetchViewRates();
     this.fetchViewRatesHeading();
+    // this.fetchContactDetails();
+    // this.fetchHours();
+    // this.fetchContactHeading();
+    this.contactForm = this.formBuilder.group({
+      name: ["", Validators.required],
+      phone: [
+        "",
+        [
+          Validators.required,
+          Validators.pattern(
+            "^[+]?[(]?[0-9]{3}[)]?[-s.]?[0-9]{3}[-s.]?[0-9]{3,5}$"
+          ),
+        ],
+      ],
+      email: ["", [Validators.required, Validators.email]],
+      message: ["", Validators.required],
+      subject: [""],
+    });
   }
 
   public navigate(location: any) {
@@ -73,6 +127,37 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
       this.router.navigate([`${location}`]);
     }
   }
+
+  
+  get f() {
+    return this.contactForm.controls;
+  }
+
+  public fetchOg() {
+    this.og = ogContactPage;
+  }
+
+  public fetchScript() {
+    this.script = contactPageScript;
+  }
+
+  public loadScript() {
+    const node = document.createElement("script"); // creates the script tag
+    node.type = "application/ld+json"; // set the script type
+    node.async = false; // makes script run asynchronously
+    // node.charset = 'utf-8';
+    node.innerHTML = JSON.stringify(this.script);
+    // append to head of document
+    document.getElementsByTagName("head")[0].appendChild(node);
+  }
+
+  public fetchTwitter() {
+    this.twitter = twitterContactPage;
+  }
+
+  
+
+  
 
   public fetchViewRates() {
     this.viewRates = dataViewRates;
