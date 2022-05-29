@@ -113,7 +113,7 @@ export const aboutUs = [
         },
         subHeading2: {
             heading: `Security for Your Possessions`,
-            p: `Beyond the standard lock, our Windham location of Redi Storage offers unique security for your possessions. Our state of the art facility is only accessible by two doors that is controlled by your unique, personal access code and our state-of-the-art security cameras record 24 hours, a day.`
+            p: `Beyond the standard lock, our Windham location of Redi Storage offers unique security for your possessions. Our state of the art facility is only accessible by two doors that are controlled by your unique, personal access code and our security cameras record 24/7.`
         },
         subHeading3: {
             heading: `For Your Convenience`,

@@ -4,7 +4,7 @@ export const dataViewRates = [
         p: `Redi Storage is a family-owned business that was founded in 1986. We know how important your belongings are, which is why we make sure all of our facilities are equipped with surveillance cameras and access control security to assist with the protection of your belongings.`,
     },
     {
-        p: `Beyond the standard lock, our Windham location of Redi Storage offers unique security for your possessions. Our state of the art facility is only accessible by two doors that is controlled by your unique, personal access code and our state-of-the-art security cameras record 24 hours, a day.`,
+        p: `Beyond the standard lock, our Windham location of Redi Storage offers unique security for your possessions. Our state of the art facility is only accessible by two doors that are controlled by your unique, personal access code and our security cameras record 24/7.`,
     },
     
 ];

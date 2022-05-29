@@ -59,7 +59,7 @@ export const storageTips = [
     },
     {
         id: '6',
-        label: 'Collectables',
+        label: 'Breakables, Fragile, Things of that nature',
         contents: [
             { data: 'Wrap each fragile item separately with bubble wrap and packing tape.'},
             { data: 'Layer wrapped items in sturdy cardboard box using large peanuts or wadded paper between.'},
