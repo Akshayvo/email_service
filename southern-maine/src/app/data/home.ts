@@ -97,6 +97,6 @@ export const jumbotron = [
         h1: `Regular & Climate Controlled Self Storage Units in Saco`,
         blurb: `Southern Maine Storage offers on-site storage facilities to meet all of your short and long
         term storage needs. We offer competitively priced storage options ranging from mini-storage units to
-        outdoor vehicle storage. Check out our rates online, then move in with our contactless rental process!`,
+        outdoor vehicle storage. Contact our office for current availability.`,
     }
 ];
