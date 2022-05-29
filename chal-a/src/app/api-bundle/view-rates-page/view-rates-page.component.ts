@@ -143,8 +143,8 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     .subscribe(unitTypesResponse => {
       this.showTable =  true;
       this.LstUnitTypes = unitTypesResponse.lstUnitTypes;
-      this.mobileUnitTypes = this.LstUnitTypes.filter(x => x.IsMobile === true);
-      this.regularUnitTypes = this.LstUnitTypes.filter(x => x.IsMobile === false);
+      this.mobileUnitTypes = this.LstUnitTypes.filter(x => x.IsMobile === true && !(x.UnitTypeID ===  15 || x.UnitTypeID === 16));
+      this.regularUnitTypes = this.LstUnitTypes.filter(x => x.IsMobile === false && !(x.UnitTypeID ===  15 || x.UnitTypeID === 16));
       this.mobile = this.LstUnitTypes.filter(x => x.UnitTypeID ===  15 || x.UnitTypeID === 16)
     });
   }
