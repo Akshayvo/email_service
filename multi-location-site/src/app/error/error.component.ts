@@ -34,7 +34,7 @@ export class ErrorComponent implements OnInit {
       const body = {
         name: "404 Error Occured",
         email: 'Marketing@syrasoft.com',
-        receiveremail: 'darshan.h@codeparva.in',
+        receiveremail: 'bizapps@codeparva.in',
         message: this.completeMessage,
         subject: "Error - 404",
       };
