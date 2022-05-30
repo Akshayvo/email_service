@@ -12,11 +12,13 @@ export class ErrorComponent implements OnInit {
   mailSent: boolean;
   completeMessage: any;
   currentTimeInSeconds: any;
+  refferURL: any;
 
   constructor(
     public router: Router,
     private emailService: EmailService,
   ) { 
+    this.refferURL = sessionStorage.getItem('refferURL');
     this.fetchMail()
   }
 
@@ -26,12 +28,13 @@ export class ErrorComponent implements OnInit {
 
     this.completeMessage = `Domain Name: ${environment.websiteUrl}, <br/>
     Effected URL:  ${environment.websiteUrl}${this.router.url} <br />
-    Timestamp: ${this.currentTimeInSeconds}`;
+    Timestamp: ${this.currentTimeInSeconds} <br />
+    Refferring URL: ${environment.websiteUrl}${this.refferURL}`;
 
       const body = {
         name: "404 Error Occured",
         email: 'Marketing@syrasoft.com',
-        receiveremail: 'bizapps@codeparva.in',
+        receiveremail: 'darshan.h@codeparva.in',
         message: this.completeMessage,
         subject: "Error - 404",
       };
@@ -39,6 +42,7 @@ export class ErrorComponent implements OnInit {
         (response: any) => {
           if (response.result != null) {
             this.mailSent = true;
+            sessionStorage.clear();
           } else {
             console.log("email not sent")
           }

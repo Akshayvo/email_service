@@ -14,6 +14,8 @@ import { NavigationService } from './services/navigation.service';
 export class AppComponent {
   title = 'Self Storage Facility';
   flag: boolean;
+  previousUrl: string;
+  currentUrl: string;
   public offsets: number[];
   x: any;
 
@@ -37,6 +39,15 @@ export class AppComponent {
     private routerHistoryService: NavigationService,
     @Inject(WINDOW) private window: Window,
   ) {
+
+    this.router.events.pipe(
+      filter((event) => event instanceof NavigationEnd)
+    ).subscribe((event: NavigationEnd) => {
+      this.previousUrl = this.currentUrl;
+      this.currentUrl = event.url;
+      console.log(this.currentUrl, this.previousUrl)
+      sessionStorage.setItem("refferURL",this.currentUrl);
+    });
 
     if (!localStorage.getItem('strTenantToken') && !localStorage.getItem('strTempTenantToken')) {
       localStorage.clear();
