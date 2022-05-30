@@ -16,6 +16,8 @@
   a {
     color: black;
   }
+  margin-bottom: 8px;
+  display: block;
 }
 
 .modal-open {
@@ -30,6 +32,7 @@
     text-decoration: underline;
     cursor: pointer;
   }
+  margin-bottom: 8px;
 }
 
 .loader {

@@ -17,6 +17,7 @@
 
 .offer {
   color: red;
+  font-size: 28px;
 }
 
 .aboutUsHeading {
@@ -52,6 +53,9 @@ h1 {
 
 .feature {
   text-align: center;
+  h2 {
+    font-size: 16px;
+  }
 }
 
 .feature-icon-style {
@@ -67,6 +71,12 @@ h1 {
   a {
     color: black;
   }
+  margin-bottom: 8px;
+}
+
+.links {
+  display: block;
+  margin-bottom: 8px;
 }
 
 .content-align {
