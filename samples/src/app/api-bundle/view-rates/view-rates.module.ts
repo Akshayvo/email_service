@@ -18,4 +18,9 @@ import { ViewRatesComponent } from './view-rates.component';
     
   ]
 })
-export class ViewRatesModule { }
+export class ViewRatesModule {
+  constructor(){
+    console.log('View-Rates Page called');
+  }
+
+ }

@@ -21,4 +21,8 @@ import { SharedModule } from '../../shared/shared.module';
 
   ]
 })
-export class ReserveModule { }
+export class ReserveModule { 
+  constructor(){
+    console.log('Reserve Page called');
+  }
+}

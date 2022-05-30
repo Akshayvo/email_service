@@ -4,6 +4,7 @@ import { HomeComponent } from './home.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { TablesComponent } from '../tables/tables.component';
 import { HomeRoutingModule } from './home-routing.module';
+import { SharedModule } from '../shared/shared.module';
 
 console.warn("Home modul loaded")
 @NgModule({
@@ -12,6 +13,7 @@ console.warn("Home modul loaded")
     CommonModule,
     HomeRoutingModule,
     ReactiveFormsModule,
+    SharedModule
   ]
 })
 export class HomeModule { }

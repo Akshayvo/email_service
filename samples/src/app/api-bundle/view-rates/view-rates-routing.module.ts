@@ -24,12 +24,6 @@ const routes: Routes = [
       ]
      },
 
-
-
-
-  
-    
-   
 ];
 
 @NgModule({

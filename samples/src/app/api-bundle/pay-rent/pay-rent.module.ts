@@ -37,4 +37,8 @@ import { SharedModule } from '../../shared/shared.module';
     SharedModule
   ]
 })
-export class PayRentModule { }
+export class PayRentModule { 
+  constructor(){
+    console.log('PayRent Page called');
+  }
+}

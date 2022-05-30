@@ -4,6 +4,7 @@ export const galleryHome = [
     url: ``,
     // tslint:disable-next-line:max-line-length
     thumb: ``,
-    alt: ``
+    alt: `then`
   },
+  
 ];

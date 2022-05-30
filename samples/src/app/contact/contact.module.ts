@@ -17,4 +17,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     ReactiveFormsModule
   ]
 })
-export class ContactModule { }
+export class ContactModule {
+  constructor(){
+    console.log('Contact-Us Page called');
+  }
+ }

@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 
 import { ViewRatesPageComponent } from '../api-bundle/view-rates-page/view-rates-page.component';
 import { ReserveUnitFormComponent } from '../api-bundle/reserve-unit-form/reserve-unit-form.component';
-import { ReserveComponent } from '../api-bundle/reserve/reserve.component';
 import { ConfirmationDataComponent } from '../api-bundle/confirmation-data/confirmation-data.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from '../modules/material/material.module';
@@ -13,17 +12,17 @@ import { PayRentFormComponent } from '../api-bundle/pay-rent-form/pay-rent-form.
 import { ThankYouComponent } from '../api-bundle/thank-you/thank-you.component';
 
 import { ForgotPasswordComponent } from '../api-bundle/forgot-password/forgot-password.component';
+import { PhotosComponent } from '../photos/photos.component';
 
 @NgModule({
   declarations: [
-   
     ViewRatesPageComponent, 
-   
     ReserveUnitFormComponent,
     ConfirmationDataComponent,
     PayRentFormComponent,
     ThankYouComponent,
-    ForgotPasswordComponent
+    ForgotPasswordComponent,
+    PhotosComponent,
     
   ],
   imports: [
@@ -34,9 +33,7 @@ import { ForgotPasswordComponent } from '../api-bundle/forgot-password/forgot-pa
     SelectDropDownModule
   ],
   exports:[
-   
     ViewRatesPageComponent, 
-   
     ReserveUnitFormComponent,
     ConfirmationDataComponent,
     PayRentFormComponent,
@@ -46,7 +43,8 @@ import { ForgotPasswordComponent } from '../api-bundle/forgot-password/forgot-pa
     MaterialModule,
     HttpClientModule,
     SelectDropDownModule,
-    ForgotPasswordComponent
+    ForgotPasswordComponent,
+    PhotosComponent,
   ]
 })
 export class SharedModule { }
