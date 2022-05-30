@@ -8,11 +8,15 @@
 
 .display-contact {
   display: flex;
-
-  // h4 {
-  //   width: 100%;
-  // }
+  margin-bottom: 8px;
+  h3 {
+    font-size: 16px;
+  }
 }
+
+.heading {
+  font-size: 28px;
+} 
 
 .btn-outline-primary {
   color: $primary !important;

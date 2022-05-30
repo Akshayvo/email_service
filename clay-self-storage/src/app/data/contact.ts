@@ -4,7 +4,7 @@ export const contact = [
     label: "Address:",
     data: "4356 NY-31, Clay, NY 13041",
     class: "fas fa-map-marker-alt mx-2 iconColor",
-    redirect: "https://goo.gl/maps/Y7zSkQi71wozJEKTA",
+    redirect: "https://www.google.com/maps?ll=43.185738,-76.212841&z=15&t=m&hl=en&gl=US&mapclient=embed&cid=15782466952109104988",
   },
   {
     id: 1,
