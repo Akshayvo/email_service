@@ -63,7 +63,8 @@ export class HomeComponent implements OnInit {
     private canonical: CanonicalService,
     private fetchDataService: FetchDataService,
     @Inject(DOCUMENT) private _document: any
-  ) {
+    ) {
+    this.canonical.create();
     this.fetchScript();
     this.loadScript();
     this.fetchMetaData();
@@ -88,7 +89,6 @@ export class HomeComponent implements OnInit {
       content: `${this.homePageContent}`,
     });
     this.titleService.setTitle(`${this.homePageTitle}`);
-    this.canonical.create();
     this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
     this.imageBaseUrl = this.uaParserService.baseUrl;
     this.meta.addTag({
