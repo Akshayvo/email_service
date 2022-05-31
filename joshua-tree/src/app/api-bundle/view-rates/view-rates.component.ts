@@ -10,6 +10,8 @@ import { viewRatesHeading } from '../../data/heading';
 import { viewRatesPageTitle, viewRatesPageContent } from '../../data/title';
 import { Router } from '@angular/router';
 import { CanonicalService } from '../../services/canonical.service';
+import { homePageScript, ogHomePage, script, twitterHomePage } from '../../data/script';
+
 @Component({
   selector: 'app-view-rates',
   templateUrl: './view-rates.component.html',
@@ -32,6 +34,9 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
   viewRatesPageContent: string;
   viewRatesPageTitle: string;
   viewRatesAltText: string;
+  ogHomePage: any;
+  twitterHomePage: any;
+  script: any;
  private isUnsubscribe$: Subscription;
 
   constructor(
@@ -42,6 +47,24 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
     private uaParserService: UaParserService,
     private canonical: CanonicalService
   ) {
+    this.fetchScript();
+    this.loadScript();
+    this.fetchOgHomePage();
+    this.fetchTwitterHomePage();
+    this.ogHomePage.forEach(element => {
+      this.meta.addTag({
+        property: element.property,
+        content: element.content
+      })
+    });
+
+    this.twitterHomePage.forEach(element => {
+      this.meta.addTag({
+        name: element.name,
+        content: element.content
+      })
+    }); 
+
     this.fetchMetaData();
     this.meta.addTag({
       name: 'description',
@@ -58,6 +81,32 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
     window.scrollTo(0, 0);
     this.fetchViewRates();
     this.fetchViewRatesHeading();
+  }
+
+
+  public loadScript() {
+    const node = document.createElement('script'); // creates the script tag
+    node.type = 'application/ld+json'; // set the script type
+    node.async = false; // makes script run asynchronously
+    // node.charset = 'utf-8';
+    node.innerHTML = JSON.stringify(this.script);
+    // append to head of document
+    // document.getElementsByTagName('head')[0].appendChild(node);
+    document.head.appendChild(node);
+
+  }
+
+  public fetchScript() {
+    this.script = homePageScript;
+  }
+
+
+  public fetchOgHomePage() {
+    this.ogHomePage = ogHomePage;
+  }
+
+  public fetchTwitterHomePage() {
+    this.twitterHomePage = twitterHomePage;
   }
 
   public navigate(location: any) {

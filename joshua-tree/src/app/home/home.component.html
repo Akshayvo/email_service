@@ -38,7 +38,7 @@
       <div class="section py-4 m-0">
         <div class="row">
           <div class="col-lg-6 py-3 home-map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d422715.0386211653!2d-116.32117100000002!3d34.13454!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1643db38ba550acf!2sJoshua%20Tree%20Mini%20Storage!5e0!3m2!1sen!2sus!4v1606685019210!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen rel="noopener" ></iframe> 
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d422715.0386211653!2d-116.32117100000002!3d34.13454!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1643db38ba550acf!2sJoshua%20Tree%20Mini%20Storage!5e0!3m2!1sen!2sus!4v1606685019210!5m2!1sen!2sus" title="Googlr map services" width="100%" height="100%" frameborder="0" allowfullscreen rel="noopener" ></iframe> 
           </div>
 
           <div class="col-lg-6 py-3">
@@ -46,16 +46,16 @@
               
               <p>
                 <span *ngFor="let contact of contactDetails" class="display-contact">
-                  <span><h4><b>{{contact.label}}</b></h4></span><span class="contact-links" *ngIf="contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
+                  <span><h3><b>{{contact.label}}</b></h3></span><span class="contact-links" *ngIf="contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
                     <h4><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></h4>
                   </span>
                   <ng-template #other_content>&nbsp;<h4>{{contact.data}}</h4></ng-template><br>
                 </span>
               </p>
-              <h4><b>Hours:</b></h4>
+              <h2><b>Hours:</b></h2>
               <p>
                 <span class="display-contact" *ngFor="let hour of hours">
-                  <h4><b>{{hour.label}}</b></h4>&nbsp;<h4>{{hour.data}}</h4><br>
+                  <h3><b>{{hour.label}}</b></h3>&nbsp;<h4>{{hour.data}}</h4><br>
                 </span>
               </p>
             </div>
@@ -72,7 +72,7 @@
     <div class="section py-5 m-0">
       <div class="row">
         <div class="col-lg-6 py-3">
-          <img src="{{imageBaseUrl}}/joshua-tree-self-storage-parking-lot.{{imagetype}}" width="100%" alt="{{aboutUsAlt}}" class="sectionImage">
+          <img src="{{imageBaseUrl}}/joshua-tree-self-storage-parking-lot.{{imagetype}}" width="100%" height="100%" alt="{{aboutUsAlt}}" class="sectionImage">
         </div>
         <div class="col-lg-6 py-3">
           <h1 class="heading pb-4">{{aboutUsHeading}}</h1>

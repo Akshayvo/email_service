@@ -20,6 +20,7 @@ export const environment = {
   VERSION: require("../../package.json").version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   websiteUrl: "https://joshuatreeministorage.com",
+  facilityName: 'Joshua Tree Mini-Storage',
   // baseUrl: `https://simapi.syrasoft.com/1/api/`,
   // DemoNorthAPIKey: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
   //APIKey: `bTl+Nm45eTA6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28463

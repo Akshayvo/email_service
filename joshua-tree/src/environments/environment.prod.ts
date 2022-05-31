@@ -13,6 +13,7 @@ export const environment = {
   appId: "Joshua Tree Mini Storage - Staging",
   VERSION: require("../../package.json").version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
+  facilityName: 'Joshua Tree Mini-Storage',
   APIKey: `bTl+Nm45eTA6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 9690
   websiteUrl: "https://joshuatreeministorage.com",
 };

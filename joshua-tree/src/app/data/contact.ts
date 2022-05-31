@@ -4,6 +4,7 @@ export const contact = [
     label: "Address:",
     data: "61325 Twentynine Palms Highway # G, Joshua Tree, CA 92252",
     class: "fas fa-map-marker-alt mx-2 iconColor",
+    redirect: "https://goo.gl/maps/Bk2pj3X9zxDaxVTaA",
   },
   {
     id: 1,

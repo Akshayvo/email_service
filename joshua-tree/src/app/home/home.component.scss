@@ -1,7 +1,7 @@
 @import "../../styles.scss";
 
 .contact-details {
-  h4 {
+  h4,h2,h3 {
     font-size: 1rem;
   }
 }
@@ -51,6 +51,8 @@
 
 .contact-links {
   a {
+    display: inline-block;
+    margin-bottom: 8px;
     color: black;
   }
 }
