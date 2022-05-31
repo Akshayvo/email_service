@@ -4,6 +4,7 @@ export const contact = [
         label: 'Address:',
         data: '150 N Red School Rd, Morgantown, PA 19543',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
+        redirect:'https://goo.gl/maps/Hv3wdqzXk2gTa39y8'
     },
     {
         id: 1,

@@ -3,11 +3,132 @@ import { environment } from '../../environments/environment';
 import { homePageContent, homePageTitle, payRentPageContent,
   payRentPageTitle, storageTipsContent, storageTipsTitle,
 contactPageContent, contactPageTitle } from '../data/title';
-import { HomeComponent } from '../home/home.component';
+import { featuresList } from '../data/home';
+import { contact, socialLinks } from '../data/contact';
+
+
+
+
+const contactIndex = contact.findIndex(x => x.label === 'Phone:');
+const emailIndex = contact.findIndex(x => x.label === 'Email:');
+const sameAs = [];
+const amenityFeature = [];
+
+
+featuresList.forEach(
+  feature => 
+  (amenityFeature.push({ "@type": "LocationFeatureSpecification",  "name": feature.td1}),
+  amenityFeature.push({ "@type": "LocationFeatureSpecification",  "name": feature.td2}))
+)
+
+socialLinks.forEach(links => {
+  links.path ? sameAs.push(links.path) : sameAs.push(' ')
+}
+);
+
 
 export const script = {
-    // Put your script here
+     // Please fill this script according to facility's information
+     imagesHomePage: [
+      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Red_School/jpg/red-school-self-storage-exterior.jpg", // 1:1
+      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Red_School/jpg/red-school-self-storage-exterior.jpg", // 4:3
+      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Red_School/jpg/red-school-self-storage-exterior.jpg" // 16:9
+     ],
+     telephone: contact[contactIndex].data,
+     map: "https://goo.gl/maps/Hv3wdqzXk2gTa39y8",
+     description: "A superb collection of fine gifts and clothing to accent your stay in Mexico Beach.",
+     streetAddress: "150 N Red School Rd",
+     state: "Pennsylvania",
+     addressLocality: "Morgantown",
+     addressRegion: "PA",
+     postalCode: "19543",
+     addressCountry: "US",
+     id: environment.websiteUrl || "",
+     paymentAccepted:  "Cash, Check, Credit Card, Debit Card, Online Credit Card, Online Debit Card",
+     currenciesAccepted: "USD",
+     ratingValue: "4.3",
+     bestRating: "5",
+     reviewCount: "7",
+     latitude: 40.14394,
+     longitude: -75.90714,
+     openingHours: ['By Appointment Only'],
+     priceRange: '$49-$169'
 };
+
+export const homePageScript = [ {
+  "@context": "https://schema.org",
+  "@type": ["Organization","SelfStorage","Place","LocalBusiness"],
+  "image": script.imagesHomePage,
+  "@id": script.id,
+  "name": environment.facilityName,
+   "description": script.description || homePageContent,
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": script.streetAddress,
+    "addressLocality": script.addressLocality,
+    "addressRegion": script.addressRegion,
+    "postalCode": script.postalCode,
+    "addressCountry": script.addressCountry
+  },
+ "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": script.ratingValue,
+    "bestRating": script.bestRating,
+    "reviewCount": script.reviewCount
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": script.latitude,
+    "longitude": script.longitude
+  },
+  "url": environment.websiteUrl,
+  "telephone": script.telephone,
+  
+  "priceRange": script.priceRange,
+  "openingHours": script.openingHours,
+  "currenciesAccepted": script.currenciesAccepted,
+  "paymentAccepted": script.paymentAccepted,
+   "areaServed": {
+  "@type": "State",
+  "name": script.state
+ },
+ 
+"hasMap": script.map,
+"amenityFeature": amenityFeature,
+"acceptsReservations": "True"
+}];
+
+
+export const contactPageScript = [
+  {
+      "@context": "http://schema.org",
+      "@type": "Selfstorage",
+      "name": environment.facilityName,
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": script.addressLocality,
+        "postalCode": script.postalCode,
+        "streetAddress": script.streetAddress,
+      },
+       "url": `${environment.websiteUrl}/contact-us`,
+       "image": script.imagesHomePage[0],
+      "contactPoint": [{
+        "@type": "ContactPoint",
+        "telephone": script.telephone,
+        "contactType": "reservations"
+      },{
+        "@type": "ContactPoint",
+        "telephone": script.telephone,
+        "contactType": "customer service"
+      }],
+      "email": contact[emailIndex].data,
+      "sameAs": sameAs
+    }
+];
+
+
+
+
 
 export const ogHomePage = [
     {
@@ -32,7 +153,7 @@ export const ogHomePage = [
     },
     {
       property: `og:image`,
-      content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Red_School/jpg/red-school-self-storage-exterior.jpg`
+      content: script.imagesHomePage[1]
     },
   ];
   
@@ -59,7 +180,7 @@ export const ogHomePage = [
     },
     {
       name: `twitter:image`,
-      content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Red_School/jpg/red-school-self-storage-exterior.jpg`
+      content: script.imagesHomePage[0]
     },
   ];
   
@@ -86,7 +207,7 @@ export const ogHomePage = [
       },
       {
         property: `og:image`,
-        content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Red_School/jpg/red-school-self-storage-exterior.jpg`
+        content: script.imagesHomePage[1]
       },
     ];
     
@@ -113,7 +234,7 @@ export const ogHomePage = [
       },
       {
         name: `twitter:image`,
-        content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Red_School/jpg/red-school-self-storage-exterior.jpg`
+        content: script.imagesHomePage[0]
       },
     ];
   
@@ -140,7 +261,7 @@ export const ogHomePage = [
       },
       {
         property: `og:image`,
-        content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Red_School/jpg/red-school-self-storage-exterior.jpg`
+        content: script.imagesHomePage[1]
       },
     ];
     
@@ -167,7 +288,7 @@ export const ogHomePage = [
       },
       {
         name: `twitter:image`,
-        content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Red_School/jpg/red-school-self-storage-exterior.jpg`
+        content: script.imagesHomePage[0]
       },
     ];
     
@@ -194,7 +315,7 @@ export const ogHomePage = [
       },
       {
         property: `og:image`,
-        content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Red_School/jpg/red-school-self-storage-exterior.jpg`
+        content: script.imagesHomePage[1]
       },
     ];
     
@@ -221,6 +342,6 @@ export const ogHomePage = [
       },
       {
         name: `twitter:image`,
-        content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Red_School/jpg/red-school-self-storage-exterior.jpg`
+        content: script.imagesHomePage[0]
       },
     ];

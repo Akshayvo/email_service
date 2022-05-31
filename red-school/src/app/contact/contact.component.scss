@@ -20,6 +20,7 @@
   a {
     color: black;
   }
+  line-height: 2;
 }
 
 .contact-map {
@@ -50,7 +51,9 @@
 .form-control {
   font-size: 0.8rem;
 }
-
+.heading{
+  font-size: 28px;
+}
 @media only screen and (max-width: 600px) {
   .contact-butoon {
     .btn-primary {

@@ -4,7 +4,7 @@
     <h1 class="py-5 text-center">{{contactHeading}}</h1>
     <div class="row bg-light background-padding">
       <div class="col-lg-7 col-md-6 col-12 px-4">
-        <h3 class="heading py-3">Contact Form</h3>
+        <h2 class="heading py-3">Contact Form</h2>
         <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
           <div class="form-group">
               <div [hidden]="" *ngIf="submitted && !this.contactForm.valid" class="alert alert-danger alert-dismissible fade show">
@@ -80,11 +80,11 @@
       <div class="col-lg-5 col-md-6 col-12 px-4">
         <div class="my-4 contact-map">
              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12198.376858812288!2d-75.9157251!3d40.1513218!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe331877bbba7c8ad!2sRed%20School%20Self-Storage!5e0!3m2!1sen!2sus!4v1596823256195!5m2!1sen!2sus" 
-              width="100%" height="250" frameborder="0" allowfullscreen></iframe> 
+              width="100%" height="250" frameborder="0" allowfullscreen title="contact us map"></iframe> 
         </div>
         <p>
           <span *ngFor="let contact of contactDetails">
-            <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
+            <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.label === 'Address:'|| contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
                 <a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
             <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
           </span>

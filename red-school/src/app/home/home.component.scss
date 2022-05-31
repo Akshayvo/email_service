@@ -42,6 +42,7 @@ h1 {
   a {
     color: black;
   }
+  line-height:2;
 }
 
 .content-align {
@@ -87,6 +88,9 @@ h1 {
   height: 20vh;
   display: flex;
   align-items: center;
+  h3{
+    font-size:13px;
+  }
 }
 
 .jumbotorn-skew-style {
