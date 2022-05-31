@@ -154,7 +154,9 @@ a{
     }
   }
 }
-
+.contact-links{
+  line-height: 2.2;
+}
 @media screen and (max-height: 700px) and (min-width: 600px) {
   .carousel-caption {
     bottom: 40px;
