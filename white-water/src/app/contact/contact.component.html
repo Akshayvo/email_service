@@ -4,7 +4,7 @@
     <h1 class="py-5 text-center">{{contactHeading}}</h1>
     <div class="row bg-light background-padding">
       <div class="col-lg-7 col-md-6 col-12 px-4">
-        <h3 class="heading py-3">Contact Form</h3>
+        <h2 class="heading py-3">Contact Form</h2>
         <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
           <div class="form-group">
               <div [hidden]="" *ngIf="submitted && !this.contactForm.valid" class="alert alert-danger alert-dismissible fade show">
@@ -80,16 +80,16 @@
       <div class="col-lg-5 col-md-6 col-12 px-4 contact-details">
         <div class="my-4 contact-map">
              <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1HXj1z75s1rZ0uMKrU2H6Cmu3FFm5s41z" 
-              width="100%" height="250" frameborder="0" allowfullscreen rel="noopener"></iframe> 
+              width="100%" height="250" frameborder="0" title="Google map service" allowfullscreen rel="noopener"></iframe> 
         </div>
         <div class="box">
             <div *ngFor="let contact of contactDetails" class="display-contact">
-                <h4>
+                <h3>
                   <b>{{contact.label}}</b>
                   <a [href]="contact?.redirect" target="{{(contact?.label === 'Address:') ? '_blank' : '_self'}}" rel="noreferrer">&nbsp;
                     {{contact.data}}
                   </a>
-                </h4>
+                </h3>
               </div>
               <div class="display-contact " *ngFor="let hour of hours">
                 <h4><b>{{hour.label}} </b>&nbsp;{{hour.data}}</h4><br>

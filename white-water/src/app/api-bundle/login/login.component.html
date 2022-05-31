@@ -15,8 +15,8 @@
                 </div>
                 <div class="row">
                     <div class="form-group col-lg-6 col-12">
-                        <label>User Name</label> &nbsp;
-                        <input type="text" formControlName="strUserName"  
+                        <label for="username">User Name</label> &nbsp;
+                        <input type="text" id="username" formControlName="strUserName"  
                         class="form-control" 
                         [ngClass]="{ 'is-invalid': submitted && f.strUserName.errors }"
                         />
@@ -27,8 +27,8 @@
                 </div>
                 <div class="row">
                     <div class="form-group col-lg-6 col-12">
-                        <label>Password</label> &nbsp;
-                        <input type="password" formControlName="strPassword" class="form-control" 
+                        <label for="password">Password</label> &nbsp;
+                        <input type="password" id="password" formControlName="strPassword" class="form-control" 
                         [ngClass]="{ 'is-invalid': submitted && f.strPassword.errors }"  
                         />
                         <div *ngIf="submitted && f.strPassword.errors" class="invalid-feedback">
@@ -62,7 +62,7 @@
 
 
     <div class="col-md-5  vertical-line"  >
-        <h3>How to Login</h3>
+        <h2>How to Login</h2>
         <div *ngFor="let loginDetail of loginDetail">
           <p><b>Username: </b>&nbsp;{{loginDetail.userName}}<br>
           <b>Password:</b>&nbsp;{{loginDetail.password}}</p>

@@ -64,7 +64,7 @@
                         src="{{ unitsizers[h].unitImg }}"
                         alt="{{ unitsizers[h].alt }}"
                         width="80%"
-                        height="auto"
+                        height="100%"
                         class="overlay"
                         (click)="moveLeft()"
                       />
@@ -75,7 +75,7 @@
                         src="{{ unitsizers[i].unitImg }}"
                         alt="{{ unitsizers[i].alt }}"
                         width="100%"
-                        height="auto"
+                        height="100%"
                         class="pt-lg-4 pt-md-4 pt-2"
                       />
                     </div>
@@ -85,7 +85,7 @@
                         src="{{ unitsizers[j].unitImg }}"
                         alt="{{ unitsizers[j].alt }}"
                         width="80%"
-                        height="auto"
+                        height="100%"
                         class="overlay"
                         (click)="moveRight()"
                       />
@@ -107,7 +107,7 @@
                           <img src="{{unitsizers[i].photo}}" alt="" width="100%" height="auto">
                         </div> -->
                     <div class="col-12 col-md-8 col-lg-8 col align-self-center">
-                      <h3 class="mb-1">{{ unitsizers[i].heading }}</h3>
+                      <h2 class="mb-1">{{ unitsizers[i].heading }}</h2>
                       <p class="pr-2 text-justify">{{ unitsizers[i].data }}</p>
                       <ul class="pl-0">
                         <li *ngFor="let amenity of unitsizers[i]?.amenities">

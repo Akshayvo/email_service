@@ -3,6 +3,8 @@ import { Title, Meta } from '@angular/platform-browser';
 import { faqPageTitle } from '../data/title';
 import { faqHeading } from '../data/heading';
 import { faq } from '../data/faq';
+import { CanonicalService } from '../services/canonical.service';
+
 
 
 @Component({
@@ -19,11 +21,13 @@ export class FaqComponent implements OnInit {
   constructor(
     private titleService: Title,
     private meta: Meta,
+    private canonical: CanonicalService,
+
   ) {
     this.fetchMetaData();
     this.meta.addTag({
       name: 'description',
-      // content: `${this.faqPagecontent}`
+      content: 'checkout some of the frequently asked questions and answers.'
     });
     this.titleService.setTitle(`${this.faqPageTitle}`);
   }
@@ -32,6 +36,8 @@ export class FaqComponent implements OnInit {
     // this.fetchScript();
     this.fetchHeading();
     this.fetchFaqData();
+    this.canonical.create();
+
   }
 
   public fetchMetaData () {
