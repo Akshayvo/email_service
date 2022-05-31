@@ -8,13 +8,13 @@
           <div class="col-lg-4 p-2" *ngFor="let unit of unitSizer">
             <div class="bg-white height">
               <div class="text-center">
-                <img [src]="unit?.img" height="auto" width="100%" [alt]="unit?.alt" class="pt-4 px-4">
+                <img [src]="unit?.img" height="100%" width="100%" [alt]="unit?.alt" class="pt-4 px-4">
               </div>
               <div class="p-3 ">
                 <h5> {{unit.text}} </h5>
                 <p class="text-justify" > {{unit.data}} </p>
                 <ul>
-                  <li *ngFor="let amenity of unit?.amenities"><h2> {{amenity.content}}</h2> </li>
+                  <li *ngFor="let amenity of unit?.amenities"> {{amenity.content}} </li>
                 </ul>
               </div>      
             </div>
