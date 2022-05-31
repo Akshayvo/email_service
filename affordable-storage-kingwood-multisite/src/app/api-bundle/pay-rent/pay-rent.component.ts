@@ -5,8 +5,8 @@ import { tabs } from '../../data/tab';
 import { CanonicalService } from '../../services/canonical.service';
 import { environment } from '../../../environments/environment';
 import { Meta } from '@angular/platform-browser';
-import { ogPayRentPageLocation1, ogPayRentPageLocation2, ogPayRentPageLocation3, 
-  twitterPayRentPageLocation1, twitterPayRentPageLocation2, twitterPayRentPageLocation3 } from '../../data/script';
+import { ogPayRentPageLocation1, ogPayRentPageLocation2, 
+  twitterPayRentPageLocation1, twitterPayRentPageLocation2 } from '../../data/script';
 @Component({
   selector: 'app-pay-rent',
   templateUrl: './pay-rent.component.html',
@@ -69,8 +69,6 @@ export class PayRentComponent implements OnInit {
       this.og = ogPayRentPageLocation1;
     } else if (this.router.url.includes('units-199')) {
       this.og = ogPayRentPageLocation2;
-    } else if (this.router.url.includes('location-3')) {
-      this.og = ogPayRentPageLocation3;
     }
 }
 
@@ -79,8 +77,6 @@ public fetchTwitter() {
     this.twitter = twitterPayRentPageLocation1;
   } else if (this.router.url.includes('units-199')) {
     this.twitter = twitterPayRentPageLocation2;
-  } else if (this.router.url.includes('location-3')) {
-    this.twitter = twitterPayRentPageLocation3;
   }
 }
 

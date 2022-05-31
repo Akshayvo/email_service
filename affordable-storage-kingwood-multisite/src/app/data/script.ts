@@ -98,15 +98,6 @@ export const addressLoaction2 = {
   'addressRegion': 'TX',
   'postalCode': '77339',
   'addressCountry': 'United state'
-}
-
-export const addressLoaction3 = {
-  '@type': '',
-  'streetAddress': '',
-  'addressLocality': '',
-  'addressRegion': '',
-  'postalCode': '',
-  'addressCountry': ''
 } 
 
 
@@ -124,12 +115,6 @@ export const imageLocation1 = [
   'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Affordable_Storage_Kingwood_Multisite/jpg/affordable-storage-of-kingwood-169.jpg'
  ]
 
- export const imageLocation3 = [
-  '',
-  '',
-  ''
- ]
-
  
 
 export const homePageScript = [ 
@@ -140,7 +125,7 @@ export const homePageScript = [
     'url': urlLocation1,
     'openingHours': ['By Appointment Only'],
     'priceRange': '$150-$210',
-      'address' : addressLoaction1,
+    'address' : addressLoaction1,
     'telephone': contactsLocation1[contactIndex1].data,
     'image' : imageLocation1,
     'logo': 'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Affordable_Storage_Kingwood_Multisite/jpg/affordable-storage-of-kingwood-logo.jpg'
@@ -156,20 +141,7 @@ export const homePageScript = [
     'openingHours': ['By Appointment Only'],
     'priceRange': '$150-$210',
     'url' : urlLocation2,
-  }, 
-  {
-    '@context' : 'http://schema.org',
-    '@type' : ['LocalBusiness', 'SelfStorage'],
-    'name' : nameLocation3,
-    'image' : imageLocation3,
-    'telephone' : contactsLocation3[contactIndex3].data,
-    'email' : contactsLocation3[emailIndex3].data,
-    'address': addressLoaction3,
-    'priceRange': '',
-    'openingHours': [],
-    'url' : urlLocation3
-  }, 
- ];
+  }, ]
 
 
 export const Location1Script = {
@@ -243,42 +215,6 @@ export const Location2Script = {
 
 };
 
-export const Location3Script = {
-    '@context': 'https://schema.org',
-    '@type': 'SelfStorage',
-    'image': imageLocation3,
-    '@id': environment.websiteUrl,
-    'name': nameLocation3,
-     'description': description3 || location3PageContent,
-    'address': addressLoaction3,
-   'aggregateRating': {
-  '@type': 'AggregateRating',
-  'ratingValue': '',
-  'bestRating': '5',
-  'reviewCount': ''
-},
-    'geo': {
-      '@type': 'GeoCoordinates',
-      'latitude': 30.4222526,
-      'longitude':  -87.8864467
-    },
-    'url': urlLocation3,
-    'telephone': contactsLocation3[contactIndex3].data,
-
-    'priceRange': '$30 - $175',
-    'openingHours': [],
-    'currenciesAccepted': 'USD',
-  'paymentAccepted': 'Cash, Check, Credit Card, Debit Card, Online Credit Card, Online Debit Card',
-     'areaServed': {
-  '@type': 'State',
-  'name': 'New York'
-   },
-'hasMap': maplocation3,
-    'acceptsReservations': 'True'
-
-
-};
-
 
 export const contactPageLocation1Script = {
     '@context': 'http://schema.org',
@@ -327,31 +263,6 @@ export const contactPageLocation2Script = {
       '',
       ''
     ]
-};
-
-export const contactPageLocation3Script = {
-    '@context': 'http://schema.org',
-    '@type': 'Selfstorage',
-    'name': nameLocation3,
-    'address': addressLoaction3,
-     'url': urlLocation3,
-     'image': imageLocation3,
-    'contactPoint': [{
-      '@type': 'ContactPoint',
-      'telephone': contactsLocation3[contactIndex3].data,
-      'contactType': 'reservations'
-    }, {
-      '@type': 'ContactPoint',
-      'telephone': contactsLocation3[contactIndex3].data,
-      'contactType': 'customer service'
-    }],
-    'email': contactsLocation3[emailIndex3].data,
-    'sameAs': [
-      '',
-      '',
-      ''
-    ]
-
 };
 
 export const ogHomePage = [
@@ -519,60 +430,6 @@ export const twitterLocation2 = [
 ];
 
 
-export const ogLocation3 = [
-  {
-    property: `og:title`,
-    content: location3PageTitle
-  },
-  {
-    property: `og:description`,
-    content: location3PageContent
-  },
-  {
-    property: `og:type`,
-    content: `website`
-  },
-  {
-    property: `og:site_name`,
-    content: environment.facilityName
-  },
-  {
-    property: `og:url`,
-    content: urlLocation3
-  },
-  {
-    property: `og:image`,
-    content: imageLocation3[1]
-  },
-];
-
-export const twitterLocation3 = [
-  {
-    name: `twitter:site`,
-    content: `@${environment.facilityName}`
-  },
-  {
-    name: `twitter:card`,
-    content: `summary`
-  },
-  {
-    name: `twitter:creator`,
-    content: `@syrasoft_connect`
-  },
-  {
-    name: `twitter:title`,
-    content: `@${location3PageTitle}`
-  },
-  {
-    name: `twitter:description`,
-    content: location3PageContent
-  },
-  {
-    name: `twitter:image`,
-    content: imageLocation3[0]
-  },
-];
-
 export const ogPayRentPage = [
   {
     property: `og:title`,
@@ -732,60 +589,6 @@ export const twitterPayRentPageLocation2 = [
   {
     name: `twitter:image`,
     content: imageLocation2[0]
-  },
-];
-
-export const ogPayRentPageLocation3 = [
-  {
-    property: `og:title`,
-    content:  location3PayrentPageTitle
-  },
-  {
-    property: `og:description`,
-    content: location3PayrentPageContent
-  },
-  {
-    property: `og:type`,
-    content: `website`
-  },
-  {
-    property: `og:site_name`,
-    content: environment.facilityName
-  },
-  {
-    property: `og:url`,
-    content: `${environment.websiteUrl}/pay-rent/${location3}/login`
-  },
-  {
-    property: `og:image`,
-    content: imageLocation3[1]
-  },
-];
-
-export const twitterPayRentPageLocation3 = [
-  {
-    name: `twitter:title`,
-    content: `@${location3PayrentPageTitle}`
-  },
-  {
-    name: `twitter:description`,
-    content: location3PayrentPageContent
-  },
-  {
-    name: `twitter:site`,
-    content: `@${environment.facilityName}`
-  },
-  {
-    name: `twitter:card`,
-    content: `summary`
-  },
-  {
-    name: `twitter:creator`,
-    content: `@syrasoft_connect`
-  },
-  {
-    name: `twitter:image`,
-    content: imageLocation3[0]
   },
 ];
 
@@ -1003,59 +806,6 @@ export const twitterContactPageLocation2 = [
   {
     name: `twitter:image`,
     content:  imageLocation2[0]
-  },
-];
-export const ogContactPageLocation3 = [
-  {
-    property: `og:title`,
-    content: `${location3ContactPageTitle}`
-  },
-  {
-    property: `og:description`,
-    content: location3ContactPageContent
-  },
-  {
-    property: `og:type`,
-    content: `website`
-  },
-  {
-    property: `og:site_name`,
-    content: environment.facilityName
-  },
-  {
-    property: `og:url`,
-    content: `${environment.websiteUrl}/contact-${location3}`
-  },
-  {
-    property: `og:image`,
-    content: imageLocation3[1]
-  },
-];
-
-export const twitterContactPageLocation3 = [
-  {
-    name: `twitter:title`,
-    content: `@${location3ContactPageTitle}`
-  },
-  {
-    name: `twitter:description`,
-    content: location3ContactPageContent
-  },
-  {
-    name: `twitter:site`,
-    content: `@${environment.facilityName}`
-  },
-  {
-    name: `twitter:card`,
-    content: `summary`
-  },
-  {
-    name: `twitter:creator`,
-    content: `@syrasoft_connect`
-  },
-  {
-    name: `twitter:image`,
-    content: imageLocation3[0]
   },
 ];
 

@@ -10,9 +10,9 @@
       <div class="container">
         <div class="jumbotorn-skew-text">
           <div class="disp" *ngFor="let jumbotron of jumbotron">
-            <h2  class="my-4">
+            <!-- <h2  class="my-4">
               {{jumbotron.h2}}
-            </h2>
+            </h2> -->
           <p class="text-justify">{{jumbotron.blurb}}</p>
           </div>
           <!-- <div class="jumbotorn-button">
@@ -101,7 +101,7 @@
 
         <div class="col-lg-6 py-3">
           <div class="mb-4">
-            <h2> Visit the Main Office at the Address Below</h2>
+            <h3> Visit the Main Office at the Address Below</h3>
             <p>
               <span class="contact-links" *ngFor="let contact of contactHomeDetails">
                 <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
@@ -109,7 +109,7 @@
                   <ng-template #other_content >&nbsp;<a [href]="contact?.redirect" target="_blank" rel="noopener">&nbsp;{{contact.data}}</a></ng-template><br>
               </span>
             </p>
-            <b>Office Hours:</b>
+            <h4>Office Hours:</h4>
             <p>
               <span *ngFor="let hour of hoursHomeDetails">
                 <b>{{hour.label}}</b>&nbsp;{{hour.data}}<br>

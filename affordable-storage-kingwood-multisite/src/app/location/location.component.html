@@ -66,8 +66,8 @@
           <div class="row">
             <div class="col-lg-8">
               <h3 class="pt-3" *ngIf="locationId !== 1;then content else other_content" >Access Hours</h3>
-              <ng-template #content><h4 class="pt-3">Access Hours</h4><app-tables [tBody]="hours" ></app-tables></ng-template>
-              <ng-template #other_content><h4 class="pt-3">Office Hours</h4><app-tables [tBody]="hours" >
+              <ng-template #content><h3 class="pt-3">Access Hours</h3><app-tables [tBody]="hours" ></app-tables></ng-template>
+              <ng-template #other_content><h2 class="pt-3">Office Hours</h2><app-tables [tBody]="hours" >
               </app-tables><h4 class="pt-3">Access Hours</h4><app-tables [tBody]="access" ></app-tables>
             </ng-template> 
             </div>

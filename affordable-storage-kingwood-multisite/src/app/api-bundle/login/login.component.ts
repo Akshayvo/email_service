@@ -7,8 +7,8 @@ import { TenantInfo } from '../models/tenant';
 import { DataSharingService } from '../services/data-sharing.service';
 import { contactsLocation1, contactsLocation2, contactsLocation3 } from '../../data/contact';
 import { loginDetail } from '../../data/pay-rent';
-import { ogPayRentPageLocation1, ogPayRentPageLocation2, ogPayRentPageLocation3,
-   twitterPayRentPageLocation1, twitterPayRentPageLocation2, twitterPayRentPageLocation3 } from '../../data/script';
+import { ogPayRentPageLocation1, ogPayRentPageLocation2,
+   twitterPayRentPageLocation1, twitterPayRentPageLocation2 } from '../../data/script';
 import { Meta } from '@angular/platform-browser';
 
 
@@ -164,8 +164,6 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.og = ogPayRentPageLocation1;
     } else  if (this.router.url.includes('units-199')) {
       this.og = ogPayRentPageLocation2;
-    } else if (this.router.url.includes('location-3')) {
-      this.og = ogPayRentPageLocation3;
     }
     }
 
@@ -174,9 +172,7 @@ public fetchTwitter() {
     this.twitter = twitterPayRentPageLocation1;
   } else if (this.router.url.includes('units-199')) {
       this.twitter = twitterPayRentPageLocation2;
-  } else if (this.router.url.includes('location-3')) {
-        this.twitter = twitterPayRentPageLocation3;
-  }
+  } 
 }
 
   handleForgotPassword() {

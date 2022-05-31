@@ -8,9 +8,9 @@ import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { DataSharingService } from '../api-bundle/services/data-sharing.service';
 import { CanonicalService } from '../services/canonical.service';
-import { Location1Script, Location2Script, Location3Script,
-  ogLocation1, ogLocation2, ogLocation3, twitterLocation1,
-  twitterLocation2, twitterLocation3 } from '../data/script';
+import { Location1Script, Location2Script,
+  ogLocation1, ogLocation2, twitterLocation1,
+  twitterLocation2 } from '../data/script';
 import { featuresHead, featuresList, location1FeaturesHead, location2FeaturesHead,
   location3FeaturesHead } from '../data/home';
 import { UaParserService } from '../services/ua-parser.service';
@@ -150,7 +150,6 @@ id = 3;
         this.locationName = `Self Storage Facility - Location-3 Location`;
         this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
         this.dataSharingService.locationName = this.locationName;
-        this.script = Location3Script;
         this.loadScript();
         this.og.forEach(element => {
           this.meta.addTag({
@@ -207,8 +206,6 @@ id = 3;
       this.og = ogLocation1;
     } else if (this.router.url.includes(`${environment.locationName}/units-199`)) {
       this.og = ogLocation2;
-    } else if (this.router.url.includes(`${environment.locationName}/location-3`)) {
-      this.og = ogLocation3;
     }
   }
 
@@ -217,8 +214,6 @@ id = 3;
         this.twitter = twitterLocation1;
     } else if (this.router.url.includes(`${environment.locationName}/units-199`)) {
       this.twitter = twitterLocation2;
-    } else if (this.router.url.includes(`${environment.locationName}/location-3`)) {
-      this.twitter = twitterLocation3;
     }
   }
 

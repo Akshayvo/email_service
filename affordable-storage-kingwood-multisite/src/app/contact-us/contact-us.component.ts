@@ -8,8 +8,8 @@ import { contactsLocation1, hoursLocation1,
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { LocationService } from '../services/location.service';
-import { contactPageLocation1Script, ogContactPageLocation1, ogContactPageLocation2, ogContactPageLocation3,
-   twitterContactPageLocation1, twitterContactPageLocation2, twitterContactPageLocation3 } from '../data/script';
+import { contactPageLocation1Script, ogContactPageLocation1, ogContactPageLocation2,
+   twitterContactPageLocation1, twitterContactPageLocation2 } from '../data/script';
 import { CanonicalService } from '../services/canonical.service';
 import { contactPageTitle, contactPageContent } from '../data/title';
 @Component({
@@ -103,8 +103,6 @@ export class ContactUsComponent implements OnInit {
       this.og = ogContactPageLocation1;
     } else if (this.router.url.includes('units-199')) {
       this.og = ogContactPageLocation2;
-    } else if (this.router.url.includes('location-3')) {
-      this.og = ogContactPageLocation3;
     }
 }
 
@@ -118,8 +116,6 @@ public fetchTwitter() {
     this.twitter = twitterContactPageLocation2;
   } else if (this.router.url.includes('units-199')) {
     this.twitter = twitterContactPageLocation1;
-  } else if (this.router.url.includes('location-3')) {
-    this.twitter = twitterContactPageLocation3;
   }
 }
 
