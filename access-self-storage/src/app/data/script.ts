@@ -30,7 +30,7 @@ export const script = {               // Please fill this script according to fa
       "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Access_Self_Storage/JPG/access-self-storage-office-homepage-1%20%282%29.jpg"
      ],
      telephone: contact[contactIndex].data,
-     map: "https://g.page/accessselfstoragenewbraunfels",
+     map: "https://www.google.com/maps?ll=29.736103,-98.084448&z=18&t=m&hl=en&gl=US&mapclient=embed&cid=11166689672982005955",
      description: "A superb collection of fine gifts and clothing to accent your stay in Mexico Beach.",
      streetAddress: "148 W 51st St",
      state: "New York",
