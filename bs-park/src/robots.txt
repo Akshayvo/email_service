@@ -1,0 +1,5 @@
+ # www.robotstxt.org/
+ # Allow crawling of all content
+Sitemap: https://bs-park-staging.netlify.app/sitemap.xml
+ User-agent: *
+ Disallow:'
