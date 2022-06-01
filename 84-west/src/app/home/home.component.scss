@@ -32,6 +32,12 @@ h1 {
   }
 }
 
+.feature {
+  h4 {
+    font-size: 16px;
+  }
+}
+
 .feature-icon-style {
   padding: 24px;
   text-align: center;
@@ -44,6 +50,16 @@ h1 {
 .contact-links {
   a {
     color: black;
+  }
+}
+
+.contacts, .office-hours {
+  display: block;
+  margin-bottom: 8px;
+  h3 {
+    font-size: 16px;
+    display: inline;
+    font-weight: bold;
   }
 }
 

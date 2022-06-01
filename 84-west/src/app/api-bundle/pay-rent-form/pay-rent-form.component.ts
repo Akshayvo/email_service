@@ -349,7 +349,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
           this.surchargeService.getIdPaytype(this.paytypeid);
           this.IsAutoPaymentsEnabled = Tenant.IsAutoPaymentsEnabled;
           this.date = Tenant.LastPaymentOn;
-          this.lastPaymentOn = this.datePipe.transform(this.date, 'dd/MM/yyyy');
+          this.lastPaymentOn = this.datePipe.transform(this.date, 'MM/dd/yyyy');
           this.lastPaymentAmount = Tenant.LastPaymentAmount;
 
           this.UnpaidAR = Tenant.UnpaidAR;
