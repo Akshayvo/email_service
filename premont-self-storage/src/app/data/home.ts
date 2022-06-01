@@ -80,6 +80,6 @@ export const feature = [
 export const jumbotron = [
     {
         h2: `Affordable Self Storage Units and Parking in Premont, Texas`,
-        blurb: `As a locally owned and operated business we understand the key to success is quality customer service. That's why go the extra mile every day to offer every convenience and security consideration. From contactless rentals through our website to a well-lit and fully-fenced facility, your next storage project will enjoy the Premont Self Storage advantage.`,
+        blurb: `At Premont Storage we understand the key to success is quality customer service. That's why go the extra mile every day to offer every convenience and security consideration. From contactless rentals through our website to a well-lit and fully-fenced facility, your next storage project will enjoy the Premont Self Storage advantage.`,
     }
 ];
