@@ -1,0 +1,146 @@
+<app-script-hack type="application/ld+json">
+  {{script | json}}
+</app-script-hack>
+
+<div class="home-container">
+  <!--Jumbotron Container Starts Here-->
+  <div class="jumbotron-container">
+    <div class="mobile text-color text-center mt-2 ">
+      <p><b>Single Story - Easy, 24 Hour Access!</b></p>
+      <p><b>No Struggling With Elevators Or Stairs!</b></p>
+    </div>
+    <div class="jumbotron-top">
+    <div class="jumbotron px-0 m-0" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
+      <div class="jumbotorn-skew-style" [ngClass]="template === 'darkTheme' ? 'bg-translucent-dark' : 'bg-translucent-light'">
+      </div>
+      <div class="container">
+        <div class="jumbotorn-skew-text">
+          <div class="disp" *ngFor="let jumbotron of jumbotron">
+            <h2  class="my-4">
+              {{jumbotron.h2}}
+            </h2>
+          <p class="text-justify">{{jumbotron.blurb}}</p>
+          </div>
+          <div class="jumbotorn-button text-center ">
+            <a class="btn btn-lg btn-primary " (click)="navigate('/view-rates')" role="button">Rent Now</a>
+            <!-- <a class="btn btn-lg btn-primary" (click)="navigate('/contact-us')" role="button">Contact Us</a> -->
+            <div class="text-color text-center mt-1"><p><strong>24/7</strong></p></div>
+          
+          </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    <div class="jumbotron-bottom">
+      <div class="container">
+        <div class="feature row">
+          <div class="col-md-3 col-3 feature-icon-style" *ngFor="let feature of feature">
+            <img [src]="feature?.path" [alt]="feature?.alt" />
+              <h2 class="feature-text">{{feature.label}}</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Jumbotron Ends Here-->
+
+  <!--Map and Contact Section-->
+  <div class="bg-light py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 py-3 map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1708.2794709586549!2d-81.05051938431353!3d41.23986400761507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8831426c4c6fdc19%3A0x2d9f833e28457cef!2s9143%20N%20Main%20St%2C%20Windham%2C%20OH%2044288%2C%20USA!5e0!3m2!1sen!2sin!4v1652884551021!5m2!1sen!2sin" width="100%" height="100%" frameborder="0" allowfullscreen title="homepage map"></iframe>
+        </div>
+        
+        <div class="col-lg-6 py-3">
+          <div class="mb-4 contact-details">
+              
+            <p>
+              <span *ngFor="let contact of contactDetails" class="display-contact">
+                <span><h3><b>{{contact.label}}</b></h3></span><span class="contact-links" *ngIf="contact?.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
+                  <h4><a [href]="contact?.redirect" target="{{(contact?.label === 'Address: ') ? '_blank' : '_self'}}">&nbsp;{{contact.data}}</a></h4>
+                </span>
+                <ng-template #other_content>&nbsp;<h4>{{contact.data}}</h4></ng-template><br>
+              </span>
+            </p>
+            <h4><b>Office Hours:</b></h4>
+            <p>
+              <span class="display-contact" *ngFor="let hour of hours">
+                <h4><b>{{hour.label}}</b></h4>&nbsp;<h4>{{hour.data}}</h4><br>
+              </span>
+            </p>
+          </div>
+          <!-- <h2 class="text-center amenities">Amenities</h2>  --> 
+
+          <!-- staging changes starts-->
+
+          <h2 class="text-center amenities">Mini Storage USA</h2>  
+
+          <!-- staging changes starts -->
+
+          <div class="pt-2">
+              <app-tables [tBody]="featuresList"></app-tables>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Map and Contact Section Ends Here-->
+
+
+  <!--About Us Section-->
+  <div class="container aboutUs py-5">
+    <div class="row">
+      <div class="col-lg-6 py-3">
+        <!-- <app-photos></app-photos> -->
+        <img src="{{imageBaseUrl}}/stock-self-storage-11.{{imagetype}}" width="100%" height="100%" alt="{{aboutUsAlt}}" class="sectionImage"> 
+      </div>
+      <div class="col-lg-6 py-3">
+        <!-- <h1 class="heading pb-4">Affordable Self Storage Units in Rochester, NY, 14624</h1>
+        <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p> -->
+
+        <!-- Staging changes starts-->
+        <div  *ngFor="let data of aboutUs">
+          <h1 class="pb-1">{{data.mainHeading}}</h1>
+          <p [innerHTML]="data.mainParagraph"></p>
+          <!-- <h2 class="py-1"><b>{{data.subHeading2.heading}}</b></h2>  -->
+          <p>{{data.subHeading2.p}}</p>
+          
+        </div>
+        <!--Staging changes ends here-->  
+        </div>
+    </div>
+  </div>
+  <!--About Us Section Ends Here-->
+  <!-- <div class="bg-light">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12 py-3">
+          <p class="mb-0" >Visit some of our additional properties: <a href="https://www.lindenstorage.com/" target="_blank">www.lindenstorage.com   </a> <a href="http://www.pittsfordofficespace.com/" target="_blank">www.pittsfordofficespace.com</a>  and <a href="https://www.rentstonebrook.com/" target="_blank">www.rentstonebrook.com</a></p>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  
+<!--Get Started Secion-->
+  <!-- <div class="getStarted text-center">
+    <div class="get-started">
+     <div class="container py-5">
+       <div class="py-5 m-0">
+         <div class="row">
+           <div class="col-md-12">
+             <h2 class="heading pb-4">Getting Started</h2>
+             <p class="pb-4">{{gettingStarted}}</p>
+             <a class="btn btn-lg btn-primary" (click)="navigate('/reserve-unit')" role="button">Reserve Your Unit!</a>
+           </div>
+         </div>
+       </div>
+      </div>      
+      <div class="special-row py-4"><strong>390 Self Storage offers secure storage units in Rochester, Gates and Brighton NY</strong></div>
+    </div>
+  </div> -->
+<!--Get Started Secion Ends Here-->
+
+</div> 
+<!--Home Cotainer Ends here-->

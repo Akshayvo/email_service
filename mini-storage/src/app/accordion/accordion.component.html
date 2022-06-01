@@ -1,0 +1,17 @@
+<div id="accordion">
+  <div class="card" *ngFor="let storage of storageTipAccordion">
+      <div class="card-header">
+          <div class="card-header-before-collapse  px-3 py-2" [ngClass]="storage?.id != 1 && 'collapsed'" data-toggle="collapse" [attr.data-target]="'#collapseOne'+storage?.id" aria-expanded="true">
+              {{storage.label}}                 
+          </div>  
+      </div>
+
+      <div [id]="'collapseOne'+storage?.id"  aria-labelledby="collapseOne" data-parent="#accordion" class="collapse" [ngClass]="storage?.id == 1 && 'show'">
+          <ul class="card-body">
+              <li class="py-2 text-justify" *ngFor="let data of storage.contents">
+              {{data.data}}
+              </li>
+          </ul>
+      </div>
+  </div>
+</div>
