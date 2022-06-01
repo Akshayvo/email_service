@@ -44,11 +44,13 @@ export const script = {               // Please fill this script according to fa
      ratingValue: "4",
      bestRating: "5",
      reviewCount: "1",
-     latitude: 41.240339,
-     longitude: -81.0489571,
+     latitude: 35.032249,
+     longitude: -80.591951,
      openingHours: ["by appointment"],
      priceRange: '$8-$60'
 };
+
+
 
 export const homePageScript = [ {
     "@context": "https://schema.org",

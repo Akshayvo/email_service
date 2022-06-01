@@ -1,4 +1,4 @@
-export const homePageTitle = `Self Storage North Randall, OH - Mini Storage`;
+export const homePageTitle = `Affordable Storage Units in Wingate`;
 export const homePageContent = `Finding safe and affordable storage units in North Randall Ohio has never been easier. Compare our prices to the competition we offer the best rate!`;
 
 export const viewRatesPageTitle = `View Rates | Mini Storage`;
