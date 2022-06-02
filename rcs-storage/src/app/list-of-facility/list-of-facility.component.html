@@ -1,0 +1,139 @@
+  <!--Contact Brookside  Ends Here-->
+  <div class="pb-5 pt-5 bg-light">    
+    <div class="container">
+      <div class="row">          
+        <div class="col-lg-5">
+          <iframe title="Facility Google Map" src="" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="col-lg-4  pt-3">
+          <h2>location heading1</h2>
+          <!-- <p> -->
+            <div *ngFor="let contact of contactsBrookside" class="contact-label">
+                <div><h3><strong>{{contact.label}}</strong></h3></div>&nbsp;&nbsp;
+              <div class="contact-links" *ngIf="contact.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
+                <a [href]="contact?.redirect" target="_blank" rel="noopener">&nbsp;
+                  <h3>{{contact.data}}</h3>
+                </a>
+              </div>
+              <ng-template #other_content>&nbsp;<h3>{{contact.data}}</h3></ng-template><br>
+            </div>
+          <!-- </p> -->
+          <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/south-dakota/rcs-east/storage-units']" role="button">View Rates</a>                
+          <a class="btn btn-primary p-2 ml-0" [routerLink]="['/south-dakota/rcs-east/reserve-unit']" role="button"> Reserve Unit</a>                                  
+        </div>
+        <div class="col-lg-3 partition-border contact-hours pt-3">
+            <h3>Office Hours:</h3>
+            <p>
+              <span *ngFor="let hour of hoursBrookside">
+                <b>{{hour.label}}</b>{{hour.data}}<br>
+              </span>
+            </p>
+        </div>
+      </div>
+    </div>      
+  </div>
+  
+  <!--Contact Brookside  -  Ends Here-->
+
+    <!--Contact chester-andrews-lane  Ends Here-->
+    <div class="pb-5 pt-5 ">    
+      <div class="container">
+        <div class="row">          
+          <div class="col-lg-5">
+            <iframe title="Facility Google Map" src="" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="col-lg-4 pt-3">
+            <h2>location heading2</h2>
+            <div *ngFor="let contact of contactsAndrews" class="contact-label pt-2">
+              <div><h3><strong>{{contact.label}}</strong></h3></div>&nbsp;&nbsp;
+            <div class="contact-links" *ngIf="contact.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
+              <a [href]="contact?.redirect" target="_blank" rel="noopener">&nbsp;
+                <h3>{{contact.data}}</h3>
+              </a>
+            </div>
+            <ng-template #other_content>&nbsp;<h3>{{contact.data}}</h3></ng-template><br>
+          </div>
+            <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/south-dakota/rcs-west/storage-units']" role="button">View Rates</a>                
+            <a class="btn btn-primary p-2 ml-0" [routerLink]="['/south-dakota/rcs-west/reserve-unit']" role="button"> Reserve Unit</a>                                  
+          </div>
+          <div class="col-lg-3 partition-border contact-hours pt-3">
+              <h3>Office Hours:</h3>
+              <p>
+                <span *ngFor="let hour of hoursAndrews">
+                  <b>{{hour.label}}</b>{{hour.data}}<br>
+                </span>
+              </p>
+          </div>
+        </div>
+      </div>      
+    </div>
+    <!--Contact chester-andrews-lane  -  Ends Here-->
+
+      <!--Contact Montgomery Start Here-->
+  <div class="pb-5 pt-5 bg-light">    
+    <div class="container">
+      <div class="row">          
+        <div class="col-lg-5">
+            <iframe title="Facility Google Map" src="" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="col-lg-4 pt-3">
+          <h2>location heading3</h2>
+          <div *ngFor="let contact of contactsMontgomery" class="contact-label">
+            <div><h3><strong>{{contact.label}}</strong></h3></div>&nbsp;&nbsp;
+          <div class="contact-links" *ngIf="contact.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
+            <a [href]="contact?.redirect" target="_blank" rel="noopener">&nbsp;
+              <h3>{{contact.data}}</h3>
+            </a>
+          </div>
+          <ng-template #other_content>&nbsp;<h3>{{contact.data}}</h3></ng-template><br>
+        </div>
+          <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/south-dakota/location-3/storage-units']" role="button">View Rates</a>                
+          <a class="btn btn-primary p-2 ml-0" [routerLink]="['/south-dakota/location-3/reserve-unit']" role="button"> Reserve Unit</a>                                  
+        </div>
+        <div class="col-lg-3 partition-border contact-hours pt-3">
+            <h3>Office Hours:</h3>
+            <p>
+              <span *ngFor="let hour of hoursMontgomery">
+                <b>{{hour.label}}</b>{{hour.data}}<br>
+              </span>
+            </p>
+        </div>
+      </div>
+    </div>      
+  </div>
+  <!--Contact Montgomery -  Ends Here-->
+
+    <!--Contact Middletown Ends Here-->
+    <div class="pb-5 pt-5 ">    
+      <div class="container">
+        <div class="row">          
+          <div class="col-lg-5">
+              <iframe title="Facility Google Map" src="" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="col-lg-4 pt-3">
+            <h2>location heading4</h2>
+            <div *ngFor="let contact of contactsMiddletown" class="contact-label">
+              <div><h3><strong>{{contact.label}}</strong></h3></div>&nbsp;&nbsp;
+            <div class="contact-links" *ngIf="contact.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
+              <a [href]="contact?.redirect" target="_blank" rel="noopener">&nbsp;
+                <h3>{{contact.data}}</h3>
+              </a>
+            </div>
+            <ng-template #other_content>&nbsp;<h3>{{contact.data}}</h3></ng-template><br>
+          </div>
+            <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/south-dakota/belforest/storage-units']" role="button">View Rates</a>                
+            <a class="btn btn-primary p-2 ml-0" [routerLink]="['/south-dakota/belforest/reserve-unit']" role="button"> Reserve Unit</a>                                  
+          </div>
+          <div class="col-lg-3 partition-border contact-hours pt-3">
+              <h3>Office Hours:</h3>
+              <p>
+                <span *ngFor="let hour of hoursMiddletown">
+                  <b>{{hour.label}}</b>{{hour.data}}<br>
+                </span>
+              </p>
+          </div>
+        </div>
+      </div>      
+    </div>
+    <!--Contact Middletown -  Ends Here-->
+  

@@ -1,0 +1,29 @@
+.reserveUnitHolder {
+  padding: 64px;
+  margin-bottom: 50px;
+  background-color: #f1f0ed;
+
+  .coming-soon {
+    font-size: 2rem;
+    padding: 20%;
+  }
+}
+
+iframe {
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .reserveUnitHolder {
+    padding: 16px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    margin-bottom: 50px;
+
+    .coming-soon {
+      font-size: 1.8rem;
+      padding: 40% 10%;
+    }
+  }
+}

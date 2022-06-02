@@ -1,0 +1,66 @@
+<div class="rent-holder">
+  <div class="container">
+    <div class="rent-heading">
+      <h1 class="text-center pt-5">Pay Rent Online</h1>
+      <h2 class="text-center">Select your location to access your account</h2>
+      
+    </div>
+    <div  class="container pt-5">
+      <div class="rent-sub-holder desktop-view">
+          <div class="container px-0">
+            <table class="col-md-12">
+              <thead >
+                <tr>
+                  <th  *ngFor="let tableHeader of tableHeader">{{tableHeader.data}}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let tableData of tableData">
+                  <td class="table-data">
+                    {{tableData.facility}}
+                  </td>
+                  <td class="table-data ">
+                    {{tableData.address}}
+                  </td>
+                  <td class="table-data ">
+                    <!-- <div [innerHtml]="{{tableData.url}}"></div> -->
+
+                    <a class="btn btn-primary p-2 ml-0" 
+                    [routerLink]="'/pay-rent/'+tableData.url" 
+                    role="button">Pay Here</a>
+                  </td>
+                </tr>
+              </tbody>
+             </table>
+
+          </div>
+        </div>
+        <div class="container mobile-view ">
+        <div class="px-3">
+        <div class=" row py-3  mobile-header" >
+          <div class="col-6 text-center  " *ngFor="let tableHeader of tableHeader"  >
+              <b>{{tableHeader.data}}</b>  
+          </div>
+          </div>
+          <div class="border" *ngFor="let tableData of tableData">
+          <div class="row py-3 px-1" >
+            <div class="col-6 text-center  facility-contact  " >
+              {{tableData.facility}}
+            </div>
+            <div class="col-6 text-center   facility-contact" >
+              {{tableData.address}}
+            </div>
+          </div>
+            <div class="row pb-1">
+              <div class="col-12 text-center" >
+                <a class="btn btn-primary p-2 ml-0 text-center" [routerLink]="'/pay-rent/'+tableData.url" role="button">Pay Here</a>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+    </div>
+  </div>
+</div>

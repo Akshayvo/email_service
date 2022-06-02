@@ -1,0 +1,57 @@
+<div class="col-md-12 display bg-priary py-2" id="site-header">
+  <div class="container">
+    <div class="contact-header">
+      <div class="row">
+        <div class="col-md-10">
+          <span class="contact-details pr-4" *ngFor="let contact of contactDetails">
+            <i [class]="contact?.class"></i>
+            <span class="contact-links" *ngIf="contact?.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
+              <a [href]="contact?.redirect" target="{{(contact?.label === 'Address: ') ? '_blank' : '_self'}}">&nbsp;{{contact.data}}</a></span>
+            <ng-template #other_content>&nbsp;{{contact.data}}</ng-template>
+          </span>
+        </div>
+        <div class="col-md-2 ml-auto text-right">
+          <span class="social pl-2 text-right" *ngFor="let social of socialLinks">
+            <a [href]="social?.path" target="_blank" rel="noopener noreferrer">
+              <i [class]="social?.class"></i>
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<nav class="navbar navbar-expand-lg bg-white" id="nav-header">
+  <div class="container">
+    <a class="navbar-brand" (click)="navigate('/')">
+      <img src="{{imageBaseUrl}}/RCS%20Logo.{{imagetype}}" width="auto" height="70px"  alt="text-based artwork that spells out Storage Plus of Baldwin County">
+      <!-- <b>Self Storage Facility</b> -->
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" #menu>
+      <ul class="navbar-nav ml-auto nav-scroll">
+        <li class="nav-item mx-2" *ngFor="let nav of navLinks">
+          <span *ngIf="nav?.type === 'link'">
+            <a class="nav-link text-center" [routerLink]="nav?.path" [routerLinkActive]="'nav-link-active'" 
+            [routerLinkActiveOptions]="{exact: true}" (click)="onClick(menu)">{{nav.label}}</a>
+          </span>
+
+          <span *ngIf="nav?.type === 'dropdown'">
+              <div class="dropdown show">  
+                <a class="dropdown-toggle nav-link" role="button" id="dropdownMenuLink" [class.nav-link-active]="router.isActive('/south-dakota/rcs-west') || router.isActive('/south-dakota/rcs-east') || router.isActive('/south-dakota/location-3') || router.isActive('/south-dakota/belforest') || router.isActive('/south-dakota/fairhope') || router.isActive('/south-dakota/robertsdale')" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{nav.label}}</a>
+                <ul class="dropdown-menu location-list" aria-labelledby="dropdownMenuLink">
+                  <li *ngFor="let sub of nav.sublinks text-center">
+                    <a class="dropdown-item" [routerLinkActive]="'location-active'" [routerLink]="sub?.path" (click)="onClick(menu)">{{sub.label}}</a></li>
+                </ul>
+              </div>
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

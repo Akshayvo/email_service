@@ -1,0 +1,15 @@
+<div class="aboutUs-holder">
+  <div class="container px-0">
+    <div class="row">
+      <div class="col-lg-6">
+        <h2 class="pb-2">{{heading}} </h2>
+        <div *ngFor="let para of aboutPara">
+          <p class="text-justify">{{ para.p }}</p>
+        </div>
+      </div>
+      <div class="col-lg-6 pt-2">
+        <img src="{{image}}" width="100%" alt="{{alt}}">
+      </div>
+    </div>
+  </div>
+</div>

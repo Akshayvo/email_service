@@ -1,0 +1,110 @@
+<section class="contact-details">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-lg-8 py-0 px-0 header-background">
+        <div class="social-content px-3 py-4">
+          <h1> {{name}}</h1>
+          <div class="row">
+            <div class="col-lg-12 px-0 contact-data">
+              <span *ngFor="let contact of contacts" class="py-2 each-contact">
+                <span class="pl-3"><i class="{{contact.class}}"></i></span><span *ngIf="contact?.id === 2 || contact?.id === 3 || contact?.id === 4 else other_content"><a [href]="contact?.redirect">{{contact.data}}</a></span>
+                <ng-template #other_content >&nbsp;<a [href]="contact?.redirect" target="_blank" rel="noopener">{{contact.data}}</a></ng-template>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-img">
+            <span *ngIf="locationId == 1" title="Aerial Photograph of self storage units surrounded by a fence."> 
+              <div class="img-box-1" [ngClass]="imagetype === 'jpg' ? 'img-box-1-jpg' : 'img-box-1-webp'">
+              </div>
+            </span>
+            <span *ngIf="locationId == 2" title="Aerial photograph of self storage facility with recreational vehicles and boats parked next to the buildings"> 
+              <div class="img-box-2" [ngClass]="imagetype === 'jpg' ? 'img-box-2-jpg' : 'img-box-2-webp'">
+              </div>
+              
+            </span>
+            <span *ngIf="locationId == 3" title="Aerial photograph of self storage units running alongside a highway"> 
+              <div class="img-box-3" [ngClass]="imagetype === 'jpg' ? 'img-box-3-jpg' : 'img-box-3-webp'">
+              </div>
+            </span>
+            <span *ngIf="locationId == 4" title="Aerial photograph of a self storage facility and recreational vehicle parking spots"> 
+              <div class="img-box-4" [ngClass]="imagetype === 'jpg' ? 'img-box-4-jpg' : 'img-box-4-webp'">
+              </div>
+            </span>
+            <span *ngIf="locationId == 5" title="a row of self storage unit doors in a single story metal storage building"> 
+              <div class="img-box-4" [ngClass]="imagetype === 'jpg' ? 'img-box-5-jpg' : 'img-box-5-webp'">
+              </div>
+            </span>
+            <span *ngIf="locationId == 6" title="single story self storage unit buildings with green metal roll up doors"> 
+              <div class="img-box-4" [ngClass]="imagetype === 'jpg' ? 'img-box-6-jpg' : 'img-box-6-webp'">
+              </div>
+            </span>
+        </div>
+      </div>
+      <div class="col-lg-4 pt-3 tab-background" >
+        <div class="map-responsive">
+            <span *ngIf="locationId == 1"> 
+              <iframe title="Facility Google Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2865.3055825071233!2d-103.26244938517027!3d44.09768623159354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x877d5c992a3c3955%3A0x3933eb2be897292d!2s1221%20Fountain%20Plaza%20Dr%2C%20Rapid%20City%2C%20SD%2057702%2C%20USA!5e0!3m2!1sen!2sin!4v1654151838993!5m2!1sen!2sin" width="100%" height="220" frameborder="0"  allowfullscreen></iframe>
+            </span>
+            <span *ngIf="locationId == 2">
+              <iframe title="Facility Google Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2868.257071089325!2d-103.18602868517263!3d44.0367448355634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x877d42703db50985%3A0x7eb7d4a2398d6e34!2s1824%20Marlin%20Dr%2C%20Rapid%20City%2C%20SD%2057701%2C%20USA!5e0!3m2!1sen!2sin!4v1654151408323!5m2!1sen!2sin" width="100%" height="230" frameborder="0" allowfullscreen></iframe>
+            </span>
+            <span *ngIf="locationId == 3">
+              <iframe title="Facility Google Map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11642.278493425898!2d-76.334158!3d43.155566!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa6050b46d0319b1d!2sSyrasoft%20Self%20Storage%20Software!5e0!3m2!1sen!2sus!4v1632153735978!5m2!1sen!2sus" width="100%" height="220" frameborder="0"  allowfullscreen></iframe>
+            </span>
+            <span *ngIf="locationId == 4">
+              <iframe title="Facility Google Map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11642.278493425898!2d-76.334158!3d43.155566!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa6050b46d0319b1d!2sSyrasoft%20Self%20Storage%20Software!5e0!3m2!1sen!2sus!4v1632153735978!5m2!1sen!2sus" width="100%" height="220" frameborder="0"  allowfullscreen></iframe>
+            </span>
+            <span *ngIf="locationId == 5">
+              <iframe title="Facility Google Map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11642.278493425898!2d-76.334158!3d43.155566!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa6050b46d0319b1d!2sSyrasoft%20Self%20Storage%20Software!5e0!3m2!1sen!2sus!4v1632153735978!5m2!1sen!2sus" width="100%" height="220" frameborder="0"  allowfullscreen></iframe>
+            </span>
+            <span *ngIf="locationId == 6">
+              <iframe title="Facility Google Map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11642.278493425898!2d-76.334158!3d43.155566!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa6050b46d0319b1d!2sSyrasoft%20Self%20Storage%20Software!5e0!3m2!1sen!2sus!4v1632153735978!5m2!1sen!2sus" width="100%" height="220" frameborder="0"  allowfullscreen></iframe>
+            </span>
+        </div>
+        <div class="hours-data w-100">
+          <div class="row">
+            <div class="col-lg-8">
+              <h4 class="pt-3" *ngIf="locationId !== 1 ;then content else other_content" >Access Hours</h4>
+              <ng-template #content><h4 class="pt-3">Office Hours</h4><app-tables [tBody]="hours" ></app-tables></ng-template>
+              <ng-template #other_content><h4 class="pt-3">Office Hours</h4><app-tables [tBody]="hours" >
+              </app-tables><h4 class="pt-3">Access Hours</h4><app-tables [tBody]="access" ></app-tables>
+            </ng-template> 
+            </div>
+            <div class="col-lg-4 btn-area text-center">
+              <a class="btn btn-outline-primary p-2" [routerLink]="['/contact-us']" role="button">Contact Us</a> 
+              <a class="btn btn-primary-light p-2" [routerLink]="['/pay-rent']" role="button">Pay Rent</a> 
+              <!-- <a class="btn btn-primary p-2" (click)='navigateToReserve()' role="button">Reserve Unit</a>                                        -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sub-components">
+  <div class="container feature-block mt-3">
+    <div class="row">
+      <div class="col-md-3 col-6 p-3" *ngFor= "let feature of features">
+        <p class="text-center f-block-img"> 
+          <img src="{{feature.data}}" class="f-img" alt="{{feature.alt}}" >
+        </p>
+        <h2 class="text-center f-text">
+          {{feature.label}}
+        </h2>
+      </div>
+    </div>
+  </div>
+  <div  class="container px-0 pt-2 mt-3">
+      <app-tabs [tabs]='tabs' [name]='name' class="sub-component-background" [currentActiveTab]='currentTab' ></app-tabs>
+  </div>
+</section>
+
+<!-- Data preloading Starts-->
+<div hidden>
+  <app-unit-sizer></app-unit-sizer>
+  <app-about-us></app-about-us>
+  <app-directions></app-directions>
+</div>
+<!-- Data preloading Ends-->

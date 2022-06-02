@@ -1,0 +1,87 @@
+ <!-- <div class="row" *ngIf="acceptedValues.includes(id) && id > 0"> -->
+    <div class="row"> 
+    <div class="col-lg-8 p-4">
+    <div>
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <div [hidden]="" *ngIf="submitted && credentialsInvalid" class="button-display alert alert-success alert-danger fade show">
+                        Either the supplied username does not exist, or the supplied credentials are incorrect. Please try again.
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+            <div [class.loader]="showLoader"  *ngIf="!showPayRent && allowedToshow">
+            </div>
+            <div class="row">
+                <div class="form-group col-lg-6 col-12">
+                    <label>UserName</label> &nbsp;
+                    <input type="text" formControlName="strUserName"  
+                    class="form-control" 
+                    [ngClass]="{ 'is-invalid': submitted && f.strUserName.errors }"
+                    />
+                    <div *ngIf="submitted && f.strUserName.errors" class="invalid-feedback">
+                        <small class="form-text text-muted" *ngIf="f.strUserName.errors.required">Please fill out this field</small>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-lg-6 col-12">
+                    <label>Password</label> &nbsp;
+                    <input type="password" formControlName="strPassword" class="form-control" 
+                    [ngClass]="{ 'is-invalid': submitted && f.strPassword.errors }"  
+                    />
+                    <div *ngIf="submitted && f.strPassword.errors" class="invalid-feedback">
+                        <small class="form-text text-muted" *ngIf="f.strPassword.errors.required">Please fill out this field</small>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary" (click)="handleShowLoader()"
+                >Login</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="forgot-link">
+        <a (click)="navigate('/forgotPassword')">Forgot Password</a>
+    </div>
+    <div class="forgot-link">
+        <a (click)="openBox()" >Change Your Password</a>
+        <!-- <a  data-toggle="modal" data-target="#myModal">Change Your Password</a> -->
+
+        <!-- Modal -->
+        <!-- <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog"> -->
+                <!-- Modal content-->
+                <app-login-modal *ngIf="!!open" (someEvent)="openBox()"></app-login-modal>
+            <!-- </div>
+        </div> -->
+    </div>
+    </div>
+    <div class="col-lg-4 rent-example p-4" >
+        <h3>How to Login</h3>
+        <div *ngFor="let loginDetail of loginDetail">
+          <p><b>Username: </b>&nbsp;{{loginDetail.userName}}<br>
+          <b>Password: </b>&nbsp;{{loginDetail.password}}</p>
+          
+            <p><b>Example:</b></p>
+            <p>John Smith's {{loginDetail.example.code}}</p>
+            <p>John's Username: {{loginDetail.example.userName}}<br>
+              John's Password: {{loginDetail.example.password}}</p>
+            
+            <p><strong>Have questions about your account?</strong><br>
+            <span *ngFor="let contact of contact" class="contact-links" [class.display-none]="contact?.id == 1">
+              <a  *ngIf="contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content" [href]="contact?.redirect">
+                {{contact.data}}
+              </a>
+            <br>
+          </span>
+          </p>
+    </div> 
+</div>
+ </div>
+<!-- <div class="coming-soon" *ngIf="acceptedValuesComingSoon.includes(id) && id > 0">
+    <b>Coming Soon !</b>
+</div>    
+  -->

@@ -1,0 +1,35 @@
+@import "../../styles.scss";
+
+.error {
+  margin-top: auto;
+  margin-bottom: auto;
+  min-height: 100vh;
+
+  .error-message {
+    padding-left: 5%;
+
+    div {
+      font-size: 4.375rem;
+      font-weight: 300;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      font-size: 2.25rem;
+    }
+
+    h5 {
+      font-size: 1.5rem;
+    }
+
+    a {
+      color: $primary;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .error {
+    padding-top: 150px;
+  }
+}
