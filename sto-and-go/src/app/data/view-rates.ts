@@ -23,9 +23,6 @@ export const th = [
     {
       data: `Rate`
     },
-    {
-      data: `Reserve a Unit`
-    },
     // {
     //   data: `Move In`
     // },

@@ -17,9 +17,9 @@
           <td colspan="2" class="px-4 border text-center">
               <span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate}}
           </td>
-          <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable; else other_reserve">
+          <!-- <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable; else other_reserve">
               <button (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
-          </td>
+          </td> -->
           <!-- <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable; else other_moveIn">
             <button (click)="navigate('/view-rates/move-in', lstUnitType)"> Move In</button>
           </td> -->
@@ -62,9 +62,9 @@
     </div>
       <div class="col-6 d-flex justify-content-center" >
         <div *ngIf="lstUnitType.IsUnitsAvailable; else other" >
-          <div class=" py-1 buttons" >
+          <!-- <div class=" py-1 buttons" >
               <button class="btn  btn-primary" (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
-          </div>
+          </div> -->
           <!-- <div class="py-1 buttons">
               <button class=" btn btn-outline-primary" (click)="navigate('/view-rates/move-in', lstUnitType)"> Move In</button>
           </div> -->
