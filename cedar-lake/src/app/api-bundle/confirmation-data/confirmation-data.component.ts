@@ -205,6 +205,10 @@ getTenantUnitData() {
   this.monthlyRate = this.dataSharingService.LstUnitTypes.MonthlyRate;
   this.driversLicense = this.dataSharingService.objTenant.DriversLicense;
   this.driversLicenseExpDate = this.dataSharingService.objTenant.DriversLicenseExpDate;
+  this.vehicleMake = this.dataSharingService.objTenant.vehicleMake;
+  this.vehicleModel = this.dataSharingService.objTenant.vehicleModel;
+  this.vehicleYear = this.dataSharingService.objTenant.vehicleYear;
+  this.licensePlate = this.dataSharingService.objTenant.licensePlate;
   this.dateOfBirth = this.dataSharingService.objTenant.DateOfBirth;
   this.militaryType = this.dataSharingService.objTenant.MilitaryType;
   this.militaryBranch = this.dataSharingService.objTenant.MilitaryBranch;

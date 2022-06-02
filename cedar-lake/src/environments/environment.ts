@@ -12,8 +12,8 @@ export const environment = {
   template: 'darkTheme', // { darkTheme, lightTheme, withoutJumbotron}
   cards: ['Visa', 'Master Card', 'Amex', 'Discover', 'test'],
   errorsMails: [ 'sanghmitra.v@codeparva.in' ],
-  senderEmail: 'errors@codeparva.in',
-  emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
+  senderEmail: '',
+  emailBaseUrl: '',
   appId: 'Cedar Lake Storage',
   facilityName: 'Cedar Lake Storage',
   VERSION: require('../../package.json').version,

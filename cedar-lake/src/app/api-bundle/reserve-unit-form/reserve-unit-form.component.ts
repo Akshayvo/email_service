@@ -198,10 +198,26 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
           (() => this.showMilitaryDetails === false),
           Validators.required
         )],
-        // DriversLicenseExpDate: ['', conditionalValidator(
-        //   (() => this.showMilitaryDetails === false),
-        //   Validators.required
-        // )],
+        DriversLicenseExpDate: ['', conditionalValidator(
+          (() => this.showMilitaryDetails === false),
+          Validators.required
+        )],
+        vehicleMake: ['', conditionalValidator(
+          (() => this.showMilitaryDetails === false),
+          Validators.required
+        )],
+        vehicleModel: ['', conditionalValidator(
+          (() => this.showMilitaryDetails === false),
+          Validators.required
+        )],
+        vehicleYear: ['', conditionalValidator(
+          (() => this.showMilitaryDetails === false),
+          Validators.required
+        )],
+        licensePlate: ['', conditionalValidator(
+          (() => this.showMilitaryDetails === false),
+          Validators.required
+        )],
         // DateOfBirth: ['', conditionalValidator(
         //   (() => this.showMilitaryDetails === false),
         //   Validators.required
