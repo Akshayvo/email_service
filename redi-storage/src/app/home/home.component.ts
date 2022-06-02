@@ -100,7 +100,7 @@ twitterHomePage: any
 
   public navigate(location: any) {
     if (
-      location === "/view-rates" ||
+      location === "/rent-now" ||
       location === "/storage-tips" ||
       location === "/reserve-unit"
     ) {
