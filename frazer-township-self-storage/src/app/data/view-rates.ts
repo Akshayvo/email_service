@@ -2,7 +2,7 @@ import { objSIMSetting } from './configuration';
 
 export const dataViewRates = [
     {
-      p: `Frazer Township Self Storage has all of the modern conveniences to make your next self storage project a fast and easy one. We proudly serve Tarentum, East and West Deer, Gibsonia, and the surrounding communities. Our facility is conveniently located on a quiet road for easy access with car, truck, or moving van for easy loading and unloading. We cater to a variety of storage self storage customers from residential to commercial and local non-profit organizations.`,
+      p: `Frazer Township Self Storage has all of the modern conveniences to make your next self storage project a fast and easy one. We proudly serve Tarentum, East Deer and West Deer, Gibsonia, and the surrounding communities. Our facility is conveniently located on a quiet road for easy access with car, truck, or moving van for easy loading and unloading. We cater to a variety of storage self storage customers from residential to commercial and local non-profit organizations.`,
     },
     {
       p: `So whether you are looking for short term self storage while moving, or if you're searching for long-term job site storage, we're sure to have the right unit for you. Give our friendly team a call today, or you can move in online with our handy rental application!`
