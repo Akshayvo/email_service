@@ -30,7 +30,7 @@ export const faq = [
   },
   {
     h2: `What type of security do you provide?`,
-    paragraph: `The Windham facility is not fenced in and PTI is not at all facilities anymore. AXCYS is used at Windham.`,
+    paragraph: `Our facility is only accessible via pin-pad codes assigned upon renting and has security cameras recording 24/7.`,
   },
   {
     h2: `Do you intend to offer online reservations?`,
@@ -41,11 +41,7 @@ export const faq = [
     paragraph: `Yes`,
   },
   {
-    h2: `Do you want to allow tenants to turn automatic payments on and off from the website?`,
-    paragraph: `Yes`,
-  },
-  {
-    h2: `Do you want to allow tenants the option of turning on automatic payments during the online rental process?`,
+    h2: `Is Auto-Pay an available option?`,
     paragraph: `Yes`,
   },
   {

@@ -3,9 +3,9 @@ export const loginDetail = [
         userName: `First Initial + Last Name`,
         password: `Gate Access Code`,
         example: {
-            code: 'Phone Number is 555-555-5555',
+            code: 'Gate Code is 12345',
             userName: 'jsmith',
-            password: '5555555555'
+            password: '12345'
         }
     }
 ];
