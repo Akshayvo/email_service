@@ -15,9 +15,9 @@ export const contactsLocation1 = [
     {
         id: 3,
         label: 'Phone: ',
-        data: '(731) 415-5501',
+        data: '(731) 352 8212',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:7314155501'
+        redirect: 'tel:7313528212'
     },
 ];
 
@@ -53,9 +53,9 @@ export const contactsLocation2 = [
     {
         id: 3,
         label: 'Phone: ',
-        data: '(731) 415-5501',
+        data: '(731) 352 8212',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:7314155501'
+        redirect: 'tel:7313528212'
     },
 ];
 
@@ -91,9 +91,9 @@ export const contactsLocation3 = [
     {
         id: 3,
         label: 'Phone: ',
-        data: '(731) 415-5501',
+        data: '(731) 352 8212',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:7314155501'
+        redirect: 'tel:7313528212'
     },
 ];
 

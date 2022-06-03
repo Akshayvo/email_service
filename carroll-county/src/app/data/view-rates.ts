@@ -5,12 +5,12 @@ export const th = [
     {
       data: `Rate`
     },
-    // {
-    //   data: `Deposit`
-    // },
-    // {
-    //   data: `Climate Control`
-    // },
+    {
+      data: `Deposit`
+    }, 
+    {
+      data: `Climate Control`
+    },
     {
       data: `Reserve a Unit`
     },
