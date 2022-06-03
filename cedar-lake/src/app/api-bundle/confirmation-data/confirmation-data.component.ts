@@ -209,6 +209,7 @@ getTenantUnitData() {
   this.vehicleModel = this.dataSharingService.objTenant.vehicleModel;
   this.vehicleYear = this.dataSharingService.objTenant.vehicleYear;
   this.licensePlate = this.dataSharingService.objTenant.licensePlate;
+  this.vehicleVIN = this.dataSharingService.objTenant.vehicleVIN;
   this.dateOfBirth = this.dataSharingService.objTenant.DateOfBirth;
   this.militaryType = this.dataSharingService.objTenant.MilitaryType;
   this.militaryBranch = this.dataSharingService.objTenant.MilitaryBranch;

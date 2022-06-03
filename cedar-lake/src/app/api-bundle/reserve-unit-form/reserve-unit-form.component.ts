@@ -218,6 +218,10 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
           (() => this.showMilitaryDetails === false),
           Validators.required
         )],
+        vehicleVIN: ['', conditionalValidator(
+          (() => this.showMilitaryDetails === false),
+          Validators.required
+        )],
         // DateOfBirth: ['', conditionalValidator(
         //   (() => this.showMilitaryDetails === false),
         //   Validators.required

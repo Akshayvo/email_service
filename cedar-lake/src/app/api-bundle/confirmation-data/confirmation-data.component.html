@@ -130,6 +130,14 @@
                             {{licensePlate}}
                         </td>
                     </tr>
+                    <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
+                        <td>
+                            Vehicle VIN
+                        </td>
+                        <td>
+                            {{vehicleVIN}}
+                        </td>
+                    </tr>
                     <!-- <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
                         <td>
                             Birthdate

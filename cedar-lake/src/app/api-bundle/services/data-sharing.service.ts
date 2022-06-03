@@ -93,6 +93,7 @@ export class DataSharingService {
     vehicleModel: ' ',
     vehicleYear: ' ',
     licensePlate: ' ',
+    vehicleVIN: ' ',
     DateOfBirth: ' ',
     MilitaryType: 0,
     MilitaryBranch: 0,
