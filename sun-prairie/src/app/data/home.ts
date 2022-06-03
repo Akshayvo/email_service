@@ -1,4 +1,4 @@
-export const blurbHeading = `24-Hour Access Self Storage and RV Parking in Sun Prairie`;
+export const blurbHeading = `24-Hour Secure Access in Sun Prairie`;
 
 export const blurbText = `Sun Prairie Self Storage is a locally owned and operated facility
 that provides high-quality, affordable 24-hour access self storage units and recreational

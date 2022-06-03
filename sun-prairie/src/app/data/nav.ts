@@ -3,10 +3,10 @@ export const navLinks = [
     label: "HOME",
     path: "/",
   },
-  {
-    label: "VIEW RATES",
-    path: "/view-rates",
-  },
+  // {
+  //   label: "VIEW RATES",
+  //   path: "/view-rates",
+  // },
   {
     label: "RENT NOW",
     path: "/rent-now",
