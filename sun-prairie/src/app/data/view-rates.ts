@@ -1,3 +1,5 @@
+import { objSIMSetting } from "./configuration";
+
 export const viewRates = [
   {
     p: `Sun Prairie Self Storage provides Sun Prairie, Cottage Grove, Windsor, and the
@@ -14,25 +16,82 @@ export const viewRates = [
   },
 ];
 
+export const doorSize = {
+
+  //unitId:doorsize
+  35: `9' x 9'`,
+  34: `9' x 9'`,
+  32: ` 9' x 12'`,
+  31: `9' x 9'`,
+  30: `11' x 9'`,
+  27: `3'8" x 7'`,
+  26: `8'8" x 7'`,
+  25: `3'8" x 7'`,
+  19: `11' x 9'`,
+  18: `9' x 9'`,
+  17: `8'8" x 7'`,
+  16: `8'8" x 7'`,
+  15: `3'8" x 7'`,
+  14: `3'8" x 7'`,
+  13: `8'8" x 7'`,
+  12: `9' x 9'`,
+  11: `9' x 9'`,
+  10: `9' x 9'`,
+  8: `11' x 9'`,
+  7: `9' x 8'`,
+  6: `9' x 8'`,
+  5: `9' x 8'`,
+  4: `11' x 9'`,
+  3: `11' x 9'`,
+  2: `9' x 8'`,
+  1: `11' x 12'`,
+};
+
+export const state = {
+  size: true,
+  rate: objSIMSetting.objUnitSizesSetting.blnShowRate,
+  deposit: objSIMSetting.objUnitSizesSetting.blnShowDeposit,
+  reserve: objSIMSetting.objActionSetting.blnAllowReservation,
+  moveIn: objSIMSetting.objActionSetting.blnAllowMoveIn,
+  climateControl: objSIMSetting.objUnitSizesSetting.blnClimateControl,
+};
+
 export const th = [
   {
+    id: `size`,
     data: `Size`,
-  },
-  {
-    data: `Rate`,
-  },
-  {
-    data: `Setup Fee`,
-  },
-  {
-    data: 'Move In<div class="text-style">(Move In Today)</div>',
+    state: true,
   },
   // {
-  //   data: `Reserve a Unit<div class="text-style">(Future Move In Date)</div>`
+  //   id: `door-size`,
+  //   data: `Door Size`,
+  //   state: true,
   // },
   {
-    data: "Climate Control",
+    id: `rate`,
+    data: `Rate`,
+    state: objSIMSetting.objUnitSizesSetting.blnShowRate,
   },
+
+  {
+    id: `setup-fee`,
+    data: "Setup Fee",
+    state: objSIMSetting.objUnitSizesSetting.blnShowDeposit,
+  },
+  // {
+  //   id: `reserve`,
+  //   data: `Reserve a Unit`,
+  //   state: objSIMSetting.objActionSetting.blnAllowReservation,
+  // },
+  {
+    id: `move-in`,
+    data: `Move In`,
+    state: objSIMSetting.objActionSetting.blnAllowMoveIn,
+  },
+  // {
+  //   data: `Climate Control`,
+  //   state: objSIMSetting.objUnitSizesSetting.blnClimateControl
+  // },
 ];
 
 export const option = [

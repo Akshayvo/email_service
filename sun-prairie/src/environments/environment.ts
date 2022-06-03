@@ -9,12 +9,12 @@ export const environment = {
   cards: ["Visa", "Master Card", "Amex", "Discover"],
   errorsMails: ["sanghmitra.v@codeparva.in"],
   senderEmail: "errors@codeparva.in",
-  emailBaseUrl: "https://emailsvc-ext.syrasoft.com/v1/email",
+  emailBaseUrl: "",
   appId: "Sun Prairie Self Storage - Testing",
   VERSION: require("../../package.json").version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // north demo
-  // APIKey: `dTJXOEQ5UDJINE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O` // 28924 sun prairie
+  // APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // north demo 
+  APIKey: `dzJ0OFc5SjIqNE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O` // 28924 sun prairie  
 };
 
 /*

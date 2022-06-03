@@ -4,6 +4,10 @@
   display: none;
 }
 
+.reviewHeading{
+  font-size: 20px;
+}
+
 .iconStyle {
   cursor: pointer;
 }
@@ -12,6 +16,17 @@
   display: block;
 }
 
+#door-size{
+  width: 250px;
+}
+
+#size{
+  width: 300px;
+}
+
+#setup-fee{
+  width: 180px;
+}
 .card-text {
   width: 150px;
   padding: 10px;
@@ -62,7 +77,7 @@ table {
 
 .loader {
   border: 5px solid #f3f3f3;
-  border-top: 5px solid $secondary;
+  border-top: 5px solid $primary;
   border-radius: 50%;
   width: 80px;
   height: 80px;
@@ -101,6 +116,19 @@ p {
   text-align: left;
 }
 
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  .viewrates-desktop{
+    font-size: .8rem;
+    
+  }
+  th{
+    font-size: .8rem!important;
+  }
+  #setup-fee{
+    width:200px;
+  }
+}
+
 @media only screen and (min-width: 992px) {
   .viewrates-mobile {
     display: none;
@@ -111,18 +139,23 @@ p {
   .viewrates-desktop {
     display: none;
   }
-  
+
+  .buttons {
+    .btn-outline-primary {
+      color: $primary !important;
+    }
+  }
 }
 
-@media only screen and (max-width: 767px)  and (min-width: 381px) {
+@media only screen and (max-width: 768px)  and (min-width: 381px) {
   .buttons {
     .btn {
       min-width: 150px;
     }
 
-    // .btn-outline-primary {
-    //   color: $primary !important;
-    // }
+    .btn-outline-primary {
+      color: black !important;
+    }
   }
 }
 
@@ -130,6 +163,9 @@ p {
   .buttons {
     .btn {
       min-width: auto;
+    }
+    .btn-outline-primary {
+      color: black !important;
     }
   }
 }
