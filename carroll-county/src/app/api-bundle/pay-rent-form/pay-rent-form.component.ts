@@ -194,11 +194,11 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       if (this.router.url.includes('/payMoveInCharges')) {
         this.navigateToReserve = false;
         this.navigateToMoveIn = true;
-        // this.payRentForm.patchValue({
-        //   objPayment: {
-        //    PaymentAmount: this.totalMoveInAmount
-        //   }
-        // });
+        this.payRentForm.patchValue({
+          objPayment: {
+           PaymentAmount: this.totalMoveInAmount
+          }
+        });
       } else {
         if (this.router.url.includes('/payment') ) {
           this.navigateToMoveIn = false;
@@ -407,15 +407,15 @@ public navigateToPrevious() {
           this.surchargeService.getIdPaytype(this.paytypeid);
           this.IsAutoPaymentsEnabled = Tenant.IsAutoPaymentsEnabled,
           this.date = Tenant.LastPaymentOn;
-          this.lastPaymentOn = this.datePipe.transform(this.date, 'dd/MM/yyyy');
+          this.lastPaymentOn = this.datePipe.transform(this.date, 'MM/dd/yyyy');
           this.lastPaymentAmount = Tenant.LastPaymentAmount;
 
           this.UnpaidAR = Tenant.UnpaidAR;
 
           // tslint:disable-next-line:forin
           for (const i in this.UnpaidAR) {
-            this.UnpaidAR[i].FromDate = this.datePipe.transform(this.UnpaidAR[i].FromDate, 'dd/MM/yyyy');
-            this.UnpaidAR[i].ToDate = this.datePipe.transform(this.UnpaidAR[i].ToDate, 'dd/MM/yyyy');
+            this.UnpaidAR[i].FromDate = this.datePipe.transform(this.UnpaidAR[i].FromDate, 'MM/dd/yyyy');
+            this.UnpaidAR[i].ToDate = this.datePipe.transform(this.UnpaidAR[i].ToDate, 'MM/dd/yyyy');
 
             if (this.UnpaidAR[i].AmountOwed < 0) {
               this.UnpaidAR[i].demoAmountOwed = Math.abs(this.UnpaidAR[i].AmountOwed);
@@ -480,8 +480,19 @@ public navigateToPrevious() {
       });
   }
 
-  public navigateToConfirmation(location: any) {
-    this.router.navigate([`location/${this.facilityLocation}/reserve-unit/${location}`]);
+  // public navigateToConfirmation(location: any) {
+  //   this.router.navigate([`${environment.locationName}/${this.facilityLocation}/reserve-unit/${location}`]);
+  // }
+
+
+  public navigateToConfirmation_moveIn(location: any) {
+    // this.router.navigate([`${environment.locationName}/reserve-unit/${location}`]); 
+    this.router.navigate([`${environment.locationName}/${this.facilityLocation}/move-in/${location}`]);
+  }
+
+  public navigateToConfirmation_reserveUnit(location: any) {
+    // this.router.navigate([`${environment.locationName}/reserve-unit/${location}`]); 
+    this.router.navigate([`${environment.locationName}/${this.facilityLocation}/reserve-unit/${location}`]);
   }
 
   getPayMethods() {
@@ -590,10 +601,11 @@ public navigateToPrevious() {
                 this.router.navigate([`pay-rent/${this.loginUrl}/thank-you`]);
               }
             }
+            
           }
         } else {
           this.makePaymentForUnit = false;
-
+          this.showloaderForPayment = false;
           this.invalidPayment = 'Unable to make the payment. Please check your card detail.';
         }
 
@@ -661,11 +673,11 @@ public navigateToPrevious() {
       this.reservationInProgress = false;
       this.showloaderForPayment = false;
 
-      if (!!localStorage.getItem('paymentTab')) {
-        this.router.navigate([`location/${this.facilityLocation}/reserve-unit/${localStorage.getItem('paymentTab')}/thank-you`]);
-      } else {
-        this.router.navigate([`location/${this.facilityLocation}/reserve-unit/thank-you`]);
-      }
+      // if (!!localStorage.getItem('paymentTab')) {
+      //   this.router.navigate([`${environment.locationName}/${this.facilityLocation}/reserve-unit/${localStorage.getItem('paymentTab')}/thank-you`]);
+      // } else {
+        this.router.navigate([`${environment.locationName}/${this.facilityLocation}/reserve-unit/thank-you`]);
+      // }
     }
     }, (err: any) => {
       if (err.status === 403) {
@@ -695,11 +707,11 @@ public navigateToPrevious() {
         this.dataSharingService.strAccessCode = strConfirmationResponse.strAccessCode;
         if (strConfirmationResponse.intErrorCode === 1  ) {
           this.makePaymentForUnit = false;
-          if (!!localStorage.getItem('paymentTab')) {
-            this.router.navigate([`location/${this.facilityLocation}/move-in/${localStorage.getItem('paymentTab')}/thank-you`]);
-          } else {
-            this.router.navigate([`location/${this.facilityLocation}/move-in/thank-you`]);
-          }
+          // if (!!localStorage.getItem('paymentTab')) {
+          //   this.router.navigate([`${environment.locationName}/${this.facilityLocation}/move-in/${localStorage.getItem('paymentTab')}/thank-you`]);
+          // } else {
+            this.router.navigate([`${environment.locationName}/${this.facilityLocation}/move-in/thank-you`]);
+          // }
           this.showloaderForPayment = false;
 
         } else {
