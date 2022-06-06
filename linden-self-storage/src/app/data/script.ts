@@ -32,8 +32,8 @@ export const script = {  // Please fill this script according to facility's info
       "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Linden_Self_Storage/jpg/linden-storage-jumbotron.jpg" // 16:9
      ],
      telephone: contact[contactIndex].data,
-     map: "https://www.google.com/maps?ie=UTF8&hq&ll=44.264137,-88.3540592",
-     description: "",
+     map: "https://goo.gl/maps/gSoLkhGtWTtEa6DN7",
+     description: "Linden Self Storage is a state-of-the-art facility in Pittsford, NY. Our three Greater Rochester self storage facilities make for efficient operations with minimal overhead. You'll pay rent only for the actual number of days you need space vs. rent for the entire month. As a locally held and operated company, we're focused to provide <b>Affordability, Security, Convenience and Storage Solutions</b> for our patrons.",
      streetAddress: "870 Linden Ave",
      state: "New York",
      addressLocality: "Rochester",
@@ -43,11 +43,11 @@ export const script = {  // Please fill this script according to facility's info
      id: environment.websiteUrl || "",
      paymentAccepted:  "Cash, Check, Credit Card, Debit Card, Online Credit Card, Online Debit Card",
      currenciesAccepted: "USD",
-     ratingValue: "4",
+     ratingValue: "4.6",
      bestRating: "5",
-     reviewCount: "250",
-     latitude: 40.761293,
-     longitude: -73.982294,
+     reviewCount: "31",
+     latitude: 43.1227,
+     longitude: -77.4894,
      openingHours: ['Mon-Fri:9.00AM-4:00PM'],
      priceRange: '$55-$290'
 };
