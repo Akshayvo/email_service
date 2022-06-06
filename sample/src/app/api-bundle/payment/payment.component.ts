@@ -24,22 +24,6 @@ export class PaymentComponent implements OnInit {
     @Inject(WINDOW) private window: Window,
     private meta: Meta
   ) {
-    // this.fetchMetaData();
-    // this.fetchOg();
-    // this.fetchTwitter();
-    // this.og.forEach(element => {
-    //   this.meta.updateTag({
-    //     property: element.property,
-    //     content: element.content
-    //   })
-    // });
-
-    // this.twitter.forEach(element => {
-    //   this.meta.updateTag({
-    //     name: element.name,
-    //     content: element.content
-    //   })
-    // });
     this.meta.updateTag({
       name: "description",
       content: `${this.payRentPageContent}`,
@@ -52,14 +36,6 @@ export class PaymentComponent implements OnInit {
     this.fetchpayRentHeading();
     window.scrollTo(0, 0);
   }
-
-  // public fetchOg() {
-  //   this.og = ogPayRentPage;
-  // }
-
-  // public fetchTwitter() {
-  //   this.twitter = twitterPayRentPage;
-  // }
 
   public fetchMetaData() {
     this.payRentPageContent = payRentPageContent;

@@ -20,12 +20,11 @@ import { environment } from "../../environments/environment";
 import {
   homePageScript,
   ogHomePage,
-  script,
+  
   twitterHomePage,
 } from "../data/script";
 import { CanonicalService } from "../services/canonical.service";
 import { FetchDataService } from "../api-bundle/services/fetch-data.service";
-import { Subscription } from "rxjs";
 
 @Component({
   selector: "app-home",
@@ -62,11 +61,8 @@ twitterHomePage: any
     private router: Router,
     private titleService: Title,
     private meta: Meta,
-    private _renderer2: Renderer2,
-    private metaService: MetaService,
     private uaParserService: UaParserService,
     private canonical: CanonicalService,
-    private fetchDataService: FetchDataService,
     @Inject(DOCUMENT) private _document: any
   ) {
     this.fetchScript();
@@ -135,20 +131,6 @@ twitterHomePage: any
 
     return [min, max];
   }
-
-  // getData() {
-  //   this.getDataSubscribe$ = this.fetchDataService.getData()
-  //     .subscribe(unitTypesResponse => {
-  //       this.findMinMax(unitTypesResponse.lstUnitTypes)
-
-  //    const min = this.findMinMax(unitTypesResponse.lstUnitTypes)[0];
-  //    const max= this.findMinMax(unitTypesResponse.lstUnitTypes)[1];
-
-  //    console.log('this.findMinMax(unitTypesResponse.lstUnitTypes)[0]', min,
-  //    'this.findMinMax(unitTypesResponse.lstUnitTypes)[1]', max);
-
-  //     });
-  //   }
 
   public loadScript() {
     const node = document.createElement("script"); // creates the script tag

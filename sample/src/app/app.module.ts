@@ -21,14 +21,11 @@ import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { ErrorHandlerService } from './services/error-handler.service';
 import { ReserveComponent } from './api-bundle/reserve/reserve.component';
 import { ViewRatesComponent } from './api-bundle/view-rates/view-rates.component';
-import { ViewRatesIframePageComponent } from './iframe-bundle/view-rates-iframe-page/view-rates-iframe-page.component';
 import { ViewRatesPageComponent } from './api-bundle/view-rates-page/view-rates-page.component';
 import { ReserveUnitFormComponent } from './api-bundle/reserve-unit-form/reserve-unit-form.component';
-import { ReserveUnitIframePageComponent } from './iframe-bundle/reserve-unit-iframe-page/reserve-unit-iframe-page.component';
 import { ConfirmationDataComponent } from './api-bundle/confirmation-data/confirmation-data.component';
 import { PayRentFormComponent } from './api-bundle/pay-rent-form/pay-rent-form.component';
 import { PaymentComponent } from './api-bundle/payment/payment.component';
-import { PaymentIframePageComponent } from './iframe-bundle/payment-iframe-page/payment-iframe-page.component';
 import { LoginComponent } from './api-bundle/login/login.component';
 import { LoginModalComponent } from './api-bundle/login-modal/login-modal.component';
 import { ForgotPasswordComponent } from './api-bundle/forgot-password/forgot-password.component';
@@ -73,14 +70,11 @@ import { AlternateDetailsComponent } from './alternate-details/alternate-details
     AccordionComponent,
     ReserveComponent,
     ViewRatesComponent,
-    ViewRatesIframePageComponent,
     ViewRatesPageComponent,
     ReserveUnitFormComponent,
-    ReserveUnitIframePageComponent,
     ConfirmationDataComponent,
     PayRentFormComponent,
     PaymentComponent,
-    PaymentIframePageComponent,
     LoginComponent,
     LoginModalComponent,
     ForgotPasswordComponent,
