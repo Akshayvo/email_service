@@ -12,9 +12,7 @@ import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { ErrorHandlerService } from './services/error-handler.service';
-import { ViewRatesIframePageComponent } from './iframe-bundle/view-rates-iframe-page/view-rates-iframe-page.component';
-import { ReserveUnitIframePageComponent } from './iframe-bundle/reserve-unit-iframe-page/reserve-unit-iframe-page.component';
-import { PaymentIframePageComponent } from './iframe-bundle/payment-iframe-page/payment-iframe-page.component';
+
 import { VerifictionCodeGuard } from './auth-guard/verificationCode.guard';
 import { DatePipe } from '@angular/common';
 import { AuthGuard } from './auth-guard/auth.gurad';
@@ -36,9 +34,6 @@ import { HeaderModule } from './header/header.module';
   declarations: [
     ErrorComponent,
     ErrorHandlerComponent,
-    ViewRatesIframePageComponent,
-    ReserveUnitIframePageComponent,
-    PaymentIframePageComponent,
     ScriptHackComponent,
     AlternateDetailsComponent,
   ],
