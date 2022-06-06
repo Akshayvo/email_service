@@ -4,7 +4,7 @@ export const contact = [
         label: 'Address:',
         data: '4021 Homestead Duquesne Rd, West Mifflin, PA 15122',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
-        redirect: 'https://www.google.com/maps/place/4021+Homestead+Duquesne+Rd,+West+Mifflin,+PA+15122,+USA/@40.3668209,-79.8922654,17z/data=!4m2!3m1!1s0x8834ef93ccbebfe1:0xc3890ff5cae3b47a'
+        redirect: 'https://www.google.com/maps?ll=40.366821,-79.892265&z=13&t=m&hl=en&gl=US&mapclient=embed&cid=13758477868636950524'
     },
     {
         id: 1,
