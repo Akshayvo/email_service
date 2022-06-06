@@ -13,8 +13,7 @@ export class CanonicalService {
 
 create() {
   const { location: {pathname} } = window;
-  if (environment) {
-    console.log('this.canonical.create() is working')
+  if (environment || environment.production) {
 
    const link: HTMLLinkElement= this.dom.querySelector(`link[rel='canonical']`) || null
 
