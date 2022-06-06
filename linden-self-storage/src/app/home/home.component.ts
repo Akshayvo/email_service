@@ -64,7 +64,7 @@ export class HomeComponent implements OnInit {
     private fetchDataService: FetchDataService,
     @Inject(DOCUMENT) private _document: any
     ) {
-      console.log('canonical', this.canonical.create())
+      // console.log('canonical', canonical)
     this.canonical.create();
     this.fetchScript();
     this.loadScript();
