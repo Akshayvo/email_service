@@ -14,8 +14,8 @@
             </div>
             <div class="row">
                 <div class="form-group col-lg-6 col-12">
-                    <label>UserName</label> &nbsp;
-                    <input type="text" formControlName="strUserName"  
+                    <label for="name">UserName</label> &nbsp;
+                    <input id="name" type="text" formControlName="strUserName"  
                     class="form-control" 
                     [ngClass]="{ 'is-invalid': submitted && f.strUserName.errors }"
                     />
@@ -26,8 +26,8 @@
             </div>
             <div class="row">
                 <div class="form-group col-lg-6 col-12">
-                    <label>Password</label> &nbsp;
-                    <input type="password" formControlName="strPassword" class="form-control" 
+                    <label for="password">Password</label> &nbsp;
+                    <input id="password" type="password" formControlName="strPassword" class="form-control" 
                     [ngClass]="{ 'is-invalid': submitted && f.strPassword.errors }"  
                     />
                     <div *ngIf="submitted && f.strPassword.errors" class="invalid-feedback">
@@ -67,11 +67,11 @@
     <p class="pb-2"> John's Username: jsmith</p>
     <p>John's Password: 5555555555</p>
 
-    <p class="pt-3"><b>Have questions about your account?</b><br>
+    <p class="pt-3"><b class="questions-heading">Have questions about your account?</b>
     
     <span *ngFor="let contact of contact"  [class.display-none]="contact?.id === 0">
       <span class="contact-data">
-      <a [href]="contact?.redirect">{{contact.data}}</a></span><br>
+      <a [href]="contact?.redirect">{{contact.data}}</a></span>
   </span>
   </div>  
 </div> 

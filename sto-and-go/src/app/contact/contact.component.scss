@@ -8,6 +8,11 @@
   .padding {
     padding: 48px;
   }
+
+  .font-xs-device {
+    margin-bottom: 8px;
+  }
+
   .row{
     margin-left: 0;
     margin-right: 0;
@@ -62,6 +67,11 @@
   height: 100%;
   width: 100%;
   position: absolute;
+}
+
+.hour-links {
+  display: block;
+  margin-bottom: 8px;
 }
 
 small {
