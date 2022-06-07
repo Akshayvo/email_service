@@ -9,7 +9,14 @@ import { UaParserService } from '../services/ua-parser.service';
 import { homePageTitle, homePageContent } from '../data/title';
 import { objSIMSetting } from '../data/configuration';
 import { environment } from '../../environments/environment';
-import { script } from '../data/script';
+// import { script } from '../data/script'; 
+import { CanonicalService } from "../services/canonical.service";
+import {
+  homePageScript,
+  ogHomePage,
+  script,
+  twitterHomePage,
+} from "../data/script";
 
 @Component({
   selector: 'app-home',
@@ -39,6 +46,8 @@ export class HomeComponent implements OnInit {
   objSIMSetting: any;
   template: string;
   script: any;
+  ogHomePage: any;
+  twitterHomePage: any
 
   constructor(
     private router: Router,
@@ -47,13 +56,34 @@ export class HomeComponent implements OnInit {
     private _renderer2: Renderer2,
     private metaService: MetaService,
     private uaParserService: UaParserService,
+    private canonical: CanonicalService,
     @Inject(DOCUMENT) private _document: any,
   ) {
+    this.fetchScript();
+    this.loadScript();
     this.fetchMetaData();
+    this.fetchOgHomePage();
+    this.fetchTwitterHomePage();
+    this.fetchMetaData();
+    this.ogHomePage.forEach((element) => {
+      this.meta.updateTag({
+        property: element.property,
+        content: element.content,
+      });
+    });
+
+    this.twitterHomePage.forEach((element) => {
+      this.meta.updateTag({
+        name: element.name,
+        content: element.content,
+      });
+    });
+
     this.meta.addTag({
       name: 'description',
       content: `${this.homePageContent}`
     });
+    this.canonical.create();
     this.titleService.setTitle(`${this.homePageTitle}`);
     this.metaService.createCanonicalURL();
 
@@ -80,6 +110,40 @@ export class HomeComponent implements OnInit {
     this.fetchTemplate();
     this.fetchScript();
     window.scrollTo(0, 0);
+  }
+
+  findMinMax(arr) {
+    let min = arr[0].MonthlyRate,
+      max = arr[0].MonthlyRate;
+    for (let i = 1, len = arr.length; i < len; i++) {
+      let v = arr[i].MonthlyRate;
+      min = v < min ? v : min;
+      max = v > max ? v : max;
+    }
+    return [min, max];
+  }
+
+  public loadScript() {
+    const node = document.createElement("script"); // creates the script tag
+    node.type = "application/ld+json"; // set the script type
+    node.async = false; // makes script run asynchronously
+    // node.charset = 'utf-8';
+    node.innerHTML = JSON.stringify(this.script);
+    // append to head of document
+    // document.getElementsByTagName('head')[0].appendChild(node);
+    document.head.appendChild(node);
+  }
+
+  public fetchScript() {
+    this.script = homePageScript;
+  }
+
+  public fetchOgHomePage() {
+    this.ogHomePage = ogHomePage;
+  }
+
+  public fetchTwitterHomePage() {
+    this.twitterHomePage = twitterHomePage;
   }
 
   public fetchTemplate() {
@@ -118,9 +182,9 @@ export class HomeComponent implements OnInit {
     this.jumbotron = jumbotron;
   }
 
-  public fetchScript() {
-    this.script = script;
-  }
+
+
+
 
   public getImageUrl(imageName: string) {
     return `${this.imageBaseUrl}/${imageName}.${this.imagetype}`;

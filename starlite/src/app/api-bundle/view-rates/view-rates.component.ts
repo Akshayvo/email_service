@@ -11,6 +11,12 @@ import { viewRatesPageTitle, viewRatesPageContent } from '../../data/title';
 import { Router } from '@angular/router';
 import { CanonicalService } from '../../services/canonical.service';
 import { environment } from '../../../environments/environment';
+import {
+  homePageScript,
+  ogHomePage,
+  script,
+  twitterHomePage,
+} from "../../data/script";
 
 @Component({
   selector: 'app-view-rates',
@@ -34,8 +40,11 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
   viewRatesPageContent: string;
   viewRatesPageTitle: string;
   viewRatesAltText: string;
- private isUnsubscribe$: Subscription;
-
+  private isUnsubscribe$: Subscription;
+  template: string;
+    ogHomePage: any;
+    twitterHomePage: any
+   script: any;
   constructor(
     private titleService: Title,
     private router: Router,
@@ -44,6 +53,26 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
     private uaParserService: UaParserService,
     private canonical: CanonicalService
   ) {
+
+    this.fetchScript();
+    this.loadScript();
+    this.fetchMetaData();
+    this.fetchOgHomePage();
+    this.fetchTwitterHomePage();
+    this.ogHomePage.forEach((element) => {
+      this.meta.updateTag({
+        property: element.property,
+        content: element.content,
+      });
+    });
+
+    this.twitterHomePage.forEach((element) => {
+      this.meta.updateTag({
+        name: element.name,
+        content: element.content,
+      });
+    });
+
     this.fetchMetaData();
     this.meta.addTag({
       name: 'description',
@@ -60,6 +89,46 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
     window.scrollTo(0, 0);
     this.fetchViewRates();
     this.fetchViewRatesHeading();
+    this.fetchScript();
+  }
+
+  findMinMax(arr) {
+    let min = arr[0].MonthlyRate,
+      max = arr[0].MonthlyRate;
+    for (let i = 1, len = arr.length; i < len; i++) {
+      let v = arr[i].MonthlyRate;
+      min = v < min ? v : min;
+      max = v > max ? v : max;
+    }
+
+    return [min, max];
+  }
+
+  public loadScript() {
+    const node = document.createElement("script"); // creates the script tag
+    node.type = "application/ld+json"; // set the script type
+    node.async = false; // makes script run asynchronously
+    // node.charset = 'utf-8';
+    node.innerHTML = JSON.stringify(this.script);
+    // append to head of document
+    // document.getElementsByTagName('head')[0].appendChild(node);
+    document.head.appendChild(node);
+  }
+
+  public fetchScript() {
+    this.script = homePageScript;
+  }
+
+  public fetchOgHomePage() {
+    this.ogHomePage = ogHomePage;
+  }
+
+  public fetchTwitterHomePage() {
+    this.twitterHomePage = twitterHomePage;
+  }
+
+  public fetchTemplate() {
+    this.template = environment.template;
   }
 
   
