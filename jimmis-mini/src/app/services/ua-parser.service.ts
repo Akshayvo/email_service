@@ -31,9 +31,9 @@ export class UaParserService {
       }
     }
     if (this.typeOfImages === 'WEBP') {
-      this.baseUrl = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/webp`;
+      this.baseUrl = `https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Jimmis-Mini/Webp`;
     } else {
-      this.baseUrl = 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg';
+      this.baseUrl = 'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Jimmis-Mini/Jpg';
     }
   }
 }

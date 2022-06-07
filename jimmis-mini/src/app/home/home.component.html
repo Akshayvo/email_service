@@ -93,7 +93,8 @@
     <div class="section py-5 m-0">
       <div class="row">
         <div class="col-lg-6 py-3">
-          <img src="{{imageBaseUrl}}/inside-self-storage-unit.{{imagetype}}" width="100%"  height='540px' loading='lazy' alt="{{aboutUsAlt}}" class="sectionImage">
+          <app-photos></app-photos>
+          <!-- <img src="{{imageBaseUrl}}/inside-self-storage-unit.{{imagetype}}" width="100%"  height='540px' loading='lazy' alt="{{aboutUsAlt}}" class="sectionImage"> -->
         </div>
         <div class="col-lg-6 py-3">
           <h1 class="heading pb-4">{{aboutUsHeading}}</h1>
@@ -115,21 +116,21 @@
 
   
 <!--Get Started Secion-->
-<div class="getStarted" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
+<!-- <div class="getStarted" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
   <div class="bg-translucent-dark">
     <div class="container">
       <div class="section py-5 m-0">
         <div class="row">
           <div class="col-md-12 py-3">
-            <!-- <h2 class="heading pb-4">Getting Started</h2> -->
-            <!-- <p class="pb-4">{{gettingStarted}}</p> -->
+            <h2 class="heading pb-4">Getting Started</h2>
+            <p class="pb-4">{{gettingStarted}}</p>
             <a class="btn btn-lg btn-primary" (click)="navigate('/view-rates')" role="button">View Unit Now!</a>
           </div>
         </div>
       </div>
     </div>
   </div>
+  </div> -->
 <!--Get Started Secion Ends Here-->
-
 </div> 
 <!--Home Cotainer Ends here-->
