@@ -6,6 +6,8 @@ import { contactsLocation1, hoursLocation1,
 import { featuresHead, serviceOffered } from '../data/home';
 import { LocationService } from '../services/location.service';
 import { aboutusGallery } from '../data/galleryImage';
+import { CanonicalService } from '../services/canonical.service';
+
 
 @Component({
   selector: 'app-home',
@@ -29,13 +31,16 @@ export class HomeComponent implements OnInit {
     @Inject(WINDOW) private window: Window,
     private titleService: Title,
     private meta: Meta,
-    private data: LocationService
+    private data: LocationService,
+    private canonical: CanonicalService,
   ) {
+    console.log(this.canonical.create());
     this.meta.addTag({
       name: 'description',
       content: `Affordable Self Storage Units in Dallas, Oregon | Dallas Secure Storage`
     });
     this.titleService.setTitle('Affordable Self Storage in Dallas | Dallas Secure Storage');
+    
   }
 
   ngOnInit() {

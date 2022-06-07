@@ -40,3 +40,28 @@ export const serviceOffered = [
     },
 ];
 
+export const featuresList = [
+    {
+        td1: 'Online Bill-Pay',
+        td2: 'Fully-Fenced Facility'
+    },
+    {
+        td1: 'Well-Lit Facility',
+        td2: 'Security Cameras'
+    },
+    {
+        td1: 'Packing Supplies',
+        td2: 'Convenient Access Hours'
+    },
+    {
+        td1: 'Keypad Controlled Gates',
+        td2: 'Affordable Rates'
+    },
+    {
+        td1: 'Easy Rental Terms',
+        td2: 'Month-to-Month Rentals'
+    },
+    {
+        td1: 'Experienced Management'
+    }
+];

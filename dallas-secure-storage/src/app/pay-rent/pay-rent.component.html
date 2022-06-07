@@ -26,9 +26,10 @@
               <p> <b>John's Password:</b> 1234 <br>
               <p class="mb-0"> <b>Have question about your account?</b> </p>
                 <span *ngFor="let contact of contact" [class.display-none]="contact?.id == 0">
-                  <span *ngIf="contact?.id == 1 || contact?.id == 2">
+                  <span *ngIf="contact?.id == 1 || contact?.id == 2" class="contact-links">
                     <a [href]="contact?.redirect">{{contact.data}}</a>
-                  </span><br>
+                  </span>
+                  <div></div>
               </span>
               
         </div> 
