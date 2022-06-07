@@ -15,7 +15,7 @@ export const environment = {
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   facilityName: 'Sample Self Storage - North',
-  websiteUrl: 'https://sample-self-storage-staging.netlify.app',
+  websiteUrl: 'https://www.mckeesportstorage.com',
   // APIKey: `dzJ0OFcySjIqOE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 28228
   APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // north demo
 };

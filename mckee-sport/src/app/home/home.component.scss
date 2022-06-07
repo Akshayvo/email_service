@@ -25,7 +25,8 @@
     font-size: 0.8rem;
   }
   .minico-insure{
-    border-left: 2px solid #000;
+    display: flex;
+    justify-content: center;
   }
   .btn-primary{
     background-color: #394c9a;
@@ -368,7 +369,6 @@ p{
 }
 .minico {
 .minico-insure{
-  border-top: 2px solid #000;
   border-left: 0;
 }
 }
