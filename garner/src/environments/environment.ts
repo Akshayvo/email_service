@@ -12,6 +12,8 @@ export const environment = {
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
   appId: `Garner's U Store - Testing`,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
+  facilityName: `Garner's U Store`,
+  websiteUrl: 'https://www.garnersustore.com',
   VERSION: require('../../package.json').version,
 };
 

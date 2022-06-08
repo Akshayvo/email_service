@@ -7,6 +7,12 @@ import { contactsLocation1, hoursLocation1, contactsLocation2, hoursLocation2,
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { LocationService } from '../services/location.service';
+import {
+  contactPageScript,
+  ogContactPage,
+  twitterContactPage,
+} from "../data/script";
+import { MetaService } from '../services/canonical.service';
 
 @Component({
   selector: 'app-contact',
@@ -31,6 +37,9 @@ export class ContactComponent implements OnInit {
   contactsLocation2: any;
   hoursLocation1: any;
   hoursLocation2: any;
+  og: any;
+  twitter: any;
+  script: any;
 
   contactForm: FormGroup;
   submitted = false;
@@ -43,8 +52,26 @@ export class ContactComponent implements OnInit {
     private titleService: Title,
     private meta: Meta,
     private formBuilder: FormBuilder,
-    private data: LocationService
+    private data: LocationService,
+    private metaService: MetaService,
   ) {
+    this.fetchScript();
+    this.loadScript();
+    this.fetchOg();
+    this.fetchTwitter();
+    this.og.forEach((element) => {
+      this.meta.updateTag({
+        property: element.property,
+        content: element.content,
+      });
+    });
+
+    this.twitter.forEach((element) => {
+      this.meta.updateTag({
+        name: element.name,
+        content: element.content,
+      });
+    });
     this.meta.addTag({
       name: 'description',
       content: `Do you have a question about your account, or our self storage, boat and recreational vehicle storage? Use our contact form, or call us today!`
@@ -66,6 +93,29 @@ export class ContactComponent implements OnInit {
     this.receiveMessage();
     this.fetchContactDetails();
     this.fetchHours();
+    this.metaService.createCanonicalURL();
+  }
+
+  public loadScript() {
+    const node = document.createElement("script"); // creates the script tag
+    node.type = "application/ld+json"; // set the script type
+    node.async = false; // makes script run asynchronously
+    // node.charset = 'utf-8';
+    node.innerHTML = JSON.stringify(this.script);
+    // append to head of document
+    document.getElementsByTagName("head")[0].appendChild(node);
+  }
+
+  public fetchTwitter() {
+    this.twitter = twitterContactPage;
+  }
+
+  public fetchOg() {
+    this.og = ogContactPage;
+  }
+
+  public fetchScript() {
+    this.script = contactPageScript;
   }
 
   public fetchContactDetails() {

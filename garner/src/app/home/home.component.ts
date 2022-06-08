@@ -5,8 +5,15 @@ import { contactsHomePage, hoursHomePage, contactsLocation1, hoursLocation1, con
        } from '../data/contact';
 import { featuresHead, serviceOffered, gettingStarted, featuresList, jumbotron , grid} from '../data/home';
 import { LocationService } from '../services/location.service';
-import { homeScript } from '../data/script';
 import { UaParserService } from '../services/ua-parser.service';
+import { homePageTitle, homePageContent } from "../data/title";
+import {
+  homePageScript,
+  ogHomePage,
+  script,
+  twitterHomePage,
+} from "../data/script";
+import { MetaService } from '../services/canonical.service';
 
 @Component({
   selector: 'app-home',
@@ -24,20 +31,44 @@ export class HomeComponent implements OnInit {
   hoursLocation1: any;
   hoursLocation2: any;
   gettingStarted: any;
+  homePageContent: string;
+  homePageTitle: string;
   script: any;
   imageBaseUrl: any;
   imagetype: any;
   featuresList: any;
   jumbotron: any;
   unitTypes :any;
+  ogHomePage: any;
+  twitterHomePage: any;
 
   constructor(
     @Inject(WINDOW) private window: Window,
     private titleService: Title,
     private meta: Meta,
     private data: LocationService,
+    private metaService: MetaService,
     private uaParserService: UaParserService,
   ) {
+    this.fetchScript();
+    this.loadScript();
+    this.fetchMetaData();
+    this.fetchOgHomePage();
+    this.fetchTwitterHomePage();
+    this.ogHomePage.forEach((element) => {
+      this.meta.updateTag({
+        property: element.property,
+        content: element.content,
+      });
+    });
+
+    this.twitterHomePage.forEach((element) => {
+      this.meta.updateTag({
+        name: element.name,
+        content: element.content,
+      });
+    });
+
     this.meta.addTag({
       name: 'description',
       content: `Garner's U Store offers convenient 24/7 access to your belongings,
@@ -60,7 +91,8 @@ export class HomeComponent implements OnInit {
     this.fetchFeatures();
     this.fetchJumbotron();
     this.fetchGrid();
-    
+    this.metaService.createCanonicalURL();
+
   }
 
   
@@ -80,8 +112,32 @@ export class HomeComponent implements OnInit {
     this.hoursLocation2 = hoursLocation2;
   }
 
+  public loadScript() {
+    const node = document.createElement("script"); // creates the script tag
+    node.type = "application/ld+json"; // set the script type
+    node.async = false; // makes script run asynchronously
+    // node.charset = 'utf-8';
+    node.innerHTML = JSON.stringify(this.script);
+    // append to head of document
+    // document.getElementsByTagName('head')[0].appendChild(node);
+    document.head.appendChild(node);
+  }
+
   public fetchScript() {
-    this.script = homeScript;
+    this.script = homePageScript;
+  }
+
+  public fetchOgHomePage() {
+    this.ogHomePage = ogHomePage;
+  }
+
+  public fetchTwitterHomePage() {
+    this.twitterHomePage = twitterHomePage;
+  }
+
+  public fetchMetaData() {
+    this.homePageTitle = homePageTitle;
+    this.homePageContent = homePageContent;
   }
 
   public fetchFeatures() {
