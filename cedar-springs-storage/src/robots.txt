@@ -1,5 +1,5 @@
 # www.robotstxt.org/
 # Allow crawling of all content
-Sitemap: https://cedar-springs-self-storage-staging.netlify.app/sitemap.xml
+Sitemap: https://www.cedarspringsstorage.com/sitemap.xml
 User-agent: *
 Disallow:/privacy-policy

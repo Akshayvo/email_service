@@ -1,206 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
   <url>
-    <loc> https://cedar-springs-self-storage-staging.netlify.app/</loc>
+    <loc> https://www.cedarspringsstorage.com/</loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
-    <loc> https://cedar-springs-self-storage-staging.netlify.app/location/cedar/reserve-unit </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> https://cedar-springs-self-storage-staging.netlify.app/location/robertsdale/reserve-unit </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> https://cedar-springs-self-storage-staging.netlify.app/location/fairhope/reserve-unit </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> https://cedar-springs-self-storage-staging.netlify.app/storage-tips </loc>
+    <loc> https://www.cedarspringsstorage.com/pennsylvania/storage-tips </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://cedar-springs-self-storage-staging.netlify.app/location/barnwell/storage-units
+      https://www.cedarspringsstorage.com/contact-us
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://cedar-springs-self-storage-staging.netlify.app/contact-us
+      https://www.cedarspringsstorage.com/location/e-town/storage-units
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://cedar-springs-self-storage-staging.netlify.app/location/barnwell
+      https://www.cedarspringsstorage.com/location/cedar
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> https://www.cedarspringsstorage.com/location/e-town </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> 
+      https://www.cedarspringsstorage.com/pay-rent
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://cedar-springs-self-storage-staging.netlify.app/location/fairhope
+      https://www.cedarspringsstorage.com/location/cedar/storage-units
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://cedar-springs-self-storage-staging.netlify.app/location/robertsdale
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://cedar-springs-self-storage-staging.netlify.app/location/e-town/storage-units
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://cedar-springs-self-storage-staging.netlify.app/location/belforest/storage-units
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://cedar-springs-self-storage-staging.netlify.app/location/cedar
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://cedar-springs-self-storage-staging.netlify.app/location/fairhope
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://cedar-springs-self-storage-staging.netlify.app/location/robertsdale
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://cedar-springs-self-storage-staging.netlify.app/location/e-town/reserve-unit
+      https://www.cedarspringsstorage.com/contact-e-town
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc>
-      https://cedar-springs-self-storage-staging.netlify.app/location/belforest
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> https://cedar-springs-self-storage-staging.netlify.app/location/e-town </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://cedar-springs-self-storage-staging.netlify.app/pay-rent
+      https://www.cedarspringsstorage.com/contact-cedar
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://cedar-springs-self-storage-staging.netlify.app/location/cedar/storage-units
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://cedar-springs-self-storage-staging.netlify.app/location/fairhope/storage-units
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://cedar-springs-self-storage-staging.netlify.app/location/robertsdale/storage-units
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://cedar-springs-self-storage-staging.netlify.app/location/belforest/reserve-unit
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://cedar-springs-self-storage-staging.netlify.app/location/barnwell/reserve-unit
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://cedar-springs-self-storage-staging.netlify.app/contact-e-town
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://cedar-springs-self-storage-staging.netlify.app/contact-barnwell
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://cedar-springs-self-storage-staging.netlify.app/pay-rent/belforest
+      https://www.cedarspringsstorage.com/pay-rent/cedar/rent-sub/login
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc>
-      https://cedar-springs-self-storage-staging.netlify.app/contact-cedar
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc>
-      https://cedar-springs-self-storage-staging.netlify.app/contact-fairhope
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc>
-      https://cedar-springs-self-storage-staging.netlify.app/contact-robertsdale
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc>
-      https://cedar-springs-self-storage-staging.netlify.app/pay-rent/barnwell
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://cedar-springs-self-storage-staging.netlify.app/contact-barnwell
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://cedar-springs-self-storage-staging.netlify.app/pay-rent/e-town
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc>
-      https://cedar-springs-self-storage-staging.netlify.app/pay-rent/belforest/rent-sub/login
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://cedar-springs-self-storage-staging.netlify.app/pay-rent/barnwell/rent-sub/login
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc>
-      https://cedar-springs-self-storage-staging.netlify.app/pay-rent/e-town/rent-sub/login
+      https://www.cedarspringsstorage.com/pay-rent/e-town/rent-sub/login
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
