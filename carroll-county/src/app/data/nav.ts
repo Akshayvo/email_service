@@ -26,11 +26,11 @@ export const navLinks = [
             },
         ]
     },
-    {
-        label: 'Pay Rent',
-        path: '/pay-rent',
-        type: 'link'
-    },
+    // {
+    //     label: 'Pay Rent',
+    //     path: '/pay-rent',
+    //     type: 'link'
+    // },
     {
         label: 'Storage Tips',
         path: '/storage-tips',

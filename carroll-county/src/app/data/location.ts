@@ -11,12 +11,12 @@ export const tabs = [
         path: './unit-sizer',
         active: false,
     },
-    {
-        id: '3',
-        name: 'Reserve Unit',
-        path: './reserve-unit',
-        active: false,
-    },
+    // {
+    //     id: '3',
+    //     name: 'Reserve Unit',
+    //     path: './reserve-unit',
+    //     active: false,
+    // },
     {
         id: '4',
         name: 'About Us',

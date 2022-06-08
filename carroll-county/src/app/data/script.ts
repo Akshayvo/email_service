@@ -141,7 +141,7 @@ export const homePageScript = [
     '@type': ['Organization', 'SelfStorage', 'Place', 'LocalBusiness'],
     'name': nameLocation1,
     'url': urlLocation1,
-    'openingHours': ['Mo-Fr 08:30 - 17:00'],
+    'openingHours': ['Mo-Fr 08:00 - 18:00'],
     'priceRange': '$40 - $190',
       'address' : addressLoaction1,
     'telephone': contactsLocation1[contactIndex1].data,

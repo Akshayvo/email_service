@@ -24,7 +24,8 @@
           <strong> Yes</strong>
         </td>
           <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable; else other_reserve">
-              <button (click)="navigate('reserve-unit', lstUnitType )">Reserve</button>
+              <!-- <button (click)="navigate('reserve-unit', lstUnitType )">Reserve</button>  -->
+              Please call the facility to reserve a unit.
           </td>
 <!-- 
           <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable; else other_moveIn">
@@ -68,8 +69,9 @@
       <div class="col-6 d-flex justify-content-center" >
         <div *ngIf="lstUnitType.IsUnitsAvailable; else other" >
           <div class=" py-1 buttons" >
-              <button class="btn  btn-primary" (click)="navigate('reserve-unit', lstUnitType )">Reserve</button>
-          </div>
+              <!-- <button class="btn  btn-primary" (click)="navigate('reserve-unit', lstUnitType )">Reserve</button> -->
+              <p class="card-text ">Please call the facility to reserve a unit.</p>
+          </div> 
           <!-- <div class="py-1 buttons">
               <button class=" btn btn-outline-primary" (click)="navigate('move-in', lstUnitType)"> Move In</button>
           </div> -->

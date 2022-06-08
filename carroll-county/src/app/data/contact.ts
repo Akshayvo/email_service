@@ -23,7 +23,7 @@ export const contactsLocation1 = [
 
 export const hoursLocation1 = [
     {
-        label: 'Mon - sat: ',
+        label: 'Mon - Fri: ',
         data: '8:00 AM to 6:00PM'
     },
     {
@@ -61,7 +61,7 @@ export const contactsLocation2 = [
 
 export const hoursLocation2 = [
     {
-        label: 'Mon - sat: ',
+        label: 'Mon - Fri: ',
         data: '8:00 AM to 6:00PM'
     },
     {
@@ -99,7 +99,7 @@ export const contactsLocation3 = [
 
 export const hoursLocation3 = [
     {
-        label: 'Mon - sat: ',
+        label: 'Mon - Fri: ',
         data: '8:00 AM to 6:00PM'
     },
     {
