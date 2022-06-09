@@ -1,0 +1,24 @@
+@import "../../../styles.scss";
+
+table {
+    tbody {
+      tr:nth-child(even) {
+        background-color: #dcdcdc;
+      }
+  
+      tr {
+        td {
+          padding: 10px 20px;
+          border: 1px solid #dee2e6;
+        }
+      }
+    }
+  }
+
+  .home-link {
+    a {
+      color: $secondary;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
