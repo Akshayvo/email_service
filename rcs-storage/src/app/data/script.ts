@@ -78,7 +78,7 @@ export const description2 = `Our 24-hour surveillance consists of full camera co
 
 export const description3 = ``;
 
-export const maplocation1 = 'https://goo.gl/maps/dxxCSo2vuyEhz4cB7';
+export const maplocation1 = 'https://goo.gl/maps/PosGh4eAHkje445D8';
 export const maplocation2 = 'https://goo.gl/maps/YjrsegJxLjxRdGwL6';
 
 

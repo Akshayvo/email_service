@@ -1,7 +1,7 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
-import { contactsHomePage, hoursHomePage, contactsLocation1, hoursLocation1, contactsLocation2, hoursLocation2,
+import { contactsHomePage, hoursHomePageWest,hoursHomePageEast, contactsLocation1, hoursLocation1, contactsLocation2, hoursLocation2,
   contactsLocation3, hoursLocation3, } from '../data/contact';
 import { featuresHead, serviceOffered, featuresList, jumbotron } from '../data/home';
 import { homePageScript, ogHomePage, twitterHomePage } from '../data/script';
@@ -34,7 +34,8 @@ export class HomeComponent implements OnInit {
   template: string;
   jumbotron: any;
   contactHomeDetails: any;
-  hoursHomeDetails: any;
+  hoursHomeDetailsWest: any;
+  hoursHomeDetailsEast: any;
   imagetype: any;
   imageBaseUrl: any;
 
@@ -104,7 +105,8 @@ export class HomeComponent implements OnInit {
 
   public fetchContactDetails() {
     this.contactHomeDetails = contactsHomePage;
-    this.hoursHomeDetails = hoursHomePage;
+    this.hoursHomeDetailsWest = hoursHomePageWest;
+    this.hoursHomeDetailsEast = hoursHomePageEast;
   }
 
   public fetchJumbotron() {

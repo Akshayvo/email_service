@@ -42,12 +42,18 @@
       </div>
       <div class="col-4 text-center ">  
         <div class="">
-          <div class=" text-center " *ngIf="lstUnitType.MonthlyRate != null">
-              <p >Rate</p>
-              <div class="custom-font"><strong><span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate | number : '1.2-2'}}</strong>
+          <div class=" text-center " *ngIf="lstUnitType.MonthlyRate != null  && lstUnitType.IsClimateControlled !== true">
+              <p>Rate</p>
+              <div class="custom-font"><strong><span *ngIf="lstUnitType.MonthlyRate != null && lstUnitType.IsClimateControlled !== true">$</span>{{lstUnitType.MonthlyRate | number : '1.2-2'}}</strong>
                 <meta itemprop="priceRange" content="{{lstUnitType.MonthlyRate}}" />
-              </div>
+              </div> 
           </div>
+          <div class=" text-center " *ngIf="lstUnitType.IsClimateControlled">
+            <p>Rate</p>
+            <div class="custom-font"><strong><span *ngIf="lstUnitType.IsClimateControlled === true">$</span>{{lstUnitType.MonthlyRate | number : '1.2-2'}} + Tax</strong>
+              <meta itemprop="priceRange" content="{{lstUnitType.MonthlyRate}}" />
+            </div> 
+        </div>
           <div class="text-center" *ngIf="lstUnitType.DepositAmount != null">
             <p>Deposit</p>
             <div class="custom-font"><strong><span>$</span>{{lstUnitType.DepositAmount | number : '1.2-2'}}</strong></div>

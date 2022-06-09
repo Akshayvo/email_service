@@ -1,44 +1,86 @@
-export const contactsHomePage = [
+export const headerContacts = [
     {
         id: 1,
+        label: 'Address: ',
+        data: '1314 Fountain Plaza Drive, Rapid City, SD 57702 (West)',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/PosGh4eAHkje445D8'
+    },
+    {
+        id: 2,
         label: 'Address: ',
         data: '1824 Marlin Drive, Rapid City, SD 57701',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: 'https://goo.gl/maps/YjrsegJxLjxRdGwL6'
     },
     {
+        id: 3,
+        label: 'Email: ',
+        data: `managerwest@rcsstorage.com`,
+        class: 'fas fa-envelope-open mr-2 iconColor',
+        redirect: 'mailto:`managerwest@rcsstorage.com`'
+    },
+    {
+        id: 4,
+        label: 'Phone: ',
+        data: '(605) 721-0361',
+        class: 'fas fa-phone mr-2 iconColor',
+        redirect: 'tel:6057210361'
+    },
+
+];
+
+
+
+export const contactsHomePage = [
+    {
+        id: 1,
+        label: 'Address: ',
+        data: '1314 Fountain Plaza Drive, Rapid City, SD 57702 (West)',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/PosGh4eAHkje445D8'
+    },
+    {
         id: 2,
         label: 'Email: ',
-        data: `manager@rcsstorage.com`,
+        data: `managerwest@rcsstorage.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`manager@rcsstorage.com`'
+        redirect: 'mailto:`managerwest@rcsstorage.com`'
     },
     {
         id: 3,
         label: 'Phone: ',
-        data: '(605) 342-8911',
+        data: '(605) 721-0361',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:6053428911'
-    },
-    {
-        id: 1,
-        label: 'Mailing Address: ',
-        data: 'PO Box 9365, Rapid City, SD 57709',
-        class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: ''
+        redirect: 'tel:6057210361'
     },
 ];
 
-export const hoursHomePage = [
+export const hoursHomePageWest = [
     {
-        label: 'Tuesday - Friday: ',
-        data: '8:00AM to 5:30PM',
+        facility:'West Facility Office: ',
+        label: 'Monday - Friday: ',
+        data: '8:00AM to 5:00PM',
     },
-    {
-        label: 'Saturday: ',
-        data: '8:00AM to 3:00PM',
-    },
+   
+   
 ];
+
+export const hoursHomePageEast = [
+    {
+        facility:'East Facility Office: ',
+        label: 'Tuesday - Friday: ',
+        data: '8:00AM to 5:00PM', 
+        label2:'Saturday: ',
+        data2:'8:00AM to 3:00PM',
+        facilityAmenity:'Climate Controlled Hours(East Facility Only)',
+        label3: 'Tuesday - Friday: ',
+        data3: '8:00AM to 5:30PM', 
+        label4:'Saturday: ',
+        data4:'8:00AM to 3:00PM',
+    },
+]
+
 
 export const contactsLocation1 = [
     {
@@ -46,7 +88,7 @@ export const contactsLocation1 = [
         label: 'Address: ',
         data: '1314 Fountain Plaza Drive, Rapid City, SD 57702',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/dxxCSo2vuyEhz4cB7'
+        redirect: 'https://goo.gl/maps/PosGh4eAHkje445D8'
     },
     {
         id: 2,
@@ -131,7 +173,7 @@ export const contactsLocation3 = [
     {
         id: 1,
         label: 'Address: ',
-        data: '6 Canton St, Baldwinsville, NY 13027',
+        data: '',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: ''
     },
