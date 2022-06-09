@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { unitSizer } from '../data/unitSizer';
 import { Title, Meta } from '@angular/platform-browser';
+import { MetaService } from "../services/link.service";
 @Component({
   selector: 'app-unit-sizer',
   templateUrl: './unit-sizer.component.html',
@@ -15,7 +16,8 @@ export class UnitSizerComponent implements OnInit {
 
   constructor(
     private titleService: Title,
-    private meta: Meta
+    private meta: Meta,
+    private metaService: MetaService,
   ) {
     this.meta.addTag({
       name: 'description',
@@ -25,6 +27,7 @@ export class UnitSizerComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.metaService.createCanonicalURL();
     this.i = 0;
     this.h = 5;
     this.j = this.i + 1;

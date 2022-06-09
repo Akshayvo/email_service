@@ -12,12 +12,13 @@ import { homePageTitle, homePageContent } from "../data/title";
 import { objSIMSetting } from "../data/configuration";
 
 import {
-  homePageScript,
+  homePageScript, 
   ogHomePage,
   script,
   twitterHomePage,
 } from "../data/script";
-import { CanonicalService } from "../services/canonical.service";
+// import { CanonicalService } from "../services/canonical.service"; 
+// import { MetaService } from '../services/canonical.service'; 
 import { FetchDataService } from "../api-bundle/services/fetch-data.service";
 
 @Component({
@@ -60,12 +61,13 @@ export class HomeComponent implements OnInit {
     private _renderer2: Renderer2,
     private metaService: MetaService,
     private uaParserService: UaParserService,
-    private canonical: CanonicalService,
+    // private canonical: CanonicalService, 
+    
     private fetchDataService: FetchDataService,
     @Inject(DOCUMENT) private _document: any
     ) {
       // console.log('canonical', canonical)
-    this.canonical.create();
+    // this.canonical.create(); 
     this.fetchScript();
     this.loadScript();
     this.fetchMetaData();
@@ -122,6 +124,7 @@ export class HomeComponent implements OnInit {
     this.fetchJumbotron();
     this.fetchTemplate();
     this.fetchScript();
+    this.metaService.createCanonicalURL();
     window.scrollTo(0, 0);
   }
 
@@ -152,7 +155,7 @@ export class HomeComponent implements OnInit {
   }
 
   public fetchScript() {
-    this.script = homePageScript;
+    this.script = homePageScript;  
   }
 
   public fetchOgHomePage() {

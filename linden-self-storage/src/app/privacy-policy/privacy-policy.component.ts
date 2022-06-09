@@ -5,7 +5,7 @@ import {
   privacyPolicyPageContent,
   privacyPolicyPageTitle,
 } from "../data/title";
-import { CanonicalService } from "../services/canonical.service";
+// import { CanonicalService } from "../services/canonical.service"; 
 import { environment } from "../../environments/environment";
 
 @Component({
@@ -22,11 +22,11 @@ export class PrivacyPolicyComponent implements OnInit {
   constructor(
     private titleService: Title,
     private meta: Meta,
-    private canonical: CanonicalService
+    // private canonical: CanonicalService 
   ) {
     this.facilityName = environment.facilityName;
     this.fetchMetaData();
-    this.canonical.create();
+    // this.canonical.create(); 
     this.meta.updateTag({
       name: "description",
       content: `${this.privacyPolicyPageContent}`,

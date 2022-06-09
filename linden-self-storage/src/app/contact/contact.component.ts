@@ -5,7 +5,7 @@ import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { Title, Meta } from '@angular/platform-browser';
 import { EmailService } from '../services/email.service';
 import { contact, hours } from '../data/contact';
-import { CanonicalService } from "../services/canonical.service";
+// import { CanonicalService } from "../services/canonical.service"; 
 import { contactHeading } from "../data/heading";
 import {
   contactPageScript,
@@ -13,6 +13,7 @@ import {
   twitterContactPage,
 } from "../data/script";
 import { contactPageTitle, contactPageContent } from "../data/title";
+import { MetaService } from "../services/link.service";
 
 @Component({
   selector: 'app-contact',
@@ -48,7 +49,8 @@ export class ContactComponent implements OnInit {
     private emailService: EmailService,
     private titleService: Title,
     private meta: Meta,
-    private canonical: CanonicalService,
+    private metaService: MetaService,
+    // private canonical: CanonicalService, 
     private formBuilder: FormBuilder
   ) {
 
@@ -75,7 +77,7 @@ export class ContactComponent implements OnInit {
       content: `${this.contactPageContent}`,
     });
     this.titleService.setTitle(`${this.contactPageTitle}`);
-    this.canonical.create();
+  // this.canonical.create(); 
     this.meta.addTag({
       name: 'description',
       content: `Do you have a question about our services, or would you like help with your account? Use our form or contact information to reach out, today!`
@@ -93,6 +95,7 @@ export class ContactComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.metaService.createCanonicalURL();
     this.fetchContactDetails();
     this.fetchHours();
     this.fetchContactHeading();

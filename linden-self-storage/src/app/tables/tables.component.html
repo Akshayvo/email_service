@@ -13,7 +13,7 @@
           </p>
           <p *ngIf="(key === 'data')">{{td[key]}}</p>
           <p class="text-align-right" *ngIf="(key === 'rate')">{{td[key]}}</p>
-          <ul *ngIf="(key === 'td1' || key === 'td2' && td[key] !== undefined)"><li>{{td[key]}}</li></ul>
+          <ul *ngIf="(key === 'td1' || key === 'td2' && td[key] !== undefined)"><li><h2>{{td[key]}}</h2></li></ul>
         </td>
       </tr>
     </tbody>

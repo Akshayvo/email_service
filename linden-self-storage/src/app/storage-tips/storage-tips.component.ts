@@ -2,7 +2,7 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { storagePoints, storageTips } from '../data/storage-tips';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
-
+import { MetaService } from "../services/link.service";
 @Component({
   selector: 'app-storage-tips',
   templateUrl: './storage-tips.component.html',
@@ -18,6 +18,7 @@ export class StorageTipsComponent implements OnInit {
   constructor(
     private titleService: Title,
     private meta: Meta,
+    private metaService: MetaService,
     @Inject(WINDOW) private window: Window,
   ) {
     this.meta.addTag({
@@ -28,6 +29,7 @@ export class StorageTipsComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.metaService.createCanonicalURL();
     this.fetchstoragePoints();
     this.fetchstorageTips();
     window.scrollTo(0, 0);

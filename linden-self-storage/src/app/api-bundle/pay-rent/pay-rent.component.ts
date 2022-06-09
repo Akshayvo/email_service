@@ -6,8 +6,9 @@ import { tabs } from "../../data/tab";
 import { payRentHeading } from "../../data/heading";
 import { payRentPageContent, payRentPageTitle } from "../../data/title";
 import { environment } from "../../../environments/environment";
-import { CanonicalService } from "../../services/canonical.service";
+// import { CanonicalService } from "../../services/canonical.service"; 
 import { ogPayRentPage, twitterPayRentPage } from "../../data/script";
+import { MetaService } from "../../services/link.service";
 
 @Component({
   selector: "app-pay-rent",
@@ -32,7 +33,8 @@ export class PayRentComponent implements OnInit {
     private activatedRoute: ActivatedRoute,
     private dataSharingService: DataSharingService,
     private meta: Meta,
-    private canonical: CanonicalService
+    private metaService: MetaService,
+    // private canonical: CanonicalService 
   ) {
     this.fetchMetaData();
     this.fetchOg();
@@ -55,10 +57,11 @@ export class PayRentComponent implements OnInit {
       content: `${this.payRentPageContent}`,
     });
     this.titleService.setTitle(`${this.payRentPageTitle}`);
-    this.canonical.create();
+    // this.canonical.create(); 
   }
 
   ngOnInit() {
+    this.metaService.createCanonicalURL();
     this.fetchContactDetails();
     this.showPaymentPageType = environment.signUpForAuotoPay;
   }

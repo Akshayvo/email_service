@@ -9,10 +9,11 @@ import { Subscription } from "rxjs";
 import { viewRatesHeading } from "../../data/heading";
 import { viewRatesPageTitle, viewRatesPageContent } from "../../data/title";
 import { Router } from "@angular/router";
-import { CanonicalService } from "../../services/canonical.service";
+// import { CanonicalService } from "../../services/canonical.service"; 
 import { environment } from "../../../environments/environment";
 import { script,contactPageScript,ogContactPage,twitterContactPage, } from "../../data/script";
 import { FormGroup, FormBuilder, Validators } from "@angular/forms";
+
 
 
 @Component({
@@ -52,7 +53,7 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
     private meta: Meta,
     private metaService: MetaService,
     private uaParserService: UaParserService,
-    private canonical: CanonicalService,
+    // private canonical: CanonicalService, 
     private formBuilder: FormBuilder,
     
   ) {
@@ -79,7 +80,7 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
       content: `${this.contactPageContent}`,
     });
     this.titleService.setTitle(`${this.contactPageTitle}`);
-    this.canonical.create();
+    // this.canonical.create(); 
     this.state = script.state;
     this.fetchMetaData();
     this.meta.updateTag({
@@ -87,7 +88,7 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
       content: `${this.viewRatesPageContent}`,
     });
     this.titleService.setTitle(`${this.viewRatesPageTitle}`);
-    this.canonical.create();
+    // this.canonical.create(); 
     this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
     this.imageBaseUrl = this.uaParserService.baseUrl;
   }
@@ -99,6 +100,7 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
     // this.fetchContactDetails();
     // this.fetchHours();
     // this.fetchContactHeading();
+    this.metaService.createCanonicalURL();
     this.contactForm = this.formBuilder.group({
       name: ["", Validators.required],
       phone: [
