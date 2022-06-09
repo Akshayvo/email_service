@@ -1,21 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
   <url>
-    <loc> https://bestwenatcheestorage.com/</loc>
+    <loc> https://bestwenatcheestorage.com//</loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
-    <loc> https://bestwenatcheestorage.com/location/south-wenatchee/reserve-unit </loc>
+    <loc> https://bestwenatcheestorage.com/wa/south-wenatchee/south-wenatchee/storage-units </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
 
   <url>
-    <loc> https://bestwenatcheestorage.com/storage-tips </loc>
+    <loc> https://bestwenatcheestorage.com/wa/south-wenatchee/south-wenatchee/unit-sizer </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  
+  <url>
+    <loc> 
+      https://bestwenatcheestorage.com/wa/south-wenatchee/leos-self-storage/storage-units
+    </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://bestwenatcheestorage.com/location/location-3/storage-units
+      https://bestwenatcheestorage.com/wa/south-wenatchee/leos-self-storage/unit-sizer
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> 
+      https://bestwenatcheestorage.com/pay-rent
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> 
+      https://bestwenatcheestorage.com/pay-rent/south-wenatchee/rent-sub/login
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> 
+      https://bestwenatcheestorage.com/pay-rent/leos-self-storage/rent-sub/login
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> 
+      https://bestwenatcheestorage.com/wa/south-wenatchee/storage-tips
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
@@ -27,173 +58,13 @@
   </url>
   <url>
     <loc> 
-      https://bestwenatcheestorage.com/location/location-3
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://bestwenatcheestorage.com/location/fairhope
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://bestwenatcheestorage.com/location/robertsdale
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://bestwenatcheestorage.com/location/leos-self-storage/storage-units
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://bestwenatcheestorage.com/location/belforest/storage-units
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://bestwenatcheestorage.com/location/south-wenatchee
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://bestwenatcheestorage.com/location/fairhope
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://bestwenatcheestorage.com/location/robertsdale
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://bestwenatcheestorage.com/location/leos-self-storage/reserve-unit
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc>
-      https://bestwenatcheestorage.com/location/belforest
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> https://bestwenatcheestorage.com/location/leos-self-storage </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://bestwenatcheestorage.com/pay-rent
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://bestwenatcheestorage.com/location/south-wenatchee/storage-units
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://bestwenatcheestorage.com/location/fairhope/storage-units
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://bestwenatcheestorage.com/location/robertsdale/storage-units
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://bestwenatcheestorage.com/location/belforest/reserve-unit
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://bestwenatcheestorage.com/location/location-3/reserve-unit
+      https://bestwenatcheestorage.com/contact-south-wenatchee
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
       https://bestwenatcheestorage.com/contact-leos-self-storage
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://bestwenatcheestorage.com/contact-location-3
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://bestwenatcheestorage.com/pay-rent/belforest
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc>
-      https://bestwenatcheestorage.com/contact-south-wenatchee
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc>
-      https://bestwenatcheestorage.com/contact-fairhope
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc>
-      https://bestwenatcheestorage.com/contact-robertsdale
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc>
-      https://bestwenatcheestorage.com/pay-rent/location-3
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://bestwenatcheestorage.com/contact-location-3
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://bestwenatcheestorage.com/pay-rent/leos-self-storage
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc>
-      https://bestwenatcheestorage.com/pay-rent/belforest/rent-sub/login
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://bestwenatcheestorage.com/pay-rent/location-3/rent-sub/login
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc>
-      https://bestwenatcheestorage.com/pay-rent/leos-self-storage/rent-sub/login
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
