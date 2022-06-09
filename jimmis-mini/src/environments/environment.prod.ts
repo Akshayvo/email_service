@@ -18,8 +18,8 @@ export const environment = {
   facilityName: 'Jimmys Minis Self Storage',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: 'https://jimmysminisraleigh.com/',
-  APIKey: `dzJ0OVcxSjYqNU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29462
+  websiteUrl: 'https://jimmis-mini-staging.netlify.app',
+  APIKey: `bTd+NG44eTg6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 7488
   // APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28463
   
 };
