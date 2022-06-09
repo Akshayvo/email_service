@@ -3,12 +3,12 @@
   <div class="container">
     <div class="row">          
       <div class="col-lg-5">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d21604.122935951706!2d-120.300534!3d47.401888!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9ab789e5445a6494!2sSouth%20Wenatchee%20Ave%20Self%20Storage!5e0!3m2!1sen!2sus!4v1613062325388!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d21604.122935951706!2d-120.300534!3d47.401888!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9ab789e5445a6494!2sSouth%20Wenatchee%20Ave%20Self%20Storage!5e0!3m2!1sen!2sus!4v1613062325388!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen title="Maps"></iframe>
       </div>
       <div class="col-lg-4  pt-3">
         <h2>South Wenatchee Self Storage</h2>
         <!-- <p> -->
-          <div *ngFor="let contact of contactsLocation1" class="contact-label">
+          <div *ngFor="let contact of contactsLocation1" class="contact-label first-label">
               <div><h3><strong>{{contact.label}}</strong></h3></div>&nbsp;&nbsp;
             <div class="contact-links" *ngIf="contact.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' || contact?.label === 'Emergency Number: ' else other_content">
               <a [href]="contact?.redirect" target="_blank" rel="noopener">&nbsp;
@@ -45,7 +45,7 @@
     <div class="container">
       <div class="row">          
         <div class="col-lg-5">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2698.5102419201294!2d-120.32698928437517!3d47.4409924791741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549bcb62132ea143%3A0x20c776fc7f446abf!2s1313%20N%20Wenatchee%20Ave%2C%20Wenatchee%2C%20WA%2098801!5e0!3m2!1sen!2sus!4v1612664964498!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2698.5102419201294!2d-120.32698928437517!3d47.4409924791741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549bcb62132ea143%3A0x20c776fc7f446abf!2s1313%20N%20Wenatchee%20Ave%2C%20Wenatchee%2C%20WA%2098801!5e0!3m2!1sen!2sus!4v1612664964498!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen title="Maps"></iframe>
         </div>
         <div class="col-lg-4 pt-3">
           <h2>Leo's Self Storage</h2>
@@ -69,7 +69,7 @@
                 <b>{{hour.label}}</b>{{hour.data}}<br>
               </span>
             </p> -->
-            <h3>Gate Access Hours:</h3>
+            <h4>Gate Access Hours:</h4>
             <p>
               <b>7 Days a Week:</b> 6:30AM to 9:00PM<br>
             </p>

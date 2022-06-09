@@ -28,8 +28,8 @@
                  <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label>Name*</label>
-                            <input type="text" formControlName="name" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.name.errors }" placeholder="Enter Name"/>
+                            <label for="name">Name*</label>
+                            <input id="name" type="text" formControlName="name" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.name.errors }" placeholder="Enter Name"/>
                             <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
                                <small class="form-text text-muted" *ngIf="f.name.errors.required">Please fill out this field</small>
                             </div>
@@ -37,8 +37,8 @@
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label>Phone Number*</label>
-                            <input type="tel" formControlName="phone" placeholder="Enter Phone Number" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.phone.errors }" />
+                            <label for="phone">Phone Number*</label>
+                            <input id="phone" type="tel" formControlName="phone" placeholder="Enter Phone Number" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.phone.errors }" />
                             <div *ngIf="submitted && f.phone.errors" class="invalid-feedback">
                                 <small class="form-text text-muted" *ngIf="f.phone.errors.required">Please fill out this field</small>
                             </div>
@@ -52,8 +52,8 @@
                  <div class="row py-3">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label>Email Address*</label>
-                            <input type="text" formControlName="email" placeholder="Enter Email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                            <label for="email">Email Address*</label>
+                            <input id="email" type="text" formControlName="email" placeholder="Enter Email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
                             <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
                                 <small class="form-text text-muted" *ngIf="f.email.errors.required">Please fill out this field</small>                                  
                             </div>
@@ -64,15 +64,15 @@
                     </div>
                     <div class="col-md-6">
                       <div class="form-group">
-                          <label>Subject</label>
-                          <input type="text" formControlName="subject" placeholder="Enter subject" class="form-control" />
+                          <label for="subject">Subject</label>
+                          <input id="subject" type="text" formControlName="subject" placeholder="Enter subject" class="form-control" />
                       </div>
                   </div>
                    </div>
 
                    <div class="form-group">
-                      <label>Message*</label>
-                      <textarea type="text" formControlName="message" placeholder="Enter Message" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.message.errors }" ></textarea>
+                      <label for="comments">Message*</label>
+                      <textarea id="comments" type="text" formControlName="message" placeholder="Enter Message" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.message.errors }" ></textarea>
                       <div *ngIf="submitted && f.message.errors" class="invalid-feedback">
                           <small class="form-text text-muted" *ngIf="f.message.errors.required">Please fill out this field</small>
                       </div>
@@ -106,10 +106,10 @@
                     <iframe title="Facility Google Map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11642.278493425898!2d-76.334158!3d43.155566!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa6050b46d0319b1d!2sSyrasoft%20Self%20Storage%20Software!5e0!3m2!1sen!2sus!4v1632153735978!5m2!1sen!2sus" width="100%" height="220" frameborder="0" allowfullscreen></iframe>
                   </span> 
                 </div>
-                <h5 class="pt-3"> {{heading}} </h5>
+                <h2 class="pt-3 facility-heading"> {{heading}} </h2>
                 <div class="py-2">
                   <span class="contact-links" *ngFor="let contact of contactDetails">
-                    <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.label=== 'Email: ' || contact?.label === 'Phone: ' else other_content">
+                    <span><b>{{contact.label}}</b></span><span class="contact-link" *ngIf="contact?.label=== 'Email: ' || contact?.label === 'Phone: ' else other_content">
                       <a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
                     <ng-template #other_content >&nbsp;<a [href]="contact?.redirect" target="_blank" rel="noopener">&nbsp;{{contact.data}}</a></ng-template><br>
                   </span>
