@@ -11,6 +11,11 @@
   padding: 64px;
 }
 
+.offer-headings {
+  display: inline-flex;
+  flex-direction: row-reverse;
+}
+
 table {
   width: -webkit-fill-available;
 

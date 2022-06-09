@@ -7,19 +7,19 @@ export const contact = [
         redirect: 'https://www.google.com/maps/place/My+Store-It+Space+LLC/@42.013312,-83.675108,11z/data=!4m5!3m4!1s0x0:0x95fbfb07c3610dcd!8m2!3d42.0133141!4d-83.6749799?hl=en'
     },
     {
+        id: 2,
+        label: 'Phone:',
+        data: '(734) 790-9085',
+        class: 'fas fa-phone mx-2 iconColor',
+        redirect: 'tel:7347909085',
+    },
+    {
         id: 1,
         label: 'Email:',
         data: 'mystoreitspace@gmail.com',
         class: 'fas fa-envelope mx-2 iconColor',
         email: 'mystoreitspace@gmail.com',
         redirect: 'mailto:mystoreitspace@gmail.com'
-    },
-    {
-        id: 2,
-        label: 'Phone:',
-        data: '(734) 790-9085',
-        class: 'fas fa-phone mx-2 iconColor',
-        redirect: 'tel:7347909085',
     }
 ];
 
