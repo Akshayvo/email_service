@@ -13,7 +13,7 @@
           </span>
           <span *ngIf="(key === 'data')" class="p-0">{{td[key]}}</span>
           <span style="text-align: right;" *ngIf="(key === 'rate')">{{td[key]}}</span>
-          <span *ngIf="(key === 'td1' || key === 'td2' || key === 'td3')" [innerHTML]="td[key]" ></span>
+          <h5><span *ngIf="(key === 'td1' || key === 'td2')" [innerHTML]="td[key]" ></span></h5>
         </td>
       </tr>
     </tbody>
