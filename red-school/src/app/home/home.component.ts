@@ -13,7 +13,7 @@ import {  homePageScript,
   ogHomePage,
   script,
   twitterHomePage,} from '../data/script';
-  import { CanonicalService } from "../services/canonical.service";
+  // import { CanonicalService } from "../services/canonical.service"; 
 import { FetchDataService } from "../api-bundle/services/fetch-data.service";
 
 @Component({
@@ -54,7 +54,7 @@ export class HomeComponent implements OnInit {
     private _renderer2: Renderer2,
     private metaService: MetaService,
     private uaParserService: UaParserService,
-    private canonical: CanonicalService,
+    // private canonical: CanonicalService, 
     private fetchDataService: FetchDataService,
     @Inject(DOCUMENT) private _document: any,
   ) {
@@ -80,7 +80,7 @@ export class HomeComponent implements OnInit {
       name: 'description',
       content: `${this.homePageContent}`
     });
-    this.canonical.create();
+    // this.canonical.create(); 
     this.titleService.setTitle(`${this.homePageTitle}`);
     this.metaService.createCanonicalURL();
 
