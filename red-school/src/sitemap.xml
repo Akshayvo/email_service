@@ -2,37 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
   <url>
     <loc>https://www.redschoolstorage.com</loc>
-    <lastmod>2018-09-25</lastmod>
+    <lastmod>2022-04-01</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.redschoolstorage.com/view-rates</loc>
-    <lastmod>2018-09-25</lastmod>
+    <loc>https://www.redschoolstorage.com/pennsylvania/morgantown/view-rates</loc>
+    <lastmod>2022-04-01</lastmod>
     <priority>0.9</priority>
   </url>
    <url>
     <loc>https://www.redschoolstorage.com/pay-rent/rent-sub/login</loc>
-    <lastmod>2018-09-25</lastmod>
+    <lastmod>2022-04-01</lastmod>
     <priority>0.9</priority>
   </url>
    <url>
     <loc>https://www.redschoolstorage.com/pay-rent/rent-sub/forgotPassword</loc>
-    <lastmod>2018-09-25</lastmod>
+    <lastmod>2022-04-01</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.redschoolstorage.com/unit-sizer</loc>
+    <lastmod>2022-04-01</lastmod>
     <priority>0.9</priority>
   </url>
    <url>
     <loc>https://www.redschoolstorage.com/pay-rent/rent-sub/payment</loc>
-    <lastmod>2018-09-25</lastmod>
+    <lastmod>2022-04-01</lastmod>
     <priority>0.9</priority>
   </url>
    <url>
-    <loc>https://www.redschoolstorage.com/storage-tips</loc>
-    <lastmod>2018-09-25</lastmod>
+    <loc>https://www.redschoolstorage.com/pennsylvania/morgantown/storage-tips</loc>
+    <lastmod>2022-04-01</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://red-school-staging.netlify.app/contact-us</loc>
-    <lastmod>2018-09-25</lastmod>
+    <loc>https://www.redschoolstorage.com/contact-us</loc>
+    <lastmod>2022-04-01</lastmod>
     <priority>0.9</priority>
   </url>
 </urlset>
