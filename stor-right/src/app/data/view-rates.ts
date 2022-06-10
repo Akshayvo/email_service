@@ -22,12 +22,12 @@ export const th = [
   // {
   //   data: 'Deposit'
   // },
-  // {
-  //   data: `Reserve a Unit`
-  // },
   {
-    data: `Move In`
+    data: `Reserve a Unit`
   },
+  // {
+  //   data: `Move In`
+  // },
   // {
   //   data: `Climate Control`
   // },
