@@ -1,0 +1,23 @@
+<div class="contentHolder" >
+  <div class="container pb-5 ">
+    <h1 class="py-5 text-center">{{viewRatesHeading}}</h1>
+    <div class="row bg-light background-padding">
+      <div class=" col-lg-12 col-md-12 coming p-3" >
+        <router-outlet></router-outlet>
+      </div>
+      <div class="row">
+      <div class="col-lg-6 col-md-6 p-4" [class.col-lg-12]="openComponent">
+        <h2 class="view-rate-heading">Amenities</h2>
+        <img src="{{imageBaseUrl}}/climate-controlled-self-storage-units.{{imagetype}}"
+        alt="{{viewRatesAltText}}" class="sectionImage" height='473'width='100%'/>
+      </div>
+        <div class="col-lg-6 col-md-6 p-3">
+          <p class="view-rate-text text-justify" *ngFor="let viewRates of viewRates">
+            {{viewRates.p}}
+          </p>
+          <a class="btn btn-lg btn-primary" (click)="navigate('/storage-tips')" role="button">Storage tips</a>
+        </div>
+    </div>
+    </div>
+  </div>
+</div>

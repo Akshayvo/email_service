@@ -1,0 +1,118 @@
+
+
+@import "../../../styles.scss";
+
+.display-content {
+  display: contents;
+}
+
+.view-rates {
+  background-color: #edf1ee;
+  padding: 64px;
+}
+
+
+
+table {
+  width: -webkit-fill-available;
+
+  thead {
+    background: $secondary;
+    th {
+      color: $white;
+      font-size: 1rem;
+    }
+  }
+
+  tbody {
+    tr:nth-child(even) {
+      background-color: #dcdcdc;
+    }
+
+    tr {
+      td {
+
+        button {
+          font-size: 0.8rem;
+          min-width: 120px;
+        }
+
+        .btn {
+          min-width: 120px;
+          font-size: 0.9rem;
+          padding: 0.2rem 0.8rem;
+        }
+
+        .btn-primary {
+          background-color: #3f3c3c !important;
+          border-color: #212121 !important;
+        }
+      }
+    }
+  }
+}
+
+.loader {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid $secondary;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.display {
+  display: none;
+}
+// table style
+
+.view-rate-heading {
+  display: none;
+}
+
+.contentHolder {
+  // margin-top: 100px;
+  h1 {
+    margin-block-end: 0;
+  }
+}
+
+.background-padding {
+  padding: 64px;
+}
+
+@media only screen and (max-width: 767px) and (min-width: 601px) {
+  .view-rates {
+    padding: 40px;
+  }
+
+  .view-rates-padding {
+    padding-top: 24px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .view-rates {
+    background-color: #edf1ee;
+    padding: 16px 0;
+  }
+
+
+  img {
+    width: 100%;
+  }
+
+  .background-padding {
+    padding: 20px;
+  }
+
+  .view-rates-padding {
+    padding-top: 24px;
+  }
+}

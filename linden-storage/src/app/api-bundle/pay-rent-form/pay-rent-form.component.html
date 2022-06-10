@@ -1,0 +1,292 @@
+<div class="payRent">
+  <h2 class="pb-1">Payment</h2>
+  <form [formGroup]="payRentForm" (ngSubmit)="onSubmit()" class="pt-3">
+  <strong ><i  *ngIf="showloaderForPayment">Processing payment, please wait...</i></strong>
+  <strong><i *ngIf="invalidPayment">{{invalidPayment}}</i></strong>
+  <div
+    [class.loaderForPayment]="showloaderForPayment || showLoader"
+  >
+  </div>
+  <div formGroupName="objPayment" class="pt-3">
+    <div class="row">
+      <div class="col-md-6">
+        <div formGroupName="PayType" class="row">
+          <div  class="form-group col-lg-12">
+            <label for="lstPayTypes">Card Type*</label>&nbsp;
+            <select class="form-control" formControlName="PayTypeDescription" 
+            (change)="selectChangeHandler($event)"
+            [ngClass]="{ 'is-invalid': submitted && f.objPayment['controls'].PayType['controls'].PayTypeDescription.errors }"
+            >
+              <option *ngFor="let lstPayType of lstPayTypes"
+              [value]="lstPayType?.PayTypeDescription"
+              >
+                {{lstPayType.PayTypeDescription}}
+              </option>
+            </select>
+            <div *ngIf="submitted && f.objPayment['controls'].PayType['controls'].PayTypeDescription.errors" class="invalid-feedback">
+                <small class="form-text text-muted" *ngIf="f.objPayment['controls'].PayType['controls'].PayTypeDescription.errors.required">
+                  Please fill out this field
+                </small>
+            </div>
+          </div>
+          <div class="form-group">
+              <input type="hidden" formControlName="PayTypeID" [value]="PayTypeIDValue" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-lg-12"  *ngIf="navigateToReserve">    
+            <label>Total Reservation Fee</label>&nbsp;
+            <input type="text" class="form-control" formControlName="PaymentAmount" readonly  [value]="TotalReserveAmount"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-lg-12 " *ngIf="navigateToMoveIn">    
+            <label>Total Move In Fee</label>&nbsp;
+            <input type="text" class="form-control" formControlName="PaymentAmount" readonly  [value]="totalMoveInAmount"/>
+          </div>
+        </div>
+        <div *ngIf="!navigateToReserve && !navigateToMoveIn"> 
+          <div class="form-group display">
+            <label>Amount*</label>
+            <div>
+              <label>&nbsp;
+                <input type="radio" [value]="balance" id="1" (change)="handleChange($event)"  name="radio-btn" [checked]="balance > 0 || !blnAllowPartialPayments">
+                <span class="loader" *ngIf="balance == null"></span>
+                <!-- *ngIf="balance == null" -->
+                <span>Balance Due</span>&nbsp; <span class="custom-balance-width" *ngIf="balance < 0 ; else other"> (${{displayBalance | number : '1.2-2'}}) </span>
+                <ng-template #other ><span *ngIf="balance >= 0">$</span>{{displayBalance | number : '1.2-2'}}</ng-template>
+              </label><br/>
+
+              <div *ngIf="blnAllowPartialPayments">
+              <label >&nbsp;
+                <input type="radio" [value]="otherValue" id="2" (change)="handleChange($event)"  name="radio-btn" [checked]="balance <= 0">
+                  <span>Other Amount</span>
+              </label>
+              &nbsp;
+
+              <span *ngIf="showInput == true ">
+                <input type="number"  name="radio-btn" [value]="otherValue" (keyup)="onKeyUp($event)">
+              </span>
+              </div>
+            </div>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="modal-custom-style modal-position">
+                <!-- Button trigger modal -->
+              <button type="button" class="btn  btn-link ml-4" data-toggle="modal" data-target="#exampleModalLong">
+                Balance Detail
+              </button>
+  
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLsongTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle"> Balance Detail</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div>
+                        <span>Balance</span> &nbsp; <span class="custom-balance-width" *ngIf="balance < 0 ; else other"> (${{displayBalance | number : '1.2-2'}}) </span>
+                        <ng-template #other ><span *ngIf="balance >= 0">$</span>{{displayBalance | number : '1.2-2'}}</ng-template>
+                      </div>
+                      <div>
+                        Last payment received: &nbsp;{{lastPaymentOn}}
+                      </div>
+                      <div>
+                          Last payment amount: <span *ngIf="lastPaymentAmount != null">$</span>{{lastPaymentAmount | number : '1.2-2'}}
+                      </div>
+                      <div  class="py-3"><strong>Detail:</strong></div>
+                      <div class="table">
+                        <table>
+                          <thead>
+                              <tr >
+                                <th colspan="3" class="pr-2 py-1" >From Date</th>
+                                <th colspan="3" class="px-2 py-1" >To Date</th>
+                                <th colspan="3" class="px-2 py-1" >Description</th>
+                                <th colspan="3" class="px-2 py-1 text-center" >Amount</th>
+                                <th colspan="3" class="px-2 py-1 text-center" >Amount Owed</th>
+                                <th colspan="3" class="pl-2 py-1" >Comments</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                            <tr *ngFor="let UnpaidAR of UnpaidAR">
+                              <td  colspan="3" class="pr-2 py-1">
+                                  {{UnpaidAR.FromDate}}
+                              </td>
+                              <td  colspan="3" class="px-2 py-1">
+                                  {{UnpaidAR.ToDate}}
+                              </td>
+                              <td  colspan="3" class="px-2 py-1">
+                                  {{UnpaidAR.Description}}
+                              </td>
+                              <td  colspan="3" class="px-2 py-1 text-center">
+                                  ${{UnpaidAR.Amount | number : '1.2-2'}}
+                              </td>
+                              <td  colspan="3" class="px-2 py-1 text-center" *ngIf="UnpaidAR.AmountOwed < 0; else other">
+                                  (${{UnpaidAR.amountOwed | number : '1.2-2'}})
+                              </td>
+                              <ng-template #other><td class="px-2 py-1 text-center">${{UnpaidAR.AmountOwed}}</td></ng-template>
+                              <td  colspan="3" class="pl-2 py-1">
+                                  {{UnpaidAR.Comments}}
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </span>
+            </div>
+          </div>
+
+          <div class="row"  *ngIf="amountToPay > 0 && surcharge > 0 ">
+            <div class="col-lg-12 form-group readonly-form-control">
+              <label>Surcharge: </label>&nbsp;
+              <!-- <input class="form-control " readonly type="text" [value]="surcharge"/> -->
+              <span>${{surcharge | number : '1.2-2'}}</span>
+            </div>
+          </div>
+
+          <div class="row"  *ngIf="amountToPay  > 0 && surcharge > 0">
+            <div class="col-lg-12 form-group readonly-form-control">
+              <label>Amount to pay: </label>&nbsp;
+              <!-- <input class="form-control" readonly type="text" [value]="amountToPay" /> -->
+              <span>${{amountToPay | number : '1.2-2'}}</span>
+            </div>
+          </div>
+        
+          <div class="form-group row">
+            <div class="col-lg-12">
+                <label>Cardholder's Name*</label>&nbsp;
+                <input type="text" class="form-control" formControlName="CCAccountName"
+                [ngClass]="{ 'is-invalid': submitted && f.objPayment['controls'].CCAccountName.errors }"
+              />
+              <div *ngIf="submitted && f.objPayment['controls'].CCAccountName.errors" class="invalid-feedback">
+                <small class="form-text text-muted" *ngIf="f.objPayment['controls'].CCAccountName.errors.required">
+                  Please fill out this field
+                </small>
+              </div>
+            </div>
+          </div>       
+        
+          <div class="row">
+            <div class="form-group col-lg-6">
+              <label>Credit Card Number*</label>&nbsp;
+              <input  class="form-control" type="text" formControlName="CCAccountNumber"  (keyup)="autoCardType($event)"
+              [ngClass]="{ 'is-invalid': submitted && f.objPayment['controls'].CCAccountNumber.errors }"
+              />
+              <div *ngIf="submitted && f.objPayment['controls'].CCAccountNumber.errors" class="invalid-feedback">
+                  <small class="form-text text-muted" *ngIf="f.objPayment['controls'].CCAccountNumber.errors.required">
+                    Please fill out this field
+                  </small>
+              </div>
+            </div>
+            <div class="form-group col-lg-6">
+              <label>Expiration Date*</label>&nbsp;
+                <div  class="display-expiration-date">
+                  <div class="">
+                    <select  class="form-control custom-style " formControlName="CCExpirationMonth" [id]="month?.id"
+                    [ngClass]="{ 'is-invalid': submitted && f.objPayment['controls'].CCExpirationMonth.errors }">
+  
+                        <option *ngFor="let month of month"
+                        [value]="month?.id"
+                        >
+                        {{month.label}}
+                        </option>
+                    </select>
+                    <div *ngIf="submitted && f.objPayment['controls'].CCExpirationMonth.errors" class="invalid-feedback">
+                        <small class="form-text text-muted" *ngIf="f.objPayment['controls'].CCExpirationMonth.errors.required">
+                          Please fill out this field
+                        </small>
+                    </div>
+                  </div>
+                  &nbsp;
+                  <div class="">
+                    <select class="form-control custom-style" formControlName="CCExpirationYear" [id]="year"
+                    [ngClass]="{ 'is-invalid': submitted && f.objPayment['controls'].CCExpirationYear.errors }">
+                    >
+                        <option *ngFor="let year of year"
+                        [value]="year.id"
+                        >
+                        {{year.label}}
+                        </option>
+                    </select>
+                    <div *ngIf="submitted && f.objPayment['controls'].CCExpirationYear.errors" class="invalid-feedback">
+                        <small class="form-text text-muted" *ngIf="f.objPayment['controls'].CCExpirationYear.errors.required">
+                          Please fill out this field
+                        </small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="row">
+              <div class="form-group col-lg-12">
+                <label>CVV2</label>&nbsp;
+                <input type="text" class="form-control" formControlName="CCAccountCVV2" />
+              </div>
+            </div>
+      
+            <div class="row">
+              <div class="form-group col-lg-12">
+                <label>Cardholder's Address*</label>&nbsp;
+                <input type="text" class="form-control" formControlName="CCAccountBillingAddress"
+                [ngClass]="{ 'is-invalid': submitted && f.objPayment['controls'].CCAccountBillingAddress.errors }"
+                />
+                <div *ngIf="submitted && f.objPayment['controls'].CCAccountBillingAddress.errors" class="invalid-feedback">
+                    <small class="form-text text-muted" *ngIf="f.objPayment['controls'].CCAccountBillingAddress.errors.required">
+                      Please fill out this field
+                    </small>
+                </div>
+              </div>
+            </div>
+      
+            <div class="row">
+              <div class="form-group col-lg-12">
+                <label>Zip Code*</label>&nbsp;
+                <input type="text" class="form-control" formControlName="CCAccountZIP"
+                [ngClass]="{ 'is-invalid': submitted && f.objPayment['controls'].CCAccountZIP.errors }"
+                />
+                <div *ngIf="submitted && f.objPayment['controls'].CCAccountZIP.errors" class="invalid-feedback">
+                    <small class="form-text text-muted" *ngIf="f.objPayment['controls'].CCAccountZIP.errors.required">
+                      Please fill out this field
+                    </small>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="checkbox" formControlName="SignUpForAutoPay" (change)="toggleEvent(IsAutoPaymentsEnabled)"  [checked]="IsAutoPaymentsEnabled" /> &nbsp;
+              <label>Sign up for Auto Pay</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-right">
+        <button *ngIf="navigateToMoveIn || navigateToReserve"  (click)="navigateToConfirmation()" 
+        class="btn btn-primary col-lg-3 col-sm-12 mr-lg-4 mr-sm-0 mb-lg-0 mb-sm-2 mb-2">
+          Go Back
+        </button>
+        <button type="submit" *ngIf="!navigateToMoveIn && !navigateToReserve" 
+        class="btn btn-primary col-lg-3 col-sm-12" [disabled]="showloaderForPayment">
+          Make a Payment
+        </button>
+        <button type="submit" *ngIf="navigateToMoveIn" [disabled]="makePaymentForUnit"
+        class="btn btn-primary col-lg-3 col-sm-12">
+          Pay and Complete Move-In
+        </button>
+        <button type="submit" *ngIf="navigateToReserve" class="btn btn-primary col-lg-3 col-sm-12" [disabled]="makePaymentForUnit">
+          Make a Payment
+        </button>
+        <button type="button" *ngIf="tenantTokenExist" [disabled]="showLoader"  
+        (click)="signOut(logOut)" class="btn btn-primary col-lg-3 col-sm-12 ml-lg-4 ml-sm-0 mt-lg-0 mt-sm-2 mt-2">LogOff</button>
+      </div>
+    </form>
+</div>
+  

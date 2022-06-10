@@ -1,0 +1,786 @@
+@import "../../styles.scss";
+
+.featuresList-style {
+  color: #2e36d1;
+  font-size: 1.5rem;
+  font-weight: 400;
+
+  h2 {
+    font-weight: 400;
+    font-size: 1.5rem !important;
+  }
+}
+
+.additional-text{
+  display: none;
+}
+
+.extra-info{
+  margin-left: 8%;
+  padding: 10px;
+  font-size: 18px;
+}
+
+
+.contact-details {
+  h4 {
+    font-size: 1rem;
+  }
+}
+
+
+.jumbotron-background-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Linden_Self_Storage/webp/linden-storage-169-jumbotron.webp");
+}
+
+.jumbotron-background-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Linden_Self_Storage/jpg/linden-storage-169-jumbotron.jpg");
+}
+
+.display-contact {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 1.9;
+  
+}
+
+.jumbotron {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+  height: 80vh;
+  color: $white;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.home-map {
+  iframe {
+    border: 2px solid white;
+  }
+}
+
+.feature-icon-style {
+  padding: 24px;
+  text-align: center;
+
+  img {
+    padding: 10px;
+    height: 100px;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+}
+
+.contact-links {
+ 
+  a {
+    color: black;
+  
+  }
+}
+
+.content-align {
+  text-align: right;
+}
+
+.getStarted {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: $white;
+  text-align: center;
+
+  h2 {
+    font-size: 2.25rem;
+  }
+}
+
+.disp {
+  text-align: left;
+  color: $white;
+
+  h2 {
+    font-size: 2.3rem;
+    font-weight: 600;
+  }
+}
+
+.jumbotron-top {
+  height: 80vh;
+}
+
+.jumbotron-bottom {
+  height: 25vh;
+  display: flex;
+  align-items: center;
+}
+
+.jumbotorn-skew-style {
+  width: 75%;
+  float: left;
+  left: -25%;
+  position: relative;
+  transform: skew(15deg);
+  height: 100%;
+
+  a {
+    margin-top: 20px;
+  }
+}
+
+.jumbotorn-skew-text {
+  transform: skew(0deg);
+  width: 500px;
+  position: absolute;
+  top: 30%;
+
+  .btn-outline-primary {
+    margin: 10px;
+  }
+}
+
+.aboutUsHeading{
+  font-size: 19px;
+}
+
+@media only screen and (min-width: 1200px) and (max-height: 750px) and (min-height: 640px) {
+  .disp {
+    h2 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+
+  .jumbotorn-skew-text {
+    a {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-height: 639px) and (min-height: 480px) {
+  .jumbotron {
+    height: 100vh;
+  }
+
+  .disp {
+    h2 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+
+  .jumbotron-top {
+    height: 100vh;
+  }
+
+  .jumbotron-bottom {
+    height: 270px;
+  }
+
+  .jumbotorn-skew-text {
+    a {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-height: 479px) {
+  .jumbotron {
+    text-align: center;
+    background-attachment: unset;
+    background-position: center left;
+    height: 100vh;
+
+    h1 {
+      font-size: 2em;
+    }
+
+    .container {
+      height: 100%;
+      display: flex;
+    }
+  }
+
+  .disp {
+    display: none;
+  }
+
+  .button-width {
+    max-width: 200px;
+    margin: auto;
+  }
+
+  .jumbotorn-skew-style {
+    transform: skew(0deg);
+    width: 100%;
+    left: auto;
+    height: 90px;
+    bottom: 0;
+    position: absolute;
+  }
+
+  .jumbotorn-skew-text {
+    width: 100%;
+    left: 0;
+    top: auto;
+    bottom: 10px;
+
+    a {
+      font-size: 1.25rem;
+      min-width: 200px;
+    }
+  }
+
+  .jumbotorn-button {
+    padding: 10px;
+  }
+
+  .jumbotron-top {
+    height: 100vh;
+  }
+
+  .jumbotron-bottom {
+    height: 270px;
+  }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .jumbotorn-skew-text {
+    width: 444px;
+
+    a {
+      font-size: 1rem;
+    }
+
+    .disp {
+      h2 {
+        font-size: 2.1rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) and (max-height: 750px) and (min-height: 640px) {
+  .feature-icon-style {
+    img {
+      height: 80px;
+    }
+
+    h2 {
+      font-size: 0.8rem;
+    }
+  }
+
+  .jumbotorn-skew-text {
+    top: 25%;
+
+    .disp {
+      h2 {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) and (max-height: 639px) and (min-height: 480px) {
+  .jumbotron {
+    height: 100vh;
+  }
+
+  .jumbotorn-skew-text {
+    .disp {
+      h2 {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .jumbotron-top {
+    height: 100vh;
+  }
+
+  .jumbotron-bottom {
+    height: 270px;
+  }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) and (max-height: 479px) {
+  .jumbotron {
+    text-align: center;
+    background-attachment: unset;
+    background-position: center left;
+    height: 100vh;
+
+    h1 {
+      font-size: 2em;
+    }
+
+    .container {
+      height: 100%;
+      display: flex;
+    }
+  }
+
+  .disp {
+    display: none;
+  }
+
+  .button-width {
+    max-width: 200px;
+    margin: auto;
+  }
+
+  .jumbotorn-skew-style {
+    transform: skew(0deg);
+    width: 100%;
+    left: auto;
+    height: 90px;
+    bottom: 0;
+    position: absolute;
+  }
+
+  .jumbotorn-skew-text {
+    width: 100%;
+    left: 0;
+    top: auto;
+    bottom: 10px;
+
+    a {
+      font-size: 1.25rem;
+      min-width: 200px;
+    }
+  }
+
+  .jumbotorn-button {
+    padding: 10px;
+  }
+
+  .feature-icon-style {
+    padding: 12px 24px;
+
+    h2 {
+      font-size: 0.8rem;
+    }
+  }
+
+  .jumbotron-top {
+    height: 100vh;
+  }
+
+  .jumbotron-bottom {
+    height: 270px;
+  }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .jumbotorn-skew-style {
+    width: 85%;
+  }
+
+  .jumbotorn-skew-text {
+    width: 410px;
+
+    a {
+      font-size: 1rem;
+    }
+
+    .disp {
+      h2 {
+        font-size: 1.8rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 700px) and (min-height: 480px) {
+  .jumbotron-top {
+    height: 100vh;
+  }
+
+  .jumbotron {
+    height: 100vh;
+  }
+
+  .jumbotron-bottom {
+    height: 280px;
+  }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 479px) {
+  .jumbotron {
+    text-align: center;
+    background-attachment: unset;
+    background-position: center left;
+    height: 100vh;
+
+    h1 {
+      font-size: 2em;
+    }
+
+    .container {
+      height: 100%;
+      display: flex;
+    }
+  }
+
+
+  .feature {
+    display: none;
+  }
+
+  .disp {
+    display: none;
+  }
+
+  .button-width {
+    max-width: 200px;
+    margin: auto;
+  }
+
+  .jumbotorn-skew-style {
+    transform: skew(0deg);
+    width: 100%;
+    left: auto;
+    height: 90px;
+    bottom: 0;
+    position: absolute;
+  }
+
+  .jumbotorn-skew-text {
+    width: 100%;
+    left: 0;
+    top: auto;
+    bottom: 10px;
+
+    a {
+      font-size: 1.25rem;
+      min-width: 200px;
+    }
+  }
+
+  .jumbotorn-button {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 601px) {
+  .jumbotron-top {
+    height: 100vh;
+  }
+
+  .jumbotron {
+    height: 100vh;
+  }
+
+  .jumbotron-bottom {
+    height: 320px;
+  }
+
+  .jumbotorn-skew-style {
+    width: 90%;
+  }
+
+  .jumbotorn-skew-text {
+    top: 45%;
+    width: 340px;
+
+    a {
+      min-width: 140px;
+      font-size: 0.8rem;
+    }
+
+    .disp {
+      p {
+        font-size: 0.8rem;
+      }
+
+      h2 {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 601px) and (max-height: 600px) {
+  .jumbotron {
+    text-align: center;
+    background-attachment: unset;
+    background-position: center left;
+    height: 100vh;
+
+    h1 {
+      font-size: 2em;
+    }
+
+    .container {
+      height: 100%;
+      display: flex;
+    }
+  }
+
+  .jumbotron-top {
+    height: 100vh;
+  }
+
+  .jumbotron-bottom {
+    height: 0;
+  }
+
+  .feature {
+    display: none;
+  }
+
+  .disp {
+    display: none;
+  }
+
+  .jumbotorn-skew-style {
+    transform: skew(0deg);
+    width: 100%;
+    left: auto;
+    height: 90px;
+    bottom: 0;
+    position: absolute;
+  }
+
+  .jumbotorn-skew-text {
+    width: 100%;
+    left: 0;
+    top: auto;
+    bottom: 10px;
+
+    a {
+      font-size: 1.25rem;
+      min-width: 200px;
+    }
+  }
+
+  .jumbotorn-button {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 420px) {
+  .jumbotron {
+    text-align: center;
+    background-attachment: unset;
+    background-position: center left;
+    height: 100vh;
+  }
+
+
+
+  .feature {
+    display: none;
+  }
+
+  .disp {
+    display: none;
+  }
+
+  .jumbotorn-skew-style {
+    transform: skew(0deg);
+    width: 100%;
+    left: auto;
+    height: 90px;
+    bottom: 0;
+    position: absolute;
+  }
+
+  .jumbotorn-skew-text {
+    width: 100%;
+    left: 0;
+    top: auto;
+    bottom: 10px;
+  }
+
+  .jumbotorn-button {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 429px) {
+  .jumbotron {
+    text-align: center;
+    // background-attachment: unset;
+    // background-position: right 37% top 10px;
+    background-size: contain;
+    height: 80vh;
+  }
+
+  .extra-info{
+    margin-right: 30px;
+    color: green;
+    text-align: center;
+    padding: 0;
+  }
+
+  .jumbotron-top {
+    height: 40vh;
+  }
+
+
+  .feature {
+    display: none;
+  }
+
+  .disp {
+    display: none;
+  }
+
+  // .jumbotorn-skew-style {
+  //   transform: skew(0deg);
+  //   width: 100%;
+  //   left: auto;
+  //   height: 150px;
+  //   bottom: 0;
+  //   position: absolute;
+  // }
+  .jumbotorn-skew-style{
+    display: none;
+  }
+
+  .home-map{
+    margin-top: 0vh
+  }
+  
+  .center-text{
+    color: green;
+    margin-top: 10px;
+    font-size: 18px;
+
+  }
+
+  .additional-text{
+    display: block;
+    color: green;
+    position: relative;
+    top: -7vh;
+    padding: 2%;
+    text-align: center;
+  }
+
+  .jumbotorn-skew-text {
+    width: 100%;
+    left: 0;
+    top: 65vh;
+    bottom: 2px;
+
+    .btn-outline-primary {
+      margin-right: 0;
+      margin-top: 8px;
+    }
+
+    .btn-primary {
+      margin-top: 8px;
+    }
+
+    .jumbotorn-button {
+      padding: 15px;
+      background-color: white;
+    }
+  }
+}
+
+// @media only screen and (min-width: 500px){
+//   .jumbotorn-skew-text{
+//     display: none;
+//   }
+// }
+
+@media only screen and (max-width: 370px){
+  .jumbotron {
+    text-align: center;
+    // background-attachment: unset;
+    // background-position: right 37% top 10px;
+    background-size: contain;
+    height: 100vh;
+  }
+
+  .jumbotorn-skew-text {
+    width: 100%;
+    left: 0;
+    top: 75vh;
+    bottom: 2px;
+
+    .btn-outline-primary {
+      margin-right: 0;
+      margin-top: 8px;
+    }
+  }
+  .additional-text{
+    display: block;
+    color: green;
+    position: relative;
+    top: -2vh;
+    margin: 2vh;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 350px){
+  .jumbotron {
+    text-align: center;
+    // background-attachment: unset;
+    // background-position: right 37% top 10px;
+    background-size: contain;
+    height: 120vh;
+  }
+  .additional-text{
+    display: block;
+    color: green;
+    position: relative;
+    top: -10vh;
+    margin: 7vh;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 340px){
+  .jumbotron {
+    text-align: center;
+    // background-attachment: unset;
+    // background-position: right 37% top 10px;
+    background-size: contain;
+    height: 110vh;
+  }
+
+  .jumbotorn-skew-text {
+    width: 100%;
+    left: 0;
+    top: 85vh;
+    bottom: 2px;
+
+    .btn-outline-primary {
+      margin-right: 0;
+      margin-top: 8px;
+    }
+  }
+  .additional-text{
+    display: block;
+    color: green;
+    position: relative;
+    top: 2vh;
+    margin: 5vh;
+    text-align: center;
+  }
+}
