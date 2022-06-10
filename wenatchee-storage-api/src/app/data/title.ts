@@ -28,7 +28,7 @@ export const reservePageContent = ``;
 export const payRentPageTitle = `Pay Rent | South Wenatchee Self Storage`;
 export const payRentPageContent = `Pay your bill online 24 hours a day, 7 days a week with our easy tenant portal! Just follow these instructions, or you can call our offices to learn more!`;
 
-export const storageTipsTitle = `Storage Tips | Storage Plus of Baldwin`;
+export const storageTipsTitle = `Storage Tips | South Wenatchee Self Storage`;
 export const storageTipsContent = `Take advantage of our decades of self storage experience and follow these easy storage tips! You'll be glad you did!`;
 
 export const unitSizerPageTitle = ``;
