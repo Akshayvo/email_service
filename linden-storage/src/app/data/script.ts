@@ -25,29 +25,29 @@ socialLinks.forEach(links => {
 
 export const script = {               // Please fill this script according to facility's information
     imagesHomePage: [
-      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Linden_Self_Storage/jpg/linden-storage-jumbotron.jpg", // 1:1
-      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Linden_Self_Storage/jpg/linden-storage-jumbotron.jpg", // 4:3
-      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Linden_Self_Storage/jpg/linden-storage-jumbotron.jpg" // 16:9
+      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/390_Self_Storage/390-self-storage-front-office.jpg", // 1:1
+      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/390_Self_Storage/390-self-storage-front-office.jpg", // 4:3
+      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/390_Self_Storage/390-self-storage-front-office.jpg" // 16:9
      ],
      telephone: contact[contactIndex].data,
-     map: "https://goo.gl/maps/gSoLkhGtWTtEa6DN7",
-     description: "Linden Self Storage is a state-of-the-art facility in Pittsford, NY. Our three Greater Rochester self storage facilities make for efficient operations with minimal overhead. You'll pay rent only for the actual number of days you need space vs. rent for the entire month. As a locally held and operated company, we're focused to provide <b>Affordability, Security, Convenience and Storage Solutions</b> for our patrons.",
-     streetAddress: "870 Linden Ave",
+     map: "https://www.google.com/maps?ie=UTF8&hq&ll=44.264137,-88.3540592",
+     description: "A superb collection of fine gifts and clothing to accent your stay in Mexico Beach.",
+     streetAddress: "142 Buell Rd",
      state: "New York",
      addressLocality: "Rochester",
      addressRegion: "NY",
-     postalCode: "14625",
+     postalCode: "14624",
      addressCountry: "US",
      id: environment.websiteUrl || "",
      paymentAccepted:  "Cash, Check, Credit Card, Debit Card, Online Credit Card, Online Debit Card",
      currenciesAccepted: "USD",
-     ratingValue: "4.6",
+     ratingValue: "4.8",
      bestRating: "5",
-     reviewCount: "31",
-     latitude: 43.1227,
-     longitude: -77.4894,
-     openingHours: ['Mon-Fri:9.00AM-4:00PM'],
-     priceRange: '$55-$290'
+     reviewCount: "6",
+     latitude: 43.136031,
+     longitude: 77.663581,
+     openingHours: ["9AM-4PM"],
+     priceRange: '$5-$200'
 };
 
 export const homePageScript = [ {
