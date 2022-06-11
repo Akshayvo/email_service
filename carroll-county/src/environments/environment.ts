@@ -15,7 +15,7 @@ export const environment = {
   VERSION: require('../../package.json').version,
   facilityName: 'Carroll County Storage',
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: `https://www.carrollcountystorage.com`
+  websiteUrl: `https://carrollcountystorage.com`
 };
 
 /*
