@@ -89,19 +89,19 @@ const reviewURL = ``
     { path: 'unit-sizer', component: UnitSizerComponent },
     { path: 'testimonials', component: TestimonialsComponent },
     { path: 'privacy-policy', component: PrivacyPolicyComponent },
-    // {
-    //   path: `${environment.locationName}/view-rates`,
-    //   component: ViewRatesComponent,
-    //   children: [
-    //     { path: '', component: ViewRatesPageComponent },
-    //     { path: 'reserve', component: ReserveUnitFormComponent },
-    //     { path: 'move-in', component: ReserveUnitFormComponent },
-    //     { path: 'confirmation', component: ConfirmationDataComponent },
-    //     { path: 'payReservationCharges', component: PayRentFormComponent },
-    //     { path: 'payMoveInCharges', component: PayRentFormComponent },
-    //     { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
-    //   ]
-    //  },
+    {
+      path: `${environment.locationName}/view-rates`,
+      component: ViewRatesComponent,
+      children: [
+        { path: '', component: ViewRatesPageComponent },
+        { path: 'reserve', component: ReserveUnitFormComponent },
+        { path: 'move-in', component: ReserveUnitFormComponent },
+        { path: 'confirmation', component: ConfirmationDataComponent },
+        { path: 'payReservationCharges', component: PayRentFormComponent },
+        { path: 'payMoveInCharges', component: PayRentFormComponent },
+        { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
+      ]
+     },
      {
       path: `${environment.locationName}/rent-now`,
       component: ViewRatesComponent,
