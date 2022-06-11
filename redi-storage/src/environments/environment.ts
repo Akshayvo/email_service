@@ -18,7 +18,7 @@ export const environment = {
   facilityName: 'Redi Storage - Windham',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: 'https://www.windham.redistorage.com',
+  websiteUrl: 'https://windham.redistorage.com',
   // APIKey: `dzJ0OVc1SjkqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29593 
   APIKey: `dzJ0OVc0SjYqMk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28465
   
