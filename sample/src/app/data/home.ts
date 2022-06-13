@@ -64,25 +64,25 @@ export const feature = [
     {
         // tslint:disable-next-line:max-line-length
         label: 'Convenient Location',
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg`,
+        path: `../../assets/images/location.svg`,
         alt: 'Icon art displaying a location pin'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg`,
+        path: `../../assets/images/support.svg`,
         label: 'Stellar Customer Service',
         alt: 'Customer Service Representative Icon'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/hand.svg`,
+        path: `../../assets/images/hand.svg`,
         label: 'Affordable Self Storage Rates',
         alt: 'Icon of a hand holding money'
 
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/cctv.svg`,
+        path: `../../assets/images/cctv.svg`,
         label: 'Security Cameras on Premises',
         alt: 'Icon of a security camera'
     },

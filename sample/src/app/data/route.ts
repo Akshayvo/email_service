@@ -13,9 +13,6 @@ import { ForgotPasswordComponent } from '../api-bundle/forgot-password/forgot-pa
 import { AuthGuard } from '../auth-guard/auth.gurad';
 import { ErrorHandlerComponent } from '../error-handler/error-handler.component';
 import { ErrorComponent } from '../error/error.component';
-import { PaymentIframePageComponent } from '../iframe-bundle/payment-iframe-page/payment-iframe-page.component';
-import { ViewRatesIframePageComponent } from '../iframe-bundle/view-rates-iframe-page/view-rates-iframe-page.component';
-import { ReserveUnitIframePageComponent } from '../iframe-bundle/reserve-unit-iframe-page/reserve-unit-iframe-page.component';
 import { ChangePasswordComponent } from '../api-bundle/change-password/change-password.component';
 import { VerifyCodeComponent } from '../api-bundle/verify-code/verify-code.component';
 import { ResetPasswordComponent } from '../api-bundle/reset-password/reset-password.component';
@@ -116,28 +113,6 @@ const reviewURL = ``
       children: childroute
     },
     { path: 'forgot-password', component: ForgotPasswordComponent },
-    { path: 'review', component: HomeComponent,
-      resolve: {
-          url: 'externalUrlRedirectResolver'
-      },
-      data: {
-          externalUrl: `${reviewURL}`
-      }
-    },
-    { path: 'error', component: ErrorHandlerComponent },
-    { path: '**', component: ErrorComponent }
-  ];
-
-export const iFrameRoutes = [
-    // Fallback when no prior route is matched
-    { path: '', component: HomeComponent },
-    { path: 'pay-rent', component: PaymentIframePageComponent },
-    { path:  `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
-    { path: `${environment.locationName}/view-rates`, component: ViewRatesIframePageComponent },
-    { path: `${environment.locationName}/reserve-unit`, component: ReserveUnitIframePageComponent },    
-    { path: 'contact-us', component: ContactComponent },
-    { path: 'unit-sizer', component: UnitSizerComponent },
-    { path: 'privacy-policy', component: PrivacyPolicyComponent },
     { path: 'review', component: HomeComponent,
       resolve: {
           url: 'externalUrlRedirectResolver'
