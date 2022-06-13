@@ -1,0 +1,152 @@
+<app-script-hack type="application/ld+json">
+  {{script | json}}
+ </app-script-hack>
+<div class="">
+  <div class="jumbotron-container">
+    <div class="jumbotron-top">
+    <div class="jumbotron px-0 m-0" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
+      <!-- <div class=" jumbotorn-skew-style" [ngClass]="template === 'darkTheme' ? 'bg-translucent-dark' : 'bg-translucent-light'">
+      </div> -->
+      <!-- <div class="container">
+        <div class="jumbotorn-skew-text">
+          <div class="disp" *ngFor="let jumbotron of jumbotron">
+            <h2  class="my-4">
+              {{jumbotron.h1}}
+            </h2>
+          <p class="text-justify">{{jumbotron.blurb}}</p>
+          </div>
+          <div class="jumbotorn-button">
+            <a class="btn btn-lg btn-outline-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>
+            <a class="btn btn-lg btn-primary" (click)="navigate('/reserve-unit')" role="button">Reserve Unit</a></div>
+          </div>
+        </div> -->
+      </div>
+      </div>
+    <div class="jumbotron-bottom">
+      <div class="container">
+        <div class="feature row">
+          <div class="col-md-3 col-3 feature-icon-style" *ngFor="let feature of feature">
+            <img [src]="feature?.path" [alt]="feature?.alt" height="100px"/>
+              <h3 class="feature-text">{{feature.label}}</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="bg-light">
+    <div class="container py-4">
+      <div class="section py-4 m-0">
+        <div class="row">
+          <div class="col-lg-6 py-3 home-map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13797.33024143785!2d-95.6820351!3d30.1704928!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf3a876edf33b109d!2sStorage%20King%20Inc!5e0!3m2!1sen!2sus!4v1597261404060!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen title="homepage map"></iframe> 
+          </div>
+
+          <div class="col-lg-6 py-3">
+            <div class="mb-4">
+              
+              <p>
+                <span *ngFor="let contact of contactDetails">
+                  <span><h4><b>{{contact.label}}</b></h4></span><span class="contact-links" *ngIf="contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
+                    <a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+                  <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
+                </span>
+              </p>
+              <b>Hours:</b>
+              <p>
+                <span *ngFor="let hour of hours">
+                  <b>{{hour.label}}</b>&nbsp;{{hour.data}}<br>
+                </span>
+              </p>
+            </div>
+            <div>
+              <app-tables [tBody]="featuresList"></app-tables>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="section py-5 m-0">
+      <div class="row">
+        <div class="col-lg-6 py-3">
+          <!-- <img src="{{imageBaseUrl}}/outdoor-self-storage-units.{{imagetype}}" width="100%" alt="{{aboutUsAlt}}" class="sectionImage"> -->
+          <app-photos></app-photos>
+        </div>
+        <div class="col-lg-6 py-3">
+          <h1 class="heading pb-4">{{aboutUsHeading}}</h1>
+          <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!--Testimonial-->
+   <div class="bg-light">
+    <div class="container">
+      <div class="row py-5">
+       <div class="col-md-12 text-center">
+          <h2 class="heading pb-4">Testimonials</h2>
+          <div id="demo" class="carousel slide" data-ride="carousel">
+
+              <!-- Indicators -->
+              <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+              </ul>
+            
+              <!-- The slideshow -->
+              <div class="carousel-inner ">
+                <div class="carousel-item py-5 active">
+                  <p>
+                    The owners are so friendly and helpful. They are understanding and always return your calls. We have had our stuff here for over a year. When the flooding was horrible they were actual still good so no damage everywhere around was flooded but it was not.
+                  </p>
+                  <p>
+                    -Ashley Seargeant
+                  </p>
+                </div>
+                <div class="carousel-item py-5">
+                  <p>
+                    We needed a space to park our RV on short notice. Lori was awesome!  She was eager to help and very sweet!  I highly recommend Storage King and Lori! Great customer service!
+                    </p>
+                    <p>
+                      -Glenda Tankersley
+                    </p>
+
+                </div>
+                <div class="carousel-item py-5">
+                  <p>
+                    We needed a storage unit last minute & they were super helpful with getting us one in a timely manner!! I HIGHLY recommend coming here for your storage needs!!!
+                  </p>
+                  <p>
+                    -Jessica Swanson
+                  </p>
+                </div>
+              </div>
+            
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Testimonial section-->
+
+  <div class="getStarted">
+    <div class="get-started">
+    <div class="container">
+      <div class="section py-5 m-0">
+        <div class="row">
+          <div class="col-md-12 py-3">
+            <h2 class="heading pb-4">Get Started</h2>
+            <p class="pb-4">{{gettingStarted}}</p>
+            <a class="btn btn-lg btn-primary" (click)="navigate('/view-rates')" role="button">View Unit Rates</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div> 

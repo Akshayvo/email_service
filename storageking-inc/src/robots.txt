@@ -1,0 +1,5 @@
+# www.robotstxt.org/
+# Allow crawling of all content
+Sitemap: https://www.storagekinginc.com/sitemap.xml
+User-agent: *
+Disallow:/privacy-policy
