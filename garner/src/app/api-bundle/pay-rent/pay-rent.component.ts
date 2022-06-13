@@ -3,6 +3,8 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { DataSharingService } from '../services/data-sharing.service';
 import { tabs } from '../../data/tab';
 import { environment } from '../../../environments/environment';
+import { MetaService } from '../../services/canonical.service';
+
 
 @Component({
   selector: 'app-pay-rent',
@@ -21,6 +23,7 @@ export class PayRentComponent implements OnInit {
   constructor(
     private router: Router,
     private activatedRoute: ActivatedRoute,
+    private metaService: MetaService,
     private dataSharingService: DataSharingService,
   ) {
     if (this.router.url.includes('1321-north-jefferson-st-location')) {
@@ -38,6 +41,7 @@ export class PayRentComponent implements OnInit {
     this.fetchContactDetails();
     this.dataSharingService.paymentNavigation = this.activatedRoute.snapshot.url[1].path;
     localStorage.setItem('paymentNavigationUrl', this.dataSharingService.paymentNavigation);
+    this.metaService.createCanonicalURL();
   }
 
   public fetchContactDetails() {

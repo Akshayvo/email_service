@@ -6,6 +6,8 @@ import { contactsLocation1 } from '../data/contact';
 import { tableHeader, tableData } from '../data/pay-rent';
 import { Router } from '@angular/router';
 import { DataSharingService } from '../api-bundle/services/data-sharing.service';
+import { MetaService } from '../services/canonical.service';
+
 
 @Component({
   selector: 'app-payment',
@@ -26,6 +28,7 @@ export class PaymentComponent implements OnInit {
     private meta: Meta,
     private data: LocationService,
     public router: Router,
+    private metaService: MetaService,
     private  dataSharingService: DataSharingService,
   ) {
     this.meta.addTag({
@@ -40,6 +43,8 @@ export class PaymentComponent implements OnInit {
     this.receiveMessage();
     this.fetchTableHeader();
     this.fetchTableData();
+    this.metaService.createCanonicalURL();
+
 
     // if (!!localStorage.getItem('paymentTab')) {
     //   this.paymentTab = localStorage.getItem('paymentTab');
