@@ -63,7 +63,7 @@ export const contactsLocation1 = [
     {
         id: 1,
         label: 'Facility Address: ',
-        data: '2 canton st baldwinsville ny 13027',
+        data: '6519 Tuckahoe Rd Williamson, NY 14589',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: 'https://goo.gl/maps/PdVq9xjHXGieXPL87'
     },

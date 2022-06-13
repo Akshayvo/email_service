@@ -63,7 +63,7 @@ export const headingReservePageLocation5 = `Are you ready to rent a unit at Fair
 
 export const headingReservePageLocation6 = `Are you ready to rent a unit at Robertsdale`;
 
-export const heading1 = `Storemore Self Storage - Tuckahoe Road Location`;
+export const heading1 = `6519 Tuckahoe Rd`;
 
 export const heading2 = `6588 Pratt Road, Sodus`;
 
