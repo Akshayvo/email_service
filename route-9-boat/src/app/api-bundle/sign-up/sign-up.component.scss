@@ -1,0 +1,11 @@
+@import "../../../styles.scss";
+
+.rent-sub-holder {
+  padding: 64px;
+}
+
+@media only screen and (max-width: 600px) {
+  .rent-sub-holder {
+    padding: 16px;
+  }
+}
