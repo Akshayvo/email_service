@@ -1,0 +1,28 @@
+@import "../../styles.scss";
+
+.footer {
+  color: $black;
+  text-align: center;
+  font-size: 0.7em;
+  background-color: $primary !important;
+}
+
+.secure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.privacy-policy {
+  a {
+    color: $black;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .secure {
+    img {
+      width: 110px;
+    }
+  }
+}
