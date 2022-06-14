@@ -58,7 +58,7 @@
           <ng-template #other_reserve >
             <td   id="reserve" colspan="2" class="py-2 px-4 border text-center" *ngIf="showReserve">
               <!-- <div class="text-center">Currently unavailable. Please call us for more information.</div> -->
-              <button class="ml-2 py-1 buttons text-center" (click)="navigate('/contact-us', lstUnitType )">Reserve</button>
+              <button class="ml-2 py-1 buttons text-center" (click)="navigate('/contact-us', lstUnitType )">Click To Be Added To Our Waiting List</button>
             </td>
           </ng-template>
           <ng-template #other_moveIn >
@@ -227,7 +227,7 @@
         </td>
         <td id="reserve" colspan="2" class="py-2 px-4 border text-center">
             <!-- <button (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button> -->
-            <button class="ml-2 py-1 buttons" (click)="navigate('/contact-us', lstUnitType )" *ngIf="lstUnitType.UnitTypeID === 16; else reserveIt">Reserve</button>
+            <button class="ml-2 py-1 buttons" (click)="navigate('/contact-us', lstUnitType )" *ngIf="lstUnitType.UnitTypeID === 16; else reserveIt">Click To Be Added To Our Waiting List</button>
             <ng-template #reserveIt>
               <button class="ml-2 py-1 buttons" (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
             </ng-template>
