@@ -1,0 +1,930 @@
+<div class="reserve-unit-form">
+  <div
+    [hidden]=""
+    *ngIf="unitTypeNotAvailability"
+    class="alert alert-danger alert-dismissible fade show"
+  >
+    There is no Unit available, Please choose the other unit type or call the
+    facility for more detail
+    <button
+      type="button"
+      class="close"
+      data-dismiss="alert"
+      aria-label="Close"
+      (click)="close()"
+    >
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <div class="loader" *ngIf="gettingTenantData"></div>
+
+  <form [formGroup]="reserveUnitForm" (ngSubmit)="onSubmit()">
+    <div class="row justify-content">
+      <div formGroupName="objTenant" class="col-lg-12">
+        <h2 class="pb-3 border-bottom border-dark">Tenant Information</h2>
+
+        <div class="row pt-3">
+          <div class="col-lg-6 form-group">
+            <label>First Name*</label>
+            <input
+              type="text"
+              formControlName="FirstName"
+              class="form-control"
+              placeholder="Enter First Name"
+              [value]=""
+              [ngClass]="{
+                'is-invalid': submitted && f.objTenant.controls.FirstName.errors
+              }"
+            />
+            <div
+              *ngIf="submitted && f.objTenant.controls.FirstName.errors"
+              class="invalid-feedback"
+            >
+              <small
+                class="form-text text-muted"
+                *ngIf="f.objTenant.controls.FirstName.errors.required"
+                >Please fill out this field</small
+              >
+            </div>
+          </div>
+          <div class="col-lg-6 form-group">
+            <label>Last Name*</label>
+            <input
+              type="text"
+              formControlName="LastName"
+              class="form-control"
+              placeholder="Enter Last Name"
+              [ngClass]="{
+                'is-invalid': submitted && f.objTenant.controls.LastName.errors
+              }"
+            />
+            <div
+              *ngIf="submitted && f.objTenant.controls.LastName.errors"
+              class="invalid-feedback"
+            >
+              <small
+                class="form-text text-muted"
+                *ngIf="f.objTenant.controls.LastName.errors.required"
+                >Please fill out this field</small
+              >
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <label>Phone Number*</label>
+            <input
+              type="tel"
+              formControlName="Phone"
+              placeholder="Enter Phone Number"
+              class="form-control"
+              [ngClass]="{
+                'is-invalid': submitted && f.objTenant.controls.Phone.errors
+              }"
+            />
+            <div
+              *ngIf="submitted && f.objTenant.controls.Phone.errors"
+              class="invalid-feedback"
+            >
+              <small
+                class="form-text text-muted"
+                *ngIf="f.objTenant.controls.Phone.errors.required"
+                >Please fill out this field</small
+              >
+            </div>
+            <div *ngIf="f.objTenant.controls.Phone.errors">
+              <small
+                class="form-text text-muted"
+                *ngIf="f.objTenant.controls.Phone.errors.pattern"
+                >Please enter valid number</small
+              >
+            </div>
+          </div>
+
+          <div class="col-md-6 form-group">
+            <label>Email Address*</label>
+            <input
+              type="text"
+              formControlName="EmailAddress"
+              placeholder="Enter Email"
+              class="form-control"
+              [ngClass]="{
+                'is-invalid':
+                  submitted && f.objTenant.controls.EmailAddress.errors
+              }"
+            />
+            <div
+              *ngIf="submitted && f.objTenant.controls.EmailAddress.errors"
+              class="invalid-feedback"
+            >
+              <small
+                class="form-text text-muted"
+                *ngIf="f.objTenant.controls.EmailAddress.errors.required"
+                >Please fill out this field</small
+              >
+            </div>
+            <div *ngIf="f.objTenant.controls.EmailAddress.errors">
+              <small
+                class="form-text text-muted"
+                *ngIf="f.objTenant.controls.EmailAddress.errors.email"
+                >Please enter a valid email address</small
+              >
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 form-group">
+            <label>Address Line 1*</label>
+            <input
+              type="text"
+              formControlName="AddressLine1"
+              class="form-control"
+              placeholder="Enter Address Line 1"
+              [ngClass]="{
+                'is-invalid':
+                  submitted && f.objTenant.controls.AddressLine1.errors
+              }"
+            />
+            <div
+              *ngIf="submitted && f.objTenant.controls.AddressLine1.errors"
+              class="invalid-feedback"
+            >
+              <small
+                class="form-text text-muted"
+                *ngIf="f.objTenant.controls.AddressLine1.errors.required"
+                >Please fill out this field</small
+              >
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 form-group">
+            <label>Address Line 2</label>
+            <input
+              type="text"
+              formControlName="AddressLine2"
+              class="form-control"
+              placeholder="Enter Address Line 2"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 form-group">
+            <label>City*</label>
+            <input
+              type="text"
+              formControlName="City"
+              class="form-control"
+              placeholder="Enter City"
+              [ngClass]="{
+                'is-invalid': submitted && f.objTenant.controls.City.errors
+              }"
+            />
+            <div
+              *ngIf="submitted && f.objTenant.controls.City.errors"
+              class="invalid-feedback"
+            >
+              <small
+                class="form-text text-muted"
+                *ngIf="f.objTenant.controls.City.errors.required"
+                >Please fill out this field</small
+              >
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 form-group ngx-select-dropdown">
+            <label>State/Province*</label>
+            <select
+              class="form-control"
+              formControlName="State"
+              [ngClass]="{
+                'is-invalid': submitted && f.objTenant.controls.State.errors
+              }"
+            >
+              <option value="" disabled selected>Select your State</option>
+              <optgroup label="U.S. States/Territories">
+                <option *ngFor="let option of option" [value]="option.id">
+                  {{ option.description }}
+                </option>
+              </optgroup>
+              <optgroup label="Canadian Provinces">
+                <option *ngFor="let option of option1" [value]="option.id">
+                  {{ option.description }}
+                </option>
+              </optgroup>
+            </select>
+
+            <div
+              *ngIf="submitted && f.objTenant.controls.State.errors"
+              class="invalid-feedback"
+            >
+              <small
+                class="form-text text-muted"
+                *ngIf="f.objTenant.controls.State.errors.required"
+                >Please fill out this field</small
+              >
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 form-group">
+            <label>Postal Code*</label>
+            <input
+              type="text"
+              formControlName="ZIP"
+              class="form-control"
+              placeholder="Enter Postal Code"
+              [ngClass]="{
+                'is-invalid': submitted && f.objTenant.controls.ZIP.errors
+              }"
+            />
+            <div
+              *ngIf="submitted && f.objTenant.controls.ZIP.errors"
+              class="invalid-feedback"
+            >
+              <small
+                class="form-text text-muted"
+                *ngIf="f.objTenant.controls.ZIP.errors.required"
+                >Please fill out this field</small
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Start of Extra Detail -->
+        <div *ngIf="!!showMilitaryDetails && !!navigateToMoveIn">
+        <div class="row" >
+          <div class="col-lg-4 col-md-6 form-group">
+            <label>Driver's License Number</label>
+            <input
+              type="text"
+              formControlName="DriversLicense"
+              class="form-control"
+              placeholder="Enter Driver's License Number"
+              [ngClass]="{
+                'is-invalid': submitted && f.objTenant.controls.DriversLicense.errors
+              }"
+            />
+            <div
+              *ngIf="submitted && f.objTenant.controls.DriversLicense.errors"
+              class="invalid-feedback"
+            >
+              <small
+                class="form-text text-muted"
+                *ngIf="f.objTenant.controls.DriversLicense.errors.required"
+                >Please fill out this field</small
+              >
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 form-group custom-date-css"
+            >
+            <label>Driver's License Expiration Date*</label>&nbsp;
+            <mat-form-field
+              class="example-full-width"
+              class="form-control"
+              placeholder="select your Driver's License Expiration Date"
+              [ngClass]="{ 'is-invalid': submitted &&  f.objTenant.controls.DriversLicenseExpDate.errors}"
+            >
+              <input
+                matInput
+                [matDatepicker]="driversLicenseExpDate"
+                formControlName="DriversLicenseExpDate"
+                readonly
+                (click)="driversLicenseExpDate.open()"
+              />
+
+              <mat-datepicker-toggle
+                matSuffix
+                [for]="driversLicenseExpDate"
+              ></mat-datepicker-toggle>
+              <mat-datepicker #driversLicenseExpDate></mat-datepicker>
+            </mat-form-field>
+            <div
+              *ngIf="submitted && f.objTenant.controls.DriversLicenseExpDate.errors"
+              class="invalid-feedback"
+            >
+              <small
+                class="form-text text-muted"
+                *ngIf="f.objTenant.controls.DriversLicenseExpDate.errors.required"
+                >Please fill out this field</small
+              >
+            </div>
+          </div>
+        <div
+          class="col-md-4 form-group custom-date-css"
+          >
+          <label>Birthdate*</label>&nbsp;
+          <mat-form-field
+            class="example-full-width"
+            class="form-control"
+            placeholder="select your Birthdate"
+            [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.DateOfBirth.errors }"
+          >
+            <input
+              matInput
+              [matDatepicker]="dateOfBirth"
+              formControlName="DateOfBirth"
+              readonly  
+              (click)="dateOfBirth.open()"
+            />
+
+            <mat-datepicker-toggle
+              matSuffix
+              [for]="dateOfBirth"
+            ></mat-datepicker-toggle>
+            <mat-datepicker #dateOfBirth></mat-datepicker>
+          </mat-form-field>
+          <div
+            *ngIf="submitted && f.objTenant.controls.DateOfBirth.errors"
+            class="invalid-feedback"
+          >
+            <small
+              class="form-text text-muted"
+              *ngIf="f.objTenant.controls.DateOfBirth.errors.required"
+              >Please fill out this field</small
+            >
+          </div>
+        </div>
+        </div>
+         <div class="row">
+            <div class="col-lg-4 col-md-6 form-group ngx-select-dropdown">
+                <label>Military Type</label>
+                <select
+                  class="form-control"
+                  formControlName="MilitaryType"
+                  [ngClass]="{
+                    'is-invalid': submitted && f.objTenant.controls.MilitaryType.errors
+                  }"
+                >
+                  <option value="" disabled selected>Select Military Type</option>
+                  <option *ngFor="let option of militaryTypes" [value]="option.Value">
+                    {{ option.Description }}
+                  </option>
+                </select>
+    
+                <div
+                  *ngIf="submitted && f.objTenant.controls.MilitaryType.errors"
+                  class="invalid-feedback"
+                >
+                  <small
+                    class="form-text text-muted"
+                    *ngIf="f.objTenant.controls.MilitaryType.errors.required"
+                    >Please fill out this field</small
+                  >
+                </div>
+              </div>
+          <div class="col-lg-4 col-md-6 form-group ngx-select-dropdown">
+            <label>Military Branch</label>
+            <select
+              class="form-control"
+              formControlName="MilitaryBranch"
+              [ngClass]="{
+                'is-invalid': submitted && f.objTenant.controls.MilitaryBranch.errors
+              }"
+            >
+              <option value="" disabled selected>Select Military Branch</option>
+              <option *ngFor="let option of militaryBranch" [value]="option.Value">
+                {{ option.Description }}
+              </option>
+            </select>
+
+            <div
+              *ngIf="submitted && f.objTenant.controls.MilitaryBranch.errors"
+              class="invalid-feedback"
+            >
+              <small
+                class="form-text text-muted"
+                *ngIf="f.objTenant.controls.MilitaryBranch.errors.required"
+                >Please fill out this field</small
+              >
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 form-group">
+            <label>Military ID#</label>
+            <input
+              type="text"
+              formControlName="MilitaryID"
+              class="form-control"
+              placeholder="Enter Military ID"
+              [ngClass]="{
+                'is-invalid': submitted && f.objTenant.controls.MilitaryID.errors
+              }"
+            />
+            <div
+              *ngIf="submitted && f.objTenant.controls.MilitaryID.errors"
+              class="invalid-feedback"
+            >
+              <small
+                class="form-text text-muted"
+                *ngIf="f.objTenant.controls.MilitaryID.errors.required"
+                >Please fill out this field</small
+              >
+            </div>
+          </div>
+        </div> 
+        <div class="row">
+          <div
+          class="col-lg-4 col-md-6 form-group custom-date-css"
+          >
+          <label>Military Deployed Until Date*</label>&nbsp;
+          <mat-form-field
+            class="example-full-width"
+            class="form-control"
+            placeholder="select your Military Deployed Until Date"
+            [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.DeployedUntil.errors }"
+          >
+            <input
+              matInput
+              [matDatepicker]="deployedUntil"
+              formControlName="DeployedUntil"
+              readonly
+              (click)="deployedUntil.open()"
+            />
+
+            <mat-datepicker-toggle
+              matSuffix
+              [for]="deployedUntil"
+            ></mat-datepicker-toggle>
+            <mat-datepicker #deployedUntil></mat-datepicker>
+          </mat-form-field>
+          <div
+            *ngIf="submitted && f.objTenant.controls.DeployedUntil.errors"
+            class="invalid-feedback"
+          >
+            <small
+              class="form-text text-muted"
+              *ngIf="f.objTenant.controls.DeployedUntil.errors.required"
+              >Please fill out this field</small
+            >
+          </div>
+        </div>
+          <div class="col-lg-4 col-md-6 form-group">
+            <label>Military Division/Unit</label>
+            <input
+              type="text"
+              formControlName="MilitaryDivision"
+              class="form-control"
+              placeholder="Enter Military Division/Unit"
+              [ngClass]="{
+                'is-invalid': submitted && f.objTenant.controls.MilitaryDivision.errors
+              }"
+            />
+            <div
+              *ngIf="submitted && f.objTenant.controls.MilitaryDivision.errors"
+              class="invalid-feedback"
+            >
+              <small
+                class="form-text text-muted"
+                *ngIf="f.objTenant.controls.MilitaryDivision.errors.required"
+                >Please fill out this field</small
+              >
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 form-group">
+            <label>Military Commanding Officer</label>
+            <input
+              type="text"
+              formControlName="CommandingOfficer"
+              class="form-control"
+              placeholder="Enter Military Commanding Officer"
+              [ngClass]="{
+                'is-invalid': submitted && f.objTenant.controls.CommandingOfficer.errors
+              }"
+            />
+            <div
+              *ngIf="submitted && f.objTenant.controls.CommandingOfficer.errors"
+              class="invalid-feedback"
+            >
+              <small
+                class="form-text text-muted"
+                *ngIf="f.objTenant.controls.CommandingOfficer.errors.required"
+                >Please fill out this field</small
+              >
+            </div>
+          </div>
+        </div> 
+        <div class="row">
+            <div class="col-lg-4 col-md-6 form-group">
+              <label>Military C.O. Phone</label>
+              <input
+                type="text"
+                formControlName="CommandingOfficerPhone"
+                class="form-control"
+                placeholder="Enter Military C.O. Phone"
+                [ngClass]="{
+                  'is-invalid': submitted && f.objTenant.controls.CommandingOfficerPhone.errors
+                }"
+              />
+              <div
+                *ngIf="submitted && f.objTenant.controls.CommandingOfficerPhone.errors"
+                class="invalid-feedback"
+              >
+                <small
+                  class="form-text text-muted"
+                  *ngIf="f.objTenant.controls.CommandingOfficerPhone.errors.required"
+                  >Please fill out this field</small
+                >
+              </div>
+            </div>
+          </div> 
+        </div>
+        <!-- End of Extra Detail -->
+        <!-- Start of Aletrnate Contact Detail -->
+        <div *ngIf="!!showAltDetails && !navigateToReserve">
+          <h2 class="pb-1 pt-3 border-bottom border-dark">
+            Alternate Contact Information
+          </h2>
+          <div class="pt-3 row">
+            <div class="col-md-6 form-group">
+              <label>Name*</label>
+              <input
+                type="text"
+                formControlName="AlternateName"
+                class="form-control"
+                placeholder="Enter Alternate Name"
+                [value]=""
+                [ngClass]="{
+                  'is-invalid':
+                    submitted && f.objTenant.controls.AlternateName.errors
+                }"
+              />
+              <div
+                *ngIf="submitted && f.objTenant.controls.AlternateName.errors"
+                class="invalid-feedback"
+              >
+                <small
+                  class="form-text text-muted"
+                  *ngIf="f.objTenant.controls.AlternateName.errors.required"
+                  >Please fill out this field</small
+                >
+              </div>
+            </div>
+            <div class="col-md-6 form-group">
+              <label>Phone Number*</label>
+              <input
+                type="tel"
+                formControlName="AlternatePhone"
+                placeholder="Enter Alternate Phone Number"
+                class="form-control"
+                [ngClass]="{
+                  'is-invalid':
+                    submitted && f.objTenant.controls.AlternatePhone.errors
+                }"
+              />
+              <div
+                *ngIf="submitted && f.objTenant.controls.AlternatePhone.errors"
+                class="invalid-feedback"
+              >
+                <small
+                  class="form-text text-muted"
+                  *ngIf="f.objTenant.controls.AlternatePhone.errors.required"
+                  >Please fill out this field</small
+                >
+              </div>
+              <div *ngIf="f.objTenant.controls.AlternatePhone.errors">
+                <small
+                  class="form-text text-muted"
+                  *ngIf="f.objTenant.controls.AlternatePhone.errors.pattern"
+                  >Please enter valid number</small
+                >
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 form-group">
+              <label>Address Line 1*</label>
+              <input
+                type="text"
+                formControlName="AlternateAddressLine1"
+                class="form-control"
+                placeholder="Enter Alternate Address Line 1"
+                [ngClass]="{
+                  'is-invalid':
+                    submitted &&
+                    f.objTenant.controls.AlternateAddressLine1.errors
+                }"
+              />
+              <div
+                *ngIf="
+                  submitted && f.objTenant.controls.AlternateAddressLine1.errors
+                "
+                class="invalid-feedback"
+              >
+                <small
+                  class="form-text text-muted"
+                  *ngIf="
+                    f.objTenant.controls.AlternateAddressLine1.errors.required
+                  "
+                  >Please fill out this field</small
+                >
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 form-group">
+              <label>Address Line 2</label>
+              <input
+                type="text"
+                formControlName="AlternateAddressLine2"
+                class="form-control"
+                placeholder="Enter Alternate Address Line 2"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 form-group">
+              <label>City*</label>
+              <input
+                type="text"
+                formControlName="AlternateCity"
+                class="form-control"
+                placeholder="Enter Alternate City"
+                [ngClass]="{
+                  'is-invalid':
+                    submitted && f.objTenant.controls.AlternateCity.errors
+                }"
+              />
+              <div
+                *ngIf="submitted && f.objTenant.controls.AlternateCity.errors"
+                class="invalid-feedback"
+              >
+                <small
+                  class="form-text text-muted"
+                  *ngIf="f.objTenant.controls.AlternateCity.errors.required"
+                  >Please fill out this field</small
+                >
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group ngx-select-dropdown">
+              <label>State/Province*</label>
+              <select
+                class="form-control"
+                formControlName="AlternateState"
+                [ngClass]="{
+                  'is-invalid':
+                    submitted && f.objTenant.controls.AlternateState.errors
+                }"
+              >
+                <option value="" disabled selected>
+                  Select Alternate Contact State/Province
+                </option>
+                <optgroup label="U.S. States/Territories">
+                  <option *ngFor="let option of option" [value]="option.id">
+                    {{ option.description }}
+                  </option>
+                </optgroup>
+                <optgroup label="Canadian Provinces">
+                  <option *ngFor="let option of option1" [value]="option.id">
+                    {{ option.description }}
+                  </option>
+                </optgroup>
+              </select>
+
+              <div
+                *ngIf="submitted && f.objTenant.controls.AlternateState.errors"
+                class="invalid-feedback"
+              >
+                <small
+                  class="form-text text-muted"
+                  *ngIf="f.objTenant.controls.AlternateState.errors.required"
+                  >Please fill out this field</small
+                >
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group">
+              <label>Postal Code*</label>
+              <input
+                type="text"
+                formControlName="AlternateZIP"
+                class="form-control"
+                placeholder="Enter Alternate Postal Code"
+                [ngClass]="{
+                  'is-invalid':
+                    submitted && f.objTenant.controls.AlternateZIP.errors
+                }"
+              />
+              <div
+                *ngIf="submitted && f.objTenant.controls.AlternateZIP.errors"
+                class="invalid-feedback"
+              >
+                <small
+                  class="form-text text-muted"
+                  *ngIf="f.objTenant.controls.AlternateZIP.errors.required"
+                  >Please fill out this field</small
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of Aletrnate Contact Detail -->
+      </div>
+
+      <div class="col-lg-12">
+        <h2 class="pb-3 pt-3 border-bottom border-dark">Unit Information</h2>
+        <div class="row pt-3">
+          <div class="col-md-6" formArrayName="lstUnitTypes">
+            <i
+              ><strong *ngIf="showMoveInDateError"
+                >Please fill out the correct move in date.</strong
+              ></i
+            >
+            <div *ngFor="let item of f.lstUnitTypes.controls; let i = index">
+              <div [formGroupName]="i">
+                <div class="form-group">
+                  <label for="lstUnitTypes">Unit Type*</label>&nbsp;
+                  <select
+                    class="form-control"
+                    formControlName="Description"
+                    [id]="lstUnitTypes?.Description"
+                    (change)="selectChangeHandler($event)"
+                  >
+                    <option
+                      *ngFor="let lstUnitType of filterLstUnitTypes"
+                      [value]="lstUnitType?.Description"
+                    >
+                      {{ lstUnitType.Description }}
+                    </option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 form-group custom-date-css"
+            *ngIf="navigateToReserve"
+          >
+            <label>Move In Date*</label>&nbsp;
+            <mat-form-field
+              class="example-full-width"
+              class="form-control"
+              placeholder="select your date"
+              [ngClass]="{ 'is-invalid': submitted && f.dteMoveIn.errors }"
+            >
+              <input
+                matInput
+                [matDatepicker]="picker"
+                formControlName="dteMoveIn"
+                [min]="from"
+                [max]="to"
+                readonly
+                (click)="picker.open()"
+              />
+
+              <mat-datepicker-toggle
+                matSuffix
+                [for]="picker"
+              ></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+            <div
+              *ngIf="submitted && f.dteMoveIn.errors"
+              class="invalid-feedback"
+            >
+              <small
+                class="form-text text-muted"
+                *ngIf="f.dteMoveIn.errors.required"
+                >Please fill out this field</small
+              >
+            </div>
+          </div>
+          <div
+            class="col-md-6"
+            formArrayName="lstInsuranceChoices"
+            *ngIf="navigateToMoveIn"
+          >
+            <div
+              *ngFor="
+                let itemInsuranceChoice of f.lstUnitTypes.controls;
+                let i = index
+              "
+            >
+              <div [formGroupName]="i">
+                <label for="CoverageDescription">Insurance Choice*</label>&nbsp;
+                <select
+                  class="form-control"
+                  formControlName="CoverageDescription"
+                  [id]="LstInsuranceChoices?.CoverageDescription"
+                  (change)="selectInsuranceChoice($event)"
+                >
+                  <option
+                    *ngFor="let LstInsuranceChoice of LstInsuranceChoices"
+                    [value]="LstInsuranceChoice?.CoverageDescription"
+                  >
+                    {{ LstInsuranceChoice.CoverageDescription }}
+                  </option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="col-md-6 pb-4"
+            formArrayName="lstRentalPeriods"
+            *ngIf="navigateToMoveIn"
+          >
+            <div
+              *ngFor="let itemRental of f.lstUnitTypes.controls; let i = index"
+            >
+              <div [formGroupName]="i">
+                <label for="PeriodDescription">Period*</label>&nbsp;
+                <select
+                  class="form-control"
+                  formControlName="PeriodDescription"
+                  [id]="LstRentalPeriod?.PeriodDescription"
+                  (change)="changeRate($event)"
+                >
+                  <option
+                    *ngFor="let LstRentalPeriod of LstRentalPeriods"
+                    [value]="LstRentalPeriod?.PeriodDescription"
+                  >
+                    {{ LstRentalPeriod.PeriodDescription }}
+                  </option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div *ngIf="monthlyRate">
+          <label>Rate:</label>&nbsp; ${{ monthlyRate | number: "1.2-2" }}
+          <span *ngIf="rateTax > 0">
+            + ${{ rateTax | number: "1.2-2" }} (Tax)
+          </span>
+        </div>
+        <div
+          class="form-group readonly-form-control"
+          *ngIf="navigateToReserve && reservationFee !== undefined"
+        >
+          <label>Reservation Charges:</label>&nbsp; ${{
+            reservationFee | number: "1.2-2"
+          }}
+          <span *ngIf="reservationFeeTax !== undefined">
+            + ${{ reservationFeeTax | number: "1.2-2" }} (Tax)
+          </span>
+        </div>
+
+        <div *ngIf="navigateToMoveIn && proRateAmount">
+          <label>Prorate Amount:</label>&nbsp; ${{
+            proRateAmount | number: "1.2-2"
+          }}
+          <span *ngIf="prorateAmtTax > 0">
+            + ${{ prorateAmtTax | number: "1.2-2" }} (Tax)
+          </span>
+        </div>
+        <div *ngIf="navigateToMoveIn && deposit > 0">
+          <label>Deposit Amount:</label>&nbsp; ${{ deposit | number: "1.2-2" }}
+          <span *ngIf="depositTax > 0.0">
+            + ${{ depositTax | number: "1.2-2" }} (Tax)
+          </span>
+        </div>
+        <div *ngIf="navigateToMoveIn && othDeposit > 0">
+          <label>Other Deposit:</label>&nbsp; ${{
+            othDeposit | number: "1.2-2"
+          }}
+        </div>
+        <div *ngIf="navigateToMoveIn && setup > 0">
+          <label>Set Up:</label>&nbsp; ${{ setup | number: "1.2-2" }}
+          <span *ngIf="setupTax > 0.0">
+            + ${{ setupTax | number: "1.2-2" }} (Tax)
+          </span>
+        </div>
+        <div *ngIf="navigateToMoveIn && premium > 0">
+          <label>Premium:</label>&nbsp;
+          {{ premium | number: "1.2-2" }}
+        </div>
+      </div>
+    </div>
+    <div
+      [hidden]=""
+      *ngIf="submitted && !this.reserveUnitForm.valid"
+      class="alert alert-danger alert-dismissible fade show"
+    >
+      Some fields were not filled out. Please complete the highlighted fields.
+      <button
+        type="button"
+        class="close"
+        data-dismiss="alert"
+        aria-label="Close"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+    <div class="form-group text-right">
+      <button
+        type="button"
+        *ngIf="showReservationButton"
+        class="btn btn-primary col-lg-3 col-md-4 col-sm-12 mr-2 margin-bottom"
+        (click)="navigate('/view-rates')"
+      >
+        Previous
+      </button>
+      <button
+        type="button"
+        class="btn btn-primary col-lg-3 col-md-4 col-sm-12"
+        (click)="navigateToConfirmation('/view-rates/confirmation')"
+      >
+        Next
+      </button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,49 @@
+<div class="col-md-12 display bg-secondary py-2">
+  <div class="container">
+    <div class="contact-header">
+      <div class="row">
+        <div class="col-md-10">
+          <span class="contact-details pr-4" *ngFor="let contact of contactDetails">
+            <i [class]="contact?.class"></i>
+            <span class="contact-links" *ngIf="contact?.label === 'Address:' || contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
+              <a [href]="contact?.redirect" target="{{(contact?.label === 'Address:') ? '_blank' : '_self'}}">&nbsp;{{contact.data}}</a></span>
+            <ng-template #other_content>&nbsp;{{contact.data}}</ng-template>
+          </span>
+        </div>
+        <div class="col-md-2 ml-auto text-right">
+          <span class="social pl-2 text-right" *ngFor="let social of socialLinks">
+            <a [href]="social?.path" target="_blank" rel="noreferrer">
+              <i [class]="social?.class"></i>
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-navbg py-0 bg-primary">
+  <div class="container">
+    <a class="navbar-brand" (click)="navigate('/')" class="mr-0">
+      <b style="color: white; font-size: 20px;"> Richmond Self Storage </b>
+      <!-- <img src="{{imageBaseUrl}}/sample-self-storage-north.{{imagetype}}"  alt="logo artwork that displays an open box with the words Sample Self Storage North in block letter next to the box" > -->
+    </a>
+    <div class="p-2">
+    <button class="navbar-toggler py-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+   aria-label="Toggle navigation">
+      <i class="fas fa-bars iconColor"></i>
+    </button>
+  </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" #menu>
+      <ul class="navbar-nav ml-auto navbar-nav-scroll">
+        <li class="nav-item px-1" *ngFor="let nav of navLinks">
+          <a class="nav-link py-4" [routerLinkActive]="'nav-link-active'" [routerLink]="nav?.path" 
+          [routerLinkActiveOptions]="{exact: true}" (click)="onClick(menu)" *ngIf="nav?.path != '/pay-rent'">{{nav.label}}</a>
+          <a class="nav-link py-4" [routerLinkActive]="'nav-link-active'" [routerLink]="nav?.path" 
+          [routerLinkActiveOptions]="{exact: false}" (click)="onClick(menu)" *ngIf="nav?.path === '/pay-rent'">{{nav.label}}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

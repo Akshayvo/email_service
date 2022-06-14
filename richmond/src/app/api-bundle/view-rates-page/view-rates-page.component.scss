@@ -1,0 +1,148 @@
+@import "../../../styles.scss";
+
+.display {
+  display: none;
+}
+
+// #location1reserve {
+//   display: none;
+// }
+
+.viewRates {
+  background-color: $white;
+  h2 {
+    color: $white;
+    background-color: $primary;
+    font-size: 28px;
+  }
+
+  .unitDetail:nth-child(odd) {
+    background: #a8a8a8;
+  }
+  
+  .unitDetail:nth-child(even) {
+    background: #fff5ee;
+  }
+
+  .unitDetail {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .unitType {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ccIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .custom-font {
+    font-size: 1.4rem;
+  }
+}
+
+.iconStyle {
+  cursor: pointer;
+}
+
+.display-card {
+  display: block;
+}
+
+.card-text {
+  width: 150px;
+  padding: 10px;
+  background-color: #edf1ee;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  thead {
+    background: $primary;
+    th {
+      color: $white;
+      font-size: 1rem;
+    }
+  }
+  tbody {
+    tr:nth-child(even){
+      background-color: #dcdcdc;
+    }
+    tr {
+      td {
+
+        button {
+          font-size: 0.8rem;
+          min-width: 120px;
+        }
+
+        .btn {
+          min-width: 120px;
+          font-size: 0.9rem;
+          padding: 0.2rem 0.8rem;
+        }
+
+        .btn-primary {
+          background-color: #3f3c3c !important;
+          border-color: #212121 !important;
+        }
+      }
+    }
+  }
+}
+
+.loader {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid $primary;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+p {
+  margin: 0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width:992px ) {
+  .btn-primary {
+    min-width:160px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .btn-primary {
+    min-width: 82px;
+    font-size: 0.8rem;
+  }
+  
+  .viewRates {
+    .custom-font {
+      font-size: 1rem;
+    }
+  }
+  .noUnitstext{ 
+      font-size: 12px;
+  }
+}
