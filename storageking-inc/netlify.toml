@@ -25,6 +25,16 @@
   pretty_urls = true
 [build.processing.images]
   compress = true
+# A basic redirect rule
+[[redirects]]
+  from = "https://www.storagekinginc.com/view-units"
+  to = "https://www.storagekinginc.com/texas/pinehurst/view-rates"
+  status = 301
+
+[[redirects]]
+  from = "https://www.storagekinginc.com/storage-tips"
+  to = "https://www.storagekinginc.com/texas/pinehurst/storage-tips"
+  status = 301
 
 [[redirects]]
   from = "/*"
