@@ -27,14 +27,24 @@
   compress = true
 # A basic redirect rule
 [[redirects]]
-  from = "https://www.richmondvtselfstorage.com//pay-rent/units-199/sign-up/payment"
-  to = "https://www.richmondvtselfstorage.com//pay-rent/units-199/rent-sub/payment"
+  from = "https://www.richmondvtselfstorage.com/pay-rent/units-199/sign-up/payment"
+  to = "https://www.richmondvtselfstorage.com/pay-rent/units-199/rent-sub/payment"
   status = 301
 
 [[redirects]]
-  from = "https://www.richmondvtselfstorage.com//pay-rent/units-199/rent-sub/auto-pay"
-  to = "https://www.richmondvtselfstorage.com//pay-rent/units-199/sign-up/auto-pay"
+  from = "https://www.richmondvtselfstorage.com/pay-rent/units-199/rent-sub/auto-pay"
+  to = "https://www.richmondvtselfstorage.com/pay-rent/units-199/sign-up/auto-pay"
   status = 301
+
+[[redirects]]
+  from = "https://www.richmondvtselfstorage.com/view-rates/"
+  to = "https://www.richmondvtselfstorage.com/vermont/richmond/view-rates"
+  status = 301  
+
+[[redirects]]
+  from = "https://www.richmondvtselfstorage.com/storage-tips/"
+  to = "https://www.richmondvtselfstorage.com/vermont/richmond/view-rates"
+  status = 301 
 
 [[redirects]]
   from = "/*"
