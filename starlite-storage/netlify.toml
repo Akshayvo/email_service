@@ -27,6 +27,15 @@
   compress = true
 # A basic redirect rule
 [[redirects]]
+  from = "https://starlitestorage.com/view-units"
+  to = "https://starlitestorage.com/oregon/lebanon/view-rates"
+  status = 301
+
+[[redirects]]
+  from = "https://starlitestorage.com/storage-tips"
+  to = "https://starlitestorage.com/oregon/lebanon/storage-tips"
+  status = 301
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
