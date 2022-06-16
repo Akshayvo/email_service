@@ -17,9 +17,9 @@ export const contact = [
     {
         id: 2,
         label: 'Phone:',
-        data: '(860) 949-9460',
+        data: '(860) 949-9160',
         class: 'fas fa-phone mx-2 iconColor',
-        redirect: 'tel:8609499460',
+        redirect: 'tel:8609499160',
     }
 ];
 
