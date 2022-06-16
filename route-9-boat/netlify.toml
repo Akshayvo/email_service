@@ -27,13 +27,28 @@
   compress = true
 # A basic redirect rule
 [[redirects]]
-  from = "https://route9boatnrvstorage.com//pay-rent/units-199/sign-up/payment"
-  to = "https://route9boatnrvstorage.com//pay-rent/units-199/rent-sub/payment"
+  from = "https://route9boatnrvstorage.com/pay-rent/units-199/sign-up/payment"
+  to = "https://route9boatnrvstorage.com/pay-rent/units-199/rent-sub/payment"
   status = 301
 
 [[redirects]]
-  from = "https://route9boatnrvstorage.com//pay-rent/units-199/rent-sub/auto-pay"
-  to = "https://route9boatnrvstorage.com//pay-rent/units-199/sign-up/auto-pay"
+  from = "https://route9boatnrvstorage.com/view-rates/"
+  to = "https://route9boatnrvstorage.com/new-york/clifton-park/view-rates"
+  status = 301
+
+[[redirects]]
+  from = "https://route9boatnrvstorage.com/pay-rent/login/"
+  to = "https://route9boatnrvstorage.com/pay-rent/rent-sub/login/"
+  status = 301
+
+[[redirects]]
+  from = "https://route9boatnrvstorage.com/pay-rent/sign-up/forgotPassword/"
+  to = "https://route9boatnrvstorage.com/pay-rent/forgotPassword/"
+  status = 301
+
+[[redirects]]
+  from = "https://route9boatnrvstorage.com/pay-rent/units-199/rent-sub/auto-pay"
+  to = "https://route9boatnrvstorage.com/pay-rent/units-199/sign-up/auto-pay"
   status = 301
 
 [[redirects]]
