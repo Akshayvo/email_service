@@ -16,6 +16,6 @@ export const environment = {
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   websiteUrl: 'http://www.hillsideselfstoragellc.com',
   // APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north
-  APIKey: `dzJ0OVc0SjYqMk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29462
+  APIKey: `dzJ0OVcySjMqN046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29462
 
 };

@@ -23,6 +23,7 @@ import {
   script,
   twitterHomePage,
 } from "../data/script";
+
 import { CanonicalService } from "../services/canonical.service";
 import { FetchDataService } from "../api-bundle/services/fetch-data.service";
 import { Subscription } from "rxjs";
