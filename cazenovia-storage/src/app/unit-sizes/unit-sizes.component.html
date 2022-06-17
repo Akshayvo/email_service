@@ -1,0 +1,102 @@
+<div class="unit-sizer-holder">
+  <div class="container">
+    <div class="content-Holder">
+      <div class="container">   
+        <!--Unit Sizer Box Layout-->
+        <div class="unit-sizer-container content-margin-top">
+        <div class="unit-sizer-box">
+          <!--Main Row-->
+            <div class="row">
+              <!--Left bar size of unit starts here-->
+                <div class="col-md-2 px-0">
+                  <!--For desktop and width more than 768-->
+                  <div *ngFor="let unit of unitsizers" class="unit-dimention py-3 disp">
+                   
+                    <span *ngIf="i == unit?.id" [ngClass]="'active-unit'">
+                        {{unit.size}} <br/>
+                    </span>
+                   
+                    <span *ngIf="i !== unit?.id">
+                      <span (click)="activeUnit(unit?.id)">
+                          {{unit.size}} <br/>
+                      </span>
+                    </span>
+                  
+                  </div>
+                  <!--For desktop and width more than 768 Ends Here-->
+    
+                  <!--For Mobile and width Less than 768 Ends Here-->
+                  <div class="disp-mob pb-3 text-center">
+                    <div class="row"> 
+                      <div class="col-4 mt-auto">
+                        <span (click)="moveLeft()">{{unitsizers[h].size}}</span>
+                      </div>
+    
+                      <div class="col-4 mx-0 mt-auto px-0">
+                          <span class="active-unit">{{unitsizers[i].size}}</span>
+                      </div>
+    
+                      <div class="col-4 mt-auto">
+                          <span (click)="moveRight()">{{unitsizers[j].size}}</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <!--Left Bar Size of Unit Ends Here-->
+    
+            
+                <div class="col-md-10">
+                    <div>
+                      <!--Image Carousel Starts Here-->
+                      <div class="row image-carosel align-items-center">
+                        <div class="col-1 navigate-arrows-left text-center">
+                          <img src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Cazenovia_Self_Storage/left.svg" alt="left icon" (click)="moveLeft()">
+                        </div>
+    
+                        <div class="col-3 mx-0 px-0 text-center">
+                          <img src="{{unitsizers[h].unitImg}}" alt="{{unitsizers[h].alt}}" width="80%" height="100%" class="overlay" (click)="moveLeft()">
+                        </div>
+    
+                        <div class="col-4 text-center p-2 active-unit-border">
+                          <img src="{{unitsizers[i].unitImg}}" alt="{{unitsizers[i].alt}}" width="100%" height="100%" class="pt-lg-4 pt-md-4 pt-2">
+                        </div>
+    
+                        <div class="col-3 mx-0 px-0 text-center">
+                          <img src="{{unitsizers[j].unitImg}}" alt="{{unitsizers[j].alt}}" width="80%" height="100%" class="overlay" (click)="moveRight()">
+                        </div>
+    
+                        <div class="col-1 navigate-arrows-right text-center">
+                          <img src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Cazenovia_Self_Storage/right.svg" alt="right icon" (click)="moveRight()">
+                        </div>
+                      </div>
+                      <!--Image Carousel Ends Here-->
+    
+                      <!--Unit Sizer Data Row-->
+                      <div class="row justify-content-center mt-5 unit-data">
+                        <!-- <div class="col-md-6">
+                          <img src="{{unitsizers[i].photo}}" alt="" width="100%" height="auto">
+                        </div> -->
+                        <div class="col-12 col-md-8 col-lg-8 col align-self-center">
+                          <h2 class="mb-1">{{unitsizers[i].heading}}</h2>
+                          <p class="pr-2 text-justify"> {{unitsizers[i].data}} </p>
+                          <ul class="pl-0">
+                            <li *ngFor="let amenity of unitsizers[i]?.amenities"> {{amenity.content}} </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <!--Unit Sizer Data Row Ends Here-->
+                      <!-- <div class="text-center">
+                        <a class="btn btn-lg btn-primary" (click)="navigate('/reserve-unit')" role="button">Reserve Unit</a>
+                      </div>  -->
+                    </div>
+                </div>
+            </div>
+            <!--Main Row Ends Here-->
+          </div>
+          <!--Unit Sizer Box Layout Ends here-->
+        </div>
+        <!--Container Ends Here-->
+    </div>
+    <!--Unit Sizer Container Ends Here-->
+  </div>
+</div>
