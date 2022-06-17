@@ -13,12 +13,12 @@ export const navLinks = [
         sublinks: [
             {
                 id: '1',
-                label: 'Tuckahoe Road Location',
+                label: '6519 Tuckahoe Rd, Williamson',
                 path: `${environment.locationName}/Tuckahoe-Road`,
               },
             {
                 id: '2',
-                label: '5840 Route 104, Sodus',
+                label: '4072 Ridge Rd, Williamson',
                 path: `${environment.locationName}/pratt-road`,
             },
               {

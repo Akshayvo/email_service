@@ -13,17 +13,17 @@ export const tableHeader = [
 
 export const tableData = [
   {
-    facility: 'Tuckahoe Road Location',
-    address: '2 canton st baldwinsville ny 13027',
+    facility: '6519 Tuckahoe Rd, Williamson',
+    address: '6519 Tuckahoe Rd, Williamson, NY 14589',
     url: 'Tuckahoe-Road'
   },
   {
-    facility: '6588 Pratt Road',
+    facility: '6588 Pratt Road, Sodus',
     address: '5840 NY-104, Williamson, NY 14589',
     url: 'pratt-road'
   },
   {
-    facility: 'rotterdam-road',
+    facility: '102 Rotterdam-road, Sodus',
     address: '6588 Pratt Rd, Williamson, NY 14589',
     url: 'rotterdam-road'
   },

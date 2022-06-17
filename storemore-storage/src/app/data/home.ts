@@ -198,6 +198,6 @@ export const featuresList = [
 export const jumbotron = [
     {
         h2: `Affordable Self Storage Units in Sodus`,
-        blurb: `Searching for a little extra room around the home, office, or cottage? Storemore Self Storage makes it easy to store your belongings. You can access your unit 24 hours a day, 7 days a week, so you can always get what you need when you need it. Plus, we offer month-to-month leases, so you can easily adjust your storage needs as they change. Give us a call or fill out your application online today!`,
+        blurb: `Searching for a little extra room around the home, office, or cottage? Storemore Self Storage makes it easy to store your belongings. You can access your unit sunrise to sunset, 7 days a week, so you can always get what you need when you need it. Plus, we offer month-to-month leases, so you can easily adjust your storage needs as they change. Give us a call or fill out your application online today!`,
     }
 ];

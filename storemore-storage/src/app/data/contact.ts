@@ -108,9 +108,16 @@ export const contactsLocation2 = [
     {
         id: 1,
         label: 'Office Address: ',
-        data: '5840 NY-104, Williamson, NY 14589',
+        data: '4072 Ridge Rd, Williamson, NY 14589 (By Appointment Only) By Phone 8AM to 8PM',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/KdU9ptM9hCcc44c76'
+        redirect: 'https://goo.gl/maps/tdeR2sMWCTBfsVJy6'
+    },
+    {
+        id: 3,
+        label: 'Mailing Address: ',
+        data: 'P.O. Box 8, williamson, NY 14589-0008',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/tdeR2sMWCTBfsVJy6'
     },
     {
         id: 2,
@@ -121,18 +128,11 @@ export const contactsLocation2 = [
         redirect: 'mailto:rdpeck47@hotmail.com'
     },
     {
-        id: 3,
-        label: 'Facility Address: ',
-        data: '2 canton st baldwinsville ny 13027',
-        class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/PdVq9xjHXGieXPL87'
-    },
-    {
         id: 4,
         label: 'Phone: ',
-        data: '',
+        data: '(315) 589-7180',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: ''
+        redirect: 'tel:3155897180'
     },
 ];
 
