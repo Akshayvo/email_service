@@ -37,8 +37,8 @@
   status = 301
 
 [[redirects]]
-  from = "https://route9boatnrvstorage.com/pay-rent/login/"
-  to = "https://route9boatnrvstorage.com/pay-rent/rent-sub/login/"
+  from = "https://route9boatnrvstorage.com/pay-rent/rent-sub/login/"
+  to = "https://route9boatnrvstorage.com/pay-rent/login"
   status = 301
 
 [[redirects]]

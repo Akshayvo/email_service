@@ -4,6 +4,7 @@ export const contact = [
         label: 'Office Address:',
         data: '1641 U.S. 9, Clifton Park, NY 12065',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
+        redirect: "https://goo.gl/maps/ykmvxBS6gHNGggbX6"
     },
     {
         id: 1,
