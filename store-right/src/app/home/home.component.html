@@ -1,0 +1,133 @@
+<div class="">
+  <div class="jumbotron-container">
+    <div class="jumbotron-top">
+    <div class="jumbotron px-0 m-0" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
+      <div class=" jumbotorn-skew-style" [ngClass]="template === 'darkTheme' ? 'bg-translucent-dark' : 'bg-translucent-light'">
+      </div>
+      <div class="container">
+        <div class="jumbotorn-skew-text">
+          <div class="disp" *ngFor="let jumbotron of jumbotron">
+            <h2  class="my-4">
+              {{jumbotron.h2}}
+            </h2>
+          <p class="text-justify">{{jumbotron.blurb}}</p>
+          </div>
+          <div class="jumbotorn-button">
+            <a class="btn btn-lg btn-outline-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>
+            <a class="btn btn-lg btn-primary" (click)="navigate('/contact-us')" role="button">Contact Us</a>
+          </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    <div class="jumbotron-bottom">
+      <div class="container">
+        <div class="feature row">
+          <div class="col-md-3 col-3 feature-icon-style" *ngFor="let feature of feature">
+            <img [src]="feature?.path" [alt]="feature?.alt" />
+              <h2 class="feature-text">{{feature.label}}</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="bg-light">
+    <div class="container py-4">
+      <div class="section py-4 m-0">
+        <div class="row">
+          <div class="col-lg-6 py-3 home-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11294.45441157687!2d-89.6963547!3d44.9515224!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9050b578824cb81a!2sStor-Right%20Storage!5e0!3m2!1sen!2sus!4v1588628706356!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen></iframe> 
+          </div>
+
+         
+          <div class="col-lg-6 py-3">
+            <div class="mb-4 contact-details">
+              <div
+                *ngFor="let contact of contactDetails"
+                class="display-contact"
+              >
+                <div *ngIf="contact?.label != 'Email:'">
+                  <h3>
+                    <strong>{{ contact.label }}&nbsp;</strong>
+                  </h3>
+                </div>
+                <div
+                  class="contact-links"
+                  [class.mb-2]="contact?.label === 'Phone:'"
+                  *ngIf="
+                    contact?.label === 'Facility Address:' ||
+                    contact?.label != 'Email:' ||
+                    contact?.label === 'Phone:'
+                  "
+                >
+                  <h4>
+                    <a
+                      [href]="contact?.redirect"
+                      target="{{
+                        contact?.label === 'Facility Address:'
+                          ? '_blank'
+                          : '_self'
+                      }}"
+                      rel="noopener"
+                      >{{ contact.data }}</a
+                    >
+                  </h4>
+                </div>
+                <!-- <ng-template #other_content>&nbsp;<h4>{{contact.data}}</h4></ng-template><br> -->
+              </div>
+              <!-- <h4><b>Facility Hours:</b></h4> -->
+              <div class="display-contact" *ngFor="let hour of hours">
+                <h4 *ngIf="hour.label">
+                  <b>{{ hour.label }}</b
+                  >&nbsp;
+                </h4>
+                <h4>{{ hour.data }}</h4>
+                <br />
+              </div>
+            </div>
+            <div>
+              <app-tables [tBody]="featuresList"></app-tables>
+              <a
+                class="btn btn-lg btn-primary"
+                (click)="navigate('/contact-us')"
+                role="button"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="section py-5 m-0">
+      <div class="row">
+        <div class="col-lg-6 py-3">
+          <img src="{{imageBaseUrl}}/stor-right-storage-small.{{imagetype}}" width="100%" alt="about us image" class="sectionImage">
+        </div>
+        <div class="col-lg-6 py-3">
+          <h1 class="heading pb-4">{{aboutUsHeading}}</h1>
+          <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="getStarted" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
+    <div class="bg-translucent-dark">
+      <div class="container">
+        <div class="section py-5 m-0">
+          <div class="row">
+            <div class="col-md-12 py-3">
+              <h2 class="heading pb-4">Getting Started</h2>
+              <p class="pb-4">{{gettingStarted}}</p>
+              <a class="btn btn-lg btn-primary" (click)="navigate('/view-rates')" role="button">View Unit Now!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+</div> 
