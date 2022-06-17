@@ -18,7 +18,7 @@ export const environment = {
   facilityName: 'Richmond Self Storage',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: 'https://www.richmondvtselfstorage.com/',
+  websiteUrl: 'https://www.richmondvtselfstorage.com',
   // APIKey: `dzJ0OVcySjUqNU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 2955
   APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28463
   
