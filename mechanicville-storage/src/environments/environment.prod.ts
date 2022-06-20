@@ -14,7 +14,7 @@ export const environment = {
   facilityName: 'Self Storage of Mechanicsville',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: 'https://mechanicsville-staging.netlify.app',
+  websiteUrl: 'https://selfstorageofmechanicville.com',
   // APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north
   APIKey: `dzJ0OVc2SjAqN046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29607
 
