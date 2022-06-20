@@ -40,13 +40,13 @@
             {{lstUnitType.DepositAmount | number : '1.2-2'}} 
             
           </td>
-          <!-- <td id="reserve" colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable && showReserve; else other_reserve" >
+          <td id="reserve" colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable && showReserve; else other_reserve" >
               <button (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
-          </td> -->
-          <!-- <td id="move-in" colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable && showMovein; else other_moveIn" >
+          </td>
+          <td id="move-in" colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable && showMovein; else other_moveIn" >
             <button (click)="navigate('/view-rates/move-in', lstUnitType)"> Move In</button>
             <link *ngIf="lstUnitType.IsUnitsAvailable" itemprop="availability" href="https://schema.org/InStock" />
-          </td> -->
+          </td>
           <td  colspan="2" class="px-4 border text-center" *ngIf="lstUnitType.IsClimateControlled && showClimateControl; else other_climate">
             <strong> Yes</strong>
           </td>
@@ -85,12 +85,12 @@
     </div>
       <div class="col-6 d-flex justify-content-center" >
         <div  *ngIf="lstUnitType.IsUnitsAvailable; else other">
-          <!-- <div id="reserve"   class=" py-1 buttons" *ngIf="showReserve">
+          <div id="reserve"   class=" py-1 buttons" *ngIf="showReserve">
               <button class="btn btn-primary" (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
-          </div> -->
-          <!-- <div id="move-in"   class="py-1 buttons" *ngIf="showMovein"> 
+          </div>
+          <div id="move-in"   class="py-1 buttons" *ngIf="showMovein"> 
               <button class=" btn btn-outline-primary" (click)="navigate('/view-rates/move-in', lstUnitType)"> Move In</button>
-          </div> -->
+          </div>
         </div>
         
         <ng-template #other> 
