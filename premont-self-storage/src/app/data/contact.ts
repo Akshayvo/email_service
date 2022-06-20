@@ -69,13 +69,18 @@ export const moveInHours = [
 export const socialLinks = [
     {
         label: 'twitter',
-        path: '',
+        path: 'https://twitter.com/premontstorage',
         class: 'fab fa-twitter-square',
     },
     {
         label: 'facebook',
-        path: '',
+        path: 'https://facebook.com/premontstorage',
         class: 'fab fa-facebook-square',
+    },
+    {
+        label: 'instagram',
+        path: 'https://www.instagram.com/premont.storage/',
+        class: 'fab fa-instagram',
     },
 ];
 
