@@ -18,7 +18,7 @@ export const environment = {
   facilityName: 'Cedar Springs Self Storage',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: `https://www.cedarspringsstorage.com` 
+  websiteUrl: `https://cedarspringsstorage.com` 
 };
 
 /*
