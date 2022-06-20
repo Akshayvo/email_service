@@ -16,9 +16,9 @@ export const contact = [
     {
         id: 1,
         label: 'Email:',
-        data: 'premontselfstorage@gmail.com',
+        data: 'Service@PremontSelfStorage.com',
         class: 'fas fa-envelope mx-2 iconColor',
-        redirect: 'mailto:premontselfstorage@gmail.com'
+        redirect: 'mailto:Service@PremontSelfStorage.com'
     },
     {
         id: 2,

@@ -4,7 +4,7 @@ export const featuresList = [
         td2: 'Online Bill Pay',
     },
     {
-        td1: 'Security Cameras',
+        td1: 'Security Cameras (coming soon)',
         td2: 'Well-Lit Facility',
     },
     {
@@ -39,7 +39,7 @@ export const aboutUs = [
     },
     {
         h:`Security`,
-        p: `When selecting a self storage facility, convenience isn’t the only consideration. You want to know that the facility and its management staff take security seriously. That’s why Premont Self Storage is fully-fenced, well-lit, and our facility is covered by security cameras. Our staff also perform regular lot inspections to keep an eye on the facility.`,
+        p: `When selecting a self storage facility, convenience isn’t the only consideration. You want to know that the facility and its management staff take security seriously. That's why Premont Self Storage is fully-fenced, well-lit and our facility will soon be covered by security cameras. Our staff also perform regular lot inspections to keep an eye on the facility.`,
     },
     {
         p: `Still have questions? Give us a call today, and our friendly staff will be happy to help you find a unit or vehicle parking space that’s right for you. We look forward to meeting you!`,
