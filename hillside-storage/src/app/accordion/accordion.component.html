@@ -1,6 +1,6 @@
 <div id="accordion">
     <div class="card" *ngFor="let storage of storageTipAccordion">
-        <div class="card-header">
+        <div class="card-header" role="heading">
             <div class="card-header-before-collapse p-3"  [ngClass]="storage?.id != 0 && 'collapsed'" data-toggle="collapse" [attr.data-target]="'#collapseOne'+storage?.id" role='expanded' aria-expanded="true">
                 {{storage.label}}                 
             </div>  
