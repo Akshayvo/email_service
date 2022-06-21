@@ -24,6 +24,10 @@ img {
   }
 }
 
+.header-info {
+  background-color: $primary;
+}
+
 .social {
   a {
     color: $white;
@@ -43,14 +47,14 @@ img {
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.09);
 
   .nav-link {
-    color: $black;
+    color: $primary;
     font-weight: 600;
     // padding: 21px;
   }
 
-  .nav-link:hover {
-    color: $primary;
-  }
+  // .nav-link:hover {
+  //   color: $primary;
+  // }
 
   .nav-link-active {
     color: $primary;
