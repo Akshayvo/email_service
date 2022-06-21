@@ -17,8 +17,8 @@ export const environment = {
   appId: 'Storage Locker Ltd',
   facilityName: 'Storage Locker Ltd',
   VERSION: require('../../package.json').version,
-  baseUrl: ``,
-  websiteUrl: 'https://www.storagelocker.us/',
+  baseUrl: `https://simapi.syrasoft.com/1/api/`,
+  websiteUrl: 'https://storagelocker.us/',
   // APIKey: `dzJ0OVcySjkqMk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29292
   APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28463
   
