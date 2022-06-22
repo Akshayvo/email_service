@@ -1,0 +1,147 @@
+<app-script-hack type="application/ld+json">
+  {{script | json}}
+ </app-script-hack>
+<div class="">
+  <div class="jumbotron-container">
+    <div class="jumbotron-top">
+    <div class="jumbotron px-0 m-0" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'" title="a row of self storage units where one unit is open to reveal common household belongings like boxes and furniture ">
+      <div class=" jumbotorn-skew-style" [ngClass]="template === 'darkTheme' ? 'bg-translucent-dark' : 'bg-translucent-light'">
+      </div>
+      <div class="container display">
+        <div class="jumbotorn-skew-text">
+          <!-- <div class="disp" *ngFor="let jumbotron of jumbotron">
+            <h2  class="my-4">
+              {{jumbotron.h1}}
+            </h2>
+          <p class="text-justify">{{jumbotron.blurb}}</p>
+          </div> -->
+          <div class="jumbotorn-button bg-light ">
+            <a class="btn btn-lg btn-outline-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>
+            <a class="btn btn-lg btn-primary" (click)="navigate('/view-rates')" role="button">Reserve Unit</a>
+          </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    <div class="jumbotron-bottom">
+      <div class="container">
+        <div class="feature row">
+          <div class="col-md-3 col-3 feature-icon-style" *ngFor="let feature of feature">
+            <img [src]="feature?.path" [alt]="feature?.alt" height="100px"/>
+              <h6 class="feature-text">{{feature.label}}</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="bg-light">
+    <div class="container py-4">
+      <div class="section py-4 m-0">
+        <div class="row">
+          <div class="col-lg-6 py-3 home-map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11048.111111842407!2d-122.905302!3d46.1900059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdb2d73f608a3ddf!2sGordon&#39;s%20Mini-Storage!5e0!3m2!1sen!2sus!4v1600978304141!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen></iframe> 
+          </div>
+
+          <div class="col-lg-6 py-3">
+            <div class="mb-4">
+              
+              <p>
+                <span *ngFor="let contact of contactDetails">
+                  <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
+                    <a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+                  <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
+                </span>
+              </p>
+              <b>Facility Hours:</b>
+              <p>
+                <span *ngFor="let hour of hours">
+                  <b>{{hour.label}}</b>&nbsp;{{hour.data}}<br>
+                </span>
+              </p>
+            </div>
+            <div>
+              <app-tables [tBody]="featuresList"></app-tables>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="section py-5 m-0">
+      <div class="row">
+        <div class="col-lg-6 py-3">
+          <!-- <img src="{{imageBaseUrl}}/.{{imagetype}}"
+          width="100%" alt="{{aboutUsAlt}}" class="sectionImage"> -->
+          <app-photos></app-photos>
+        </div>
+        <div class="col-lg-6 py-3">
+          <h1 class="heading pb-4">{{aboutUsHeading}}</h1>
+          <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Video-->
+  <div class="video-style">
+    <div class="container">
+      <div class="row py-5">
+       <div class="col-md-12 text-center">
+        <iframe 
+       
+        src="https://www.youtube.com/embed/N0lBOICYErU" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Video -->
+
+  <!--Testimonial-->
+<div class="bg-light">
+  <div class="container">
+    <div class="row py-5">
+     <div class="col-md-12 text-center">
+        <h2 class="heading">Testimonials</h2>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <!-- <ul class="carousel-indicators">
+              <li data-target="#demo" *ngFor="let testimonials of testimonials" data-slide-to="testimonials?.id" [class.active]="testimonials?.id === 0"></li>
+            </ul> -->
+          
+            <!-- The slideshow -->
+            <div class="carousel-inner ">
+              <div *ngFor="let testimonials of testimonials" class="carousel-item py-5 " [class.active]="testimonials?.id === 0">
+                <p>{{testimonials.feedback}}</p>
+                <p>{{testimonials.name}}</p>
+              </div>
+            </div>
+          
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Testimonial section-->
+
+<div class="getStarted" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
+  <div class=" bg-translucent-dark">
+    <div class="container">
+      <div class="section py-5 m-0">
+        <div class="row">
+          <div class="col-md-12 py-3">
+            <h2 class="heading pb-4">{{gettingStarted.heading}}</h2>
+            <p class="pb-4">{{gettingStarted.p}}</p>
+            <a class="btn btn-lg btn-primary" (click)="navigate(' /view-rates')" role="button">View Rates</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
+</div>
