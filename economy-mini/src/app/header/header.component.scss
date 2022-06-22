@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import "../../styles.scss";
+
+a {
+  cursor: pointer;
+  color: $white;
+}
+
+// .dropdown:hover>.dropdown-menu {
+//   display: block;
+// }
+
+img {
+  height: 80px;
+}
+
+.contact-header {
+  display: inline;
+
+  .contact-details {
+    // display: block;
+    color: $white;
+    font-size: 0.82em;
+    font-weight: 500;
+    width: 100%;
+  }
+}
+
+.btn-payment {
+  background-color: #ffffff;
+  color: $primary;
+}
+
+.payment-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown-menu {
+  border-radius: 0;
+  border: none;
+  background-color: $primary;
+  padding: 0;
+  margin-bottom: 0.25rem;
+
+  li {
+    a {
+      color: $white;
+      font-weight: 400;
+    }
+  }
+
+  li:hover,
+  li:active {
+    background-color: $white;
+
+    a {
+      color: $primary;
+      font-weight: 400;
+    }
+  }
+}
+
+.dropdown-item:active {
+  background-color: transparent;
+  color: $white;
+}
+
+.navbar {
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.09);
+
+  button {
+    color: #707070;
+    border-color: #707070;
+  }
+
+  button:focus {
+    outline: 5px auto $primary;
+  }
+}
+
+.nav-link {
+  color: $fontColor;
+  font-weight: 600;
+  padding: 30px;
+  font-size: .85rem;
+}
+
+.nav-link:hover {
+  color: $primary;
+}
+
+.router-link-active {
+  color: $primary;
+  border-bottom: 5px solid $primary;
+}
+
+.nav-link-active {
+  color: $primary;
+  border-bottom: 5px solid $primary;
+}
+
+.display {
+  display: block;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:hover {
+  border: 1px solid $primary;
+}
+
+
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  .nav-link {
+    padding: 32px;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0.3rem;
+    padding-left: 0.3rem;
+  }
+
+  .nav-item {
+    font-size: 0.85rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .payment-button {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .dropdown:hover> .dropdown-menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: absolute;
+    left: -27px;
+  }
+
+  .nav-link {
+    padding: 20px;
+  }
+
+  .contact-details {
+    display: block;
+  }
+
+  .navbar {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+
+  .navbar-nav {
+    align-items: center;
+
+    li {
+      width: fit-content;
+    }
+  }
+
+  img {
+    height: 60px;
+  }
+}
+
+@media only screen and (max-width: 991px) and (max-height: 680px) {
+  .navbar-nav-scroll {
+    height: 200px;
+    overflow-y: scroll;
+  }
+}
+
+
+@media only screen and (max-width: 429px) {
+  .navbar{
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+}

@@ -1,0 +1,41 @@
+
+<div class="contentHolder">
+  <div class="container">
+    <div class="heading">
+      <h1 class="text-center pt-5">Storage Tips</h1>
+    </div>
+
+
+    <div class="storage-content mt-5">
+      <div class="row bg-light padding">
+        <div class="col-md-6 p-4">
+          <ul>
+            <li *ngFor="let point of storagePoints" class="p-1 text-justify"> {{point.data}} </li>
+          </ul>
+        </div>
+        
+        <div class="col-md-6 p-4">
+          <app-accordion></app-accordion>
+        </div>
+      </div>
+    </div>
+  </div>
+   <!--Get Started Secion-->
+   <!-- <div class="getStarted text-center mt-5">
+    <div class="get-started">
+     <div class="container py-5">
+       <div class="py-5 m-0">
+         <div class="row">
+           <div class="col-md-12">
+             <h2 class="heading pb-4">Getting Started</h2>
+             <p class="pb-4">{{gettingStarted}}</p>
+             <a class="btn btn-lg btn-primary" (click)="navigate('/reserve-unit')" role="button">Reserve Your Unit!</a>
+           </div>
+         </div>
+       </div>
+      </div>      
+      <div class="special-row py-4"><strong>390 Self Storage offers secure storage units in Rochester, Gates and Brighton NY</strong></div>
+    </div>
+  </div> -->
+<!--Get Started Secion Ends Here-->
+</div>
