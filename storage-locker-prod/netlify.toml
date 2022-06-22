@@ -27,13 +27,13 @@
   compress = true
 # A basic redirect rule
 [[redirects]]
-  from = "https://storagelocker.us/pay-rent/units-199/sign-up/payment"
-  to = "https://storagelocker.us/pay-rent/units-199/rent-sub/payment"
+  from = "https://storagelocker.us/view-rates"
+  to = "https://storagelocker.us/north-carolina/hendersonville/view-rates"
   status = 301
 
 [[redirects]]
-  from = "https://storagelocker.us/pay-rent/units-199/rent-sub/auto-pay"
-  to = "https://storagelocker.us/pay-rent/units-199/sign-up/auto-pay"
+  from = "https://storagelocker.us/storage-tips"
+  to = "https://storagelocker.us/north-carolina/hendersonville/storage-tips"
   status = 301
 
 [[redirects]]
