@@ -1,0 +1,36 @@
+import { environment } from '../../environments/environment';
+
+export const navLinks = [
+    {
+        label: 'HOME',
+        path: '/',
+    },
+    {
+        label: 'RENT NOW',
+        path: `${environment.locationName}/view-rates`,
+    },
+    {
+        label: 'UNIT SIZER',
+        path: '/unit-sizer'
+    },
+    // {
+    //     label: 'RENT NOW',
+    //     path: `${environment.locationName}/rent-now`,
+    // },
+    // {
+    //     label: 'RESERVE UNIT',
+    //     path: `${environment.locationName}/reserve-unit`,
+    // },
+    {
+        label: 'PAY RENT',
+        path: '/pay-rent'
+    },
+    {
+        label: 'STORAGE TIPS',
+        path: `${environment.locationName}/storage-tips`
+    },
+    {
+        label: 'CONTACT US',
+        path: '/contact-us'
+    },
+];

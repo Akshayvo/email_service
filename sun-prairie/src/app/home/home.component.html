@@ -1,0 +1,110 @@
+<div class="">
+  <div class="jumbotron-container">
+    <div class="jumbotron-top">
+    <div class="jumbotron px-0 m-0" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
+      <div class=" jumbotorn-skew-style" [ngClass]="template === 'darkTheme' ? 'bg-translucent-dark' : 'bg-translucent-light'">
+      </div>
+      <div class="container">
+        <div class="jumbotorn-skew-text">
+          <div class="disp" *ngFor="let jumbotron of jumbotron">
+            <h2  class="my-4">
+              {{jumbotron.h2}}
+            </h2>
+          <p class="text-justify">{{jumbotron.blurb}}</p>
+          </div>
+          <div class="button-width text-center">
+            <div class="row-md mx-0 px-0">
+              <!-- <div class="col-6 mx-0 px-0">
+               <a class="contact-btn btn btn-primary mr-2" (click)="navigate('/reserve-unit')" role="button">Reserve Unit</a>
+              </div> -->
+              <div class="col-md-6 mx-0 px-0 btnRent text-center">
+               <a class="btn btn-primary" (click)="navigate('/view-rates')"  role="button">Rent Now</a>
+               <div class="text-color"><h4>24/7</h4></div>
+              </div>
+            </div>
+        </div>
+          <!-- <div class="jumbotorn-button">
+            <a class="btn btn-primary" (click)="navigate('/view-rates')" role="button">Rent Now</a>
+            <div class="text-color"><h4>24/7</h4></div>
+            <a class="btn btn-lg btn-primary" (click)="navigate('/contact-us')" role="button">Contact Us</a>
+          </div> -->
+          </div>
+        </div>
+      </div>
+      </div>
+    <div class="jumbotron-bottom">
+      <div class="container">
+        <div class="feature row">
+          <div class="col col p-3 feature-icon-style text-center override-padding-x-axis" *ngFor="let feature of feature">
+            <img [src]="feature?.path" [alt]="feature?.alt" width="auto">
+            <h2>{{feature.label}}</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="bg-light">
+    <div class="container py-4">
+      <div class="section py-4 m-0">
+        <div class="row">
+          <div class="col-lg-6 py-3 home-map">
+              <iframe title="Facility Google Map"
+               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11637.59640807121!2d-89.1910089!3d43.180136!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x709dd4fcd39a6c21!2sSun%20Prairie%20Self%20Storage!5e0!3m2!1sen!2sus!4v1591128535102!5m2!1sen!2sus"
+                width="100%" height="100%" frameborder="0" allowfullscreen rel="noopener" ></iframe> 
+          </div>
+
+         
+          <div class="col-lg-6 py-2">
+            <div class="mb-4">
+              <p>
+                <span class="font-xs-device" *ngFor="let contact of contactDetails">
+                  <b>{{contact.label}}</b><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect" class="contact-links">&nbsp;{{contact.data}}</a></span>
+                  <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
+                </span>
+              </p>
+              <div class="mt-2">
+                  <b>Office Hours:</b>
+                <p>
+                  <span *ngFor="let hour of hours">
+                    <strong>{{hour.label}} </strong> {{hour.data}}<br>
+                  </span>
+                </p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="section py-5 m-0">
+      <div class="row">
+        <div class="col-lg-6 py-3">
+          <app-photos></app-photos>
+          <!-- <img src="{{imageBaseUrl}}/inside-self-storage-unit.{{imagetype}}" width="100%"  height='540px' loading='lazy' alt="{{aboutUsAlt}}" class="sectionImage"> -->
+        </div>
+        <div class="col-lg-6 py-3">
+          <h1 class="heading pb-4">{{aboutUsHeading}}</h1>
+          <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="getStarted" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
+    <div class="bg-translucent-light">
+      <div class="container">
+        <div class="section py-5 m-0">
+          <div class="row">
+            <div class="col-md-12 py-3">
+              <h2 class="heading pb-4">Getting Started</h2>
+              <p class="pb-4">{{gettingStarted}}</p>
+              <a class="btn btn-lg btn-primary" (click)="navigate('/view-rates')" role="button">Rent Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 

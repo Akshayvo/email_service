@@ -1,0 +1,118 @@
+@import '../../../styles.scss';
+
+.button {
+  width: -webkit-fill-available;
+}
+
+table {
+  tbody {
+    tr:nth-child(even){
+      background-color: #dcdcdc;
+    }
+
+    tr {
+      td {
+        padding: 10px 20px;
+        border: 1px solid #dee2e6;
+      }
+    }
+  }
+}
+.home-link {
+  a {
+    color: $secondary;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.loaderBg {
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  // top: 15%;
+  bottom: 35%;
+  left: 35%;
+  // right: 5%;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.7);
+  p{
+    text-align: center
+  }
+}
+
+.loader {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid $secondary;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 1s linear infinite;
+  margin-top: 20%;
+  margin-left:35%;
+  // margin-bottom: 10px;
+
+  // position: absolute;
+  // top: 50%;
+  // bottom: 50%;
+  // left: 50%;
+  // right: 50%;
+  // z-index: 20;
+  position: relative;
+  
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+@media only screen and (max-width: 991px) and (min-width:768px) {
+  .loaderBg {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    // top: 15%;
+    bottom: 40%;
+    left: 30%;
+    // right: 5%;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.7);
+    p{
+      text-align: center
+    }
+  }
+}
+@media only screen and (max-width: 767px) and (min-width:430px) {
+  .loaderBg {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    // top: 15%;
+    bottom: 30%;
+    left: 20%;
+    // right: 5%;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.7);
+    p{
+      text-align: center
+    }
+  }
+}
+@media only screen and (max-width: 429px) {
+  .loaderBg {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    // top: 15%;
+    bottom: 30%;
+    left: 20%;
+    // right: 5%;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.7);
+    p{
+      text-align: center
+    }
+  }
+}
