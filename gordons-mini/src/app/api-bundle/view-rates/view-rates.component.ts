@@ -11,7 +11,13 @@ import { viewRatesPageTitle, viewRatesPageContent } from "../../data/title";
 import { Router } from "@angular/router";
 import { CanonicalService } from "../../services/canonical.service";
 import { environment } from "../../../environments/environment";
-import { script } from "../../data/script";
+import {
+  homePageScript,
+  ogHomePage,
+  script,
+  twitterHomePage,
+} from "../../data/script";
+
 @Component({
   selector: "app-view-rates",
   templateUrl: "./view-rates.component.html",
@@ -34,6 +40,10 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
   viewRatesPageTitle: string;
   viewRatesAltText: string;
   state: string;
+  ogHomePage: any;
+twitterHomePage: any;
+testimonials: any;
+  script: any;
   private isUnsubscribe$: Subscription;
 
   constructor(
@@ -45,7 +55,24 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
     private canonical: CanonicalService
   ) {
     this.state = script.state;
+    this.fetchScript();
+    this.loadScript();
     this.fetchMetaData();
+    this.fetchOgHomePage();
+    this.fetchTwitterHomePage();
+    this.ogHomePage.forEach((element) => {
+      this.meta.updateTag({
+        property: element.property,
+        content: element.content,
+      });
+    });
+
+    this.twitterHomePage.forEach((element) => {
+      this.meta.updateTag({
+        name: element.name,
+        content: element.content,
+      });
+    });
     this.meta.updateTag({
       name: "description",
       content: `${this.viewRatesPageContent}`,
@@ -60,6 +87,56 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
     window.scrollTo(0, 0);
     this.fetchViewRates();
     this.fetchViewRatesHeading();
+  }
+
+  
+  findMinMax(arr) {
+    let min = arr[0].MonthlyRate,
+      max = arr[0].MonthlyRate;
+    for (let i = 1, len = arr.length; i < len; i++) {
+      let v = arr[i].MonthlyRate;
+      min = v < min ? v : min;
+      max = v > max ? v : max;
+    }
+
+    return [min, max];
+  }
+
+  // getData() {
+  //   this.getDataSubscribe$ = this.fetchDataService.getData()
+  //     .subscribe(unitTypesResponse => {
+  //       this.findMinMax(unitTypesResponse.lstUnitTypes)
+
+  //    const min = this.findMinMax(unitTypesResponse.lstUnitTypes)[0];
+  //    const max= this.findMinMax(unitTypesResponse.lstUnitTypes)[1];
+
+  //    console.log('this.findMinMax(unitTypesResponse.lstUnitTypes)[0]', min,
+  //    'this.findMinMax(unitTypesResponse.lstUnitTypes)[1]', max);
+
+  //     });
+  //   }
+
+  public loadScript() {
+    const node = document.createElement("script"); // creates the script tag
+    node.type = "application/ld+json"; // set the script type
+    node.async = false; // makes script run asynchronously
+    // node.charset = 'utf-8';
+    node.innerHTML = JSON.stringify(this.script);
+    // append to head of document
+    // document.getElementsByTagName('head')[0].appendChild(node);
+    document.head.appendChild(node);
+  }
+
+  public fetchScript() {
+    this.script = homePageScript;
+  }
+
+  public fetchOgHomePage() {
+    this.ogHomePage = ogHomePage;
+  }
+
+  public fetchTwitterHomePage() {
+    this.twitterHomePage = twitterHomePage;
   }
 
   public navigate(location: any) {

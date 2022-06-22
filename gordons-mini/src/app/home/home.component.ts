@@ -10,6 +10,7 @@ import {
   jumbotron,
   aboutUsAlt,
   aboutUsHeading,
+  testimonials
 } from "../data/home";
 import { MetaService } from "../services/link.service";
 import { DOCUMENT } from "@angular/common";
@@ -54,7 +55,8 @@ export class HomeComponent implements OnInit {
   objSIMSetting: any;
   template: string;
   ogHomePage: any;
-twitterHomePage: any
+twitterHomePage: any;
+testimonials: any;
   script: any;
 
   // private getDataSubscribe$: Subscription;
@@ -120,7 +122,9 @@ twitterHomePage: any
     this.fetchFeature();
     this.fetchJumbotron();
     this.fetchTemplate();
+
     this.fetchScript();
+    this.fetchTestimonials();
     window.scrollTo(0, 0);
   }
 
@@ -175,6 +179,10 @@ twitterHomePage: any
 
   public fetchTemplate() {
     this.template = environment.template;
+  }
+
+  public fetchTestimonials() {
+    this.testimonials = testimonials;
   }
 
   public fetchMetaData() {
