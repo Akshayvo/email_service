@@ -19,12 +19,12 @@
             <h2  class="my-4">
               {{jumbotron.h2}}
             </h2>
-          <!-- <p class="text-justify">{{jumbotron.blurb}}</p> -->
+          <p class="text-justify">{{jumbotron.blurb}}</p>
           </div>
           <div class="jumbotorn-button text-center ">
             <a class="btn btn-lg btn-primary " (click)="navigate('/view-rates')" role="button">Rent Now</a>
             <!-- <a class="btn btn-lg btn-primary" (click)="navigate('/contact-us')" role="button">Contact Us</a> -->
-            <div class="text-color text-center mt-1"><h4><strong>24/7</strong></h4></div>
+            <!-- <div class="text-color text-center mt-1"><h4><strong>24/7</strong></h4></div> -->
           
           </div>
           </div>
@@ -97,8 +97,12 @@
           <!-- <img src="{{imageBaseUrl}}/inside-self-storage-unit.{{imagetype}}" width="100%"  height='540px' loading='lazy' alt="{{aboutUsAlt}}" class="sectionImage"> -->
         </div>
         <div class="col-lg-6 py-3">
-          <h1 class="heading pb-4">{{aboutUsHeading}}</h1>
-          <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p>
+          <h1 class="heading pb-1">{{aboutUsHeading}}</h1>
+            <div *ngFor="let data of aboutUs" class="about-us-info">
+              <p class="justify bold-text">{{data.pb}}</p>
+              <p class="justify">{{data.p}}</p>
+              <div [innerHtml]="data.div"></div>
+            </div>
         </div>
       </div>
     </div>

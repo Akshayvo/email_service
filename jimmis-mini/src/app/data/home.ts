@@ -89,9 +89,9 @@ export const feature = [
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/390_Self_Storage/24-hours.svg',
-        label: '24 Hour Facility Access',
-        alt: 'Icon art displaying clock hands and the number 24'
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/cctv.svg`,
+        label: 'Security Cameras on Premises',
+        alt: 'Icon of a security camera'
     },
     {
         // tslint:disable-next-line:max-line-length
@@ -101,47 +101,57 @@ export const feature = [
     },
 ];
 
-export const aboutUs = [
-    {
-        p: `Convenient Self Storage in Raleigh, NC. Locally Owned & Operated Since 1983
-        With our large variety of unit types and sizes, Jimmy’s Minis Self Storage can give you the storage space you’re looking for at affordable rates. Our friendly staff and secure, well-constructed facility provide the ease of use and piece of mind you deserve in self-storage in Raleigh, NC.`,
-    },
-    
-];
-
 // export const aboutUs = [
 //     {
-//         p: `Jimmys Minis Self Storage is Rochester’s newest self storage facility. With three self storage
-//         facilities in the greater Rochester area; when it comes to self storage, we are your home
-//         town experts. We work hard every day to provide the right mix of convenience, affordability,
-//         and security for our patrons.`,
+//         p: `Convenient Self Storage in Raleigh, NC. Locally Owned & Operated Since 1983
+//         With our large variety of unit types and sizes, Jimmy’s Minis Self Storage can give you the storage space you’re looking for at affordable rates. Our friendly staff and secure, well-constructed facility provide the ease of use and piece of mind you deserve in self-storage in Raleigh, NC.`,
 //     },
-//     {
-//         p: `We are conveniently located just minutes from the Greater Rochester Airport.  Our address
-//         is 142 Buell Road. Take Route 390 and exit at Chili Avenue, exit 19. Cross straight over Chili
-//         Avenue at the light where you will see our Jimmys Minis Self Storage sign at the end of the driveway.
-//         Follow that straight back to our office on the left.`,
-//     },
-//     {
-//         p: `Our facility offers convenient 24-hour access, 7 days a week. We also offer 24-hour online
-//         account management with bill payment available through our tenant on-line portal.`,
-//     },
-//     {
-//         p: `We offer a fully fenced facility along with a drive up security gate. Our gate is fully lit
-//         with security cameras and accessible only with personal access codes.  Our security also includes
-//         well-lit drive-up standard units as well as throughout our climate-controlled buildings. Our entire
-//         facility has enhanced security with 24 hours state of the art security cameras. This ensures a true
-//         sense of safety at all times.`
-//     },
-//     {
-//         p: `Our facility is the ideal solution to help you recover some of that elbow room around the house,
-//         or to use during a move or a remodeling project. Our residential users love the affordable rate and
-//         easy drive-up access. Our climate-controlled units are ideal for more delicate belongings such as
-//         furniture, pictures and important documents. Businesses love our climate-controlled units for records
-//         storage. Local businesses routinely store their supplies and inventory with us to save money over
-//         expanding with commercial real estate prices.`
-//     }
+    
 // ];
+
+export const aboutUs = [
+    {
+        p: `Since 1983, Jimmy’s Minis has been dedicated to providing excellent customer service and secure self-storage in Raleigh, NC.`,
+    },
+    {
+        p: `We are conveniently located just minutes from the Greater Rochester Airport.  Our address
+        is 142 Buell Road. Take Route 390 and exit at Chili Avenue, exit 19. Cross straight over Chili
+        Avenue at the light where you will see our Jimmys Minis Self Storage sign at the end of the driveway.
+        Follow that straight back to our office on the left.`,
+    },
+    {
+        pb: `Security for Your Possessions: `,
+    },
+    {
+        p: `When they’re your belongings, we know that every item is valuable. We offer 24-hour surveillance and gate-protected access for your piece of mind.`
+    },
+    {
+        pb: `Storage Solutions: `,
+    },
+    {
+        p: `We offer a large variety of unit types and sizes to ensure you get the space you need without having to pay for space you’re not going to use. All our units are made of concrete block and include overhead insulation, electricity, water protection and more.`,
+    },
+    {
+        pb: `Convenient Location: `,
+    },
+    {
+        p: `Conveniently located directly between I-40 and US-70, our topnotch facilities are easily accessible from anywhere in the Triangle.`,
+    },
+    {
+        div: `<p><strong><i class="mr-1">Directions from NCSU:</i></strong> Take I-440E to Exit 5. Turn right onto Lake Boone Trail. After
+        approximately 1 mile, turn right onto Blue Ridge Rd. Continue onto Duraleigh Rd. After
+        approximately 2.7 miles, turn right onto Delta Lake Dr. Jimmy’s Minis will be on the left.</p>`,
+    },
+    {
+        div: `<p><strong><i class="mr-1">Directions from I-40E:</i></strong> Take I-40E to Exit 283 and merge onto I-540E toward US-70. Take Exit 4A toward US-70E/Raleigh. After approximately 0.7 miles, take a slight right toward US-70E/Glenwood Ave. In 3.8 miles, turn right onto Duraleigh Rd. In 0.5 miles, turn left onto Delta Lake Rd. Jimmy’s Minis will be on the left.</p>`,
+    },
+    {
+        div: `<p><strong><i class="mr-1">Directions from I-40W, via Edwards Mill Road:</i></strong> Take I-40E to Exit 289 to Wade Ave. Take the Edwards Mill Rd./PNC Arena exit. Turn left onto Edwards Mill Rd. and go 1.4 miles. Turn left onto Duraleigh Rd. and go 2.5 miles. Turn right onto Delta Lake Dr. Jimmy’s Minis will be on the left.</p>`,
+    },
+    {
+        div: `<p><strong><i class="mr-1">Directions from Crabtree Valley Mall:</i></strong> Head west on US-70 W/NC-50 N/Glenwood Ave. Turn left onto Pleasant Valley Rd. Turn left onto Commercial Ave. Turn right onto Delta Lake Dr. Jimmy’s Minis is on the right</p>`,
+    },
+];
 
 export const testimonials = [
     {
@@ -176,7 +186,7 @@ export const testimonials = [
 
 export const aboutUsAlt = `indoor climate controlled storage units with roll-up doors inside of a clean, well-lit building`;
 
-export const aboutUsHeading = ``;
+export const aboutUsHeading = `Affordable Self Storage in Raleigh NC`;
 
 export const gettingStarted = `If you're ready to reclaim that space around the house, or expand your business
 without taking on more expensive commercial real estate space just to store supplies, give Jimmys Minis Self Storage a Call!`;
@@ -193,6 +203,6 @@ export const blurb = [
 export const jumbotron = [
     {
         h2: `Convenient Self Storage in Raleigh, NC.`,
-        blurb: `Jimmys Minis Self Storage is conveniently located minutes away from the universities and colleges in Rochester and the Greater Rochester International Airport. Take a moment to review our rates, and rent your self storage unit in minutes with our simple, online rental process!`,
+        blurb: `With our large variety of unit types and sizes, Jimmy’s Minis Self Storage can give you the storage space you’re looking for at affordable rates. Our friendly staff and secure, well-constructed facility provide the ease of use and piece of mind you deserve in self-storage in Raleigh, NC.`,
     }
 ];
