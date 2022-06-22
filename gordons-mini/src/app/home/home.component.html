@@ -41,20 +41,20 @@
       <div class="section py-4 m-0">
         <div class="row">
           <div class="col-lg-6 py-3 home-map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11048.111111842407!2d-122.905302!3d46.1900059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdb2d73f608a3ddf!2sGordon&#39;s%20Mini-Storage!5e0!3m2!1sen!2sus!4v1600978304141!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen></iframe> 
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11048.111111842407!2d-122.905302!3d46.1900059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdb2d73f608a3ddf!2sGordon&#39;s%20Mini-Storage!5e0!3m2!1sen!2sus!4v1600978304141!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen title="homepage map"></iframe> 
           </div>
 
           <div class="col-lg-6 py-3">
             <div class="mb-4">
               
               <p>
-                <span *ngFor="let contact of contactDetails">
-                  <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
+                <span *ngFor="let contact of contactDetails" class="contact-details">
+                  <span><h3>{{contact.label}}</h3></span><span class="contact-links" *ngIf="contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
                     <a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
                   <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
                 </span>
               </p>
-              <b>Facility Hours:</b>
+              <h4>Facility Hours:</h4>
               <p>
                 <span *ngFor="let hour of hours">
                   <b>{{hour.label}}</b>&nbsp;{{hour.data}}<br>
@@ -94,7 +94,7 @@
        
         src="https://www.youtube.com/embed/N0lBOICYErU" 
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen></iframe>
+        allowfullscreen title="video of facility"></iframe>
         </div>
       </div>
     </div>
