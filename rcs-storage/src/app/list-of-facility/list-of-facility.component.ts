@@ -30,14 +30,14 @@ export class ListOfFacilityComponent implements OnInit {
   }
 
   public fetchContactBrookside() {
-    this.contactsBrookside = contactsLocation2;
-    this.contactsAndrews = contactsLocation1;
+    this.contactsBrookside = contactsLocation1;
+    this.contactsAndrews = contactsLocation2;
     this.contactsMontgomery = contactsLocation3;
   }
 
   public fetchHoursBrookside() {
-    this.hoursBrookside = hoursLocation2;
-    this.hoursAndrews = hoursLocation1;
+    this.hoursBrookside = hoursLocation1;
+    this.hoursAndrews = hoursLocation2;
     this.hoursMontgomery = hoursLocation3;
   }
 

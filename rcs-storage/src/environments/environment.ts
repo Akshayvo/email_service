@@ -17,8 +17,8 @@ export const environment = {
   appId: 'RCS Storage - Testing',
   facilityName: 'RCS Storage',
   VERSION: require('../../package.json').version,
-  baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: `https://rcs-storage-staging.netlify.app`
+  baseUrl: `https://simapi.syrasoft.com/1/api/`,    
+  websiteUrl: `https://rcs-storage-staging.netlify.app`   
 };
 
 /*
