@@ -70,12 +70,19 @@ export const contactsLocation1 = [
     {
         id: 2,
         label: 'Office Address: ',
-        data: '7 Days a Week, Sunrise to Sunset',
+        data: '4072 Ridge Rd Williamson NY (By Appointment Only)',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: 'https://goo.gl/maps/PdVq9xjHXGieXPL87'
     },
     {
         id: 3,
+        label: 'Mailing Address: ',
+        data: 'P O Box 8, Williamson NY 14589',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/PdVq9xjHXGieXPL87'
+    },
+    {
+        id: 4,
         label: 'Email: ',
         email: 'rdpeck47@hotmail.com',
         data: `rdpeck47@hotmail.com`,
@@ -83,11 +90,11 @@ export const contactsLocation1 = [
         redirect: 'mailto:rdpeck47@hotmail.com'
     },
     {
-        id: 4,
+        id: 5,
         label: 'Phone: ',
-        data: '',
+        data: '(315) 589-7180',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:'
+        redirect: 'tel:3155897180'
     },
 ];
 
