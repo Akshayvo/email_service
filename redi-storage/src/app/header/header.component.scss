@@ -28,13 +28,13 @@ img {
 
 .btn-payment {
   background-color: #FF0000;
-  color: $primary;
+  color: $white;
 }
 
 .payment-button {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .dropdown-menu {
@@ -110,6 +110,13 @@ img {
   border: 1px solid $primary;
 }
 
+.website-redirect{
+  background-color: $secondary;
+  font-weight: bold;
+  border: none;
+  outline: none;
+}
+
 
 @media screen and (max-width: 1199px) and (min-width: 992px) {
   .nav-link {
@@ -182,5 +189,9 @@ img {
   .navbar{
     padding-top: 0px !important;
     padding-bottom: 0px !important;
+  }
+
+  .website-redirect {
+    display: none;
   }
 }

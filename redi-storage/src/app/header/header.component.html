@@ -13,15 +13,19 @@
           </span>
         </div>
         <div class="col-md-2 ml-auto text-right">
-          <span class="social pl-2 text-right" *ngFor="let social of socialLinks">
+          <!-- <span class="social pl-2 text-right" *ngFor="let social of socialLinks">
             <a [href]="social?.path" target="_blank" rel="noreferrer">
               <i [class]="social?.class"></i>
             </a>
-          </span>
+          </span> -->
+          <a href="https://redistorage.com/" target="_blank">
+            <button type="button" class="btn btn-secondary btn-sm website-redirect">redistorage.com</button>
+          </a>
         </div>
       </div>
       <div class="payment-button">
         <a class="btn btn-payment p-2" [routerLink]="['/pay-rent']" role="button">Pay Rent</a>
+        <a class="btn btn-payment p-2" href="https://redistorage.com/" target="_blank" role="button">redistorage.com</a>
        </div> 
     </div>
   </div>
