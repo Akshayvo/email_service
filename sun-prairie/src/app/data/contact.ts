@@ -4,7 +4,7 @@ export const contact = [
         label: 'Address:',
         data: '2425 HWY 19, Sun Prairie, WI 53590',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
-        redirect: ''
+        redirect: 'https://goo.gl/maps/f1eeemjXf6JC8ip48'
     },
     {
         id: 1,
