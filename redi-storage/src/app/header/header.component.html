@@ -18,14 +18,10 @@
               <i [class]="social?.class"></i>
             </a>
           </span> -->
-          <a href="https://redistorage.com/" target="_blank">
-            <button type="button" class="btn btn-secondary btn-sm website-redirect">redistorage.com</button>
-          </a>
         </div>
       </div>
       <div class="payment-button">
         <a class="btn btn-payment p-2" [routerLink]="['/pay-rent']" role="button">Pay Rent</a>
-        <a class="btn btn-payment p-2" href="https://redistorage.com/" target="_blank" role="button">redistorage.com</a>
        </div> 
     </div>
   </div>
@@ -34,7 +30,7 @@
 
 <nav class="navbar navbar-expand-lg bg-white py-0">
   <div class="container ">
-    <a class="navbar-brand" (click)="navigate('/')">
+    <a class="navbar-brand" href="https://redistorage.com/" target="_blank">
       <img src="https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Redi_Storage/redi-storage-logo.png" width="auto"
       alt="390 Self Storage">
     </a>
