@@ -25,11 +25,12 @@ export class ErrorComponent implements OnInit {
   fetchMail(){
 
     this.currentTimeInSeconds= new Date();
-
+    const userAgent = window.navigator.userAgent;
     this.completeMessage = `Domain Name: ${environment.websiteUrl}, <br/>
     Effected URL:  ${environment.websiteUrl}${this.router.url} <br />
     Timestamp: ${this.currentTimeInSeconds} <br />
-    Refferring URL: ${environment.websiteUrl}${this.refferURL}`;
+    Refferring URL: ${environment.websiteUrl}${this.refferURL} <br />
+    User Agent: ${userAgent}`;
 
       const body = {
         name: "404 Error Occured",
