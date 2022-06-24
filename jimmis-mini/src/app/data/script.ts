@@ -30,7 +30,7 @@ export const script = {               // Please fill this script according to fa
       "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Jimmis-Mini/Jpg/jimmys169.jpg" // 16:9
      ],
      telephone: contact[contactIndex].data,
-     map: "https://www.google.com/maps?ie=UTF8&hq&ll=44.264137,-88.3540592",
+     map: "https://goo.gl/maps/BtusMsoRWiM9e1QYA",
      description: "A superb collection of fine gifts and clothing to accent your stay in Mexico Beach.",
      streetAddress: "142 Buell Rd",
      state: "New York",

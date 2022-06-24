@@ -4,7 +4,7 @@ export const contact = [
     label: 'Address: ',
     data: '4412 Delta Lake Drive, Raleigh, NC 27612',
     class: 'fas fa-map-marker-alt mr-2 iconColor',
-    redirect: 'https://goo.gl/maps/SDJLcFM2mfveHU1CA'
+    redirect: 'https://goo.gl/maps/BtusMsoRWiM9e1QYA'
   },
   {
     id: 1,
