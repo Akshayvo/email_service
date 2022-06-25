@@ -1,0 +1,51 @@
+@import "../../styles.scss";
+
+
+.direction-holder {
+  background-color: $light;
+  padding: 64px;
+  margin-bottom: 50px;
+
+  h2 {
+    text-transform: capitalize;
+  }
+
+  p {
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  ul {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .map-responsive {
+    iframe {
+      border: 2px solid white;
+    }
+  }
+}
+
+@media only screen and (max-width: 886px) {
+  .direction-holder {
+    span {
+      a {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .direction-holder {
+    padding: 16px;
+
+    span {
+      a {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

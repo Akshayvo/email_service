@@ -1,0 +1,415 @@
+@import "../../styles.scss";
+
+.contact-details {
+  background-color: $light;
+  padding-top: 172px;
+}
+
+.feature-block {
+  h2 {
+    line-height: 1.5rem;
+  
+  }
+
+  img {
+    height: 60px;
+  }
+
+  .f-text {
+    color: $dark;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+}
+
+.social-content {
+  .each-contact {
+  font-size: 0.8rem;
+  }
+}
+
+.alarm{
+  background-color: #BE2926;
+  color:#fff;
+  font-size: 1.5rem;
+}
+
+.iconColor {
+  font-size: 1.1rem;
+}
+
+.contact-data {
+  a {
+    color: white;
+  }
+}
+
+.header-background {
+  background: white;
+
+  h1 {
+    text-transform:capitalize;
+    font-size: 1.6rem;
+  }
+}
+
+
+
+.sub-component-background {
+  background-color: #f1f0ed;
+}
+
+.tab-background {
+  background-color: white;
+}
+
+.social-content {
+  background-color: $primary;
+  color: $white;
+
+  .iconColor {
+    color: $white;
+  }
+}
+
+.img-box-1-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Sample_Self_Storage_Multi/jpg/sample-self-storage-north-jumbotron.jpg");
+  background-size: cover;
+  height: 500px;
+  background-position: center right;
+}
+
+.img-box-1-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Sample_Self_Storage_Multi/webp/sample-self-storage-north-jumbotron.webp");
+  background-size: cover;
+  height: 500px;
+  background-position: center right;
+}
+
+.img-box-2-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Sample_Self_Storage_Multi/jpg/sample-self-storage-north-jumbotron.jpg");
+  background-size: cover;
+  height: 390px;
+  background-position: center;
+}
+
+.img-box-2-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Sample_Self_Storage_Multi/webp/sample-self-storage-north-jumbotron.webp");
+  background-size: cover;
+  height: 390px;
+  background-position: center;
+}
+
+.img-box-3-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Sample_Self_Storage_Multi/jpg/sample-self-storage-north-jumbotron.jpg");
+  background-size: cover;
+  height: 390px;
+  background-position: center right;
+}
+
+.img-box-3-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Sample_Self_Storage_Multi/webp/sample-self-storage-north-jumbotron.webp");
+  background-size: cover;
+  height: 390px;
+  background-position: center right;
+  
+}
+
+.img-box-4-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Sample_Self_Storage_Multi/jpg/sample-self-storage-north-jumbotron.jpg");
+  background-size: cover;
+  height: 390px;
+  background-position: center right;
+}
+
+.img-box-4-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Sample_Self_Storage_Multi/webp/sample-self-storage-north-jumbotron.webp");
+  background-size: cover;
+  height: 390px;
+  background-position: center right;
+}
+
+.img-box-5-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Sample_Self_Storage_Multi/jpg/sample-self-storage-north-jumbotron.jpg");
+  background-size: cover;
+  height: 390px;
+  background-position: center right;
+}
+
+.img-box-5-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Sample_Self_Storage_Multi/webp/sample-self-storage-north-jumbotron.webp");
+  background-size: cover;
+  height: 390px;
+  background-position: center right;
+}
+
+.img-box-6-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Sample_Self_Storage_Multi/jpg/sample-self-storage-north-jumbotron.jpg");
+  background-size: cover;
+  height: 390px;
+  background-position: center right;
+}
+
+.img-box-6-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Sample_Self_Storage_Multi/webp/sample-self-storage-north-jumbotron.webp");
+  background-size: cover;
+  height: 390px;
+  background-position: center right;
+}
+
+.hours-data {
+  .col-lg-4 {
+    padding-left: 0;
+
+    .btn {
+      margin-left: 0;
+    }
+  }
+}
+
+.social-links {
+  float: right;
+  padding-right: 0;
+  position: relative;
+  padding-left: 10%;
+  padding-top: 5px;
+}
+
+.disp {
+  display: block;
+}
+
+@media only screen and (min-width: 992px) {
+  .contact-details {
+    .btn-area {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .disp {
+    display: none;
+  }
+
+  .social-content {
+      .each-contact {
+        display: block;
+      }
+  }
+
+
+  .img-box-1 {
+    height: 410px;
+    background-position: center right;
+  }
+
+  .img-box-2 {
+    height: 420px;
+    background-position: center;
+  }
+
+  .img-box-3 {
+    height: 380px;
+  }
+
+  .hours-data {
+    .col-lg-8 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    .col-lg-4 {
+      padding-left: 15px;
+      flex: 0 0 100%;
+      max-width: 100%;
+
+      .btn {
+        width: 100%;
+        // margin: 5px 30px 5px 15px !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .social-content {
+    h1 {
+      font-size: 1.4rem;
+    }
+  }
+
+  .iconColor {
+    font-size: 1rem;
+  }
+
+  td {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .img-box-1 {
+    height: 300px;
+    background-position: center right;
+  }
+
+  .img-box-2 {
+    height: 300px;
+    background-position: center;
+  }
+
+  .img-box-3 {
+    height: 300px;
+    background-position: center right;
+  }
+
+  .hours-data {
+    h1 {
+      font-size: 1.2rem;
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+
+// @media only screen and (max-width: 1199px) and (min-width: 992px) {
+//   .contact-details {
+//     padding-top: 160px;
+//   }
+// }
+
+// @media only screen and (max-width: 991px) and (min-width: 768px) {
+//   .contact-details {
+//     padding-top: 134px;
+//   }
+// }
+
+
+@media only screen and (max-width: 768px) {
+  .social-content {
+      .each-contact {
+        width: 100%;
+        display: block;
+      }
+  }
+
+  .img-box-1 {
+    height: 250px;
+    background-position: center right;
+  }
+
+  .img-box-2 {
+    height: 250px;
+    background-position: center;
+  }
+
+  .img-box-3 {
+    height: 250px;
+    background-position: center right;
+  }
+
+  .btn {
+    width: 30%;
+    margin-left: 5px;
+  }
+
+  .hours-data {
+    .col-lg-4 {
+      .btn {
+        width: 32%;
+      }
+    }
+  }
+}
+
+// @media only screen and (max-width: 767px) and (min-width: 601px) {
+//   .contact-details {
+//     padding-top: 174px;
+//   }
+// }
+
+@media only screen and (max-width: 600px) {
+  .contact-details {
+    background-color: $light;
+    padding-top: 115px;
+
+    .row {
+      margin-left: 1px;
+      margin-right: 1px;
+    }
+
+    .social-content {
+      padding-top: 10px !important;
+      padding-bottom: 10px !important;
+      padding-left: 0 !important;
+
+      h1 {
+        padding-left: 15px;
+      }
+
+      span {
+        padding-top: 0 !important;
+      }
+    }
+
+    .hours-data {
+      .col-lg-8 {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 20px;
+      }
+
+      .col-lg-4 {
+        padding-right: 0;
+        padding-left: 0;
+
+        .btn {
+          width: 100%;
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+    }
+
+    .btn-area {
+      padding-bottom: 15px;
+    }
+  }
+
+  .sub-components {
+    padding: 0 16px;
+  }
+}
+
+// @media only screen and (max-width: 600px) and (min-width: 576px) {
+//   .contact-details {
+//     padding-top: 182px;
+//   }
+// }
+
+
+// @media screen and (max-width: 575px) and (min-width: 453px) {
+//   .contact-details {
+//     padding-top: 172px;
+//   } 
+// }
+
+// @media screen and (max-width: 452px) {
+//   .contact-details {
+//     padding-top: 200px;
+//   } 
+// }
+
+@media only screen and (max-width: 340px) {
+  .social-content {
+    .each-contact {
+      font-size: 0.7rem;
+    }
+    h1 {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+  }
+}

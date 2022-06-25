@@ -1,0 +1,44 @@
+@import "../../styles.scss";
+
+.contact-links {
+    a {
+        color: black;
+    }
+}
+
+h2 {
+    line-height: 1.8rem;
+}
+
+.partition-border {
+    border-left: 2px solid $border;
+    padding-left: 3%;
+
+    h3 {
+        font-size: 1.5rem;
+    }
+}
+
+.contact-label {
+    line-height: 0rem;
+    display: flex;
+    h3 {
+        font-size: 0.88rem;
+        line-height: 1rem;
+        width: fit-content;
+        font-weight: 400;
+    }
+}
+
+
+
+@media only screen and (max-width: 991px) {
+    h2 {
+        line-height: 1.5rem;
+        padding-bottom: 1rem;
+    }
+    .partition-border {
+        border-left: none;
+        padding-left: 15px;
+      }
+}

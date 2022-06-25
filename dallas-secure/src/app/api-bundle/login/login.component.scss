@@ -1,0 +1,67 @@
+
+@import "../../../styles.scss";
+
+.forgot-link {
+  a {
+    color: $primary;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.coming-soon {
+  font-size: 3rem;
+  display: flex;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+}
+
+.rent-example {
+  border-left: 1px solid black;
+  padding-left: 50px;
+
+  a {
+    color: black;
+  }
+}
+
+.display-none {
+  display: none;
+}
+
+.loader {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid $primary;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 1s linear infinite;
+  margin: auto;
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  z-index: 1;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.button-display {
+  display: flex;
+  align-items: end;
+}
+
+@media only screen and (max-width: 991px) {
+  .rent-example {
+    border-left: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .coming-soon {
+    font-size: 2rem;
+  }
+}

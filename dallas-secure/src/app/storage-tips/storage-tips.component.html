@@ -1,0 +1,19 @@
+<div class="storage-tip-holder">
+  <div class="container">
+    <div class="heading">
+      <h1 class="text-center pt-5">Storage Tips</h1>
+    </div>
+    <div class="storage-content mt-5">
+      <div class="row">
+          <div class="col-md-6">
+            <ul>
+              <li *ngFor="let point of storagePoints" class="p-1 text-justify"> {{point.data}} </li>
+            </ul>
+          </div>
+        <div class="col-md-6">
+          <app-accordion></app-accordion>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

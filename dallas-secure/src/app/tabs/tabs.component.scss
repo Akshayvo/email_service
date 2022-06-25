@@ -1,0 +1,109 @@
+@import "../../styles.scss";
+
+.tab {
+  margin-bottom: 0;
+  width: 100%;
+
+  .grid-item {
+    border-left: 1px solid $light;
+    border-right: 1px solid $light;
+    border-top: 1px solid $light;
+    cursor: pointer;
+  }
+
+  a {
+    text-decoration: none;
+    color: $dark;
+    background-color: transparent;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    box-shadow: none;
+    margin: auto 0;
+    text-transform: capitalize;
+  }
+}
+
+.fullwidth {
+  width: 100%;
+}
+
+
+.tab-active {
+  background-color: $primary !important;
+  color: white !important;
+}
+
+// .active-tab {
+//   background-color: $primary !important;
+//   color: white !important;
+// }
+
+@media only screen and (min-width: 768px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+
+    .grid-item {
+      position: relative;
+      background-color: #e2e0d8;
+    }
+  }
+
+  .disp {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-view {
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+  .disp {
+    display: block;
+  }
+  .desktop-view {
+    display: none;
+  }
+
+//   .horizontal-scroll-wrapper {
+//     overflow-y: hidden;
+//     overflow-x: auto;
+//     display: flex;
+
+    .grid-item {
+      position: relative;
+      background-color: #e2e0d8;
+      width: 100%;
+      display: flex;
+    }
+
+    .payment-tab {
+      width: 50%;
+    }
+  // }
+}
+
+@media only screen and (max-width: 600px) {
+  .tab {
+    padding-right: auto;
+    padding-left: auto;
+    width: 100%;
+
+    .grid-item {
+      position: relative;
+      background-color: #e2e0d8;
+
+      .btn {
+        min-width: 110px;
+        font-size: .8rem;
+      }
+    }
+  }
+}

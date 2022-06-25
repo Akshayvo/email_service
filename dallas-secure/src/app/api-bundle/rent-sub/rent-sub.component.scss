@@ -1,0 +1,34 @@
+@import "../../../styles.scss";
+
+.rent-sub-holder {
+  padding: 64px;
+}
+
+.display-none {
+  display: none;
+  visibility: hidden;
+}
+
+.custom-border {
+  border-left: 1px solid black;
+}
+
+a {
+  color: #212529;
+}
+
+@media only screen and (max-width: 767px) {
+  .custom-border {
+    border: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .rent-sub-holder {
+    padding: 16px;
+  }
+
+  iframe {
+    min-height: 400px;
+  }
+}

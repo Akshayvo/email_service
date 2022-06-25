@@ -1,0 +1,72 @@
+<!-- <app-script-hack type="application/ld+json">
+  {{ script | json }}
+</app-script-hack> -->
+<ngx-json-ld [json]="script"></ngx-json-ld>
+<!-- <div class="jumbotron-container"> -->
+<div class="jumbotron-home">
+
+    
+  <!-- <div class="for-mobile-view"> -->
+    <div id="carouselJumbo" class="carousel slide  jumbotron-top-style" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <!-- <li data-target="#carouselJumbo" data-slide-to="0" ></li>     -->
+        <li data-target="#carouselJumbo" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselJumbo" data-slide-to="1"></li>
+        <!-- <li data-target="#carouselJumbo" data-slide-to="3"></li>   -->
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="jumbotron-top1 jumbotron-top-style" title="Aerial photo of outdoor self storage units and parking spaces">
+            <div class="carousel-caption">
+            </div>
+          </div>
+        </div>
+       
+        <div class="carousel-item">
+          <div class="jumbotron-top2 jumbotron-top-style" title="Aerial photograph of self storage units">
+            <div class="carousel-caption">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  <!-- </div> --> 
+    
+  <!--Feature Box-->
+    <div class="container feature-block disp">
+      <div class="row h-100">
+        <div class="col-3 my-auto" *ngFor= "let feature of features">
+          <p class="text-center f-block-img"> 
+            <img src="{{feature.data}}" class="f-img" alt="{{feature.alt}}" >
+          </p>
+          <h2 class="text-center f-text">
+            {{feature.label}}
+          </h2>
+        </div>
+      </div>
+    </div>
+  <!--Feature Box Ends Here-->  
+</div>
+<app-list-of-facility></app-list-of-facility>
+
+
+
+
+<!--Service-->
+  <div class="service bg-light">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-6 pt-2">
+            <h1  class="pb-4">Clean, Easily Accessible Self Storage Units in Baldwinsville!</h1>
+            <div *ngFor="let para of serviceOffered">
+              <p>{{ para.p }}</p>
+            </div>
+          </div>
+          <div class="col-lg-6 text-center">
+            <app-photos></app-photos>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--Service Ends Here-->

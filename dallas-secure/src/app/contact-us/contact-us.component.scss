@@ -1,0 +1,117 @@
+@import "../../styles.scss";
+
+.contentHolder {
+  padding-top: 140px;
+  margin-bottom: 50px;
+  min-height: 90vh;
+  max-height: auto;
+  display: block;
+
+  .location-selection {
+    padding-bottom: 35px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .contact-data {
+    background-color: $light;
+
+    label {
+      padding-top: 0;
+      margin-bottom: 0;
+    }
+
+    .btn {
+      padding: 5px 140px;
+      min-width: 160px;
+    }
+  }
+
+  .contact-links {
+    a {
+      color: #212529;
+    }
+  }
+
+  .form-control {
+    font-size: 0.9em;
+  }
+
+  textarea {
+    width: 100%;
+    height: 200px;
+  }
+
+  form {
+    button {
+      float: right;
+    }
+  }
+}
+
+.map-responsive {
+  iframe {
+    border: 2px solid white;
+  }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .contentholder {
+    padding-top: 160px;
+  }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .contentholder {
+    padding-top: 134px;
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 601px) {
+  .contentholder {
+    padding-top: 174px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contentHolder {
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .btn {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .for-mall {
+    margin-top: 20px;
+  }
+
+  .for-village {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 576px) {
+  .contentholder {
+    padding-top: 152px;
+  }
+}
+
+
+@media screen and (max-width: 575px) and (min-width: 453px) {
+  .contentholder {
+    padding-top: 172px;
+  } 
+}
+
+@media screen and (max-width: 452px) {
+  .contentHolder {
+    padding-top: 200px;
+  } 
+}
