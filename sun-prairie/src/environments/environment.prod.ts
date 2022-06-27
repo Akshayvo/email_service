@@ -1,7 +1,7 @@
 export const environment = {
   production: true,
   type: 0,  // { API: 0, iframe: 1 }
-  locationName: 'new-york/baldwinsville',  // state/city   **Remeber to update locationName in sitemap.xml as well
+  locationName: 'lowa/seymour',  // state/city   **Remeber to update locationName in sitemap.xml as well
   signUpForAuotoPay: 0, // { Yes: 1, No: 0 }
   alternateType: { moveIn: true, reserve: false }, // { moveIn: true, reserve: true },
   military: false, // set true for Military and Driver's Details 

@@ -47,7 +47,17 @@
   status = 301
 
 [[redirects]]
+  from = "https://sunprairie-selfstorage.com/new-york/baldwinsville/view-rates"
+  to = "https://sunprairie-selfstorage.com/lowa/seymour/view-rates"
+  status = 301
+
+[[redirects]]
   from = "https://sunprairie-selfstorage.com/storage-tips"
+  to = "https://sunprairie-selfstorage.com/lowa/seymour/storage-tips"
+  status = 301
+
+[[redirects]]
+  from = "https://sunprairie-selfstorage.com/new-york/baldwinsville/storage-tips"
   to = "https://sunprairie-selfstorage.com/lowa/seymour/storage-tips"
   status = 301
 
