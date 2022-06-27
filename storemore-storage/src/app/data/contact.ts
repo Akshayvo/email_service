@@ -70,7 +70,7 @@ export const contactsLocation1 = [
     {
         id: 2,
         label: 'Office Address: ',
-        data: '4072 Ridge Rd Williamson NY (By Appointment Only)',
+        data: '4072 Ridge Rd, Williamson, NY 14589 (By Appointment Only) By Phone 8AM to 8PM',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: 'https://goo.gl/maps/PdVq9xjHXGieXPL87'
     },
@@ -92,7 +92,7 @@ export const contactsLocation1 = [
     {
         id: 5,
         label: 'Phone: ',
-        data: '(315) 589-7180',
+        data: '(315) 589-7180 Sunday - Saturday 8:00AM to 8:00PM',
         class: 'fas fa-phone mr-2 iconColor',
         redirect: 'tel:3155897180'
     },
@@ -114,6 +114,13 @@ export const hoursLocation1AcessHours = [
 export const contactsLocation2 = [
     {
         id: 1,
+        label: 'Facility Address: ',
+        data: '6588 Pratt Rd Williamson, NY 14589',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/PdVq9xjHXGieXPL87'
+    },
+    {
+        id: 2,
         label: 'Office Address: ',
         data: '4072 Ridge Rd, Williamson, NY 14589 (By Appointment Only) By Phone 8AM to 8PM',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
@@ -122,12 +129,12 @@ export const contactsLocation2 = [
     {
         id: 3,
         label: 'Mailing Address: ',
-        data: 'P.O. Box 8, williamson, NY 14589-0008',
+        data: 'P O Box 8, Williamson NY 14589',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: 'https://goo.gl/maps/tdeR2sMWCTBfsVJy6'
     },
     {
-        id: 2,
+        id: 4,
         label: 'Email: ',
         data: 'rdpeck47@hotmail.com',
         email: `rdpeck47@hotmail.com`,
@@ -135,9 +142,9 @@ export const contactsLocation2 = [
         redirect: 'mailto:rdpeck47@hotmail.com'
     },
     {
-        id: 4,
+        id: 5,
         label: 'Phone: ',
-        data: '(315) 589-7180',
+        data: '(315) 589-7180 Sunday - Saturday 8:00AM to 8:00PM',
         class: 'fas fa-phone mr-2 iconColor',
         redirect: 'tel:3155897180'
     },
@@ -160,13 +167,27 @@ export const hoursLocation2 = [
 export const contactsLocation3 = [
     {
         id: 1,
+        label: 'Facility Address: ',
+        data: '205 Rotterdam Road, Sodus NY 14551',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/PdVq9xjHXGieXPL87'
+    },
+    {
+        id: 2,
         label: 'Office Address: ',
-        data: '6588 Pratt Rd, Williamson, NY 14589',
+        data: '4072 Ridge Rd, Williamson, NY 14589 (By Appointment Only) By Phone 8AM to 8PM',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: 'https://goo.gl/maps/wGcBsiqdp8mqMQS26'
     },
     {
-        id: 2,
+        id: 3,
+        label: 'Mailing Address: ',
+        data: 'P O Box 8, Williamson NY 14589',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/tdeR2sMWCTBfsVJy6'
+    },
+    {
+        id: 4,
         label: 'Email: ',
         data: 'rdpeck47@hotmail.com',
         email: `rdpeck47@hotmail.com`,
@@ -174,18 +195,11 @@ export const contactsLocation3 = [
         redirect: 'mailto:rdpeck47@hotmail.com'
     },
     {
-        id: 3,
-        label: 'Facility Address: ',
-        data: '2 canton st baldwinsville ny 13027',
-        class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/PdVq9xjHXGieXPL87'
-    },
-    {
-        id: 4,
+        id: 5,
         label: 'Phone: ',
-        data: '',
+        data: '(315) 589-7180 Sunday - Saturday 8:00AM to 8:00PM',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: ''
+        redirect: '3155897180'
     },
 ];
 
@@ -206,13 +220,27 @@ export const hoursLocation3 = [
 export const contactsLocation4 = [
     {
         id: 1,
+        label: 'Facility Address: ',
+        data: '5587 NY-14 Sodus, NY 14551',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/PdVq9xjHXGieXPL87'
+    },
+    {
+        id: 2,
         label: 'Office Address: ',
-        data: '5587 NY-14, Sodus, NY 14551',
+        data: '4072 Ridge Rd, Williamson, NY 14589 (By Appointment Only) By Phone 8AM to 8PM',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: 'https://goo.gl/maps/bvPHhf6H75pU4s639'
     },
     {
-        id: 2,
+        id: 3,
+        label: 'Mailing Address: ',
+        data: 'P O Box 8, Williamson NY 14589',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/tdeR2sMWCTBfsVJy6'
+    },
+    {
+        id: 4,
         label: 'Email: ',
         email: 'rdpeck47@hotmail.com',
         data: `rdpeck47@hotmail.com`,
@@ -220,18 +248,11 @@ export const contactsLocation4 = [
         redirect: 'mailto:rdpeck47@hotmail.com'
     },
     {
-        id: 3,
-        label: 'Facility Address: ',
-        data: '2 canton st baldwinsville ny 13027',
-        class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/PdVq9xjHXGieXPL87'
-    },
-    {
-        id: 4,
+        id: 5,
         label: 'Phone: ',
-        data: '',
+        data: '(315) 589-7180 Sunday - Saturday 8:00AM to 8:00PM',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: ''
+        redirect: '3155897180'
     },
 ];
 
@@ -252,13 +273,27 @@ export const hoursLocation4 = [
 export const contactsLocation5 = [
     {
         id: 1,
+        label: 'Facility Address: ',
+        data: '3913 NY-14 Lyons, NY 14489',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/PdVq9xjHXGieXPL87'
+    },
+    {
+        id: 2,
         label: 'Office Address: ',
-        data: '3913 NY-14, Lyons, NY 14489',
+        data: '4072 Ridge Rd, Williamson, NY 14589 (By Appointment Only) By Phone 8AM to 8PM',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: 'https://goo.gl/maps/3iTp2fVvJabqkoLR7'
     },
     {
-        id: 2,
+        id: 3,
+        label: 'Mailing Address: ',
+        data: 'P O Box 8, Williamson NY 14589',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/tdeR2sMWCTBfsVJy6'
+    },
+    {
+        id: 4,
         label: 'Email: ',
         email: 'rdpeck47@hotmail.com',
         data: `rdpeck47@hotmail.com`,
@@ -266,18 +301,11 @@ export const contactsLocation5 = [
         redirect: 'mailto:rdpeck47@hotmail.com'
     },
     {
-        id: 3,
-        label: 'Facility Address: ',
-        data: '2 canton st baldwinsville ny 13027',
-        class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/PdVq9xjHXGieXPL87'
-    },
-    {
-        id: 4,
+        id: 5,
         label: 'Phone: ',
-        data: '',
+        data: '(315) 589-7180 Sunday - Saturday 8:00AM to 8:00PM',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: ''
+        redirect: '3155897180'
     },
 ];
 
@@ -299,13 +327,27 @@ export const hoursLocation5 = [
 export const contactsLocation6 = [
     {
         id: 1,
+        label: 'Facility Address: ',
+        data: '5802 Limekiln Rd Wolcott, NY 14590',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/PdVq9xjHXGieXPL87'
+    },
+    {
+        id: 2,
         label: 'Office Address: ',
-        data: '5802 Limekiln Rd, Wolcott, NY 14590',
+        data: '4072 Ridge Rd, Williamson, NY 14589 (By Appointment Only) By Phone 8AM to 8PM',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: 'https://goo.gl/maps/LwmycbApEfV5mJuY7'
     },
     {
-        id: 2,
+        id: 3,
+        label: 'Mailing Address: ',
+        data: 'P O Box 8, Williamson NY 14589',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/tdeR2sMWCTBfsVJy6'
+    },
+    {
+        id: 4,
         label: 'Email: ',
         email: 'rdpeck47@hotmail.com',
         data: `rdpeck47@hotmail.com`,
@@ -313,18 +355,11 @@ export const contactsLocation6 = [
         redirect: 'mailto:rdpeck47@hotmail.com'
     },
     {
-        id: 3,
-        label: 'Facility Address: ',
-        data: '2 canton st baldwinsville ny 13027',
-        class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/PdVq9xjHXGieXPL87'
-    },
-    {
-        id: 4,
+        id: 5,
         label: 'Phone: ',
-        data: '',
+        data: '(315) 589-7180 Sunday - Saturday 8:00AM to 8:00PM',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: ''
+        redirect: '3155897180'
     },
 ];
 

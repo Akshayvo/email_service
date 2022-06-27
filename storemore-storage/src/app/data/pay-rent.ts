@@ -23,7 +23,7 @@ export const tableData = [
     url: 'pratt-road'
   },
   {
-    facility: '102 Rotterdam-road, Sodus',
+    facility: '205 Rotterdam-road, Sodus',
     address: '6588 Pratt Rd, Williamson, NY 14589',
     url: 'rotterdam-road'
   },

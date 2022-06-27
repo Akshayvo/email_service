@@ -18,7 +18,7 @@ export const navLinks = [
               },
             {
                 id: '2',
-                label: '4072 Ridge Rd, Williamson',
+                label: '6588 Pratt Road, Sodus',
                 path: `${environment.locationName}/pratt-road`,
             },
               {
