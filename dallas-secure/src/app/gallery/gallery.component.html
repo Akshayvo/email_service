@@ -1,0 +1,36 @@
+<div class="gallery-content">
+  <div class="container px-0">
+    <h2 class="text-center">Facility Photos</h2>
+    <div class="row pt-2">
+      <div class="col-lg-6">
+        <div id="selectedImageM" class="text-center selectedImageM">
+          <img
+            *ngIf="selectedImage"
+            src="{{ imageBaseUrl }}/{{ selectedImage.url }}.{{ imagetype }}"
+            alt="{{ selectedImage.alt }}"
+            height="auto"
+            width="100%"
+          />
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="data">
+          <!-- <p class="text-justify" *ngFor='let data of galleryData'> {{data.p}} </p> -->
+          <div id="thumbnailsList" class="thumbnailsList">
+            <span *ngFor="let image of galleryImages" class="m-1">
+              <img
+                src="{{ imageBaseUrl }}/{{ image.thumb }}.{{ imagetype }}"
+                class="tn"
+                data-toggle="image.thumb"
+                alt="{{ image.alt }}"
+                data-target="#selectedImageM"
+                (click)="setSelectedImage(image)"
+              />
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

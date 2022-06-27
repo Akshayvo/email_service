@@ -21,11 +21,11 @@ export const navLinks = [
                 label: 'Location 2',
                 path: `${environment.locationName}/location-2`,
             },
-              {
-                id: '3',
-                label: 'Location 3',
-                path: `${environment.locationName}/location-3`,
-            },
+            //   {
+            //     id: '3',
+            //     label: 'Location 3',
+            //     path: `${environment.locationName}/location-3`,
+            // },
         ]
     },
     {

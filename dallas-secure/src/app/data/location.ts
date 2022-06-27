@@ -11,30 +11,30 @@ export const tabs = [
         path: 'unit-sizer',
         active: false,
     },
-    // {
-    //     id: '3',
-    //     name: 'Reserve Unit',
-    //     path: 'reserve-unit',
-    //     active: false,
-    // },
-    // {
-    //     id: '4',
-    //     name: 'Move In',
-    //     path: 'move-in',
-    //     active: false,
-    // },
-    // {
-    //     id: '3',
-    //     name: 'About Us',
-    //     path: 'about',
-    //     active: false,
-    // },
-    // {
-    //     id: '4',
-    //     name: 'Directions',
-    //     path: 'directions',
-    //     active: false,
-    // },
+    {
+        id: '3',
+        name: 'Reserve Unit',
+        path: 'reserve-unit',
+        active: false,
+    },
+    {
+        id: '4',
+        name: 'Gallery',
+        path: 'photos',
+        active: false,
+    },
+    {
+        id: '5',
+        name: 'About Us',
+        path: 'about',
+        active: false,
+    },
+    {
+        id: '6',
+        name: 'Review',
+        path: 'reviews',
+        active: false,
+    },
 ];
 
 export const headingLocation1 = ``;
@@ -568,7 +568,7 @@ export const unitSizerLocation6 = [
 ];
 
 
-export const aboutUsHeadingLocation1 = `About Us`;
+export const aboutUsHeadingLocation1 = `About Dallas Secure Storage`;
 
 export const aboutUsHeadingLocation2 = `About Us`;
 
@@ -582,10 +582,13 @@ export const aboutUsHeadingLocation6 = `About Us`;
 
 
 // tslint:disable-next-line:max-line-length
-export const aboutUsImageLocation1 = ``;
+export const aboutUsImageLocation1 = `https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Dallas_Secure_Storage/jpg/dallas-secure-storage-family-owned-and-operated.jpg`;
+
+
+
 
 // tslint:disable-next-line:max-line-length
-export const aboutUsImageLocation2 = ``;
+export const aboutUsImageLocation2 = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Dallas_Secure_Storage/dallas-secure-storage-family-owned-and-operated.jpg`;
 
 // tslint:disable-next-line:max-line-length
 export const aboutUsImageLocation3 = ``;
@@ -602,13 +605,31 @@ export const aboutUsImageLocation6 = ``;
 
 export const aboutUsLocation1 = [
     {
-        p: ``,
+        p: `Dallas Secure Storage is a family-owned and operated business in Dallas, Oregon. We proudly serve Dallas, Monmouth, West Salem, and the surrounding communities with a wide selection of self storage unit sizes, recreational vehicle parking, and all of the packing and shipping materials you will need to make your storage experience a convenient one! Our facility caters to both residential and business self storage users. Thanks to our large number of unit sizes, we are sure to have what your home or business needs to reclaim some of that elbow room. Many of our business customers love our extended access hours, allowing access to equipment or inventory as their growing businesses demand.`,
     },
+    {
+        p:`We also offer a free trailer for move-ins that make settling into your new unit much easier! Make sure to ask about our trailer offer when while you're moving in!`
+    }
     
 ];
 
 export const aboutUsLocation2 = [
-    
+    {
+        p: `Godsey Security Storage offers affordable self storage units in a well-lit, well-maintained self storage
+            facility just north of our Dallas Secure Storage location in Dallas, Oregon. Our Godsey facility is paved,
+            has wide driveways for easy parking, and is secured behind an electronic pin-code activated gate. We are
+            proud to be a family-owned & operated enterprise!`,
+    },
+    {
+        p: `We understand that self storage may come at a stressful time in life, which is why we have an on-site
+            manager to assist in your move in and make sure you feel safe and secure. Our online reservation and
+            payment system are here to give you access to your account 24/7!`,
+    },
+    {
+        p: `Godsey Secure Storage also has a free trailer available for use during move-in and enough packing and
+            shipping supplies to secure all of your belongings for their time here! Reserve your unit online, or
+            call our office for more information!`,
+    },
 ];
 
 export const aboutUsLocation3 = [

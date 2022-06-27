@@ -13,49 +13,41 @@ export const tableHeader = [
 
 export const tableData = [
   {
-    facility: ' Location-1',
-    address: '',
+    facility: 'Dallas Secure Storage',
+    address: '1497 SE Brookside St, Dallas, OR 97338',
     url: 'location-1'
   },
   {
-    facility: 'Location-2',
-    address: '',
+    facility: 'Godsey Secure Storage',
+    address: '1360 SE Godsey Rd, Dallas, OR 97338',
     url: 'location-2'
   },
-  {
-    facility: 'Location-3',
-    address: '',
-    url: 'location-3'
-  }
+ 
 ];
 
 export const tableDataContactPage = [
   {
-    facility: ' Location-1',
-    address: '',
+    facility: 'Dallas Secure Storage',
+    address: '1497 SE Brookside St, Dallas, OR 97338',
     url: 'location-1'
   },
   {
-    facility: 'Location-2',
-    address: '',
+    facility: 'Godsey Secure Storage',
+    address: '1360 SE Godsey Rd, Dallas, OR 97338',
     url: 'location-2'
   },
-  {
-    facility: 'Location-3',
-    address: '',
-    url: 'location-3'
-  },
+ 
 ];
 
 
 export const loginDetail = [
   {
-      userName: `Tenant's First Initial + Last Name`,
-      password: `Tenant's Unit Number`,
+      userName: `Last Name`,
+      password: `Tenant's Gate Access Code`,
       example: {
-          code: `Unit Number is 123`,
+          code: `John Smith's code is 1234`,
           userName: 'jsmith',
-          password: '0123'
+          password: '1234'
       },
       example1:{
           code: `Unit Number is RC23`,

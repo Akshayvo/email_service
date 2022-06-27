@@ -25,11 +25,11 @@ export const contactsHomePage = [
 export const hoursHomePage = [
     {
         label: 'Monday - Friday: ',
-        data: '8:30AM to 5:00PM',
+        data: '9:00AM to 5:00PM',
     },
     {
         label: 'Saturday - Sunday: ',
-        data: 'Self Check-In Available',
+        data: 'Closed',
     },
 ];
 
@@ -37,40 +37,40 @@ export const contactsLocation1 = [
     {
         id: 1,
         label: 'Address: ',
-        data: '6 Canton St, Baldwinsville, NY 13027',
+        data: '1497 SE Brookside St, Dallas, OR 97338',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/MZ2bUNFNT1HWfDfw5'
+        redirect: ''
     },
     {
         id: 2,
         label: 'Email: ',
-        data: `syrasoftsoftware@gmail.com`,
+        data: `dallassecurestorage@live.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`syrasoftsoftware@gmail.com`'
+        redirect: 'mailto:`dallassecurestorage@live.com`'
     },
     {
         id: 3,
         label: 'Phone: ',
-        data: '(505) 555-5555',
+        data: '(503) 623-3703',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:5055555555'
+        redirect: 'tel:5036233703'
     },
 ];
 
 export const hoursLocation1 = [
     {
         label: 'Monday - Friday: ',
-        data: '8:30AM to 5:00PM',
+        data: '9:00AM to 5:00PM',
     },
     {
         label: 'Saturday - Sunday: ',
-        data: 'CLOSED',
+        data: 'Closed',
     },
 ];
 
 export const hoursLocation1AcessHours = [
     {
-        data: '24 Hours a Day 7 Days a Week'
+        data: '6:00AM to 10:00PM 7 Days a Week'
     },
 ];
 
@@ -78,37 +78,41 @@ export const contactsLocation2 = [
     {
         id: 1,
         label: 'Address: ',
-        data: '6 Canton St, Baldwinsville, NY 13027',
+        data: '1360 SE Godsey Rd, Dallas, OR 97338',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: 'https://goo.gl/maps/MZ2bUNFNT1HWfDfw5'
     },
     {
         id: 2,
         label: 'Email: ',
-        data: `syrasoftsoftware@gmail.com`,
+        data: `godseysecurestorage@live.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`syrasoftsoftware@gmail.com`'
+        redirect: 'mailto:`godseysecurestorage@live.com`'
     },
     {
         id: 3,
         label: 'Phone: ',
-        data: '(505) 555-5555',
+        data: '(503) 831-0234',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:5055555555'
+        redirect: 'tel:5038310234'
     },
 ];
 
 export const hoursLocation2 = [
-    // {
-    //     label: 'Monday - Saturday: ',
-    //     data: '9:00AM - 5:00PM',
-    // },
-    // {
-    //     label: 'Sunday: ',
-    //     data: 'CLOSED',
-    // },
     {
-        data: '24-Hours a Day 7 Days a Week',
+        label: 'Monday - Friday: ',
+        data: '9:00AM - 5:00PM',
+        
+    },
+    {
+        label: 'Saturday - Sunday: ',
+        data: 'CLOSED',
+        
+    },
+    {
+        label: 'Access hours: ',
+        data: '6:00AM to 10:00PM 7 Days a Week',
+        
     },
 ];
 
