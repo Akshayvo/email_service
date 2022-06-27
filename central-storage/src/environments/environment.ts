@@ -11,9 +11,9 @@ export const environment = {
   appId: 'central-storage - Production',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  // APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // north demo
+  APIKey: `dzJ0OVc0SjYqMk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // north demo 
   // APIKey: `dzF0OVcwSjVOOjIyfCU4Nzg3NyQoOD1iVzBzaGRkOWtlb2NeTg==` // 1905 Lois
-  APIKey: `dzJ0Nlc1SjcqMk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`,  // 26572 central storage
+  // APIKey: `dzJ0Nlc1SjcqMk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`,  // 26572 central  storage
 };
 
 /*
