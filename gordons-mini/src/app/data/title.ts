@@ -1,4 +1,4 @@
-export const  homePageTitle = `Affordable Self Storage in Kelso | Gordon's Mini Storage`;
+export const  homePageTitle = `Security cameras | Gordon's | Kelso | WA`;
 export const homePageContent = `Are you in search of affordable self storage units near Kelso,
 WA? Gordon's Mini Storage has a wide variety of convenient sizes and excellent customer service!`;
 
