@@ -1,0 +1,112 @@
+<div class="">
+  <div class="jumbotron-container">
+    <div class="jumbotron-top">
+    <div class="jumbotron px-0 m-0" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
+      <div class=" jumbotorn-skew-style" [ngClass]="template === 'darkTheme' ? 'bg-translucent-dark' : 'bg-translucent-light'">
+      </div>
+      <div class="container">
+        <div class="jumbotorn-skew-text">
+          <div class="disp" *ngFor="let jumbotron of jumbotron">
+            <h2  class="my-4">
+              {{jumbotron.h2}}
+            </h2>
+            <p>Have questions about the services offered at Robinson Storage Box? Call <a href="tel:7059545454">(705) 954-5454</a> to learn more!</p>
+            <p> Robinson Storage Box offers economical delivery, pickup, and storage of mobile self storage units. Our brand new portable storage units can be scheduled for a convenient no-tilt delivery at your home or work-site. </p>
+          <!-- <p class="text-justify">{{jumbotron.blurb}}</p> -->
+          </div>
+          <div class="jumbotorn-button">
+            <a class="btn btn-lg btn-outline-primary" (click)="navigate('/view-rates')" role="button">Free Estimate</a>
+            <!-- <a class="btn btn-lg btn-primary" (click)="navigate('/reserve-unit')" role="button">Reserve Unit</a> -->
+          </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="jumbotron-bottom">
+        <div class="container">
+          <div class="feature row">
+            <div class="col-md-3 col-3 feature-icon-style" *ngFor="let feature of feature">
+              <img [src]="feature?.path" [alt]="feature?.alt" />
+                <h3 class="feature-text">{{feature.label}}</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+  </div>
+  
+
+  <div class="bg-light">
+    <div class="container py-4">
+      <div class="section py-4 m-0">
+        <div class="row">
+          <div class="col-lg-6 py-3 home-map">
+              <iframe title="Facility Google Map"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11403.301923039171!2d-78.4100365!3d44.3957041!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x517963cb6676763d!2sRobinson%20Storage!5e0!3m2!1sen!2sus!4v1618096719306!5m2!1sen!2sus"
+                width="100%" height="100%" frameborder="0" allowfullscreen rel="noopener" ></iframe> 
+          </div>
+
+          <div class="col-lg-6 py-3">
+            <div class="mb-4 contact-details">
+              
+              <p>
+                <span *ngFor="let contact of contactDetails" class="display-contact">
+                  <span><h4><b>{{contact.label}}</b></h4></span><span class="contact-links" *ngIf="contact?.label === 'Address:' || contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
+                    <h4><a [href]="contact?.redirect" target="{{(contact?.label === 'Address:') ? '_blank' : '_self'}}" rel="noopener">&nbsp;{{contact.data}}</a></h4>
+                  </span>
+                  <ng-template #other_content>&nbsp;<h4>{{contact.data}}</h4></ng-template><br>
+                </span>
+              </p>
+              <h4><b>Facility Hours:</b></h4>
+              <p>
+                <span class="display-contact" *ngFor="let hour of hours">
+                  <h4><b>{{hour.label}}</b></h4>&nbsp;<h4>{{hour.data}}</h4><br>
+                </span>
+              </p>
+            </div>
+            <div>
+              <app-tables [tBody]="featuresList"></app-tables>
+              <a class="btn btn-lg btn-primary free-estimate" (click)="navigate('/view-rates')" role="button">Free Estimate</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="section py-5 m-0">
+      <div class="row">
+        <div class="col-lg-6 py-3">
+          <!-- <img src="{{imageBaseUrl}}/robinson-mobile-storage-homepage.{{imagetype}}" width="100%" alt="{{aboutUsAlt}}" class="sectionImage"> -->
+          <app-photos></app-photos>
+        </div>
+        <div class="col-lg-6 py-3 about-us">
+          <h1 class="heading pb-4">{{aboutUsHeading}}</h1>
+          <p class="justify">Robinson Storage Box serves Peterborough, Ennismore, Bridgenorth, and the surrounding communities with quality portable storage units delivered right to your door, office, or worksite! We understand that some storage projects are best handled with an on-site storage solution. That’s where Robinson Storage Box comes into play. Our mobile storage units are 20’x8’x8’ and offer 160 square feet of storage space anywhere you want it.</p>
+          <h2>Mobile Storage Units for All of Your Storage Needs</h2>
+          <p>The Robinson Storage Box is the ideal solution for renovations where furniture, tools, or supplies require storage and easy access throughout the duration of the project. We also serve contractors, auctioneers, and hospitals with temporary on-site storage.</p>
+          <h2>Convenient Pickup and Delivery</h2>
+          <p>Our no-tilt delivery and pickup service means all you have to do is pack your belongings for temporary on-site storage or for long term storage at our self storage facility on Robinson Road in Ennismore. Simply give us a call with the details of when and where you need your unit delivered, and our professional crew will provide the same level of service you’ve come to expect from our Robinson Storage self storage facility.</p>
+          <h2>Start De-Cluttering Today</h2>
+          <p>If you have any questions, give our friendly team a call, and we’ll be happy to help! Ready to start making your next project easier with on-site storage? Take a moment to check out our pricing information, then request your Free Estimate for a portable storage solution in seconds through our website!</p>        
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="getStarted" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
+    <div class="bg-translucent-dark">
+      <div class="container">
+        <div class="section py-5 m-0">
+          <div class="row">
+            <div class="col-md-12 py-3">
+              <h2 class="heading pb-4">Getting Started</h2>
+              <p class="pb-4">{{gettingStarted}}</p>
+              <a class="btn btn-lg btn-primary" (click)="navigate('/reserve-unit')" role="button">Reserve Unit Now!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+</div> 

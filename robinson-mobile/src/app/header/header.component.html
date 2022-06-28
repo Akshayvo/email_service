@@ -1,0 +1,72 @@
+<div class="col-md-12 display bg-primary py-2">
+  <div class="container">
+    <div class="contact-header">
+      <div class="row">
+        <!-- <div class="col-sm-10 mobile">
+          <span class="contact-details pr-4" *ngFor="let contact of contactDetails">
+            <i [class]="contact?.class"></i>
+            <span class="contact-links" *ngIf="contact?.label === 'Address:' || contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
+              <a [href]="contact?.redirect" target="{{(contact?.label === 'Address:') ? '_blank' : '_self'}}">&nbsp;{{contact.data}}</a></span>
+            <ng-template #other_content>&nbsp;{{contact.data}}</ng-template>
+          </span>
+        </div>
+        <div class="col-sm-2 ml-auto text-right mobile">
+          <span class="social pl-2 text-right" *ngFor="let social of socialLinks">
+            <a [href]="social?.path" target="_blank" rel="noreferrer">
+              <i [class]="social?.class"></i>
+            </a>
+          </span>
+        </div> -->
+        <div class="col-md-10">
+          <span class="contact-details pr-4" *ngFor="let contact of contactDetails" >
+              <span class="spantext" style="display: inline-block;"> 
+              <!-- <i [class]="contact?.class"></i> -->
+              <span class="contact-links" *ngIf="contact?.id === 0 ||contact?.id === 2 || contact?.id === 1 else other_content"><i [class]="contact?.class"></i>
+                <a style="white-space: nowrap;" [href]="contact?.redirect" rel="noopener">&nbsp;{{contact.data}}</a></span>
+            </span>
+      
+            <ng-template #other_content>
+              <span style="display: inline-block;">
+                <i [class]="contact?.class"></i><span style="white-space: nowrap;">{{contact.data}}</span>
+              </span>
+            </ng-template>
+          </span>
+        </div>
+        <div class="col-md-2 ml-auto text-right">
+          <span class="social pl-2 text-right" *ngFor="let social of socialLinks">
+            <a [href]="social?.path" target="_blank" rel="noreferrer" aria-label="Social links">
+              <i [class]="social?.class"></i>
+            </a>
+          </span>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-navbg py-0 bg-secondary">
+  <div class="container">
+    <a class="navbar-brand" (click)="navigate('/')" class="mr-0">
+      <img src="{{imageBaseUrl}}/robinson-mobile-logo.{{imagetype}}"  alt="logo artwork with a four leaf clover and the name Robinson Storage Box with a slogan Delivered To Your Door">
+    </a>
+    <div class="p-3">
+    <button class="navbar-toggler py-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+   aria-label="Toggle navigation">
+      <i class="fas fa-bars iconColor"></i>
+    </button>
+  </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" #menu>
+      <ul class="navbar-nav ml-auto navbar-nav-scroll">
+        <li class="nav-item px-1" *ngFor="let nav of navLinks">
+          <a class="nav-link py-4" [routerLinkActive]="'nav-link-active'" [routerLink]="nav?.path" 
+          [routerLinkActiveOptions]="{exact: true}" (click)="onClick(menu)" *ngIf="nav?.path != '/pay-rent' && nav.id == 1 " rel="noopener">{{nav.label}}</a>
+          <a class="nav-link py-4" [routerLinkActive]="'nav-link-active'" [routerLink]="nav?.path" 
+          [routerLinkActiveOptions]="{exact: false}" (click)="onClick(menu)" *ngIf="nav?.path === '/pay-rent' && nav.id == 1" rel="noopener">{{nav.label}}</a>
+          <a class="nav-link py-4" *ngIf="nav.id == 0" href="https://www.robinsonstoragesolutions.ca/" target="_blank" rel="noopener">{{nav.label}}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

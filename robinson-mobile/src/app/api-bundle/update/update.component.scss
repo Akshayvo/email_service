@@ -1,0 +1,11 @@
+@import '../../../styles.scss';
+
+.contentholder {
+  padding: 64px;
+}
+
+@media only screen and (max-width: 600px) {
+    .contentHolder {
+      padding: 16px;
+    }
+  }

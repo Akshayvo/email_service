@@ -1,0 +1,42 @@
+@import "../../styles.scss";
+
+.card {
+  border: none;
+  border-radius: 0;
+  text-align: left;
+}
+
+
+.card-header {
+  padding: 0;
+  background-color: $primary;
+  color: $white;
+  border-radius: 0;
+}
+
+.card-body {
+  padding: 20px 20px 20px 35px;
+  font-size: 0.9em;
+  // font-weight: 600;
+  // color: $fontColor;
+  background-color: $white;
+  margin: auto;
+}
+
+ul {
+  padding-inline-start: 36px;
+}
+
+.card-header-before-collapse {
+  cursor: pointer;
+}
+
+.card-header-before-collapse::after {
+  font-family: (FontAwesome);
+  content: "\f106";
+  float: right;
+}
+
+.collapsed::after {
+  content: "\f107";
+}

@@ -1,0 +1,154 @@
+<div class="contentHolde">
+  <div class="row ">
+    <div class="col-md-12 ">
+      <div class="reserve-unit-form">
+        <div class="loader" *ngIf="gettingTenantData"></div>
+
+        <form [formGroup]="updateForm" (ngSubmit)="onSubmit()" >
+         <div  class="row justify-content">
+             <div formGroupName="objTenant" class="col-lg-7 ">
+                 <h2 class="pb-3">Tenant Information</h2>
+
+                 <div class="row">
+                   <div class="col-lg-6 form-group">
+                           <label>First Name*</label>
+                           <input type="text" formControlName="FirstName" class="form-control" placeholder="Enter First Name"
+                           [value]=""
+                           [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.FirstName.errors }"
+                           />
+                           <div *ngIf="submitted && f.objTenant.controls.FirstName.errors" class="invalid-feedback">
+                               <small class="form-text text-muted" *ngIf="f.objTenant.controls.FirstName.errors.required">Please fill out this field</small>
+                           </div>
+                   </div>
+                  <div class="col-lg-6 form-group">
+                           <label>Last Name*</label>
+                           <input type="text" formControlName="LastName" class="form-control" placeholder="Enter Last Name"
+                           [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.LastName.errors }"/>
+                           <div *ngIf="submitted && f.objTenant.controls.LastName.errors" class="invalid-feedback">
+                               <small class="form-text text-muted" *ngIf="f.objTenant.controls.LastName.errors.required">Please fill out this field</small>
+                           </div>
+                   </div>
+                </div>
+                <div class="row">
+
+                    <div class=" col-md-6 form-group">
+                        <label>Phone Number*</label>
+                        <input type="tel" formControlName="Phone" placeholder="Enter Phone Number" class="form-control"
+                        [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.Phone.errors }" />
+                        <div *ngIf="submitted && f.objTenant.controls.Phone.errors" class="invalid-feedback">
+                            <small class="form-text text-muted" *ngIf="f.objTenant.controls.Phone.errors.required">Please fill out this field</small>
+                        </div>
+                        <div *ngIf="f.objTenant.controls.Phone.errors" >
+                            <small class="form-text text-muted" *ngIf="f.objTenant.controls.Phone.errors.pattern">Please enter valid number</small>
+                        </div>
+                   </div>
+
+                     <div class="col-md-6 form-group">
+                             <label>Email Address*</label>
+                             <input type="text" formControlName="EmailAddress" placeholder="Enter Email" class="form-control"
+                             [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.EmailAddress.errors }" />
+                             <div *ngIf="submitted && f.objTenant.controls.EmailAddress.errors" class="invalid-feedback">
+                                 <small class="form-text text-muted" *ngIf="f.objTenant.controls.EmailAddress.errors.required">Please fill out this field</small>
+                             </div>
+                             <div *ngIf="f.objTenant.controls.EmailAddress.errors" >
+                                 <small class="form-text text-muted" *ngIf="f.objTenant.controls.EmailAddress.errors.email">Please enter a valid email address</small>
+                             </div>
+                     </div>
+                    </div>
+                    <div class="row">
+                     <div class="col-lg-12  form-group">
+                               <label>Address Line 1*</label>
+                               <input type="text" formControlName="AddressLine1" class="form-control" placeholder="Enter Address Line 1"
+                               [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.AddressLine1.errors }"/>
+                               <div *ngIf="submitted && f.objTenant.controls.AddressLine1.errors" class="invalid-feedback">
+                                   <small class="form-text text-muted" *ngIf="f.objTenant.controls.AddressLine1.errors.required">Please fill out this field</small>
+                               </div>
+                       </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 form-group">
+                            <label>Address Line 2</label>
+                            <input type="text" formControlName="AddressLine2" class="form-control"
+                            placeholder="Enter Address Line 2"
+                            />
+                    </div>
+                    </div>
+                   <div class="row">
+                        <div class="col-lg-4 col-md-6 form-group">
+                           <label>City*</label>
+                           <input type="text" formControlName="City" class="form-control" placeholder="Enter City"
+                           [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.City.errors }"/>
+                           <div *ngIf="submitted && f.objTenant.controls.City.errors" class="invalid-feedback">
+                               <small class="form-text text-muted" *ngIf="f.objTenant.controls.City.errors.required">Please fill out this field</small>
+                           </div>
+                       </div>
+                <div class="col-lg-4 col-md-6 form-group ngx-select-dropdown">
+                    <label>State*</label>
+                    <select class="form-control" formControlName="State"  
+                    [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.State.errors }">
+                        <option value="" disabled  selected >Select your State</option>
+                             <option *ngFor="let option of option"
+                             [value]="option.id"
+                             >
+                             {{option.description}}
+                             </option>
+                       </select>
+
+
+                    <div *ngIf="submitted && f.objTenant.controls.State.errors" class="invalid-feedback">
+                        <small class="form-text text-muted" *ngIf="f.objTenant.controls.State.errors.required">Please fill out this field</small>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 form-group">
+                    <label>Zip Code*</label>
+                    <input type="text" formControlName="ZIP" class="form-control" placeholder="Enter Zip Code"
+                    [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.ZIP.errors }"
+                    />
+                    <div *ngIf="submitted && f.objTenant.controls.ZIP.errors" class="invalid-feedback">
+                        <small class="form-text text-muted" *ngIf="f.objTenant.controls.ZIP.errors.required">Please fill out this field</small>
+                    </div>
+                </div>
+                   </div>
+                 </div>
+         </div>
+         <div [hidden]="" *ngIf="submitted && !this.updateForm.valid" class="alert alert-danger alert-dismissible fade show">
+            Some fields were not filled out. Please complete the highlighted fields.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+            <div class="form-group mt-3 text-right">
+                <button type="button" class="btn btn-primary col-lg-3 col-md-4 col-sm-12 mr-2 margin-bottom" (click)="signOut(logOut)">Log off</button>
+                <button type="button" class="btn btn-primary col-lg-3 col-md-4 col-sm-12 mr-2 margin-bottom" (click)="cancel()" [disabled]="!isValueUpdated">Undo Changes</button>
+                <button type="button" class="btn btn-primary col-lg-3 col-md-4 col-sm-12 "  data-toggle="modal" data-target="#exampleModalLong" [disabled]="!isValueUpdated">Update Tenent Information</button>
+            
+                <div class="modal fade custom-class"  id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLsongTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="row  p-2">
+                                <div class="text-center col-11">
+                                    Are you sure you want to submit this information change request?
+                                </div>
+                                <div class="col-1">
+                                    <button type="button" #closebutton class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="text-center col-12">
+                                <button type="button" class="btn btn-primary col-lg-3 col-md-4 col-sm-12 mr-2 margin-bottom" aria-label="Close" data-dismiss="modal" >Go Back</button>
+                                <button type="submit" class="btn btn-primary col-lg-3 col-md-4 col-sm-12 margin-bottom" id="closeModal" (click)="onSave()" >Yes</button>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        </form>
+        </div>
+
+    </div>
+  </div>
+</div>
