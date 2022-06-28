@@ -57,6 +57,10 @@ export const hoursHomePage = [
         label: 'By Phone 8:00AM to 8:00PM',
         data: '',
     },
+    {
+        label: '(315) 589-7180',
+        data: '',
+    },
 ];
 
 export const contactsLocation1 = [

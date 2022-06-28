@@ -106,19 +106,32 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2908.051555413014!2d-76.82058768451664!3d43.20840797913907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d747858a27ef65%3A0x7dd18940a2d63209!2s5802%20Limekiln%20Rd%2C%20Wolcott%2C%20NY%2014590!5e0!3m2!1sen!2sus!4v1649971525587!5m2!1sen!2sus" width="100%" height="220" frameborder="0" title="Facility Google Map" allowfullscreen></iframe>
                   </span> 
                 </div>
-                <h5 class="pt-3"> {{heading}} </h5>
-                <div class="py-2">
+                <h5 class="pt-3 text-center"> Contact Us </h5>
+                <!-- <div class="py-2">
                   <span class="contact-links" *ngFor="let contact of contactDetails">
                     <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.label=== 'Email: ' || contact?.label === 'Phone: ' else other_content">
                       <a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
                     <ng-template #other_content >&nbsp;<a [href]="contact?.redirect" target="_blank" rel="noopener">&nbsp;{{contact.data}}</a></ng-template><br>
                   </span>
-                </div>
-                <div class="py-2">
+                </div> -->
+                <!-- <div class="py-2">
                   <span *ngFor="let hour of hoursDetails">
                     <b>{{hour.label}}</b><span *ngIf="hour?.id === 1 else other_content ">&nbsp;{{hour.data}}</span>
                     <ng-template #other_content>&nbsp;{{hour.data}}</ng-template><br>
                   </span>             
+                </div> -->
+                <div class="contact-info">
+                  <p>Randy Peck, Owner / Manager</p>
+                  <P>|</P>
+                  <p>Mailing address: P.O. Box 8 Williamson NY 14589</p>
+                  <br>
+                  <p>Phone: (315) 589-7180 • Sunday - Saturday</p>
+                  <p>8:00 AM to 8:00 PM</p>
+                  <br>
+                  <p>Email Address: rdpeck47@hotmail.com</p>
+                  <br>
+                  <p>Office Address: 4072 Ridge Road, Williamson NY 14589</p>
+                  <p><strong><u>By Appointment Only</u></strong></p>
                 </div>
               </div>
           </div>
