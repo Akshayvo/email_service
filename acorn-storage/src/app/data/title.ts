@@ -1,4 +1,4 @@
-export const  homePageTitle = `Affordable Self Storage Units in Natick | Acorn Self Storage`;
+export const  homePageTitle = `Truck rentals | Acorn | Westbrook | ME`;
 export const homePageContent = `Acorn Self Storage serves Westbrook and the surrounding communities
 with a variety of well-maintained and affordable self storage units. Reserve your unit, today!`;
 
