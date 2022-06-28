@@ -30,7 +30,7 @@ export const aboutUsHeading = `Recreational Vehicle Storage & Servicing`;
 
 export const aboutUs = [
     {
-        p: `Pursue SeRVice & Storage is Crystal Lake’s premier recreational vehicle, boat,  and trailer parking,
+        p: `Crystal L Outside Storage is Crystal Lake’s premier recreational vehicle, boat,  and trailer parking,
         and storage facility. Our fast, fair, and dependable service will make the RV off-season almost as enjoyable as time spent at the campsite or park!`,
     },
     {
@@ -46,7 +46,7 @@ export const aboutUs = [
         about the open road and relaxing weekends by the lake instead of winterizing, repairs and maintenance.`,
     },
     {
-        p: `Are you ready to experience the Pursue SeRVice & Storage difference? Call or reserve your RV
+        p: `Are you ready to experience the Crystal L Outside Storage difference? Call or reserve your RV
         parking space online today! Our friendly management team will be happy to help you!`
     }
     

@@ -8,8 +8,8 @@ export const environment = {
   errorsMails: ['website.dev@codeparva.in'],
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
   senderEmail: 'errors@codeparva.in',
-  appId: 'Pursue SeRVice & Storage - Production',
-  facilityName: 'Pursue SeRVice & Storage',
+  appId: 'Crystal L Outside Storage - Production',
+  facilityName: 'Crystal L Outside Storage',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   APIKey: `VjJQOSoyWTNDM1c6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29233

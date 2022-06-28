@@ -12,13 +12,13 @@
             <p>
               <span *ngFor="let contact of contact" class="display-contact">
                   <span><h4><b>{{contact.label}}</b></h4></span>
-                  <span class="contact-links" *ngIf="contact?.label === 'Email:' || contact?.label === 'Storage Phone: ' || contact?.label === 'Service Phone: ' else other_content">
+                  <span class="contact-links" *ngIf="contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
                     <h4><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></h4>
                   </span>
                   <ng-template #other_content>&nbsp;<h4>{{contact.data}}</h4></ng-template><br>
               </span>
             </p>
-            <h4><b>Facility Hours:</b></h4>
+            <!-- <h4><b>Facility Hours:</b></h4> -->
             <p>
               <span class="display-contact" *ngFor="let hour of hours">
                 <h4><b>{{hour.label}}</b></h4>&nbsp;<h4>{{hour.data}}</h4><br>

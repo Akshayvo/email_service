@@ -73,8 +73,8 @@
             <p><strong>Have questions about your account?</strong><br>
             <span *ngFor="let contact of contact" class=" contact-links contact-details">
                 <span class="d-flex" *ngIf="contact?.label != 'Address:'">
-                    <h3 *ngIf="contact?.label === 'Storage Phone: ' || contact?.label === 'Service Phone: '">{{contact.label}}</h3>&nbsp;
-                    <a  *ngIf="contact?.label === 'Email:' || contact?.label === 'Storage Phone: ' || contact?.label === 'Service Phone: ' else other_content" [href]="contact?.redirect">
+                    <p *ngIf="contact?.label === 'Phone:' " class="pl-1">{{contact.label}}</p>&nbsp;
+                    <a  *ngIf="contact?.label === 'Email:' || contact?.label === 'Phone:'  else other_content" [href]="contact?.redirect">
                         {{contact.data}}
                     </a>
                 </span>
