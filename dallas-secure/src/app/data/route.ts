@@ -140,7 +140,7 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-    { path: `${environment.locationName}/location-2`,
+    { path: `${environment.locationName}/godsey-secure-storage`,
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -349,7 +349,7 @@ export const apiRoutes = [
         externalUrl: ''
     }
   },
-  { path: 'review/location-2', component: HomeComponent,
+  { path: 'review/godsey-secure-storage', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -372,7 +372,7 @@ export const apiRoutes = [
     children: childroute
   },
   {
-    path: 'pay-rent/location-2', component: PayRentComponent,
+    path: 'pay-rent/godsey-secure-storage', component: PayRentComponent,
     children: childroute
   },
   {
@@ -382,7 +382,7 @@ export const apiRoutes = [
   { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
   { path: 'contact-dallas-secure-storage', component: ContactUsComponent},
-  { path: 'contact-location-2', component: ContactUsComponent},
+  { path: 'contact-godsey-secure-storage', component: ContactUsComponent},
   { path: 'contact-location-3', component: ContactUsComponent},
   { path: '**', component: ErrorComponent },
   { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
@@ -403,7 +403,7 @@ export const iFrameRoutes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: `${environment.locationName}/location-2`,
+  { path: `${environment.locationName}/godsey-secure-storage`,
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -433,7 +433,7 @@ export const iFrameRoutes = [
         externalUrl: ''
     }
   },
-  { path: 'review/location-2', component: HomeComponent,
+  { path: 'review/godsey-secure-storage', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -452,7 +452,7 @@ export const iFrameRoutes = [
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentIframeComponent },
   { path: 'pay-rent-dallas-secure-storage', component: PayRentFloridaComponent },
-  { path: 'pay-rent-location-2', component: PayRentChesterComponent},
+  { path: 'pay-rent-godsey-secure-storage', component: PayRentChesterComponent},
   { path: 'pay-rent-location-3', component: PayRentMontgomeryComponent},
   { path: 'pay-rent-belforest', component: PayRentMiddletownComponent},
   { path: 'pay-rent-fairhope', component: PayRentMontgomeryComponent},

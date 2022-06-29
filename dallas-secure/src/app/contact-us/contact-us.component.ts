@@ -101,10 +101,8 @@ export class ContactUsComponent implements OnInit {
   public fetchOg() {
     if (this.router.url.includes('dallas-secure-storage')) {
       this.og = ogContactPageLocation1;
-    } else if (this.router.url.includes('location-2')) {
+    } else if (this.router.url.includes('godsey-secure-storage')) {
       this.og = ogContactPageLocation2;
-    } else if (this.router.url.includes('location-3')) {
-      this.og = ogContactPageLocation3;
     }
 }
 
@@ -116,11 +114,9 @@ public fetchMetaData() {
 public fetchTwitter() {
   if (this.router.url.includes('dallas-secure-storage')) {
     this.twitter = twitterContactPageLocation2;
-  } else if (this.router.url.includes('location-2')) {
+  } else if (this.router.url.includes('godsey-secure-storage')) {
     this.twitter = twitterContactPageLocation1;
-  } else if (this.router.url.includes('location-3')) {
-    this.twitter = twitterContactPageLocation3;
-  }
+  } 
 }
 
   public loadScript() {
@@ -155,10 +151,8 @@ public fetchTwitter() {
   public fetchLocationDetails() {
     if (this.router.url.includes('dallas-secure-storage')) {
       this.fetchContactDetailsLocation1();
-    } else if (this.router.url.includes('location-2')) {
+    } else if (this.router.url.includes('godsey-secure-storage')) {
       this.fetchContactDetailsLocation2();
-    } else if (this.router.url.includes('location-3')) {
-      this.fetchContactDetailsLocation3();
     }
   }
 
@@ -171,17 +165,12 @@ public fetchTwitter() {
   
   public fetchContactDetailsLocation2() {
     this.locationId = '2'
-    this.heading = `Self Storage Facility - Location-2`;
+    this.heading = `Godsey Secure Storage`;
     this.contactDetails = contactsLocation2;
     this.hoursDetails = hoursLocation2;
   }
 
-  public fetchContactDetailsLocation3() {
-    this.heading = `Self Storage Facility - Location-3`;
-    this.locationId = '3'
-    this.contactDetails = contactsLocation3;
-    this.hoursDetails = hoursLocation3;
-  }
+  
 
 onSubmit() {
   this.submitted = true;

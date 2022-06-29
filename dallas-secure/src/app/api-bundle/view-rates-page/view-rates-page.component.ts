@@ -89,7 +89,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
       this.locationReserve = "location1reserve";
       this.locationMovein = "location1movein";
   } 
-else if (this.router.url.includes(`${environment.locationName}/location-2`)) {
+else if (this.router.url.includes(`${environment.locationName}/godsey-secure-storage`)) {
   this.locationId = 2;
   this.locationReserve = "location2reserve";
   this.locationMovein = "location2movein";

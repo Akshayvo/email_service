@@ -136,19 +136,13 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.contact = contactsLocation1;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc1);
-    } else  if (this.router.url.includes('location-2')) {
+    } else  if (this.router.url.includes('godsey-secure-storage')) {
       this.id = 2;
-      this.name = 'Self Storage Facility - Location-2';
+      this.name = 'Godsey Secure Storage';
       this.contact = contactsLocation2;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc2);
-    } else  if (this.router.url.includes('location-3')) {
-      this.id = 3;
-      this.name = 'Self Storage Facility - Location-3';
-      this.contact = contactsLocation3;
-      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
-      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc3);
-    }
+    } 
   }
 
   public navigate (location: any) {
@@ -162,7 +156,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   public fetchOg() {
     if (this.router.url.includes('dallas-secure-storage')) {
       this.og = ogPayRentPageLocation1;
-    } else  if (this.router.url.includes('location-2')) {
+    } else  if (this.router.url.includes('godsey-secure-storage')) {
       this.og = ogPayRentPageLocation2;
     } else if (this.router.url.includes('location-3')) {
       this.og = ogPayRentPageLocation3;
@@ -172,11 +166,9 @@ export class LoginComponent implements OnInit, OnDestroy {
 public fetchTwitter() {
   if (this.router.url.includes('dallas-secure-storage')) {
     this.twitter = twitterPayRentPageLocation1;
-  } else if (this.router.url.includes('location-2')) {
+  } else if (this.router.url.includes('godsey-secure-storage')) {
       this.twitter = twitterPayRentPageLocation2;
-  } else if (this.router.url.includes('location-3')) {
-        this.twitter = twitterPayRentPageLocation3;
-  }
+  } 
 }
 
   handleForgotPassword() {

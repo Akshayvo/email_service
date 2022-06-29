@@ -120,7 +120,7 @@ export class HeaderComponent implements OnInit {
     if (this.router.url.includes('/dallas-secure-storage') || this.router.url.includes('/pay-rent-dallas')) {
         this.logo = 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Dallas_Secure_Storage/dollas_txtlogo.gif';
         // this.alt = 'Logo artwork that spells out Dallas Secure Storage with a lock'; 
-    } else  if (this.router.url.includes( '/pay-rent-godsey' ) || this.router.url.includes( '/location-2')) {
+    } else  if (this.router.url.includes( '/pay-rent-godsey' ) || this.router.url.includes( '/godsey-secure-storage')) {
         this.logo = 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Dallas_Secure_Storage/godsey_logo1.gif';
         // this.alt = 'Logo artwork that spells out Godsey Secure Storage with a lock'; 
     } else {

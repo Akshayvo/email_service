@@ -16,7 +16,7 @@ export class ReviewsComponent implements OnInit {
   public isSomePage() {
     if (this.router.url.includes('/dallas-secure-storage/reviews')) {
       this.id = 1;
-    } else  if (this.router.url.includes('/location-2/reviews'))  {
+    } else  if (this.router.url.includes('/godsey-secure-storage/reviews'))  {
       this.id = 3;
     }
   }

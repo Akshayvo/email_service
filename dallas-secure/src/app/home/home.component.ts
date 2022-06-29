@@ -146,9 +146,7 @@ export class HomeComponent implements OnInit {
       this.fetchContactDetailsLocation1();
     } else if ( this.locationId === '2' ) {
       this.fetchContactDetailsLocation2();
-    } else if ( this.locationId === '3' ) {
-      this.fetchContactDetailsLocation3();
-    }
+    } 
   }
 
   public fetchScript() {
@@ -168,16 +166,12 @@ export class HomeComponent implements OnInit {
     }
 
     public fetchContactDetailsLocation2() {
-      this.heading = `Self Storage Facility - Location-2`;
+      this.heading = `Godsey Secure Storage`;
       this.contactDetails = contactsLocation2;
       this.hoursDetails = hoursLocation2;
     }
 
-    public fetchContactDetailsLocation3() {
-      this.heading = `Self Storage Facility - Location-3`;
-      this.contactDetails = contactsLocation3;
-      this.hoursDetails = hoursLocation3;
-    }
+    
 
     public fetchFeatureHead() {
       this.features = featuresHead;

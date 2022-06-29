@@ -37,7 +37,7 @@ export class ReserveComponent implements OnInit {
     if (this.router.url.includes(`${environment.locationName}/dallas-secure-storage`)) {
       this.id = 1;
       this.heading = headingReservePageLocation1;
-    } else if (this.router.url.includes(`${environment.locationName}/location-2`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/godsey-secure-storage`)) {
       this.id = 2;
       this.heading = headingReservePageLocation2;
     } else if (this.router.url.includes(`${environment.locationName}/location-3`)) {

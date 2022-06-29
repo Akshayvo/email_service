@@ -53,7 +53,7 @@ export const headingLocation6 = ``;
 
 export const headingReservePageLocation1 = `Are you ready to rent a unit at Dallas Secure Storage`;
 
-export const headingReservePageLocation2 = `Are you ready to rent a unit at Location-2`;
+export const headingReservePageLocation2 = `Are you ready to rent a unit at Godsey Secure Storage`;
 
 export const headingReservePageLocation3 = `Are you ready to rent a unit at Location-3`;
 
@@ -65,7 +65,7 @@ export const headingReservePageLocation6 = `Are you ready to rent a unit at Robe
 
 export const heading1 = `Dallas Secure Storage`;
 
-export const heading2 = `Self Storage Facility - Location-2`;
+export const heading2 = `Godsey Secure Storage`;
 
 export const heading3 = `Self Storage Facility - Location-3`;
 

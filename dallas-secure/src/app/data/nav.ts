@@ -19,7 +19,7 @@ export const navLinks = [
             {
                 id: '2',
                 label: 'Location 2',
-                path: `${environment.locationName}/location-2`,
+                path: `${environment.locationName}/godsey-secure-storage`,
             },
             //   {
             //     id: '3',

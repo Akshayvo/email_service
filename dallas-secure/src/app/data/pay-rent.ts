@@ -20,7 +20,7 @@ export const tableData = [
   {
     facility: 'Godsey Secure Storage',
     address: '1360 SE Godsey Rd, Dallas, OR 97338',
-    url: 'location-2'
+    url: 'godsey-secure-storage'
   },
  
 ];
@@ -34,7 +34,7 @@ export const tableDataContactPage = [
   {
     facility: 'Godsey Secure Storage',
     address: '1360 SE Godsey Rd, Dallas, OR 97338',
-    url: 'location-2'
+    url: 'godsey-secure-storage'
   },
  
 ];

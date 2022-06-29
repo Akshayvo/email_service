@@ -117,13 +117,13 @@ id = 3;
                 content: element.content
               })
             });
-    } else if (this.router.url.includes(`${environment.locationName}/location-2`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/godsey-secure-storage`)) {
            this.meta.addTag({
              name: 'description',
              content: `${this.location2PageContent}`
     });
     this.titleService.setTitle(`${this.location2PageTitle}`);
-           this.locationName = `Self Storage Facility - Location-2`;
+           this.locationName = `Godsey Secure Storage`;
            this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
            this.dataSharingService.locationName = this.locationName;
            this.script = Location2Script;
@@ -205,7 +205,7 @@ id = 3;
   public fetchOg() {
     if (this.router.url.includes(`${environment.locationName}/dallas-secure-storage`)) {
       this.og = ogLocation1;
-    } else if (this.router.url.includes(`${environment.locationName}/location-2`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/godsey-secure-storage`)) {
       this.og = ogLocation2;
     } else if (this.router.url.includes(`${environment.locationName}/location-3`)) {
       this.og = ogLocation3;
@@ -215,7 +215,7 @@ id = 3;
   public fetchTwitter() {
     if (this.router.url.includes(`${environment.locationName}/dallas-secure-storage`)) {
         this.twitter = twitterLocation1;
-    } else if (this.router.url.includes(`${environment.locationName}/location-2`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/godsey-secure-storage`)) {
       this.twitter = twitterLocation2;
     } else if (this.router.url.includes(`${environment.locationName}/location-3`)) {
       this.twitter = twitterLocation3;
@@ -225,7 +225,7 @@ id = 3;
   public isSomePage() {
     if (this.router.url.includes(`${environment.locationName}/dallas-secure-storage`)) {
         this.fetchDetailsLocation1();
-    } else if (this.router.url.includes(`${environment.locationName}/location-2`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/godsey-secure-storage`)) {
       this.fetchDetailsLocation2();
     } else if (this.router.url.includes(`${environment.locationName}/location-3`)) {
       this.fetchDetailsLocation3();
@@ -237,7 +237,7 @@ id = 3;
     this.router.navigate([`${environment.locationName}/dallas-secure-storage/reserve-unit`],
           );
   } else if ( this.locationId === 2 ) {
-    this.router.navigate([`${environment.locationName}/location-2/reserve-unit`],
+    this.router.navigate([`${environment.locationName}/godsey-secure-storage/reserve-unit`],
           );
   }  else if ( this.locationId === 3 ) {
     this.router.navigate([`${environment.locationName}/location-3/reserve-unit`],
