@@ -1,4 +1,4 @@
-export const homePageTitle = `Affordable Portable Self Storage Units in Ennissmore`;
+export const homePageTitle = `Rv Storage | Robinson Storage Box | Ennismore, CA`;
 export const homePageContent = `Robinson Storage Box offers affordable mobile storage units perfect for home renovations, job-sites, and local moves. Check out our pricing and call today!`;
 
 export const viewRatesPageTitle = `Rates | Robinson Storage Box`;
