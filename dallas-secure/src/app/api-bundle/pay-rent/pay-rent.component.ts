@@ -45,8 +45,8 @@ export class PayRentComponent implements OnInit {
       })
     });
     this.canonical.create();
-    if (this.router.url.includes('location-1')) {
-      this.name = ' Location-1';
+    if (this.router.url.includes('dallas-secure-storage')) {
+      this.name = ' Dallas Secure Storage';
   } else if (this.router.url.includes('location-2')) {
     this.name = ' Location-2';
   } else if (this.router.url.includes('location-3')) {
@@ -65,7 +65,7 @@ export class PayRentComponent implements OnInit {
   }
 
   public fetchOg() {
-    if (this.router.url.includes('location-1')) {
+    if (this.router.url.includes('dallas-secure-storage')) {
       this.og = ogPayRentPageLocation1;
     } else if (this.router.url.includes('location-2')) {
       this.og = ogPayRentPageLocation2;
@@ -75,7 +75,7 @@ export class PayRentComponent implements OnInit {
 }
 
 public fetchTwitter() {
-  if (this.router.url.includes('location-1')) {
+  if (this.router.url.includes('dallas-secure-storage')) {
     this.twitter = twitterPayRentPageLocation1;
   } else if (this.router.url.includes('location-2')) {
     this.twitter = twitterPayRentPageLocation2;

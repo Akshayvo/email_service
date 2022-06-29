@@ -15,7 +15,7 @@ export const tableData = [
   {
     facility: 'Dallas Secure Storage',
     address: '1497 SE Brookside St, Dallas, OR 97338',
-    url: 'location-1'
+    url: 'dallas-secure-storage'
   },
   {
     facility: 'Godsey Secure Storage',
@@ -29,7 +29,7 @@ export const tableDataContactPage = [
   {
     facility: 'Dallas Secure Storage',
     address: '1497 SE Brookside St, Dallas, OR 97338',
-    url: 'location-1'
+    url: 'dallas-secure-storage'
   },
   {
     facility: 'Godsey Secure Storage',

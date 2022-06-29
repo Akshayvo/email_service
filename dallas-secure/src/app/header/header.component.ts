@@ -38,6 +38,7 @@ export class HeaderComponent implements OnInit {
     this.fetchNavigationLinks();
     this.fetchContactDetails();
     this.router.events.subscribe(path => {
+      this.isSomePage();
     });
     // window.onscroll = function() {
     //   this.HideContent()
@@ -114,6 +115,19 @@ export class HeaderComponent implements OnInit {
     // })();
   }
 
+
+  public isSomePage() {
+    if (this.router.url.includes('/dallas-secure-storage') || this.router.url.includes('/pay-rent-dallas')) {
+        this.logo = 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Dallas_Secure_Storage/dollas_txtlogo.gif';
+        // this.alt = 'Logo artwork that spells out Dallas Secure Storage with a lock'; 
+    } else  if (this.router.url.includes( '/pay-rent-godsey' ) || this.router.url.includes( '/location-2')) {
+        this.logo = 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Dallas_Secure_Storage/godsey_logo1.gif';
+        // this.alt = 'Logo artwork that spells out Godsey Secure Storage with a lock'; 
+    } else {
+      this.logo = 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Dallas_Secure_Storage/dollas_txtlogo.png';
+      // this.alt = 'logo artwork for two self storage facilities, each logo spells out the  name of the facility';
+    }
+  }
   public navigate (location: any) {
     this.router.navigate([location]);
   }

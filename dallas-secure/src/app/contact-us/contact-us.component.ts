@@ -99,7 +99,7 @@ export class ContactUsComponent implements OnInit {
   }
 
   public fetchOg() {
-    if (this.router.url.includes('location-1')) {
+    if (this.router.url.includes('dallas-secure-storage')) {
       this.og = ogContactPageLocation1;
     } else if (this.router.url.includes('location-2')) {
       this.og = ogContactPageLocation2;
@@ -114,7 +114,7 @@ public fetchMetaData() {
 }
 
 public fetchTwitter() {
-  if (this.router.url.includes('location-1')) {
+  if (this.router.url.includes('dallas-secure-storage')) {
     this.twitter = twitterContactPageLocation2;
   } else if (this.router.url.includes('location-2')) {
     this.twitter = twitterContactPageLocation1;
@@ -153,7 +153,7 @@ public fetchTwitter() {
   // }
 
   public fetchLocationDetails() {
-    if (this.router.url.includes('location-1')) {
+    if (this.router.url.includes('dallas-secure-storage')) {
       this.fetchContactDetailsLocation1();
     } else if (this.router.url.includes('location-2')) {
       this.fetchContactDetailsLocation2();
@@ -163,7 +163,7 @@ public fetchTwitter() {
   }
 
   public fetchContactDetailsLocation1() {
-    this.heading = `Self Storage Facility - Location-1`;
+    this.heading = `Dallas Secure Storage`;
     this.locationId = '1'
     this.contactDetails = contactsLocation1;
     this.hoursDetails = hoursLocation1;

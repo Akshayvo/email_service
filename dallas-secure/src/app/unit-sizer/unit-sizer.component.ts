@@ -28,7 +28,7 @@ export class UnitSizerComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes(`${environment.locationName}/location-1`)) {
+    if (this.router.url.includes(`${environment.locationName}/dallas-secure-storage`)) {
       this.fetchDetailsLocation1();
   } else if (this.router.url.includes(`${environment.locationName}/location-2`)) {
     this.fetchDetailsLocation2();

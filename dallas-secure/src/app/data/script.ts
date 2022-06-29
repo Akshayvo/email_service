@@ -57,18 +57,18 @@ const emailIndex2 = contactsLocation2.findIndex(x => x.label === 'Email: ');
 const emailIndex3 = contactsLocation3.findIndex(x => x.label === 'Email: ');
 
   
-export const nameLocation1 = `Self Storage Facility - Location-1`;
+export const nameLocation1 = `Dallas Secure Storage`;
 export const nameLocation2 = `Self Storage Facility - Location-2`;
 export const nameLocation3 = `Self Storage Facility - Location-3`;
 
 
 
-export const location1 = `location-1`;
+export const location1 = `dallas-secure-storage`;
 export const location2 = `location-2`;
 export const location3 = `location-3`;
 
 
-export const urlLocation1 = `${environment.websiteUrl}/${environment.locationName}/location-1/storage-units`;
+export const urlLocation1 = `${environment.websiteUrl}/${environment.locationName}/dallas-secure-storage/storage-units`;
 export const urlLocation2 = `${environment.websiteUrl}/${environment.locationName}/location-2/storage-units`;
 export const urlLocation3 = `${environment.websiteUrl}/${environment.locationName}/location-3/storage-units`;
 

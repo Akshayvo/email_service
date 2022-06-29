@@ -31,9 +31,9 @@ export class AboutUsComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes(`${environment.locationName}/location-1`)) {
+    if (this.router.url.includes(`${environment.locationName}/dallas-secure-storage`)) {
       this.fetchDetailsLocation1();
-  } else if (this.router.url.includes(`${environment.locationName}/location-2`)) {
+  } else if (this.router.url.includes(`${environment.locationName}/godsey-secure-storage`)) {
     this.fetchDetailsLocation2();
   } else if (this.router.url.includes(`${environment.locationName}/location-3`)) {
     this.fetchDetailsLocation3();

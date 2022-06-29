@@ -93,13 +93,13 @@ id = 3;
       if (this.activatedRoute.snapshot.url[1].path) {
         this.dataSharingService.facilityLocation = this.activatedRoute.snapshot.url[1].path;
       }
-      if (this.router.url.includes(`${environment.locationName}/location-1`)) {
+      if (this.router.url.includes(`${environment.locationName}/dallas-secure-storage`)) {
             this.meta.addTag({
               name: 'description',
               content: `${this.location1PageContent}`
     });
     this.titleService.setTitle(`${this.location1PageTitle}`);
-            this.locationName = `Self Storage Facility - Location-1`;
+            this.locationName = `Dallas Secure Storage`;
             this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
             this.dataSharingService.locationName = this.locationName;
             this.script = Location1Script;
@@ -203,7 +203,7 @@ id = 3;
 
   
   public fetchOg() {
-    if (this.router.url.includes(`${environment.locationName}/location-1`)) {
+    if (this.router.url.includes(`${environment.locationName}/dallas-secure-storage`)) {
       this.og = ogLocation1;
     } else if (this.router.url.includes(`${environment.locationName}/location-2`)) {
       this.og = ogLocation2;
@@ -213,7 +213,7 @@ id = 3;
   }
 
   public fetchTwitter() {
-    if (this.router.url.includes(`${environment.locationName}/location-1`)) {
+    if (this.router.url.includes(`${environment.locationName}/dallas-secure-storage`)) {
         this.twitter = twitterLocation1;
     } else if (this.router.url.includes(`${environment.locationName}/location-2`)) {
       this.twitter = twitterLocation2;
@@ -223,7 +223,7 @@ id = 3;
   }
 
   public isSomePage() {
-    if (this.router.url.includes(`${environment.locationName}/location-1`)) {
+    if (this.router.url.includes(`${environment.locationName}/dallas-secure-storage`)) {
         this.fetchDetailsLocation1();
     } else if (this.router.url.includes(`${environment.locationName}/location-2`)) {
       this.fetchDetailsLocation2();
@@ -234,7 +234,7 @@ id = 3;
 
  public navigateToReserve() {
   if ( this.locationId === 1 ) {
-    this.router.navigate([`${environment.locationName}/location-1/reserve-unit`],
+    this.router.navigate([`${environment.locationName}/dallas-secure-storage/reserve-unit`],
           );
   } else if ( this.locationId === 2 ) {
     this.router.navigate([`${environment.locationName}/location-2/reserve-unit`],

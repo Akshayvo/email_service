@@ -130,9 +130,9 @@ export class LoginComponent implements OnInit, OnDestroy {
 
   public fetchContactDetail() {
 
-    if (this.router.url.includes('location-1')) {
+    if (this.router.url.includes('dallas-secure-storage')) {
       this.id = 1;
-      this.name = 'Self Storage Facility - Location-1';
+      this.name = 'Dallas Secure Storage';
       this.contact = contactsLocation1;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc1);
@@ -160,7 +160,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   public fetchOg() {
-    if (this.router.url.includes('location-1')) {
+    if (this.router.url.includes('dallas-secure-storage')) {
       this.og = ogPayRentPageLocation1;
     } else  if (this.router.url.includes('location-2')) {
       this.og = ogPayRentPageLocation2;
@@ -170,7 +170,7 @@ export class LoginComponent implements OnInit, OnDestroy {
     }
 
 public fetchTwitter() {
-  if (this.router.url.includes('location-1')) {
+  if (this.router.url.includes('dallas-secure-storage')) {
     this.twitter = twitterPayRentPageLocation1;
   } else if (this.router.url.includes('location-2')) {
       this.twitter = twitterPayRentPageLocation2;

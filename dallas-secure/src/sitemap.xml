@@ -5,7 +5,7 @@
     <lastmod>2022-04-01</lastmod>
   </url>
   <url>
-    <loc> https://sample-site-multilocation.netlify.app/location/location-1/reserve-unit </loc>
+    <loc> https://sample-site-multilocation.netlify.app/location/dallas-secure-storage/reserve-unit </loc>
     <lastmod>2022-04-01</lastmod>
   </url>
 
@@ -45,7 +45,7 @@
   </url>
   <url>
     <loc> 
-      https://sample-site-multilocation.netlify.app/location/location-2/storage-units
+      https://sample-site-multilocation.netlify.app/location/godsey-secure-storage/storage-units
     </loc>
     <lastmod>2022-04-01</lastmod>
   </url>
@@ -57,7 +57,7 @@
   </url>
   <url>
     <loc> 
-      https://sample-site-multilocation.netlify.app/location/location-1
+      https://sample-site-multilocation.netlify.app/location/dallas-secure-storage
     </loc>
     <lastmod>2022-04-01</lastmod>
   </url>
@@ -75,7 +75,7 @@
   </url>
   <url>
     <loc> 
-      https://sample-site-multilocation.netlify.app/location/location-2/reserve-unit
+      https://sample-site-multilocation.netlify.app/location/godsey-secure-storage/reserve-unit
     </loc>
     <lastmod>2022-04-01</lastmod>
   </url>
@@ -86,7 +86,7 @@
     <lastmod>2022-04-01</lastmod>
   </url>
   <url>
-    <loc> https://sample-site-multilocation.netlify.app/location/location-2 </loc>
+    <loc> https://sample-site-multilocation.netlify.app/location/godsey-secure-storage </loc>
     <lastmod>2022-04-01</lastmod>
   </url>
   <url>
@@ -97,7 +97,7 @@
   </url>
   <url>
     <loc> 
-      https://sample-site-multilocation.netlify.app/location/location-1/storage-units
+      https://sample-site-multilocation.netlify.app/location/dallas-secure-storage/storage-units
     </loc>
     <lastmod>2022-04-01</lastmod>
   </url>
@@ -127,7 +127,7 @@
   </url>
   <url>
     <loc> 
-      https://sample-site-multilocation.netlify.app/contact-location-2
+      https://sample-site-multilocation.netlify.app/contact-godsey-secure-storage
     </loc>
     <lastmod>2022-04-01</lastmod>
   </url>
@@ -145,7 +145,7 @@
   </url>
   <url>
     <loc>
-      https://sample-site-multilocation.netlify.app/contact-location-1
+      https://sample-site-multilocation.netlify.app/contact-dallas-secure-storage
     </loc>
     <lastmod>2022-04-01</lastmod>
   </url>
@@ -175,7 +175,7 @@
   </url>
   <url>
     <loc> 
-      https://sample-site-multilocation.netlify.app/pay-rent/location-2
+      https://sample-site-multilocation.netlify.app/pay-rent/godsey-secure-storage
     </loc>
     <lastmod>2022-04-01</lastmod>
   </url>
@@ -193,7 +193,7 @@
   </url>
   <url>
     <loc>
-      https://sample-site-multilocation.netlify.app/pay-rent/location-2/rent-sub/login
+      https://sample-site-multilocation.netlify.app/pay-rent/godsey-secure-storage/rent-sub/login
     </loc>
     <lastmod>2022-04-01</lastmod>
   </url>

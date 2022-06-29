@@ -84,7 +84,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   }
 
   receiveMessage() {
-    if (this.router.url.includes(`${environment.locationName}/location-1`)) {
+    if (this.router.url.includes(`${environment.locationName}/dallas-secure-storage`)) {
       this.locationId = 1;
       this.locationReserve = "location1reserve";
       this.locationMovein = "location1movein";

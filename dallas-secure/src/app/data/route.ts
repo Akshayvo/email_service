@@ -41,6 +41,7 @@ import { ContactUsComponent } from '../contact-us/contact-us.component';
 import { ThankYouGuard } from '../thank-you.guard';
 import { FaqComponent } from '../faq/faq.component';
 import { GalleryComponent } from "../gallery/gallery.component";
+import { ReviewsComponent } from '../reviews/reviews.component';
 
 const withoutTab = [
   { path: '', redirectTo: 'login', pathMatch: 'full'},
@@ -91,7 +92,7 @@ export const apiRoutes = [
     { path: '', component: HomeComponent  },
     { path: 'privacy-policy', component: PrivacyPolicyComponent },
     { path: 'frequently-asked-questions', component: FaqComponent},
-    { path: `${environment.locationName}/location-1`,
+    { path: `${environment.locationName}/dallas-secure-storage`,
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -135,6 +136,7 @@ export const apiRoutes = [
         { path: 'photos', component: GalleryComponent },
         { path: 'about', component: AboutUsComponent },
         { path: 'directions', component: DirectionsComponent },
+        { path: 'reviews', component: ReviewsComponent },
       ],
       resolve: { data: AppResolver }
     },
@@ -181,6 +183,7 @@ export const apiRoutes = [
         { path: 'photos', component: GalleryComponent  }, 
         { path: 'about', component: AboutUsComponent },
         { path: 'directions', component: DirectionsComponent },
+        { path: 'reviews', component: ReviewsComponent },
       ],
       resolve: { data: AppResolver }
     },
@@ -338,7 +341,7 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-    { path: 'review/location-1', component: HomeComponent,
+    { path: 'review/dallas-secure-storage', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -365,7 +368,7 @@ export const apiRoutes = [
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentComponent },
   {
-    path: 'pay-rent/location-1', component: PayRentComponent,
+    path: 'pay-rent/dallas-secure-storage', component: PayRentComponent,
     children: childroute
   },
   {
@@ -378,7 +381,7 @@ export const apiRoutes = [
   },
   { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
-  { path: 'contact-location-1', component: ContactUsComponent},
+  { path: 'contact-dallas-secure-storage', component: ContactUsComponent},
   { path: 'contact-location-2', component: ContactUsComponent},
   { path: 'contact-location-3', component: ContactUsComponent},
   { path: '**', component: ErrorComponent },
@@ -389,7 +392,7 @@ export const apiRoutes = [
 export const iFrameRoutes = [
   { path: '', component: HomeComponent },
   { path: 'privacy-policy', component: PrivacyPolicyComponent },
-  { path: `${environment.locationName}/location-1`,
+  { path: `${environment.locationName}/dallas-secure-storage`,
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -422,7 +425,7 @@ export const iFrameRoutes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: 'review/location-1', component: HomeComponent,
+  { path: 'review/dallas-secure-storage', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -448,7 +451,7 @@ export const iFrameRoutes = [
   },
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentIframeComponent },
-  { path: 'pay-rent-location-1', component: PayRentFloridaComponent },
+  { path: 'pay-rent-dallas-secure-storage', component: PayRentFloridaComponent },
   { path: 'pay-rent-location-2', component: PayRentChesterComponent},
   { path: 'pay-rent-location-3', component: PayRentMontgomeryComponent},
   { path: 'pay-rent-belforest', component: PayRentMiddletownComponent},

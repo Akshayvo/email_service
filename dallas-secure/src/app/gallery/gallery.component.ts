@@ -34,7 +34,7 @@ export class GalleryComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes("location-1")) {
+    if (this.router.url.includes("dallas-secure-storage")) {
       this.fetchDetailsLocation1();
     }
     if (this.router.url.includes("location-2")) {
