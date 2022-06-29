@@ -612,7 +612,8 @@ getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number
   getRentalPeriod() {
    this.getRentalPeriodSubscribe$ = this.fetchDataService.getRentalPeriod()
       .subscribe(rentalPeriodResponse => {
-        this.LstRentalPeriods = rentalPeriodResponse.lstRentalPeriods;
+        this.LstRentalPeriods = rentalPeriodResponse.lstRentalPeriods.filter(x=>x.PeriodDescription === 'Monthly' || x.PeriodDescription === "Quarter" || x.PeriodDescription === "Annual"
+        );
         if (this.LstRentalPeriods.length != 0) {
           const defaultPeriodDescription = rentalPeriodResponse.lstRentalPeriods[0].PeriodDescription;
           this.dataSharingService.periodID = rentalPeriodResponse.lstRentalPeriods[0].PeriodID;

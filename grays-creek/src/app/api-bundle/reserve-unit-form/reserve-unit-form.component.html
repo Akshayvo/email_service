@@ -834,7 +834,7 @@
                   (change)="changeRate($event)"
                 >
                   <option
-                    *ngFor="let LstRentalPeriod of LstRentalPeriods | periodFilter:LstRentalPeriod"
+                    *ngFor="let LstRentalPeriod of LstRentalPeriods"
                     [value]="LstRentalPeriod?.PeriodDescription"
                   >
                     {{ LstRentalPeriod.PeriodDescription }}
