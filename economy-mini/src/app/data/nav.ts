@@ -36,11 +36,11 @@ import { environment } from '../../environments/environment';export const navLin
         path: 'pay-rent',
         type: 'link',
     },
-    // {
-    //     label: 'UNIT SIZER',
-    //     path: 'unit-sizer',
-    //     type: 'link',
-    // },
+    {
+        label: 'UNIT SIZER',
+        path: 'unit-sizer',
+        type: 'link',
+    },
     {
         label: 'STORAGE TIPS',
         path: `${environment.locationName}/storage-tips`,

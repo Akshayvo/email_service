@@ -62,7 +62,7 @@ export const feature = [
 export const aboutUs = [
     {
         mainHeading: `Self Storage - Non-Climate Controlled Units & Self Storage - Climate Controlled Units`,
-        mainParagraph: `At Economy Mini Storage, we are family owned and operated and have been serving the West Marion, Marion, Providence, Glenwood and surrounding McDowell County communities with a variety of climate controlled, and standard drive up self storage units for over 20 years.  Whether you are a business owner, homeowner, or leasing an apartment, Economy Mini Storage is fully fenced, well lit, and we have security cameras throughout our property, ensuring your belongings are secure as possible because we care for our customers, and your satisfaction is our number one priority.`,
+        mainParagraph: `At Economy Mini Storage, we are family owned and operated and have been serving McDowell County and the surrounding areas with a variety of climate controlled, and standard drive up, self storage units for over 30 years. Whether you are a business owner, homeowner, or leasing an apartment, Economy Mini Storage is fully fenced, well lit, and we have security cameras throughout our property, ensuring your belongings are secure as possible because we care for our customers, and your satisfaction is our number one priority.`,
       
     }
 ]
@@ -117,7 +117,7 @@ export const blurb = [
 
 export const jumbotron = [
     {
-        h2: `Self Storage - Climate Controlled Units`,
+        h2: `Single Story - Easy, 24 Hour Access! No Struggling with Elevators or Stairs!`,
         blurb: ``,
     }
 ];

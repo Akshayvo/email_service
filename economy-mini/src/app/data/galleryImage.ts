@@ -62,4 +62,25 @@ export const galleryHome = [
         thumb: `Economy-mini-9-thumb`,
         alt: ``
       },
+      {
+        // tslint:disable-next-line: max-line-length
+        url: `Economy-mini-10`,
+        // tslint:disable-next-line:max-line-length
+        thumb: `Economy-mini-10-thumb`,
+        alt: ``
+      },
+      {
+        // tslint:disable-next-line: max-line-length
+        url: `Economy-mini-11`,
+        // tslint:disable-next-line:max-line-length
+        thumb: `Economy-mini-11-thumb`,
+        alt: ``
+      },
+      {
+        // tslint:disable-next-line: max-line-length
+        url: `Economy-mini-12`,
+        // tslint:disable-next-line:max-line-length
+        thumb: `Economy-mini-12-thumb`,
+        alt: ``
+      },
 ];
