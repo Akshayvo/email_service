@@ -57,6 +57,7 @@ import { ThankYouComponent } from './api-bundle/thank-you/thank-you.component';
 import { ThankYouGuard } from './thank-you.guard';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { AlternateDetailsComponent } from './alternate-details/alternate-details.component';
+import { PeriodFilter } from './api-bundle/reserve-unit-form/period-filter.pipe';
 
 @NgModule({
   declarations: [
@@ -99,6 +100,7 @@ import { AlternateDetailsComponent } from './alternate-details/alternate-details
     ThankYouComponent,
     PrivacyPolicyComponent,
     AlternateDetailsComponent,
+    PeriodFilter
   ],
   imports: [
     CommonModule,

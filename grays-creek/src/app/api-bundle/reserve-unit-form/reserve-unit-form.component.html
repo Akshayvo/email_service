@@ -253,7 +253,7 @@
         <div *ngIf="!!showMilitaryDetails && !!navigateToMoveIn">
         <div class="row" >
           <div class="col-lg-4 col-md-6 form-group">
-            <label>Driver's License Number*</label>
+            <label>Driver's License Number</label>
             <input
               type="text"
               formControlName="DriversLicense"
@@ -347,7 +347,7 @@
         </div>
          <div class="row">
             <div class="col-lg-4 col-md-6 form-group ngx-select-dropdown">
-                <label>Military Type*</label>
+                <label>Military Type</label>
                 <select
                   class="form-control"
                   formControlName="MilitaryType"
@@ -373,7 +373,7 @@
                 </div>
               </div>
           <div class="col-lg-4 col-md-6 form-group ngx-select-dropdown">
-            <label>Military Branch*</label>
+            <label>Military Branch</label>
             <select
               class="form-control"
               formControlName="MilitaryBranch"
@@ -399,7 +399,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6 form-group">
-            <label>Military ID#*</label>
+            <label>Military ID#</label>
             <input
               type="text"
               formControlName="MilitaryID"
@@ -458,7 +458,7 @@
           </div>
         </div>
           <div class="col-lg-4 col-md-6 form-group">
-            <label>Military Division/Unit*</label>
+            <label>Military Division/Unit</label>
             <input
               type="text"
               formControlName="MilitaryDivision"
@@ -480,7 +480,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6 form-group">
-            <label>Military Commanding Officer*</label>
+            <label>Military Commanding Officer</label>
             <input
               type="text"
               formControlName="CommandingOfficer"
@@ -504,7 +504,7 @@
         </div> 
         <div class="row">
             <div class="col-lg-4 col-md-6 form-group">
-              <label>Military C.O. Phone*</label>
+              <label>Military C.O. Phone</label>
               <input
                 type="text"
                 formControlName="CommandingOfficerPhone"
@@ -834,7 +834,7 @@
                   (change)="changeRate($event)"
                 >
                   <option
-                    *ngFor="let LstRentalPeriod of LstRentalPeriods"
+                    *ngFor="let LstRentalPeriod of LstRentalPeriods | periodFilter:LstRentalPeriod"
                     [value]="LstRentalPeriod?.PeriodDescription"
                   >
                     {{ LstRentalPeriod.PeriodDescription }}
