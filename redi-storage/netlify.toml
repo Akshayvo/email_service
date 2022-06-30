@@ -26,6 +26,10 @@
   compress = true
 # A basic redirect rule
 [[redirects]]
+  from = "https://windham.redistorage.com/"
+  to = "https://windham.redistorage.com/ohio/windham/rent-now"
+  status = 301
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200

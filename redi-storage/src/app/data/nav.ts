@@ -1,9 +1,9 @@
 import { environment } from '../../environments/environment';export const navLinks = [
-    {
-        label: 'HOME',
-        path: '/',
-        type: 'link',
-    },
+    // {
+    //     label: 'HOME',
+    //     path: '/',
+    //     type: 'link',
+    // },
     // {
     //     label: 'LOCATIONS',
     //     type: 'dropdown',
@@ -41,24 +41,24 @@ import { environment } from '../../environments/environment';export const navLin
     //     path: 'unit-sizer',
     //     type: 'link',
     // },
-    {
-        label: 'STORAGE TIPS',
-        path: `${environment.locationName}/storage-tips`,
-        type: 'link',
-    },
-    {
-        label: "FAQ",
-        path: "/frequently-asked-questions",
-        type: 'link',
-      },
-    {
-        label: 'TESTIMONIALS',
-        path: 'testimonials',
-        type: 'link',
-    },
-    {
-        label: 'CONTACT US',
-        path: 'contact-us',
-        type: 'link',
-    },
+    // {
+    //     label: 'STORAGE TIPS',
+    //     path: `${environment.locationName}/storage-tips`,
+    //     type: 'link',
+    // },
+    // {
+    //     label: "FAQ",
+    //     path: "/frequently-asked-questions",
+    //     type: 'link',
+    //   },
+    // {
+    //     label: 'TESTIMONIALS',
+    //     path: 'testimonials',
+    //     type: 'link',
+    // },
+    // {
+    //     label: 'CONTACT US',
+    //     path: 'contact-us',
+    //     type: 'link',
+    // },
 ];
