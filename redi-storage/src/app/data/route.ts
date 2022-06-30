@@ -81,7 +81,7 @@ const reviewURL = ``
 
  export const apiRoutes = [
     // Fallback when no prior route is matched
-    { path: '', component: HomeComponent },
+    { path: '', redirectTo:`${environment.locationName}/view-rates`,pathMatch:'full'},
     { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
     { path: `${environment.locationName}/reserve-unit`, component: ReserveComponent },
     { path: "frequently-asked-questions", component: FaqComponent },
